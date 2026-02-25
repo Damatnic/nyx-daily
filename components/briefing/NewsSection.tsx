@@ -16,7 +16,7 @@ interface NewsData {
 }
 
 interface NewsSectionProps {
-  news: NewsData;
+  news?: NewsData | null;
 }
 
 type TabKey = 'us' | 'politics' | 'tech' | 'entertainment' | 'wisconsin';
@@ -217,6 +217,7 @@ function getTabItems(tab: TabKey, news: NewsData): NewsItem[] {
 
 export default function NewsSection({ news }: NewsSectionProps) {
   const [activeTab, setActiveTab] = useState<TabKey>('us');
+  if (!news) return null;
   const allItems = getTabItems(activeTab, news);
   const featured = allItems[0];
   const rest = allItems.slice(1, 4); // show up to 3 more

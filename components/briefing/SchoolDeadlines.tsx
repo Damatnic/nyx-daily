@@ -4,7 +4,7 @@ import Badge from '@/components/ui/Badge';
 import { BookOpen } from 'lucide-react';
 
 interface SchoolDeadlinesProps {
-  deadlines: SchoolDeadline[];
+  deadlines?: SchoolDeadline[] | null;
 }
 
 function urgencyClasses(days: number, done: boolean): string {
@@ -33,7 +33,7 @@ function courseColor(course: string): string {
 }
 
 export default function SchoolDeadlines({ deadlines }: SchoolDeadlinesProps) {
-  const active = deadlines.filter((d) => !d.done).sort((a, b) => a.days - b.days);
+  const active = (deadlines ?? []).filter((d) => !d.done).sort((a, b) => a.days - b.days);
 
   return (
     <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">

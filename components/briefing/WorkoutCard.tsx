@@ -3,13 +3,14 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import { Dumbbell } from 'lucide-react';
 
 interface WorkoutCardProps {
-  workout: {
+  workout?: {
     name: string;
     exercises: WorkoutExercise[];
-  };
+  } | null;
 }
 
 export default function WorkoutCard({ workout }: WorkoutCardProps) {
+  if (!workout) return null;
   return (
     <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
       <SectionHeader title="Workout" />

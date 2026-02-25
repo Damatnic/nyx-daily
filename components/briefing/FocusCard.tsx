@@ -2,10 +2,11 @@ import { Target } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 interface FocusCardProps {
-  focus: string;
+  focus?: string | null;
 }
 
 export default function FocusCard({ focus }: FocusCardProps) {
+  if (!focus) return null;
   return (
     <div className="rounded-xl border border-purple-500/20 bg-[#0d0d1a] p-5 relative overflow-hidden">
       {/* Purple glow accent */}
