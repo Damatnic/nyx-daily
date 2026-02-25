@@ -1,7 +1,6 @@
 import { getAllDates, getBriefingByDate } from '@/lib/data';
 import Link from 'next/link';
-import { Calendar, ArrowRight } from 'lucide-react';
-import SectionHeader from '@/components/ui/SectionHeader';
+import { Calendar, ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
@@ -31,6 +30,12 @@ export default async function ArchivePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {briefings.map(({ date, briefing }) => {
             if (!briefing) return null;
+
+            // Build compact markets snapshot
+            const markets = briefing.markets ?? [];
+            const sp500 = markets.find((m) => m.symbol === '^GSPC');
+            const btc = markets.find((m) => m.symbol === 'BTC-USD');
+
             return (
               <Link
                 key={date}
@@ -41,8 +46,12 @@ export default async function ArchivePage() {
                   <div className="p-2 rounded-lg bg-purple-500/10 border border-purple-500/20">
                     <Calendar size={15} className="text-[#8b5cf6]" />
                   </div>
-                  <ArrowRight size={14} className="text-slate-600 group-hover:text-[#8b5cf6] mt-1 transition-colors duration-200" />
+                  <ArrowRight
+                    size={14}
+                    className="text-slate-600 group-hover:text-[#8b5cf6] mt-1 transition-colors duration-200"
+                  />
                 </div>
+
                 <p className="text-xs text-slate-500 mb-0.5">{briefing.day}</p>
                 <p className="text-lg font-bold text-slate-100 group-hover:text-[#8b5cf6] transition-colors duration-200">
                   {new Date(date + 'T12:00:00').toLocaleDateString('en-US', {
@@ -51,7 +60,50 @@ export default async function ArchivePage() {
                     year: 'numeric',
                   })}
                 </p>
-                <p className="text-xs text-slate-400 mt-2 line-clamp-2">{briefing.weather}</p>
+
+                {/* Weather summary */}
+                <p className="text-xs text-slate-400 mt-2 line-clamp-1">{briefing.weather}</p>
+
+                {/* Markets snapshot */}
+                {(sp500 || btc) && (
+                  <div className="flex items-center gap-3 mt-2 pt-2 border-t border-white/[0.04]">
+                    {sp500 && (
+                      <div className="flex items-center gap-1">
+                        {sp500.up ? (
+                          <TrendingUp size={11} className="text-emerald-400" />
+                        ) : (
+                          <TrendingDown size={11} className="text-red-400" />
+                        )}
+                        <span className="text-xs text-slate-500">S&amp;P</span>
+                        <span
+                          className={`text-xs font-mono font-medium ${
+                            sp500.up ? 'text-emerald-400' : 'text-red-400'
+                          }`}
+                        >
+                          {sp500.up ? '+' : ''}{sp500.change_pct.toFixed(2)}%
+                        </span>
+                      </div>
+                    )}
+                    {btc && (
+                      <div className="flex items-center gap-1">
+                        {btc.up ? (
+                          <TrendingUp size={11} className="text-emerald-400" />
+                        ) : (
+                          <TrendingDown size={11} className="text-red-400" />
+                        )}
+                        <span className="text-xs text-slate-500">BTC</span>
+                        <span
+                          className={`text-xs font-mono font-medium ${
+                            btc.up ? 'text-emerald-400' : 'text-red-400'
+                          }`}
+                        >
+                          {btc.up ? '+' : ''}{btc.change_pct.toFixed(2)}%
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {briefing.focus && (
                   <p className="text-xs text-slate-500 mt-2 line-clamp-2 border-t border-white/[0.04] pt-2">
                     {briefing.focus}

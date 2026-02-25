@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
@@ -12,12 +12,44 @@ const navLinks = [
   { href: '/tools', label: 'Tools' },
 ];
 
+function NavClock() {
+  const [label, setLabel] = useState('');
+
+  useEffect(() => {
+    function tick() {
+      const now = new Date();
+      const formatted = now.toLocaleDateString('en-US', {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+      });
+      const time = now.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      });
+      setLabel(`${formatted} · ${time}`);
+    }
+    tick();
+    const id = setInterval(tick, 60_000);
+    return () => clearInterval(id);
+  }, []);
+
+  if (!label) return null;
+
+  return (
+    <span className="text-slate-500 text-xs font-mono hidden sm:block select-none">
+      {label}
+    </span>
+  );
+}
+
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/[0.06] bg-[#07070f]/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-40 border-b border-white/[0.06] bg-[#07070f]/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
@@ -27,36 +59,43 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href;
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`
-                    px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200
-                    ${isActive
-                      ? 'text-[#8b5cf6] bg-purple-500/10'
-                      : 'text-slate-400 hover:text-slate-100 hover:bg-white/[0.04]'
-                    }
-                  `}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
+          {/* Desktop nav + clock */}
+          <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center gap-1">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`
+                      px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200
+                      ${isActive
+                        ? 'text-[#8b5cf6] bg-purple-500/10'
+                        : 'text-slate-400 hover:text-slate-100 hover:bg-white/[0.04]'
+                      }
+                    `}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="h-4 w-px bg-white/10" />
+            <NavClock />
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/[0.04] transition-all duration-200"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={18} /> : <Menu size={18} />}
-          </button>
+          {/* Mobile: clock + menu button */}
+          <div className="flex items-center gap-3 md:hidden">
+            <NavClock />
+            <button
+              className="p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/[0.04] transition-all duration-200"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
       </div>
 

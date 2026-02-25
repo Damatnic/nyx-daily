@@ -35,6 +35,30 @@ export interface WorkoutExercise {
   note?: string;
 }
 
+export interface MarketItem {
+  label: string;      // "S&P 500", "NASDAQ", "BTC", "ETH"
+  symbol: string;
+  price: string;      // formatted: "6,890.07" or "$66,132"
+  change_pct: number; // e.g. -0.28 or 3.25
+  up: boolean;        // true if positive change
+  kind: 'index' | 'crypto';
+}
+
+export interface NasaApod {
+  title: string;
+  explanation: string;  // 400-char excerpt
+  url: string;          // image URL
+  hdurl?: string;
+  media_type: string;   // "image" or "video"
+  date: string;
+}
+
+export interface OnThisDayEvent {
+  year: number;
+  text: string;
+  link: string;
+}
+
 export interface DailyBriefing {
   generated_at: string;
   date: string;
@@ -69,4 +93,7 @@ export interface DailyBriefing {
   health_tip: string;
   life_hack: { category: string; tip: string };
   money_tip: { category: string; tip: string };
+  markets?: MarketItem[];
+  apod?: NasaApod | null;
+  on_this_day?: OnThisDayEvent[];
 }
