@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-02-25T14:05:54.564878",
+  "generated_at": "2026-02-25T14:50:48.298563",
   "day": "Wednesday",
   "date": "2026-02-25",
-  "weather": "\ud83c\udf21\ufe0f Weather unavailable (The read operation timed out)",
+  "weather": "\ud83c\udf21\ufe0f Weather unavailable (<urlopen error [Errno 54] Connection reset by peer>)",
   "quote": "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win.",
   "author": "Stephen King",
+  "focus": "Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).",
   "markets": [
     {
       "label": "S&P 500",
       "symbol": "^GSPC",
-      "price": "6,948.43",
-      "change_pct": 1.62,
+      "price": "6,950.89",
+      "change_pct": 1.65,
       "up": true,
       "kind": "index"
     },
     {
       "label": "NASDAQ",
       "symbol": "^IXIC",
-      "price": "23,154",
-      "change_pct": 2.33,
+      "price": "23,165",
+      "change_pct": 2.38,
       "up": true,
       "kind": "index"
     },
     {
       "label": "BTC",
       "symbol": "BTC-USD",
-      "price": "$69,083",
-      "change_pct": 7.81,
+      "price": "$69,376",
+      "change_pct": 8.26,
       "up": true,
       "kind": "crypto"
     },
     {
       "label": "ETH",
       "symbol": "ETH-USD",
-      "price": "$2,074",
-      "change_pct": 11.91,
+      "price": "$2,077",
+      "change_pct": 12.1,
       "up": true,
       "kind": "crypto"
     }
@@ -64,6 +65,944 @@
       "link": "https://en.wikipedia.org/wiki/Border_Guard_Bangladesh"
     }
   ],
+  "news": {
+    "us_news": [
+      {
+        "title": "Tipped workers expect tax boon this year, but not a long-term fix",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5684227/trump-tax-tips-state-union",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "In his State of the Union address on Tuesday night, President Trump once again touted new tax benefits for tipped workers, who like many Americans are feeling the pinch of higher prices.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Surgeon general nominee Means questioned about vaccines, birth control and financial conflicts",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5725399/surgeon-general-casey-means-vaccines-birth-control",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "During a confirmation hearing, senators asked Dr. Casey Means about her current positions and her past statements on a range of public health issues.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Kalshi reveals insider trading case against editor for MrBeast",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5726050/kalshi-insider-trading-enforcement-actions",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "With prediction markets booming, so have concerns about insider trading. Now, Kalshi has disclosed its first public actions against accounts suspected of trading on confidential information.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Greetings from Jordan's Wadi Rum desert, where patches of green emerge after winter rains",
+        "link": "https://www.npr.org/2026/02/25/g-s1-111181/jordan-wadi-rum",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Wadi Rum's otherworldly landscape is where Star Wars movies and The Martian were filmed. In late winter, plants emerge in this desert \u2014 but some are toxic to camels, so their herders must protect them",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Trump teases AI electricity pledge. Here's when tech giants will sign it",
+        "link": "https://www.axios.com/2026/02/25/trump-data-center-electricity-ratepayer-protection-pledge",
+        "image": "https://images.axios.com/uosvnBGaXXnqTnMdJijWIjq1ycY=/1366x768/smart/2024/07/16/180517-1721153117964.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Tech giants are expected to join President Trump at the White House next week to sign a pledge that they will build or buy their own electricity supplies for data centers.Why it matters: It's the Trum",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Scoop: Witkoff says any Iran nuclear deal should last indefinitely",
+        "link": "https://www.axios.com/2026/02/25/witkoff-iran-deal-indefinite-geneva-talks",
+        "image": "https://images.axios.com/LybFe5hJ9XyXICa8CKO9PvxyfWI=/0x0:6541x3679/1366x768/2026/02/25/1772042217965.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "White House envoy Steve Witkoff told a private gathering on Tuesday that the Trump administration is demanding that Iran agree any future nuclear deal will remain in effect indefinitely, according to ",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Summers leaves Harvard as Epstein reckoning rocks academia",
+        "link": "https://www.axios.com/2026/02/25/epstein-files-colleges-universities-resignations-investigations-larry-summers",
+        "image": "https://images.axios.com/-VVJ6jmzK_Tzq7FwMzSPGo6F3F8=/smart/2025/04/16/181103-1744827063547.gif",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Former Harvard president Larry Summers announced Wednesday he will resign his positions at the university following backlash to his relationship with convicted sex offender Jeffrey Epstein.Why it matt",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Surgeon general nominee won't say she urges vaccination",
+        "link": "https://www.axios.com/2026/02/25/surgeon-general-casey-means-hearing-kennedy",
+        "image": "https://images.axios.com/Y6FD_Kl0iWE6wJ8Atj64sz9XL24=/0x671:6443x4295/1366x768/2026/02/25/1772045752620.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Surgeon General nominee Casey Means said during a confirmation hearing Wednesday that she believes vaccines save lives but did not unequivocally urge people to get vaccinated.The big picture: The nutr",
+        "domain": "axios.com"
+      }
+    ],
+    "politics": [
+      {
+        "title": "Thune: No agreement among GOP senators on talking filibuster",
+        "link": "https://thehill.com/homenews/senate/5755328-thune-talking-filibuster/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/thunejohn_022526gn14_w.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Senate Majority Leader John Thune (R-S.D.) told reporters Wednesday that there\u2019s not enough consensus in the Senate Republican conference to increase the chances of advancing voting reform by forcing ",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Roots of the Rockies: Reclaiming Colorado\u2019s Past to Understand Its Future",
+        "link": "https://thehill.com/homenews/5754499-colorado-living-archive/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Untitled-3-The_Hill_A-World-of-Travel_Youtube_Title_Card_3HS-4.png?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Colorado has long been a canvas for the American imagination: snow-capped peaks, gold rush lore, cowboy grit and ski towns perched high above the clouds. But beneath the postcard beauty lies something",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Feds raid home, office of superintendent for Los Angeles schools",
+        "link": "https://thehill.com/homenews/education/5755284-fbi-los-angeles-schools-lausd/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/11/AP25017577278279-e1764097438828.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Federal authorities are executing search warrants against Los Angeles Unified School (LAUSD) District Superintendent Alberto Carvalho. The second largest school district in the nation said it is aware",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "FCC seeks public comment on live sports broadcasting marketplace",
+        "link": "https://thehill.com/homenews/media/5755188-fcc-seeks-comment-sports-streaming/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/01/carrbrendan_011426gn03_w.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The Federal Communications Commission (FCC) is soliciting public comment on consumer experience with live sports viewing in the streaming era. As part of a notice posted on Wednesday, the department s",
+        "domain": "thehill.com"
+      }
+    ],
+    "tech": [
+      {
+        "title": "The White House wants AI companies to cover rate hikes. Most have already said they would.",
+        "link": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Many of hyperscalers have already made public commitments in to cover electricity cost increases.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "US cybersecurity agency CISA reportedly in dire shape amid Trump cuts and layoffs",
+        "link": "https://techcrunch.com/2026/02/25/us-cybersecurity-agency-cisa-reportedly-in-dire-shape-amid-trump-cuts-and-layoffs/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Under the first year of the Trump administration, the U.S. cyber agency CISA has faced cuts, layoffs, and furloughs, as bipartisan lawmakers and cybersecurity industry sources say the agency is unprep",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Welcome to the post-hype crypto market",
+        "link": "https://techcrunch.com/video/welcome-to-the-post-hype-crypto-market/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Crypto is creeping back into the startup conversation, but at ETHDenver last week, the buzz was as much about Washington as it was about tokens. Policy shifts are rippling through the market as Tether",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Alphabet-owned robotics software company Intrinsic joins Google",
+        "link": "https://techcrunch.com/2026/02/25/alphabet-owned-robotics-software-company-intrinsic-joins-google/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Nearly five years after graduating into an independent Alphabet company, Intrinsic is moving under Google's domain.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Jimi Hendrix was a systems engineer",
+        "link": "https://spectrum.ieee.org/jimi-hendrix-systems-engineer",
+        "image": null,
+        "logo": "https://logo.clearbit.com/spectrum.ieee.org",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://spectrum.ieee.org/jimi-hendrix-systems-engineer Comments URL: https://news.ycombinator.com/item?id=47157224 Points: 39 # Comments: 6",
+        "domain": "spectrum.ieee.org"
+      },
+      {
+        "title": "Devirtualization and Static Polymorphism",
+        "link": "https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/david.alvarezrosa.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/ Comments URL: https://news.ycombinator.com/item?id=47155811 Points: 8 # Comments: 0",
+        "domain": "david.alvarezrosa.com"
+      },
+      {
+        "title": "Show HN: I ported Tree-sitter to Go",
+        "link": "https://github.com/odvcencio/gotreesitter",
+        "image": null,
+        "logo": "https://logo.clearbit.com/github.com",
+        "source": "Hacker News",
+        "snippet": "This started as a hard requirement for my TUI-based editor application, it ended up going in a few different directions.A suite of tools that help with semantic code entities: https://github.com/odvce",
+        "domain": "github.com"
+      },
+      {
+        "title": "om",
+        "link": "https://www.om-language.com/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/om-language.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.om-language.com/ Comments URL: https://news.ycombinator.com/item?id=47154971 Points: 141 # Comments: 29",
+        "domain": "om-language.com"
+      }
+    ],
+    "ai": [
+      {
+        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has cap",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spen",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+        "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4Xrcg14GLKFlwSEnuEzxyS/21c85d29d03c4c974076475c009e3b38/nuneybits_Vector_art_of_chat_bubbles_on_a_computer_screen_in_th_5018a7ea-3496-4103-8453-7ba1b129189a.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
+        "link": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/perplexity_computer.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Perplexity bundles AI models from Anthropic, Google, xAI and OpenAI in an agentic system that is designed to carry out complex workflows independently. The article Perplexity Computer bundles rival AI",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Google relaunches its AI creative studio Flow with new features and integrations",
+        "link": "https://the-decoder.com/google-relaunches-its-ai-creative-studio-flow-with-new-features-and-integrations/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_flow_update_make_it.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Google is turning its AI creative studio Flow into an all-in-one tool for images and videos, with free image generators and new editing features. The article Google relaunches its AI creative studio F",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Study shows why reasoning models often think far beyond the solution",
+        "link": "https://the-decoder.com/study-shows-why-reasoning-models-often-think-far-beyond-the-solution/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Does-Your-Reasoning-Model-Know-When-To-Stop.jpeg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Large reasoning models frequently think well past the correct answer: cross-checking, reformulating, and confirming what they already got right. A new Bytedance study shows the models actually know wh",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Adobe's new Firefly \"Quick Cut\" tool turns raw footage into a rough edit from a text prompt",
+        "link": "https://the-decoder.com/adobes-new-firefly-quick-cut-tool-turns-raw-footage-into-a-rough-edit-from-a-text-prompt/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/adobe_quick_cut_teaser.webp",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Adobe Firefly can now automatically create a rough cut from raw footage. The new \"Quick Cut\" tool takes over the tedious first edit for creators. The article Adobe&#039;s new Firefly &quot;Quick Cut&q",
+        "domain": "the-decoder.com"
+      }
+    ],
+    "entertainment": [
+      {
+        "title": "Robyn\u2019s New Acne Studios\u2019 Campaign and T-Shirt Collab Capture the \u2018Sensual Experience of Being Alive\u2019",
+        "link": "https://variety.com/2026/shopping/fashion/robyn-acne-studios-campaign-collection-t-shirt-buy-online-1236672853/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/acne-robyn-shirt.png",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Fresh off announcing a 2026 world tour, Robyn is stepping in front of the camera as the new face of Swedish fashion brand Acne Studios and its Spring/Summer 2026 campaign. The &#8220;Honey&#8221; sing",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Ted Sarandos Will Visit White House to Discuss Warner Bros. Deal",
+        "link": "https://variety.com/2026/film/news/ted-sarandos-white-house-warner-bros-deal-1236672842/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/P1040SE5.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "With negotiations heating up over Netflix&#8217;s bid for Warner Discovery, the streamer&#8217;s co-CEO Ted Sarandos plans to visit the White House for meetings on Thursday. Sarandos is sure to discus",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Kelly Ripa on 25 Years of \u2018Live,\u2019 Asking Oprah When to Walk Away and Hopes for the Future: \u2018The Show Is Far More Important Than Any Two Hosts\u2019",
+        "link": "https://variety.com/2026/tv/news/kelly-ripa-live-25-years-oprah-1236672028/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Portrait.jpeg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "It\u2019s not difficult to see why Kelly Ripa has spent the last 25 years as host of \u201cLive.&#8221; A natural blend of wit, enthusiasm and inquisitiveness was evident from her first appearance as a guest ho",
+        "domain": "variety.com"
+      },
+      {
+        "title": "\u2018NCIS: Origins\u2019 Showrunner David J. North Signs Overall Deal With CBS Studios",
+        "link": "https://variety.com/2026/tv/news/ncis-origins-showrunner-david-j-north-overall-deal-cbs-1236672784/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/David-North-Headshot-e1772046582884.jpeg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "David J. North has signed an overall deal with CBS Studios, Variety has learned. North is the co-creator, executive producer, and showrunner on &#8220;NCIS: Origins,&#8221; which is currently airing i",
+        "domain": "variety.com"
+      },
+      {
+        "title": "The Fourth and Final 'Terrifier' Movie Gets a Scary Good Update From Director",
+        "link": "https://collider.com/terrifier-4-script-update-art-the-clown-final-movie-pre-production-start-spring-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/9754822.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Terrifier 4 has gotten an official update from director Damien Leone, who has seemingly confirmed it will be the final chapter in Art's story.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "10 Most Perfectly Written Thriller Movies, Ranked",
+        "link": "https://collider.com/most-perfectly-written-thriller-movies-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/04/steven-yeun-sitting-down-in-his-yard-in-burning.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Whether it's a modern effort like Prisoners or a certified classic like Rear Window, these all-time great thriller films benefit from stellar writing.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "'Yellowjackets' Just Added the Perfect '80s Legend to Fourth and Final Season",
+        "link": "https://collider.com/yellowjackets-season-4-cast-molly-ringwald-recurring-role-details/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/yellowjackets.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Yellowjackets Season 4 has added Molly Ringwald in a recurring role for the show's final chapter. Get the details on who she's playing here.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Steven Spielberg Cast Vin Diesel in 'Saving Private Ryan' for This Surprising Reason",
+        "link": "https://collider.com/saving-private-ryan-vin-diesel-steven-spielberg/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/03/vin-diesel-saving-private-ryan.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Vin Diesel\u2019s role in Steven Spielberg\u2019s Saving Private Ryan was reportedly written specifically for him.",
+        "domain": "collider.com"
+      }
+    ],
+    "weird_news": [
+      {
+        "title": "This Kentucky hatter shapes cowboy dreams out of felt and steam",
+        "link": "https://boingboing.net/2026/02/25/this-kentucky-hatter-shapes-cowboy-dreams-out-of-felt-and-steam.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/0-5.jpg?fit=480%2C360&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "I have been enthralled watching the hatters at Wild Hats in Louisville, Kentucky, make beautiful hats. Their YouTube channel is full of fantastic hats, and I have not seen them make one I did not want",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Making disease great again: HHS funds discredited vaccine research",
+        "link": "https://boingboing.net/2026/02/25/making-disease-great-again-hhs-funds-discredited-vaccine-research.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2021/11/anti-vaccine-e1740592683261.jpg?fit=1080%2C720&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Today on \"What Could Possibly Go Wrong,\" RFK Jr's Department of Health and Human Services is funneling federal money toward researchers proposing to withhold a routine hepatitis B vaccine from thousan",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "South Carolina measles epidemic nearing 1000 infected",
+        "link": "https://boingboing.net/2026/02/25/south-carolina-measles-epidemic-nearing-1000-infected.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2015/09/vaccine.jpg?fit=600%2C599&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Showing that the MAHA movement is a complete success, measles rages out of control in South Carolina. Measles cases in South Carolina surged to 979 on Tuesday, state health data \u200cshowed, including six",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "LA stopped repaving streets to avoid building wheelchair ramps",
+        "link": "https://boingboing.net/2026/02/25/la-stopped-repaving-streets-to-avoid-building-wheelchair-ramps.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2025/06/shutterstock_2478365825-e1749660055706.jpg?fit=768%2C511&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Every mile of LA street has about 14 curb ramps that need to meet federal ADA standards. A single crew needs roughly three months to build them. Repaving that same stretch of road? A weekend or a week",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Bizarre Weight Loss Trend Has People Using Cling Film as Mouth Condoms for Food",
+        "link": "https://www.odditycentral.com/news/bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food.html?utm_source=rss&utm_medium=rss&utm_campaign=bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A viral eating hack has people lining their mouths with cling film to trick their bodies into thinking they are eating, but without coming into contact with food. The post Bizarre Weight Loss Trend Ha",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Fired for Drinking on the Job Gets Awarded $55,000 Compensation in Court",
+        "link": "https://www.odditycentral.com/news/man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court.html?utm_source=rss&utm_medium=rss&utm_campaign=man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Spanish man fired for drinking up to 3 liters of beer during work hours was awarded $55,000 in compensation by a court of law. The post Man Fired for Drinking on the Job Gets Awarded $55,000 Compens",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Allegedly Trains Dog to Illegally Dump Trash Bags on the Side of the Road",
+        "link": "https://www.odditycentral.com/news/man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road.html?utm_source=rss&utm_medium=rss&utm_campaign=man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "An Italian man has been fined for allegedly training his dog to carry trash bags in its mouth and dump them in unauthorized places to avoid paying for trash collection. The post Man Allegedly Trains D",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Realtor Uses AI to Touch Up Listing Photos, Accidentally Adds Demonic Flesh Monster",
+        "link": "https://www.odditycentral.com/wtf/realtor-uses-ai-to-touch-up-listing-photos-accidentally-adds-demonic-flesh-monster.html?utm_source=rss&utm_medium=rss&utm_campaign=realtor-uses-ai-to-touch-up-listing-photos-accidentally-adds-demonic-flesh-monster",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Washington realtor accidentally posted photos of a local listing featuring a creepy monster coming out of the bathroom mirror. The post Realtor Uses AI to Touch Up Listing Photos, Accidentally Adds ",
+        "domain": "odditycentral.com"
+      }
+    ],
+    "wisconsin": [
+      {
+        "title": "Winnebago County Board declines to take up resolution denouncing ICE action in Minnesota",
+        "link": "https://www.wpr.org/news/winnebago-county-board-resolution-ice-minnesota-oshkosh-immigrants",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "The Winnebago County Board declined to take action on a resolution condemning federal immigration actions in Minneapolis, removing the item from its agenda Tuesday night without debate. The post Winne",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "After FEMA rejection, Wisconsin communities decide how to cover flooding repair costs",
+        "link": "https://www.wpr.org/news/after-fema-rejection-wisconsin-communities-flooding-repair-costs",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Intense flash flooding in August caused tens of millions of dollars worth of damage throughout Wisconsin. After an appeal for federal public infrastructure aid was recently denied, two EMS directors t",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "Milwaukee Public Schools to use CDC grant to hold free lead screening clinics\u00a0for students inside schools",
+        "link": "https://www.wpr.org/news/milwaukee-public-schools-to-use-cdc-grant-to-hold-free-lead-screening-clinics-for-students-inside-schools",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Milwaukee Public Schools is using a nearly $400,000 federal grant to get more children tested for lead over a year after the start of a lead crisis that resulted in the temporary relocation of student",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "Republican lawmakers want death penalty for child sex crimes in Wisconsin",
+        "link": "https://www.wpr.org/news/republican-lawmakers-death-penalty-child-sex-crimes-wisconsin",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "A pair of Republican state lawmakers wants to bring the death penalty back to Wisconsin for the first time in more than 170 years. It would be reserved for those convicted of certain sexual assaults a",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "Knickerbocker Hotel Unveils Plans For Bakery and Cafe",
+        "link": "https://urbanmilwaukee.com/2026/02/25/knickerbocker-hotel-unveils-plans-for-bakery-and-cafe/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/20260225laposada-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "La Posada would revive long-vacant space with coffee, pastries and New Mexican food.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "No Milwaukee Judge Will Accept Tearman Spencer Criminal Case",
+        "link": "https://urbanmilwaukee.com/2026/02/25/no-milwaukee-judge-will-accept-tearman-spencer-criminal-case/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2024/11/SpencerCourt1-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Two different criminal cases against Spencer will be heard in different county.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Murphy\u2019s Law: How Wisconsin Has Declined",
+        "link": "https://urbanmilwaukee.com/2026/02/25/murphys-law-how-wisconsin-has-declined/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2024/01/Wisconsin_welcome-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "It\u2019s done worse than 42 states in growth of average household income. Why?",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Our Lady of Guadalupe Comes to Milwaukee",
+        "link": "https://urbanmilwaukee.com/2026/02/25/our-lady-of-guadalupe-comes-to-milwaukee/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/DSC_1797-scaled-1-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Iconic Catholic statue on world tour will be displayed at Basilica of St. Josaphat.",
+        "domain": "urbanmilwaukee.com"
+      }
+    ],
+    "til": [
+      {
+        "title": "TIL that Canc\u00fan didn\u2019t exist until 1970, its location was chosen using early computer models to identify a suitable place for a new resort city. The area had only three residents at the time.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1reiiu5/til_that_canc\u00fan_didnt_exist_until_1970_its/",
+        "image": "https://external-preview.redd.it/8-mNC7JNZwLEsFSfbumo924bPKwZoShIEXEfxRhhl0E.jpeg?width=640&crop=smart&auto=webp&s=320a14d2098f5226c10ce177cb672aead7b4a540",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/RuseOwl [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL that notorious mobsters Lucky Luciano and Meyer Lansky were awarded Medals of Freedom by President Harry Truman in a secret ceromony",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rdx3yk/til_that_notorious_mobsters_lucky_luciano_and/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/krsj [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL about the Thrasis region of Mars. Due to Mars\u2019 lack of plate tectonics, three volcanoes were able to erupt in the same location for billions of years, accumulating so much lava that the crust structurally failed under the weight.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1regfcp/til_about_the_thrasis_region_of_mars_due_to_mars/",
+        "image": "https://external-preview.redd.it/upEYwWUBMj8ekvXDp3bTTWo7rHCOY8NfDpDCRfdw2DI.jpeg?width=640&crop=smart&auto=webp&s=bc0cffbb91e372117916d9f9501b31519a04e6fc",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/EpicAura99 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL that the Butt plug was patented in 1892 by Dr. Frank Young as a \"rectal dilator\" and was intended to treat constipation and insanity",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1re5782/til_that_the_butt_plug_was_patented_in_1892_by_dr/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/Ron__Mexico_ [link] &#32; [comments]",
+        "domain": "reddit.com"
+      }
+    ],
+    "life_hacks": [
+      {
+        "title": "A simple way of storing loose screws at the bench",
+        "link": "https://www.reddit.com/r/lifehacks/comments/1rdufmk/a_simple_way_of_storing_loose_screws_at_the_bench/",
+        "image": "https://external-preview.redd.it/eDZoNHYyYjhuaWxnMXmZHVlWg1QC1p4qv8AnI1Qk-jnkieLgplHGlB2zd5Fk.png?width=320&crop=smart&auto=webp&s=51269de2fb36ab3b7d8bf0aa8eb0e8ca2f138865",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/lifehacks",
+        "snippet": "&#32; submitted by &#32; /u/Kylde [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Padlock Hack",
+        "link": "https://www.reddit.com/r/lifehacks/comments/1rdunt5/padlock_hack/",
+        "image": "https://external-preview.redd.it/Zm9sNnU1Z3FvaWxnMSAPP7hZliAv6zfh_foVQTiI-GHH5b0_42VPZXfmq8eI.png?width=320&crop=smart&auto=webp&s=47208f9476f851c68f937b5b72efe24edc2e1d2c",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/lifehacks",
+        "snippet": "&#32; submitted by &#32; /u/Jinther [link] &#32; [comments]",
+        "domain": "reddit.com"
+      }
+    ],
+    "money": [
+      {
+        "title": "How to get wealthier",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1re5024/how_to_get_wealthier/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "So me and my wife bring home around 6400 a month after taxes. we are saving 2,000 per month and putting it into a high yield savings account currently have 25,000 in that account. We don\u2019t have much i",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "So Do I Just Have Two 401ks Now?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1reg62r/so_do_i_just_have_two_401ks_now/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Every job I had with a 401k I rolled my old 401k into my new one until my last job which had a plan with Fidelity. I just ended up really liking Fidelity and started my Roth with them too. My new job ",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Turned 30 years a couple months ago with no savings, no 401k. Paying student loans. Idk where to start.",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1rehmjy/turned_30_years_a_couple_months_ago_with_no/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Hi all. I have a decent job currently making 75k USD a year. I\u2019m from Canada but currently work in the US. I have a masters degree and about 3 years out into the industry from when I graduated. I have",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "What\u2019s your personal favorite HYS account?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1recnc1/whats_your_personal_favorite_hys_account/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "This year I\u2019m unfucking myself and taking my finances more seriously than prior years. For context, I don\u2019t mean I was stupid with money, I\u2019ve always been told I\u2019m great at considering expenses and co",
+        "domain": "reddit.com"
+      }
+    ]
+  },
+  "school_deadlines": [
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Week 6.5 Lab",
+      "due_date": "2026-03-04",
+      "due_str": "Wed Mar 4",
+      "days": 7,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Week 6 Lab/Demo",
+      "due_date": "2026-03-04",
+      "due_str": "Wed Mar 4",
+      "days": 7,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Data Management Meeting Simulation",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 8,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Data Management Case Study",
+      "due_date": "2026-03-11",
+      "due_str": "Wed Mar 11",
+      "days": 14,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Power BI Project",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 15,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Roll Call Attendance",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 15,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 1 Project",
+      "due_date": "2026-02-26",
+      "due_str": "Thu Feb 26",
+      "days": 1,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 5 Practice Problems",
+      "due_date": "2026-02-26",
+      "due_str": "Thu Feb 26",
+      "days": 1,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 6 Practice Problems",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 8,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 6 Quiz",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 8,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Week 7 In-Class Lab",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 8,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 7 Practice Problems",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 15,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 7 Quiz",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 15,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 8 Practice Problems",
+      "due_date": "2026-03-26",
+      "due_str": "Thu Mar 26",
+      "days": 29,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 8 Quiz",
+      "due_date": "2026-03-26",
+      "due_str": "Thu Mar 26",
+      "days": 29,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 9 Practice Problems",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 36,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 9 Quiz",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 36,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 In-Class Lab",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 36,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 Practice Problems",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 43,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 Quiz",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 43,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 11 In-Class Lab",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 43,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 11 Practice Problems",
+      "due_date": "2026-04-16",
+      "due_str": "Thu Apr 16",
+      "days": 50,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 12 Practice Problems",
+      "due_date": "2026-04-23",
+      "due_str": "Thu Apr 23",
+      "days": 57,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 2 Project",
+      "due_date": "2026-04-24",
+      "due_str": "Fri Apr 24",
+      "days": 58,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 13 Practice Problems",
+      "due_date": "2026-04-30",
+      "due_str": "Thu Apr 30",
+      "days": 64,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 14 Practice Problems",
+      "due_date": "2026-05-07",
+      "due_str": "Thu May 7",
+      "days": 71,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 14 Quiz",
+      "due_date": "2026-05-07",
+      "due_str": "Thu May 7",
+      "days": 71,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 3 Project",
+      "due_date": "2026-05-14",
+      "due_str": "Thu May 14",
+      "days": 78,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 9 - Hypothesis Testing Ch.9",
+      "due_date": "2026-02-28",
+      "due_str": "Sat Feb 28",
+      "days": 3,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "CLS Hypothesis Testing",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 4,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Extra Quiz 5 - Hypothesis Testing Ch.9",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 4,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 10 - Two Sample Hypothesis Testing Ch.11&12",
+      "due_date": "2026-03-07",
+      "due_str": "Sat Mar 7",
+      "days": 10,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Extra Bonus Quiz",
+      "due_date": "2026-03-08",
+      "due_str": "Sun Mar 8",
+      "days": 11,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 11 - Chapter 14 ANOVA",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 15,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "FINAL EXAM",
+      "due_date": "2026-03-13",
+      "due_str": "Fri Mar 13",
+      "days": 16,
+      "weight": "critical",
+      "done": false
+    }
+  ],
+  "calendar": [],
+  "gmail_summary": "",
+  "workout": {
+    "name": "Core/Cardio",
+    "exercises": [
+      {
+        "name": "Plank 45s",
+        "reps": "",
+        "note": ""
+      },
+      {
+        "name": "Mountain Climbers x20",
+        "reps": "",
+        "note": ""
+      },
+      {
+        "name": "Bicycle Crunches x20",
+        "reps": "",
+        "note": ""
+      },
+      {
+        "name": "Jumping Jacks x30",
+        "reps": "",
+        "note": ""
+      }
+    ]
+  },
+  "breathwork": {
+    "name": "Diaphragmatic",
+    "steps": "Belly-first breathing, 10 slow deep breaths.",
+    "rounds": 4
+  },
+  "health_tip": "Stand up and stretch every 45 minutes \u2014 90 seconds resets posture and focus.",
+  "life_hack": {
+    "category": "Cooking",
+    "tip": "Pre-chop veggies on Sunday and store in containers. Weeknight meals drop to 15 minutes."
+  },
+  "money_tip": {
+    "category": "Side Hustle",
+    "tip": "Fastest side income: solve problems you already know how to solve. Your skills are underpriced."
+  },
   "app_of_the_day": {
     "name": "Brilliant",
     "category": "Interactive Learning",
@@ -79,5 +1018,6 @@
       "statistics",
       "data"
     ]
-  }
+  },
+  "msg_compact": "\ud83c\udf19 **Wednesday, Feb 25 Briefing**\n\ud83c\udf21\ufe0f Weather unavailable (<urlopen error [Errno 54] Connection reset by peer>)\n\u2192 Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).\n\ud83d\udd17 <https://nyx-daily.vercel.app>"
 }
