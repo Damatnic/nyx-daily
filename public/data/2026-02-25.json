@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-25T14:50:48.298563",
+  "generated_at": "2026-02-25T15:02:42.442746",
   "day": "Wednesday",
   "date": "2026-02-25",
-  "weather": "\ud83c\udf21\ufe0f Weather unavailable (<urlopen error [Errno 54] Connection reset by peer>)",
+  "weather": "\u2601\ufe0f Waukesha \u00b7 27\u00b0F (feels 15\u00b0F) \u00b7 Partly cloudy \u00b7 H:31\u00b0 L:19\u00b0",
   "quote": "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win.",
   "author": "Stephen King",
   "focus": "Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).",
@@ -10,32 +10,32 @@
     {
       "label": "S&P 500",
       "symbol": "^GSPC",
-      "price": "6,950.89",
-      "change_pct": 1.65,
+      "price": "6,946.14",
+      "change_pct": 1.59,
       "up": true,
       "kind": "index"
     },
     {
       "label": "NASDAQ",
       "symbol": "^IXIC",
-      "price": "23,165",
-      "change_pct": 2.38,
+      "price": "23,152",
+      "change_pct": 2.32,
       "up": true,
       "kind": "index"
     },
     {
       "label": "BTC",
       "symbol": "BTC-USD",
-      "price": "$69,376",
-      "change_pct": 8.26,
+      "price": "$69,195",
+      "change_pct": 7.98,
       "up": true,
       "kind": "crypto"
     },
     {
       "label": "ETH",
       "symbol": "ETH-USD",
-      "price": "$2,077",
-      "change_pct": 12.1,
+      "price": "$2,074",
+      "change_pct": 11.93,
       "up": true,
       "kind": "crypto"
     }
@@ -142,39 +142,39 @@
     ],
     "politics": [
       {
+        "title": "Pennsylvania voters split on whether Shapiro would be good president: Survey",
+        "link": "https://thehill.com/homenews/campaign/5755336-governor-shapiro-2028-election/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Zoom-In-Shapiro_012826_Invision_Evan-Agostini.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Voters in Pennsylvania have mixed feelings about whether Gov. Josh Shapiro (D) would make a good president amid widespread speculation that he could enter the 2028 race, according to a new poll. The Q",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Senators press Trump BLM nominee over past support for public land sales",
+        "link": "https://thehill.com/policy/energy-environment/5755373-pearce-public-lands-blm/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/pearcesteve_02252026getty.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Senators on Wednesday pressed President Trump\u2019s pick to lead the Bureau of Land Management (BLM) over his past statements in favor of selling some of the nation\u2019s public lands. In response to concerns",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Emanuel: Skipping Trump State of the Union doesn\u2019t help Democrats",
+        "link": "https://thehill.com/homenews/campaign/5755354-rahm-emanuel-democrats-trump-speech/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/07/AP24222186061348-e1751672407970.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Former Chicago Mayor Rahm Emanuel said that Democrats skipping Tuesday\u2019s State of the Union speech from President Trump does not help them. \u201cI think the Democrats should have shown up. Don&#8217;t be,",
+        "domain": "thehill.com"
+      },
+      {
         "title": "Thune: No agreement among GOP senators on talking filibuster",
         "link": "https://thehill.com/homenews/senate/5755328-thune-talking-filibuster/",
         "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/thunejohn_022526gn14_w.jpg?w=900",
         "logo": "https://logo.clearbit.com/thehill.com",
         "source": "The Hill",
         "snippet": "Senate Majority Leader John Thune (R-S.D.) told reporters Wednesday that there\u2019s not enough consensus in the Senate Republican conference to increase the chances of advancing voting reform by forcing ",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Roots of the Rockies: Reclaiming Colorado\u2019s Past to Understand Its Future",
-        "link": "https://thehill.com/homenews/5754499-colorado-living-archive/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Untitled-3-The_Hill_A-World-of-Travel_Youtube_Title_Card_3HS-4.png?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Colorado has long been a canvas for the American imagination: snow-capped peaks, gold rush lore, cowboy grit and ski towns perched high above the clouds. But beneath the postcard beauty lies something",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Feds raid home, office of superintendent for Los Angeles schools",
-        "link": "https://thehill.com/homenews/education/5755284-fbi-los-angeles-schools-lausd/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/11/AP25017577278279-e1764097438828.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Federal authorities are executing search warrants against Los Angeles Unified School (LAUSD) District Superintendent Alberto Carvalho. The second largest school district in the nation said it is aware",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "FCC seeks public comment on live sports broadcasting marketplace",
-        "link": "https://thehill.com/homenews/media/5755188-fcc-seeks-comment-sports-streaming/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/01/carrbrendan_011426gn03_w.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "The Federal Communications Commission (FCC) is soliciting public comment on consumer experience with live sports viewing in the streaming era. As part of a notice posted on Wednesday, the department s",
         "domain": "thehill.com"
       }
     ],
@@ -288,42 +288,6 @@
         "source": "VentureBeat AI",
         "snippet": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully",
         "domain": "venturebeat.com"
-      },
-      {
-        "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
-        "link": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/perplexity_computer.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Perplexity bundles AI models from Anthropic, Google, xAI and OpenAI in an agentic system that is designed to carry out complex workflows independently. The article Perplexity Computer bundles rival AI",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Google relaunches its AI creative studio Flow with new features and integrations",
-        "link": "https://the-decoder.com/google-relaunches-its-ai-creative-studio-flow-with-new-features-and-integrations/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_flow_update_make_it.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Google is turning its AI creative studio Flow into an all-in-one tool for images and videos, with free image generators and new editing features. The article Google relaunches its AI creative studio F",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Study shows why reasoning models often think far beyond the solution",
-        "link": "https://the-decoder.com/study-shows-why-reasoning-models-often-think-far-beyond-the-solution/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Does-Your-Reasoning-Model-Know-When-To-Stop.jpeg",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Large reasoning models frequently think well past the correct answer: cross-checking, reformulating, and confirming what they already got right. A new Bytedance study shows the models actually know wh",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Adobe's new Firefly \"Quick Cut\" tool turns raw footage into a rough edit from a text prompt",
-        "link": "https://the-decoder.com/adobes-new-firefly-quick-cut-tool-turns-raw-footage-into-a-rough-edit-from-a-text-prompt/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/adobe_quick_cut_teaser.webp",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Adobe Firefly can now automatically create a rough cut from raw footage. The new \"Quick Cut\" tool takes over the tedious first edit for creators. The article Adobe&#039;s new Firefly &quot;Quick Cut&q",
-        "domain": "the-decoder.com"
       }
     ],
     "entertainment": [
@@ -364,6 +328,15 @@
         "domain": "variety.com"
       },
       {
+        "title": "BritBox\u2019s New Doomed Royal Romance Gets Devastating First Look [Exclusive]",
+        "link": "https://collider.com/the-lady-ed-speleers-mia-mckenna-bruce-image-royal-romance-scandal-murder-britbox/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-lady-feature-2.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Get an exclusive first look at BritBox's upcoming true crime drama The Lady, featuring Mia McKenna-Bruce and Ed Speleers in a twisted tale of love.",
+        "domain": "collider.com"
+      },
+      {
         "title": "The Fourth and Final 'Terrifier' Movie Gets a Scary Good Update From Director",
         "link": "https://collider.com/terrifier-4-script-update-art-the-clown-final-movie-pre-production-start-spring-2026/",
         "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/9754822.jpg",
@@ -388,15 +361,6 @@
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
         "snippet": "Yellowjackets Season 4 has added Molly Ringwald in a recurring role for the show's final chapter. Get the details on who she's playing here.",
-        "domain": "collider.com"
-      },
-      {
-        "title": "Steven Spielberg Cast Vin Diesel in 'Saving Private Ryan' for This Surprising Reason",
-        "link": "https://collider.com/saving-private-ryan-vin-diesel-steven-spielberg/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/03/vin-diesel-saving-private-ryan.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Vin Diesel\u2019s role in Steven Spielberg\u2019s Saving Private Ryan was reportedly written specifically for him.",
         "domain": "collider.com"
       }
     ],
@@ -512,6 +476,15 @@
         "domain": "wpr.org"
       },
       {
+        "title": "Edison Development Faces Tax Delinquency, More Liens",
+        "link": "https://urbanmilwaukee.com/2026/02/25/edison-development-faces-tax-delinquency-more-liens/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2025/09/IMG_2804-150x150.jpeg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Mass timber tower project stalled, faces $14 million in liens, other issues.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
         "title": "Knickerbocker Hotel Unveils Plans For Bakery and Cafe",
         "link": "https://urbanmilwaukee.com/2026/02/25/knickerbocker-hotel-unveils-plans-for-bakery-and-cafe/",
         "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/20260225laposada-150x150.jpg",
@@ -536,15 +509,6 @@
         "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
         "source": "Urban Milwaukee",
         "snippet": "It\u2019s done worse than 42 states in growth of average household income. Why?",
-        "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "Our Lady of Guadalupe Comes to Milwaukee",
-        "link": "https://urbanmilwaukee.com/2026/02/25/our-lady-of-guadalupe-comes-to-milwaukee/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/DSC_1797-scaled-1-150x150.jpg",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "Iconic Catholic statue on world tour will be displayed at Basilica of St. Josaphat.",
         "domain": "urbanmilwaukee.com"
       }
     ],
@@ -1019,5 +983,11 @@
       "data"
     ]
   },
-  "msg_compact": "\ud83c\udf19 **Wednesday, Feb 25 Briefing**\n\ud83c\udf21\ufe0f Weather unavailable (<urlopen error [Errno 54] Connection reset by peer>)\n\u2192 Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).\n\ud83d\udd17 <https://nyx-daily.vercel.app>"
+  "word_of_the_day": {
+    "word": "Truculent",
+    "type": "adjective",
+    "definition": "Eager or quick to argue or fight; aggressively defiant.",
+    "use_it": "The truculent negotiator torpedoed the deal before it started."
+  },
+  "msg_compact": "\ud83c\udf19 **Wednesday, Feb 25 Briefing**\n\u2601\ufe0f Waukesha \u00b7 27\u00b0F (feels 15\u00b0F) \u00b7 Partly cloudy \u00b7 H:31\u00b0 L:19\u00b0\n\u2192 Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).\n\ud83d\udd17 <https://nyx-daily.vercel.app>"
 }
