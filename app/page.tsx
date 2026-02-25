@@ -1,16 +1,19 @@
 import { getTodaysBriefing } from '@/lib/data';
-import WeatherBar from '@/components/briefing/WeatherBar';
 import MarketsBar from '@/components/briefing/MarketsBar';
+import HeroSection from '@/components/briefing/HeroSection';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import NasaApod from '@/components/briefing/NasaApod';
+import WeatherCard from '@/components/briefing/WeatherCard';
+import WordOfDay from '@/components/briefing/WordOfDay';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
 import OnThisDay from '@/components/briefing/OnThisDay';
 import WorkoutCard from '@/components/briefing/WorkoutCard';
 import WellnessBlock from '@/components/briefing/WellnessBlock';
-import QuoteCard from '@/components/briefing/QuoteCard';
+import ReadingProgress from '@/components/briefing/ReadingProgress';
+import ScrollToTop from '@/components/briefing/ScrollToTop';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
@@ -28,12 +31,26 @@ function getWeekNumber(dateStr: string): number {
   return Math.ceil((dayOfYear(d) + jan1Day) / 7);
 }
 
-/** Format date like "TUESDAY, FEBRUARY 24" */
+/** Returns the day of the year (1-indexed) */
+function getDayOfYear(dateStr: string): number {
+  const d = new Date(dateStr + 'T12:00:00');
+  const start = new Date(d.getFullYear(), 0, 0);
+  const diff = d.getTime() - start.getTime();
+  return Math.floor(diff / 86_400_000);
+}
+
+/** Format date like "WEDNESDAY, FEBRUARY 25, 2026" */
 function formatHeroDate(dateStr: string, day: string): string {
   const d = new Date(dateStr + 'T12:00:00');
   const month = d.toLocaleDateString('en-US', { month: 'long' }).toUpperCase();
   const dom = d.getDate();
-  return `${day.toUpperCase()}, ${month} ${dom}`;
+  const year = d.getFullYear();
+  return `${day.toUpperCase()}, ${month} ${dom}, ${year}`;
+}
+
+/** Count total news headlines */
+function countHeadlines(news: Record<string, Array<unknown>>): number {
+  return Object.values(news).reduce((sum, arr) => sum + arr.length, 0);
 }
 
 export default async function HomePage() {
@@ -52,25 +69,29 @@ export default async function HomePage() {
   }
 
   const weekNum = getWeekNumber(briefing.date);
+  const dayOfYear = getDayOfYear(briefing.date);
   const heroDateStr = formatHeroDate(briefing.date, briefing.day);
+  const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
+  const marketsLive = briefing.markets && briefing.markets.length > 0;
 
   return (
     <>
-      <WeatherBar weather={briefing.weather} date={briefing.date} day={briefing.day} />
-      <MarketsBar markets={briefing.markets} />
+      <ReadingProgress />
+      <ScrollToTop />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-violet-600/5 via-transparent to-cyan-600/[0.03] border-b border-white/[0.04] mb-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h2 className="text-3xl font-bold text-slate-100 tracking-tight">
-            🌙 {heroDateStr}
-          </h2>
-          <p className="text-slate-500 text-sm mt-1">Week {weekNum} of {new Date(briefing.date + 'T12:00:00').getFullYear()}</p>
-        </div>
-      </section>
+      {/* Full-width hero */}
+      <HeroSection
+        briefing={briefing}
+        weekNum={weekNum}
+        heroDateStr={heroDateStr}
+        dayOfYear={dayOfYear}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Markets bar */}
+        <MarketsBar markets={briefing.markets} />
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
           {/* LEFT COLUMN — 2/3 width */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <FocusCard focus={briefing.focus} />
@@ -81,6 +102,10 @@ export default async function HomePage() {
 
           {/* RIGHT COLUMN — 1/3 width */}
           <div className="flex flex-col gap-6">
+            <WeatherCard weather={briefing.weather} />
+            {briefing.word_of_the_day && (
+              <WordOfDay word={briefing.word_of_the_day} />
+            )}
             <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
             <SchoolDeadlines deadlines={briefing.school_deadlines} />
             {briefing.on_this_day && briefing.on_this_day.length > 0 && (
@@ -96,24 +121,35 @@ export default async function HomePage() {
           </div>
         </div>
 
-        {/* Quote — full width */}
-        <div className="mt-6">
-          <QuoteCard quote={briefing.quote} author={briefing.author} />
-        </div>
-
         {/* Footer */}
-        <div className="mt-8 pb-8 flex items-center justify-between text-xs text-slate-600">
-          <span>
-            Generated at{' '}
-            {new Date(briefing.generated_at).toLocaleTimeString('en-US', {
-              hour: '2-digit',
-              minute: '2-digit',
-            })}
-          </span>
-          <Link href="/archive" className="hover:text-slate-400 transition-colors duration-200">
-            View past briefings →
+        <footer className="mt-10 pb-10 border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span>
+              Generated at{' '}
+              {new Date(briefing.generated_at).toLocaleTimeString('en-US', {
+                hour: 'numeric',
+                minute: '2-digit',
+              })}
+            </span>
+            <span className="text-slate-700">·</span>
+            <span>{headlineCount} headlines</span>
+            {marketsLive && (
+              <>
+                <span className="text-slate-700">·</span>
+                <span className="flex items-center gap-1">
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  Markets live
+                </span>
+              </>
+            )}
+          </div>
+          <Link
+            href="/archive"
+            className="hover:text-slate-400 transition-colors duration-200 flex items-center gap-1"
+          >
+            View archive →
           </Link>
-        </div>
+        </footer>
       </div>
     </>
   );

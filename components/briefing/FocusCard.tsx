@@ -1,24 +1,30 @@
-import { Target } from 'lucide-react';
-import SectionHeader from '@/components/ui/SectionHeader';
-
 interface FocusCardProps {
   focus?: string | null;
 }
 
 export default function FocusCard({ focus }: FocusCardProps) {
   if (!focus) return null;
-  return (
-    <div className="rounded-xl border border-purple-500/20 bg-[#0d0d1a] p-5 relative overflow-hidden">
-      {/* Purple glow accent */}
-      <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#8b5cf6] to-transparent" />
-      <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl pointer-events-none" />
 
-      <SectionHeader title="Today's Focus" />
-      <div className="flex items-start gap-3">
-        <div className="mt-0.5 p-2 rounded-lg bg-purple-500/10 border border-purple-500/20 shrink-0">
-          <Target size={16} className="text-[#8b5cf6]" />
-        </div>
-        <p className="text-slate-100 text-base font-medium leading-relaxed">{focus}</p>
+  // Strip markdown bold markers for clean display
+  const focusClean = focus.replace(/\*\*/g, '').replace(/^[→🚨]\s*/, '').trim();
+
+  return (
+    <div className="rounded-xl border border-white/[0.06] border-l-4 border-l-violet-500 bg-gradient-to-r from-violet-500/[0.08] to-transparent p-5 relative overflow-hidden">
+      {/* Ambient glow */}
+      <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
+
+      {/* Header */}
+      <div className="flex items-center gap-2 mb-3 relative z-10">
+        <span className="text-xs font-semibold tracking-[0.15em] uppercase text-slate-500">
+          Today&apos;s Priority
+        </span>
+        <div className="flex-1 h-px bg-white/[0.04]" />
+      </div>
+
+      {/* Content */}
+      <div className="flex items-start gap-4 relative z-10">
+        <span className="text-2xl text-violet-400 leading-none mt-0.5 shrink-0">⚡</span>
+        <p className="text-lg font-medium text-slate-100 leading-relaxed">{focusClean}</p>
       </div>
     </div>
   );

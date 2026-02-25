@@ -1,3 +1,10 @@
+export interface WordOfDay {
+  word: string;
+  type: string;        // "noun", "adjective", etc.
+  definition: string;
+  use_it: string;      // example sentence
+}
+
 export interface NewsItem {
   title: string;
   link: string;
@@ -96,4 +103,5 @@ export interface DailyBriefing {
   markets?: MarketItem[];
   apod?: NasaApod | null;
   on_this_day?: OnThisDayEvent[];
+  word_of_the_day?: WordOfDay;
 }
