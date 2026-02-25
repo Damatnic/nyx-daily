@@ -2,73 +2,175 @@
   "generated_at": "2026-02-24T08:00:00",
   "date": "2026-02-24",
   "day": "Tuesday",
-  "weather": "☁️ Waukesha · 32°F (feels 25°F) · Overcast · H:38° L:27°",
+  "weather": "\u2601\ufe0f Waukesha \u00b7 32\u00b0F (feels 25\u00b0F) \u00b7 Overcast \u00b7 H:38\u00b0 L:27\u00b0",
   "quote": "The question isn't who is going to let me; it's who is going to stop me.",
   "author": "Ayn Rand",
-  "focus": "SQL Unit 1 Project due Thu — today's the day to push through it.",
+  "focus": "SQL Unit 1 Project due Thu \u2014 today's the day to push through it.",
   "school_deadlines": [
-    { "course": "SQL", "desc": "Unit 1 Project", "due_date": "2026-02-26", "due_str": "Thu Feb 26", "days": 2, "weight": "high", "done": false },
-    { "course": "Stats", "desc": "Homework 9 - Hypothesis Testing", "due_date": "2026-02-28", "due_str": "Sat Feb 28", "days": 4, "weight": "low", "done": false },
-    { "course": "Stats", "desc": "CLS Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false },
-    { "course": "Stats", "desc": "Extra Quiz 5 - Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false }
+    {
+      "course": "SQL",
+      "desc": "Unit 1 Project",
+      "due_date": "2026-02-26",
+      "due_str": "Thu Feb 26",
+      "days": 2,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Stats",
+      "desc": "Homework 9 - Hypothesis Testing",
+      "due_date": "2026-02-28",
+      "due_str": "Sat Feb 28",
+      "days": 4,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Stats",
+      "desc": "CLS Hypothesis Testing",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 5,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Stats",
+      "desc": "Extra Quiz 5 - Hypothesis Testing",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 5,
+      "weight": "medium",
+      "done": false
+    }
   ],
-  "calendar": ["No events scheduled today"],
+  "calendar": [
+    "No events scheduled today"
+  ],
   "gmail_summary": "2 unread emails",
   "news": {
     "us_news": [
-      { "title": "Senate passes bipartisan infrastructure amendment", "link": "https://axios.com" },
-      { "title": "Federal Reserve signals rate decision coming next week", "link": "https://npr.org" }
+      {
+        "title": "Senate passes bipartisan infrastructure amendment",
+        "link": "https://axios.com"
+      },
+      {
+        "title": "Federal Reserve signals rate decision coming next week",
+        "link": "https://npr.org"
+      }
     ],
     "politics": [
-      { "title": "White House releases updated AI executive order framework", "link": "https://thehill.com" },
-      { "title": "Congress debates social media platform accountability bill", "link": "https://cnn.com" }
+      {
+        "title": "White House releases updated AI executive order framework",
+        "link": "https://thehill.com"
+      },
+      {
+        "title": "Congress debates social media platform accountability bill",
+        "link": "https://cnn.com"
+      }
     ],
     "tech": [
-      { "title": "OpenAI announces GPT-5 availability expanding to all users", "link": "https://techcrunch.com" },
-      { "title": "Apple Vision Pro gets major productivity update", "link": "https://techcrunch.com" },
-      { "title": "GitHub Copilot adds autonomous PR review mode", "link": "https://news.ycombinator.com" }
+      {
+        "title": "OpenAI announces GPT-5 availability expanding to all users",
+        "link": "https://techcrunch.com"
+      },
+      {
+        "title": "Apple Vision Pro gets major productivity update",
+        "link": "https://techcrunch.com"
+      },
+      {
+        "title": "GitHub Copilot adds autonomous PR review mode",
+        "link": "https://news.ycombinator.com"
+      }
     ],
     "ai": [
-      { "title": "Google DeepMind releases new reasoning model beating o3", "link": "https://the-decoder.com" },
-      { "title": "Anthropic Claude 3.7 adds real-time web browsing", "link": "https://venturebeat.com" }
+      {
+        "title": "Google DeepMind releases new reasoning model beating o3",
+        "link": "https://the-decoder.com"
+      },
+      {
+        "title": "Anthropic Claude 3.7 adds real-time web browsing",
+        "link": "https://venturebeat.com"
+      }
     ],
     "entertainment": [
-      { "title": "Dune 3 officially greenlit with original cast returning", "link": "https://variety.com" },
-      { "title": "Netflix drops trailer for most expensive original series yet", "link": "https://collider.com" }
+      {
+        "title": "Dune 3 officially greenlit with original cast returning",
+        "link": "https://variety.com"
+      },
+      {
+        "title": "Netflix drops trailer for most expensive original series yet",
+        "link": "https://collider.com"
+      }
     ],
     "weird_news": [
-      { "title": "Man discovers medieval sword while cleaning out grandfather's garage", "link": "https://odditycentral.com" }
+      {
+        "title": "Man discovers medieval sword while cleaning out grandfather's garage",
+        "link": "https://odditycentral.com"
+      }
     ],
     "wisconsin": [
-      { "title": "Milwaukee Bucks trade deadline moves shake up playoff picture", "link": "https://urbanmilwaukee.com" }
+      {
+        "title": "Milwaukee Bucks trade deadline moves shake up playoff picture",
+        "link": "https://urbanmilwaukee.com"
+      }
     ],
     "til": [
-      { "title": "TIL that octopuses have three hearts, two of which stop beating when they swim", "link": "https://reddit.com/r/todayilearned" }
+      {
+        "title": "TIL that octopuses have three hearts, two of which stop beating when they swim",
+        "link": "https://reddit.com/r/todayilearned"
+      }
     ]
   },
   "app_of_the_day": {
-    "name": "Perplexity AI",
-    "category": "AI Research",
-    "what": "An AI-powered search engine that answers questions with cited sources in conversational format — no link lists, just answers.",
-    "why": "When you need to research something fast, Perplexity cuts Google's 10-link scroll to a single sourced answer. Huge time saver for students and builders.",
-    "verdict": "Replace your first Google search with this. Free tier is genuinely excellent.",
-    "link": "https://perplexity.ai",
+    "name": "Anki",
+    "category": "Spaced Repetition Learning",
+    "what": "Flashcard app with a proven spaced repetition algorithm \u2014 shows you cards right before you'd forget them, maximizing memory retention with minimum review time.",
+    "why": "The most evidence-backed way to memorize anything long-term. Used by med students, language learners, and anyone who needs to retain large amounts of information.",
+    "verdict": "Make a deck for stats formulas and review 10 minutes per day. You'll have them memorized for the final with zero cramming.",
+    "link": "https://apps.ankiweb.net",
     "free": true,
-    "freemium": true
+    "freemium": false,
+    "tags": [
+      "learning",
+      "memory",
+      "studying",
+      "flashcards"
+    ]
   },
   "workout": {
-    "name": "Upper Body",
+    "name": "Upper Body (Home)",
     "exercises": [
-      { "name": "Push-ups", "reps": "3 × 15", "note": "Wide grip — chest focus" },
-      { "name": "Pike Push-ups", "reps": "3 × 10", "note": "Shoulder press alternative" },
-      { "name": "Tricep Dips (chair)", "reps": "3 × 12", "note": "Keep elbows close" },
-      { "name": "Superman Hold", "reps": "3 × 30s", "note": "Lower back + rear delts" },
-      { "name": "Plank", "reps": "3 × 45s", "note": "Core stays tight" }
+      {
+        "name": "Push-ups",
+        "reps": "3 x 15",
+        "note": "Wide grip \u2014 chest focus"
+      },
+      {
+        "name": "Pike Push-ups",
+        "reps": "3 x 10",
+        "note": "Shoulder press alternative, no equipment needed"
+      },
+      {
+        "name": "Tricep Dips (chair)",
+        "reps": "3 x 12",
+        "note": "Use any sturdy chair, elbows close to body"
+      },
+      {
+        "name": "Superman Hold",
+        "reps": "3 x 30s",
+        "note": "Lie face down, lift arms and legs \u2014 lower back and rear delts"
+      },
+      {
+        "name": "Plank",
+        "reps": "3 x 45s",
+        "note": "Core straight, don't let hips sag"
+      }
     ]
   },
   "breathwork": {
     "name": "Box Breathing",
-    "steps": "In 4s → Hold 4s → Out 4s → Hold 4s",
+    "steps": "In 4s \u2192 Hold 4s \u2192 Out 4s \u2192 Hold 4s",
     "rounds": 4
   },
   "health_tip": "Drink a full glass of water before your first coffee. Rehydrates and cuts false hunger signals.",
