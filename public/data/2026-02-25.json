@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-02-25T14:05:54.564878",
+  "day": "Wednesday",
+  "date": "2026-02-25",
+  "weather": "\ud83c\udf21\ufe0f Weather unavailable (The read operation timed out)",
+  "quote": "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win.",
+  "author": "Stephen King",
+  "markets": [
+    {
+      "label": "S&P 500",
+      "symbol": "^GSPC",
+      "price": "6,948.43",
+      "change_pct": 1.62,
+      "up": true,
+      "kind": "index"
+    },
+    {
+      "label": "NASDAQ",
+      "symbol": "^IXIC",
+      "price": "23,154",
+      "change_pct": 2.33,
+      "up": true,
+      "kind": "index"
+    },
+    {
+      "label": "BTC",
+      "symbol": "BTC-USD",
+      "price": "$69,083",
+      "change_pct": 7.81,
+      "up": true,
+      "kind": "crypto"
+    },
+    {
+      "label": "ETH",
+      "symbol": "ETH-USD",
+      "price": "$2,074",
+      "change_pct": 11.91,
+      "up": true,
+      "kind": "crypto"
+    }
+  ],
+  "apod": {
+    "title": "The Egg Nebula from the Hubble Telescope",
+    "explanation": "ver wonder what it would look like to crack open the Sun? The Egg Nebula, a dying Sun-like star, can unscramble this question. Pictured is a combination of several visible and infrared images of the nebula (also known as RAFGL 2688 or CRL 2688) taken with the Hubble Space Telescope. The star has shed its outer layers, and a bright, hot core (or \"yolk\") now illuminates the milky \"egg white\" shells ",
+    "url": "https://apod.nasa.gov/apod/image/2602/Egg_Hubble_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2602/Egg_Hubble_2048.jpg",
+    "media_type": "image",
+    "date": "2026-02-25"
+  },
+  "on_this_day": [
+    {
+      "year": 2016,
+      "text": "Three people are killed and fourteen others injured in a series of shootings in the small Kansas cities of Newton and Hesston.",
+      "link": "https://en.wikipedia.org/wiki/Hesston_shootings"
+    },
+    {
+      "year": 2015,
+      "text": "At least 310 people are killed in avalanches in northeastern Afghanistan.",
+      "link": "https://en.wikipedia.org/wiki/2015_Afghanistan_avalanches"
+    },
+    {
+      "year": 2009,
+      "text": "Soldiers of the Bangladesh Rifles mutiny at their headquarters in Pilkhana, Dhaka, Bangladesh, resulting in 74 deaths, including 57 army officials.",
+      "link": "https://en.wikipedia.org/wiki/Border_Guard_Bangladesh"
+    }
+  ],
+  "app_of_the_day": {
+    "name": "Brilliant",
+    "category": "Interactive Learning",
+    "what": "Interactive learning platform for math, statistics, data science, computer science, and AI \u2014 through visual, hands-on problems rather than lectures.",
+    "why": "If textbooks aren't clicking, Brilliant's visual approach makes abstract concepts concrete. The stats and probability courses are especially good.",
+    "verdict": "The free lessons are worth trying, especially if you're struggling with any stats concept. Visual learners love this.",
+    "link": "https://brilliant.org",
+    "free": false,
+    "freemium": true,
+    "tags": [
+      "learning",
+      "math",
+      "statistics",
+      "data"
+    ]
+  }
+}
