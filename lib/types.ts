@@ -5,6 +5,12 @@ export interface WordOfDay {
   use_it: string;      // example sentence
 }
 
+export interface DailyFact {
+  category: string;    // "Space", "Science", "Psychology", etc.
+  emoji: string;
+  fact: string;
+}
+
 export interface NewsItem {
   title: string;
   link: string;
@@ -104,4 +110,5 @@ export interface DailyBriefing {
   apod?: NasaApod | null;
   on_this_day?: OnThisDayEvent[];
   word_of_the_day?: WordOfDay;
+  facts_of_the_day?: DailyFact[];
 }

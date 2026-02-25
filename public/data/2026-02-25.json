@@ -989,5 +989,22 @@
     "definition": "Eager or quick to argue or fight; aggressively defiant.",
     "use_it": "The truculent negotiator torpedoed the deal before it started."
   },
-  "msg_compact": "\ud83c\udf19 **Wednesday, Feb 25 Briefing**\n\u2601\ufe0f Waukesha \u00b7 27\u00b0F (feels 15\u00b0F) \u00b7 Partly cloudy \u00b7 H:31\u00b0 L:19\u00b0\n\u2192 Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).\n\ud83d\udd17 <https://nyx-daily.vercel.app>"
+  "msg_compact": "\ud83c\udf19 **Wednesday, Feb 25 Briefing**\n\u2601\ufe0f Waukesha \u00b7 27\u00b0F (feels 15\u00b0F) \u00b7 Partly cloudy \u00b7 H:31\u00b0 L:19\u00b0\n\u2192 Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).\n\ud83d\udd17 <https://nyx-daily.vercel.app>",
+  "facts_of_the_day": [
+    {
+      "category": "History",
+      "emoji": "\ud83d\udcdc",
+      "fact": "Nintendo was founded in 1889 \u2014 originally as a playing card company. They've been in the entertainment business for over 130 years."
+    },
+    {
+      "category": "Nature",
+      "emoji": "\ud83c\udf3f",
+      "fact": "Tardigrades (water bears) can survive in the vacuum of space, near-absolute zero, and withstand radiation 1,000x lethal to humans."
+    },
+    {
+      "category": "Space",
+      "emoji": "\ud83d\ude80",
+      "fact": "There are more stars in the observable universe than grains of sand on all of Earth's beaches."
+    }
+  ]
 }

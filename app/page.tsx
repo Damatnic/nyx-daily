@@ -6,7 +6,7 @@ import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import NasaApod from '@/components/briefing/NasaApod';
 import WeatherCard from '@/components/briefing/WeatherCard';
-import WordOfDay from '@/components/briefing/WordOfDay';
+import DailyExtras from '@/components/briefing/DailyExtras';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
 import OnThisDay from '@/components/briefing/OnThisDay';
@@ -103,9 +103,10 @@ export default async function HomePage() {
           {/* RIGHT COLUMN — 1/3 width */}
           <div className="flex flex-col gap-6">
             <WeatherCard weather={briefing.weather} />
-            {briefing.word_of_the_day && (
-              <WordOfDay word={briefing.word_of_the_day} />
-            )}
+            <DailyExtras
+              word={briefing.word_of_the_day}
+              facts={briefing.facts_of_the_day}
+            />
             <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
             <SchoolDeadlines deadlines={briefing.school_deadlines} />
             {briefing.on_this_day && briefing.on_this_day.length > 0 && (
