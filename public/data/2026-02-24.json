@@ -51,74 +51,342 @@
   "news": {
     "us_news": [
       {
-        "title": "Senate passes bipartisan infrastructure amendment",
-        "link": "https://axios.com"
+        "title": "A pair of House Republicans plans to join Democrats in SOTU Epstein protests",
+        "link": "https://www.axios.com/2026/02/24/epstein-trump-state-of-the-union-mace-massie",
+        "image": "https://images.axios.com/7ExA6sOu7KHQlEQipo5QHfMwhP0=/0x0:6176x3474/1366x768/2026/02/24/1771966834884.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "At least two House Republicans who have been at the forefront of transparency efforts around the Jeffrey Epstein files are planning to display their support for the late convicted sex offender's victi",
+        "domain": "axios.com"
       },
       {
-        "title": "Federal Reserve signals rate decision coming next week",
-        "link": "https://npr.org"
-      }
-    ],
-    "politics": [
-      {
-        "title": "White House releases updated AI executive order framework",
-        "link": "https://thehill.com"
+        "title": "Waymo robotaxis now available in 10 cities",
+        "link": "https://www.axios.com/2026/02/24/waymo-robotaxis-now-available-in-10-cities",
+        "image": "https://datawrapper.dwcdn.net/lO0Jl/fallback.png",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Data: Waymo; Map: Jacque Schrag/AxiosWaymo is accelerating its rollout of robotaxis in the U.S., adding four new cities in Texas and Florida this week as self-driving technology begins to penetrate ma",
+        "domain": "axios.com"
       },
       {
-        "title": "Congress debates social media platform accountability bill",
-        "link": "https://cnn.com"
+        "title": "Trump vows a lengthy SOTU speech. These are the records",
+        "link": "https://www.axios.com/2026/02/24/trump-state-of-the-union-length-record",
+        "image": "https://graphics.axios.com/hermesv2/2026-02-19-1535-longest-presidential-speeches/fallbacks/2026-02-19-1535-longest-presidential-speeches-fallback.png",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Data: The American Presidency Project; Chart: Axios VisualsPresident Trump holds the crown for longest address to Congress on record at 100 minutes in 2025 \u2014 and he warned that he might be be primed b",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Who will \u2014 and won't \u2014 be guests at the State of the Union address",
+        "link": "https://www.npr.org/2026/02/24/nx-s1-5723955/trump-congress-state-union-guests",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Invitees at Tuesday night's address by President Trump include the gold-medalist men's U.S. hockey team, while Democratic lawmakers have invited several Epstein survivors.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Read NPR's annotated fact check of President Trump's State of the Union",
+        "link": "https://www.npr.org/2026/02/24/nx-s1-5716277/trump-state-union-fact-check",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "As President Trump delivers his State of the Union address, reporters from across NPR's newsroom will fact check his speech and offer context.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "President Trump set to deliver first State of the Union address of his second term",
+        "link": "https://www.npr.org/2026/02/24/nx-s1-5716163/trump-congress-state-union",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Facing low approval ratings and ahead of midterm elections in November, President Trump delivers the first State of the Union address of his second term as president Tuesday night.",
+        "domain": "npr.org"
       }
     ],
     "tech": [
       {
-        "title": "OpenAI announces GPT-5 availability expanding to all users",
-        "link": "https://techcrunch.com"
+        "title": "Nvidia challenger AI chip startup MatX raised $500M",
+        "link": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "The startup was founded by former Google TPU engineers in 2023.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Apple Vision Pro gets major productivity update",
-        "link": "https://techcrunch.com"
+        "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
+        "link": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Major automakers, tech giants, AI companies, and chipmakers are all trying to get a piece of Wayve.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "GitHub Copilot adds autonomous PR review mode",
-        "link": "https://news.ycombinator.com"
+        "title": "Spanish \u2018soonicorn\u2019 Multiverse Computing releases free compressed AI model",
+        "link": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Spanish startup Multiverse Computing has released a new version of its HyperNova 60B model on Hugging Face that, it says, bests Mistral's model.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Corgi Labs (YC W23) Is Hiring",
+        "link": "https://www.ycombinator.com/companies/corgi-labs/jobs/ZiEIf7a-founders-associate",
+        "image": null,
+        "logo": "https://logo.clearbit.com/ycombinator.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.ycombinator.com/companies/corgi-labs/jobs/ZiEIf7a-founders-associate Comments URL: https://news.ycombinator.com/item?id=47145911 Points: 0 # Comments: 0",
+        "domain": "ycombinator.com"
+      },
+      {
+        "title": "Amazon Busted for Widespread Scheme to Inflate Prices Across the Economy",
+        "link": "https://www.thebignewsletter.com/p/amazon-busted-for-widespread-price",
+        "image": null,
+        "logo": "https://logo.clearbit.com/thebignewsletter.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.thebignewsletter.com/p/amazon-busted-for-widespread-price Comments URL: https://news.ycombinator.com/item?id=47145907 Points: 11 # Comments: 1",
+        "domain": "thebignewsletter.com"
+      },
+      {
+        "title": "US Military leaders meet with Anthropic to argue against Claude safeguards",
+        "link": "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai Comments URL: https://news.ycombinator.com/item?id=47145551 Points: 14 # Comments: 0",
+        "domain": "theguardian.com"
       }
     ],
     "ai": [
       {
-        "title": "Google DeepMind releases new reasoning model beating o3",
-        "link": "https://the-decoder.com"
+        "title": "Claude can now jump between Excel and PowerPoint on its own",
+        "link": "https://the-decoder.com/claude-now-works-independently-across-excel-and-powerpoint/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/01/claude_cowork_logo-scaled.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Anthropic now lets Claude switch independently between Excel and PowerPoint - for example, running an analysis and then building a presentation directly from the results. The article Claude can now ju",
+        "domain": "the-decoder.com"
       },
       {
-        "title": "Anthropic Claude 3.7 adds real-time web browsing",
-        "link": "https://venturebeat.com"
+        "title": "Inception launches Mercury 2, the first diffusion-based language reasoning model",
+        "link": "https://the-decoder.com/inception-launches-mercury-2-the-first-diffusion-based-language-reasoning-model/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/mercury_2_title.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Mercury 2 from Inception is the first diffusion-based reasoning model. Instead of generating text word by word, it refines entire passages in parallel, making it more than five times faster than conve",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Deepmind suggests AI should occasionally assign humans busywork so we do not forget how to do our jobs",
+        "link": "https://the-decoder.com/deepmind-suggests-ai-should-occasionally-assign-humans-busywork-so-we-do-not-forget-how-to-do-our-jobs/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google-deepmind-intelligent-ai-delegation-nano-banana-pro.jpg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "AI systems should sometimes give tasks to humans they could easily handle themselves, just so people don't forget how to do their jobs. That's one of the more striking recommendations from a new Googl",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has cap",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spen",
+        "domain": "venturebeat.com"
       }
     ],
     "entertainment": [
       {
-        "title": "Dune 3 officially greenlit with original cast returning",
-        "link": "https://variety.com"
+        "title": "Cardi B, \u2018The Don Lemon Show\u2019 and SZA Win on Night 2 of NAACP Image Awards\u2019 Virtual Pre-Show",
+        "link": "https://variety.com/2026/awards/news/naacp-image-awards-winners-list-1236670835/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Cardi-B-Don-Lemon-SZA.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Cardi B, Don Lemon and SZA joined Michelle Obama and Kendrick Lamar as NAACP Image Award winners on night 2 of the virtual pre-show. Cardi B won three Image Awards on Tuesday night, including outstand",
+        "domain": "variety.com"
       },
       {
-        "title": "Netflix drops trailer for most expensive original series yet",
-        "link": "https://collider.com"
+        "title": "David Ellison to Attend Donald Trump\u2019s State of the Union Address After Paramount Ups Warner Bros. Bid",
+        "link": "https://variety.com/2026/film/news/david-ellison-donald-trump-state-of-the-union-paramount-1236672123/",
+        "image": "https://variety.com/wp-content/uploads/2025/08/David-Ellison-Donald-Trump.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Paramount Skydance boss David Ellison will be in attendance at Donald Trump\u2019s State of the Union address on Tuesday night. The news comes hours after his studio upped its bid for the entirety of Warne",
+        "domain": "variety.com"
+      },
+      {
+        "title": "\u2018Happy Birthday\u2019 Review: Egypt\u2019s Oscar Submission Is an Accomplished Debut About a Young Cairo Girl\u2019s Difficult Life",
+        "link": "https://variety.com/2026/film/reviews/happy-birthday-review-egypt-oscar-submission-1236669933/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/large_Happy_Birthday-Clean-16x9-01.png",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "From the trifecta of prizes \u201cHappy Birthday\u201d earned during its Tribeca world premiere in 2025 to the multiple audience awards and other kudos it collected on the international festival circuit, plus, ",
+        "domain": "variety.com"
+      },
+      {
+        "title": "\u2018Avatar: Fire and Ash\u2019 Is Less Than $1 Million Shy of Passing Its Final Box Office Milestone",
+        "link": "https://collider.com/avatar-3-fire-and-ash-less-than-1-million-away-domestic-box-office-milestone-400-million/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/avatar-fire-and-ash.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "James Cameron's Avatar: Fire and Ash is about to end its theatrical run as the trilogy's lowest-grossing entry, but can it pass one final milestone?",
+        "domain": "collider.com"
+      },
+      {
+        "title": "'The Rookie' Season 8 Confirmed for Very Important Crossover Episode",
+        "link": "https://collider.com/the-rookie-season-8-episode-9-dropout-game-changer-crossover-episode-images/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/01/the-rookie-nathan-fillion-1.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "The Rookie ventures into uncharted territory with a crossover episode featuring the online game show Game Changer from comedy outfit Dropout.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Taylor Sheridan's First 'Tulsa King' Spin-Off Scraps 'NOLA King' Title and Setting 1 Month Before Filming",
+        "link": "https://collider.com/taylor-sheridan-tulsa-king-spin-off-samuel-l-jackson-creative-overhaul-new-title-frisco-texas-setting-march-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/tulsa-king-season-3-samuel-l-jackson.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Taylor Sheridan's first Tulsa King spin-off, starring Samuel L. Jackson, is getting a creative overhaul and no longer take place in New Orleans.",
+        "domain": "collider.com"
       }
     ],
-    "weird_news": [
+    "politics": [
       {
-        "title": "Man discovers medieval sword while cleaning out grandfather's garage",
-        "link": "https://odditycentral.com"
+        "title": "Live updates: Trump arrives at Capitol for State of the Union",
+        "link": "https://thehill.com/homenews/administration/5750827-live-updates-trump-state-of-the-union/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26056062003961-e1771984150338.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "President Trump is set to deliver the first State of the Union address of his second term to Congress on Tuesday night, after rolling out an ambitious agenda with a mixed record of wins and losses. He",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Watch live: Democrats protest Trump with \u2018People\u2019s State of the Union\u2019 on National Mall",
+        "link": "https://thehill.com/homenews/5753500-watch-live-democrats-protest-trump-state-of-union-national-mall/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/10/national_mall_100125gn02_w.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "President Trump will deliver the first State of the Union address of his second term tonight, with the speech slated to begin around 9 p.m. EST. In addition to Virginia Gov. Abigail Spanberger&#8217;s",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "\u2018Abolish ICE\u2019 wins Chicago snowplow-naming contest",
+        "link": "https://thehill.com/homenews/state-watch/5753537-chicago-snowplow-political-ice/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2022/12/GettyImages-1451801341-e1671843881380.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "A snowplow-naming contest in Chicago has a politically charged winner that points to ongoing frustration with President Trump\u2019s immigration agenda \u2014 more specifically, with Immigration and Customs Enf",
+        "domain": "thehill.com"
       }
     ],
     "wisconsin": [
       {
-        "title": "Milwaukee Bucks trade deadline moves shake up playoff picture",
-        "link": "https://urbanmilwaukee.com"
+        "title": "Sponsored: The 8th House Presented by Danceworks Performance MKE",
+        "link": "https://urbanmilwaukee.com/2026/02/24/sponsored-the-8th-house-presented-by-danceworks-performance-mke-4/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/The-8th-House-150x150px-150x150.png",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Danceworks Performance MKE explores the mysterious significance of the number 8. Inspired by the forces of astrology, tarot, rebirth and transformation, The 8th House invites audiences into a world wh",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "City Hall: Downtown Parking Building\u2019s Collapse Leads to Oversight Plan",
+        "link": "https://urbanmilwaukee.com/2026/02/24/city-hall-downtown-parking-buildings-collapse-leads-to-oversight-plan/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/RIMG8586-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Council proposal requires regular structural inspections of parking structures.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "City Receives $400,000 Grant For Lead Screening",
+        "link": "https://urbanmilwaukee.com/2026/02/24/city-receives-40000-grant-for-lead-screening/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/A-students-blood-lead-levels-are-tested-at-Keefe-Avenue-Elementary-School.-Photo-taken-Feb.-24-2026-by-Sophie-Bolich.-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Monthly clinics focus on early intervention following MPS lead crisis.",
+        "domain": "urbanmilwaukee.com"
+      }
+    ],
+    "weird_news": [
+      {
+        "title": "Bizarre Weight Loss Trend Has People Using Cling Film as Mouth Condoms for Food",
+        "link": "https://www.odditycentral.com/news/bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food.html?utm_source=rss&utm_medium=rss&utm_campaign=bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A viral eating hack has people lining their mouths with cling film to trick their bodies into thinking they are eating, but without coming into contact with food. The post Bizarre Weight Loss Trend Ha",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Fired for Drinking on the Job Gets Awarded $55,000 Compensation in Court",
+        "link": "https://www.odditycentral.com/news/man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court.html?utm_source=rss&utm_medium=rss&utm_campaign=man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Spanish man fired for drinking up to 3 liters of beer during work hours was awarded $55,000 in compensation by a court of law. The post Man Fired for Drinking on the Job Gets Awarded $55,000 Compens",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Allegedly Trains Dog to Illegally Dump Trash Bags on the Side of the Road",
+        "link": "https://www.odditycentral.com/news/man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road.html?utm_source=rss&utm_medium=rss&utm_campaign=man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "An Italian man has been fined for allegedly training his dog to carry trash bags in its mouth and dump them in unauthorized places to avoid paying for trash collection. The post Man Allegedly Trains D",
+        "domain": "odditycentral.com"
       }
     ],
     "til": [
       {
-        "title": "TIL that octopuses have three hearts, two of which stop beating when they swim",
-        "link": "https://reddit.com/r/todayilearned"
+        "title": "TIL Peter Cushing, who played Grand Moff Tarkin was extremely pleased with how the film came out, got along well with the cast, and his only regret was that his character died and he couldn't appear in the sequels",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rd2zfo/til_peter_cushing_who_played_grand_moff_tarkin/",
+        "image": "https://external-preview.redd.it/mH3FkBVV_Ibu2OvrCZXZNQjxHoPkNP-d8msJ9GJdQcU.png?width=640&crop=smart&auto=webp&s=aa6ac6daf86e2e3cbbcf6f43283824de9848c060",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "TIL",
+        "snippet": "&#32; submitted by &#32; /u/Please_PM_me_Uranus [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL that Kansai International Airport in Japan reached its 30th year of service without having ever lost a single piece of luggage.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rdfvux/til_that_kansai_international_airport_in_japan/",
+        "image": "https://external-preview.redd.it/P6U62ozOG_nyh14qd-F5Sz_aqSfZRtGHI7usmIr0YTk.jpeg?width=640&crop=smart&auto=webp&s=c5f9bb0df50b3d7b1d3bf0ed31e229376609c645",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "TIL",
+        "snippet": "&#32; submitted by &#32; /u/Bob_the_blacksmith [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL During World War II, the U.S. government launched campaigns urging citizens to save waste cooking fats (bacon grease, meat drippings) to produce glycerin, a key component in manufacturing explosives like nitroglycerin.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rdc19l/til_during_world_war_ii_the_us_government/",
+        "image": "https://external-preview.redd.it/T20G8KBPuN0M-RQwG8FHxEB1UmyflyH6Cgqv7FtV0Ic.jpeg?width=640&crop=smart&auto=webp&s=d8676d3cd09560e885e5c7863dca2dbde65b0d43",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "TIL",
+        "snippet": "&#32; submitted by &#32; /u/xinxai_the_white_guy [link] &#32; [comments]",
+        "domain": "reddit.com"
       }
     ]
   },
