@@ -1,0 +1,16 @@
+[
+  { "course": "SQL", "desc": "Unit 1 Project", "due_date": "2026-02-26", "due_str": "Thu Feb 26", "days": 2, "weight": "high", "done": false },
+  { "course": "SQL", "desc": "Quiz 3 - Joins & Aggregates", "due_date": "2026-03-05", "due_str": "Thu Mar 5", "days": 9, "weight": "medium", "done": false },
+  { "course": "SQL", "desc": "Unit 2 Project", "due_date": "2026-03-19", "due_str": "Thu Mar 19", "days": 23, "weight": "high", "done": false },
+  { "course": "SQL", "desc": "Quiz 1 - SELECT basics", "due_date": "2026-02-10", "due_str": "Tue Feb 10", "days": -14, "weight": "low", "done": true },
+  { "course": "SQL", "desc": "Quiz 2 - WHERE & ORDER BY", "due_date": "2026-02-17", "due_str": "Tue Feb 17", "days": -7, "weight": "low", "done": true },
+  { "course": "Stats", "desc": "Homework 8 - Confidence Intervals", "due_date": "2026-02-21", "due_str": "Sat Feb 21", "days": -3, "weight": "low", "done": true },
+  { "course": "Stats", "desc": "Homework 9 - Hypothesis Testing", "due_date": "2026-02-28", "due_str": "Sat Feb 28", "days": 4, "weight": "low", "done": false },
+  { "course": "Stats", "desc": "CLS Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false },
+  { "course": "Stats", "desc": "Extra Quiz 5 - Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false },
+  { "course": "Stats", "desc": "Midterm Exam", "due_date": "2026-03-10", "due_str": "Tue Mar 10", "days": 14, "weight": "critical", "done": false },
+  { "course": "Stats", "desc": "Homework 7 - Sampling Distributions", "due_date": "2026-02-14", "due_str": "Sat Feb 14", "days": -10, "weight": "low", "done": true },
+  { "course": "Cybersecurity", "desc": "Lab 4 - Network Recon", "due_date": "2026-02-28", "due_str": "Sat Feb 28", "days": 4, "weight": "medium", "done": false },
+  { "course": "Cybersecurity", "desc": "Project 1 - Threat Model", "due_date": "2026-03-14", "due_str": "Sat Mar 14", "days": 18, "weight": "high", "done": false },
+  { "course": "Cybersecurity", "desc": "Lab 3 - Vulnerability Scanning", "due_date": "2026-02-14", "due_str": "Sat Feb 14", "days": -10, "weight": "medium", "done": true }
+]
