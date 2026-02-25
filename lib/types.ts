@@ -1,6 +1,11 @@
 export interface NewsItem {
   title: string;
   link: string;
+  image?: string | null;      // article thumbnail URL (may be null)
+  logo?: string | null;       // Clearbit logo URL: https://logo.clearbit.com/{domain}
+  source: string;             // source name e.g. "TechCrunch"
+  snippet?: string | null;    // 200-char description excerpt
+  domain?: string;            // e.g. "techcrunch.com"
 }
 
 export interface SchoolDeadline {
