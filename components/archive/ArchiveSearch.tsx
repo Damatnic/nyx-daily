@@ -2,8 +2,8 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { Calendar, ArrowRight, TrendingUp, TrendingDown, Search } from 'lucide-react';
-import type { DailyBriefing, MarketItem } from '@/lib/types';
+import { Calendar, ArrowRight, Search, Newspaper, Cloud } from 'lucide-react';
+import type { DailyBriefing } from '@/lib/types';
 
 interface BriefingEntry {
   date: string;
@@ -12,6 +12,33 @@ interface BriefingEntry {
 
 interface ArchiveSearchProps {
   briefings: BriefingEntry[];
+}
+
+function parseWeather(weather: string): { emoji: string; temp: string } | null {
+  // Extract emoji (first non-whitespace)
+  const emojiMatch = weather.match(/^[\p{Emoji}\u200d\uFE0F\s]+/u);
+  const emoji = emojiMatch ? emojiMatch[0].trim() : '🌤️';
+
+  // Extract temperature
+  const tempMatch = weather.match(/(\d+)°F/);
+  const temp = tempMatch ? `${tempMatch[1]}°F` : null;
+
+  if (!temp) return null;
+  return { emoji, temp };
+}
+
+function cleanFocus(focus: string): string {
+  // Remove markdown bold (**text**)
+  let cleaned = focus.replace(/\*\*/g, '');
+  // Truncate to 75 chars
+  if (cleaned.length > 75) {
+    cleaned = cleaned.slice(0, 75).trim() + '…';
+  }
+  return cleaned;
+}
+
+function countHeadlines(news: Record<string, Array<unknown>>): number {
+  return Object.values(news).reduce((sum, arr) => sum + arr.length, 0);
 }
 
 export default function ArchiveSearch({ briefings }: ArchiveSearchProps) {
@@ -98,16 +125,15 @@ export default function ArchiveSearch({ briefings }: ArchiveSearchProps) {
           {validBriefings.map(({ date, briefing }) => {
             if (!briefing) return null;
 
-            // Build compact markets snapshot
-            const markets = briefing.markets ?? [];
-            const sp500 = markets.find((m: MarketItem) => m.symbol === '^GSPC');
-            const btc = markets.find((m: MarketItem) => m.symbol === 'BTC-USD');
+            const weatherData = briefing.weather ? parseWeather(briefing.weather) : null;
+            const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
+            const cleanedFocus = briefing.focus ? cleanFocus(briefing.focus) : null;
 
             return (
               <Link
                 key={date}
                 href={`/day/${date}`}
-                className="group block rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5 hover:border-purple-500/20 hover:bg-[#0f0f1e] transition-all duration-200"
+                className="card-hover group block rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5 hover:border-purple-500/20 hover:bg-[#0f0f1e] transition-all duration-200"
               >
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="p-2 rounded-lg bg-purple-500/10 border border-purple-500/20">
@@ -128,54 +154,26 @@ export default function ArchiveSearch({ briefings }: ArchiveSearchProps) {
                   })}
                 </p>
 
-                {/* Weather summary */}
-                <p className="text-xs text-slate-400 mt-2 line-clamp-1">{briefing.weather}</p>
-
-                {/* Markets snapshot */}
-                {(sp500 || btc) && (
-                  <div className="flex items-center gap-3 mt-2 pt-2 border-t border-white/[0.04]">
-                    {sp500 && (
-                      <div className="flex items-center gap-1">
-                        {sp500.up ? (
-                          <TrendingUp size={11} className="text-emerald-400" />
-                        ) : (
-                          <TrendingDown size={11} className="text-red-400" />
-                        )}
-                        <span className="text-xs text-slate-500">S&amp;P</span>
-                        <span
-                          className={`text-xs font-mono font-medium ${
-                            sp500.up ? 'text-emerald-400' : 'text-red-400'
-                          }`}
-                        >
-                          {sp500.up ? '+' : ''}{sp500.change_pct.toFixed(2)}%
-                        </span>
-                      </div>
-                    )}
-                    {btc && (
-                      <div className="flex items-center gap-1">
-                        {btc.up ? (
-                          <TrendingUp size={11} className="text-emerald-400" />
-                        ) : (
-                          <TrendingDown size={11} className="text-red-400" />
-                        )}
-                        <span className="text-xs text-slate-500">BTC</span>
-                        <span
-                          className={`text-xs font-mono font-medium ${
-                            btc.up ? 'text-emerald-400' : 'text-red-400'
-                          }`}
-                        >
-                          {btc.up ? '+' : ''}{btc.change_pct.toFixed(2)}%
-                        </span>
-                      </div>
-                    )}
+                {/* Weather line */}
+                {weatherData && (
+                  <div className="flex items-center gap-1.5 mt-2 text-xs text-slate-400">
+                    <Cloud size={11} className="text-cyan-400" />
+                    <span>{weatherData.emoji} {weatherData.temp}</span>
                   </div>
                 )}
 
-                {briefing.focus && (
+                {/* Focus text */}
+                {cleanedFocus && (
                   <p className="text-xs text-slate-500 mt-2 line-clamp-2 border-t border-white/[0.04] pt-2">
-                    {briefing.focus}
+                    {cleanedFocus}
                   </p>
                 )}
+
+                {/* Stats row */}
+                <div className="flex items-center gap-2 mt-2 pt-2 border-t border-white/[0.04]">
+                  <Newspaper size={11} className="text-slate-500" />
+                  <span className="text-xs text-slate-500">{headlineCount} headlines</span>
+                </div>
               </Link>
             );
           })}

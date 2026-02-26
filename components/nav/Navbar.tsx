@@ -63,20 +63,23 @@ export default function Navbar() {
           </div>
 
           {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1 h-full">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  className={`relative px-3 py-1.5 h-full flex items-center text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? 'text-[#8b5cf6] bg-purple-500/10'
-                      : 'text-slate-400 hover:text-slate-100 hover:bg-white/[0.04]'
+                      ? 'text-[#8b5cf6]'
+                      : 'text-slate-400 hover:text-slate-100'
                   }`}
                 >
                   {link.label}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-0.5 bg-[#8b5cf6] rounded-t-full" />
+                  )}
                 </Link>
               );
             })}

@@ -2,6 +2,8 @@ import { getTodaysBriefing } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
 import NewsTicker from '@/components/briefing/NewsTicker';
 import HeroSection from '@/components/briefing/HeroSection';
+import UrgencyBanner from '@/components/briefing/UrgencyBanner';
+import MobilePriorityStrip from '@/components/briefing/MobilePriorityStrip';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
@@ -104,8 +106,17 @@ export default async function HomePage() {
         dayOfYear={dayOfYear}
       />
 
+      {/* Urgency banner for critical deadlines */}
+      <UrgencyBanner deadlines={briefing.school_deadlines} />
+
       {/* Full-width sticky news ticker */}
       <NewsTicker news={briefing.news} />
+
+      {/* Mobile priority strip - weather + urgent deadlines */}
+      <MobilePriorityStrip
+        school_deadlines={briefing.school_deadlines}
+        weather={briefing.weather}
+      />
 
       {/* Main content area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -123,6 +134,15 @@ export default async function HomePage() {
 
             {/* Hidden Gems */}
             <HiddenGemsSection gems={briefing.hidden_gems} />
+
+            {/* Workout Tracker - moved up for visibility */}
+            <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+
+            {/* Breathwork Card - moved up for visibility */}
+            <BreathworkCard
+              session={briefing.breathwork_session}
+              fallbackText={breathworkFallback}
+            />
 
             {/* Sports Section */}
             {briefing.sports && briefing.sports.length > 0 && (
@@ -151,15 +171,6 @@ export default async function HomePage() {
             <LifeHackCard lifeHack={briefing.life_hack} />
             <MoneyTipCard moneyTip={briefing.money_tip} />
             <HealthTipCard healthTip={briefing.health_tip} />
-
-            {/* Workout Tracker */}
-            <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-
-            {/* Breathwork Card */}
-            <BreathworkCard
-              session={briefing.breathwork_session}
-              fallbackText={breathworkFallback}
-            />
           </div>
 
           {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
@@ -190,21 +201,33 @@ export default async function HomePage() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-10 pb-10 border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
-          <div className="flex items-center gap-2 flex-wrap">
+        <footer className="mt-10 pb-10 border-t border-white/[0.04] pt-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            {/* Left side: Branding */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-semibold text-slate-400">🌙 Nyx Daily</span>
+              <span className="text-slate-700">·</span>
+              <span className="text-xs text-slate-600">Your daily briefing</span>
+            </div>
+
+            {/* Right side: View Archive */}
+            <Link
+              href="/archive"
+              className="text-xs text-slate-500 hover:text-[#8b5cf6] transition-colors duration-200 flex items-center gap-1"
+            >
+              View Archive →
+            </Link>
+          </div>
+
+          {/* Data freshness row */}
+          <div className="flex flex-wrap items-center gap-3 mt-4 text-xs text-slate-600">
             <span className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/60 inline-block" />
-              Data generated <RelativeTime timestamp={briefing.generated_at} />
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/60 inline-block animate-pulse" />
+              Data updated <RelativeTime timestamp={briefing.generated_at} />
             </span>
             <span className="text-slate-700">·</span>
-            <span>{headlineCount} headlines</span>
+            <span>{headlineCount} headlines curated</span>
           </div>
-          <Link
-            href="/archive"
-            className="hover:text-slate-400 transition-colors duration-200 flex items-center gap-1"
-          >
-            View archive →
-          </Link>
         </footer>
       </div>
     </>

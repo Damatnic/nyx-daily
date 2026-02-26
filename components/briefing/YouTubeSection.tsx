@@ -36,7 +36,7 @@ export default function YouTubeSection({ videos }: YouTubeSectionProps) {
               href={video.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-lg overflow-hidden bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04] hover:border-white/[0.08] transition-all duration-200"
+              className="card-hover group flex flex-col rounded-lg overflow-hidden bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04] hover:border-white/[0.08] transition-all duration-200"
             >
               {/* Thumbnail container */}
               <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-purple-900/20 to-slate-900/40">

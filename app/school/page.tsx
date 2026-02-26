@@ -1,70 +1,9 @@
 import { getSchoolDeadlines } from '@/lib/data';
 import { SchoolDeadline } from '@/lib/types';
 import Navbar from '@/components/nav/Navbar';
-import Badge from '@/components/ui/Badge';
-import SectionHeader from '@/components/ui/SectionHeader';
-import { CheckCircle2, Circle } from 'lucide-react';
+import SchoolPageClient from '@/components/school/SchoolPageClient';
 
 export const dynamic = 'force-dynamic';
-
-function urgencyBadge(days: number, done: boolean) {
-  if (done) return { variant: 'green' as const, label: 'Done' };
-  if (days < 0) return { variant: 'red' as const, label: 'Overdue' };
-  if (days <= 1) return { variant: 'red' as const, label: days === 0 ? 'Today' : '1d' };
-  if (days <= 3) return { variant: 'amber' as const, label: `${days}d` };
-  if (days <= 7) return { variant: 'blue' as const, label: `${days}d` };
-  return { variant: 'slate' as const, label: `${days}d` };
-}
-
-function courseColor(course: string) {
-  const l = course.toLowerCase();
-  if (l.includes('sql'))        return 'text-cyan-400';
-  if (l.includes('stat'))       return 'text-purple-400';
-  if (l.includes('visual'))     return 'text-amber-400';
-  if (l.includes('security'))   return 'text-orange-400';
-  if (l.includes('data'))       return 'text-amber-400';
-  return 'text-slate-400';
-}
-
-function courseBg(course: string) {
-  const l = course.toLowerCase();
-  if (l.includes('sql'))        return 'bg-cyan-500/5 border-cyan-500/10';
-  if (l.includes('stat'))       return 'bg-purple-500/5 border-purple-500/10';
-  if (l.includes('visual'))     return 'bg-amber-500/5 border-amber-500/10';
-  if (l.includes('security'))   return 'bg-orange-500/5 border-orange-500/10';
-  if (l.includes('data'))       return 'bg-amber-500/5 border-amber-500/10';
-  return 'bg-white/[0.02] border-white/[0.04]';
-}
-
-function DeadlineRow({ item }: { item: SchoolDeadline }) {
-  const { variant, label } = urgencyBadge(item.days, item.done);
-  return (
-    <div
-      className={`
-        flex items-start gap-3 p-3 rounded-lg border transition-all duration-200
-        ${item.done ? 'opacity-40 bg-white/[0.01] border-white/[0.02]' : 'bg-white/[0.02] border-white/[0.04] hover:bg-white/[0.04]'}
-      `}
-    >
-      <div className="mt-0.5 shrink-0 text-slate-600">
-        {item.done
-          ? <CheckCircle2 size={15} className="text-emerald-500/60" />
-          : <Circle size={15} />
-        }
-      </div>
-      <div className="flex-1 min-w-0">
-        <p className={`text-sm ${item.done ? 'line-through text-slate-600' : 'text-slate-200'}`}>
-          {item.desc}
-        </p>
-        <p className="text-xs text-slate-500 mt-0.5">{item.due_str}</p>
-      </div>
-      <div className="flex items-center gap-2 shrink-0">
-        {item.weight === 'critical' && <Badge variant="red">Critical</Badge>}
-        {item.weight === 'high' && <Badge variant="amber">High</Badge>}
-        <Badge variant={variant}>{label}</Badge>
-      </div>
-    </div>
-  );
-}
 
 export default async function SchoolPage() {
   const all = await getSchoolDeadlines();
@@ -127,47 +66,20 @@ export default async function SchoolPage() {
         </p>
       </div>
 
-      {/* By course */}
-      <div className="flex flex-col gap-6">
-        {courses.map((course) => {
-          const items = grouped[course] as SchoolDeadline[];
+      {/* By course - interactive with localStorage checkoffs */}
+      <SchoolPageClient
+        courses={grouped}
+        courseProgress={courses.map((course) => {
+          const items = grouped[course];
           const courseDone = items.filter((d) => d.done).length;
-          const courseTotal = items.length;
-          const pct = courseTotal > 0 ? Math.round((courseDone / courseTotal) * 100) : 0;
-          const active = items.filter((d) => !d.done).sort((a, b) => a.days - b.days);
-          const completed = items.filter((d) => d.done);
-
-          return (
-            <div key={course} className={`rounded-xl border p-5 ${courseBg(course)}`}>
-              <SectionHeader
-                title={course}
-                subtitle={`${courseDone}/${courseTotal} done`}
-              />
-
-              {/* Course progress bar */}
-              <div className="mb-4">
-                <div className="w-full h-1.5 rounded-full bg-white/[0.06] overflow-hidden">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-[#8b5cf6] to-[#06b6d4] transition-all duration-500"
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                {/* Active first */}
-                {active.map((item, i) => (
-                  <DeadlineRow key={`active-${i}`} item={item} />
-                ))}
-                {/* Then completed */}
-                {completed.map((item, i) => (
-                  <DeadlineRow key={`done-${i}`} item={item} />
-                ))}
-              </div>
-            </div>
-          );
+          return {
+            course,
+            total: items.length,
+            done: courseDone,
+            percent: items.length > 0 ? Math.round((courseDone / items.length) * 100) : 0,
+          };
         })}
-      </div>
+      />
     </div>
     </>
   );
