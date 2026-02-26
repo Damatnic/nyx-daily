@@ -16,7 +16,7 @@ export default function RevealCard({ children, delay = 0, className = '' }: Reve
   return (
     <div
       ref={ref}
-      className={`reveal min-w-0 ${visible ? 'visible' : ''} ${delayClass} ${className}`.trim()}
+      className={`reveal ${visible ? 'visible' : ''} ${delayClass} ${className}`.trim()}
     >
       {children}
     </div>

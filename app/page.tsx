@@ -131,7 +131,7 @@ export default async function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-w-0">
           {/* LEFT MAIN COLUMN — 2/3 width */}
-          <div className="lg:col-span-2 flex flex-col gap-6 min-w-0 overflow-hidden">
+          <div className="lg:col-span-2 flex flex-col gap-6 min-w-0">
             {/* Focus */}
             <FocusCard focus={briefing.focus} />
 
@@ -201,7 +201,7 @@ export default async function HomePage() {
           </div>
 
           {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
-          <div className="flex flex-col gap-6 min-w-0 overflow-hidden lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
+          <div className="flex flex-col gap-6 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
             {/* Weather Card with 5-day forecast */}
             <RevealCard delay={0}>
               <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
