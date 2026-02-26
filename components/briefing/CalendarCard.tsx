@@ -1,50 +1,48 @@
 import { Calendar, Mail } from 'lucide-react';
-import SectionHeader from '@/components/ui/SectionHeader';
 
 interface CalendarCardProps {
   events?: string[] | null;
   gmailSummary?: string | null;
 }
 
-export default function CalendarCard({ events, gmailSummary }: CalendarCardProps) {
-  if (!events && !gmailSummary) return null;
-  return (
-    <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-      <SectionHeader title="Today" />
+function hasRealEvents(events?: string[] | null): boolean {
+  if (!events || events.length === 0) return false;
+  const allEmpty = events.every(
+    (e) => !e.trim() || e.toLowerCase().includes('no events') || e.toLowerCase().includes('clear')
+  );
+  return !allEmpty;
+}
 
-      {/* Gmail */}
+export default function CalendarCard({ events, gmailSummary }: CalendarCardProps) {
+  const realEvents = hasRealEvents(events);
+  if (!realEvents && !gmailSummary) return null;
+
+  return (
+    <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-4">
+      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-600 mb-3">
+        Today
+      </p>
+
       {gmailSummary && (
-        <div className="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04] mb-3">
-          <div className="p-1.5 rounded-lg bg-[#06b6d4]/10 border border-[#06b6d4]/20 shrink-0">
-            <Mail size={14} className="text-[#06b6d4]" />
-          </div>
-          <span className="text-sm text-slate-300">{gmailSummary}</span>
+        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-cyan-500/5 border border-cyan-500/10 mb-2">
+          <Mail size={13} className="text-cyan-500/70 mt-0.5 shrink-0" />
+          <span className="text-sm text-slate-300 leading-snug">{gmailSummary}</span>
         </div>
       )}
 
-      {/* Calendar events */}
-      <div className="flex flex-col gap-2">
-        {!events || events.length === 0 || (events.length === 1 && events[0].toLowerCase().includes('no events')) ? (
-          <div className="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04]">
-            <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20">
-              <Calendar size={14} className="text-[#8b5cf6]" />
-            </div>
-            <span className="text-sm text-slate-400">Clear calendar today</span>
-          </div>
-        ) : (
-          (events ?? []).map((event, i) => (
+      {realEvents && (
+        <div className="flex flex-col gap-1.5">
+          {(events ?? []).map((event, i) => (
             <div
               key={i}
-              className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04]"
+              className="flex items-start gap-2.5 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04]"
             >
-              <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 mt-0.5 shrink-0">
-                <Calendar size={14} className="text-[#8b5cf6]" />
-              </div>
-              <span className="text-sm text-slate-200">{event}</span>
+              <Calendar size={13} className="text-violet-400/70 mt-0.5 shrink-0" />
+              <span className="text-sm text-slate-300 leading-snug">{event}</span>
             </div>
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

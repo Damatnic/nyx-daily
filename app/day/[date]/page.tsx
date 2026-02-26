@@ -2,13 +2,11 @@ import { getBriefingByDate, getAllDates } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Navbar from '@/components/nav/Navbar';
-import WeatherBar from '@/components/briefing/WeatherBar';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
-import QuoteCard from '@/components/briefing/QuoteCard';
 import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
 import RedditHot from '@/components/briefing/RedditHot';
@@ -21,9 +19,6 @@ import YouTubeSection from '@/components/briefing/YouTubeSection';
 import HiddenGemsSection from '@/components/briefing/HiddenGemsSection';
 import WorkoutTracker from '@/components/briefing/WorkoutTracker';
 import BreathworkCard from '@/components/briefing/BreathworkCard';
-import LifeHackCard from '@/components/briefing/LifeHackCard';
-import MoneyTipCard from '@/components/briefing/MoneyTipCard';
-import HealthTipCard from '@/components/briefing/HealthTipCard';
 import { ArrowLeft } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -37,108 +32,124 @@ interface PageProps {
   params: Promise<{ date: string }>;
 }
 
+function formatDate(dateStr: string, day: string) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const month = d.toLocaleDateString('en-US', { month: 'long' });
+  return `${day}, ${month} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
 export default async function DayPage({ params }: PageProps) {
   const { date } = await params;
   const briefing = await getBriefingByDate(date);
+  if (!briefing) notFound();
 
-  if (!briefing) {
-    notFound();
-  }
-
-  // Generate breathwork fallback text from old format
   const breathworkFallback = briefing.breathwork
     ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
     : undefined;
 
+  const fullDate = formatDate(date, briefing.day);
+
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-        <Link
-          href="/archive"
-          className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-[#8b5cf6] transition-colors duration-200"
-        >
-          <ArrowLeft size={14} />
-          Back to Archive
-        </Link>
+
+      {/* Archive page header */}
+      <div className="border-b border-white/[0.05] bg-[#07070f]/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <Link
+            href="/archive"
+            className="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-violet-400 transition-colors mb-4"
+          >
+            <ArrowLeft size={12} />
+            Archive
+          </Link>
+          <div className="flex items-start justify-between gap-4 flex-wrap">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-slate-600 mb-1">
+                {briefing.day}
+              </p>
+              <h1 className="text-2xl font-bold text-slate-100">{fullDate}</h1>
+            </div>
+            {briefing.weather && (
+              <div className="flex items-center gap-2 text-sm text-slate-400 bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-2.5">
+                {(() => {
+                  const emojiMatch = briefing.weather.match(/^(\S+)\s/);
+                  const tempMatch  = briefing.weather.match(/(\d+)°F/);
+                  return (
+                    <>
+                      <span>{emojiMatch?.[1]}</span>
+                      <span className="font-bold text-cyan-300 tabular-nums">{tempMatch?.[1]}°F</span>
+                    </>
+                  );
+                })()}
+              </div>
+            )}
+          </div>
+          {briefing.quote && (
+            <p className="mt-3 text-base italic text-slate-400 max-w-2xl">
+              &ldquo;{briefing.quote}&rdquo;
+              {briefing.author && <span className="text-slate-600 not-italic"> — {briefing.author}</span>}
+            </p>
+          )}
+        </div>
       </div>
 
-      <WeatherBar weather={briefing.weather} date={briefing.date} day={briefing.day} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24 lg:pb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Main column */}
-          <div className="lg:col-span-2 flex flex-col gap-6">
+          {/* ── Left column ── */}
+          <div className="lg:col-span-2 flex flex-col gap-5">
             <FocusCard focus={briefing.focus} />
             <NewsSection news={briefing.news} />
 
-            {/* YouTube Picks */}
-            <YouTubeSection videos={briefing.youtube_picks} />
-
-            {/* Hidden Gems */}
-            <HiddenGemsSection gems={briefing.hidden_gems} />
-
-            {briefing.sports && briefing.sports.length > 0 && (
+            {!!briefing.youtube_picks?.length && (
+              <YouTubeSection videos={briefing.youtube_picks} />
+            )}
+            {!!briefing.hidden_gems?.length && (
+              <HiddenGemsSection gems={briefing.hidden_gems} />
+            )}
+            {!!briefing.workout?.exercises?.length && (
+              <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+            )}
+            {!!briefing.sports?.length && (
               <SportsSection sports={briefing.sports} />
             )}
-            {briefing.github_trending && briefing.github_trending.length > 0 && (
+            {!!briefing.github_trending?.length && (
               <GithubTrending repos={briefing.github_trending} />
             )}
-            {briefing.reddit_hot && briefing.reddit_hot.length > 0 && (
+            {!!briefing.reddit_hot?.length && (
               <RedditHot posts={briefing.reddit_hot} />
             )}
-            {briefing.product_hunt && briefing.product_hunt.length > 0 && (
+            {!!briefing.product_hunt?.length && (
               <ProductHunt posts={briefing.product_hunt} />
             )}
 
             <AppOfTheDay app={briefing.app_of_the_day} />
 
-            {/* Standalone Tip Cards */}
-            <LifeHackCard lifeHack={briefing.life_hack} />
-            <MoneyTipCard moneyTip={briefing.money_tip} />
-            <HealthTipCard healthTip={briefing.health_tip} />
-
-            {/* Workout Tracker */}
-            <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-
-            {/* Breathwork Card */}
-            <BreathworkCard
-              session={briefing.breathwork_session}
-              fallbackText={breathworkFallback}
-            />
+            {briefing.breathwork_session && (
+              <BreathworkCard
+                session={briefing.breathwork_session}
+                fallbackText={breathworkFallback}
+              />
+            )}
           </div>
 
-          {/* Right rail */}
-          <div className="flex flex-col gap-6">
-            {/* Weather Card with forecast */}
+          {/* ── Right rail ── */}
+          <div className="flex flex-col gap-4">
             <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
-
-            {/* Daily Extras (Word + Facts) */}
             <DailyExtras word={briefing.word_of_the_day} facts={briefing.facts_of_the_day} />
-
-            {/* School Deadlines */}
             <SchoolDeadlines deadlines={briefing.school_deadlines} />
-
-            {/* Calendar & Email */}
             <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
-
-            {/* On This Day */}
-            {briefing.on_this_day && briefing.on_this_day.length > 0 && (
+            {!!briefing.on_this_day?.length && (
               <OnThisDay events={briefing.on_this_day} />
             )}
-
-            {/* NASA APOD */}
             {briefing.apod && <NasaApod apod={briefing.apod} />}
           </div>
         </div>
 
-        <div className="mt-6">
-          <QuoteCard quote={briefing.quote} author={briefing.author} />
-        </div>
-
-        <div className="mt-8 pb-8 flex items-center justify-between text-xs text-slate-600">
-          <span>Generated at {new Date(briefing.generated_at).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</span>
-          <Link href="/archive" className="hover:text-slate-400 transition-colors duration-200">
+        <div className="mt-8 pt-5 border-t border-white/[0.04] flex items-center justify-between text-xs text-slate-700">
+          <span>Generated {new Date(briefing.generated_at).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</span>
+          <Link href="/archive" className="hover:text-violet-400 transition-colors">
             ← All briefings
           </Link>
         </div>
