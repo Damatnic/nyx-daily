@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip; /* Prevent horizontal bleed without breaking sticky */
 }
 
 body {
@@ -33,7 +34,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 3.5rem; /* Account for fixed navbar height (h-14) */
-  overflow-x: hidden; /* Prevent horizontal scroll from ticker/animations */
   background-image: radial-gradient(rgba(139,92,246,0.04) 1px, transparent 1px);
   background-size: 32px 32px;
 }

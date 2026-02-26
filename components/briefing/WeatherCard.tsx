@@ -149,7 +149,7 @@ export default function WeatherCard({ weather, forecast }: WeatherCardProps) {
             </span>
             <div className="flex-1 h-px bg-white/[0.04]" />
           </div>
-          <div className="flex items-start justify-between gap-1 overflow-x-auto scrollbar-none -mx-1 px-1">
+          <div className="flex items-start justify-between gap-1 overflow-x-auto scrollbar-none">
             {forecast.slice(0, 5).map((day) => (
               <ForecastDay key={day.date} day={day} />
             ))}
