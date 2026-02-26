@@ -1009,7 +1009,7 @@
   ],
   "sports": [
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Detroit Pistons",
       "home_abbrev": "DET",
       "home_score": 0,
@@ -1021,7 +1021,7 @@
       "winner": null
     },
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Toronto Raptors",
       "home_abbrev": "TOR",
       "home_score": 0,
@@ -1033,7 +1033,7 @@
       "winner": null
     },
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Memphis Grizzlies",
       "home_abbrev": "MEM",
       "home_score": 0,
@@ -1045,7 +1045,7 @@
       "winner": null
     },
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Houston Rockets",
       "home_abbrev": "HOU",
       "home_score": 0,
@@ -1057,7 +1057,7 @@
       "winner": null
     },
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Milwaukee Bucks",
       "home_abbrev": "MIL",
       "home_score": 0,
@@ -1069,7 +1069,7 @@
       "winner": null
     },
     {
-      "league": "NBA",
+      "sport": "nba",
       "home_team": "Denver Nuggets",
       "home_abbrev": "DEN",
       "home_score": 0,
@@ -1081,7 +1081,7 @@
       "winner": null
     },
     {
-      "league": "NHL",
+      "sport": "nhl",
       "home_team": "New Jersey Devils",
       "home_abbrev": "NJ",
       "home_score": 0,
@@ -1089,11 +1089,11 @@
       "away_abbrev": "BUF",
       "away_score": 0,
       "status": "live",
-      "status_detail": "9:39 - 1st",
+      "status_detail": "7:16 - 1st",
       "winner": null
     },
     {
-      "league": "NHL",
+      "sport": "nhl",
       "home_team": "Washington Capitals",
       "home_abbrev": "WSH",
       "home_score": 0,
@@ -1101,11 +1101,11 @@
       "away_abbrev": "PHI",
       "away_score": 0,
       "status": "live",
-      "status_detail": "4:45 - 1st",
+      "status_detail": "2:00 - 1st",
       "winner": null
     },
     {
-      "league": "NHL",
+      "sport": "nhl",
       "home_team": "Tampa Bay Lightning",
       "home_abbrev": "TB",
       "home_score": 0,
@@ -1117,7 +1117,7 @@
       "winner": null
     },
     {
-      "league": "NHL",
+      "sport": "nhl",
       "home_team": "Dallas Stars",
       "home_abbrev": "DAL",
       "home_score": 0,
@@ -1127,53 +1127,6 @@
       "status": "scheduled",
       "status_detail": "2/25 - 8:00 PM EST",
       "winner": null
-    }
-  ],
-  "weather_forecast": [
-    {
-      "date": "Wed",
-      "date_full": "2026-02-25",
-      "high": 31,
-      "low": 18,
-      "precip_pct": 1,
-      "condition": "Cloudy",
-      "emoji": "\u2601\ufe0f"
-    },
-    {
-      "date": "Thu",
-      "date_full": "2026-02-26",
-      "high": 40,
-      "low": 15,
-      "precip_pct": 1,
-      "condition": "Cloudy",
-      "emoji": "\u2601\ufe0f"
-    },
-    {
-      "date": "Fri",
-      "date_full": "2026-02-27",
-      "high": 55,
-      "low": 32,
-      "precip_pct": 1,
-      "condition": "Cloudy",
-      "emoji": "\u2601\ufe0f"
-    },
-    {
-      "date": "Sat",
-      "date_full": "2026-02-28",
-      "high": 33,
-      "low": 20,
-      "precip_pct": 47,
-      "condition": "Snow",
-      "emoji": "\u2744\ufe0f"
-    },
-    {
-      "date": "Sun",
-      "date_full": "2026-03-01",
-      "high": 24,
-      "low": 12,
-      "precip_pct": 18,
-      "condition": "Cloudy",
-      "emoji": "\u2601\ufe0f"
     }
   ],
   "github_trending": [
@@ -1319,6 +1272,53 @@
       "tagline": "Save anything from any app \u2014 AI-organized, private, instant Discussion | Link",
       "url": "https://www.producthunt.com/products/thinglo-save-anything-lose-nothing",
       "votes": 0
+    }
+  ],
+  "forecast": [
+    {
+      "date": "Wed",
+      "date_full": "2026-02-25",
+      "high": 31,
+      "low": 18,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Thu",
+      "date_full": "2026-02-26",
+      "high": 40,
+      "low": 15,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Fri",
+      "date_full": "2026-02-27",
+      "high": 55,
+      "low": 32,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Sat",
+      "date_full": "2026-02-28",
+      "high": 33,
+      "low": 20,
+      "precip_pct": 47,
+      "condition": "Snow",
+      "emoji": "\u2744\ufe0f"
+    },
+    {
+      "date": "Sun",
+      "date_full": "2026-03-01",
+      "high": 24,
+      "low": 12,
+      "precip_pct": 18,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
     }
   ]
 }
