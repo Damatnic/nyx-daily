@@ -5,15 +5,10 @@ import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
 import MobilePriorityStrip from '@/components/briefing/MobilePriorityStrip';
 import QuickNav from '@/components/briefing/QuickNav';
+import GlanceRow from '@/components/briefing/GlanceRow';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
-import NasaApod from '@/components/briefing/NasaApod';
-import WeatherCard from '@/components/briefing/WeatherCard';
-import DailyExtras from '@/components/briefing/DailyExtras';
-import CalendarCard from '@/components/briefing/CalendarCard';
-import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
-import OnThisDay from '@/components/briefing/OnThisDay';
 import ScrollToTop from '@/components/briefing/ScrollToTop';
 import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
@@ -23,9 +18,8 @@ import YouTubeSection from '@/components/briefing/YouTubeSection';
 import HiddenGemsSection from '@/components/briefing/HiddenGemsSection';
 import WorkoutTracker from '@/components/briefing/WorkoutTracker';
 import BreathworkCard from '@/components/briefing/BreathworkCard';
-import LifeHackCard from '@/components/briefing/LifeHackCard';
-import MoneyTipCard from '@/components/briefing/MoneyTipCard';
-import HealthTipCard from '@/components/briefing/HealthTipCard';
+import DailyTipsCard from '@/components/briefing/DailyTipsCard';
+import SidebarTabs from '@/components/briefing/SidebarTabs';
 import RevealCard from '@/components/ui/RevealCard';
 import Link from 'next/link';
 import RelativeTime from '@/components/ui/RelativeTime';
@@ -135,11 +129,19 @@ export default async function HomePage() {
         hasWorkout={!!(briefing.workout && briefing.workout.exercises && briefing.workout.exercises.length > 0)}
       />
 
+      {/* At-a-glance stat row */}
+      <GlanceRow
+        weather={briefing.weather}
+        deadlineCount={upcomingCount}
+        headlineCount={headlineCount}
+        focus={briefing.focus}
+      />
+
       {/* Main content area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-w-0">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 min-w-0">
           {/* LEFT MAIN COLUMN — 2/3 width */}
-          <div className="lg:col-span-2 flex flex-col gap-6 min-w-0">
+          <div className="lg:col-span-2 flex flex-col gap-4 min-w-0">
             {/* Focus */}
             <FocusCard focus={briefing.focus} />
 
@@ -208,60 +210,34 @@ export default async function HomePage() {
               <AppOfTheDay app={briefing.app_of_the_day} />
             </RevealCard>
 
-            {/* Standalone Tip Cards */}
+            {/* Daily Tips Card (merged Life Hack, Money Tip, Health Tip) */}
             <RevealCard delay={2}>
-              <LifeHackCard lifeHack={briefing.life_hack} />
-            </RevealCard>
-            <RevealCard delay={3}>
-              <MoneyTipCard moneyTip={briefing.money_tip} />
-            </RevealCard>
-            <RevealCard delay={0}>
-              <HealthTipCard healthTip={briefing.health_tip} />
+              <DailyTipsCard
+                lifeHack={briefing.life_hack}
+                moneyTip={briefing.money_tip}
+                healthTip={briefing.health_tip}
+              />
             </RevealCard>
           </div>
 
           {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
-          <div className="flex flex-col gap-6 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
-            {/* Weather Card with 5-day forecast */}
+          <div className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
+            {/* Tabbed sidebar with Weather, School, Discover */}
             <div id="weather" className="scroll-mt-28">
-              <RevealCard delay={0}>
-                <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
-              </RevealCard>
+              <div id="school" className="scroll-mt-28">
+                <SidebarTabs
+                  weather={briefing.weather}
+                  forecast={briefing.forecast}
+                  word={briefing.word_of_the_day}
+                  facts={briefing.facts_of_the_day}
+                  deadlines={briefing.school_deadlines}
+                  events={briefing.calendar}
+                  gmailSummary={briefing.gmail_summary}
+                  onThisDay={briefing.on_this_day}
+                  apod={briefing.apod}
+                />
+              </div>
             </div>
-
-            {/* Daily Extras (Word + Facts) */}
-            <RevealCard delay={1}>
-              <DailyExtras
-                word={briefing.word_of_the_day}
-                facts={briefing.facts_of_the_day}
-              />
-            </RevealCard>
-
-            {/* School Deadlines */}
-            <div id="school" className="scroll-mt-28">
-              <RevealCard delay={2}>
-                <SchoolDeadlines deadlines={briefing.school_deadlines} />
-              </RevealCard>
-            </div>
-
-            {/* Calendar & Email */}
-            <RevealCard delay={3}>
-              <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
-            </RevealCard>
-
-            {/* On This Day */}
-            {briefing.on_this_day && briefing.on_this_day.length > 0 && (
-              <RevealCard delay={0}>
-                <OnThisDay events={briefing.on_this_day} />
-              </RevealCard>
-            )}
-
-            {/* NASA APOD */}
-            {briefing.apod && (
-              <RevealCard delay={1}>
-                <NasaApod apod={briefing.apod} />
-              </RevealCard>
-            )}
           </div>
         </div>
 

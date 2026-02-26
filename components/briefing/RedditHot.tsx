@@ -44,7 +44,7 @@ function PostRow({ post }: { post: RedditPost }) {
           href={post.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-slate-200 hover:text-white transition-colors line-clamp-2 leading-snug"
+          className="text-sm font-medium text-slate-200 hover:text-white transition-colors line-clamp-2 leading-snug"
         >
           {post.title}
         </a>
@@ -55,13 +55,13 @@ function PostRow({ post }: { post: RedditPost }) {
             href={`https://reddit.com/r/${post.subreddit}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[10px] font-semibold text-orange-400/80 hover:text-orange-400 transition-colors"
+            className="text-xs font-semibold text-orange-400/80 hover:text-orange-400 transition-colors"
           >
             r/{post.subreddit}
           </a>
 
           {/* Comments */}
-          <span className="flex items-center gap-1 text-[10px] text-slate-500">
+          <span className="flex items-center gap-1 text-xs text-slate-500">
             <MessageSquare size={10} />
             {formatScore(post.num_comments)}
           </span>
@@ -71,7 +71,7 @@ function PostRow({ post }: { post: RedditPost }) {
             href={redditUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-[10px] text-slate-600 hover:text-slate-400 transition-colors ml-auto"
+            className="flex items-center gap-1 text-xs text-slate-600 hover:text-slate-400 transition-colors ml-auto"
           >
             <ExternalLink size={10} />
             thread

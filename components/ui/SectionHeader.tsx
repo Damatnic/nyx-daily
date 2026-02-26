@@ -3,11 +3,22 @@ interface SectionHeaderProps {
   subtitle?: string;
   className?: string;
   gradient?: boolean;
+  accent?: boolean;
 }
 
-export default function SectionHeader({ title, subtitle, className = '', gradient = false }: SectionHeaderProps) {
+export default function SectionHeader({
+  title,
+  subtitle,
+  className = '',
+  gradient = false,
+  accent = true,
+}: SectionHeaderProps) {
   return (
-    <div className={`flex items-center gap-3 mb-4 ${className}`}>
+    <div className={`flex items-center gap-2 mb-4 ${className}`}>
+      {/* Accent bar */}
+      {accent && (
+        <div className="w-1 h-4 rounded-full bg-purple-500/60 shrink-0" />
+      )}
       <span
         className={
           gradient

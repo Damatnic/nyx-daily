@@ -40,17 +40,17 @@ export default function HiddenGemsSection({ gems }: HiddenGemsSectionProps) {
                     {gem.title}
                   </h3>
                   <span
-                    className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold border ${sourceStyle.bg} ${sourceStyle.color}`}
+                    className={`inline-flex items-center px-1.5 py-0.5 rounded text-xs font-semibold border ${sourceStyle.bg} ${sourceStyle.color}`}
                   >
                     {sourceStyle.label}
                   </span>
                   {gem.points > 0 && (
-                    <span className="text-[10px] text-slate-500 font-mono">
+                    <span className="text-xs text-slate-500 font-mono">
                       {gem.points} pts
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-slate-400 line-clamp-2 leading-relaxed">
                   {gem.description}
                 </p>
               </div>

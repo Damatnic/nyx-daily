@@ -2,6 +2,17 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import {
+  Newspaper,
+  Youtube,
+  Gem,
+  Dumbbell,
+  Wind,
+  Trophy,
+  CloudSun,
+  BookOpen,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 interface QuickNavProps {
   hasYoutube?: boolean;
@@ -9,21 +20,28 @@ interface QuickNavProps {
   hasWorkout?: boolean;
 }
 
-const SECTION_LINKS = [
-  { label: '📰 News',       href: '#news' },
-  { label: '🎬 YouTube',    href: '#youtube',   conditional: 'hasYoutube' },
-  { label: '💡 Gems',       href: '#gems' },
-  { label: '🏋️ Workout',   href: '#workout' },
-  { label: '🌬️ Breathwork', href: '#breathwork' },
-  { label: '🏈 Sports',     href: '#sports',    conditional: 'hasSports' },
-  { label: '☀️ Weather',    href: '#weather' },
-  { label: '📚 School',     href: '#school' },
-] as const;
+interface SectionLink {
+  label: string;
+  href: string;
+  icon: LucideIcon;
+  conditional?: string;
+}
+
+const SECTION_LINKS: SectionLink[] = [
+  { label: 'News', href: '#news', icon: Newspaper },
+  { label: 'YouTube', href: '#youtube', icon: Youtube, conditional: 'hasYoutube' },
+  { label: 'Gems', href: '#gems', icon: Gem },
+  { label: 'Workout', href: '#workout', icon: Dumbbell },
+  { label: 'Breathwork', href: '#breathwork', icon: Wind },
+  { label: 'Sports', href: '#sports', icon: Trophy, conditional: 'hasSports' },
+  { label: 'Weather', href: '#weather', icon: CloudSun },
+  { label: 'School', href: '#school', icon: BookOpen },
+];
 
 const PAGE_LINKS = [
-  { label: 'Archive',  href: '/archive' },
-  { label: 'School',   href: '/school' },
-  { label: 'Tools',    href: '/tools' },
+  { label: 'Archive', href: '/archive' },
+  { label: 'School', href: '/school' },
+  { label: 'Tools', href: '/tools' },
 ];
 
 export default function QuickNav({ hasYoutube = true, hasSports = false, hasWorkout = true }: QuickNavProps) {
@@ -33,7 +51,7 @@ export default function QuickNav({ hasYoutube = true, hasSports = false, hasWork
   const flags: Record<string, boolean> = { hasYoutube, hasSports, hasWorkout };
 
   const visibleSections = SECTION_LINKS.filter(
-    (l) => !('conditional' in l) || flags[l.conditional as string]
+    (l) => !l.conditional || flags[l.conditional]
   );
 
   return (
@@ -44,15 +62,19 @@ export default function QuickNav({ hasYoutube = true, hasSports = false, hasWork
           {/* On-page section anchors — home only */}
           {isHome && (
             <>
-              {visibleSections.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="shrink-0 text-[11px] font-medium text-slate-500 hover:text-slate-200 hover:bg-white/[0.05] px-2.5 py-1 rounded-md transition-all duration-150 whitespace-nowrap"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {visibleSections.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="shrink-0 flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-slate-200 hover:bg-white/[0.05] px-2.5 py-1 rounded-md transition-all duration-150 whitespace-nowrap"
+                  >
+                    <Icon size={12} className="shrink-0" />
+                    <span>{link.label}</span>
+                  </a>
+                );
+              })}
 
               {/* Divider */}
               <span className="shrink-0 w-px h-3 bg-white/[0.08] mx-1" />
@@ -66,7 +88,7 @@ export default function QuickNav({ hasYoutube = true, hasSports = false, hasWork
               <Link
                 key={link.href}
                 href={link.href}
-                className={`shrink-0 text-[11px] font-medium px-2.5 py-1 rounded-md transition-all duration-150 whitespace-nowrap ${
+                className={`shrink-0 text-xs font-medium px-2.5 py-1 rounded-md transition-all duration-150 whitespace-nowrap ${
                   isActive
                     ? 'text-purple-400 bg-purple-500/10'
                     : 'text-slate-500 hover:text-slate-200 hover:bg-white/[0.05]'

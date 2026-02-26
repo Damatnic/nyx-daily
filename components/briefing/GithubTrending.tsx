@@ -49,7 +49,7 @@ function RepoRow({ repo, rank }: { repo: GitHubRepo; rank: number }) {
       className="group flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04] hover:border-purple-500/20 hover:bg-white/[0.04] transition-all duration-200"
     >
       {/* Rank */}
-      <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded bg-slate-800/60 text-[10px] font-bold font-mono text-slate-500 group-hover:text-purple-400 transition-colors">
+      <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded bg-slate-800/60 text-xs font-bold font-mono text-slate-500 group-hover:text-purple-400 transition-colors">
         {String(rank).padStart(2, '0')}
       </span>
 
@@ -61,7 +61,7 @@ function RepoRow({ repo, rank }: { repo: GitHubRepo; rank: number }) {
           </span>
         </div>
         {repo.description && (
-          <p className="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">
+          <p className="text-sm text-slate-500 mt-1 line-clamp-2 leading-relaxed">
             {repo.description}
           </p>
         )}
@@ -75,19 +75,19 @@ function RepoRow({ repo, rank }: { repo: GitHubRepo; rank: number }) {
                 className="w-2 h-2 rounded-full shrink-0"
                 style={{ backgroundColor: langColor }}
               />
-              <span className="text-[10px] text-slate-400">{repo.language}</span>
+              <span className="text-xs text-slate-400">{repo.language}</span>
             </span>
           )}
 
           {/* Stars */}
-          <span className="flex items-center gap-1 text-[10px] text-slate-400">
+          <span className="flex items-center gap-1 text-xs text-slate-400">
             <Star size={10} className="text-amber-400" />
             {repo.stars}
           </span>
 
           {/* Stars today */}
           {repo.stars_today > 0 && (
-            <span className="flex items-center gap-1 text-[10px] text-emerald-400 font-medium">
+            <span className="flex items-center gap-1 text-xs text-emerald-400 font-medium">
               <TrendingUp size={10} />
               +{repo.stars_today} today
             </span>

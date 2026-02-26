@@ -72,7 +72,8 @@ function SourceBadge({ item, size = 'sm' }: { item: NewsItem; size?: 'sm' | 'xs'
   const [logoOk, setLogoOk] = useState(true);
   const bg = SOURCE_COLORS[item.source ?? ''] ?? '#475569';
   const initial = (item.source ?? '?').charAt(0).toUpperCase();
-  const nameClass = size === 'xs' ? 'text-[10px]' : 'text-[11px]';
+  // Both sizes now use text-xs for accessibility
+  const nameClass = 'text-xs';
 
   return (
     <span className="flex items-center gap-1.5 min-w-0">
@@ -84,7 +85,7 @@ function SourceBadge({ item, size = 'sm' }: { item: NewsItem; size?: 'sm' | 'xs'
           <img src={item.logo} alt="" width={16} height={16} className="w-full h-full object-contain"
             onError={() => setLogoOk(false)} />
         ) : (
-          <span className="text-[8px] font-bold text-white">{initial}</span>
+          <span className="text-[9px] font-bold text-white">{initial}</span>
         )}
       </span>
       <span className={`${nameClass} font-semibold text-slate-400 truncate`}>{item.source}</span>
@@ -115,12 +116,12 @@ function HeroCard({ item }: { item: NewsItem }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
         )}
         {/* Rank badge */}
-        <span className="absolute top-3 left-3 text-[10px] font-bold font-mono text-amber-400 bg-black/70 backdrop-blur-sm border border-amber-400/30 rounded px-1.5 py-0.5 leading-none z-10">
+        <span className="absolute top-3 left-3 text-xs font-bold font-mono text-amber-400 bg-black/70 backdrop-blur-sm border border-amber-400/30 rounded px-1.5 py-0.5 leading-none z-10">
           01
         </span>
         {/* Domain chip */}
         {item.domain && (
-          <span className="absolute top-3 right-3 text-[10px] text-slate-300 bg-black/60 backdrop-blur-sm rounded px-2 py-0.5 leading-none z-10">
+          <span className="absolute top-3 right-3 text-xs text-slate-300 bg-black/60 backdrop-blur-sm rounded px-2 py-0.5 leading-none z-10">
             {item.domain}
           </span>
         )}
@@ -130,11 +131,11 @@ function HeroCard({ item }: { item: NewsItem }) {
             <div className="mb-1.5">
               <SourceBadge item={item} />
             </div>
-            <p className="text-white font-bold text-base leading-snug line-clamp-2 group-hover:text-slate-100 transition-colors">
+            <p className="text-white font-bold text-xl leading-snug line-clamp-2 group-hover:text-slate-100 transition-colors">
               {item.title}
             </p>
             {item.snippet && (
-              <p className="text-slate-300 text-xs mt-1 line-clamp-2 leading-relaxed">{item.snippet}</p>
+              <p className="text-slate-300 text-sm mt-1 line-clamp-2 leading-relaxed">{item.snippet}</p>
             )}
           </div>
         )}
@@ -146,14 +147,14 @@ function HeroCard({ item }: { item: NewsItem }) {
           <div className="flex items-center gap-2 mb-2">
             <SourceBadge item={item} />
             {readingTime(item.snippet) && (
-              <span className="ml-auto text-[10px] text-slate-700">{readingTime(item.snippet)}</span>
+              <span className="ml-auto text-xs text-slate-700">{readingTime(item.snippet)}</span>
             )}
           </div>
-          <p className="text-slate-100 font-bold text-[15px] leading-snug line-clamp-2 group-hover:text-white transition-colors">
+          <p className="text-slate-100 font-bold text-lg leading-snug line-clamp-2 group-hover:text-white transition-colors">
             {item.title}
           </p>
           {item.snippet && (
-            <p className="text-slate-500 text-xs mt-1.5 line-clamp-3 leading-relaxed">{item.snippet}</p>
+            <p className="text-slate-500 text-sm mt-1.5 line-clamp-3 leading-relaxed">{item.snippet}</p>
           )}
         </div>
       )}
@@ -183,25 +184,25 @@ function SecondaryCard({ item, rank }: { item: NewsItem; rank: number }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
         )}
         {/* Rank */}
-        <span className={`absolute top-2 left-2 text-[10px] font-bold font-mono border rounded px-1.5 py-0.5 leading-none bg-black/60 backdrop-blur-sm z-10
+        <span className={`absolute top-2 left-2 text-xs font-bold font-mono border rounded px-1.5 py-0.5 leading-none bg-black/60 backdrop-blur-sm z-10
           ${rank === 2 ? 'text-slate-300 border-slate-500/40' : 'text-amber-700 border-amber-700/30'}`}>
           0{rank}
         </span>
       </div>
 
       {/* Text */}
-      <div className="p-3 flex flex-col gap-1.5 flex-1">
+      <div className="p-3 flex flex-col gap-1.5 flex-1 min-h-[100px]">
         <div className="flex items-center gap-1.5">
           <SourceBadge item={item} size="xs" />
           {readingTime(item.snippet) && (
-            <span className="ml-auto text-[10px] text-slate-700 shrink-0">{readingTime(item.snippet)}</span>
+            <span className="ml-auto text-xs text-slate-700 shrink-0">{readingTime(item.snippet)}</span>
           )}
         </div>
         <p className="text-slate-200 text-sm font-semibold leading-snug line-clamp-3 group-hover:text-white transition-colors">
           {item.title}
         </p>
         {item.snippet && (
-          <p className="text-slate-600 text-[11px] leading-relaxed line-clamp-2 mt-auto pt-1">
+          <p className="text-slate-600 text-xs leading-relaxed line-clamp-2 mt-auto pt-1">
             {item.snippet}
           </p>
         )}
@@ -225,9 +226,9 @@ function CategorySection({ section }: { section: Section }) {
       {/* Section header */}
       <div className="flex items-center gap-2.5">
         <span className="text-base leading-none">{emoji}</span>
-        <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400">{label}</span>
+        <span className="text-xs font-bold uppercase tracking-[0.12em] text-slate-400">{label}</span>
         <div className="flex-1 h-px bg-white/[0.05]" />
-        <span className="text-[10px] text-slate-700 font-mono tabular-nums">{items.length} stories</span>
+        <span className="text-xs text-slate-700 font-mono tabular-nums">{items.length} stories</span>
       </div>
 
       {/* Hero */}
@@ -295,7 +296,7 @@ export default function NewsSection({ news }: NewsSectionProps) {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <SectionHeader title="News" gradient />
-        <span className="text-[10px] text-slate-700 font-mono">
+        <span className="text-xs text-slate-700 font-mono">
           {totalStories} stories · {sections.length} categories
         </span>
       </div>
@@ -308,7 +309,7 @@ export default function NewsSection({ news }: NewsSectionProps) {
             <button
               key={key}
               onClick={() => setActiveTab(key)}
-              className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-all duration-150
+              className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150
                 ${active
                   ? 'bg-violet-600/90 text-white shadow-md shadow-violet-900/40 border border-violet-500/30'
                   : 'text-slate-500 hover:text-slate-300 bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.06]'
