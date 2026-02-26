@@ -16,11 +16,11 @@ interface SportsSectionProps {
 }
 
 const SPORT_CONFIG: Record<string, { color: string; bg: string; border: string }> = {
-  NBA: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
-  NHL: { color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/20' },
-  MLB: { color: 'text-red-400', bg: 'bg-red-500/10', border: 'border-red-500/20' },
-  NFL: { color: 'text-green-400', bg: 'bg-green-500/10', border: 'border-green-500/20' },
-  MLS: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
+  nba: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
+  nhl: { color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/20' },
+  mlb: { color: 'text-red-400', bg: 'bg-red-500/10', border: 'border-red-500/20' },
+  nfl: { color: 'text-green-400', bg: 'bg-green-500/10', border: 'border-green-500/20' },
+  mls: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
 };
 
 function getStatusStyle(status: SportGame['status']) {
@@ -72,7 +72,7 @@ function GameRow({ game }: { game: SportGame }) {
       <span
         className={`shrink-0 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide border ${sportStyle.color} ${sportStyle.bg} ${sportStyle.border}`}
       >
-        {game.sport}
+        {game.sport.toUpperCase()}
       </span>
 
       {/* Teams + scores */}
@@ -129,7 +129,7 @@ export default function SportsSection({ sports }: SportsSectionProps) {
   if (!sports || sports.length === 0) return null;
 
   // Group by sport, maintaining order: NBA, NHL, MLB, then others
-  const sportOrder = ['NBA', 'NHL', 'MLB', 'NFL', 'MLS'];
+  const sportOrder = ['nba', 'nhl', 'mlb', 'nfl', 'mls'];
   const grouped = sports.reduce(
     (acc, game) => {
       if (!acc[game.sport]) acc[game.sport] = [];
