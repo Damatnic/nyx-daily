@@ -4,6 +4,7 @@ import NewsTicker from '@/components/briefing/NewsTicker';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
 import MobilePriorityStrip from '@/components/briefing/MobilePriorityStrip';
+import QuickNav from '@/components/briefing/QuickNav';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
@@ -127,6 +128,13 @@ export default async function HomePage() {
         weather={briefing.weather}
       />
 
+      {/* Quick nav jump bar */}
+      <QuickNav
+        hasYoutube={!!(briefing.youtube_picks && briefing.youtube_picks.length > 0)}
+        hasSports={!!(briefing.sports && briefing.sports.length > 0)}
+        hasWorkout={!!(briefing.workout && briefing.workout.exercises && briefing.workout.exercises.length > 0)}
+      />
+
       {/* Main content area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-w-0">
@@ -136,36 +144,48 @@ export default async function HomePage() {
             <FocusCard focus={briefing.focus} />
 
             {/* News Section */}
-            <RevealCard delay={0}>
-              <NewsSection news={briefing.news} />
-            </RevealCard>
+            <div id="news" className="scroll-mt-28">
+              <RevealCard delay={0}>
+                <NewsSection news={briefing.news} />
+              </RevealCard>
+            </div>
 
             {/* YouTube Picks */}
-            <RevealCard delay={1}>
-              <YouTubeSection videos={briefing.youtube_picks} />
-            </RevealCard>
+            <div id="youtube" className="scroll-mt-28">
+              <RevealCard delay={1}>
+                <YouTubeSection videos={briefing.youtube_picks} />
+              </RevealCard>
+            </div>
 
             {/* Hidden Gems */}
-            <RevealCard delay={2}>
-              <HiddenGemsSection gems={briefing.hidden_gems} />
-            </RevealCard>
+            <div id="gems" className="scroll-mt-28">
+              <RevealCard delay={2}>
+                <HiddenGemsSection gems={briefing.hidden_gems} />
+              </RevealCard>
+            </div>
 
             {/* Workout Tracker */}
-            <RevealCard delay={3}>
-              <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-            </RevealCard>
+            <div id="workout" className="scroll-mt-28">
+              <RevealCard delay={3}>
+                <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+              </RevealCard>
+            </div>
 
             {/* Breathwork Card */}
-            <RevealCard delay={0}>
-              <BreathworkCard
-                session={briefing.breathwork_session}
-                fallbackText={breathworkFallback}
-              />
-            </RevealCard>
+            <div id="breathwork" className="scroll-mt-28">
+              <RevealCard delay={0}>
+                <BreathworkCard
+                  session={briefing.breathwork_session}
+                  fallbackText={breathworkFallback}
+                />
+              </RevealCard>
+            </div>
 
             {/* Sports Section */}
             {briefing.sports && briefing.sports.length > 0 && (
-              <SportsSection sports={briefing.sports} />
+              <div id="sports" className="scroll-mt-28">
+                <SportsSection sports={briefing.sports} />
+              </div>
             )}
 
             {/* GitHub Trending */}
@@ -203,9 +223,11 @@ export default async function HomePage() {
           {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
           <div className="flex flex-col gap-6 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
             {/* Weather Card with 5-day forecast */}
-            <RevealCard delay={0}>
-              <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
-            </RevealCard>
+            <div id="weather" className="scroll-mt-28">
+              <RevealCard delay={0}>
+                <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
+              </RevealCard>
+            </div>
 
             {/* Daily Extras (Word + Facts) */}
             <RevealCard delay={1}>
@@ -216,9 +238,11 @@ export default async function HomePage() {
             </RevealCard>
 
             {/* School Deadlines */}
-            <RevealCard delay={2}>
-              <SchoolDeadlines deadlines={briefing.school_deadlines} />
-            </RevealCard>
+            <div id="school" className="scroll-mt-28">
+              <RevealCard delay={2}>
+                <SchoolDeadlines deadlines={briefing.school_deadlines} />
+              </RevealCard>
+            </div>
 
             {/* Calendar & Email */}
             <RevealCard delay={3}>
