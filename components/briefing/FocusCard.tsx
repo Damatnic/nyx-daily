@@ -5,37 +5,36 @@ interface FocusCardProps {
 export default function FocusCard({ focus }: FocusCardProps) {
   if (!focus) return null;
 
-  const focusClean = focus.replace(/\*\*/g, '').replace(/^[→🚨⚡]\s*/, '').trim();
+  const clean = focus.replace(/\*\*/g, '').replace(/^[→🚨⚡]\s*/, '').trim();
 
   return (
-    <div className="relative rounded-2xl overflow-hidden border border-violet-500/15 bg-[#0a0a18]">
-      {/* Full background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-950/60 via-[#0a0a18] to-transparent pointer-events-none" />
-      {/* Right glow orb */}
-      <div className="absolute -right-8 top-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-violet-500/8 blur-3xl pointer-events-none" />
+    <div className="relative overflow-hidden rounded-2xl border border-violet-500/15 bg-gradient-to-br from-violet-950/60 via-[#0b0b18] to-[#0b0b18]">
+      {/* Ambient right glow */}
+      <div
+        className="absolute right-0 top-0 bottom-0 w-32 pointer-events-none"
+        style={{ background: 'linear-gradient(to left, rgba(124,58,237,0.06), transparent)' }}
+      />
 
-      <div className="relative z-10 flex items-center gap-4 px-5 py-4">
-        {/* Icon */}
-        <div className="shrink-0 w-9 h-9 rounded-xl bg-violet-500/15 border border-violet-500/20 flex items-center justify-center text-base select-none">
+      <div className="relative flex items-center gap-4 px-5 py-4">
+        {/* Icon ring */}
+        <div className="shrink-0 w-8 h-8 rounded-full bg-violet-500/15 border border-violet-500/25 flex items-center justify-center text-sm select-none">
           ⚡
         </div>
 
-        {/* Content */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-0.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-            <span className="text-[9px] font-bold tracking-[0.22em] uppercase text-slate-600">
-              Today&apos;s Priority
-            </span>
-          </div>
-          <p className="text-base sm:text-lg font-semibold text-slate-100 leading-snug">
-            {focusClean}
+          <p className="text-[9px] font-black uppercase tracking-[0.22em] text-violet-500/70 mb-0.5">
+            Today&apos;s Focus
           </p>
+          <p className="text-[15px] font-semibold text-slate-100 leading-snug">{clean}</p>
         </div>
+
+        {/* Pulse dot */}
+        <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-soft-pulse shrink-0" />
       </div>
 
-      {/* Bottom accent line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violet-500/30 to-transparent" />
+      {/* Bottom accent */}
+      <div className="absolute bottom-0 left-0 right-0 h-px"
+        style={{ background: 'linear-gradient(to right, transparent, rgba(124,58,237,0.4), transparent)' }} />
     </div>
   );
 }

@@ -3,155 +3,87 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, X, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 import CommandPalette from '@/components/ui/CommandPalette';
 
-const navLinks = [
+const LINKS = [
   { href: '/',        label: 'Home' },
   { href: '/archive', label: 'Archive' },
   { href: '/school',  label: 'School' },
   { href: '/tools',   label: 'Tools' },
 ];
 
-function NavClock() {
-  const [label, setLabel] = useState('');
-
+function LiveClock() {
+  const [time, setTime] = useState('');
   useEffect(() => {
-    function tick() {
-      const now = new Date();
-      const time = now.toLocaleTimeString('en-US', {
-        hour: 'numeric',
-        minute: '2-digit',
-        hour12: true,
-      });
-      setLabel(time);
-    }
+    const tick = () =>
+      setTime(new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true }));
     tick();
-    const id = setInterval(tick, 1_000);
+    const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, []);
-
-  if (!label) return null;
-  return (
-    <span className="text-slate-600 text-xs font-mono hidden lg:block select-none tabular-nums">
-      {label}
-    </span>
-  );
+  return <span className="text-slate-600 text-[11px] font-mono tabular-nums hidden sm:block">{time}</span>;
 }
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [paletteOpen, setPaletteOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  // Listen for Cmd+K globally — open palette
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        setPaletteOpen(true);
-      }
+    const h = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); setOpen(v => !v); }
     };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
+    window.addEventListener('keydown', h);
+    return () => window.removeEventListener('keydown', h);
   }, []);
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-40 border-b border-white/[0.05] bg-[#07070f]/90 backdrop-blur-md h-14">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="flex items-center justify-between h-full gap-3">
+      <nav className="fixed top-0 left-0 right-0 z-40 h-12 border-b border-white/[0.045] bg-[#06060e]/90 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center gap-4">
 
-            {/* Logo */}
-            <div className="flex items-center gap-4 shrink-0">
-              <Link href="/" className="flex items-center gap-2 group">
-                <span className="text-base font-bold tracking-tight text-slate-100 group-hover:text-[#8b5cf6] transition-colors duration-200">
-                  🌙 NYX
-                </span>
-              </Link>
-              <NavClock />
-            </div>
+          {/* Brand */}
+          <Link href="/" className="text-slate-400 hover:text-slate-200 transition-colors text-[13px] font-semibold tracking-wide shrink-0">
+            🌙 NYX
+          </Link>
 
-            {/* Desktop nav links */}
-            <div className="hidden md:flex items-center gap-0.5 h-full">
-              {navLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`relative px-3 h-full flex items-center text-sm font-medium transition-all duration-150 ${
-                      isActive
-                        ? 'text-[#8b5cf6]'
-                        : 'text-slate-500 hover:text-slate-200'
-                    }`}
-                  >
-                    {link.label}
-                    {isActive && (
-                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-0.5 bg-gradient-to-r from-transparent via-[#8b5cf6] to-transparent rounded-t-full" />
-                    )}
-                  </Link>
-                );
-              })}
-            </div>
+          {/* Nav links */}
+          <div className="hidden md:flex items-center gap-0.5 h-full ml-2">
+            {LINKS.map(({ href, label }) => {
+              const active = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`relative px-3 h-full flex items-center text-[12px] font-medium transition-colors ${
+                    active ? 'text-slate-200' : 'text-slate-600 hover:text-slate-300'
+                  }`}
+                >
+                  {label}
+                  {active && (
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/5 h-px bg-violet-500/70 rounded-t-full" />
+                  )}
+                </Link>
+              );
+            })}
+          </div>
 
-            {/* Right side: search + mobile toggle */}
-            <div className="flex items-center gap-2 shrink-0">
-
-              {/* Cmd+K search button */}
-              <button
-                onClick={() => setPaletteOpen(true)}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.07] hover:border-white/[0.12] text-slate-500 hover:text-slate-300 transition-all duration-150 group"
-                aria-label="Open command palette"
-              >
-                <Search size={13} />
-                <span className="hidden sm:block text-xs">Search</span>
-                <kbd className="hidden sm:flex items-center gap-0.5 text-[10px] font-mono text-slate-700 group-hover:text-slate-500 bg-white/[0.04] rounded px-1">
-                  ⌘K
-                </kbd>
-              </button>
-
-              {/* Mobile menu toggle */}
-              <button
-                className="p-2 rounded-lg text-slate-500 hover:text-slate-100 hover:bg-white/[0.04] transition-all duration-150 md:hidden"
-                onClick={() => setMenuOpen(!menuOpen)}
-                aria-label="Toggle menu"
-              >
-                {menuOpen ? <X size={18} /> : <Menu size={18} />}
-              </button>
-            </div>
-
+          {/* Right side */}
+          <div className="ml-auto flex items-center gap-3">
+            <LiveClock />
+            <button
+              onClick={() => setOpen(true)}
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] text-slate-600 hover:text-slate-400 hover:bg-white/[0.04] border border-white/[0.05] hover:border-white/[0.1] transition-all duration-150 font-mono"
+              aria-label="Open command palette"
+            >
+              <Search size={11} />
+              <span className="hidden sm:block">⌘K</span>
+            </button>
           </div>
         </div>
-
-        {/* Mobile dropdown */}
-        {menuOpen && (
-          <div className="md:hidden border-t border-white/[0.05] bg-[#07070f]/97 backdrop-blur-md">
-            <div className="px-4 py-3 flex flex-col gap-1">
-              {navLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 ${
-                      isActive
-                        ? 'text-[#8b5cf6] bg-purple-500/10'
-                        : 'text-slate-400 hover:text-slate-100 hover:bg-white/[0.04]'
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        )}
       </nav>
 
-      {/* Command palette */}
-      <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+      <CommandPalette open={open} onClose={() => setOpen(false)} />
     </>
   );
 }

@@ -5,40 +5,35 @@ import Link from 'next/link';
 import { House, Archive, BookOpen, Zap } from 'lucide-react';
 
 const tabs = [
-  { href: '/', label: 'Home', icon: House },
+  { href: '/',        label: 'Home',    icon: House },
   { href: '/archive', label: 'Archive', icon: Archive },
-  { href: '/school', label: 'School', icon: BookOpen },
-  { href: '/tools', label: 'Tools', icon: Zap },
+  { href: '/school',  label: 'School',  icon: BookOpen },
+  { href: '/tools',   label: 'Tools',   icon: Zap },
 ];
 
 export default function MobileBottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav
-      className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-[#07070f]/90 backdrop-blur-lg border-t border-white/[0.06]"
-    >
+    <nav className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-[#06060e]/95 backdrop-blur-xl border-t border-white/[0.05]">
       <div
-        className="flex items-center justify-around px-2 pt-2 pb-2"
-        style={{ paddingBottom: 'calc(0.5rem + env(safe-area-inset-bottom, 0px))' }}
+        className="flex items-center justify-around px-1"
+        style={{ paddingBottom: 'calc(0.375rem + env(safe-area-inset-bottom, 0px))', paddingTop: '0.375rem' }}
       >
-        {tabs.map((tab) => {
-          const Icon = tab.icon;
-          const isActive = pathname === tab.href;
-
+        {tabs.map(({ href, label, icon: Icon }) => {
+          const active = pathname === href;
           return (
             <Link
-              key={tab.href}
-              href={tab.href}
-              className={`flex flex-col items-center gap-0.5 py-1 px-4 rounded-xl transition-colors min-h-[44px] justify-center ${
-                isActive ? 'text-[#8b5cf6]' : 'text-slate-500 hover:text-slate-300'
+              key={href}
+              href={href}
+              className={`flex flex-col items-center gap-0.5 px-5 py-1.5 rounded-xl transition-all duration-150 min-h-[44px] justify-center ${
+                active ? 'text-violet-400' : 'text-slate-600 hover:text-slate-400'
               }`}
             >
-              {isActive && (
-                <div className="w-1 h-1 rounded-full bg-purple-500 mb-0.5" />
-              )}
-              <Icon size={20} />
-              <span className="text-[10px] font-medium">{tab.label}</span>
+              <Icon size={19} strokeWidth={active ? 2.5 : 1.8} />
+              <span className={`text-[10px] font-semibold ${active ? 'text-violet-400' : 'text-slate-700'}`}>
+                {label}
+              </span>
             </Link>
           );
         })}
