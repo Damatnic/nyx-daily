@@ -8,8 +8,6 @@ import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
-import WorkoutCard from '@/components/briefing/WorkoutCard';
-import WellnessBlock from '@/components/briefing/WellnessBlock';
 import QuoteCard from '@/components/briefing/QuoteCard';
 import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
@@ -18,6 +16,14 @@ import ProductHunt from '@/components/briefing/ProductHunt';
 import NasaApod from '@/components/briefing/NasaApod';
 import OnThisDay from '@/components/briefing/OnThisDay';
 import DailyExtras from '@/components/briefing/DailyExtras';
+import WeatherCard from '@/components/briefing/WeatherCard';
+import YouTubeSection from '@/components/briefing/YouTubeSection';
+import HiddenGemsSection from '@/components/briefing/HiddenGemsSection';
+import WorkoutTracker from '@/components/briefing/WorkoutTracker';
+import BreathworkCard from '@/components/briefing/BreathworkCard';
+import LifeHackCard from '@/components/briefing/LifeHackCard';
+import MoneyTipCard from '@/components/briefing/MoneyTipCard';
+import HealthTipCard from '@/components/briefing/HealthTipCard';
 import { ArrowLeft } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -38,6 +44,11 @@ export default async function DayPage({ params }: PageProps) {
   if (!briefing) {
     notFound();
   }
+
+  // Generate breathwork fallback text from old format
+  const breathworkFallback = briefing.breathwork
+    ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
+    : undefined;
 
   return (
     <>
@@ -61,6 +72,12 @@ export default async function DayPage({ params }: PageProps) {
             <FocusCard focus={briefing.focus} />
             <NewsSection news={briefing.news} />
 
+            {/* YouTube Picks */}
+            <YouTubeSection videos={briefing.youtube_picks} />
+
+            {/* Hidden Gems */}
+            <HiddenGemsSection gems={briefing.hidden_gems} />
+
             {briefing.sports && briefing.sports.length > 0 && (
               <SportsSection sports={briefing.sports} />
             )}
@@ -75,23 +92,42 @@ export default async function DayPage({ params }: PageProps) {
             )}
 
             <AppOfTheDay app={briefing.app_of_the_day} />
-            <WellnessBlock
-              breathwork={briefing.breathwork}
-              healthTip={briefing.health_tip}
-              lifeHack={briefing.life_hack}
-              moneyTip={briefing.money_tip}
+
+            {/* Standalone Tip Cards */}
+            <LifeHackCard lifeHack={briefing.life_hack} />
+            <MoneyTipCard moneyTip={briefing.money_tip} />
+            <HealthTipCard healthTip={briefing.health_tip} />
+
+            {/* Workout Tracker */}
+            <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+
+            {/* Breathwork Card */}
+            <BreathworkCard
+              session={briefing.breathwork_session}
+              fallbackText={breathworkFallback}
             />
-            <WorkoutCard workout={briefing.workout} />
           </div>
 
           {/* Right rail */}
           <div className="flex flex-col gap-6">
-            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
-            <SchoolDeadlines deadlines={briefing.school_deadlines} />
+            {/* Weather Card with forecast */}
+            <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
+
+            {/* Daily Extras (Word + Facts) */}
             <DailyExtras word={briefing.word_of_the_day} facts={briefing.facts_of_the_day} />
+
+            {/* School Deadlines */}
+            <SchoolDeadlines deadlines={briefing.school_deadlines} />
+
+            {/* Calendar & Email */}
+            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
+
+            {/* On This Day */}
             {briefing.on_this_day && briefing.on_this_day.length > 0 && (
               <OnThisDay events={briefing.on_this_day} />
             )}
+
+            {/* NASA APOD */}
             {briefing.apod && <NasaApod apod={briefing.apod} />}
           </div>
         </div>

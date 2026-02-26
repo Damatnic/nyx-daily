@@ -11,13 +11,18 @@ import DailyExtras from '@/components/briefing/DailyExtras';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
 import OnThisDay from '@/components/briefing/OnThisDay';
-import WorkoutCard from '@/components/briefing/WorkoutCard';
-import WellnessBlock from '@/components/briefing/WellnessBlock';
 import ScrollToTop from '@/components/briefing/ScrollToTop';
 import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
 import RedditHot from '@/components/briefing/RedditHot';
 import ProductHunt from '@/components/briefing/ProductHunt';
+import YouTubeSection from '@/components/briefing/YouTubeSection';
+import HiddenGemsSection from '@/components/briefing/HiddenGemsSection';
+import WorkoutTracker from '@/components/briefing/WorkoutTracker';
+import BreathworkCard from '@/components/briefing/BreathworkCard';
+import LifeHackCard from '@/components/briefing/LifeHackCard';
+import MoneyTipCard from '@/components/briefing/MoneyTipCard';
+import HealthTipCard from '@/components/briefing/HealthTipCard';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
@@ -81,6 +86,11 @@ export default async function HomePage() {
   const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
   const marketsLive = briefing.markets && briefing.markets.length > 0;
 
+  // Generate breathwork fallback text from old format
+  const breathworkFallback = briefing.breathwork
+    ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
+    : undefined;
+
   return (
     <>
       {/* Sticky navigation with mini markets */}
@@ -110,22 +120,28 @@ export default async function HomePage() {
             {/* News Section */}
             <NewsSection news={briefing.news} />
 
-            {/* Sports Section (shell — data from Agent 1) */}
+            {/* YouTube Picks */}
+            <YouTubeSection videos={briefing.youtube_picks} />
+
+            {/* Hidden Gems */}
+            <HiddenGemsSection gems={briefing.hidden_gems} />
+
+            {/* Sports Section */}
             {briefing.sports && briefing.sports.length > 0 && (
               <SportsSection sports={briefing.sports} />
             )}
 
-            {/* GitHub Trending (shell — data from Agent 1) */}
+            {/* GitHub Trending */}
             {briefing.github_trending && briefing.github_trending.length > 0 && (
               <GithubTrending repos={briefing.github_trending} />
             )}
 
-            {/* Reddit Hot (shell — data from Agent 1) */}
+            {/* Reddit Hot */}
             {briefing.reddit_hot && briefing.reddit_hot.length > 0 && (
               <RedditHot posts={briefing.reddit_hot} />
             )}
 
-            {/* Product Hunt (shell — data from Agent 1) */}
+            {/* Product Hunt */}
             {briefing.product_hunt && briefing.product_hunt.length > 0 && (
               <ProductHunt posts={briefing.product_hunt} />
             )}
@@ -133,16 +149,19 @@ export default async function HomePage() {
             {/* App of the Day */}
             <AppOfTheDay app={briefing.app_of_the_day} />
 
-            {/* Wellness Block */}
-            <WellnessBlock
-              breathwork={briefing.breathwork}
-              healthTip={briefing.health_tip}
-              lifeHack={briefing.life_hack}
-              moneyTip={briefing.money_tip}
-            />
+            {/* Standalone Tip Cards */}
+            <LifeHackCard lifeHack={briefing.life_hack} />
+            <MoneyTipCard moneyTip={briefing.money_tip} />
+            <HealthTipCard healthTip={briefing.health_tip} />
 
-            {/* Workout */}
-            <WorkoutCard workout={briefing.workout} />
+            {/* Workout Tracker */}
+            <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+
+            {/* Breathwork Card */}
+            <BreathworkCard
+              session={briefing.breathwork_session}
+              fallbackText={breathworkFallback}
+            />
           </div>
 
           {/* RIGHT RAIL — 1/3 width, sticky on desktop */}

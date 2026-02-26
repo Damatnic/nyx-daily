@@ -109,6 +109,38 @@ export interface ProductHuntPost {
   votes: number;
 }
 
+export interface YouTubeVideo {
+  title: string;
+  url: string;
+  video_id: string;
+  channel: string;
+  thumbnail: string;
+  published: string;
+  category: string; // "tech" | "science" | "news" | "entertainment" | "education"
+}
+
+export interface HiddenGem {
+  title: string;
+  url: string;
+  description: string;
+  points: number;
+  source: string; // "hackernews" | "producthunt"
+  date: string;
+}
+
+export interface BreathworkStep {
+  action: string;   // "Inhale", "Hold", "Exhale", "Rest"
+  duration: number; // seconds
+  emoji: string;
+}
+
+export interface BreathworkSession {
+  name: string;
+  steps: BreathworkStep[];
+  rounds: number;
+  description: string;
+}
+
 export interface WeatherDay {
   date: string;
   high: number;
@@ -162,4 +194,7 @@ export interface DailyBriefing {
   reddit_hot?: RedditPost[];
   product_hunt?: ProductHuntPost[];
   forecast?: WeatherDay[];
+  youtube_picks?: YouTubeVideo[];
+  hidden_gems?: HiddenGem[];
+  breathwork_session?: BreathworkSession;
 }
