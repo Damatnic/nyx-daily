@@ -43,7 +43,7 @@ export default function HiddenGemsSection({ gems }: { gems?: HiddenGem[] | null 
                 {gem.points > 0 && (
                   <span className="text-[10px] text-slate-700 font-mono">{gem.points} pts</span>
                 )}
-                <span className="text-[10px] text-slate-700 truncate">{new URL(gem.url).hostname.replace('www.', '')}</span>
+                <span className="text-[10px] text-slate-700 truncate">{(() => { try { return new URL(gem.url).hostname.replace('www.',''); } catch { return ''; } })()}</span>
               </div>
             </div>
 

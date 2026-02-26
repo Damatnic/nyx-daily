@@ -116,7 +116,7 @@ export default function CommandPalette({ open, onClose }: CommandPaletteProps) {
 
       {/* Panel */}
       <div
-        className="relative w-full max-w-lg bg-[#0d0d1a] border border-white/[0.1] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden"
+        className="relative w-full max-w-lg bg-[var(--card)] border border-white/[0.1] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search input */}

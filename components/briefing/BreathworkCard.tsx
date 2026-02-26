@@ -203,30 +203,6 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
           </button>
         </div>
       )}
-
-      <style jsx>{`
-        @keyframes breathe-in {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.15); }
-        }
-        @keyframes breathe-out {
-          0%, 100% { transform: scale(1.15); }
-          50% { transform: scale(1); }
-        }
-        @keyframes pulse-slow {
-          0%, 100% { opacity: 0.8; }
-          50% { opacity: 1; }
-        }
-        .animate-breathe-in {
-          animation: breathe-in 4s ease-in-out infinite;
-        }
-        .animate-breathe-out {
-          animation: breathe-out 4s ease-in-out infinite;
-        }
-        .animate-pulse-slow {
-          animation: pulse-slow 2s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 }

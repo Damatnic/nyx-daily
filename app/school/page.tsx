@@ -3,6 +3,7 @@ import { SchoolDeadline } from '@/lib/types';
 import Navbar from '@/components/nav/Navbar';
 import SchoolPageClient from '@/components/school/SchoolPageClient';
 
+export const metadata = { title: 'School' };
 export const dynamic = 'force-dynamic';
 
 const COURSE_STYLES: Record<string, { accent: string; bg: string; border: string; dot: string }> = {
@@ -82,7 +83,7 @@ export default async function SchoolPage() {
             { label: 'Due Soon',    value: urgent,  color: 'text-amber-400' },
             { label: 'Overdue',     value: overdue, color: 'text-red-400' },
           ].map((s) => (
-            <div key={s.label} className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] px-4 py-3 flex flex-col gap-0.5">
+            <div key={s.label} className="rounded-xl border border-white/[0.06] bg-[var(--card)] px-4 py-3 flex flex-col gap-0.5">
               <span className={`text-2xl font-black tabular-nums ${s.color}`}>{s.value}</span>
               <span className="text-[10px] uppercase tracking-wider text-slate-600">{s.label}</span>
             </div>
@@ -90,7 +91,7 @@ export default async function SchoolPage() {
         </div>
 
         {/* ── Overall progress ── */}
-        <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] px-5 py-4 mb-6">
+        <div className="rounded-xl border border-white/[0.06] bg-[var(--card)] px-5 py-4 mb-6">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs text-slate-500 font-medium">Semester Progress</span>
             <span className="text-xs font-bold text-slate-300 font-mono">{done}/{total} · {pct}%</span>

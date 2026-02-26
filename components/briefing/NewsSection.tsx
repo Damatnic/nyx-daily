@@ -208,9 +208,16 @@ export default function NewsSection({ news }: NewsSectionProps) {
   const [tab, setTab] = useState<TabKey>('all');
   if (!news) return null;
 
-  const sections = buildSections(news);
-  const visible  = tab === 'all' ? sections : sections.filter(s => s.key === tab);
-  const total    = sections.reduce((n, s) => n + s.items.length, 0);
+  const sections  = buildSections(news);
+  const total     = sections.reduce((n, s) => n + s.items.length, 0);
+  const hasKeys   = new Set(sections.map(s => s.key));
+
+  // Only show tabs that have actual data
+  const availableTabs = TABS.filter(t => t.key === 'all' || hasKeys.has(t.key));
+
+  // If current tab has no data, reset to 'all'
+  const activeTab = (tab === 'all' || hasKeys.has(tab)) ? tab : 'all';
+  const visible   = activeTab === 'all' ? sections : sections.filter(s => s.key === activeTab);
 
   return (
     <div className="nyx-card p-5">
@@ -222,10 +229,10 @@ export default function NewsSection({ news }: NewsSectionProps) {
         </div>
       </div>
 
-      {/* Tab bar — slim pill style */}
+      {/* Tab bar — only available categories */}
       <div className="flex gap-1 mb-1 overflow-x-auto pb-1 scrollbar-none -mx-1 px-1">
-        {TABS.map(({ key, label }) => {
-          const active = tab === key;
+        {availableTabs.map(({ key, label }) => {
+          const active = activeTab === key;
           return (
             <button
               key={key}
@@ -242,10 +249,8 @@ export default function NewsSection({ news }: NewsSectionProps) {
         })}
       </div>
 
-      {/* Section divider */}
       <div className="divider mb-1" />
 
-      {/* Feed */}
       <div className="divide-y divide-white/[0.04]">
         {visible.map((section) => (
           <CategorySection key={section.key} section={section} />

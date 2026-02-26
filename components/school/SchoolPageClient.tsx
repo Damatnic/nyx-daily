@@ -169,7 +169,7 @@ export default function SchoolPageClient({ courses }: SchoolPageClientProps) {
         return (
           <div
             key={course}
-            className={`rounded-2xl border bg-gradient-to-br ${accent} bg-[#0d0d1a] overflow-hidden`}
+            className={`rounded-2xl border bg-gradient-to-br ${accent} bg-[var(--card)] overflow-hidden`}
           >
             {/* Course header */}
             <div className="px-5 py-4">

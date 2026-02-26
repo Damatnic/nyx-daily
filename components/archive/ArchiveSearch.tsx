@@ -56,7 +56,7 @@ function BriefingCard({ date, briefing }: { date: string; briefing: DailyBriefin
   return (
     <Link
       href={`/day/${date}`}
-      className={`group block rounded-2xl border bg-[#0d0d1a] overflow-hidden hover:border-violet-500/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 ${
+      className={`group block rounded-2xl border bg-[var(--card)] overflow-hidden hover:border-violet-500/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 ${
         isToday ? 'border-violet-500/20' : 'border-white/[0.06]'
       }`}
     >
@@ -151,7 +151,7 @@ export default function ArchiveSearch({ briefings }: ArchiveSearchProps) {
           placeholder="Search by date, focus, quote, app..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full pl-10 pr-10 py-3 rounded-xl border border-white/[0.08] bg-[#0d0d1a] text-slate-100 text-sm placeholder:text-slate-600 focus:outline-none focus:border-violet-500/40 focus:bg-[#0f0f1e] transition-all duration-200"
+          className="w-full pl-10 pr-10 py-3 rounded-xl border border-white/[0.08] bg-[var(--card)] text-slate-100 text-sm placeholder:text-slate-600 focus:outline-none focus:border-violet-500/40 focus:bg-[var(--card)] transition-all duration-200"
         />
         {search && (
           <button

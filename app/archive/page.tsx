@@ -2,6 +2,7 @@ import { getAllDates, getBriefingByDate } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
 import ArchiveSearch from '@/components/archive/ArchiveSearch';
 
+export const metadata = { title: 'Archive' };
 export const dynamic = 'force-dynamic';
 
 export default async function ArchivePage() {

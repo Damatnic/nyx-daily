@@ -18,7 +18,7 @@ export default function CalendarCard({ events, gmailSummary }: CalendarCardProps
   if (!realEvents && !gmailSummary) return null;
 
   return (
-    <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-4">
+    <div className="nyx-card p-4">
       <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-600 mb-3">
         Today
       </p>

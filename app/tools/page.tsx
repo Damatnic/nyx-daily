@@ -4,6 +4,7 @@ import Navbar from '@/components/nav/Navbar';
 import { ExternalLink } from 'lucide-react';
 import ToolsClient from './ToolsClient';
 
+export const metadata = { title: 'Tools' };
 export const dynamic = 'force-dynamic';
 
 export default async function ToolsPage() {

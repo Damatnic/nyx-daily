@@ -54,7 +54,7 @@ export default async function DayPage({ params }: PageProps) {
       <Navbar />
 
       {/* Archive page header */}
-      <div className="border-b border-white/[0.05] bg-[#07070f]/60">
+      <div className="border-b border-white/[0.05] bg-[#06060e]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <Link
             href="/archive"

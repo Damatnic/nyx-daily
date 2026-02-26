@@ -47,10 +47,10 @@ function VideoCard({ video, featured = false }: VideoCardProps) {
         href={video.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="group block rounded-xl overflow-hidden border border-white/[0.05] hover:border-white/[0.12] transition-all duration-200 bg-[#0a0a16]"
+        className="group block rounded-xl overflow-hidden border border-white/[0.05] hover:border-white/[0.12] transition-all duration-200 bg-[var(--card)]"
       >
         {/* Thumbnail */}
-        <div className="relative aspect-video w-full bg-black/40 overflow-hidden">
+        <div className="relative aspect-video w-full bg-black/50 overflow-hidden">
           {!imgErr && video.thumbnail ? (
             <Thumbnail src={video.thumbnail} alt={video.title} onError={() => setImgErr(true)} />
           ) : (
@@ -91,7 +91,7 @@ function VideoCard({ video, featured = false }: VideoCardProps) {
       className="story-row group flex items-center gap-3 px-5 py-3"
     >
       {/* Thumbnail — small */}
-      <div className="shrink-0 w-20 h-12 rounded-lg overflow-hidden bg-black/40">
+      <div className="shrink-0 w-20 h-12 rounded-lg overflow-hidden bg-black/50">
         {!imgErr && video.thumbnail ? (
           <Thumbnail src={video.thumbnail} alt={video.title} onError={() => setImgErr(true)} />
         ) : (
