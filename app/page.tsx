@@ -24,6 +24,7 @@ import LifeHackCard from '@/components/briefing/LifeHackCard';
 import MoneyTipCard from '@/components/briefing/MoneyTipCard';
 import HealthTipCard from '@/components/briefing/HealthTipCard';
 import Link from 'next/link';
+import RelativeTime from '@/components/ui/RelativeTime';
 
 export const dynamic = 'force-dynamic';
 
@@ -191,16 +192,12 @@ export default async function HomePage() {
         {/* Footer */}
         <footer className="mt-10 pb-10 border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
           <div className="flex items-center gap-2 flex-wrap">
-            <span>
-              Generated at{' '}
-              {new Date(briefing.generated_at).toLocaleTimeString('en-US', {
-                hour: 'numeric',
-                minute: '2-digit',
-              })}
+            <span className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/60 inline-block" />
+              Data generated <RelativeTime timestamp={briefing.generated_at} />
             </span>
             <span className="text-slate-700">·</span>
             <span>{headlineCount} headlines</span>
-            {/* news ticker active indicator */}
           </div>
           <Link
             href="/archive"

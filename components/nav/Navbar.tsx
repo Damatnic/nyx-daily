@@ -18,22 +18,26 @@ function NavClock() {
   useEffect(() => {
     function tick() {
       const now = new Date();
-      setLabel(
-        now.toLocaleDateString('en-US', {
-          weekday: 'short',
-          month: 'short',
-          day: 'numeric',
-        })
-      );
+      const date = now.toLocaleDateString('en-US', {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+      });
+      const time = now.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      });
+      setLabel(`${time} · ${date}`);
     }
     tick();
-    const id = setInterval(tick, 60_000);
+    const id = setInterval(tick, 1_000);
     return () => clearInterval(id);
   }, []);
 
   if (!label) return null;
   return (
-    <span className="text-slate-500 text-xs font-mono hidden sm:block select-none">
+    <span className="text-slate-500 text-xs font-mono hidden sm:block select-none tabular-nums">
       {label}
     </span>
   );

@@ -189,10 +189,8 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
       {state === 'done' && (
         <div className="flex flex-col items-center py-8">
           <div className="text-5xl mb-4">
-            <span className="inline-block animate-bounce">
-              <span role="img" aria-label="meditation">
-
-              </span>
+            <span className="inline-block animate-bounce" role="img" aria-label="meditation">
+              🧘
             </span>
           </div>
           <p className="text-lg font-semibold text-emerald-400 mb-2">Session Complete!</p>

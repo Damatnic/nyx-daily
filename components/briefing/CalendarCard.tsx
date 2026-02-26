@@ -13,12 +13,14 @@ export default function CalendarCard({ events, gmailSummary }: CalendarCardProps
       <SectionHeader title="Today" />
 
       {/* Gmail */}
-      <div className="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04] mb-3">
-        <div className="p-1.5 rounded-lg bg-[#06b6d4]/10 border border-[#06b6d4]/20">
-          <Mail size={14} className="text-[#06b6d4]" />
+      {gmailSummary && (
+        <div className="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/[0.04] mb-3">
+          <div className="p-1.5 rounded-lg bg-[#06b6d4]/10 border border-[#06b6d4]/20 shrink-0">
+            <Mail size={14} className="text-[#06b6d4]" />
+          </div>
+          <span className="text-sm text-slate-300">{gmailSummary}</span>
         </div>
-        <span className="text-sm text-slate-300">{gmailSummary}</span>
-      </div>
+      )}
 
       {/* Calendar events */}
       <div className="flex flex-col gap-2">

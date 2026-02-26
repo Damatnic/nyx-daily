@@ -1,4 +1,5 @@
 import { DailyBriefing } from '@/lib/types';
+import TimeGreeting from './TimeGreeting';
 
 interface HeroSectionProps {
   briefing: DailyBriefing;
@@ -31,9 +32,12 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Date line */}
         <div className="flex items-center justify-between">
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">
-            {heroDateStr}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">
+              {heroDateStr}
+            </span>
+            <TimeGreeting />
+          </div>
           <span className="text-xs font-semibold tracking-[0.15em] uppercase text-slate-600">
             Week {weekNum} · Day {dayOfYear}/{totalDays}
           </span>
