@@ -1,16 +1,335 @@
 [
-  { "course": "SQL", "desc": "Unit 1 Project", "due_date": "2026-02-26", "due_str": "Thu Feb 26", "days": 2, "weight": "high", "done": false },
-  { "course": "SQL", "desc": "Quiz 3 - Joins & Aggregates", "due_date": "2026-03-05", "due_str": "Thu Mar 5", "days": 9, "weight": "medium", "done": false },
-  { "course": "SQL", "desc": "Unit 2 Project", "due_date": "2026-03-19", "due_str": "Thu Mar 19", "days": 23, "weight": "high", "done": false },
-  { "course": "SQL", "desc": "Quiz 1 - SELECT basics", "due_date": "2026-02-10", "due_str": "Tue Feb 10", "days": -14, "weight": "low", "done": true },
-  { "course": "SQL", "desc": "Quiz 2 - WHERE & ORDER BY", "due_date": "2026-02-17", "due_str": "Tue Feb 17", "days": -7, "weight": "low", "done": true },
-  { "course": "Stats", "desc": "Homework 8 - Confidence Intervals", "due_date": "2026-02-21", "due_str": "Sat Feb 21", "days": -3, "weight": "low", "done": true },
-  { "course": "Stats", "desc": "Homework 9 - Hypothesis Testing", "due_date": "2026-02-28", "due_str": "Sat Feb 28", "days": 4, "weight": "low", "done": false },
-  { "course": "Stats", "desc": "CLS Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false },
-  { "course": "Stats", "desc": "Extra Quiz 5 - Hypothesis Testing", "due_date": "2026-03-01", "due_str": "Sun Mar 1", "days": 5, "weight": "medium", "done": false },
-  { "course": "Stats", "desc": "Midterm Exam", "due_date": "2026-03-10", "due_str": "Tue Mar 10", "days": 14, "weight": "critical", "done": false },
-  { "course": "Stats", "desc": "Homework 7 - Sampling Distributions", "due_date": "2026-02-14", "due_str": "Sat Feb 14", "days": -10, "weight": "low", "done": true },
-  { "course": "Cybersecurity", "desc": "Lab 4 - Network Recon", "due_date": "2026-02-28", "due_str": "Sat Feb 28", "days": 4, "weight": "medium", "done": false },
-  { "course": "Cybersecurity", "desc": "Project 1 - Threat Model", "due_date": "2026-03-14", "due_str": "Sat Mar 14", "days": 18, "weight": "high", "done": false },
-  { "course": "Cybersecurity", "desc": "Lab 3 - Vulnerability Scanning", "due_date": "2026-02-14", "due_str": "Sat Feb 14", "days": -10, "weight": "medium", "done": true }
+  {
+    "course": "Advanced SQL",
+    "desc": "Unit 1 Project",
+    "due_date": "2026-02-26",
+    "due_str": "Thu Feb 26",
+    "days": 1,
+    "weight": "high",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 5 Practice Problems",
+    "due_date": "2026-02-26",
+    "due_str": "Thu Feb 26",
+    "days": 1,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Homework 9 - Hypothesis Testing Ch.9",
+    "due_date": "2026-02-28",
+    "due_str": "Sat Feb 28",
+    "days": 3,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "CLS Hypothesis Testing",
+    "due_date": "2026-03-01",
+    "due_str": "Sun Mar 1",
+    "days": 4,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Extra Quiz 5 - Hypothesis Testing Ch.9",
+    "due_date": "2026-03-01",
+    "due_str": "Sun Mar 1",
+    "days": 4,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Week 6.5 Lab",
+    "due_date": "2026-03-04",
+    "due_str": "Wed Mar 4",
+    "days": 7,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Week 6 Lab/Demo",
+    "due_date": "2026-03-04",
+    "due_str": "Wed Mar 4",
+    "days": 7,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Data Management Meeting Simulation",
+    "due_date": "2026-03-05",
+    "due_str": "Thu Mar 5",
+    "days": 8,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 6 Practice Problems",
+    "due_date": "2026-03-05",
+    "due_str": "Thu Mar 5",
+    "days": 8,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 6 Quiz",
+    "due_date": "2026-03-05",
+    "due_str": "Thu Mar 5",
+    "days": 8,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Week 7 In-Class Lab",
+    "due_date": "2026-03-05",
+    "due_str": "Thu Mar 5",
+    "days": 8,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Homework 10 - Two Sample Hypothesis Testing Ch.11&12",
+    "due_date": "2026-03-07",
+    "due_str": "Sat Mar 7",
+    "days": 10,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Extra Bonus Quiz",
+    "due_date": "2026-03-08",
+    "due_str": "Sun Mar 8",
+    "days": 11,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Data Management Case Study",
+    "due_date": "2026-03-11",
+    "due_str": "Wed Mar 11",
+    "days": 14,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Power BI Project",
+    "due_date": "2026-03-12",
+    "due_str": "Thu Mar 12",
+    "days": 15,
+    "weight": "high",
+    "done": false
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "Roll Call Attendance",
+    "due_date": "2026-03-12",
+    "due_str": "Thu Mar 12",
+    "days": 15,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 7 Practice Problems",
+    "due_date": "2026-03-12",
+    "due_str": "Thu Mar 12",
+    "days": 15,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 7 Quiz",
+    "due_date": "2026-03-12",
+    "due_str": "Thu Mar 12",
+    "days": 15,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Homework 11 - Chapter 14 ANOVA",
+    "due_date": "2026-03-12",
+    "due_str": "Thu Mar 12",
+    "days": 15,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "FINAL EXAM",
+    "due_date": "2026-03-13",
+    "due_str": "Fri Mar 13",
+    "days": 16,
+    "weight": "critical",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 8 Practice Problems",
+    "due_date": "2026-03-26",
+    "due_str": "Thu Mar 26",
+    "days": 29,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 8 Quiz",
+    "due_date": "2026-03-26",
+    "due_str": "Thu Mar 26",
+    "days": 29,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 9 Practice Problems",
+    "due_date": "2026-04-02",
+    "due_str": "Thu Apr 2",
+    "days": 36,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 9 Quiz",
+    "due_date": "2026-04-02",
+    "due_str": "Thu Apr 2",
+    "days": 36,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 10 In-Class Lab",
+    "due_date": "2026-04-02",
+    "due_str": "Thu Apr 2",
+    "days": 36,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 10 Practice Problems",
+    "due_date": "2026-04-09",
+    "due_str": "Thu Apr 9",
+    "days": 43,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 10 Quiz",
+    "due_date": "2026-04-09",
+    "due_str": "Thu Apr 9",
+    "days": 43,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 11 In-Class Lab",
+    "due_date": "2026-04-09",
+    "due_str": "Thu Apr 9",
+    "days": 43,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 11 Practice Problems",
+    "due_date": "2026-04-16",
+    "due_str": "Thu Apr 16",
+    "days": 50,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 12 Practice Problems",
+    "due_date": "2026-04-23",
+    "due_str": "Thu Apr 23",
+    "days": 57,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Unit 2 Project",
+    "due_date": "2026-04-24",
+    "due_str": "Fri Apr 24",
+    "days": 58,
+    "weight": "high",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 13 Practice Problems",
+    "due_date": "2026-04-30",
+    "due_str": "Thu Apr 30",
+    "days": 64,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 14 Practice Problems",
+    "due_date": "2026-05-07",
+    "due_str": "Thu May 7",
+    "days": 71,
+    "weight": "low",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 14 Quiz",
+    "due_date": "2026-05-07",
+    "due_str": "Thu May 7",
+    "days": 71,
+    "weight": "medium",
+    "done": false
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Unit 3 Project",
+    "due_date": "2026-05-14",
+    "due_str": "Thu May 14",
+    "days": 78,
+    "weight": "high",
+    "done": false
+  },
+  {
+    "course": "Introductory Statistics",
+    "desc": "Test 3 - Chapter 7 and 8",
+    "due_date": "2026-02-22",
+    "due_str": "Sun Feb 22",
+    "days": -3,
+    "weight": "high",
+    "done": true
+  },
+  {
+    "course": "Data Visualization & Reporting",
+    "desc": "NFL Arrests Data Visualization Assignment",
+    "due_date": "2026-02-25",
+    "due_str": "Wed Feb 25",
+    "days": 0,
+    "weight": "medium",
+    "done": true
+  }
 ]

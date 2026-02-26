@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-25T19:04:50.475052",
+  "generated_at": "2026-02-25T19:08:10.312211",
   "day": "Wednesday",
   "date": "2026-02-25",
-  "weather": "\ud83c\udf21\ufe0f Weather unavailable (<urlopen error timed out>)",
+  "weather": "\u2600\ufe0f Waukesha \u00b7 25\u00b0F (feels 17\u00b0F) \u00b7 Clear \u00b7 H:29\u00b0 L:19\u00b0",
   "quote": "Some changes look negative on the surface but you will soon realize that space is being created in your life for something new to emerge.",
   "author": "Eckhart Tolle",
   "focus": "Two-day sprint: **Unit 1 Project** today (due tomorrow), then **Lesson 5 Practice Problems** after (due Thu Feb 26).",
@@ -26,16 +26,16 @@
     {
       "label": "BTC",
       "symbol": "BTC-USD",
-      "price": "$68,297",
-      "change_pct": 0.46,
+      "price": "$68,449",
+      "change_pct": 0.69,
       "up": true,
       "kind": "crypto"
     },
     {
       "label": "ETH",
       "symbol": "ETH-USD",
-      "price": "$2,059",
-      "change_pct": 0.11,
+      "price": "$2,063",
+      "change_pct": 0.3,
       "up": true,
       "kind": "crypto"
     }
@@ -73,33 +73,33 @@
       "home_score": 22,
       "away_team": "Oklahoma City Thunder",
       "away_abbrev": "OKC",
-      "away_score": 31,
-      "status": "live",
-      "status_detail": "35.8 - 1st",
+      "away_score": 34,
+      "status": "scheduled",
+      "status_detail": "End of 1st",
       "winner": null
     },
     {
       "sport": "nba",
       "home_team": "Toronto Raptors",
       "home_abbrev": "TOR",
-      "home_score": 20,
+      "home_score": 27,
       "away_team": "San Antonio Spurs",
       "away_abbrev": "SA",
-      "away_score": 26,
+      "away_score": 28,
       "status": "live",
-      "status_detail": "2:47 - 1st",
+      "status_detail": "44.5 - 1st",
       "winner": null
     },
     {
       "sport": "nba",
       "home_team": "Memphis Grizzlies",
       "home_abbrev": "MEM",
-      "home_score": 28,
+      "home_score": 31,
       "away_team": "Golden State Warriors",
       "away_abbrev": "GS",
       "away_score": 34,
-      "status": "live",
-      "status_detail": "9.9 - 1st",
+      "status": "scheduled",
+      "status_detail": "End of 1st",
       "winner": null
     },
     {
@@ -159,7 +159,7 @@
       "away_abbrev": "PHI",
       "away_score": 0,
       "status": "live",
-      "status_detail": "16:31 - 2nd",
+      "status_detail": "13:57 - 2nd",
       "winner": null
     },
     {
@@ -171,7 +171,7 @@
       "away_abbrev": "TOR",
       "away_score": 0,
       "status": "live",
-      "status_detail": "8:14 - 1st",
+      "status_detail": "6:21 - 1st",
       "winner": null
     },
     {
@@ -182,8 +182,8 @@
       "away_team": "Seattle Kraken",
       "away_abbrev": "SEA",
       "away_score": 0,
-      "status": "scheduled",
-      "status_detail": "2/25 - 8:00 PM EST",
+      "status": "live",
+      "status_detail": "20:00 - 1st",
       "winner": null
     }
   ],
@@ -235,7 +235,7 @@
       "url": "https://github.com/D4Vinci/Scrapling",
       "description": "\ud83d\udd77\ufe0f An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
       "language": "Python",
-      "stars": "15029",
+      "stars": "15038",
       "stars_today": 1656
     },
     {
@@ -243,7 +243,7 @@
       "url": "https://github.com/huggingface/skills",
       "description": "",
       "language": "Python",
-      "stars": "6384",
+      "stars": "6386",
       "stars_today": 1538
     },
     {
@@ -251,7 +251,7 @@
       "url": "https://github.com/abhigyanpatwari/GitNexus",
       "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirel",
       "language": "TypeScript",
-      "stars": "3705",
+      "stars": "3706",
       "stars_today": 894
     },
     {
@@ -259,7 +259,7 @@
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "language": "Shell",
-      "stars": "61828",
+      "stars": "61835",
       "stars_today": 1250
     },
     {
@@ -267,7 +267,7 @@
       "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
       "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent syst",
       "language": "Python",
-      "stars": "10719",
+      "stars": "10720",
       "stars_today": 1042
     },
     {
@@ -275,7 +275,7 @@
       "url": "https://github.com/datawhalechina/hello-agents",
       "description": "\ud83d\udcda \u300a\u4ece\u96f6\u5f00\u59cb\u6784\u5efa\u667a\u80fd\u4f53\u300b\u2014\u2014\u4ece\u96f6\u5f00\u59cb\u7684\u667a\u80fd\u4f53\u539f\u7406\u4e0e\u5b9e\u8df5\u6559\u7a0b",
       "language": "Python",
-      "stars": "21939",
+      "stars": "21944",
       "stars_today": 222
     },
     {
@@ -283,7 +283,7 @@
       "url": "https://github.com/bytedance/deer-flow",
       "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
       "language": "TypeScript",
-      "stars": "20445",
+      "stars": "20447",
       "stars_today": 59
     },
     {
@@ -297,56 +297,62 @@
   ],
   "reddit_hot": [
     {
+      "title": "Can they actually do this? JD Vance: \"We're announcing today that we have decided to temporarily hal",
+      "url": "https://v.redd.it/ewyh5g6qyplg1",
+      "permalink": "https://reddit.com/r/law/comments/1resjjt/can_they_actually_do_this_jd_vance_were/",
+      "subreddit": "law",
+      "score": 20094,
+      "num_comments": 2692,
+      "thumbnail": "https://external-preview.redd.it/NWppZWRqNnF5cGxnMbpqioIV_zh2AqBBBTY-RpC8ZzxfU3MKNy1BmsKD3Yxy.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=eeb1df055d15efabea19268e27355f3ee0bb68a2"
+    },
+    {
       "title": "You can't make this shit up - Trump served Team USA burgers for lunch",
       "url": "https://v.redd.it/sxyi6pjicolg1",
       "permalink": "https://reddit.com/r/circled/comments/1rejf24/you_cant_make_this_shit_up_trump_served_team_usa/",
       "subreddit": "circled",
-      "score": 15459,
-      "num_comments": 4766,
+      "score": 15511,
+      "num_comments": 4779,
       "thumbnail": "https://external-preview.redd.it/Mmx2MzIxbGljb2xnMXAqv48gvJPQ3neInTc7KhVNfOPLrT77Uc10Ar5A4wRY.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=13f9fbe2c85573559edadefde41f908d71968914"
-    },
-    {
-      "title": "Response To Black Children Gaining Access To Closer Schools In The 1970s",
-      "url": "https://v.redd.it/xw41onr19nlg1",
-      "permalink": "https://reddit.com/r/BlackPeopleofReddit/comments/1redg6j/response_to_black_children_gaining_access_to/",
-      "subreddit": "BlackPeopleofReddit",
-      "score": 30678,
-      "num_comments": 3908,
-      "thumbnail": "https://external-preview.redd.it/bmVnbjd6cDE5bmxnMT64VUcb0ogYdOsoaRsc3nQVWHf3oiTxGzhf_DSpx_0d.jpeg?width=140&amp;height=133&amp;format=jpg&amp;auto=webp&amp;s=4e829737e46f25f949d6116254e997631ee79112"
     },
     {
       "title": "Are you snapping or taking it all at once",
       "url": "https://i.redd.it/luaftzh0hnlg1.jpeg",
       "permalink": "https://reddit.com/r/SipsTea/comments/1reej4u/are_you_snapping_or_taking_it_all_at_once/",
       "subreddit": "SipsTea",
-      "score": 22618,
-      "num_comments": 4098,
+      "score": 22719,
+      "num_comments": 4119,
       "thumbnail": "https://preview.redd.it/luaftzh0hnlg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=f0f91c5020aaa917c18b74e32c63519f64817f26"
     },
     {
-      "title": "Can they actually do this? JD Vance: \"We're announcing today that we have decided to temporarily hal",
-      "url": "https://v.redd.it/ewyh5g6qyplg1",
-      "permalink": "https://reddit.com/r/law/comments/1resjjt/can_they_actually_do_this_jd_vance_were/",
-      "subreddit": "law",
-      "score": 19801,
-      "num_comments": 2657,
-      "thumbnail": "https://external-preview.redd.it/NWppZWRqNnF5cGxnMbpqioIV_zh2AqBBBTY-RpC8ZzxfU3MKNy1BmsKD3Yxy.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=eeb1df055d15efabea19268e27355f3ee0bb68a2"
+      "title": "Response To Black Children Gaining Access To Closer Schools In The 1970s",
+      "url": "https://v.redd.it/xw41onr19nlg1",
+      "permalink": "https://reddit.com/r/BlackPeopleofReddit/comments/1redg6j/response_to_black_children_gaining_access_to/",
+      "subreddit": "BlackPeopleofReddit",
+      "score": 30749,
+      "num_comments": 3923,
+      "thumbnail": "https://external-preview.redd.it/bmVnbjd6cDE5bmxnMT64VUcb0ogYdOsoaRsc3nQVWHf3oiTxGzhf_DSpx_0d.jpeg?width=140&amp;height=133&amp;format=jpg&amp;auto=webp&amp;s=4e829737e46f25f949d6116254e997631ee79112"
     },
     {
-      "title": "JD Vance: \"We're announcing today that we have decided to temporarily halt certain amounts of Medica",
-      "url": "https://v.redd.it/i3oe2b6kwplg1",
-      "permalink": "https://reddit.com/r/UnderReportedNews/comments/1res7tr/jd_vance_were_announcing_today_that_we_have/",
-      "subreddit": "UnderReportedNews",
-      "score": 18077,
-      "num_comments": 2235,
-      "thumbnail": "https://external-preview.redd.it/bjBjNXR2Nmt3cGxnMS4WYJbJIeB7Akq9iQqcQM28P0NJEtIeEPZAySdc7Myk.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=dd7e2e738401c4fda9a0aa27c3165a2699e60c80"
+      "title": "What's one 'boring' career that's actually a goldmine if you play it smart?",
+      "url": "https://www.reddit.com/r/AskReddit/comments/1recoq5/whats_one_boring_career_thats_actually_a_goldmine/",
+      "permalink": "https://reddit.com/r/AskReddit/comments/1recoq5/whats_one_boring_career_thats_actually_a_goldmine/",
+      "subreddit": "AskReddit",
+      "score": 7418,
+      "num_comments": 3568,
+      "thumbnail": null
     }
   ],
   "product_hunt": [
     {
-      "name": "DemoMe",
-      "tagline": "Turn screen recordings into polished demo videos instantly Discussion | Link",
-      "url": "https://www.producthunt.com/products/demome",
+      "name": "Thinglo",
+      "tagline": "Save anything from any app \u2014 AI-organized, private, instant Discussion | Link",
+      "url": "https://www.producthunt.com/products/thinglo-save-anything-lose-nothing",
+      "votes": 0
+    },
+    {
+      "name": "Opal 2.0 by Google Labs",
+      "tagline": "Now with smart agent, memory, routing and interactive chat Discussion | Link",
+      "url": "https://www.producthunt.com/products/google",
       "votes": 0
     },
     {
@@ -356,80 +362,20 @@
       "votes": 0
     },
     {
-      "name": "AskAIBase",
-      "tagline": "Memory infrastructure for AI coding agents Discussion | Link",
-      "url": "https://www.producthunt.com/products/ask-7",
+      "name": "KiloClaw",
+      "tagline": "Hosted OpenClaw. No Mac mini required. Discussion | Link",
+      "url": "https://www.producthunt.com/products/kiloclaw",
       "votes": 0
     },
     {
-      "name": "Draftwise Playbook Studio",
-      "tagline": "Analyze your patterns. Capture your edge. Playbooks at scale Discussion | Link",
-      "url": "https://www.producthunt.com/products/draftwise-playbook-studio",
-      "votes": 0
-    },
-    {
-      "name": "Orca",
-      "tagline": "Play, mod, and host Minecraft from your browser with AI Discussion | Link",
-      "url": "https://www.producthunt.com/products/orca-3",
+      "name": "DemoMe",
+      "tagline": "Turn screen recordings into polished demo videos instantly Discussion | Link",
+      "url": "https://www.producthunt.com/products/demome",
       "votes": 0
     }
   ],
   "news": {
     "us_news": [
-      {
-        "title": "Decades after being blocked from the Little League World Series, a Black team is honored",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5725385/decades-after-being-blocked-from-the-little-league-world-series-a-black-team-is-honored",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "A Black little league team that got invited to the 1963 Little League World Series but never got to go because of segregation is finally getting recognition.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Supreme Court appears split in tax foreclosure case",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5726382/supreme-court-appears-split-in-tax-foreclosure-case",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "At issue is whether a county can seize homeowners' residence for unpaid property taxes and sell the house at auction for less than the homeowners would get if they put their home on the market themsel",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Top House Dem wants Justice Department to explain missing Trump-related Epstein files",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5726780/democrats-doj-epstein-files-trump-missing-pages",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "After NPR reporting revealed dozens of pages of Epstein files related to President Trump appear to be missing from the public record, a top House Democrat wants to know why.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "ICE won't be at polling places this year, a Trump DHS official promises",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5726768/ice-agents-midterm-elections",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In a call with top state voting officials, a Department of Homeland Security official stated unequivocally that immigration agents would not be patrolling polling places during this year's midterms.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Cuba says it killed 4 people aboard a Florida-registered speedboat who fired on soldiers",
-        "link": "https://www.npr.org/2026/02/25/g-s1-111529/cuba-florida-speedboat",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Cuban soldiers have killed four people aboard a speedboat registered in Florida that opened fire on officers in Cuban waters. It was unclear if any U.S. citizens were aboard. Officials said one Cuban ",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Tipped workers expect tax boon this year, but not a long-term fix",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5684227/trump-tax-tips-state-union",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In his State of the Union address on Tuesday night, President Trump once again touted new tax benefits for tipped workers, who like many Americans are feeling the pinch of higher prices.",
-        "domain": "npr.org"
-      },
       {
         "title": "Fact-checking Trump's claims in his State of the Union address",
         "link": "https://www.pbs.org/newshour/show/fact-checking-trumps-claims-in-his-state-of-the-union-address",
@@ -483,6 +429,60 @@
         "source": "PBS NewsHour",
         "snippet": "President Trump's defense of his immigration agenda during his State of the Union address comes as public support is falling. In an NBC News poll this month, 49% of people said they strongly disapprov",
         "domain": "pbs.org"
+      },
+      {
+        "title": "Decades after being blocked from the Little League World Series, a Black team is honored",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5725385/decades-after-being-blocked-from-the-little-league-world-series-a-black-team-is-honored",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "A Black little league team that got invited to the 1963 Little League World Series but never got to go because of segregation is finally getting recognition.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Supreme Court appears split in tax foreclosure case",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5726382/supreme-court-appears-split-in-tax-foreclosure-case",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "At issue is whether a county can seize homeowners' residence for unpaid property taxes and sell the house at auction for less than the homeowners would get if they put their home on the market themsel",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Top House Dem wants Justice Department to explain missing Trump-related Epstein files",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5726780/democrats-doj-epstein-files-trump-missing-pages",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "After NPR reporting revealed dozens of pages of Epstein files related to President Trump appear to be missing from the public record, a top House Democrat wants to know why.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "ICE won't be at polling places this year, a Trump DHS official promises",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5726768/ice-agents-midterm-elections",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "In a call with top state voting officials, a Department of Homeland Security official stated unequivocally that immigration agents would not be patrolling polling places during this year's midterms.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Cuba says it killed 4 people aboard a Florida-registered speedboat who fired on soldiers",
+        "link": "https://www.npr.org/2026/02/25/g-s1-111529/cuba-florida-speedboat",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Cuban soldiers have killed four people aboard a speedboat registered in Florida that opened fire on officers in Cuban waters. It was unclear if any U.S. citizens were aboard. Officials said one Cuban ",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Tipped workers expect tax boon this year, but not a long-term fix",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5684227/trump-tax-tips-state-union",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "In his State of the Union address on Tuesday night, President Trump once again touted new tax benefits for tipped workers, who like many Americans are feeling the pinch of higher prices.",
+        "domain": "npr.org"
       },
       {
         "title": "The Democrats Who Got Weird During the State of the Union",
@@ -649,60 +649,6 @@
         "domain": "npr.org"
       },
       {
-        "title": "Tim Walz accuses Trump of withholding $259m in Medicaid funds \u2018to punish blue states\u2019 \u2013 live",
-        "link": "https://www.theguardian.com/us-news/live/2026/feb/25/donald-trump-state-of-the-union-us-politics-iran-latest-news-updates",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Democratic governor of Minnesota says administration\u2019s federal withholding of $259m \u2018has nothing to do with fraud\u2019Sign up for the Breaking News US email to get newsletter alerts in your inboxA newly r",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Vance says Minnesota\u2019s Medicaid funds halted as part of Trump\u2019s \u2018war on fraud\u2019",
-        "link": "https://www.theguardian.com/us-news/2026/feb/25/jd-vance-minnesota-medicaid",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Vice-president makes announcement with Mehmet Oz, who says other states will be next after MinnesotaJD Vance announced on Wednesday that the Trump administration would \u201ctemporarily halt\u201d more than a q",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Judge orders Greenpeace to pay $345m over Dakota Access pipeline protest",
-        "link": "https://www.theguardian.com/us-news/2026/feb/25/greenpeace-dakota-access-pipeline-protest",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Group says case far from over after being found liable for defamation and other claims brought by energy firmA North Dakota judge has said he will order Greenpeace to pay damages expected to total $34",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Grand jury rejects indictment over federal officer\u2019s shooting of US citizen",
-        "link": "https://www.theguardian.com/us-news/2026/feb/25/grand-jury-rejects-indictment-shooting-us-citizen",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Killing of Ruben Ray Martinez on 15 March 2025 in Texas was not disclosed by the department until media reported itA grand jury on Wednesday rejected indictments over the fatal shooting last year of a",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Nearly blind refugee abandoned by US border patrol found dead in Buffalo",
-        "link": "https://www.theguardian.com/us-news/2026/feb/25/border-patrol-refugee-buffalo",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Investigation under way after man was dropped off five miles from home but family wasn\u2019t notified, officials sayA nearly blind Burmese refugee who was abandoned by border patrol agents has been found ",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Death Valley erupts in wildflowers in sign of developing superbloom",
-        "link": "https://www.theguardian.com/us-news/2026/feb/25/death-valley-wildflowers-superbloom",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Record rainfall in famously arid California park has caused a wildflower eruption nearing levels of a superbloomDeath Valley and parts of southern California have erupted in wildflowers thanks to reco",
-        "domain": "theguardian.com"
-      },
-      {
         "title": "On eve of nuclear talks, Trump hits Iran with new sanctions",
         "link": "https://thehill.com/newsletters/defense-national-security/5755848-on-eve-of-nuclear-talks-trump-hits-iran-with-new-sanctions/",
         "image": "https://thehill.com/wp-content/uploads/sites/2/2024/10/iran_missiles_AP.jpg?w=900",
@@ -755,6 +701,60 @@
         "source": "The Hill",
         "snippet": "Apple is rolling out an age verification tool in the U.S. and abroad to ensure users are at least 18. App developers in Brazil, Australia, Singapore, and the U.S. states of Utah and Louisiana are now ",
         "domain": "thehill.com"
+      },
+      {
+        "title": "Trump news at a glance: Democrats say president failing to protect Americans amid State of the Union fallout",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/trump-news-at-a-glance-latest-updates",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "US president faced more scathing criticism, a day after his address. Key US politics stories from Wednesday 25 February at a glanceDonald Trump continued to face scathing criticism for his State of th",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Tim Walz accuses Trump of withholding $259m in Medicaid funds \u2018to punish blue states\u2019 \u2013 live",
+        "link": "https://www.theguardian.com/us-news/live/2026/feb/25/donald-trump-state-of-the-union-us-politics-iran-latest-news-updates",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Democratic governor of Minnesota says administration\u2019s federal withholding of $259m \u2018has nothing to do with fraud\u2019Sign up for the Breaking News US email to get newsletter alerts in your inboxA newly r",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Vance says Minnesota\u2019s Medicaid funds halted as part of Trump\u2019s \u2018war on fraud\u2019",
+        "link": "https://www.theguardian.com/us-news/2026/feb/25/jd-vance-minnesota-medicaid",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Vice-president makes announcement with Mehmet Oz, who says other states will be next after MinnesotaJD Vance announced on Wednesday that the Trump administration would \u201ctemporarily halt\u201d more than a q",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Judge orders Greenpeace to pay $345m over Dakota Access pipeline protest",
+        "link": "https://www.theguardian.com/us-news/2026/feb/25/greenpeace-dakota-access-pipeline-protest",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Group says case far from over after being found liable for defamation and other claims brought by energy firmA North Dakota judge has said he will order Greenpeace to pay damages expected to total $34",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Grand jury rejects indictment over federal officer\u2019s shooting of US citizen",
+        "link": "https://www.theguardian.com/us-news/2026/feb/25/grand-jury-rejects-indictment-shooting-us-citizen",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Killing of Ruben Ray Martinez on 15 March 2025 in Texas was not disclosed by the department until media reported itA grand jury on Wednesday rejected indictments over the fatal shooting last year of a",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Nearly blind refugee abandoned by US border patrol found dead in Buffalo",
+        "link": "https://www.theguardian.com/us-news/2026/feb/25/border-patrol-refugee-buffalo",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Investigation under way after man was dropped off five miles from home but family wasn\u2019t notified, officials sayA nearly blind Burmese refugee who was abandoned by border patrol agents has been found ",
+        "domain": "theguardian.com"
       },
       {
         "title": "Scoop: Pentagon takes first step toward blacklisting Anthropic",
@@ -813,58 +813,58 @@
     ],
     "tech": [
       {
-        "title": "Gushwork bets on AI search for customer leads \u2014 and early results are emerging",
-        "link": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+        "title": "Roundtables: Why 2026 Is the Year for Sodium-Ion Batteries",
+        "link": "https://www.technologyreview.com/2026/02/25/1132873/roundtables-why-2026-is-the-year-for-sodium-ion-batteries/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Gushwork has raised $9 million in a seed round led by SIG and Lightspeed. The startup has seen early customer traction from AI search tools like ChatGPT.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "Listen to the session or watch below Sodium-based batteries could be a cheaper, safer alternative to lithium-ion, and the technology is finally making its way into cars\u2014and energy storage arrays on th",
+        "domain": "technologyreview.com"
       },
       {
-        "title": "Anthropic acquires computer-use AI startup Vercept after Meta poached one of its founders",
-        "link": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
+        "title": "The Download: introducing the Crime issue",
+        "link": "https://www.technologyreview.com/2026/02/25/1133653/the-download-introducing-the-crime-issue/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Seattle-based Vercept developed complex agentic tools, including a computer-use agent that could complete tasks inside applications like a person with a laptop would.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Crime issue Technology has long m",
+        "domain": "technologyreview.com"
       },
       {
-        "title": "Nvidia has another record quarter amid record capex spends",
-        "link": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
+        "title": "Listen to Earth\u2019s rumbling, secret soundtrack",
+        "link": "https://www.technologyreview.com/2026/02/25/1132829/listen-earths-rumbling-secret-soundtrack/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "\"The demand for tokens in the world has gone completely exponential,\" Nvidia CEO Jensen Huang said about the company's earnings.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "The boom of a calving glacier. The crackling rumble of a wildfire. The roar of a surging storm front. They\u2019re the noises of the living Earth, music of this one particular sphere and clues to the true ",
+        "domain": "technologyreview.com"
       },
       {
-        "title": "The White House wants AI companies to cover rate hikes. Most have already said they would.",
-        "link": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
+        "title": "3 things Juliet Beauchamp is into right now",
+        "link": "https://www.technologyreview.com/2026/02/25/1132836/3-things-juliet-beauchamp/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Many hyperscalers have already made public commitments to cover electricity cost increases.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "The only reality show that matters The Real Housewives of Salt Lake City is one of the best shows on television right now. Not one of the best reality TV shows, but one of the best TV shows, period. C",
+        "domain": "technologyreview.com"
       },
       {
-        "title": "US cybersecurity agency CISA reportedly in dire shape amid Trump cuts and layoffs",
-        "link": "https://techcrunch.com/2026/02/25/us-cybersecurity-agency-cisa-reportedly-in-dire-shape-amid-trump-cuts-and-layoffs/",
+        "title": "Now is a good time for doing crime",
+        "link": "https://www.technologyreview.com/2026/02/25/1132840/editors-letter-march-2026/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Under the first year of the Trump administration, the U.S. cyber agency CISA has faced cuts, layoffs, and furloughs, as bipartisan lawmakers and cybersecurity industry sources say the agency is unprep",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "Eons ago, in 2012, I had a weird experience. My iPhone suddenly shut down. When I restarted it, I found it was totally reset\u2014clean, like a new device. This was the early days of iOS, so I wasn\u2019t too c",
+        "domain": "technologyreview.com"
       },
       {
-        "title": "Welcome to the post-hype crypto market",
-        "link": "https://techcrunch.com/video/welcome-to-the-post-hype-crypto-market/",
+        "title": "Just pull a string to turn these tile patterns into useful 3D structures",
+        "link": "https://www.technologyreview.com/2026/02/24/1132074/just-pull-a-string-to-turn-these-tile-patterns-into-useful-3d-structures/",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Crypto is creeping back into the startup conversation, but at ETHDenver last week, the buzz was as much about Washington as it was about tokens. Policy shifts are rippling through the market as Tether",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "MIT researchers have developed a new method for designing 3D structures that can spring up from a flat sheet of interconnected tiles with a single pull of a string. The technique could be used to make",
+        "domain": "technologyreview.com"
       },
       {
         "title": "Everyone Speaks Incel Now",
@@ -921,58 +921,58 @@
         "domain": "wired.com"
       },
       {
-        "title": "Roundtables: Why 2026 Is the Year for Sodium-Ion Batteries",
-        "link": "https://www.technologyreview.com/2026/02/25/1132873/roundtables-why-2026-is-the-year-for-sodium-ion-batteries/",
+        "title": "Gushwork bets on AI search for customer leads \u2014 and early results are emerging",
+        "link": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "Listen to the session or watch below Sodium-based batteries could be a cheaper, safer alternative to lithium-ion, and the technology is finally making its way into cars\u2014and energy storage arrays on th",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Gushwork has raised $9 million in a seed round led by SIG and Lightspeed. The startup has seen early customer traction from AI search tools like ChatGPT.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "The Download: introducing the Crime issue",
-        "link": "https://www.technologyreview.com/2026/02/25/1133653/the-download-introducing-the-crime-issue/",
+        "title": "Anthropic acquires computer-use AI startup Vercept after Meta poached one of its founders",
+        "link": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Crime issue Technology has long m",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Seattle-based Vercept developed complex agentic tools, including a computer-use agent that could complete tasks inside applications like a person with a laptop would.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Listen to Earth\u2019s rumbling, secret soundtrack",
-        "link": "https://www.technologyreview.com/2026/02/25/1132829/listen-earths-rumbling-secret-soundtrack/",
+        "title": "Nvidia has another record quarter amid record capex spends",
+        "link": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "The boom of a calving glacier. The crackling rumble of a wildfire. The roar of a surging storm front. They\u2019re the noises of the living Earth, music of this one particular sphere and clues to the true ",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "\"The demand for tokens in the world has gone completely exponential,\" Nvidia CEO Jensen Huang said about the company's earnings.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "3 things Juliet Beauchamp is into right now",
-        "link": "https://www.technologyreview.com/2026/02/25/1132836/3-things-juliet-beauchamp/",
+        "title": "The White House wants AI companies to cover rate hikes. Most have already said they would.",
+        "link": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "The only reality show that matters The Real Housewives of Salt Lake City is one of the best shows on television right now. Not one of the best reality TV shows, but one of the best TV shows, period. C",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Many hyperscalers have already made public commitments to cover electricity cost increases.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Now is a good time for doing crime",
-        "link": "https://www.technologyreview.com/2026/02/25/1132840/editors-letter-march-2026/",
+        "title": "US cybersecurity agency CISA reportedly in dire shape amid Trump cuts and layoffs",
+        "link": "https://techcrunch.com/2026/02/25/us-cybersecurity-agency-cisa-reportedly-in-dire-shape-amid-trump-cuts-and-layoffs/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "Eons ago, in 2012, I had a weird experience. My iPhone suddenly shut down. When I restarted it, I found it was totally reset\u2014clean, like a new device. This was the early days of iOS, so I wasn\u2019t too c",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Under the first year of the Trump administration, the U.S. cyber agency CISA has faced cuts, layoffs, and furloughs, as bipartisan lawmakers and cybersecurity industry sources say the agency is unprep",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Just pull a string to turn these tile patterns into useful 3D structures",
-        "link": "https://www.technologyreview.com/2026/02/24/1132074/just-pull-a-string-to-turn-these-tile-patterns-into-useful-3d-structures/",
+        "title": "Welcome to the post-hype crypto market",
+        "link": "https://techcrunch.com/video/welcome-to-the-post-hype-crypto-market/",
         "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "MIT researchers have developed a new method for designing 3D structures that can spring up from a flat sheet of interconnected tiles with a single pull of a string. The technique could be used to make",
-        "domain": "technologyreview.com"
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Crypto is creeping back into the startup conversation, but at ETHDenver last week, the buzz was as much about Washington as it was about tokens. Policy shifts are rippling through the market as Tether",
+        "domain": "techcrunch.com"
       },
       {
         "title": "New York sues Valve, alleging its loot boxes are \u2018quintessential gambling\u2019",
@@ -1303,114 +1303,6 @@
     ],
     "entertainment": [
       {
-        "title": "Thessaloniki International Documentary Festival Announces Full Lineup, Welcomes Juliette Binoche Directorial Debut",
-        "link": "https://deadline.com/2026/02/thessaloniki-international-documentary-festival-2026-lineup-1236736624/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/TiDF-poster-and-Juliette-Binoche.png",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Oscar-winning actress Juliette Binoche will be heading to the Thessaloniki International Documentary Festival next month to screen her directorial debut, the nonfiction feature In-I In Motion. That\u2019s ",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "\u2018The Hunting Wives\u2019 Adds Casey Mills As Recurring Guest For Season 2",
-        "link": "https://deadline.com/2026/02/the-hunting-wives-season-2-cast-casey-mills-1236735139/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/Casey-Mills.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "EXCLUSIVE: Casey Mills has been cast as a recurring guest star in Season 2 of The Hunting Wives, Deadline hears. We understand he&#8217;ll appear as &#8216;Nico&#8217; in at least five episodes of the",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "Netflix\u2019s Sahara Bushue, Who Oversaw Unscripted Live Shows Including \u2018Star Search\u2019, Exits Streamer",
-        "link": "https://deadline.com/2026/02/netflix-sahara-bushue-exits-live-star-search-1236736416/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/MixCollage-25-Feb-2026-02-03-PM-4743.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "EXCLUSIVE: Netflix\u2019s push into live unscripted programming hasn\u2019t fared that well, so far, and it\u2019s having an impact on its executive ranks. Deadline understands that Sahara Bushue, who was director o",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "AMC CEO Gushes Over Netflix, Says \u201cCompanies Should Be Best Of Friends\u201d As Theater Owners Criticize Streamer On Window Stance",
-        "link": "https://deadline.com/2026/02/amc-ceo-netflix-1236736533/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/Adam-Aron-and-Ted-Sarandos.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "With exhibitors, guilds and filmmakers like James Cameron scared that a Netflix and Warner Bros merger &#8220;will be disastrous for the theatrical motion picture business,&#8221; along comes No. 1 th",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "Donald Trump Goes Off On Robert De Niro Over Comments At Counter State Of The Union Event; Actor Said He Felt \u201cBetrayed By My Country\u201d",
-        "link": "https://deadline.com/2026/02/trump-robert-de-niro-state-of-the-union-1236736564/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2258510686.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Democrats&#8217; counterprogramming to Donald Trump&#8217;s State of the Union address didn&#8217;t get nearly the attention as the big event, but the president himself took note. Trump was irate on h",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "TKO President Mark Shapiro Supports Both Paramount And Netflix In WBD Merger Battle",
-        "link": "https://deadline.com/2026/02/ufc-wwe-parent-tko-q4-big-year-ahead-1236736285/",
-        "image": "https://deadline.com/wp-content/uploads/2026/01/GettyImages-2258046519.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "TKO Group President and COO Mark Shapiro was asked Wednesday during the company&#8217;s quarterly earnings call whether he is rooting for Paramount or Netflix to win the battle for Warner Bros. Discov",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "AMC Theatres to \u2018Block and Reserve Best Seats\u2019 for A-List and Stubs Premiere Members",
-        "link": "https://variety.com/2026/film/news/amc-theatres-reserve-best-seats-a-list-stubs-members-1236673087/",
-        "image": "https://variety.com/wp-content/uploads/2020/10/MovieTheatres224652.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "AMC Theatres is offering a new perk to its loyalty program members: Customers who pay a monthly fee for A-List or Stubs Premiere will get priority access to the best seats in the house. The program is",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Nike Unveils \u2018USA Gold\u2019 and Jack Hughes Merch to Celebrate Historic Olympic Hockey Win",
-        "link": "https://variety.com/2026/shopping/athletes/nike-usa-olympic-hockey-jack-hughes-merch-shirt-hoodie-shop-1236673000/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/team-usa-jack-hughes-nike-merch.png",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "The U.S. men&#8217;s national hockey team made headlines over the weekend when it defeated Canada 2-1 in the gold medal final at the Winter Olympics, and now, Nike has dropped a new line of merch to c",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Hilary Duff Crashed \u2018Freaky Friday\u2019 Premiere Because Lindsay Lohan Was Her \u2018Childhood Feud\u2019 and \u2018Nemesis\u2019; They Squashed Their Beef Later Over Shots",
-        "link": "https://variety.com/2026/film/news/hilary-duff-lindsay-lohan-feud-ended-1236672807/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/hilary.png",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Hilary Duff appeared on the &#8220;Call Her Daddy&#8221; podcast amid her press tour for her new album, &#8220;Luck&#8230; or something,&#8221; and confirmed a long-standing rumor that she crashed the",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Paramount Brass Talk Film Studio\u2019s \u2018Rebuild Phase\u2019 and Potential for New NFL Rights Deal",
-        "link": "https://variety.com/2026/film/news/paramount-ellison-theatrical-rebuild-phase-nfl-tv-deal-1236673005/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Paramount-Water-Tower.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Paramount Skydance leaders steered clear of any discussion of the company&#8217;s latest bid to acquire Warner Bros. Discovery as it unveiled fourth-quarter 2025 earnings report on Wednesday that refl",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Nate Bargatze\u2019s New Game Show Premieres Tonight: Here\u2019s How Watch \u2018The Greatest Average American\u2019 Online",
-        "link": "https://variety.com/2026/shopping/news/how-to-watch-the-greatest-average-american-sling-1236672998/",
-        "image": "https://variety.com/wp-content/uploads/2025/11/GettyImages-2235446442-e1763415079515.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Comedian Nate Bargatze&#8217;s new game show, titled \u201cThe Greatest Average American,\u201d premieres tonight. The show, which celebrates the power of &#8220;being perfectly average,&#8221; arrives on ABC o",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Donald Trump Lashes Out at Robert De Niro for Telling Americans to \u2018Resist\u2019 the President: \u2018A Sick and Demented Person With an Extremely Low IQ\u2019",
-        "link": "https://variety.com/2026/film/news/donald-trump-robert-de-niro-sick-demented-person-1236672982/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Robert-DiNero-Donald-Trump.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Donald Trump lashed out at Robert De Niro in a Truth Social rant amid their ongoing public feud. The president slammed the Oscar-winning actor as &#8220;a sick and demented person&#8221; after De Niro",
-        "domain": "variety.com"
-      },
-      {
         "title": "HBO Max's 3-Part Sci-Fi Fantasy Masterpiece Refuses To Go Extinct on Global Streaming Charts",
         "link": "https://collider.com/hbo-max-3-part-dark-fantasy-masterpiece-primal-streaming-success-hbo-max-february-2026/",
         "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/img_7441-1.jpg",
@@ -1517,6 +1409,114 @@
         "source": "IGN",
         "snippet": "Lego Batman: Legacy of the Dark Knight only has 7 playable characters because they are \u201cmore differentiated with much deeper gameplay\u201d.",
         "domain": "ign.com"
+      },
+      {
+        "title": "Best Seats In The House? They\u2019ll Soon Cost You A Subscription Fee At AMC Theaters",
+        "link": "https://deadline.com/2026/02/amc-theaters-subscription-fees-best-seats-1236736615/",
+        "image": "https://deadline.com/wp-content/uploads/2024/05/GettyImages-515819322.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Most moviegoers are now used to buying specific seats when they go to a premium theater. Starting later this year, however, at AMC theaters the best seats in the house will be reserved for those who p",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Thessaloniki International Documentary Festival Announces Full Lineup, Welcomes Juliette Binoche Directorial Debut",
+        "link": "https://deadline.com/2026/02/thessaloniki-international-documentary-festival-2026-lineup-1236736624/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/TiDF-poster-and-Juliette-Binoche.png",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Oscar-winning actress Juliette Binoche will be heading to the Thessaloniki International Documentary Festival next month to screen her directorial debut, the nonfiction feature In-I In Motion. That\u2019s ",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "\u2018The Hunting Wives\u2019 Adds Casey Mills As Recurring Guest For Season 2",
+        "link": "https://deadline.com/2026/02/the-hunting-wives-season-2-cast-casey-mills-1236735139/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/Casey-Mills.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: Casey Mills has been cast as a recurring guest star in Season 2 of The Hunting Wives, Deadline hears. We understand he&#8217;ll appear as &#8216;Nico&#8217; in at least five episodes of the",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Netflix\u2019s Sahara Bushue, Who Oversaw Unscripted Live Shows Including \u2018Star Search\u2019, Exits Streamer",
+        "link": "https://deadline.com/2026/02/netflix-sahara-bushue-exits-live-star-search-1236736416/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/MixCollage-25-Feb-2026-02-03-PM-4743.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: Netflix\u2019s push into live unscripted programming hasn\u2019t fared that well, so far, and it\u2019s having an impact on its executive ranks. Deadline understands that Sahara Bushue, who was director o",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "AMC CEO Gushes Over Netflix, Says \u201cCompanies Should Be Best Of Friends\u201d As Theater Owners Criticize Streamer On Window Stance",
+        "link": "https://deadline.com/2026/02/amc-ceo-netflix-1236736533/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/Adam-Aron-and-Ted-Sarandos.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "With exhibitors, guilds and filmmakers like James Cameron scared that a Netflix and Warner Bros merger &#8220;will be disastrous for the theatrical motion picture business,&#8221; along comes No. 1 th",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Donald Trump Goes Off On Robert De Niro Over Comments At Counter State Of The Union Event; Actor Said He Felt \u201cBetrayed By My Country\u201d",
+        "link": "https://deadline.com/2026/02/trump-robert-de-niro-state-of-the-union-1236736564/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2258510686.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Democrats&#8217; counterprogramming to Donald Trump&#8217;s State of the Union address didn&#8217;t get nearly the attention as the big event, but the president himself took note. Trump was irate on h",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "AMC Theatres to \u2018Block and Reserve Best Seats\u2019 for A-List and Stubs Premiere Members",
+        "link": "https://variety.com/2026/film/news/amc-theatres-reserve-best-seats-a-list-stubs-members-1236673087/",
+        "image": "https://variety.com/wp-content/uploads/2020/10/MovieTheatres224652.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "AMC Theatres is offering a new perk to its loyalty program members: Customers who pay a monthly fee for A-List or Stubs Premiere will get priority access to the best seats in the house. The program is",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Nike Unveils \u2018USA Gold\u2019 and Jack Hughes Merch to Celebrate Historic Olympic Hockey Win",
+        "link": "https://variety.com/2026/shopping/athletes/nike-usa-olympic-hockey-jack-hughes-merch-shirt-hoodie-shop-1236673000/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/team-usa-jack-hughes-nike-merch.png",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "The U.S. men&#8217;s national hockey team made headlines over the weekend when it defeated Canada 2-1 in the gold medal final at the Winter Olympics, and now, Nike has dropped a new line of merch to c",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Hilary Duff Crashed \u2018Freaky Friday\u2019 Premiere Because Lindsay Lohan Was Her \u2018Childhood Feud\u2019 and \u2018Nemesis\u2019; They Squashed Their Beef Later Over Shots",
+        "link": "https://variety.com/2026/film/news/hilary-duff-lindsay-lohan-feud-ended-1236672807/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/hilary.png",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Hilary Duff appeared on the &#8220;Call Her Daddy&#8221; podcast amid her press tour for her new album, &#8220;Luck&#8230; or something,&#8221; and confirmed a long-standing rumor that she crashed the",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Paramount Brass Talk Film Studio\u2019s \u2018Rebuild Phase\u2019 and Potential for New NFL Rights Deal",
+        "link": "https://variety.com/2026/film/news/paramount-ellison-theatrical-rebuild-phase-nfl-tv-deal-1236673005/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Paramount-Water-Tower.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Paramount Skydance leaders steered clear of any discussion of the company&#8217;s latest bid to acquire Warner Bros. Discovery as it unveiled fourth-quarter 2025 earnings report on Wednesday that refl",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Nate Bargatze\u2019s New Game Show Premieres Tonight: Here\u2019s How Watch \u2018The Greatest Average American\u2019 Online",
+        "link": "https://variety.com/2026/shopping/news/how-to-watch-the-greatest-average-american-sling-1236672998/",
+        "image": "https://variety.com/wp-content/uploads/2025/11/GettyImages-2235446442-e1763415079515.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Comedian Nate Bargatze&#8217;s new game show, titled \u201cThe Greatest Average American,\u201d premieres tonight. The show, which celebrates the power of &#8220;being perfectly average,&#8221; arrives on ABC o",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Donald Trump Lashes Out at Robert De Niro for Telling Americans to \u2018Resist\u2019 the President: \u2018A Sick and Demented Person With an Extremely Low IQ\u2019",
+        "link": "https://variety.com/2026/film/news/donald-trump-robert-de-niro-sick-demented-person-1236672982/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Robert-DiNero-Donald-Trump.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Donald Trump lashed out at Robert De Niro in a Truth Social rant amid their ongoing public feud. The president slammed the Oscar-winning actor as &#8220;a sick and demented person&#8221; after De Niro",
+        "domain": "variety.com"
       }
     ],
     "weird_news": [
@@ -1943,21 +1943,21 @@
         "domain": "reddit.com"
       },
       {
-        "title": "What\u2019s your personal favorite HYS account?",
-        "link": "https://www.reddit.com/r/personalfinance/comments/1recnc1/whats_your_personal_favorite_hys_account/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/personalfinance",
-        "snippet": "This year I\u2019m unfucking myself and taking my finances more seriously than prior years. For context, I don\u2019t mean I was stupid with money, I\u2019ve always been told I\u2019m great at considering expenses and co",
-        "domain": "reddit.com"
-      },
-      {
         "title": "45 Only 40k in 401K How and Where to Invest?",
         "link": "https://www.reddit.com/r/personalfinance/comments/1relf6q/45_only_40k_in_401k_how_and_where_to_invest/",
         "image": null,
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/personalfinance",
         "snippet": "Financing was never my thing. Nobody really to get assistance from and reaching out to the internet for help. Retirement is closing fast and I don&#39;t want to be stuck. Any advice would be greatly a",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "What\u2019s your personal favorite HYS account?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1recnc1/whats_your_personal_favorite_hys_account/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "This year I\u2019m unfucking myself and taking my finances more seriously than prior years. For context, I don\u2019t mean I was stupid with money, I\u2019ve always been told I\u2019m great at considering expenses and co",
         "domain": "reddit.com"
       },
       {
@@ -2296,22 +2296,22 @@
       {
         "name": "Plank",
         "reps": "45s",
-        "note": ""
+        "note": "3 sets"
       },
       {
         "name": "Mountain Climbers",
         "reps": "x20",
-        "note": ""
+        "note": "3 sets"
       },
       {
         "name": "Bicycle Crunches",
         "reps": "x20",
-        "note": ""
+        "note": "3 sets"
       },
       {
         "name": "Jumping Jacks",
         "reps": "x30",
-        "note": ""
+        "note": "3 sets"
       }
     ]
   },
