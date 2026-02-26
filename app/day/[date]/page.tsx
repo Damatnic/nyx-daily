@@ -1,6 +1,7 @@
 import { getBriefingByDate, getAllDates } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Navbar from '@/components/nav/Navbar';
 import WeatherBar from '@/components/briefing/WeatherBar';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
@@ -40,6 +41,7 @@ export default async function DayPage({ params }: PageProps) {
 
   return (
     <>
+      <Navbar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <Link
           href="/archive"

@@ -1,5 +1,6 @@
 import { getAllDates, getBriefingByDate } from '@/lib/data';
 import { AppOfTheDay } from '@/lib/types';
+import Navbar from '@/components/nav/Navbar';
 import Badge from '@/components/ui/Badge';
 import { ExternalLink, Star, Zap, Lightbulb } from 'lucide-react';
 import ToolsClient from './ToolsClient';
@@ -22,6 +23,8 @@ export default async function ToolsPage() {
   const allApps = apps;
 
   return (
+    <>
+    <Navbar />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Hero */}
       <div className="mb-10 pb-8 border-b border-white/[0.06]">
@@ -110,5 +113,6 @@ export default async function ToolsPage() {
         </div>
       )}
     </div>
+    </>
   );
 }

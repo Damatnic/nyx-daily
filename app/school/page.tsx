@@ -1,8 +1,9 @@
 import { getSchoolDeadlines } from '@/lib/data';
 import { SchoolDeadline } from '@/lib/types';
+import Navbar from '@/components/nav/Navbar';
 import Badge from '@/components/ui/Badge';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { BookOpen, CheckCircle2, Circle } from 'lucide-react';
+import { CheckCircle2, Circle } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
@@ -16,21 +17,23 @@ function urgencyBadge(days: number, done: boolean) {
 }
 
 function courseColor(course: string) {
-  const map: Record<string, string> = {
-    SQL: 'text-cyan-400',
-    Stats: 'text-purple-400',
-    Cybersecurity: 'text-amber-400',
-  };
-  return map[course] ?? 'text-slate-400';
+  const l = course.toLowerCase();
+  if (l.includes('sql'))        return 'text-cyan-400';
+  if (l.includes('stat'))       return 'text-purple-400';
+  if (l.includes('visual'))     return 'text-amber-400';
+  if (l.includes('security'))   return 'text-orange-400';
+  if (l.includes('data'))       return 'text-amber-400';
+  return 'text-slate-400';
 }
 
 function courseBg(course: string) {
-  const map: Record<string, string> = {
-    SQL: 'bg-cyan-500/5 border-cyan-500/10',
-    Stats: 'bg-purple-500/5 border-purple-500/10',
-    Cybersecurity: 'bg-amber-500/5 border-amber-500/10',
-  };
-  return map[course] ?? 'bg-white/[0.02] border-white/[0.04]';
+  const l = course.toLowerCase();
+  if (l.includes('sql'))        return 'bg-cyan-500/5 border-cyan-500/10';
+  if (l.includes('stat'))       return 'bg-purple-500/5 border-purple-500/10';
+  if (l.includes('visual'))     return 'bg-amber-500/5 border-amber-500/10';
+  if (l.includes('security'))   return 'bg-orange-500/5 border-orange-500/10';
+  if (l.includes('data'))       return 'bg-amber-500/5 border-amber-500/10';
+  return 'bg-white/[0.02] border-white/[0.04]';
 }
 
 function DeadlineRow({ item }: { item: SchoolDeadline }) {
@@ -81,6 +84,8 @@ export default async function SchoolPage() {
   const urgent = all.filter((d: SchoolDeadline) => !d.done && d.days >= 0 && d.days <= 3).length;
 
   return (
+    <>
+    <Navbar />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-100">School Deadlines</h1>
@@ -164,5 +169,6 @@ export default async function SchoolPage() {
         })}
       </div>
     </div>
+    </>
   );
 }
