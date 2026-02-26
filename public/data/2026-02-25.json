@@ -1006,5 +1006,319 @@
       "emoji": "\ud83d\ude80",
       "fact": "There are more stars in the observable universe than grains of sand on all of Earth's beaches."
     }
+  ],
+  "sports": [
+    {
+      "league": "NBA",
+      "home_team": "Detroit Pistons",
+      "home_abbrev": "DET",
+      "home_score": 0,
+      "away_team": "Oklahoma City Thunder",
+      "away_abbrev": "OKC",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 7:30 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NBA",
+      "home_team": "Toronto Raptors",
+      "home_abbrev": "TOR",
+      "home_score": 0,
+      "away_team": "San Antonio Spurs",
+      "away_abbrev": "SA",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 7:30 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NBA",
+      "home_team": "Memphis Grizzlies",
+      "home_abbrev": "MEM",
+      "home_score": 0,
+      "away_team": "Golden State Warriors",
+      "away_abbrev": "GS",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 7:30 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NBA",
+      "home_team": "Houston Rockets",
+      "home_abbrev": "HOU",
+      "home_score": 0,
+      "away_team": "Sacramento Kings",
+      "away_abbrev": "SAC",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 8:00 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NBA",
+      "home_team": "Milwaukee Bucks",
+      "home_abbrev": "MIL",
+      "home_score": 0,
+      "away_team": "Cleveland Cavaliers",
+      "away_abbrev": "CLE",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 8:00 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NBA",
+      "home_team": "Denver Nuggets",
+      "home_abbrev": "DEN",
+      "home_score": 0,
+      "away_team": "Boston Celtics",
+      "away_abbrev": "BOS",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 10:00 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NHL",
+      "home_team": "New Jersey Devils",
+      "home_abbrev": "NJ",
+      "home_score": 0,
+      "away_team": "Buffalo Sabres",
+      "away_abbrev": "BUF",
+      "away_score": 0,
+      "status": "live",
+      "status_detail": "9:39 - 1st",
+      "winner": null
+    },
+    {
+      "league": "NHL",
+      "home_team": "Washington Capitals",
+      "home_abbrev": "WSH",
+      "home_score": 0,
+      "away_team": "Philadelphia Flyers",
+      "away_abbrev": "PHI",
+      "away_score": 0,
+      "status": "live",
+      "status_detail": "4:45 - 1st",
+      "winner": null
+    },
+    {
+      "league": "NHL",
+      "home_team": "Tampa Bay Lightning",
+      "home_abbrev": "TB",
+      "home_score": 0,
+      "away_team": "Toronto Maple Leafs",
+      "away_abbrev": "TOR",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 7:30 PM EST",
+      "winner": null
+    },
+    {
+      "league": "NHL",
+      "home_team": "Dallas Stars",
+      "home_abbrev": "DAL",
+      "home_score": 0,
+      "away_team": "Seattle Kraken",
+      "away_abbrev": "SEA",
+      "away_score": 0,
+      "status": "scheduled",
+      "status_detail": "2/25 - 8:00 PM EST",
+      "winner": null
+    }
+  ],
+  "weather_forecast": [
+    {
+      "date": "Wed",
+      "date_full": "2026-02-25",
+      "high": 31,
+      "low": 18,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Thu",
+      "date_full": "2026-02-26",
+      "high": 40,
+      "low": 15,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Fri",
+      "date_full": "2026-02-27",
+      "high": 55,
+      "low": 32,
+      "precip_pct": 1,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "Sat",
+      "date_full": "2026-02-28",
+      "high": 33,
+      "low": 20,
+      "precip_pct": 47,
+      "condition": "Snow",
+      "emoji": "\u2744\ufe0f"
+    },
+    {
+      "date": "Sun",
+      "date_full": "2026-03-01",
+      "high": 24,
+      "low": 12,
+      "precip_pct": 18,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    }
+  ],
+  "github_trending": [
+    {
+      "repo": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "\ud83d\udd77\ufe0f An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "language": "Python",
+      "stars": "14972",
+      "stars_today": 1656
+    },
+    {
+      "repo": "huggingface/skills",
+      "url": "https://github.com/huggingface/skills",
+      "description": "",
+      "language": "Python",
+      "stars": "6367",
+      "stars_today": 1538
+    },
+    {
+      "repo": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirel",
+      "language": "TypeScript",
+      "stars": "3687",
+      "stars_today": 894
+    },
+    {
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": "61798",
+      "stars_today": 1250
+    },
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent syst",
+      "language": "Python",
+      "stars": "10691",
+      "stars_today": 1042
+    },
+    {
+      "repo": "datawhalechina/hello-agents",
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "description": "\ud83d\udcda \u300a\u4ece\u96f6\u5f00\u59cb\u6784\u5efa\u667a\u80fd\u4f53\u300b\u2014\u2014\u4ece\u96f6\u5f00\u59cb\u7684\u667a\u80fd\u4f53\u539f\u7406\u4e0e\u5b9e\u8df5\u6559\u7a0b",
+      "language": "Python",
+      "stars": "21924",
+      "stars_today": 222
+    },
+    {
+      "repo": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
+      "language": "TypeScript",
+      "stars": "20440",
+      "stars_today": 59
+    },
+    {
+      "repo": "VectifyAI/PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "description": "\ud83d\udcd1 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "language": "Python",
+      "stars": "17702",
+      "stars_today": 378
+    }
+  ],
+  "reddit_hot": [
+    {
+      "title": "You can't make this shit up - Trump served Team USA burgers for lunch",
+      "url": "https://v.redd.it/sxyi6pjicolg1",
+      "permalink": "https://reddit.com/r/circled/comments/1rejf24/you_cant_make_this_shit_up_trump_served_team_usa/",
+      "subreddit": "circled",
+      "score": 14907,
+      "num_comments": 4609,
+      "thumbnail": "https://external-preview.redd.it/Mmx2MzIxbGljb2xnMXAqv48gvJPQ3neInTc7KhVNfOPLrT77Uc10Ar5A4wRY.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=13f9fbe2c85573559edadefde41f908d71968914"
+    },
+    {
+      "title": "Can they actually do this? JD Vance: \"We're announcing today that we have decided to temporarily hal",
+      "url": "https://v.redd.it/ewyh5g6qyplg1",
+      "permalink": "https://reddit.com/r/law/comments/1resjjt/can_they_actually_do_this_jd_vance_were/",
+      "subreddit": "law",
+      "score": 15969,
+      "num_comments": 2205,
+      "thumbnail": "https://external-preview.redd.it/NWppZWRqNnF5cGxnMbpqioIV_zh2AqBBBTY-RpC8ZzxfU3MKNy1BmsKD3Yxy.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=eeb1df055d15efabea19268e27355f3ee0bb68a2"
+    },
+    {
+      "title": "Are you snapping or taking it all at once",
+      "url": "https://i.redd.it/luaftzh0hnlg1.jpeg",
+      "permalink": "https://reddit.com/r/SipsTea/comments/1reej4u/are_you_snapping_or_taking_it_all_at_once/",
+      "subreddit": "SipsTea",
+      "score": 21366,
+      "num_comments": 3925,
+      "thumbnail": "https://preview.redd.it/luaftzh0hnlg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=f0f91c5020aaa917c18b74e32c63519f64817f26"
+    },
+    {
+      "title": "JD Vance: \"We're announcing today that we have decided to temporarily halt certain amounts of Medica",
+      "url": "https://v.redd.it/i3oe2b6kwplg1",
+      "permalink": "https://reddit.com/r/UnderReportedNews/comments/1res7tr/jd_vance_were_announcing_today_that_we_have/",
+      "subreddit": "UnderReportedNews",
+      "score": 14965,
+      "num_comments": 1926,
+      "thumbnail": "https://external-preview.redd.it/bjBjNXR2Nmt3cGxnMS4WYJbJIeB7Akq9iQqcQM28P0NJEtIeEPZAySdc7Myk.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=dd7e2e738401c4fda9a0aa27c3165a2699e60c80"
+    },
+    {
+      "title": "Response To Black Children Gaining Access To Closer Schools In The 1970s",
+      "url": "https://v.redd.it/xw41onr19nlg1",
+      "permalink": "https://reddit.com/r/BlackPeopleofReddit/comments/1redg6j/response_to_black_children_gaining_access_to/",
+      "subreddit": "BlackPeopleofReddit",
+      "score": 29970,
+      "num_comments": 3801,
+      "thumbnail": "https://external-preview.redd.it/bmVnbjd6cDE5bmxnMT64VUcb0ogYdOsoaRsc3nQVWHf3oiTxGzhf_DSpx_0d.jpeg?width=140&amp;height=133&amp;format=jpg&amp;auto=webp&amp;s=4e829737e46f25f949d6116254e997631ee79112"
+    }
+  ],
+  "product_hunt": [
+    {
+      "name": "Notion Custom Agents",
+      "tagline": "Anything you can do in Notion, your Agent can do for you. Discussion | Link",
+      "url": "https://www.producthunt.com/products/notion",
+      "votes": 0
+    },
+    {
+      "name": "AskAIBase",
+      "tagline": "Memory infrastructure for AI coding agents Discussion | Link",
+      "url": "https://www.producthunt.com/products/ask-7",
+      "votes": 0
+    },
+    {
+      "name": "Tadak",
+      "tagline": "Your Personal White Noise Player Discussion | Link",
+      "url": "https://www.producthunt.com/products/tadak",
+      "votes": 0
+    },
+    {
+      "name": "Pinly",
+      "tagline": "Reminders that trigger exactly where you need them Discussion | Link",
+      "url": "https://www.producthunt.com/products/pinly-smart-location-reminders",
+      "votes": 0
+    },
+    {
+      "name": "Thinglo",
+      "tagline": "Save anything from any app \u2014 AI-organized, private, instant Discussion | Link",
+      "url": "https://www.producthunt.com/products/thinglo-save-anything-lose-nothing",
+      "votes": 0
+    }
   ]
 }
