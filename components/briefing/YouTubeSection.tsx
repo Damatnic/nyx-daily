@@ -1,131 +1,139 @@
 'use client';
 
+import { useState } from 'react';
 import type { YouTubeVideo } from '@/lib/types';
-import SectionHeader from '@/components/ui/SectionHeader';
 
-interface YouTubeSectionProps {
-  videos?: YouTubeVideo[] | null;
-}
-
-const categoryColors: Record<string, { bg: string; text: string; border: string; hoverBorder: string }> = {
-  tech: { bg: 'bg-purple-500/80', text: 'text-white', border: 'border-purple-400/30', hoverBorder: 'hover:border-purple-400/60' },
-  news: { bg: 'bg-blue-500/80', text: 'text-white', border: 'border-blue-400/30', hoverBorder: 'hover:border-blue-400/60' },
-  entertainment: { bg: 'bg-amber-500/80', text: 'text-white', border: 'border-amber-400/30', hoverBorder: 'hover:border-amber-400/60' },
-  science: { bg: 'bg-emerald-500/80', text: 'text-white', border: 'border-emerald-400/30', hoverBorder: 'hover:border-emerald-400/60' },
-  education: { bg: 'bg-cyan-500/80', text: 'text-white', border: 'border-cyan-400/30', hoverBorder: 'hover:border-cyan-400/60' },
+const CATEGORY_DOT: Record<string, string> = {
+  tech: 'bg-violet-500', news: 'bg-blue-500', entertainment: 'bg-amber-500',
+  science: 'bg-emerald-500', education: 'bg-cyan-500', business: 'bg-orange-500',
 };
 
-function getCategoryStyle(category: string) {
-  return categoryColors[category.toLowerCase()] || categoryColors.tech;
+function getCategoryDot(cat: string) {
+  return CATEGORY_DOT[cat.toLowerCase()] ?? 'bg-violet-500';
 }
 
-export default function YouTubeSection({ videos }: YouTubeSectionProps) {
-  if (!videos || videos.length === 0) return null;
-
-  const featured = videos[0];
-  const gridVideos = videos.slice(1, 6);
-
+function PlayIcon() {
   return (
-    <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-      <SectionHeader title="YouTube Picks" gradient />
+    <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 ml-0.5">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  );
+}
 
-      {/* Featured hero card */}
+function Thumbnail({ src, alt, onError }: { src: string; alt: string; onError: () => void }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      className="w-full h-full object-cover"
+      onError={onError}
+    />
+  );
+}
+
+interface VideoCardProps {
+  video: YouTubeVideo;
+  featured?: boolean;
+}
+
+function VideoCard({ video, featured = false }: VideoCardProps) {
+  const [imgErr, setImgErr] = useState(false);
+  const dot = getCategoryDot(video.category);
+
+  if (featured) {
+    return (
       <a
-        href={featured.url}
+        href={video.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="group block rounded-xl overflow-hidden border border-white/[0.06] hover:border-white/[0.14] transition-all duration-200 mb-4"
+        className="group block rounded-xl overflow-hidden border border-white/[0.05] hover:border-white/[0.12] transition-all duration-200 bg-[#0a0a16]"
       >
-        <div className="relative w-full aspect-video overflow-hidden bg-gradient-to-br from-purple-900/20 to-slate-900/40">
-          <img
-            src={featured.thumbnail}
-            alt={featured.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-            }}
-          />
-          {/* Gradient overlay at bottom */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
-          {/* Category badge */}
-          <span className="absolute bottom-3 left-3 px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-black/50 backdrop-blur-sm border border-white/10 text-white">
-            {featured.category}
-          </span>
-          {/* Play icon overlay */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/30">
-            <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center">
-              <svg className="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+        {/* Thumbnail */}
+        <div className="relative aspect-video w-full bg-black/40 overflow-hidden">
+          {!imgErr && video.thumbnail ? (
+            <Thumbnail src={video.thumbnail} alt={video.title} onError={() => setImgErr(true)} />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-violet-950/60 to-slate-900">
+              <span className="text-4xl opacity-30">▶</span>
+            </div>
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          {/* Play button */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-slate-900">
+              <PlayIcon />
             </div>
           </div>
+          {/* Category badge */}
+          <div className="absolute bottom-3 left-3 flex items-center gap-1.5">
+            <span className={`w-1.5 h-1.5 rounded-full ${dot}`} />
+            <span className="text-[10px] font-bold uppercase tracking-wider text-white/70">{video.category}</span>
+          </div>
         </div>
-        <div className="p-4 bg-[#0d0d1a]">
-          <h3 className="text-base font-semibold text-slate-100 line-clamp-2 group-hover:text-white transition-colors">
-            {featured.title}
-          </h3>
-          <p className="text-xs text-slate-400 mt-1.5 flex items-center gap-1">
-            <span>🎬</span>
-            <span className="truncate">{featured.channel}</span>
+        {/* Meta */}
+        <div className="px-4 py-3">
+          <p className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors line-clamp-2 leading-snug">
+            {video.title}
           </p>
+          <p className="text-xs text-slate-600 mt-1">{video.channel}</p>
         </div>
       </a>
+    );
+  }
 
-      {/* Grid cards */}
-      {gridVideos.length > 0 && (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-          {gridVideos.map((video) => {
-            const style = getCategoryStyle(video.category);
+  // Secondary card — horizontal layout
+  return (
+    <a
+      href={video.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="story-row group flex items-center gap-3 px-5 py-3"
+    >
+      {/* Thumbnail — small */}
+      <div className="shrink-0 w-20 h-12 rounded-lg overflow-hidden bg-black/40">
+        {!imgErr && video.thumbnail ? (
+          <Thumbnail src={video.thumbnail} alt={video.title} onError={() => setImgErr(true)} />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-violet-950/60 to-slate-900 flex items-center justify-center">
+            <span className="text-slate-700 text-sm">▶</span>
+          </div>
+        )}
+      </div>
+      {/* Info */}
+      <div className="flex-1 min-w-0">
+        <p className="text-[12px] font-medium text-slate-300 group-hover:text-white transition-colors line-clamp-2 leading-snug">
+          {video.title}
+        </p>
+        <div className="flex items-center gap-1.5 mt-0.5">
+          <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dot}`} />
+          <span className="text-[10px] text-slate-600 truncate">{video.channel}</span>
+        </div>
+      </div>
+    </a>
+  );
+}
 
-            return (
-              <a
-                key={video.video_id}
-                href={video.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`card-hover group flex flex-col rounded-lg overflow-hidden bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04] ${style.hoverBorder} transition-all duration-200`}
-              >
-                {/* Thumbnail container */}
-                <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-purple-900/20 to-slate-900/40">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                    }}
-                  />
-                  {/* Gradient overlay at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-                  {/* Category badge */}
-                  <span className="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-black/50 backdrop-blur-sm border border-white/10 text-white">
-                    {video.category}
-                  </span>
-                  {/* Play icon overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/30">
-                    <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-slate-900 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+export default function YouTubeSection({ videos }: { videos?: YouTubeVideo[] | null }) {
+  if (!videos?.length) return null;
+  const [featured, ...rest] = videos;
 
-                {/* Video info */}
-                <div className="p-3 flex flex-col gap-1 flex-1">
-                  <h3 className="text-sm font-medium text-slate-200 line-clamp-2 leading-snug group-hover:text-white transition-colors">
-                    {video.title}
-                  </h3>
-                  <p className="text-xs text-slate-500 truncate mt-auto flex items-center gap-1">
-                    <span>🎬</span>
-                    <span className="truncate">{video.channel}</span>
-                  </p>
-                </div>
-              </a>
-            );
-          })}
+  return (
+    <div className="nyx-card overflow-hidden">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-white/[0.05]">
+        <span className="text-sm font-black uppercase tracking-[0.12em] text-slate-200">YouTube</span>
+        <span className="text-[10px] text-slate-700 font-mono">{videos.length} picks</span>
+      </div>
+
+      {/* Featured */}
+      <div className="p-4 border-b border-white/[0.04]">
+        <VideoCard video={featured} featured />
+      </div>
+
+      {/* Rest */}
+      {rest.length > 0 && (
+        <div className="divide-y divide-white/[0.04]">
+          {rest.slice(0, 4).map(v => <VideoCard key={v.video_id} video={v} />)}
         </div>
       )}
     </div>

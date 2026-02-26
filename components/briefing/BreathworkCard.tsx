@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import type { BreathworkSession } from '@/lib/types';
-import SectionHeader from '@/components/ui/SectionHeader';
+
 import Badge from '@/components/ui/Badge';
 import { Wind, Play, Square } from 'lucide-react';
 
@@ -88,8 +88,8 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
     if (!fallbackText) return null;
 
     return (
-      <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-        <SectionHeader title="Breathwork" gradient />
+      <div className="nyx-card p-5">
+        <p className="text-[9px] font-black uppercase tracking-[0.22em] text-slate-600 mb-4">Breathwork</p>
         <div className="p-3 rounded-lg bg-cyan-500/5 border border-cyan-500/10">
           <div className="flex items-center gap-2 mb-2">
             <Wind size={13} className="text-[#06b6d4]" />
@@ -113,8 +113,8 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
   };
 
   return (
-    <div className={`rounded-xl border bg-[#0d0d1a] p-5 transition-all duration-500 ${state === 'done' ? 'border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-white/[0.06]'}`}>
-      <SectionHeader title="Breathwork" gradient />
+    <div className={`nyx-card p-5 transition-all duration-500 ${state === 'done' ? 'border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-white/[0.06]'}`}>
+      <p className="text-[9px] font-black uppercase tracking-[0.22em] text-slate-600 mb-4">Breathwork</p>
 
       {/* Session name */}
       <div className="flex items-center gap-2 mb-4">
