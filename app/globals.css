@@ -24,7 +24,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip; /* Prevent horizontal bleed without breaking sticky */
+  overflow-x: clip;
 }
 
 body {
@@ -33,12 +33,13 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 3.5rem; /* Account for fixed navbar height (h-14) */
-  background-image: radial-gradient(rgba(139,92,246,0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
+  padding-top: 3.5rem;
+  /* Dot-grid background */
+  background-image: radial-gradient(rgba(139,92,246,0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
-/* Hide scrollbar for horizontal scroll areas */
+/* ── Hide scrollbar utility ── */
 .scrollbar-none {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -47,120 +48,154 @@ body {
   display: none;
 }
 
-/* Tooltip styles */
-.tooltip {
-  @apply invisible opacity-0 absolute z-50 px-2 py-1 text-xs rounded bg-slate-800 text-slate-300 whitespace-nowrap;
-  transition: opacity 0.15s, visibility 0.15s;
-}
-.tooltip-trigger:hover .tooltip {
-  @apply visible opacity-100;
-}
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #07070f; }
+::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.25); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(139,92,246,0.5); }
 
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-::-webkit-scrollbar-track {
-  background: #07070f;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.3);
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.6);
-}
-
-/* Selection */
+/* ── Selection ── */
 ::selection {
   background: rgba(139, 92, 246, 0.3);
   color: #f1f5f9;
 }
 
-/* News ticker scroll */
+/* ── iOS safe area ── */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body { padding-bottom: env(safe-area-inset-bottom); }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+/* ──────────────────────────────────────────────
+   ANIMATIONS
+───────────────────────────────────────────── */
+
+/* News ticker */
 .ticker-track {
   animation: ticker-scroll linear infinite;
   will-change: transform;
 }
-.ticker-track:hover {
-  animation-play-state: paused;
-}
+.ticker-track:hover { animation-play-state: paused; }
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-/* Hero shimmer animation */
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+/* Hero ambient sweep */
+@keyframes hero-ambient {
+  0%, 100% { opacity: 0.6; transform: scale(1) rotate(0deg); }
+  33%       { opacity: 0.9; transform: scale(1.08) rotate(2deg); }
+  66%       { opacity: 0.7; transform: scale(0.96) rotate(-1deg); }
 }
-.hero-shimmer {
-  background: linear-gradient(
-    135deg,
-    rgba(139, 92, 246, 0.08) 0%,
-    rgba(6, 182, 212, 0.05) 30%,
-    rgba(139, 92, 246, 0.12) 60%,
-    rgba(6, 182, 212, 0.05) 100%
-  );
-  background-size: 400% 400%;
-  animation: shimmer 8s ease infinite;
+.animate-ambient { animation: hero-ambient 12s ease-in-out infinite; }
+
+/* Fade-up entrance */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
+.animate-fade-up { animation: fade-up 0.5s ease both; }
+.animate-fade-up-1 { animation: fade-up 0.5s 0.08s ease both; }
+.animate-fade-up-2 { animation: fade-up 0.5s 0.16s ease both; }
+.animate-fade-up-3 { animation: fade-up 0.5s 0.24s ease both; }
 
-/* iOS safe area support */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-  body {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-
-  .pb-safe {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
+/* Slide-in from left */
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
+.animate-slide-left { animation: slide-in-left 0.4s ease both; }
 
-/* Mobile touch targets - ensure minimum 44px for interactive elements */
-@media (max-width: 640px) {
-  button,
-  a,
-  [role="button"] {
-    min-height: 44px;
-  }
-
-  /* Prevent horizontal overflow on mobile */
-  .overflow-x-auto {
-    -webkit-overflow-scrolling: touch;
-  }
+/* Glow pulse */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139,92,246,0); }
+  50%       { box-shadow: 0 0 16px 2px rgba(139,92,246,0.25); }
 }
+.animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
 
-/* Ensure tap highlights look good on mobile */
-@media (hover: none) and (pointer: coarse) {
-  button:active,
-  a:active,
-  [role="button"]:active {
-    opacity: 0.8;
-  }
-}
-
-/* Card hover animation */
-.card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.10);
-}
-
-/* Scroll reveal animations */
+/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.08s; }
 .reveal-delay-2 { transition-delay: 0.16s; }
 .reveal-delay-3 { transition-delay: 0.24s; }
+
+/* ──────────────────────────────────────────────
+   CARD EFFECTS
+───────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(139,92,246,0.08);
+}
+
+/* Subtle inset glow on focus for interactive cards */
+.card-interactive {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-interactive:hover {
+  box-shadow: 0 0 0 1px rgba(139,92,246,0.15), 0 4px 24px rgba(139,92,246,0.08);
+}
+
+/* ──────────────────────────────────────────────
+   GRADIENT TEXT
+───────────────────────────────────────────── */
+.text-gradient-purple-cyan {
+  background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradient-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ──────────────────────────────────────────────
+   SECTION DIVIDERS
+───────────────────────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(139,92,246,0.15), transparent);
+  margin: 2rem 0;
+}
+
+/* ──────────────────────────────────────────────
+   GLASS EFFECT
+───────────────────────────────────────────── */
+.glass {
+  background: rgba(13,13,26,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ──────────────────────────────────────────────
+   MOBILE
+───────────────────────────────────────────── */
+@media (max-width: 640px) {
+  button, a, [role="button"] { min-height: 44px; }
+  .overflow-x-auto { -webkit-overflow-scrolling: touch; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  button:active, a:active, [role="button"]:active { opacity: 0.8; }
+}
+
+/* ──────────────────────────────────────────────
+   TOOLTIP
+───────────────────────────────────────────── */
+.tooltip {
+  @apply invisible opacity-0 absolute z-50 px-2 py-1 text-xs rounded bg-slate-800 text-slate-300 whitespace-nowrap;
+  transition: opacity 0.15s, visibility 0.15s;
+}
+.tooltip-trigger:hover .tooltip { @apply visible opacity-100; }

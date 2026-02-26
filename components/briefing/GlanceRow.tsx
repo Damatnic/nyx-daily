@@ -1,5 +1,3 @@
-import { AlertTriangle, Newspaper, Target, CloudSun } from 'lucide-react';
-
 interface GlanceRowProps {
   weather?: string | null;
   deadlineCount: number;
@@ -7,103 +5,104 @@ interface GlanceRowProps {
   focus?: string | null;
 }
 
-/**
- * Parses weather string to extract emoji and temperature
- * Example: "☁️ Waukesha · 32°F (feels 25°F) · Overcast · H:38° L:27°"
- */
-function parseWeatherForGlance(weather: string): { emoji: string; temp: string; feels: string | null } {
-  // Get first emoji/grapheme
+function parseTemp(weather: string): { temp: string; feels: string | null; emoji: string } {
   const emojiMatch = weather.match(/^(\S+)\s/);
   const emoji = emojiMatch ? emojiMatch[1] : '🌡️';
-
-  // Get temperature
   const tempMatch = weather.match(/(\d+)°F/);
   const temp = tempMatch ? tempMatch[1] : '--';
-
-  // Get feels like
   const feelsMatch = weather.match(/feels\s+(\d+)°F/);
   const feels = feelsMatch ? feelsMatch[1] : null;
-
-  return { emoji, temp, feels };
+  return { temp, feels, emoji };
 }
 
-/**
- * Strips markdown bold (**) and leading emoji from focus text
- */
+function getDayProgress(): number {
+  const now = new Date();
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  return Math.round((minutes / 1440) * 100);
+}
+
 function cleanFocus(focus: string): string {
-  // Remove ** markers
-  let cleaned = focus.replace(/\*\*/g, '');
-  // Remove leading emoji (first non-space grapheme cluster if it's an emoji)
-  cleaned = cleaned.replace(/^[\p{Emoji}\p{Emoji_Component}]+\s*/u, '');
-  return cleaned.trim();
+  return focus.replace(/\*\*/g, '').replace(/^[\p{Emoji}\p{Emoji_Component}]+\s*/u, '').trim();
 }
 
 export default function GlanceRow({ weather, deadlineCount, headlineCount, focus }: GlanceRowProps) {
-  const parsed = weather ? parseWeatherForGlance(weather) : null;
-  const cleanedFocus = focus ? cleanFocus(focus) : null;
+  const parsed = weather ? parseTemp(weather) : null;
+  const dayPct = getDayProgress();
+  const cleanedFocus = focus ? cleanFocus(focus) : 'Stay focused';
 
   return (
     <div className="w-full bg-[#07070f] border-b border-white/[0.04]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {/* Weather Pill */}
-          <div className="rounded-xl bg-[#0d0d1a] border border-white/[0.06] px-4 py-3 flex items-center gap-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+
+          {/* Weather */}
+          <div className="rounded-xl bg-[#0d0d1a]/80 border border-white/[0.05] px-3 py-2.5 flex items-center gap-2.5 group hover:border-cyan-500/20 transition-all duration-200">
             {parsed ? (
               <>
-                <span className="text-2xl">{parsed.emoji}</span>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-cyan-300">{parsed.temp}°</span>
+                <span className="text-2xl shrink-0 select-none">{parsed.emoji}</span>
+                <div>
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-lg font-black text-cyan-300 tabular-nums leading-none">{parsed.temp}°</span>
+                    <span className="text-[10px] text-slate-600">F</span>
+                  </div>
                   {parsed.feels && (
-                    <span className="text-xs text-slate-500">feels {parsed.feels}°</span>
+                    <span className="text-[10px] text-slate-600">feels {parsed.feels}°</span>
                   )}
                 </div>
               </>
             ) : (
-              <>
-                <CloudSun size={24} className="text-slate-500" />
-                <span className="text-sm text-slate-500">No weather</span>
-              </>
+              <span className="text-sm text-slate-600">No weather</span>
             )}
           </div>
 
-          {/* Deadlines Pill */}
-          <div className="rounded-xl bg-[#0d0d1a] border border-white/[0.06] px-4 py-3 flex items-center gap-3">
-            <AlertTriangle
-              size={20}
-              className={deadlineCount > 0 ? 'text-red-400' : 'text-emerald-400'}
-            />
-            <div className="flex flex-col">
-              <span
-                className={`text-2xl font-bold ${
-                  deadlineCount > 0 ? 'text-red-400' : 'text-emerald-400'
-                }`}
-              >
-                {deadlineCount}
-              </span>
-              <span className="text-xs text-slate-500">due this week</span>
+          {/* Day progress */}
+          <div className="rounded-xl bg-[#0d0d1a]/80 border border-white/[0.05] px-3 py-2.5 flex flex-col justify-center gap-1.5 hover:border-violet-500/20 transition-all duration-200">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] text-slate-600 uppercase tracking-wider">Day</span>
+              <span className="text-[10px] font-mono text-slate-500 tabular-nums">{dayPct}%</span>
+            </div>
+            <div className="h-1 bg-white/[0.05] rounded-full overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-violet-500 to-cyan-500 rounded-full transition-all duration-500"
+                style={{ width: `${dayPct}%` }}
+              />
             </div>
           </div>
 
-          {/* Headlines Pill */}
-          <div className="rounded-xl bg-[#0d0d1a] border border-white/[0.06] px-4 py-3 flex items-center gap-3">
-            <Newspaper size={20} className="text-slate-400" />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-slate-100">{headlineCount}</span>
-              <span className="text-xs text-slate-500">headlines today</span>
+          {/* Headlines */}
+          <div className="rounded-xl bg-[#0d0d1a]/80 border border-white/[0.05] px-3 py-2.5 flex items-center gap-2.5 hover:border-violet-500/20 transition-all duration-200">
+            <span className="text-lg shrink-0 select-none">📰</span>
+            <div>
+              <div className="text-lg font-black text-slate-100 tabular-nums leading-none">{headlineCount}</div>
+              <div className="text-[10px] text-slate-600">headlines</div>
             </div>
           </div>
 
-          {/* Focus Pill */}
-          <div className="rounded-xl bg-[#0d0d1a] border border-white/[0.06] px-4 py-3 flex flex-col justify-center">
-            <span className="text-xs tracking-widest uppercase text-slate-500 mb-0.5 flex items-center gap-1.5">
-              <Target size={10} />
-              Today&apos;s Focus
-            </span>
-            <span className="text-sm text-violet-300 truncate">
-              {cleanedFocus || 'Stay focused'}
-            </span>
+          {/* Deadlines */}
+          <div className={`rounded-xl bg-[#0d0d1a]/80 border px-3 py-2.5 flex items-center gap-2.5 transition-all duration-200 ${
+            deadlineCount > 0
+              ? 'border-amber-500/20 hover:border-amber-500/40'
+              : 'border-white/[0.05] hover:border-emerald-500/20'
+          }`}>
+            <span className="text-lg shrink-0 select-none">{deadlineCount > 0 ? '⚠️' : '✅'}</span>
+            <div>
+              <div className={`text-lg font-black tabular-nums leading-none ${
+                deadlineCount > 0 ? 'text-amber-400' : 'text-emerald-400'
+              }`}>{deadlineCount}</div>
+              <div className="text-[10px] text-slate-600">due this week</div>
+            </div>
           </div>
+
         </div>
+
+        {/* Focus strip — full width below */}
+        {cleanedFocus && (
+          <div className="mt-2 px-3 py-2 rounded-lg bg-violet-500/[0.06] border border-violet-500/10 flex items-center gap-2.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse shrink-0" />
+            <span className="text-[10px] uppercase tracking-widest text-slate-600 shrink-0 hidden sm:block">Focus</span>
+            <span className="text-xs text-violet-300 truncate">{cleanedFocus}</span>
+          </div>
+        )}
       </div>
     </div>
   );

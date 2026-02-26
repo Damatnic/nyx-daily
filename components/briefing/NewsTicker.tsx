@@ -14,14 +14,14 @@ interface TickerItem {
 }
 
 const CATEGORY_CONFIG: Record<string, { label: string; color: string }> = {
-  us_news:       { label: 'US',       color: '#8b5cf6' },
-  politics:      { label: 'POL',      color: '#ef4444' },
-  tech:          { label: 'TECH',     color: '#06b6d4' },
-  ai:            { label: 'AI',       color: '#10b981' },
-  entertainment: { label: 'ENT',      color: '#f59e0b' },
-  weird_news:    { label: 'WEIRD',    color: '#ec4899' },
-  wisconsin:     { label: 'LOCAL',    color: '#8b5cf6' },
-  til:           { label: 'TIL',      color: '#a3e635' },
+  us_news:       { label: 'US',    color: '#a78bfa' },
+  politics:      { label: 'POL',   color: '#f87171' },
+  tech:          { label: 'TECH',  color: '#22d3ee' },
+  ai:            { label: 'AI',    color: '#34d399' },
+  entertainment: { label: 'ENT',   color: '#fbbf24' },
+  weird_news:    { label: 'WEIRD', color: '#f472b6' },
+  wisconsin:     { label: 'LOCAL', color: '#a78bfa' },
+  til:           { label: 'TIL',   color: '#bef264' },
 };
 
 export default function NewsTicker({ news }: NewsTickerProps) {
@@ -29,7 +29,6 @@ export default function NewsTicker({ news }: NewsTickerProps) {
 
   const items: TickerItem[] = [];
 
-  // Flatten all categories into one list, preserving order
   for (const [key, stories] of Object.entries(news)) {
     const cfg = CATEGORY_CONFIG[key] ?? { label: key.toUpperCase().slice(0, 5), color: '#8b5cf6' };
     for (const story of stories) {
@@ -41,34 +40,26 @@ export default function NewsTicker({ news }: NewsTickerProps) {
 
   if (items.length === 0) return null;
 
-  // Duplicate for seamless infinite loop (translateX(-50%) brings us back to start)
   const doubled = [...items, ...items];
-
-  // Speed: ~80px/sec feels natural — adjust via animation-duration below
-  const durationSec = Math.max(40, items.length * 6);
+  const durationSec = Math.max(50, items.length * 6);
 
   return (
-    <div className="w-full bg-[#0a0a18] border-y border-white/[0.04] sticky top-14 z-30 overflow-hidden">
-      <div className="flex items-center h-9">
+    <div className="w-full bg-[#08080f] border-b border-white/[0.04] sticky top-14 z-30">
+      <div className="flex items-center h-9 overflow-hidden">
 
-        {/* Left anchor — "NEWS" badge */}
-        <div
-          className="shrink-0 flex items-center gap-2 pl-3 pr-4 h-full z-10 select-none"
-          style={{ borderRight: '1px solid rgba(255,255,255,0.06)', background: '#0d0d1a' }}
-        >
-          <span className="flex items-center gap-1">
-            <span
-              className="w-1.5 h-1.5 rounded-full bg-purple-500"
-              style={{ animation: 'pulse 1.8s ease-in-out infinite' }}
-            />
-            <span className="text-[9px] font-black tracking-[0.18em] text-slate-500 uppercase">
-              News
-            </span>
-          </span>
+        {/* LEFT: LIVE badge */}
+        <div className="shrink-0 flex items-center gap-2 pl-4 pr-3 h-full border-r border-white/[0.05] bg-[#0a0a18] select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+          <span className="text-[9px] font-black tracking-[0.2em] uppercase text-slate-500">Live</span>
         </div>
 
-        {/* Scrolling strip */}
-        <div className="flex-1 overflow-hidden relative">
+        {/* TICKER TRACK */}
+        <div className="flex-1 overflow-hidden relative min-w-0">
+          {/* Left fade mask */}
+          <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-[#08080f] to-transparent z-10 pointer-events-none" />
+          {/* Right fade mask */}
+          <div className="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-[#08080f] to-transparent z-10 pointer-events-none" />
+
           <div
             className="ticker-track flex items-center whitespace-nowrap"
             style={{ animationDuration: `${durationSec}s` }}
@@ -79,28 +70,35 @@ export default function NewsTicker({ news }: NewsTickerProps) {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 group pl-3 pr-6 flex-shrink-0"
+                className="inline-flex items-center gap-2 group px-4 shrink-0"
                 tabIndex={i >= items.length ? -1 : 0}
               >
+                {/* Category badge */}
                 <span
-                  className="text-[8.5px] font-black tracking-[0.1em] px-1.5 py-0.5 rounded flex-shrink-0"
+                  className="text-[8px] font-black tracking-wider px-1.5 py-0.5 rounded shrink-0 uppercase"
                   style={{
                     color: item.color,
-                    background: `${item.color}18`,
-                    border: `1px solid ${item.color}28`,
+                    background: `${item.color}15`,
+                    border: `1px solid ${item.color}25`,
                   }}
                 >
                   {item.label}
                 </span>
-                <span className="text-[11px] text-slate-400 group-hover:text-slate-100 transition-colors duration-150 leading-none">
+                {/* Headline */}
+                <span className="text-[11px] text-slate-500 group-hover:text-slate-200 transition-colors duration-150">
                   {item.title}
                 </span>
-                <span className="text-slate-700 text-xs flex-shrink-0" aria-hidden>·</span>
+                {/* Separator */}
+                <span className="text-slate-800 text-xs shrink-0" aria-hidden>·</span>
               </a>
             ))}
           </div>
         </div>
 
+        {/* RIGHT: story count */}
+        <div className="shrink-0 flex items-center px-3 h-full border-l border-white/[0.05] bg-[#0a0a18] select-none">
+          <span className="text-[9px] font-mono text-slate-700 tabular-nums">{items.length}</span>
+        </div>
       </div>
     </div>
   );
