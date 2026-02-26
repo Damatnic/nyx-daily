@@ -2,7 +2,7 @@ interface GlanceRowProps {
   weather?: string | null;
   deadlineCount: number;
   headlineCount: number;
-  focus?: string | null;
+  focus?: string | null; // kept for API compat, no longer rendered here
 }
 
 function parseTemp(weather: string): { temp: string; feels: string | null; emoji: string } {
@@ -21,14 +21,9 @@ function getDayProgress(): number {
   return Math.round((minutes / 1440) * 100);
 }
 
-function cleanFocus(focus: string): string {
-  return focus.replace(/\*\*/g, '').replace(/^[\p{Emoji}\p{Emoji_Component}]+\s*/u, '').trim();
-}
-
-export default function GlanceRow({ weather, deadlineCount, headlineCount, focus }: GlanceRowProps) {
+export default function GlanceRow({ weather, deadlineCount, headlineCount }: GlanceRowProps) {
   const parsed = weather ? parseTemp(weather) : null;
   const dayPct = getDayProgress();
-  const cleanedFocus = focus ? cleanFocus(focus) : 'Stay focused';
 
   return (
     <div className="w-full bg-[#07070f] border-b border-white/[0.04]">
@@ -36,7 +31,7 @@ export default function GlanceRow({ weather, deadlineCount, headlineCount, focus
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
 
           {/* Weather */}
-          <div className="rounded-xl bg-[#0d0d1a]/80 border border-white/[0.05] px-3 py-2.5 flex items-center gap-2.5 group hover:border-cyan-500/20 transition-all duration-200">
+          <div className="rounded-xl bg-[#0d0d1a]/80 border border-white/[0.05] px-3 py-2.5 flex items-center gap-2.5 hover:border-cyan-500/20 transition-all duration-200">
             {parsed ? (
               <>
                 <span className="text-2xl shrink-0 select-none">{parsed.emoji}</span>
@@ -94,15 +89,6 @@ export default function GlanceRow({ weather, deadlineCount, headlineCount, focus
           </div>
 
         </div>
-
-        {/* Focus strip — full width below */}
-        {cleanedFocus && (
-          <div className="mt-2 px-3 py-2 rounded-lg bg-violet-500/[0.06] border border-violet-500/10 flex items-center gap-2.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse shrink-0" />
-            <span className="text-[10px] uppercase tracking-widest text-slate-600 shrink-0 hidden sm:block">Focus</span>
-            <span className="text-xs text-violet-300 truncate">{cleanedFocus}</span>
-          </div>
-        )}
       </div>
     </div>
   );
