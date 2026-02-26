@@ -18,7 +18,6 @@ import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
 import RedditHot from '@/components/briefing/RedditHot';
 import ProductHunt from '@/components/briefing/ProductHunt';
-import QuoteCard from '@/components/briefing/QuoteCard';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
@@ -172,13 +171,6 @@ export default async function HomePage() {
             {briefing.apod && <NasaApod apod={briefing.apod} />}
           </div>
         </div>
-
-        {/* Quote — full width, above footer */}
-        {briefing.quote && (
-          <div className="mt-6">
-            <QuoteCard quote={briefing.quote} author={briefing.author} />
-          </div>
-        )}
 
         {/* Footer */}
         <footer className="mt-10 pb-10 border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
