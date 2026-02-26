@@ -1,6 +1,6 @@
 import { getTodaysBriefing } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
-import MarketsBar from '@/components/briefing/MarketsBar';
+import NewsTicker from '@/components/briefing/NewsTicker';
 import HeroSection from '@/components/briefing/HeroSection';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
@@ -84,8 +84,6 @@ export default async function HomePage() {
   const dayOfYear = getDayOfYear(briefing.date);
   const heroDateStr = formatHeroDate(briefing.date, briefing.day);
   const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
-  const marketsLive = briefing.markets && briefing.markets.length > 0;
-
   // Generate breathwork fallback text from old format
   const breathworkFallback = briefing.breathwork
     ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
@@ -93,8 +91,7 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Sticky navigation with mini markets */}
-      <Navbar markets={briefing.markets} />
+      <Navbar />
 
       <ScrollToTop />
 
@@ -106,8 +103,8 @@ export default async function HomePage() {
         dayOfYear={dayOfYear}
       />
 
-      {/* Full-width sticky markets bar */}
-      <MarketsBar markets={briefing.markets} />
+      {/* Full-width sticky news ticker */}
+      <NewsTicker news={briefing.news} />
 
       {/* Main content area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -203,15 +200,7 @@ export default async function HomePage() {
             </span>
             <span className="text-slate-700">·</span>
             <span>{headlineCount} headlines</span>
-            {marketsLive && (
-              <>
-                <span className="text-slate-700">·</span>
-                <span className="flex items-center gap-1">
-                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Markets live
-                </span>
-              </>
-            )}
+            {/* news ticker active indicator */}
           </div>
           <Link
             href="/archive"

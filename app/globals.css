@@ -75,6 +75,19 @@ body {
   color: #f1f5f9;
 }
 
+/* News ticker scroll */
+.ticker-track {
+  animation: ticker-scroll linear infinite;
+  will-change: transform;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* Hero shimmer animation */
 @keyframes shimmer {
   0% { background-position: -200% center; }
