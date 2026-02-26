@@ -1,0 +1,2514 @@
+{
+  "generated_at": "2026-02-26T08:08:01.660242",
+  "day": "Thursday",
+  "date": "2026-02-26",
+  "weather": "\u2600\ufe0f Waukesha \u00b7 17\u00b0F (feels 10\u00b0F) \u00b7 Clear \u00b7 H:39\u00b0 L:13\u00b0",
+  "quote": "Some changes look negative on the surface but you will soon realize that space is being created in your life for something new to emerge.",
+  "author": "Eckhart Tolle",
+  "focus": "\ud83d\udea8 **SQL \u2014 Unit 1 Project** is due TODAY. Drop everything else.",
+  "markets": [
+    {
+      "label": "S&P 500",
+      "symbol": "^GSPC",
+      "price": "6,946.13",
+      "change_pct": 1.59,
+      "up": true,
+      "kind": "index"
+    },
+    {
+      "label": "NASDAQ",
+      "symbol": "^IXIC",
+      "price": "23,152",
+      "change_pct": 2.32,
+      "up": true,
+      "kind": "index"
+    },
+    {
+      "label": "BTC",
+      "symbol": "BTC-USD",
+      "price": "$67,822",
+      "change_pct": -0.2,
+      "up": false,
+      "kind": "crypto"
+    },
+    {
+      "label": "ETH",
+      "symbol": "ETH-USD",
+      "price": "$2,062",
+      "change_pct": 0.38,
+      "up": true,
+      "kind": "crypto"
+    }
+  ],
+  "apod": {
+    "title": "Webb and Hubble: IC 5332",
+    "explanation": "What does the universe look like through infrared goggles? Our eyes can only see visible light, but astronomers want to see more. Today\u2019s APOD shows spiral galaxy IC 5332 as seen by two NASA telescopes: Webb in mid-infrared and Hubble in ultraviolet and visible light. To toggle between the two space-based views just slide your cursor over the image (or follow this link). The Hubble image highlight",
+    "url": "https://apod.nasa.gov/apod/image/2602/IC5332webb2209c_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2602/potm2209c.jpg",
+    "media_type": "image",
+    "date": "2026-02-26"
+  },
+  "on_this_day": [
+    {
+      "year": 2021,
+      "text": "A total of 279 female students aged between 10 and 17 are kidnapped by bandits in the Zamfara kidnapping in Zamfara State, Nigeria.",
+      "link": "https://en.wikipedia.org/wiki/2021_Zamfara_school_kidnapping"
+    },
+    {
+      "year": 2019,
+      "text": "Indian Air Force fighter-jets target Jaish-e-Mohammed terrorist training camps in Balakot, Pakistan.",
+      "link": "https://en.wikipedia.org/wiki/Indian_Air_Force"
+    },
+    {
+      "year": 2013,
+      "text": "A hot air balloon crashes near Luxor, Egypt, killing 19 people.",
+      "link": "https://en.wikipedia.org/wiki/Hot_air_balloon"
+    }
+  ],
+  "sports": [
+    {
+      "sport": "nba",
+      "home_team": "Detroit Pistons",
+      "home_abbrev": "DET",
+      "home_score": 124,
+      "away_team": "Oklahoma City Thunder",
+      "away_abbrev": "OKC",
+      "away_score": 116,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nba",
+      "home_team": "Toronto Raptors",
+      "home_abbrev": "TOR",
+      "home_score": 107,
+      "away_team": "San Antonio Spurs",
+      "away_abbrev": "SA",
+      "away_score": 110,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "away"
+    },
+    {
+      "sport": "nba",
+      "home_team": "Memphis Grizzlies",
+      "home_abbrev": "MEM",
+      "home_score": 112,
+      "away_team": "Golden State Warriors",
+      "away_abbrev": "GS",
+      "away_score": 133,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "away"
+    },
+    {
+      "sport": "nba",
+      "home_team": "Houston Rockets",
+      "home_abbrev": "HOU",
+      "home_score": 128,
+      "away_team": "Sacramento Kings",
+      "away_abbrev": "SAC",
+      "away_score": 97,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nba",
+      "home_team": "Milwaukee Bucks",
+      "home_abbrev": "MIL",
+      "home_score": 118,
+      "away_team": "Cleveland Cavaliers",
+      "away_abbrev": "CLE",
+      "away_score": 116,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nba",
+      "home_team": "Denver Nuggets",
+      "home_abbrev": "DEN",
+      "home_score": 103,
+      "away_team": "Boston Celtics",
+      "away_abbrev": "BOS",
+      "away_score": 84,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nhl",
+      "home_team": "New Jersey Devils",
+      "home_abbrev": "NJ",
+      "home_score": 1,
+      "away_team": "Buffalo Sabres",
+      "away_abbrev": "BUF",
+      "away_score": 2,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "away"
+    },
+    {
+      "sport": "nhl",
+      "home_team": "Washington Capitals",
+      "home_abbrev": "WSH",
+      "home_score": 3,
+      "away_team": "Philadelphia Flyers",
+      "away_abbrev": "PHI",
+      "away_score": 1,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nhl",
+      "home_team": "Tampa Bay Lightning",
+      "home_abbrev": "TB",
+      "home_score": 4,
+      "away_team": "Toronto Maple Leafs",
+      "away_abbrev": "TOR",
+      "away_score": 2,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    },
+    {
+      "sport": "nhl",
+      "home_team": "Dallas Stars",
+      "home_abbrev": "DAL",
+      "home_score": 4,
+      "away_team": "Seattle Kraken",
+      "away_abbrev": "SEA",
+      "away_score": 1,
+      "status": "final",
+      "status_detail": "Final",
+      "winner": "home"
+    }
+  ],
+  "forecast": [
+    {
+      "date": "2026-02-26",
+      "high": 38,
+      "low": 13,
+      "precip_pct": 2,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "2026-02-27",
+      "high": 61,
+      "low": 28,
+      "precip_pct": 3,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "2026-02-28",
+      "high": 35,
+      "low": 22,
+      "precip_pct": 42,
+      "condition": "Snow",
+      "emoji": "\u2744\ufe0f"
+    },
+    {
+      "date": "2026-03-01",
+      "high": 26,
+      "low": 13,
+      "precip_pct": 13,
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
+    },
+    {
+      "date": "2026-03-02",
+      "high": 34,
+      "low": 17,
+      "precip_pct": 13,
+      "condition": "Sunny",
+      "emoji": "\u2600\ufe0f"
+    }
+  ],
+  "github_trending": [
+    {
+      "repo": "clockworklabs/SpacetimeDB",
+      "url": "https://github.com/clockworklabs/SpacetimeDB",
+      "description": "Development at the speed of light",
+      "language": "Rust",
+      "stars": "20618",
+      "stars_today": 974
+    },
+    {
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": "62814",
+      "stars_today": 1528
+    },
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent syst",
+      "language": "Python",
+      "stars": "11405",
+      "stars_today": 923
+    },
+    {
+      "repo": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
+      "language": "TypeScript",
+      "stars": "20904",
+      "stars_today": 622
+    },
+    {
+      "repo": "huggingface/skills",
+      "url": "https://github.com/huggingface/skills",
+      "description": "",
+      "language": "Python",
+      "stars": "6800",
+      "stars_today": 711
+    },
+    {
+      "repo": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode &amp; Gemini CLI.",
+      "language": "TypeScript",
+      "stars": "20485",
+      "stars_today": 341
+    },
+    {
+      "repo": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "\ud83d\udd77\ufe0f An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "language": "Python",
+      "stars": "16449",
+      "stars_today": 2893
+    },
+    {
+      "repo": "ruvnet/claude-flow",
+      "url": "https://github.com/ruvnet/claude-flow",
+      "description": "\ud83c\udf0a The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous work",
+      "language": "TypeScript",
+      "stars": "14753",
+      "stars_today": 210
+    }
+  ],
+  "reddit_hot": [
+    {
+      "title": "You can't make this shit up - Trump served Team USA burgers for lunch",
+      "url": "https://v.redd.it/sxyi6pjicolg1",
+      "permalink": "https://reddit.com/r/circled/comments/1rejf24/you_cant_make_this_shit_up_trump_served_team_usa/",
+      "subreddit": "circled",
+      "score": 22748,
+      "num_comments": 6172,
+      "thumbnail": "https://external-preview.redd.it/Mmx2MzIxbGljb2xnMXAqv48gvJPQ3neInTc7KhVNfOPLrT77Uc10Ar5A4wRY.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=13f9fbe2c85573559edadefde41f908d71968914"
+    },
+    {
+      "title": "Go ask a frog what day of the week it is, he doesn't know!",
+      "url": "https://i.redd.it/xag7vyduptlg1.jpeg",
+      "permalink": "https://reddit.com/r/BrandNewSentence/comments/1rf7m9l/go_ask_a_frog_what_day_of_the_week_it_is_he/",
+      "subreddit": "BrandNewSentence",
+      "score": 7992,
+      "num_comments": 665,
+      "thumbnail": "https://preview.redd.it/xag7vyduptlg1.jpeg?width=140&amp;height=118&amp;auto=webp&amp;s=f86c60e6b57476d1e096dc097cc95ea10bbc6063"
+    },
+    {
+      "title": "Monkey grosses out by century egg",
+      "url": "https://v.redd.it/pnfycrbutslg1",
+      "permalink": "https://reddit.com/r/interestingasfuck/comments/1rf4pga/monkey_grosses_out_by_century_egg/",
+      "subreddit": "interestingasfuck",
+      "score": 39310,
+      "num_comments": 858,
+      "thumbnail": "https://external-preview.redd.it/YjV2MXQyY3V0c2xnMbgpEHTPXozJ7OCDovqEEkPFfQVUTYpo914jfltlUJcr.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=1c0eb29502099df2e1e01f62c597f827e62cf72c"
+    },
+    {
+      "title": "What a beautiful moment",
+      "url": "https://v.redd.it/fjclcco9xslg1",
+      "permalink": "https://reddit.com/r/MadeMeSmile/comments/1rf50ii/what_a_beautiful_moment/",
+      "subreddit": "MadeMeSmile",
+      "score": 16346,
+      "num_comments": 61,
+      "thumbnail": "https://external-preview.redd.it/c2RnMHd2bzl4c2xnMcejv9_DPAADQbQcj8WIz1SiKfEztzWysiVguPpgBuXs.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=0576f67cd30899224e0773742ee99540c4510001"
+    },
+    {
+      "title": "What is the absolute fastest 'yeah, we are definitely NOT going to be friends' moment you've ever ex",
+      "url": "https://www.reddit.com/r/AskReddit/comments/1renmn7/what_is_the_absolute_fastest_yeah_we_are/",
+      "permalink": "https://reddit.com/r/AskReddit/comments/1renmn7/what_is_the_absolute_fastest_yeah_we_are/",
+      "subreddit": "AskReddit",
+      "score": 12516,
+      "num_comments": 5229,
+      "thumbnail": null
+    }
+  ],
+  "product_hunt": [
+    {
+      "name": "My Texas Method",
+      "tagline": "Automate your strength training with Texas Method Discussion | Link",
+      "url": "https://www.producthunt.com/products/my-texas-method",
+      "votes": 0
+    },
+    {
+      "name": "Heimdall",
+      "tagline": "See the real-time telemetry for objects in Earth's orbit Discussion | Link",
+      "url": "https://www.producthunt.com/products/heimdall-3",
+      "votes": 0
+    },
+    {
+      "name": "Rover by rtrvr.ai",
+      "tagline": "Turn your website into an AI agent with one script tag. Discussion | Link",
+      "url": "https://www.producthunt.com/products/rtrvr-ai",
+      "votes": 0
+    },
+    {
+      "name": "Koidex",
+      "tagline": "Know if a package, extension, or AI model is actually safe Discussion | Link",
+      "url": "https://www.producthunt.com/products/koidex-2",
+      "votes": 0
+    },
+    {
+      "name": "OpenClawCity",
+      "tagline": "A persistent city where AI agents live, create, and evolve Discussion | Link",
+      "url": "https://www.producthunt.com/products/openclawcity",
+      "votes": 0
+    }
+  ],
+  "news": {
+    "us_news": [
+      {
+        "title": "U.S. and Iran to hold nuclear talks. And, Harvard professor resigns over Epstein ties",
+        "link": "https://www.npr.org/2026/02/26/g-s1-111619/up-first-newsletter-iran-nuclear-talks-harvard-larry-summers-epstein-cuba-ice-polling-locations",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "U.S. and Iranian officials are set to meet today in Geneva to discuss Tehran's nuclear program. And, Harvard professor Larry Summers is resigning over ties to convicted sex offender Jeffrey Epstein.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Pentagon shifts toward maintaining ties to Scouting",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5686528/pentagon-scouting-boys-girls-hegseth",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Months after NPR reported on the Pentagon's efforts to sever ties with Scouting America, efforts to maintain the partnership have new momentum",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Why farmers in California are backing a giant solar farm",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726411/farmers-california-san-joaquin-valley-solar-farm-westlands-water-district-golden-state-clean-energy",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Many farmers have had to fallow land as a state law comes into effect limiting their access to water. There's now a push to develop some of that land \u2026 into solar farms.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Tariffs cost American shoppers. They're unlikely to get that money back",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726843/tariff-refund-american-shoppers",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "After the Supreme Court declared the emergency tariffs illegal, the refund process will be messy and will go to businesses first.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Every business wants your review. What's with the feedback frenzy?",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5685107/online-review-survey-feedback-fatigue-amazon-shopping",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Customers want to read reviews and businesses need reviews to attract customers. But the constant demand for reviews could be creating a feedback backlash, experts say.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Can't get a prescription renewed? Here's how to cope with prior authorizations",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5711632/prior-authorizations-expiration-prescription-insurance",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "These health care hurdles can stand in the way of getting treatment your doctor says you need. Here's what to know about how to deal with them.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Fact-checking Trump's claims in his State of the Union address",
+        "link": "https://www.pbs.org/newshour/show/fact-checking-trumps-claims-in-his-state-of-the-union-address",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/trumpagenda-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "President Trump touted the economy and his immigration policies in a record-long State of the Union address, and he'll soon take those messages on the road. The White House is hoping Trump can convinc",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "Bill and Hillary Clinton gear up for another Washington fight",
+        "link": "https://www.pbs.org/newshour/politics/bill-and-hillary-clinton-gear-up-for-another-washington-fight",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2016-11-08T120000Z_694097197_D1BEULQVHTAA_RTRMADP_3_USA-ELECTION-CLINTON-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "Bill and Hillary Clinton are slated to testify this week in a House investigation into Jeffrey Epstein, part of a deal with Republicans after it became clear that Congress \u2014 with the help of some Demo",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "News Wrap: Larry Summers leaves Harvard teaching job over Epstein ties",
+        "link": "https://www.pbs.org/newshour/show/news-wrap-larry-summers-leaves-harvard-teaching-job-over-epstein-ties",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/newswrap-19-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "In our news wrap Wednesday, Larry Summers is leaving his teaching post at Harvard after his name appeared hundreds of times in the recent batch Epstein files, rescue teams in Brazil are searching for ",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "Surgeon general nominee faces scrutiny over qualifications and views on vaccines",
+        "link": "https://www.pbs.org/newshour/show/surgeon-general-nominee-faces-scrutiny-over-qualifications-and-views-on-vaccines",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/hotseat-1-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "Dr. Casey Means, the wellness influencer and ally of Health Secretary Robert F. Kennedy Jr., is the president's nominee for surgeon general. As a prominent voice in the MAHA movement, some of her idea",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "Andy Beshear on how Democrats can appeal to voters across party lines",
+        "link": "https://www.pbs.org/newshour/show/andy-beshear-on-how-democrats-can-appeal-to-voters-across-party-lines",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/oneonone-2-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "Kentucky Gov. Andy Beshear has become one of the most closely watched Democrats in the country. A two-term governor in a deeply red state, Beshear has won statewide office twice, even as President Tru",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "Border Patrol union chief defends immigration crackdown and agents' tactics",
+        "link": "https://www.pbs.org/newshour/show/border-patrol-union-chief-defends-immigration-crackdown-and-agents-tactics",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/immigrationcrackdown-2-1024x683.jpg",
+        "logo": "https://logo.clearbit.com/pbs.org",
+        "source": "PBS NewsHour",
+        "snippet": "President Trump's defense of his immigration agenda during his State of the Union address comes as public support is falling. In an NBC News poll this month, 49% of people said they strongly disapprov",
+        "domain": "pbs.org"
+      },
+      {
+        "title": "When Did Literature Get Less Dirty?",
+        "link": "https://www.theatlantic.com/books/2026/02/sex-scenes-literature-heterosexual-romance/686148/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/clf87Glxt9VERzohQMhN0hQYqsA=/media/img/mt/2026/02/2026_02_20_literature/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "A puritan strain is manifesting in realist novels as a marked absence of straight sex.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "Trump\u2019s Favorite Voter-ID Bill Would Probably Backfire",
+        "link": "https://www.theatlantic.com/politics/2026/02/save-america-act-turnout/686145/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/O6RE4UfOKRFZshqZ36LIanUnZgE=/media/img/mt/2026/02/VoterIdLaws/original.png",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Congressional Republicans are trying to pass a strict \u201celection integrity\u201d law that seems almost custom-designed to disenfranchise their own supporters.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "The Tariffs Loss Is Paradoxically a Win for Trump",
+        "link": "https://www.theatlantic.com/ideas/2026/02/trump-win-tariffs-supreme-court/686142/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/FcrQ2SgamgMzhSB9cY6PeTNlFp0=/media/img/mt/2026/02/2026_02_23_Pozen_Dixon_Tariff_Loss_Victory_for_Trump/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "The president will need the Court to have a veneer of legitimacy for when it blesses other, more damaging parts of his agenda.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "What the Pentagon Fears in Iran",
+        "link": "https://www.theatlantic.com/podcasts/2026/02/why-pick-a-fight-with-iran-now/686140/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/d20xanz-ycgUu4SK6sHyZYdkAbg=/270x115:4000x2213/media/img/mt/2026/02/Radio_Atlantic_Vertical_Iran_War_Watch/original.png",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "How can the military build a strategy without an end goal?",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "How America Chose Not to Hold the Powerful to Account",
+        "link": "https://www.theatlantic.com/ideas/2026/02/elite-accountability-powerful-impunity/686134/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/EJPrm2Qm-ltuSXCf1wkO3sHTgxY=/0x0:1999x1124/media/img/mt/2026/02/EliteAccountabilityFIN/original.png",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Our national project of elite impunity",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "Well, That Didn\u2019t Sound Like Casey Means",
+        "link": "https://www.theatlantic.com/health/2026/02/casey-means-confirmation-maha-subdued/686147/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/4AQiDktAifW-1hQ7ubxDUJlCRT0=/media/img/mt/2026/02/2026_02_25_Casey_Means/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "The nominee for surgeon general kept her most eccentric wellness beliefs largely in check at her confirmation hearing.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "Tech ratepayer pledge may be more bark than bite \u2014 but still matters",
+        "link": "https://www.axios.com/2026/02/26/big-tech-ratepayer-pledge-trump",
+        "image": "https://images.axios.com/Lp5tpo_xMsbhuG6WX_PJJ_3kcSQ=/1366x768/smart/2024/03/20/213328-1710970408092.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Big Tech's coming vow to pay for its own power amid the data center boom may be light on policy specifics. But it could still pack a political punch.Why it matters: Electricity markets are largely reg",
+        "domain": "axios.com"
+      },
+      {
+        "title": "The GOP's NIMBY rebellion against ICE facilities",
+        "link": "https://www.axios.com/2026/02/26/ice-detention-center-republican-gop-nimby",
+        "image": "https://images.axios.com/m5UJ1kPB0OD6GAlIE3AR9q-G9tg=/0x0:1920x1080/1366x768/2026/02/25/1772051781884.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "ICE is on a multi-billion-dollar quest for new immigration detention facilities, but they're increasingly facing pushback from an unlikely foe: Republicans.Why it matters: The Trump administration has",
+        "domain": "axios.com"
+      },
+      {
+        "title": "U.S.-Iran nuclear negotiators meet for 3 hours with Trump decision looming",
+        "link": "https://www.axios.com/2026/02/26/iran-nuclear-talks-geneva",
+        "image": "https://images.axios.com/ssfwg6eUy9sizC35h6C8IFqJ5GM=/0x210:3200x2010/1366x768/2026/02/26/1772109361746.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "President Trump's envoys Steve Witkoff and Jared Kushner have held more than three hours of negotiations with Iranian Foreign Minister Abbas Araghchi in Geneva on Thursday to try and reach a breakthro",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Wiles \"in shock\" over FBI phone-record subpoena",
+        "link": "https://www.axios.com/2026/02/26/fbi-patel-wiles-phone-records-biden",
+        "image": "https://images.axios.com/vemkXenTSQ7xJqZUoso_Gm4eNco=/0x0:4851x2729/1366x768/2026/02/26/1772108669657.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "FBI Director Kash Patel says the FBI under President Biden subpoenaed his phone records and those of Susie Wiles, who ran President Trump's campaign and is now White House chief of staff, when they we",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Trump didn't endorse them, but they're acting like he did",
+        "link": "https://www.axios.com/2026/02/26/trump-implied-endorsements-2026-midterms",
+        "image": "https://images.axios.com/zd0Mv4lOnwqP2SQrd1Bw-xGL06s=/0x0:1920x1080/1366x768/2026/02/24/1771957265439.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Republican candidates snubbed by President Trump for primary endorsements have found a workaround: Act like he endorsed them anyway.Why it matters: Trump's approval numbers are sagging but he still do",
+        "domain": "axios.com"
+      },
+      {
+        "title": "How Claude conquered Washington, Wall Street and Silicon Valley",
+        "link": "https://www.axios.com/2026/02/26/the-race-to-catch-claude",
+        "image": "https://images.axios.com/cPS1YFelaOiA_lDs58WNWMUZY_s=/0x0:1920x1080/1366x768/2026/02/25/1772043870720.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Supremacy can be fleeting in the highly competitive AI race. But two months into 2026, Anthropic's Claude is upending U.S. national security, roiling financial markets and redefining how startups are ",
+        "domain": "axios.com"
+      }
+    ],
+    "politics": [
+      {
+        "title": "U.S. and Iran to hold third round of nuclear talks",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726343/u-s-and-iran-to-hold-third-round-of-nuclear-talks",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "U.S. and Iranian officials will meet Thursday for a third round of talks after President Trump warned of an alleged Iranian threat during his State of the Union address.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "'Get back to integrity': Oklahoma's Kevin Stitt on Republicans after Trump",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5719201/kevin-stitt-republican-party-immigration-trump",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "NPR's Steve Inskeep asks Oklahoma Gov. Kevin Stitt about his spat with President Trump, immigration and the future of the Republican Party.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Trump's surgeon general nominee makes her case in confirmation hearing",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726265/trumps-surgeon-general-nominee-makes-her-case-in-confirmation-hearing",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "President Trump's pick for surgeon general, Dr. Casey Means, is a wellness influencer who is aligned with Health Secretary Robert F. Kennedy Jr. She made her case before a Senate committee Wednesday.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Trump administration cuts some Medicaid funding to Minnesota alleging fraud",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726440/trump-administration-cuts-some-medicaid-funding-to-minnesota-alleging-fraud",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "President Trump says Vice President Vance will lead a \"war on fraud\" to root out corruption in places like Minnesota. Vance announced cuts to some Medicaid funding to the state Wednesday.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Crowded Democratic field could give GOP an opening in California governor's race",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5720925/crowded-democratic-field-could-give-gop-an-opening-in-california-governors-race",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "In California, the two candidates with the most votes in the primary advance to the general election, regardless of party. That's an issue for Democrats who have nine major candidates for governor.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "What to know about Sen. Katie Britt, who's negotiating changes to how ICE operates",
+        "link": "https://www.npr.org/2026/02/25/nx-s1-5718189/what-to-know-about-sen-katie-britt-whos-negotiating-changes-to-how-ice-operates",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "Alabama Sen. Katie Britt came to national prominence in 2024 with an image as a firebrand on the right but has developed a reputation as a bipartisan deal maker in the Senate.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Tech ratepayer pledge may be more bark than bite \u2014 but still matters",
+        "link": "https://www.axios.com/2026/02/26/big-tech-ratepayer-pledge-trump",
+        "image": "https://images.axios.com/Lp5tpo_xMsbhuG6WX_PJJ_3kcSQ=/1366x768/smart/2024/03/20/213328-1710970408092.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Big Tech's coming vow to pay for its own power amid the data center boom may be light on policy specifics. But it could still pack a political punch.Why it matters: Electricity markets are largely reg",
+        "domain": "axios.com"
+      },
+      {
+        "title": "The GOP's NIMBY rebellion against ICE facilities",
+        "link": "https://www.axios.com/2026/02/26/ice-detention-center-republican-gop-nimby",
+        "image": "https://images.axios.com/m5UJ1kPB0OD6GAlIE3AR9q-G9tg=/0x0:1920x1080/1366x768/2026/02/25/1772051781884.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "ICE is on a multi-billion-dollar quest for new immigration detention facilities, but they're increasingly facing pushback from an unlikely foe: Republicans.Why it matters: The Trump administration has",
+        "domain": "axios.com"
+      },
+      {
+        "title": "U.S.-Iran nuclear negotiators meet for 3 hours with Trump decision looming",
+        "link": "https://www.axios.com/2026/02/26/iran-nuclear-talks-geneva",
+        "image": "https://images.axios.com/ssfwg6eUy9sizC35h6C8IFqJ5GM=/0x210:3200x2010/1366x768/2026/02/26/1772109361746.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "President Trump's envoys Steve Witkoff and Jared Kushner have held more than three hours of negotiations with Iranian Foreign Minister Abbas Araghchi in Geneva on Thursday to try and reach a breakthro",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Wiles \"in shock\" over FBI phone-record subpoena",
+        "link": "https://www.axios.com/2026/02/26/fbi-patel-wiles-phone-records-biden",
+        "image": "https://images.axios.com/vemkXenTSQ7xJqZUoso_Gm4eNco=/0x0:4851x2729/1366x768/2026/02/26/1772108669657.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "FBI Director Kash Patel says the FBI under President Biden subpoenaed his phone records and those of Susie Wiles, who ran President Trump's campaign and is now White House chief of staff, when they we",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Trump didn't endorse them, but they're acting like he did",
+        "link": "https://www.axios.com/2026/02/26/trump-implied-endorsements-2026-midterms",
+        "image": "https://images.axios.com/zd0Mv4lOnwqP2SQrd1Bw-xGL06s=/0x0:1920x1080/1366x768/2026/02/24/1771957265439.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Republican candidates snubbed by President Trump for primary endorsements have found a workaround: Act like he endorsed them anyway.Why it matters: Trump's approval numbers are sagging but he still do",
+        "domain": "axios.com"
+      },
+      {
+        "title": "How Claude conquered Washington, Wall Street and Silicon Valley",
+        "link": "https://www.axios.com/2026/02/26/the-race-to-catch-claude",
+        "image": "https://images.axios.com/cPS1YFelaOiA_lDs58WNWMUZY_s=/0x0:1920x1080/1366x768/2026/02/25/1772043870720.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Supremacy can be fleeting in the highly competitive AI race. But two months into 2026, Anthropic's Claude is upending U.S. national security, roiling financial markets and redefining how startups are ",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Disabled activist and guest of Ilhan Omar says she did not intend to disrupt State of the Union",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/aliya-rahman-sotu-ilhan-omar",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Before arrest at US House chamber Tuesday, Aliya Rahman had only a month earlier been dragged from her car by ICEWhen Aliya Rahman accepted Minnesota representative Ilhan Omar\u2019s invitation to attend t",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "The tech worker cleaning condoms and old socks off the Brooklyn Bridge: \u2018People have no shame\u2019",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/brooklyn-bridge-nyc-cleanup",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "It took Ellen Baum about 16 hours to finish clearing one section of hair ties, condoms and tissues woven into the fencingOn a blisteringly cold day earlier this month, Ellen Baum was not in the best m",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Hillary Clinton to testify in House oversight committee\u2019s Epstein investigation \u2013 US politics live",
+        "link": "https://www.theguardian.com/us-news/live/2026/feb/26/us-politics-latest-news-hillary-clinton-jeffrey-epstein-donald-trump",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Deposition will be filmed but take place behind closed doors, with former president Bill Clinton scheduled to answer questions tomorrowSign up for the Breaking News US email to get newsletter alerts i",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "US and Iranian negotiators meet for critical nuclear talks in Geneva | First Thing",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/first-thing-us-iran-nuclear-talks-geneva",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Tehran insists deal is possible if Trump abides by preconditions agreed with Witkoff. Plus, will Andrew bring down the British monarchy?Good morning.Iran enters critical talks on its nuclear program w",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "\u2018Really a lot of amazing beauty\u2019: emails show how model scout connected Epstein with young women",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/daniel-siad-model-scout-jeffrey-epstein-emails",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Daniel Siad, facing allegation of rape in France, appears in more than 1,000 documents in latest declassified files\u201cIn This busyness I feel like fisherman some time I cache quick, some time no fish,\u201d ",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Democrats in four states seek to bar ICE employees from future civil service jobs",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/democrats-bar-ice-employees-civil-service-jobs",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Bills aim to make ICE employees ineligible for jobs in law enforcement, public education and state civil serviceSupercharged by billions in dollars from Congress, Immigration and Customs Enforcement (",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Gillibrand wants $130B tariff refund for Americans",
+        "link": "https://thehill.com/business/5755462-kirsten-gillibrand-new-york-13b-tariff-refunds/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26015063871997-e1772106813826.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "New York Democratic leaders are demanding that President Donald Trump refund billions of dollars to small businesses and consumers after the U.S. Supreme Court ruled his global tariffs were illegal.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Blue state public health cuts don\u2019t \u2018own the libs\u2019 \u2014 they endanger us all",
+        "link": "https://thehill.com/opinion/healthcare/5754891-trump-cuts-public-health/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/public_health_cuts_atlanta_12042025_GettyImages-2249332487-1.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "It carries consequences that will reverberate far beyond the borders of the blue states the administration seems so eager to penalize.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "4 killed in speedboat were trying to infiltrate Cuba, officials say",
+        "link": "https://thehill.com/policy/international/5756167-cuba-speedboat-killing-security/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP21204478941311-e1772112091857.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The Cuban government said late Wednesday that the 10 individuals involved in a confrontation with the island&#8217;s border security officers were armed Cubans living in the U.S. attempting to infiltr",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Trump admin weighs requiring banks to collect citizenship info: Reports",
+        "link": "https://thehill.com/business/5756103-donald-trump-proof-of-citizenship-banks/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26056122706597-e1772107286534.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Such a decision could ultimately have banks requesting additional documentation, such as passports, from customers.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "\u2018Home Improvement\u2019 star Zachery Ty Bryan sentenced to 16 months in jail",
+        "link": "https://thehill.com/blogs/in-the-know/5755679-home-improvement-star-zachery-ty-bryan-sentenced-driving-under-influence/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/ZTB-02.26.png?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "\"Home Improvement\" actor Zachery Ty Bryan was sentenced to over a year in jail for driving under the influence.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Relocation threats shouldn\u2019t stop California from taxing billionaires",
+        "link": "https://thehill.com/opinion/finance/5754305-california-billionaire-tax-act/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/billionaires_tax_california_02192026_AP26049860591288-1.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The evidence we have available today suggests that wealthy people do not move in droves when lawmakers raise their taxes.",
+        "domain": "thehill.com"
+      }
+    ],
+    "tech": [
+      {
+        "title": "Burger King will use AI to check if employees say \u2018please\u2019 and \u2018thank you\u2019",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/884911/burger-king-ai-assistant-patty",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Burger King is launching an AI chatbot that will live in the headsets used by employees. The voice-enabled chatbot, called \"Patty,\" is part of an overarching BK Assistant platform that will not only a",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "The smart lock standard that could replace your keys is finally here",
+        "link": "https://www.theverge.com/tech/885002/aliro-smart-lock-standard-launches-apple-google-samsung-promise-support",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Aliro has officially arrived. The smart lock standard, first announced in 2023, finally has a 1.0 spec, meaning companies can now get hardware certified and roll out support. Aliro is an open standard",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Instagram will alert parents if their kids &#8216;repeatedly&#8217; search for self-harm topics",
+        "link": "https://www.theverge.com/tech/885110/meta-instagram-parent-alert-teen-self-harm-suicide",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Starting next week, Instagram will notify parents to check on their teen searching for terms related to self-harm or suicide. Meta says a similar alert system for its AI chatbots is coming later this ",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Google takes control of \u2018Android of robotics\u2019 project in quest for physical AI",
+        "link": "https://www.theverge.com/tech/885113/google-swallows-ai-robotics-moonshot-intrinsic",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Google is folding Alphabet's AI robotics \"moonshot,\" Intrinsic, into the company after five years as an independent unit. The move marks a strategic shift as Google doubles down on physical AI and pul",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "New York sues Valve, alleging its loot boxes are \u2018quintessential gambling\u2019",
+        "link": "https://www.theverge.com/games/884978/valve-lawsuit-loot-boxes-new-york-attorney-general-lawsuit",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "New York Attorney General Letitia James is suing Valve for \"illegally promoting gambling\" through the loot box systems it has built for video games like Counter-Strike 2, Team Fortress 2, and Dota 2, ",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "How the new Galaxy S26 phones compare",
+        "link": "https://www.theverge.com/gadgets/883733/samsung-galaxy-s26-vs-plus-ultra-specs-features-hardware-comparison",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Samsung has just announced its new Galaxy S26 lineup, which includes the S26, S26 Plus, and S26 Ultra. While they aren't radical departures from last year's models, they bring a handful of notable upg",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Best Tested Ski Clothes (2026): Shells, Jackets, Wool Socks",
+        "link": "https://www.wired.com/gallery/best-ski-clothes/",
+        "image": "https://media.wired.com/photos/699f9f5930d558fa543d8eb9/master/pass/The%20Best%20Ski%20Clothes.png",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "From weatherproof jackets and pants to puffers, gloves, and socks, WIRED\u2019s winter sports experts have got you covered.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Who\u2019s Your Daddy? A Chatbot",
+        "link": "https://www.wired.com/story/whos-your-daddy-a-chatbot/",
+        "image": "https://media.wired.com/photos/699f4ee997fb9fb360b2f5ae/master/pass/culture_ai_dom_chatbot.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "More people are turning to AI to explore their BDSM fantasies, but some in the community feel it\u2019s a cop-out.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "The Best Headphones I\u2019ve Tried (and Why I'd Buy Them All)",
+        "link": "https://www.wired.com/story/best-headphones/",
+        "image": "https://media.wired.com/photos/699f9af130d558fa543d8eb3/master/pass/There%20Are%20More%20Headphone%20Options%20Than%20Ever.%20Here%E2%80%99s%20What%20I'd%20Buy.png",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "The portable listening revolution is fully underway. From open earbuds to noise cancelers and wired headphones, I can find a reason to love them all.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Why Sierra the Supercomputer Had to Die",
+        "link": "https://www.wired.com/story/why-sierra-the-supercomputer-had-to-die/",
+        "image": "https://media.wired.com/photos/698f89ebcd8966a7051cba92/master/pass/OUTOFDATE_SUPERCOMPUTER_GB_USA_25_1898.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "For seven years, she ran high-security nuclear simulations for the US government. Now, this famous supercomputer is being put to death.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Factor Offers High Protein Meal Delivery Options (2026)",
+        "link": "https://www.wired.com/story/factor-meal-delivery-service-2026/",
+        "image": "https://media.wired.com/photos/699f6b2f83454378f3d480d3/master/pass/Factor%20Now%20Offers%20High%20Protein%20Meal%20Delivery%20Options.png",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "Even if you're incredibly busy, you can maintain your gains by eating the equivalent of the microwaveable chicken in The Fifth Element.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "TurboTax Service Codes: Up to 20% Off | February 2026",
+        "link": "https://www.wired.com/story/turbotax-coupon/",
+        "image": "https://media.wired.com/photos/66ea076fca863bb4c1028b64/master/pass/WIRED-Coupons-11.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "Tax season doesn\u2019t have to be stressful. Save up to 20% on federal tax filings, $40 off Expert Assist, and more exclusive TurboTax discount codes on WIRED.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Jest, a marketplace for messaging games, is challenging the app store status quo",
+        "link": "https://techcrunch.com/2026/02/26/jest-a-marketplace-for-messaging-games-is-challenging-the-app-store-status-quo/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Jest, a marketplace for messaging games, emerged from stealth with $7 million in seed funding.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Exhibit in Boston\u2019s startup ecosystem at TechCrunch Founder Summit 2026",
+        "link": "https://techcrunch.com/2026/02/26/exhibit-in-bostons-startup-ecosystem-at-techcrunch-founder-summit-2026/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "On June 9, 1,000+ founders, investors, and decision-makers will gather for TechCrunch Founder Summit 2026. This isn\u2019t just foot traffic. It\u2019s a full day of concentrated deal flow. An exhibit table tur",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Figma partners with OpenAI to bake in support for Codex",
+        "link": "https://techcrunch.com/2026/02/26/figma-partners-with-openai-to-bake-in-support-for-codex/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Figma is integrating OpenAI's coding assistant Codex a week after it announced a similar integration with Anthropic's Claude Code.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
+        "link": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Trace is launching with $3 million in seed funding, including investment from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "How to avoid bad hires in early-stage startups",
+        "link": "https://techcrunch.com/2026/02/26/how-to-avoid-bad-hires-in-early-stage-startups/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Lucena got the idea for Mappa after trying to build a marketing team but continually feeling like she had made the wrong hires.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Everything Samsung revealed at its Galaxy Unpacked event",
+        "link": "https://techcrunch.com/2026/02/26/everything-samsung-revealed-at-its-galaxy-unpacked-event/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Samsung's new privacy screen feature on Galaxy S26 Ultra was the most notable feature of the event.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Anthropic ditches its core safety promise",
+        "link": "https://www.cnn.com/2026/02/25/tech/anthropic-safety-policy-change",
+        "image": null,
+        "logo": "https://logo.clearbit.com/cnn.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.cnn.com/2026/02/25/tech/anthropic-safety-policy-change Comments URL: https://news.ycombinator.com/item?id=47165397 Points: 67 # Comments: 33",
+        "domain": "cnn.com"
+      },
+      {
+        "title": "Fentanyl makeover: Core structural redesign could lead to safer pain medications",
+        "link": "https://www.scripps.edu/news-and-events/press-room/2026/20260211-janda-molecule.html",
+        "image": null,
+        "logo": "https://logo.clearbit.com/scripps.edu",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.scripps.edu/news-and-events/press-room/2026/20260211-janda-molecule.html Comments URL: https://news.ycombinator.com/item?id=47165299 Points: 19 # Comments: 11",
+        "domain": "scripps.edu"
+      },
+      {
+        "title": "Number of UK workers on zero-hours contracts hits record high ahead of crackdown",
+        "link": "https://www.bbc.co.uk/news/articles/czj1m7d4gxpo",
+        "image": null,
+        "logo": "https://logo.clearbit.com/bbc.co.uk",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.bbc.co.uk/news/articles/czj1m7d4gxpo Comments URL: https://news.ycombinator.com/item?id=47165060 Points: 26 # Comments: 2",
+        "domain": "bbc.co.uk"
+      },
+      {
+        "title": "Show HN: Agent Swarm \u2013 Multi-agent self-learning teams (OSS)",
+        "link": "https://github.com/desplega-ai/agent-swarm",
+        "image": null,
+        "logo": "https://logo.clearbit.com/github.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://github.com/desplega-ai/agent-swarm Comments URL: https://news.ycombinator.com/item?id=47165046 Points: 29 # Comments: 13",
+        "domain": "github.com"
+      },
+      {
+        "title": "Hightouch (YC S19) Is Hiring",
+        "link": "https://hightouch.com/careers#open-positions",
+        "image": null,
+        "logo": "https://logo.clearbit.com/hightouch.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://hightouch.com/careers#open-positions Comments URL: https://news.ycombinator.com/item?id=47164933 Points: 0 # Comments: 0",
+        "domain": "hightouch.com"
+      },
+      {
+        "title": "Men in their 50s may be aging faster due to toxic 'forever chemicals'",
+        "link": "https://www.cnn.com/2026/02/26/health/forever-chemicals-aging-men-wellness",
+        "image": null,
+        "logo": "https://logo.clearbit.com/cnn.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://www.cnn.com/2026/02/26/health/forever-chemicals-aging-men-wellness Comments URL: https://news.ycombinator.com/item?id=47164892 Points: 74 # Comments: 60",
+        "domain": "cnn.com"
+      },
+      {
+        "title": "The Download: how America lost its lead in the hunt for alien life, and ambitious battery claims",
+        "link": "https://www.technologyreview.com/2026/02/26/1133734/the-download-how-america-lost-its-lead-in-the-hunt-for-alien-life-and-ambitious-battery-claims/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. America was winning the race to find Martian life.",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "This company claims a battery breakthrough. Now they need to prove it.",
+        "link": "https://www.technologyreview.com/2026/02/26/1133722/solid-state-batteries-donut-lab/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "When a company claims to have created what\u2019s essentially the holy grail of batteries, there are bound to be some questions. Interest has been swirling since Donut Lab, a Finnish company, announced las",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "America was winning the race to find Martian life. Then China jumped in.",
+        "link": "https://www.technologyreview.com/2026/02/26/1133584/america-china-mars-sample-return-space-race-nasa/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "To most people, rocks are just rocks. To geologists, they are much, much more: crystal-filled time capsules with the power to reveal the state of the planet at the very moment they were forged.&#160; ",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "Roundtables: Why 2026 Is the Year for Sodium-Ion Batteries",
+        "link": "https://www.technologyreview.com/2026/02/25/1132873/roundtables-why-2026-is-the-year-for-sodium-ion-batteries/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "Listen to the session or watch below Sodium-based batteries could be a cheaper, safer alternative to lithium-ion, and the technology is finally making its way into cars\u2014and energy storage arrays on th",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "The Download: introducing the Crime issue",
+        "link": "https://www.technologyreview.com/2026/02/25/1133653/the-download-introducing-the-crime-issue/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Crime issue Technology has long m",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "Listen to Earth\u2019s rumbling, secret soundtrack",
+        "link": "https://www.technologyreview.com/2026/02/25/1132829/listen-earths-rumbling-secret-soundtrack/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "The boom of a calving glacier. The crackling rumble of a wildfire. The roar of a surging storm front. They\u2019re the noises of the living Earth, music of this one particular sphere and clues to the true ",
+        "domain": "technologyreview.com"
+      }
+    ],
+    "ai": [
+      {
+        "title": "Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
+        "link": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2259422080-1024x648.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "Even twisting an ex-employee's text to favor xAI's reading fails to sway judge.",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "The Galaxy S26 is faster, more expensive, and even more chock-full of AI",
+        "link": "https://arstechnica.com/gadgets/2026/02/samsung-reveals-galaxy-s26-lineup-with-privacy-display-and-exclusive-gemini-smarts/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/Samsung-Mobile-Galaxy-Unpacked-2026-Galaxy-S26-Series-A-First-Look_dl2-1152x648.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "Samsung's Galaxy S26 series is available for preorder today and ships on March 11.",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "Judge doesn't trust DOJ with search of devices seized from Wash. Post reporter",
+        "link": "https://arstechnica.com/tech-policy/2026/02/judge-doesnt-trust-doj-with-search-of-devices-seized-from-wash-post-reporter/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/01/washington-post-building-1152x648-1768424038.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "Court to search devices itself instead of letting government have full access.",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "Could a vaccine prevent dementia? Shingles shot data only getting stronger.",
+        "link": "https://arstechnica.com/health/2026/02/could-a-vaccine-prevent-dementia-shingles-shot-data-only-getting-stronger/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2056512898-1152x648.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "Latest data hints that benefits seen so far could be underestimates.",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "2026 Lexus RZ 550e review: Likable, but it needs improvement",
+        "link": "https://arstechnica.com/cars/2026/02/2026-lexus-rz-550e-review-likable-but-it-needs-improvement/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/2026-Lexus-RZ-550e-1-1152x648.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "It's not very efficient, and the synthetic gearshifts aren't great, but I liked it?",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "RAM now represents 35 percent of bill of materials for HP PCs",
+        "link": "https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2252687789-1152x648.jpg",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "RAM represented about 15 to 18 percent of PC costs last quarter, HP said.",
+        "domain": "arstechnica.com"
+      },
+      {
+        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has cap",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spen",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+        "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4Xrcg14GLKFlwSEnuEzxyS/21c85d29d03c4c974076475c009e3b38/nuneybits_Vector_art_of_chat_bubbles_on_a_computer_screen_in_th_5018a7ea-3496-4103-8453-7ba1b129189a.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files \u2014 no coding required",
+        "link": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/wHv1Wez7Ps9wYVYAo9fwT/14b41f606dbf1f5b17994be510407449/nuneybits_Hyper-realistic_image_of_a_retro_computer_with_a_glos_61ffb6e2-7c33-4d45-85f7-69c28693b3ec.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users \u2014 and according to company insiders, the team bui",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment",
+        "link": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/66Tw6dMGGoSZZOK6XB6gm6/0fafc7520898e26c88edf1de9e74e863/nuneybits_Vector_art_of_radiant_skull_emitting_code_beams_deep__17d19acc-0af7-41ad-ac28-16f09ef5234b.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Nous Research, the open-source artificial intelligence startup backed by crypto venture firm Paradigm, released a new competitive programming model on Monday that it says matches or exceeds several la",
+        "domain": "venturebeat.com"
+      },
+      {
+        "title": "Anthropic Downgrades its AI Safety Policy Amid Market Pressures",
+        "link": "https://aibusiness.com/generative-ai/anthropic-downgrades-its-ai-safety-policy",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt5807d548b330f8c1/699f7da07b888e000862cf8d/AI_safety.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "The AI vendor previously committed to releasing only models it classified as safe.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "Google Labs adds Agentic AI Capabilities to Opal",
+        "link": "https://aibusiness.com/agentic-ai/google-labs-adds-agentic-ai-to-opal",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt1c76703f937ee8e0/699f20679a717f00082347bc/Google_Labs.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "The interactive agent enables goal-driven task planning and execution.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "AI Accounting Startup now Valued at $1.15 Billion",
+        "link": "https://aibusiness.com/agentic-ai/ai-accounting-startup-now-valued-at-1-15-billion",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt8b42721e5555f5a0/699f02b493b72e0008955ed9/Accounting.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "AI is rapidly making inroads in professional services.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "Anthropic Targets More Industries With Claude Cowork Plugins",
+        "link": "https://aibusiness.com/agentic-ai/anthropic-targets-more-industries-with-plugins",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltbb885a20254d4fc2/699e0422f518ea0008d25571/AI_agents.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "The features are a testament to the AI vendor's opportunity in the professional services sectors.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "Meta Signs $100B AI Chip Deal With AMD",
+        "link": "https://aibusiness.com/generative-ai/meta-signs-100b-ai-chip-deal-with-amd",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf75e9f83e2d5fffb/699df2cd17999700088c64a1/MetaAI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "The deal comes a week after Meta said it will use millions of Nvidia chips to power its AI expansion.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "Amazon to Invest in Louisiana Data Centers",
+        "link": "https://aibusiness.com/generative-ai/amazon-to-invest-in-louisiana-data-centers",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltadb3c063af3fe88e/699de6605f1e55000895c8f8/Amazon_logo.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "The project marks the vendor's first large-scale data center footprint in the state.",
+        "domain": "aibusiness.com"
+      },
+      {
+        "title": "Alibaba's open Qwen 3.5 takes aim at GPT-5 mini and Claude Sonnet 4.5 at a fraction of the cost",
+        "link": "https://the-decoder.com/alibabas-open-qwen-3-5-takes-aim-at-gpt-5-mini-and-claude-sonnet-4-5-at-a-fraction-of-the-cost/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/qwen_35.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Alibaba has introduced the new Qwen 3.5 model series. It comprises four models: Qwen3.5-Flash, Qwen3.5-35B-A3B, Qwen3.5-122B-A10B and Qwen3.5-27B. The article Alibaba&#039;s open Qwen 3.5 takes aim at",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
+        "link": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/perplexity_computer.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Perplexity bundles AI models from Anthropic, Google, xAI and OpenAI in an agentic system that is designed to carry out complex workflows independently. The article Perplexity Computer bundles rival AI",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Google relaunches its AI creative studio Flow with new features and integrations",
+        "link": "https://the-decoder.com/google-relaunches-its-ai-creative-studio-flow-with-new-features-and-integrations/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_flow_update_make_it.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Google is turning its AI creative studio Flow into an all-in-one tool for images and videos, with free image generators and new editing features. The article Google relaunches its AI creative studio F",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Study shows why reasoning models often think far beyond the solution",
+        "link": "https://the-decoder.com/study-shows-why-reasoning-models-often-think-far-beyond-the-solution/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Does-Your-Reasoning-Model-Know-When-To-Stop.jpeg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Large reasoning models frequently think well past the correct answer: cross-checking, reformulating, and confirming what they already got right. A new Bytedance study shows the models actually know wh",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Adobe's new Firefly \"Quick Cut\" tool turns raw footage into a rough edit from a text prompt",
+        "link": "https://the-decoder.com/adobes-new-firefly-quick-cut-tool-turns-raw-footage-into-a-rough-edit-from-a-text-prompt/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/adobe_quick_cut_teaser.webp",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Adobe Firefly can now automatically create a rough cut from raw footage. The new \"Quick Cut\" tool takes over the tedious first edit for creators. The article Adobe&#039;s new Firefly &quot;Quick Cut&q",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Anthropic refuses Pentagon demand to loosen military AI restrictions, faces Defense Production Act threat",
+        "link": "https://the-decoder.com/anthropic-refuses-pentagon-demand-to-loosen-military-ai-restrictions-faces-defense-production-act-threat/",
+        "image": "https://the-decoder.com/wp-content/uploads/2025/10/anthropic_head_trump_hair.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Anthropic is holding firm on its refusal to let its AI be used for autonomous weapons and surveillance. The Pentagon's response: comply by Friday, or we'll force you. The article Anthropic refuses Pen",
+        "domain": "the-decoder.com"
+      }
+    ],
+    "entertainment": [
+      {
+        "title": "\u2018Scream 7\u2019 Review: Neve Campbell Returns for a Back-to-Basics Sequel That\u2019s a Little Too Basic",
+        "link": "https://variety.com/2026/film/reviews/scream-7-review-neve-campbell-kevin-williamson-1236672637/",
+        "image": "https://variety.com/wp-content/uploads/2025/10/SCR7_06099R2.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "\"Scream 7\" has enough shocks and yocks to keep the product churning and the audience, at least for a weekend, turning out. Williamson has gone back to basics, but the result is a \"Scream\" sequel that,",
+        "domain": "variety.com"
+      },
+      {
+        "title": "\u2018Eraserheads: Combo on the Run,\u2019 Doc on Legendary Filipino Rock Band, Lands North American Theatrical Release via Abramorama (EXCLUSIVE)",
+        "link": "https://variety.com/2026/film/news/eraserheads-combo-on-the-run-north-american-release-1236673269/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Eraserheads.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Abramorama has acquired North American theatrical rights to &#8220;Eraserheads: Combo on the Run,&#8221; an award-winning documentary on the legendary Filipino rock band, from DVent Pictures. Directed",
+        "domain": "variety.com"
+      },
+      {
+        "title": "iQiYi Q4 Revenue Rises 3% as Chinese Streaming Giant Narrows Quarterly Deficit; Posts Full-Year Loss",
+        "link": "https://variety.com/2026/tv/news/iqiyi-full-year-revenues-2025-1236673417/",
+        "image": "https://variety.com/wp-content/uploads/2019/02/iqiyi-hq-frater-res.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Chinese streaming giant iQiYi returned to revenue growth in the fourth quarter of 2025, posting a 3% year-over-year increase and narrowing its quarterly loss, though the company swung to a full-year l",
+        "domain": "variety.com"
+      },
+      {
+        "title": "AMC Lands U.K. Crime Drama \u2018This City Is Ours\u2019 From \u2018The Crown\u2019 Producer Left Bank",
+        "link": "https://variety.com/2026/tv/global/amc-lands-uk-crime-drama-this-city-is-ours-1236673372/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/THISCITYISOURSUK_S01_Eps101.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "AMC Networks has acquired U.S. rights to U.K. crime drama &#8220;This City Is Ours&#8221; ahead of Sony Pictures Television&#8217;s London Showcase. The Liverpool-set series \u2014 made by SPT-owned Left B",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Petition in Support of Berlinale Chief Tricia Tuttle Surpasses 1,200 Film Industry Names, Including Sean Baker, Todd Haynes and Tilda Swinton",
+        "link": "https://variety.com/2026/film/global/petition-berlinale-tricia-tuttle-1236672968/",
+        "image": "https://variety.com/wp-content/uploads/2025/02/Tricia-Tuttle.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "UPDATE: A petition in support of Tricia Tuttle, festival director of the Berlin Film Festival, has now grown to more than 1,200 film business insiders, including directors, producers and actors. As pe",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Israeli Film Community Throws Support Behind Tricia Tuttle, Hailing Berlinale as Space for \u2018Open Debate\u2019 and \u2018Non-Censorship\u2019 (EXCLUSIVE)",
+        "link": "https://variety.com/2026/film/global/israeli-film-community-tricia-tuttle-berlinale-1236673394/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2261392606.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Israel\u2019s film community \u2013 led by a group of film institutes, film festivals and film funds \u2013 have thrown their support behind embattled Berlin Film Festival chief Tricia Tuttle in a letter sent to the",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Producer Jordan Goldnadel Launches AI Animation Firm AiSpasia Studios",
+        "link": "https://deadline.com/2026/02/ordan-goldnadel-launches-aispasia-studios-ai-animation-1236737128/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/Jordan-Goldnadel.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: Producer Jordan Goldnadel has launched AiSpasia Studios, an AI animation firm based out of New York. AiSpasia is being positioned as &#8220;pioneering the ethical and artist-driven use of a",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "\u2018Scream 7\u2019 Review:  Neve Campbell Is Back In Bloody Good Style For Fun Nostalgia-Tinged Sequel In The Venerable Horror Franchise",
+        "link": "https://deadline.com/2026/02/scream-7-review-neve-campbell-sequel-horror-franchise-1236737025/",
+        "image": "https://deadline.com/wp-content/uploads/2023/03/Pete-Hammond-Badge.jpg?w=150&h=1000",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "&#8220;Burn It All Down&#8221; is not what David Ellison will be saying if he doesn&#8217;t get his way with Warner Bros, but rather the ad line on Paramount&#8217;s billboards touting the latest entr",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Rachida Dati Steps Down As French Culture Minister To Pursue Paris Mayor Ambitions",
+        "link": "https://deadline.com/2026/02/rachida-dati-resigns-french-culture-minister-paris-mayor-1236737167/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2215585460.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Controversial French politician Rachida Dati has stepped down as France\u2019s Culture Minister two years after her appointment took the country\u2019s arts, culture and audiovisual sectors by surprise. Dati an",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "AMC+ Lands BBC Crime Family Series \u2018This City Is Ours\u2019",
+        "link": "https://deadline.com/2026/02/amc-buys-bbc-series-this-city-is-ours-1236737097/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/This-City-is-Ours-e1772105582424.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: AMC+ has landed U.S. rights to BBC crime drama This City is Ours. The deal is one of a number distributor Sony Pictures Television has struck ahead of its London TV Screenings showcase toda",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "FIPRESCI Announces Finalists For First Ever Documentary Grand Prix Award",
+        "link": "https://deadline.com/2026/02/fipresci-documentary-grand-prix-finalists-1236737131/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/Facebook-post_Documentary-Grand-Prix__MDAG.png",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: FIPRESCI \u2014 the International Federation of Film Critics \u2013 has announced the five finalists for its inaugural Documentary Grand Prix award, which will be presented at the Millennium Docs Aga",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "HBO Max Hit 131.6M Subs, NBA Exit Pinches Advertising As WBD Deal Drama Dominates Q4",
+        "link": "https://deadline.com/2026/02/warner-bros-discovery-hbo-max-q4-deal-drama-1236736958/",
+        "image": "https://deadline.com/wp-content/uploads/2025/12/peter-claffey_6-e1769111940120.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "HBO Max added subscribers and Q4 streaming revenue grew. Warner Bros. Discovery media networks lost ground with advertising pinched year-on-year by the loss of the NBA in a mixed quarter. But it&#8217",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "\u2018Stranger Things\u2019 Creators' New Netflix Horror Turns \u201cI Do\u201d Into Dread in First Look [Exclusive]",
+        "link": "https://collider.com/something-very-bad-is-going-to-happen-camila-morrone-adam-dimarco-first-look-image/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/something-very-bad-is-going-to-happen-feature.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Camila Morrone and Adam DiMarco can\u2019t get enough of each other in a new Something Very Bad Is Going to Happen image. See it here!",
+        "domain": "collider.com"
+      },
+      {
+        "title": "'Bridgerton\u2019 Stars Luke Thompson and Yerin Ha Pull Back the Mask on Benophie\u2019s Biggest Part 2 Moments",
+        "link": "https://collider.com/bridgerton-season-4-part-2-luke-thompson-yerin-ha-interview/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/bridgerton-s4-pt-2-luke-thompson-yerin-ha-interview.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Bridgerton stars Luke Thompson & Yerin Ha break down Benedict and Sophie\u2019s most vulnerable Part 2 scenes, the Violet clash, and Sophie\u2019s \u201cGun\u201d debut.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "\u2018Scrubs\u2019 Stars Judy Reyes and John C. McGinley on Making Up for a \u201cLittle Bit of Frustration\u201d Over THAT Season",
+        "link": "https://collider.com/scrubs-revival-judy-reyes-john-c-mcginley-interview-season-9-problems/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/scrubs-judy-reyes-john-c-mcginley-interview.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Judy Reyes and John C. McGinley discuss returning to Scrubs, what makes Carla and Turk the cutest couple on TV, and why Cox puts J.D. in charge.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "This 4-Part HBO Miniseries Is One of the Greatest Crime Shows of the 21st Century",
+        "link": "https://collider.com/landscapers-hbo-miniseries-best-crime-show-olivia-colman/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/landscapers-david-thewlis.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Olivia Colman and David Thewlis brilliantly anchor Landscapers, a bizarre HBO miniseries based on a baffling true crime story.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Michael Jackson Collaborated with a Legendary Guitarist 35 Years Ago",
+        "link": "https://collider.com/michael-jackson-collaborated-slash-dangerous/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/michael-jackson-1.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Michael Jackson teamed up with Guns N' Roses guitarist Slash on his 1991 album Dangerous.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Test Your Knowledge With the Collider TV Quiz \u2014 February 26, 2026",
+        "link": "https://collider.com/tv-quiz-feb-26-2026-west-wing-newsroom/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-west-wing-1.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "The West Wing was an iconic series and it had a lasting cultural impact. How much do you remember about that groundbreaking show?",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Terrifier Creator Issues Update on Terrifier 4 Addressing 'Speculation and False Information,' Confirms It's the Final Film in the Franchise",
+        "link": "https://www.ign.com/articles/terrifier-creator-issues-update-on-terrifier-4-addressing-speculation-and-false-information-confirms-its-the-final-film-in-the-franchise",
+        "image": "https://assets-prd.ignimgs.com/2024/09/23/terrifier-blogroll-1727119154431.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Writer and director Damien Leone has issued an update on horror movie sequel Terrifier 4, addressing what he called \u201cspeculation and false information\u201d doing the rounds online.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Resident Evil Requiem Has a Convoluted Challenge Called 'The Final Puzzle' \u2014 and the Race Is Now on to Get It Fully Solved",
+        "link": "https://www.ign.com/articles/resident-evil-requiem-has-a-convoluted-challenge-called-the-final-puzzle-and-the-race-is-now-on-to-get-it-fully-solved",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/r9-pcgameplay-oo-1772070466619.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Resident Evil Requiem includes numerous Easter eggs and unlockable extras, but none seemingly as complex as 'The Final Puzzle.'",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Woot's Latest Gaming Sale is Genuinely Incredible, But The Best Deals Will Expire Soon",
+        "link": "https://www.ign.com/articles/woot-new-gaming-sale-is-genuinely-incredible-but-the-best-deals-will-expire-soon-ps5-switch",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/woot-video-game-sale-new-feb-26-level20-1772106873384.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Some of gaming's biggest franchises are included in a major sale at Woot, with an additional discount code, too.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Neve Campbell Has a 'Great Idea' for Scream 8, and It Will Be Made if Scream 7 Works Out",
+        "link": "https://www.ign.com/articles/neve-campbell-has-a-great-idea-for-scream-8-and-it-will-be-made-if-scream-7-works-out",
+        "image": "https://assets-prd.ignimgs.com/2026/02/23/screamthumb-1771858104756.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "It doesn\u2019t sound like Scream 7 is the end for the horror franchise \u2014 Neve Campbell, who plays protagonist Sidney Prescott, already has a \u201cgreat\u201d idea for Scream 8, and it will be made as long as Screa",
+        "domain": "ign.com"
+      },
+      {
+        "title": "'Get Paid to Throw' \u2014 Unofficial Marvel Rivals Bounty Website Faces Backlash as Players Ask NetEase to Intervene",
+        "link": "https://www.ign.com/articles/get-paid-to-throw-unofficial-marvel-rivals-bounty-website-faces-backlash-as-players-ask-netease-to-intervene",
+        "image": "https://assets-prd.ignimgs.com/2025/01/27/marvel-rivals-galacta-2-1737989148806.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Marvel Rivals players are asking NetEase to take action after the emergence of an unofficial bounty website triggered fears that it could harm the community it\u2019s supposedly trying to protect.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Warhammer 40,000: Space Marine 2 Techmarine Update Out Now \u2014 Check Out Patch 12.0",
+        "link": "https://www.ign.com/articles/warhammer-40000-space-marine-2-techmarine-update-out-now-check-out-patch-120",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/429bbef9cad561ef56b6749b5b9a063fcaefb2ed-1772103432012.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Warhammer 40,000: Space Marine 2\u2019s long-awaited Techmarine update is out now across all platforms as part of patch 12.0. Check out the patch notes.",
+        "domain": "ign.com"
+      }
+    ],
+    "weird_news": [
+      {
+        "title": "Orphaned otters rescued and on the mend",
+        "link": "https://boingboing.net/2026/02/25/otters.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/608f9f60-117f-11f1-9923-f53d6118df6a.jpg.webp?fit=1536%2C863&quality=55&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Two baby otters found alone in a field in England are said to be doing well after being taken to a rescue center. \"Barely able to crawl\" when spotted by a member of the public, the pair\u2014thought to hav",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Top AIs insist on using nuclear weapons in war simulations",
+        "link": "https://boingboing.net/2026/02/25/wargames.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/wargames.jpg?fit=1137%2C832&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "OpenAI's ChatGPT, Anthropic's Claude and Google Gemini all have something in common: if you assign them war game simulations, they insist on using nuclear weapons to achieve their aims. The scenarios ",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Douglas Rushkoff on the dinner party that turned out to be Epstein's",
+        "link": "https://boingboing.net/2026/02/25/douglas-rushkoff-on-the-dinner-party-that-turned-out-to-be-epsteins.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/rushkoff.jpg?fit=1200%2C675&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Douglas Rushkoff was a twentysomething tech writer when he got invited to an exclusive New York dinner with scientists and tech CEOs. He brought a plus one \u2014 \"the smartest, wittiest person I knew,\" th",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Android app detects nearby smart glasses",
+        "link": "https://boingboing.net/2026/02/25/glasses.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/smartglasses.jpg?fit=1600%2C1000&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Smart glasses such as Meta's are becoming popular, with seven million sold in 2025 by eyewear multinational EssilorLuxottica under the Ray-Ban and Oakleys brands. Less conspicious than previous genera",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "A med school thriller where the enemy is the algorithm",
+        "link": "https://boingboing.net/2026/02/25/a-med-school-thriller-where-the-enemy-is-the-algorithm.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/hospital.jpg?fit=794%2C1200&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "In Justin C. Key's The Hospital at the End of the World, the AI that runs all of American healthcare can't figure out Black hair. The Shepherd Organization's algorithms control diagnostics, treatment ",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "The Tokyo Vice author digs into cryptocurrency's darkest chapters",
+        "link": "https://boingboing.net/2026/02/25/the-tokyo-vice-author-digs-into-cryptocurrencys-darkest-chapters.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/devil-btc.jpeg?fit=785%2C1200&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Jake Adelstein is an American journalist and author based in Japan. His work includes Tokyo Vice (adapted into an HBO Max series), The Last Yakuza, and Tokyo Noir. Adelstein's latest book, The Devil T",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "My city has a miniature, replica city where kids can learn pedestrian, bicycle and driver safety.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rejb05/my_city_has_a_miniature_replica_city_where_kids/",
+        "image": "https://preview.redd.it/afw9hpiwbolg1.jpeg?width=640&crop=smart&auto=webp&s=93577e2f4a055b38724222fb26e07b6c0dce6ba2",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/06EXTN [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "I just saw a buck shake off one of its antlers",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1ret1qg/i_just_saw_a_buck_shake_off_one_of_its_antlers/",
+        "image": "https://preview.redd.it/qih08p162qlg1.jpeg?width=640&crop=smart&auto=webp&s=a9f87011f61aed1940225af8ef669f87ee82d2f9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/Mabester [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "My fish looks like Hitler",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1reudls/my_fish_looks_like_hitler/",
+        "image": "https://preview.redd.it/nav0pqxgbqlg1.jpeg?width=640&crop=smart&auto=webp&s=02c568eb1255d307facd39d19c7b33fa5b14e7f2",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/Formal-Grade-2103 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Received a wax-sealed envelope in the mail today.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rf20b1/received_a_waxsealed_envelope_in_the_mail_today/",
+        "image": "https://preview.redd.it/a1umm75n1slg1.jpeg?width=640&crop=smart&auto=webp&s=2367b331dc85a5c21a79dda9ca9929b516fbb8fe",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/AMotherOfThunder [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "The top of my ice cream formed a perfect flower",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rf176l/the_top_of_my_ice_cream_formed_a_perfect_flower/",
+        "image": "https://preview.redd.it/p54f2n01urlg1.jpeg?width=640&crop=smart&auto=webp&s=a69524111ba60d1a06f3bb1b4dc792955596e7fb",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/LobsterBrief2895 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "squared rain spots on the trampoline today",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rehojq/squared_rain_spots_on_the_trampoline_today/",
+        "image": "https://preview.redd.it/eary1ror1olg1.jpeg?width=640&crop=smart&auto=webp&s=4b05e42cf7e544de238a248e42c870e52a766615",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/out_of_the_darkwoods [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL that Canc\u00fan didn\u2019t exist until 1970, its location was chosen using early computer models to identify a suitable place for a new resort city. The area had only three residents at the time.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1reiiu5/til_that_canc\u00fan_didnt_exist_until_1970_its/",
+        "image": "https://external-preview.redd.it/8-mNC7JNZwLEsFSfbumo924bPKwZoShIEXEfxRhhl0E.jpeg?width=640&crop=smart&auto=webp&s=320a14d2098f5226c10ce177cb672aead7b4a540",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/RuseOwl [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
+        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL about the Thrasis region of Mars. Due to Mars\u2019 lack of plate tectonics, three volcanoes were able to erupt in the same location for billions of years, accumulating so much lava that the crust structurally failed under the weight.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1regfcp/til_about_the_thrasis_region_of_mars_due_to_mars/",
+        "image": "https://external-preview.redd.it/upEYwWUBMj8ekvXDp3bTTWo7rHCOY8NfDpDCRfdw2DI.jpeg?width=640&crop=smart&auto=webp&s=bc0cffbb91e372117916d9f9501b31519a04e6fc",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/EpicAura99 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL The \"Asoh Defense\" refers to the legendary 1968 incident where Japan Airlines Captain Kohei Asoh candidly admitted, \"As you Americans say, I f---ed up,\" after mistakenly landing his DC-8 jet in San Francisco Bay. By taking full, immediate responsibility without excuses, he set a gold standard",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rex9sl/til_the_asoh_defense_refers_to_the_legendary_1968/",
+        "image": "https://external-preview.redd.it/dNutuwZfOXjp4EeM-FuzYPRcwQjGV_QGcQhvsOArcCs.jpeg?width=640&crop=smart&auto=webp&s=43b907ae935aeb28dc49e3b8b3669510b8d3232a",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/Capital-Aide-1006 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL The mercury in tuna and other fish largely comes from human activity, not the ocean itself.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1reuvle/til_the_mercury_in_tuna_and_other_fish_largely/",
+        "image": "https://external-preview.redd.it/E6iG_FKLZhP0JCYn9wm-TBmjjJd8LWzEiw7r1GW_4Ko.jpeg?width=640&crop=smart&auto=webp&s=526c2dbd0f6a170dc5ae0d85ead923ae92809996",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/Tight_kangaroo1 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL roughly 100,000 African elephants were killed by poachers in just three years (2010-2012). The population declined by approximately 110,000 over a decade, leaving only about 415,000 remaining by 2016.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1renpzq/til_roughly_100000_african_elephants_were_killed/",
+        "image": "https://external-preview.redd.it/Qgq1TblDrjqYNa-N_WO5IE0Sb_dB6YAhFcByGOg8324.jpeg?width=640&crop=smart&auto=webp&s=d4895a376f23a986853929bfd818cba788128a3d",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/freudian_nipps [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Man Attacked by Dogs Unexpectedly Saved by Exploding Phone in His Pocket",
+        "link": "https://www.odditycentral.com/news/man-attacked-by-dogs-unexpectedly-saved-by-exploding-phone-in-his-pocket.html?utm_source=rss&utm_medium=rss&utm_campaign=man-attacked-by-dogs-unexpectedly-saved-by-exploding-phone-in-his-pocket",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Brazilian man savagely attacked by two large dogs claims he is only alive thanks to the explosion of his phone in his pocket. Having your phone explode in your pants pocket is almost never a good th",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "This 55-Meter Steam Train Is the World\u2019s Longest Chocolate Sculpture",
+        "link": "https://www.odditycentral.com/news/this-55-meter-steam-train-is-the-worlds-longest-chocolate-sculpture.html?utm_source=rss&utm_medium=rss&utm_campaign=this-55-meter-steam-train-is-the-worlds-longest-chocolate-sculpture",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Maltese chocolatier and his team spent around four months piecing together the world's longest chocolate sculpture - a 55.27-meter-long train. The post This 55-Meter Steam Train Is the World\u2019s Longe",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Bizarre Weight Loss Trend Has People Using Cling Film as Mouth Condoms for Food",
+        "link": "https://www.odditycentral.com/news/bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food.html?utm_source=rss&utm_medium=rss&utm_campaign=bizarre-weight-loss-trend-has-people-using-cling-film-as-mouth-condoms-for-food",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A viral eating hack has people lining their mouths with cling film to trick their bodies into thinking they are eating, but without coming into contact with food. The post Bizarre Weight Loss Trend Ha",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Fired for Drinking on the Job Gets Awarded $55,000 Compensation in Court",
+        "link": "https://www.odditycentral.com/news/man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court.html?utm_source=rss&utm_medium=rss&utm_campaign=man-fired-for-drinking-on-the-job-gets-awarded-55000-compensation-in-court",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Spanish man fired for drinking up to 3 liters of beer during work hours was awarded $55,000 in compensation by a court of law. The post Man Fired for Drinking on the Job Gets Awarded $55,000 Compens",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Man Allegedly Trains Dog to Illegally Dump Trash Bags on the Side of the Road",
+        "link": "https://www.odditycentral.com/news/man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road.html?utm_source=rss&utm_medium=rss&utm_campaign=man-allegedly-trains-dog-to-illegally-dump-trash-bags-on-the-side-of-the-road",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "An Italian man has been fined for allegedly training his dog to carry trash bags in its mouth and dump them in unauthorized places to avoid paying for trash collection. The post Man Allegedly Trains D",
+        "domain": "odditycentral.com"
+      },
+      {
+        "title": "Realtor Uses AI to Touch Up Listing Photos, Accidentally Adds Demonic Flesh Monster",
+        "link": "https://www.odditycentral.com/wtf/realtor-uses-ai-to-touch-up-listing-photos-accidentally-adds-demonic-flesh-monster.html?utm_source=rss&utm_medium=rss&utm_campaign=realtor-uses-ai-to-touch-up-listing-photos-accidentally-adds-demonic-flesh-monster",
+        "image": null,
+        "logo": "https://logo.clearbit.com/odditycentral.com",
+        "source": "Oddity Central",
+        "snippet": "A Washington realtor accidentally posted photos of a local listing featuring a creepy monster coming out of the bathroom mirror. The post Realtor Uses AI to Touch Up Listing Photos, Accidentally Adds ",
+        "domain": "odditycentral.com"
+      }
+    ],
+    "wisconsin": [
+      {
+        "title": "Wisconsinites can\u2019t keep wild frogs or turtles as pets \u2014 or race them \u2014 under new rule",
+        "link": "https://www.wpr.org/environment/wisconsin-wild-frogs-turtles-pets-race-new-rule",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "The Wisconsin DNR will no longer allow residents to keep wild frogs and turtles as pets. They can't enter them in any races or contests either. The post Wisconsinites can&#8217;t keep wild frogs or tu",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "In Bayfield County, babies get a $100 head start toward college",
+        "link": "https://www.wpr.org/news/bayfield-county-babies-college-fund",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "A newborn baby is priceless, of course. But in Bayfield County, you can add $100 to that \u2014 thanks to a new program called Saving Early for Educational Dreams, or SEED. It\u2019s a $100 educational savings ",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "WPR Music new album of the week: \u2018Jane Austen\u2019s Piano\u2019",
+        "link": "https://www.wpr.org/music/wpr-music-new-album-of-the-week-jane-austens-piano",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "This new EP from Jeneba Kanneh-Mason includes a few of those works, plus music mentioned in or inspired by Jane Austen\u2019s six novels. The post WPR Music new album of the week: &#8216;Jane Austen&#8217;",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "These 2 suburban Milwaukee cities are merging fire departments",
+        "link": "https://www.wpr.org/news/suburban-milwaukee-merging-fire-departments-wauwatosa-west-allis",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Wauwatosa and West Allis will create a joint fire department to be called Milwaukee Metro Fire Rescue. The post These 2 suburban Milwaukee cities are merging fire departments appeared first on WPR.",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "Wisconsin DNR monitors manure spill in Trempealeau County",
+        "link": "https://www.wpr.org/news/wisconsin-dnr-monitor-manure-spill-trempealeau-county",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "The runoff stems from manure spread by Oak Ridge Dairy. The post Wisconsin DNR monitors manure spill in Trempealeau County appeared first on WPR.",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "Republicans grill Wisconsin attorney general about foundation-funded attorneys",
+        "link": "https://www.wpr.org/news/republicans-grill-wisconsin-attorney-general-about-foundation-funded-attorneys",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Republican lawmakers have been grilling Wisconsin's Democratic Attorney General Josh Kaul about the use of environmental prosecutors whose positions were funded by an outside foundation. The post Repu",
+        "domain": "wpr.org"
+      },
+      {
+        "title": "City Hall: City Tows Hundreds With Unpaid Parking Citations",
+        "link": "https://urbanmilwaukee.com/2026/02/25/city-hall-city-tows-hundreds-with-unpaid-parking-citations/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2019/06/Image-from-iOS-57-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "New habitual violators rule is pushing scofflaws to pay up.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Milwaukee Cop Used Flock Cameras to Track Romantic Partner",
+        "link": "https://urbanmilwaukee.com/2026/02/25/milwaukee-cop-used-flock-cameras-to-track-romantic-partner/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/IMG_5098-150x150.jpeg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Officer charged with misconduct for tracking his girlfriend and her former lover.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Convention Center Partner Says Hotel Study Findings Were Fixed",
+        "link": "https://urbanmilwaukee.com/2026/02/25/convention-center-partner-says-hotel-study-findings-were-fixed/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2025/09/071-1-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "CEO accuses Wisconsin Center District of steering $145,000 study toward one outcome.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Sponsored: The 8th House Presented by Danceworks Performance MKE",
+        "link": "https://urbanmilwaukee.com/2026/02/25/sponsored-the-8th-house-presented-by-danceworks-performance-mke-5/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/The-8th-House-150x150px-150x150.png",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Danceworks Performance MKE explores the mysterious significance of the number 8. Inspired by the forces of astrology, tarot, rebirth and transformation, The 8th House invites audiences into a world wh",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Hong, Barnes Lead Democratic Primary for Governor In New Poll",
+        "link": "https://urbanmilwaukee.com/2026/02/25/hong-barnes-lead-democratic-primary-for-governor-in-new-poll/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/DEMGOV-splitscreen-2026-scaled-e1772058084872-1-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Marquette poll shows most voters undecided, with Taylor leading Lazar for high court.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "The Laughing Tap Returns in March",
+        "link": "https://urbanmilwaukee.com/2026/02/25/the-laughing-tap-returns-in-march/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/761-N.-Jefferson-St.-Photo-taken-Feb.-25-2026-by-Sophie-Bolich.-150x150.jpeg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "After nine-month hiatus, comedy club reopens in Downtown with week-long celebration.",
+        "domain": "urbanmilwaukee.com"
+      }
+    ],
+    "til": [
+      {
+        "title": "TIL that Canc\u00fan didn\u2019t exist until 1970, its location was chosen using early computer models to identify a suitable place for a new resort city. The area had only three residents at the time.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1reiiu5/til_that_canc\u00fan_didnt_exist_until_1970_its/",
+        "image": "https://external-preview.redd.it/8-mNC7JNZwLEsFSfbumo924bPKwZoShIEXEfxRhhl0E.jpeg?width=640&crop=smart&auto=webp&s=320a14d2098f5226c10ce177cb672aead7b4a540",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/RuseOwl [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
+        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL about the Thrasis region of Mars. Due to Mars\u2019 lack of plate tectonics, three volcanoes were able to erupt in the same location for billions of years, accumulating so much lava that the crust structurally failed under the weight.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1regfcp/til_about_the_thrasis_region_of_mars_due_to_mars/",
+        "image": "https://external-preview.redd.it/upEYwWUBMj8ekvXDp3bTTWo7rHCOY8NfDpDCRfdw2DI.jpeg?width=640&crop=smart&auto=webp&s=bc0cffbb91e372117916d9f9501b31519a04e6fc",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/EpicAura99 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL The \"Asoh Defense\" refers to the legendary 1968 incident where Japan Airlines Captain Kohei Asoh candidly admitted, \"As you Americans say, I f---ed up,\" after mistakenly landing his DC-8 jet in San Francisco Bay. By taking full, immediate responsibility without excuses, he set a gold standard",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rex9sl/til_the_asoh_defense_refers_to_the_legendary_1968/",
+        "image": "https://external-preview.redd.it/dNutuwZfOXjp4EeM-FuzYPRcwQjGV_QGcQhvsOArcCs.jpeg?width=640&crop=smart&auto=webp&s=43b907ae935aeb28dc49e3b8b3669510b8d3232a",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/Capital-Aide-1006 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL The mercury in tuna and other fish largely comes from human activity, not the ocean itself.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1reuvle/til_the_mercury_in_tuna_and_other_fish_largely/",
+        "image": "https://external-preview.redd.it/E6iG_FKLZhP0JCYn9wm-TBmjjJd8LWzEiw7r1GW_4Ko.jpeg?width=640&crop=smart&auto=webp&s=526c2dbd0f6a170dc5ae0d85ead923ae92809996",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/Tight_kangaroo1 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL roughly 100,000 African elephants were killed by poachers in just three years (2010-2012). The population declined by approximately 110,000 over a decade, leaving only about 415,000 remaining by 2016.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1renpzq/til_roughly_100000_african_elephants_were_killed/",
+        "image": "https://external-preview.redd.it/Qgq1TblDrjqYNa-N_WO5IE0Sb_dB6YAhFcByGOg8324.jpeg?width=640&crop=smart&auto=webp&s=d4895a376f23a986853929bfd818cba788128a3d",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/freudian_nipps [link] &#32; [comments]",
+        "domain": "reddit.com"
+      }
+    ],
+    "life_hacks": [
+      {
+        "title": "Removing lint balls from two layer body suit????",
+        "link": "https://www.reddit.com/r/lifehacks/comments/1rerhl7/removing_lint_balls_from_two_layer_body_suit/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/lifehacks",
+        "snippet": "Hi! Idk if this is possible, but I have a few body suits from Old Navy that are two layers of fabric with no openings to get between the layers. I&#39;ve noticed some small lint balls forming between ",
+        "domain": "reddit.com"
+      }
+    ],
+    "money": [
+      {
+        "title": "45 Only 40k in 401K How and Where to Invest?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1relf6q/45_only_40k_in_401k_how_and_where_to_invest/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Financing was never my thing. Nobody really to get assistance from and reaching out to the internet for help. Retirement is closing fast and I don&#39;t want to be stuck. Any advice would be greatly a",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Turned 30 years a couple months ago with no savings, no 401k. Paying student loans. Idk where to start.",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1rehmjy/turned_30_years_a_couple_months_ago_with_no/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Hi all. I have a decent job currently making 75k USD a year. I\u2019m from Canada but currently work in the US. I have a masters degree and about 3 years out into the industry from when I graduated. I have",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Venmo claim dispute declined",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1rf7dxs/venmo_claim_dispute_declined/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "I went to a 7-Eleven and tried to use the atm, when I tried to withdraw $60 it said it couldn\u2019t be processed and a receipt couldn\u2019t be given. I check my Venmo account and sure enough $60 had been dedu",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Paid $160 to remove PMI with BPO",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1resfs7/paid_160_to_remove_pmi_with_bpo/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "we have been in our home 3 years and thought we needed a full appraisal to remove our PMI. we waited until we finished our basement to make sure we had enough equity in the home to hit the 80% LTV. ou",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Unemployed, draining savings \u2014 would you apply for SNAP in this situation?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1repilk/unemployed_draining_savings_would_you_apply_for/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Looking for practical advice. Household of 3 in New Jersey. I lost my job late last year after several years with the same company and received severance. The job market has been tougher than expected",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "20 yr VS 30 yr mortgage with increased principal payments",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1reuaif/20_yr_vs_30_yr_mortgage_with_increased_principal/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "We are refinancing our mortgage because interest rates are down over a full percentage point from when we bought our house. We&#39;ve only been in the house for about a year, so consider the 30 year m",
+        "domain": "reddit.com"
+      }
+    ]
+  },
+  "school_deadlines": [
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Week 6.5 Lab",
+      "due_date": "2026-03-04",
+      "due_str": "Wed Mar 4",
+      "days": 6,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Week 6 Lab/Demo",
+      "due_date": "2026-03-04",
+      "due_str": "Wed Mar 4",
+      "days": 6,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Data Management Meeting Simulation",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 7,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Data Management Case Study",
+      "due_date": "2026-03-11",
+      "due_str": "Wed Mar 11",
+      "days": 13,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Power BI Project",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 14,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Data Visualization & Reporting",
+      "desc": "Roll Call Attendance",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 14,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 1 Project",
+      "due_date": "2026-02-26",
+      "due_str": "Thu Feb 26",
+      "days": 0,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 5 Practice Problems",
+      "due_date": "2026-02-26",
+      "due_str": "Thu Feb 26",
+      "days": 0,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 6 Practice Problems",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 7,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 6 Quiz",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 7,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Week 7 In-Class Lab",
+      "due_date": "2026-03-05",
+      "due_str": "Thu Mar 5",
+      "days": 7,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 7 Practice Problems",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 14,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 7 Quiz",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 14,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 8 Practice Problems",
+      "due_date": "2026-03-26",
+      "due_str": "Thu Mar 26",
+      "days": 28,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 8 Quiz",
+      "due_date": "2026-03-26",
+      "due_str": "Thu Mar 26",
+      "days": 28,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 9 Practice Problems",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 35,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 9 Quiz",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 35,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 In-Class Lab",
+      "due_date": "2026-04-02",
+      "due_str": "Thu Apr 2",
+      "days": 35,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 Practice Problems",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 42,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 10 Quiz",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 42,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 11 In-Class Lab",
+      "due_date": "2026-04-09",
+      "due_str": "Thu Apr 9",
+      "days": 42,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 11 Practice Problems",
+      "due_date": "2026-04-16",
+      "due_str": "Thu Apr 16",
+      "days": 49,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 12 Practice Problems",
+      "due_date": "2026-04-23",
+      "due_str": "Thu Apr 23",
+      "days": 56,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 2 Project",
+      "due_date": "2026-04-24",
+      "due_str": "Fri Apr 24",
+      "days": 57,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 13 Practice Problems",
+      "due_date": "2026-04-30",
+      "due_str": "Thu Apr 30",
+      "days": 63,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 14 Practice Problems",
+      "due_date": "2026-05-07",
+      "due_str": "Thu May 7",
+      "days": 70,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Lesson 14 Quiz",
+      "due_date": "2026-05-07",
+      "due_str": "Thu May 7",
+      "days": 70,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Advanced SQL",
+      "desc": "Unit 3 Project",
+      "due_date": "2026-05-14",
+      "due_str": "Thu May 14",
+      "days": 77,
+      "weight": "high",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 9 - Hypothesis Testing Ch.9",
+      "due_date": "2026-02-28",
+      "due_str": "Sat Feb 28",
+      "days": 2,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "CLS Hypothesis Testing",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 3,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Extra Quiz 5 - Hypothesis Testing Ch.9",
+      "due_date": "2026-03-01",
+      "due_str": "Sun Mar 1",
+      "days": 3,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 10 - Two Sample Hypothesis Testing Ch.11&12",
+      "due_date": "2026-03-07",
+      "due_str": "Sat Mar 7",
+      "days": 9,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Extra Bonus Quiz",
+      "due_date": "2026-03-08",
+      "due_str": "Sun Mar 8",
+      "days": 10,
+      "weight": "medium",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "Homework 11 - Chapter 14 ANOVA",
+      "due_date": "2026-03-12",
+      "due_str": "Thu Mar 12",
+      "days": 14,
+      "weight": "low",
+      "done": false
+    },
+    {
+      "course": "Introductory Statistics",
+      "desc": "FINAL EXAM",
+      "due_date": "2026-03-13",
+      "due_str": "Fri Mar 13",
+      "days": 15,
+      "weight": "critical",
+      "done": false
+    }
+  ],
+  "calendar": [],
+  "gmail_summary": "",
+  "workout": {
+    "name": "Upper Body",
+    "exercises": [
+      {
+        "name": "Pushups",
+        "reps": "x15",
+        "note": "3 sets"
+      },
+      {
+        "name": "Rows",
+        "reps": "x12",
+        "note": "3 sets"
+      },
+      {
+        "name": "Shoulder Press",
+        "reps": "x10",
+        "note": "3 sets"
+      },
+      {
+        "name": "Tricep Dips",
+        "reps": "x12",
+        "note": "3 sets"
+      }
+    ]
+  },
+  "breathwork": {
+    "name": "Physiological Sigh",
+    "steps": "Double inhale (sniff + full breath) \u2192 long slow exhale. 5 reps.",
+    "rounds": 4
+  },
+  "health_tip": "Hit 30g+ protein at breakfast \u2014 kills afternoon cravings and keeps energy stable.",
+  "life_hack": {
+    "category": "Health",
+    "tip": "Walk 10 minutes after every meal \u2014 cuts blood sugar spikes by ~30%."
+  },
+  "money_tip": {
+    "category": "Automation",
+    "tip": "Automate savings the day after payday \u2014 you can't spend what you don't see. $25/week = $1,300/year."
+  },
+  "app_of_the_day": {
+    "name": "Loom",
+    "category": "Async Video",
+    "what": "Record your screen + camera and share a link instantly \u2014 no uploading, no file attachment. Great for walkthroughs, feedback, and anything that's easier to show than explain.",
+    "why": "Replaces a 30-minute meeting with a 3-minute video. The viewer can comment at specific timestamps and you get notified when they watch it.",
+    "verdict": "Use it instead of writing long emails that explain how to do something. Record it once, share the link.",
+    "link": "https://loom.com",
+    "free": true,
+    "freemium": true,
+    "tags": [
+      "communication",
+      "video",
+      "async",
+      "productivity"
+    ]
+  },
+  "word_of_the_day": {
+    "word": "Salient",
+    "type": "adjective",
+    "definition": "Most noticeable or important; standing out above the rest.",
+    "use_it": "The salient point of his argument was buried in paragraph six."
+  },
+  "facts_of_the_day": [
+    {
+      "category": "History",
+      "emoji": "\ud83d\udcdc",
+      "fact": "The shortest war in history lasted 38\u201345 minutes: the Anglo-Zanzibar War of 1896."
+    },
+    {
+      "category": "Nature",
+      "emoji": "\ud83c\udf3f",
+      "fact": "The Amazon rainforest produces 20% of the world's oxygen and recycles about half of its own rainfall \u2014 it essentially creates its own weather."
+    },
+    {
+      "category": "Space",
+      "emoji": "\ud83d\ude80",
+      "fact": "If you could drive to the Sun at highway speed (65 mph), it would take about 163 years to get there."
+    }
+  ],
+  "youtube_picks": [
+    {
+      "title": "This Morning\u2019s Top Headlines \u2013 Feb. 26 | Morning News NOW",
+      "url": "https://www.youtube.com/watch?v=b1Pa_02io-s",
+      "video_id": "b1Pa_02io-s",
+      "channel": "NBC News",
+      "thumbnail": "https://i.ytimg.com/vi/b1Pa_02io-s/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "news"
+    },
+    {
+      "title": "Sharing your data with AI agents is a bit like going into teenager mode. #Vergecast",
+      "url": "https://www.youtube.com/shorts/7hnzj4imWzk",
+      "video_id": "7hnzj4imWzk",
+      "channel": "The Verge",
+      "thumbnail": "https://i.ytimg.com/vi/7hnzj4imWzk/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "news"
+    },
+    {
+      "title": "Conan Conducts A Staff Review With Writer Brian Kiley | Conan O'Brien Needs A Friend",
+      "url": "https://www.youtube.com/watch?v=sBhVFh3aXn8",
+      "video_id": "sBhVFh3aXn8",
+      "channel": "Corridor Crew",
+      "thumbnail": "https://i.ytimg.com/vi/sBhVFh3aXn8/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "entertainment"
+    },
+    {
+      "title": "The Internet Was Weeks Away From Disaster and No One Knew",
+      "url": "https://www.youtube.com/watch?v=aoag03mSuXQ",
+      "video_id": "aoag03mSuXQ",
+      "channel": "Veritasium",
+      "thumbnail": "https://i.ytimg.com/vi/aoag03mSuXQ/mqdefault.jpg",
+      "published": "2026-02-25",
+      "category": "science"
+    },
+    {
+      "title": "My Kids Started a Business in my Basement",
+      "url": "https://www.youtube.com/watch?v=M8lvHkL1FqY",
+      "video_id": "M8lvHkL1FqY",
+      "channel": "Linus Tech Tips",
+      "thumbnail": "https://i.ytimg.com/vi/M8lvHkL1FqY/mqdefault.jpg",
+      "published": "2026-02-25",
+      "category": "tech"
+    },
+    {
+      "title": "Building a profitable Chrome extension | Lessons from Pretty Prompt",
+      "url": "https://www.youtube.com/watch?v=7i2N7Hqyqyg",
+      "video_id": "7i2N7Hqyqyg",
+      "channel": "Google DeepMind",
+      "thumbnail": "https://i.ytimg.com/vi/7i2N7Hqyqyg/mqdefault.jpg",
+      "published": "2026-02-25",
+      "category": "tech"
+    },
+    {
+      "title": "9 cities, 1 stage \u2014 who will get their idea heard by millions? Tune in March 3 2026. #TEDIdeaSearch",
+      "url": "https://www.youtube.com/shorts/sPJUdPt3kUo",
+      "video_id": "sPJUdPt3kUo",
+      "channel": "TED",
+      "thumbnail": "https://i.ytimg.com/vi/sPJUdPt3kUo/mqdefault.jpg",
+      "published": "2026-02-24",
+      "category": "education"
+    },
+    {
+      "title": "Python Properties vs Methods: The Contract You Didn\u2019t Know You Were Making",
+      "url": "https://www.youtube.com/watch?v=wHLZ_uTrCYA",
+      "video_id": "wHLZ_uTrCYA",
+      "channel": "Theo \u2014 t3.gg",
+      "thumbnail": "https://i.ytimg.com/vi/wHLZ_uTrCYA/mqdefault.jpg",
+      "published": "2026-02-20",
+      "category": "tech"
+    }
+  ],
+  "hidden_gems": [
+    {
+      "title": "Show HN: I spent 3 years reverse-engineering a 40 yo stock market sim from 1986",
+      "url": "https://www.wallstreetraider.com/story.html",
+      "description": "I spent 3 years reverse-engineering a 40 yo stock market sim from 1986",
+      "points": 721,
+      "source": "hackernews",
+      "date": "2026-02-10"
+    },
+    {
+      "title": "Show HN: Micasa \u2013 track your house from the terminal",
+      "url": "https://micasa.dev",
+      "description": "Micasa \u2013 track your house from the terminal",
+      "points": 654,
+      "source": "hackernews",
+      "date": "2026-02-19"
+    },
+    {
+      "title": "Show HN: Craftplan \u2013 I built my wife a production management tool for her bakery",
+      "url": "https://github.com/puemos/craftplan",
+      "description": "Craftplan \u2013 I built my wife a production management tool for her bakery",
+      "points": 577,
+      "source": "hackernews",
+      "date": "2026-02-01"
+    },
+    {
+      "title": "Show HN: CIA World Factbook Archive (1990\u20132025), searchable and exportable",
+      "url": "https://cia-factbook-archive.fly.dev/",
+      "description": "CIA World Factbook Archive (1990\u20132025), searchable and exportable",
+      "points": 491,
+      "source": "hackernews",
+      "date": "2026-02-22"
+    },
+    {
+      "title": "Show HN: Jemini \u2013 Gemini for the Epstein Files",
+      "url": "https://jmail.world/jemini",
+      "description": "Jemini \u2013 Gemini for the Epstein Files",
+      "points": 487,
+      "source": "hackernews",
+      "date": "2026-02-16"
+    }
+  ],
+  "breathwork_session": {
+    "name": "Physiological Sigh",
+    "description": "Double inhale + long exhale \u2014 fastest known way to reduce acute stress.",
+    "rounds": 5,
+    "steps": [
+      {
+        "action": "Short Inhale",
+        "duration": 2,
+        "emoji": "\ud83e\udec1"
+      },
+      {
+        "action": "Sniff Inhale",
+        "duration": 1,
+        "emoji": "\ud83d\udc43"
+      },
+      {
+        "action": "Long Exhale",
+        "duration": 6,
+        "emoji": "\ud83d\udca8"
+      },
+      {
+        "action": "Rest",
+        "duration": 2,
+        "emoji": "\ud83e\uddd8"
+      }
+    ]
+  }
+}
