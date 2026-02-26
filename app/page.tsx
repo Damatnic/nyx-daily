@@ -3,9 +3,7 @@ import Navbar from '@/components/nav/Navbar';
 import NewsTicker from '@/components/briefing/NewsTicker';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
-import MobilePriorityStrip from '@/components/briefing/MobilePriorityStrip';
 import QuickNav from '@/components/briefing/QuickNav';
-import GlanceRow from '@/components/briefing/GlanceRow';
 import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
@@ -26,37 +24,26 @@ import RelativeTime from '@/components/ui/RelativeTime';
 
 export const dynamic = 'force-dynamic';
 
-/** Returns ISO week number for a date string like "2026-02-24" */
 function getWeekNumber(dateStr: string): number {
-  const d = new Date(dateStr + 'T12:00:00');
-  const dayOfYear = (date: Date) => {
-    const start = new Date(date.getFullYear(), 0, 0);
-    const diff = date.getTime() - start.getTime();
-    return Math.floor(diff / 86_400_000);
-  };
-  const jan1 = new Date(d.getFullYear(), 0, 1);
-  const jan1Day = jan1.getDay(); // 0=Sun
-  return Math.ceil((dayOfYear(d) + jan1Day) / 7);
-}
-
-/** Returns the day of the year (1-indexed) */
-function getDayOfYear(dateStr: string): number {
   const d = new Date(dateStr + 'T12:00:00');
   const start = new Date(d.getFullYear(), 0, 0);
   const diff = d.getTime() - start.getTime();
-  return Math.floor(diff / 86_400_000);
+  const jan1 = new Date(d.getFullYear(), 0, 1);
+  return Math.ceil((Math.floor(diff / 86_400_000) + jan1.getDay()) / 7);
 }
 
-/** Format date like "WEDNESDAY, FEBRUARY 25, 2026" */
+function getDayOfYear(dateStr: string): number {
+  const d = new Date(dateStr + 'T12:00:00');
+  const start = new Date(d.getFullYear(), 0, 0);
+  return Math.floor((d.getTime() - start.getTime()) / 86_400_000);
+}
+
 function formatHeroDate(dateStr: string, day: string): string {
   const d = new Date(dateStr + 'T12:00:00');
   const month = d.toLocaleDateString('en-US', { month: 'long' }).toUpperCase();
-  const dom = d.getDate();
-  const year = d.getFullYear();
-  return `${day.toUpperCase()}, ${month} ${dom}, ${year}`;
+  return `${day.toUpperCase()}, ${month} ${d.getDate()}, ${d.getFullYear()}`;
 }
 
-/** Count total news headlines */
 function countHeadlines(news: Record<string, Array<unknown>>): number {
   return Object.values(news).reduce((sum, arr) => sum + arr.length, 0);
 }
@@ -70,9 +57,9 @@ export default async function HomePage() {
         <Navbar />
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
-            <p className="text-4xl mb-4">🌙</p>
+            <p className="text-5xl mb-4">🌙</p>
             <h1 className="text-2xl font-bold text-slate-100 mb-2">No briefing yet</h1>
-            <p className="text-slate-400">Today&apos;s briefing hasn&apos;t been generated. Check back soon.</p>
+            <p className="text-slate-500 text-sm">Check back after 8 AM — the briefing runs on schedule.</p>
           </div>
         </div>
       </>
@@ -83,13 +70,10 @@ export default async function HomePage() {
   const dayOfYear = getDayOfYear(briefing.date);
   const heroDateStr = formatHeroDate(briefing.date, briefing.day);
   const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
-
-  // Count undone deadlines due within 7 days
   const upcomingCount = (briefing.school_deadlines ?? []).filter(
     (d) => !d.done && d.days >= 0 && d.days <= 7
   ).length;
 
-  // Generate breathwork fallback text from old format
   const breathworkFallback = briefing.breathwork
     ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
     : undefined;
@@ -97,10 +81,9 @@ export default async function HomePage() {
   return (
     <>
       <Navbar />
-
       <ScrollToTop />
 
-      {/* Full-width hero */}
+      {/* Hero */}
       <HeroSection
         briefing={briefing}
         weekNum={weekNum}
@@ -110,72 +93,60 @@ export default async function HomePage() {
         upcomingCount={upcomingCount}
       />
 
-      {/* Urgency banner for critical deadlines */}
+      {/* Urgency alert — inline, below hero */}
       <UrgencyBanner deadlines={briefing.school_deadlines} />
 
-      {/* Full-width sticky news ticker */}
+      {/* Sticky news ticker */}
       <NewsTicker news={briefing.news} />
 
-      {/* Mobile priority strip - weather + urgent deadlines */}
-      <MobilePriorityStrip
-        school_deadlines={briefing.school_deadlines}
-        weather={briefing.weather}
-      />
-
-      {/* Quick nav jump bar */}
+      {/* Section jump bar */}
       <QuickNav
-        hasYoutube={!!(briefing.youtube_picks && briefing.youtube_picks.length > 0)}
-        hasSports={!!(briefing.sports && briefing.sports.length > 0)}
-        hasWorkout={!!(briefing.workout && briefing.workout.exercises && briefing.workout.exercises.length > 0)}
+        hasYoutube={!!(briefing.youtube_picks?.length)}
+        hasSports={!!(briefing.sports?.length)}
+        hasWorkout={!!(briefing.workout?.exercises?.length)}
       />
 
-      {/* At-a-glance stat row */}
-      <GlanceRow
-        weather={briefing.weather}
-        deadlineCount={upcomingCount}
-        headlineCount={headlineCount}
-        focus={briefing.focus}
-      />
-
-      {/* Main content area */}
+      {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 min-w-0">
-          {/* LEFT MAIN COLUMN — 2/3 width */}
-          <div className="lg:col-span-2 flex flex-col gap-4 min-w-0">
-            {/* Focus */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 min-w-0">
+
+          {/* ── LEFT COLUMN (2/3) ── */}
+          <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
+
             <FocusCard focus={briefing.focus} />
 
-            {/* News Section */}
             <div id="news" className="scroll-mt-28">
               <RevealCard delay={0}>
                 <NewsSection news={briefing.news} />
               </RevealCard>
             </div>
 
-            {/* YouTube Picks */}
-            <div id="youtube" className="scroll-mt-28">
-              <RevealCard delay={1}>
-                <YouTubeSection videos={briefing.youtube_picks} />
-              </RevealCard>
-            </div>
+            {briefing.youtube_picks?.length && (
+              <div id="youtube" className="scroll-mt-28">
+                <RevealCard delay={1}>
+                  <YouTubeSection videos={briefing.youtube_picks} />
+                </RevealCard>
+              </div>
+            )}
 
-            {/* Hidden Gems */}
-            <div id="gems" className="scroll-mt-28">
-              <RevealCard delay={2}>
-                <HiddenGemsSection gems={briefing.hidden_gems} />
-              </RevealCard>
-            </div>
+            {briefing.hidden_gems?.length && (
+              <div id="gems" className="scroll-mt-28">
+                <RevealCard delay={2}>
+                  <HiddenGemsSection gems={briefing.hidden_gems} />
+                </RevealCard>
+              </div>
+            )}
 
-            {/* Workout Tracker */}
-            <div id="workout" className="scroll-mt-28">
-              <RevealCard delay={3}>
-                <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-              </RevealCard>
-            </div>
+            {briefing.workout?.exercises?.length && (
+              <div id="workout" className="scroll-mt-28">
+                <RevealCard delay={0}>
+                  <WorkoutTracker workout={briefing.workout} date={briefing.date} />
+                </RevealCard>
+              </div>
+            )}
 
-            {/* Breathwork Card */}
             <div id="breathwork" className="scroll-mt-28">
-              <RevealCard delay={0}>
+              <RevealCard delay={1}>
                 <BreathworkCard
                   session={briefing.breathwork_session}
                   fallbackText={breathworkFallback}
@@ -183,35 +154,35 @@ export default async function HomePage() {
               </RevealCard>
             </div>
 
-            {/* Sports Section */}
-            {briefing.sports && briefing.sports.length > 0 && (
+            {briefing.sports?.length && (
               <div id="sports" className="scroll-mt-28">
                 <SportsSection sports={briefing.sports} />
               </div>
             )}
 
-            {/* GitHub Trending */}
-            {briefing.github_trending && briefing.github_trending.length > 0 && (
-              <GithubTrending repos={briefing.github_trending} />
+            {briefing.github_trending?.length && (
+              <div id="github" className="scroll-mt-28">
+                <GithubTrending repos={briefing.github_trending} />
+              </div>
             )}
 
-            {/* Reddit Hot */}
-            {briefing.reddit_hot && briefing.reddit_hot.length > 0 && (
-              <RedditHot posts={briefing.reddit_hot} />
+            {briefing.reddit_hot?.length && (
+              <div id="reddit" className="scroll-mt-28">
+                <RedditHot posts={briefing.reddit_hot} />
+              </div>
             )}
 
-            {/* Product Hunt */}
-            {briefing.product_hunt && briefing.product_hunt.length > 0 && (
-              <ProductHunt posts={briefing.product_hunt} />
+            {briefing.product_hunt?.length && (
+              <div id="producthunt" className="scroll-mt-28">
+                <ProductHunt posts={briefing.product_hunt} />
+              </div>
             )}
 
-            {/* App of the Day */}
-            <RevealCard delay={1}>
+            <RevealCard delay={0}>
               <AppOfTheDay app={briefing.app_of_the_day} />
             </RevealCard>
 
-            {/* Daily Tips Card (merged Life Hack, Money Tip, Health Tip) */}
-            <RevealCard delay={2}>
+            <RevealCard delay={1}>
               <DailyTipsCard
                 lifeHack={briefing.life_hack}
                 moneyTip={briefing.money_tip}
@@ -220,46 +191,38 @@ export default async function HomePage() {
             </RevealCard>
           </div>
 
-          {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
-          <div className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
-            {/* Tabbed sidebar with Weather, School, Discover */}
-            <div id="weather" className="scroll-mt-28">
-              <div id="school" className="scroll-mt-28">
-                <SidebarTabs
-                  weather={briefing.weather}
-                  forecast={briefing.forecast}
-                  word={briefing.word_of_the_day}
-                  facts={briefing.facts_of_the_day}
-                  deadlines={briefing.school_deadlines}
-                  events={briefing.calendar}
-                  gmailSummary={briefing.gmail_summary}
-                  onThisDay={briefing.on_this_day}
-                  apod={briefing.apod}
-                />
-              </div>
+          {/* ── RIGHT RAIL (1/3) — sticky ── */}
+          <div
+            id="weather"
+            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none"
+          >
+            <div id="school" className="scroll-mt-28">
+              <SidebarTabs
+                weather={briefing.weather}
+                forecast={briefing.forecast}
+                word={briefing.word_of_the_day}
+                facts={briefing.facts_of_the_day}
+                deadlines={briefing.school_deadlines}
+                events={briefing.calendar}
+                gmailSummary={briefing.gmail_summary}
+                onThisDay={briefing.on_this_day}
+                apod={briefing.apod}
+              />
             </div>
           </div>
         </div>
 
         {/* Footer */}
         <footer className="border-t border-white/[0.04] pt-6 mt-10 pb-20 lg:pb-10">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            {/* Left side: Branding */}
-            <span className="text-sm text-slate-500">🌙 Nyx Daily · 2026</span>
-
-            {/* Middle: Data freshness */}
-            <div className="flex items-center gap-2 text-xs text-slate-600">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/60 inline-block animate-pulse" />
-              <span>Data updated <RelativeTime timestamp={briefing.generated_at} /></span>
-              <span className="text-slate-700">·</span>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <span className="text-sm text-slate-600">🌙 Nyx Daily · 2026</span>
+            <div className="flex items-center gap-2 text-xs text-slate-700">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/50 inline-block animate-pulse" />
+              <span>Updated <RelativeTime timestamp={briefing.generated_at} /></span>
+              <span>·</span>
               <span>{headlineCount} headlines</span>
             </div>
-
-            {/* Right side: View Archive */}
-            <Link
-              href="/archive"
-              className="text-xs text-slate-500 hover:text-[#8b5cf6] transition-colors duration-200"
-            >
+            <Link href="/archive" className="text-xs text-slate-600 hover:text-violet-400 transition-colors">
               View archive →
             </Link>
           </div>

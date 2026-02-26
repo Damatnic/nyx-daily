@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { CheckCircle2, Circle } from 'lucide-react';
+import { CheckCircle2, Circle, ChevronDown, ChevronUp } from 'lucide-react';
 import type { SchoolDeadline } from '@/lib/types';
 import Badge from '@/components/ui/Badge';
-import SectionHeader from '@/components/ui/SectionHeader';
 
 interface CourseProgress {
   course: string;
@@ -19,193 +18,203 @@ interface SchoolPageClientProps {
 }
 
 const STORAGE_KEY = 'school-done-overrides';
-
 type OverrideMap = Record<string, boolean>;
 
-function getOverrideKey(item: SchoolDeadline): string {
+function getKey(item: SchoolDeadline): string {
   return `${item.due_date}:${item.desc}`;
 }
 
 function urgencyBadge(days: number, done: boolean) {
   if (done) return { variant: 'green' as const, label: 'Done' };
   if (days < 0) return { variant: 'red' as const, label: 'Overdue' };
-  if (days <= 1) return { variant: 'red' as const, label: days === 0 ? 'Today' : '1d' };
+  if (days === 0) return { variant: 'red' as const, label: 'Today' };
+  if (days === 1) return { variant: 'amber' as const, label: '1d' };
   if (days <= 3) return { variant: 'amber' as const, label: `${days}d` };
   if (days <= 7) return { variant: 'blue' as const, label: `${days}d` };
   return { variant: 'slate' as const, label: `${days}d` };
 }
 
-function courseBg(course: string) {
+const COURSE_ACCENTS: Record<string, string> = {
+  sql:     'from-cyan-500/10 border-cyan-500/15 [--accent:#22d3ee]',
+  stat:    'from-violet-500/10 border-violet-500/15 [--accent:#a78bfa]',
+  visual:  'from-amber-500/10 border-amber-500/15 [--accent:#fbbf24]',
+  data:    'from-amber-500/10 border-amber-500/15 [--accent:#fbbf24]',
+};
+
+function getCourseAccent(course: string) {
   const l = course.toLowerCase();
-  if (l.includes('sql')) return 'bg-cyan-500/5 border-cyan-500/10';
-  if (l.includes('stat')) return 'bg-purple-500/5 border-purple-500/10';
-  if (l.includes('visual')) return 'bg-amber-500/5 border-amber-500/10';
-  if (l.includes('security')) return 'bg-orange-500/5 border-orange-500/10';
-  if (l.includes('data')) return 'bg-amber-500/5 border-amber-500/10';
-  return 'bg-white/[0.02] border-white/[0.04]';
+  for (const [key, val] of Object.entries(COURSE_ACCENTS)) {
+    if (l.includes(key)) return val;
+  }
+  return 'from-slate-500/10 border-slate-500/15 [--accent:#94a3b8]';
 }
 
-interface DeadlineRowProps {
-  item: SchoolDeadline;
-  isChecked: boolean;
-  onToggle: () => void;
+function CourseHeader({ course, done, total, pct, collapsed, onToggle }: {
+  course: string; done: number; total: number; pct: number;
+  collapsed: boolean; onToggle: () => void;
+}) {
+  return (
+    <button
+      onClick={onToggle}
+      className="w-full flex items-center gap-4 text-left group"
+    >
+      <div className="flex-1 min-w-0">
+        <h3 className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors truncate">
+          {course}
+        </h3>
+        <div className="flex items-center gap-2 mt-1">
+          <div className="flex-1 h-1 bg-white/[0.06] rounded-full overflow-hidden max-w-[120px]">
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 transition-all duration-500"
+              style={{ width: `${pct}%` }}
+            />
+          </div>
+          <span className="text-[10px] text-slate-600 font-mono shrink-0">{done}/{total}</span>
+        </div>
+      </div>
+      <div className="flex items-center gap-2 shrink-0">
+        {pct === 100 && (
+          <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-2 py-0.5">
+            Complete
+          </span>
+        )}
+        {collapsed ? <ChevronDown size={14} className="text-slate-600" /> : <ChevronUp size={14} className="text-slate-600" />}
+      </div>
+    </button>
+  );
 }
 
-function DeadlineRow({ item, isChecked, onToggle }: DeadlineRowProps) {
-  const isDone = item.done || isChecked;
+function DeadlineRow({ item, isDone, onToggle }: {
+  item: SchoolDeadline; isDone: boolean; onToggle: () => void;
+}) {
   const { variant, label } = urgencyBadge(item.days, isDone);
 
   return (
     <div
-      className={`
-        flex items-start gap-3 p-3 rounded-lg border transition-all duration-200
-        ${isDone ? 'opacity-40 bg-white/[0.01] border-white/[0.02]' : 'bg-white/[0.02] border-white/[0.04] hover:bg-white/[0.04]'}
-      `}
+      className={`flex items-start gap-3 px-3 py-2.5 rounded-lg transition-all duration-150 ${
+        isDone
+          ? 'opacity-35'
+          : 'hover:bg-white/[0.03] cursor-default'
+      }`}
     >
       <button
         onClick={onToggle}
-        className="mt-0.5 shrink-0 text-slate-600 hover:text-slate-400 transition-colors"
-        aria-label={isDone ? 'Mark as incomplete' : 'Mark as complete'}
+        className="mt-0.5 shrink-0 text-slate-700 hover:text-slate-400 transition-colors"
+        aria-label={isDone ? 'Mark incomplete' : 'Mark complete'}
       >
-        {isDone ? (
-          <CheckCircle2 size={15} className="text-emerald-500/60" />
-        ) : (
-          <Circle size={15} />
-        )}
+        {isDone
+          ? <CheckCircle2 size={15} className="text-emerald-500/50" />
+          : <Circle size={15} />
+        }
       </button>
       <div className="flex-1 min-w-0">
-        <p className={`text-sm ${isDone ? 'line-through text-slate-600' : 'text-slate-200'}`}>
+        <p className={`text-sm leading-snug ${isDone ? 'line-through text-slate-600' : 'text-slate-200'}`}>
           {item.desc}
         </p>
-        <p className="text-xs text-slate-500 mt-0.5">{item.due_str}</p>
+        <p className="text-[10px] text-slate-600 mt-0.5">{item.due_str}</p>
       </div>
-      <div className="flex items-center gap-2 shrink-0">
-        {item.weight === 'critical' && <Badge variant="red">Critical</Badge>}
-        {item.weight === 'high' && <Badge variant="amber">High</Badge>}
+      <div className="flex items-center gap-1.5 shrink-0 mt-0.5">
+        {(item.weight === 'critical' || item.weight === 'high') && (
+          <Badge variant={item.weight === 'critical' ? 'red' : 'amber'}>
+            {item.weight === 'critical' ? '!' : 'H'}
+          </Badge>
+        )}
         <Badge variant={variant}>{label}</Badge>
       </div>
     </div>
   );
 }
 
-export default function SchoolPageClient({ courses, courseProgress }: SchoolPageClientProps) {
+export default function SchoolPageClient({ courses }: SchoolPageClientProps) {
   const [overrides, setOverrides] = useState<OverrideMap>({});
-  const [mounted, setMounted] = useState(false);
+  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
 
-  // Load overrides from localStorage on mount
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        setOverrides(JSON.parse(stored));
-      }
-    } catch {
-      // Ignore localStorage errors
-    }
-    setMounted(true);
+      if (stored) setOverrides(JSON.parse(stored));
+    } catch { /* ignore */ }
   }, []);
 
-  // Save overrides to localStorage when they change
-  const saveOverrides = useCallback((newOverrides: OverrideMap) => {
-    setOverrides(newOverrides);
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(newOverrides));
-    } catch {
-      // Ignore localStorage errors
-    }
+  const saveOverrides = useCallback((next: OverrideMap) => {
+    setOverrides(next);
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch { /* ignore */ }
   }, []);
 
-  const toggleOverride = useCallback(
-    (item: SchoolDeadline) => {
-      const key = getOverrideKey(item);
-      const newOverrides = { ...overrides };
-      if (newOverrides[key]) {
-        delete newOverrides[key];
-      } else {
-        newOverrides[key] = true;
-      }
-      saveOverrides(newOverrides);
-    },
-    [overrides, saveOverrides]
-  );
+  const toggleItem = useCallback((item: SchoolDeadline) => {
+    const k = getKey(item);
+    const next = { ...overrides };
+    next[k] ? delete next[k] : (next[k] = true);
+    saveOverrides(next);
+  }, [overrides, saveOverrides]);
 
-  const isChecked = useCallback(
-    (item: SchoolDeadline) => {
-      const key = getOverrideKey(item);
-      return overrides[key] === true;
-    },
-    [overrides]
-  );
+  const isChecked = (item: SchoolDeadline) => overrides[getKey(item)] === true;
+  const isDone    = (item: SchoolDeadline) => item.done || isChecked(item);
 
-  // Calculate updated progress based on overrides
-  const getUpdatedProgress = useCallback(
-    (course: string, items: SchoolDeadline[]) => {
-      const done = items.filter((d) => d.done || isChecked(d)).length;
-      const total = items.length;
-      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-      return { done, total, pct };
-    },
-    [isChecked]
-  );
-
-  const courseNames = Object.keys(courses);
+  const toggleCollapse = (course: string) =>
+    setCollapsed((prev) => ({ ...prev, [course]: !prev[course] }));
 
   return (
-    <div className="flex flex-col gap-6">
-      {courseNames.map((course) => {
+    <div className="flex flex-col gap-4">
+      {Object.keys(courses).map((course) => {
         const items = courses[course];
-        const { done, total, pct } = getUpdatedProgress(course, items);
+        const doneCount = items.filter(isDone).length;
+        const pct = items.length > 0 ? Math.round((doneCount / items.length) * 100) : 0;
+        const isCollapsed = collapsed[course] ?? false;
+        const accent = getCourseAccent(course);
 
-        // Sort: active items first (by days), then completed
-        const active = items
-          .filter((d) => !d.done && !isChecked(d))
-          .sort((a, b) => a.days - b.days);
-        const completed = items.filter((d) => d.done || isChecked(d));
+        const active    = items.filter((d) => !isDone(d)).sort((a, b) => a.days - b.days);
+        const completed = items.filter(isDone);
 
         return (
-          <div key={course} className={`rounded-xl border p-5 ${courseBg(course)}`}>
-            <SectionHeader title={course} subtitle={`${done}/${total} done`} />
+          <div
+            key={course}
+            className={`rounded-2xl border bg-gradient-to-br ${accent} bg-[#0d0d1a] overflow-hidden`}
+          >
+            {/* Course header */}
+            <div className="px-5 py-4">
+              <CourseHeader
+                course={course}
+                done={doneCount}
+                total={items.length}
+                pct={pct}
+                collapsed={isCollapsed}
+                onToggle={() => toggleCollapse(course)}
+              />
+            </div>
 
-            {/* Course progress bar */}
-            <div className="mb-4">
-              <div className="w-full h-1.5 rounded-full bg-white/[0.06] overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-[#8b5cf6] to-[#06b6d4] transition-all duration-500"
-                  style={{ width: `${pct}%` }}
-                />
+            {/* Items */}
+            {!isCollapsed && (
+              <div className="px-3 pb-4 border-t border-white/[0.04]">
+                <div className="mt-2 flex flex-col gap-0.5">
+                  {active.map((item, i) => (
+                    <DeadlineRow
+                      key={`a-${i}`}
+                      item={item}
+                      isDone={isDone(item)}
+                      onToggle={() => toggleItem(item)}
+                    />
+                  ))}
+                  {completed.length > 0 && active.length > 0 && (
+                    <div className="my-1 mx-3 h-px bg-white/[0.04]" />
+                  )}
+                  {completed.map((item, i) => (
+                    <DeadlineRow
+                      key={`d-${i}`}
+                      item={item}
+                      isDone={isDone(item)}
+                      onToggle={() => toggleItem(item)}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              {/* Active first */}
-              {active.map((item, i) => (
-                <DeadlineRow
-                  key={`active-${i}`}
-                  item={item}
-                  isChecked={isChecked(item)}
-                  onToggle={() => toggleOverride(item)}
-                />
-              ))}
-              {/* Then completed */}
-              {completed.map((item, i) => (
-                <DeadlineRow
-                  key={`done-${i}`}
-                  item={item}
-                  isChecked={isChecked(item)}
-                  onToggle={() => toggleOverride(item)}
-                />
-              ))}
-            </div>
-
-            {/* Local storage note */}
-            {mounted && (
-              <p className="text-xs text-slate-600 mt-4 text-center">
-                Checkmarks are saved locally in your browser
-              </p>
             )}
           </div>
         );
       })}
+      <p className="text-[10px] text-slate-700 text-center pt-1">
+        Check marks saved in your browser
+      </p>
     </div>
   );
 }
