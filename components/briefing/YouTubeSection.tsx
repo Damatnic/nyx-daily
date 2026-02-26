@@ -1,3 +1,5 @@
+'use client';
+
 import type { YouTubeVideo } from '@/lib/types';
 import SectionHeader from '@/components/ui/SectionHeader';
 
