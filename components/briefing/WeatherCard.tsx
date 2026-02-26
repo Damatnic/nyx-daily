@@ -1,5 +1,15 @@
+export interface WeatherDay {
+  date: string;
+  high: number;
+  low: number;
+  precip_pct: number;
+  condition: string;
+  emoji: string;
+}
+
 interface WeatherCardProps {
   weather: string;
+  forecast?: WeatherDay[] | null;
 }
 
 /**
@@ -37,7 +47,51 @@ function parseWeather(weather: string) {
   return { emoji, location, temp, feels, condition, high, low };
 }
 
-export default function WeatherCard({ weather }: WeatherCardProps) {
+function getDayName(dateStr: string): string {
+  const d = new Date(dateStr + 'T12:00:00');
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
+
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  if (d.toDateString() === today.toDateString()) return 'Today';
+  if (d.toDateString() === tomorrow.toDateString()) return 'Tmrw';
+
+  return d.toLocaleDateString('en-US', { weekday: 'short' });
+}
+
+function ForecastDay({ day }: { day: WeatherDay }) {
+  const dayName = getDayName(day.date);
+
+  return (
+    <div className="flex flex-col items-center gap-1 min-w-[52px] py-2">
+      <span className="text-[10px] text-slate-500 font-medium uppercase tracking-wide">
+        {dayName}
+      </span>
+      <span className="text-lg leading-none">{day.emoji}</span>
+      <div className="flex items-center gap-1 text-[10px]">
+        <span className="text-slate-300 font-medium">{day.high}°</span>
+        <span className="text-slate-600">/</span>
+        <span className="text-slate-500">{day.low}°</span>
+      </div>
+      {/* Precipitation bar */}
+      {day.precip_pct > 0 && (
+        <div className="w-full h-1 mt-1 bg-slate-800 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-blue-400/60 rounded-full transition-all duration-300"
+            style={{ width: `${Math.min(day.precip_pct, 100)}%` }}
+          />
+        </div>
+      )}
+      {day.precip_pct > 0 && (
+        <span className="text-[9px] text-blue-400/70">{day.precip_pct}%</span>
+      )}
+    </div>
+  );
+}
+
+export default function WeatherCard({ weather, forecast }: WeatherCardProps) {
   const { emoji, location, temp, feels, condition, high, low } = parseWeather(weather);
 
   return (
@@ -75,6 +129,23 @@ export default function WeatherCard({ weather }: WeatherCardProps) {
             <span className="text-amber-400 font-medium">L: {low}°</span>
           </div>
           <div className="h-1 w-full bg-gradient-to-r from-blue-500/30 to-amber-500/30 rounded-full" />
+        </div>
+      )}
+
+      {/* 5-day forecast strip */}
+      {forecast && forecast.length > 0 && (
+        <div className="mt-5 pt-4 border-t border-white/[0.06]">
+          <div className="flex items-center gap-1.5 mb-3">
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-slate-600">
+              5-Day Forecast
+            </span>
+            <div className="flex-1 h-px bg-white/[0.04]" />
+          </div>
+          <div className="flex items-start justify-between gap-1 overflow-x-auto scrollbar-none -mx-1 px-1">
+            {forecast.slice(0, 5).map((day) => (
+              <ForecastDay key={day.date} day={day} />
+            ))}
+          </div>
         </div>
       )}
     </div>

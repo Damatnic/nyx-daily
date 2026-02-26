@@ -1,4 +1,5 @@
 import { getTodaysBriefing } from '@/lib/data';
+import Navbar from '@/components/nav/Navbar';
 import MarketsBar from '@/components/briefing/MarketsBar';
 import HeroSection from '@/components/briefing/HeroSection';
 import FocusCard from '@/components/briefing/FocusCard';
@@ -12,8 +13,11 @@ import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
 import OnThisDay from '@/components/briefing/OnThisDay';
 import WorkoutCard from '@/components/briefing/WorkoutCard';
 import WellnessBlock from '@/components/briefing/WellnessBlock';
-import ReadingProgress from '@/components/briefing/ReadingProgress';
 import ScrollToTop from '@/components/briefing/ScrollToTop';
+import SportsSection from '@/components/briefing/SportsSection';
+import GithubTrending from '@/components/briefing/GithubTrending';
+import RedditHot from '@/components/briefing/RedditHot';
+import ProductHunt from '@/components/briefing/ProductHunt';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
@@ -58,13 +62,16 @@ export default async function HomePage() {
 
   if (!briefing) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-4xl mb-4">🌙</p>
-          <h1 className="text-2xl font-bold text-slate-100 mb-2">No briefing yet</h1>
-          <p className="text-slate-400">Today&apos;s briefing hasn&apos;t been generated. Check back soon.</p>
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <p className="text-4xl mb-4">🌙</p>
+            <h1 className="text-2xl font-bold text-slate-100 mb-2">No briefing yet</h1>
+            <p className="text-slate-400">Today&apos;s briefing hasn&apos;t been generated. Check back soon.</p>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
@@ -76,7 +83,9 @@ export default async function HomePage() {
 
   return (
     <>
-      <ReadingProgress />
+      {/* Sticky navigation with mini markets */}
+      <Navbar markets={briefing.markets} />
+
       <ScrollToTop />
 
       {/* Full-width hero */}
@@ -87,38 +96,79 @@ export default async function HomePage() {
         dayOfYear={dayOfYear}
       />
 
+      {/* Full-width sticky markets bar */}
+      <MarketsBar markets={briefing.markets} />
+
+      {/* Main content area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Markets bar */}
-        <MarketsBar markets={briefing.markets} />
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-          {/* LEFT COLUMN — 2/3 width */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* LEFT MAIN COLUMN — 2/3 width */}
           <div className="lg:col-span-2 flex flex-col gap-6">
+            {/* Focus */}
             <FocusCard focus={briefing.focus} />
-            <NewsSection news={briefing.news} />
-            <AppOfTheDay app={briefing.app_of_the_day} />
-            {briefing.apod && <NasaApod apod={briefing.apod} />}
-          </div>
 
-          {/* RIGHT COLUMN — 1/3 width */}
-          <div className="flex flex-col gap-6">
-            <WeatherCard weather={briefing.weather} />
-            <DailyExtras
-              word={briefing.word_of_the_day}
-              facts={briefing.facts_of_the_day}
-            />
-            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
-            <SchoolDeadlines deadlines={briefing.school_deadlines} />
-            {briefing.on_this_day && briefing.on_this_day.length > 0 && (
-              <OnThisDay events={briefing.on_this_day} />
+            {/* News Section */}
+            <NewsSection news={briefing.news} />
+
+            {/* Sports Section (shell — data from Agent 1) */}
+            {briefing.sports && briefing.sports.length > 0 && (
+              <SportsSection sports={briefing.sports} />
             )}
-            <WorkoutCard workout={briefing.workout} />
+
+            {/* GitHub Trending (shell — data from Agent 1) */}
+            {briefing.github_trending && briefing.github_trending.length > 0 && (
+              <GithubTrending repos={briefing.github_trending} />
+            )}
+
+            {/* Reddit Hot (shell — data from Agent 1) */}
+            {briefing.reddit_hot && briefing.reddit_hot.length > 0 && (
+              <RedditHot posts={briefing.reddit_hot} />
+            )}
+
+            {/* Product Hunt (shell — data from Agent 1) */}
+            {briefing.product_hunt && briefing.product_hunt.length > 0 && (
+              <ProductHunt posts={briefing.product_hunt} />
+            )}
+
+            {/* App of the Day */}
+            <AppOfTheDay app={briefing.app_of_the_day} />
+
+            {/* Wellness Block */}
             <WellnessBlock
               breathwork={briefing.breathwork}
               healthTip={briefing.health_tip}
               lifeHack={briefing.life_hack}
               moneyTip={briefing.money_tip}
             />
+
+            {/* Workout */}
+            <WorkoutCard workout={briefing.workout} />
+          </div>
+
+          {/* RIGHT RAIL — 1/3 width, sticky on desktop */}
+          <div className="flex flex-col gap-6 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none">
+            {/* Weather Card with 5-day forecast */}
+            <WeatherCard weather={briefing.weather} forecast={briefing.forecast} />
+
+            {/* Daily Extras (Word + Facts) */}
+            <DailyExtras
+              word={briefing.word_of_the_day}
+              facts={briefing.facts_of_the_day}
+            />
+
+            {/* School Deadlines */}
+            <SchoolDeadlines deadlines={briefing.school_deadlines} />
+
+            {/* Calendar & Email */}
+            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
+
+            {/* On This Day */}
+            {briefing.on_this_day && briefing.on_this_day.length > 0 && (
+              <OnThisDay events={briefing.on_this_day} />
+            )}
+
+            {/* NASA APOD */}
+            {briefing.apod && <NasaApod apod={briefing.apod} />}
           </div>
         </div>
 
