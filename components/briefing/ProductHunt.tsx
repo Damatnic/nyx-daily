@@ -41,11 +41,13 @@ function ProductCard({ post, rank }: { post: ProductHuntPost; rank: number }) {
         </p>
       </div>
 
-      {/* Vote count */}
-      <div className="shrink-0 flex flex-col items-center justify-center px-2 py-1 rounded bg-orange-500/10 border border-orange-500/20 group-hover:bg-orange-500/20 transition-colors">
-        <ChevronUp size={12} className="text-orange-400 -mb-0.5" />
-        <span className="text-xs font-bold text-orange-400 tabular-nums">{post.votes}</span>
-      </div>
+      {/* Vote count — only show if we have real data */}
+      {post.votes > 0 && (
+        <div className="shrink-0 flex flex-col items-center justify-center px-2 py-1 rounded bg-orange-500/10 border border-orange-500/20 group-hover:bg-orange-500/20 transition-colors">
+          <ChevronUp size={12} className="text-orange-400 -mb-0.5" />
+          <span className="text-xs font-bold text-orange-400 tabular-nums">{post.votes}</span>
+        </div>
+      )}
     </a>
   );
 }

@@ -10,6 +10,13 @@ import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
 import WorkoutCard from '@/components/briefing/WorkoutCard';
 import WellnessBlock from '@/components/briefing/WellnessBlock';
 import QuoteCard from '@/components/briefing/QuoteCard';
+import SportsSection from '@/components/briefing/SportsSection';
+import GithubTrending from '@/components/briefing/GithubTrending';
+import RedditHot from '@/components/briefing/RedditHot';
+import ProductHunt from '@/components/briefing/ProductHunt';
+import NasaApod from '@/components/briefing/NasaApod';
+import OnThisDay from '@/components/briefing/OnThisDay';
+import DailyExtras from '@/components/briefing/DailyExtras';
 import { ArrowLeft } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -47,22 +54,43 @@ export default async function DayPage({ params }: PageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Main column */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <FocusCard focus={briefing.focus} />
             <NewsSection news={briefing.news} />
-            <AppOfTheDay app={briefing.app_of_the_day} />
-          </div>
 
-          <div className="flex flex-col gap-6">
-            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
-            <SchoolDeadlines deadlines={briefing.school_deadlines} />
-            <WorkoutCard workout={briefing.workout} />
+            {briefing.sports && briefing.sports.length > 0 && (
+              <SportsSection sports={briefing.sports} />
+            )}
+            {briefing.github_trending && briefing.github_trending.length > 0 && (
+              <GithubTrending repos={briefing.github_trending} />
+            )}
+            {briefing.reddit_hot && briefing.reddit_hot.length > 0 && (
+              <RedditHot posts={briefing.reddit_hot} />
+            )}
+            {briefing.product_hunt && briefing.product_hunt.length > 0 && (
+              <ProductHunt posts={briefing.product_hunt} />
+            )}
+
+            <AppOfTheDay app={briefing.app_of_the_day} />
             <WellnessBlock
               breathwork={briefing.breathwork}
               healthTip={briefing.health_tip}
               lifeHack={briefing.life_hack}
               moneyTip={briefing.money_tip}
             />
+            <WorkoutCard workout={briefing.workout} />
+          </div>
+
+          {/* Right rail */}
+          <div className="flex flex-col gap-6">
+            <CalendarCard events={briefing.calendar} gmailSummary={briefing.gmail_summary} />
+            <SchoolDeadlines deadlines={briefing.school_deadlines} />
+            <DailyExtras word={briefing.word_of_the_day} facts={briefing.facts_of_the_day} />
+            {briefing.on_this_day && briefing.on_this_day.length > 0 && (
+              <OnThisDay events={briefing.on_this_day} />
+            )}
+            {briefing.apod && <NasaApod apod={briefing.apod} />}
           </div>
         </div>
 
