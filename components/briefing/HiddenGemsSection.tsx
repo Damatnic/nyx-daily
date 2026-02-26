@@ -20,7 +20,7 @@ export default function HiddenGemsSection({ gems }: HiddenGemsSectionProps) {
 
   return (
     <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-      <SectionHeader title="Sites You Didn't Know About" />
+      <SectionHeader title="Sites You Didn't Know About" gradient />
 
       <div className="flex flex-col gap-3">
         {gems.slice(0, 5).map((gem, index) => {

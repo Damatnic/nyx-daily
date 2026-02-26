@@ -25,7 +25,7 @@ export default async function ToolsPage() {
   return (
     <>
     <Navbar />
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20 lg:pb-8">
       {/* Hero */}
       <div className="mb-10 pb-8 border-b border-white/[0.06]">
         <div className="flex items-start justify-between gap-4 flex-wrap">

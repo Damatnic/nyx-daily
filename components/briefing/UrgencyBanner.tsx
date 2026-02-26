@@ -20,7 +20,7 @@ export default function UrgencyBanner({ deadlines }: UrgencyBannerProps) {
   if (urgent.length === 0) return null;
 
   return (
-    <div className="sticky top-14 z-30 bg-gradient-to-r from-red-950/95 via-amber-950/90 to-red-950/95 border-b border-red-500/20 backdrop-blur-sm">
+    <div className="w-full bg-gradient-to-r from-red-950/95 via-amber-950/90 to-red-950/95 border-b border-red-500/20 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-2.5 gap-4">
           <div className="flex items-center gap-3 min-w-0 flex-1">

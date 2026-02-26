@@ -89,7 +89,7 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
 
     return (
       <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-        <SectionHeader title="Breathwork" />
+        <SectionHeader title="Breathwork" gradient />
         <div className="p-3 rounded-lg bg-cyan-500/5 border border-cyan-500/10">
           <div className="flex items-center gap-2 mb-2">
             <Wind size={13} className="text-[#06b6d4]" />
@@ -114,7 +114,7 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
 
   return (
     <div className={`rounded-xl border bg-[#0d0d1a] p-5 transition-all duration-500 ${state === 'done' ? 'border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-white/[0.06]'}`}>
-      <SectionHeader title="Breathwork" />
+      <SectionHeader title="Breathwork" gradient />
 
       {/* Session name */}
       <div className="flex items-center gap-2 mb-4">

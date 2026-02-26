@@ -294,7 +294,7 @@ export default function NewsSection({ news }: NewsSectionProps) {
     <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <SectionHeader title="News" />
+        <SectionHeader title="News" gradient />
         <span className="text-[10px] text-slate-700 font-mono">
           {totalStories} stories · {sections.length} categories
         </span>

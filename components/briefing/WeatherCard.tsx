@@ -95,46 +95,54 @@ export default function WeatherCard({ weather, forecast }: WeatherCardProps) {
   const { emoji, location, temp, feels, condition, high, low } = parseWeather(weather);
 
   return (
-    <div className="rounded-xl border border-white/[0.06] bg-[#0d0d1a] p-5">
-      {/* Top row: emoji + location */}
-      <div className="flex items-start justify-between gap-3 mb-4">
-        <span className="text-4xl leading-none">{emoji}</span>
-        <div className="text-right">
-          <span className="text-xs font-semibold tracking-[0.15em] uppercase text-slate-500">
-            {location}
-          </span>
-        </div>
+    <div className="rounded-xl relative overflow-hidden p-5 bg-gradient-to-br from-blue-950/50 via-[#0d0d1a] to-cyan-950/20 border border-white/[0.08]">
+      {/* Decorative glow */}
+      <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-48 h-20 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+
+      {/* Top row: emoji */}
+      <div className="relative z-10 flex items-start justify-between gap-3 mb-3">
+        <span className="text-5xl leading-none">{emoji}</span>
       </div>
 
-      {/* Temp + feels */}
-      <div className="flex items-baseline gap-3">
-        <span className="text-3xl font-bold text-slate-100">{temp}°F</span>
+      {/* Big temp + feels */}
+      <div className="relative z-10 flex items-baseline gap-2">
+        <span className="text-4xl font-black text-white">{temp}°F</span>
         {feels && (
-          <span className="text-slate-400 text-sm">feels {feels}°F</span>
+          <span className="text-sm text-slate-400">feels {feels}°F</span>
         )}
       </div>
 
       {/* Condition */}
       {condition && (
-        <p className="text-slate-500 text-xs uppercase tracking-widest mt-1">
+        <p className="relative z-10 text-xs uppercase tracking-[0.15em] text-cyan-400/80 mt-1">
           {condition}
         </p>
       )}
 
-      {/* High / Low bar */}
+      {/* High / Low pills */}
       {(high || low) && (
-        <div className="mt-4">
-          <div className="flex items-center justify-between text-xs text-slate-500 mb-1.5">
-            <span className="text-blue-400 font-medium">H: {high}°</span>
-            <span className="text-amber-400 font-medium">L: {low}°</span>
-          </div>
-          <div className="h-1 w-full bg-gradient-to-r from-blue-500/30 to-amber-500/30 rounded-full" />
+        <div className="relative z-10 flex items-center gap-2 mt-3">
+          {high && (
+            <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400">
+              H: {high}°
+            </span>
+          )}
+          {low && (
+            <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400">
+              L: {low}°
+            </span>
+          )}
         </div>
       )}
 
+      {/* Location */}
+      <p className="relative z-10 text-[10px] tracking-widest uppercase text-slate-600 mt-1">
+        {location}
+      </p>
+
       {/* 5-day forecast strip */}
       {forecast && forecast.length > 0 && (
-        <div className="mt-5 pt-4 border-t border-white/[0.06]">
+        <div className="relative z-10 mt-5 pt-4 border-t border-white/[0.06]">
           <div className="flex items-center gap-1.5 mb-3">
             <span className="text-[10px] font-semibold tracking-widest uppercase text-slate-600">
               5-Day Forecast

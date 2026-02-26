@@ -5,26 +5,33 @@ interface FocusCardProps {
 export default function FocusCard({ focus }: FocusCardProps) {
   if (!focus) return null;
 
-  // Strip markdown bold markers for clean display
-  const focusClean = focus.replace(/\*\*/g, '').replace(/^[→🚨]\s*/, '').trim();
+  // Strip markdown bold markers and emoji prefixes for clean display
+  const focusClean = focus.replace(/\*\*/g, '').replace(/^[→🚨⚡]\s*/, '').trim();
 
   return (
-    <div className="rounded-xl border border-white/[0.06] border-l-4 border-l-violet-500 bg-gradient-to-r from-violet-500/[0.08] to-transparent p-5 relative overflow-hidden">
-      {/* Ambient glow */}
-      <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
+    <div className="rounded-xl border border-violet-500/20 bg-gradient-to-r from-violet-950/40 to-transparent p-5 relative overflow-hidden">
+      {/* Decorative glow */}
+      <div className="absolute -right-10 -top-10 w-32 h-32 bg-violet-500/10 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Header */}
-      <div className="flex items-center gap-2 mb-3 relative z-10">
-        <span className="text-xs font-semibold tracking-[0.15em] uppercase text-slate-500">
-          Today&apos;s Priority
-        </span>
-        <div className="flex-1 h-px bg-white/[0.04]" />
-      </div>
+      {/* Content wrapper */}
+      <div className="relative z-10">
+        {/* Top label row */}
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse" />
+          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-500">
+            TODAY&apos;S PRIORITY
+          </span>
+        </div>
 
-      {/* Content */}
-      <div className="flex items-start gap-4 relative z-10">
-        <span className="text-2xl text-violet-400 leading-none mt-0.5 shrink-0">⚡</span>
-        <p className="text-lg font-medium text-slate-100 leading-relaxed">{focusClean}</p>
+        {/* Main content */}
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center shrink-0 text-[1.1rem]">
+            ⚡
+          </div>
+          <p className="text-xl font-semibold text-slate-100 leading-relaxed">
+            {focusClean}
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -72,7 +72,7 @@ export default function WorkoutTracker({ workout, date }: WorkoutTrackerProps) {
 
   return (
     <div className={`rounded-xl border bg-[#0d0d1a] p-5 transition-all duration-500 ${allComplete ? 'border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-white/[0.06]'}`}>
-      <SectionHeader title="Workout" />
+      <SectionHeader title="Workout" gradient />
 
       {/* Progress bar */}
       <div className="mb-4">

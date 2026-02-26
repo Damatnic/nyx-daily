@@ -2,12 +2,19 @@ interface SectionHeaderProps {
   title: string;
   subtitle?: string;
   className?: string;
+  gradient?: boolean;
 }
 
-export default function SectionHeader({ title, subtitle, className = '' }: SectionHeaderProps) {
+export default function SectionHeader({ title, subtitle, className = '', gradient = false }: SectionHeaderProps) {
   return (
     <div className={`flex items-center gap-3 mb-4 ${className}`}>
-      <span className="text-xs font-semibold tracking-widest uppercase text-slate-500">
+      <span
+        className={
+          gradient
+            ? 'bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent font-bold text-sm tracking-[0.1em] uppercase'
+            : 'text-xs font-semibold tracking-widest uppercase text-slate-500'
+        }
+      >
         {title}
       </span>
       {subtitle && (
