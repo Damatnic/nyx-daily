@@ -148,10 +148,11 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
         <span className="text-[9px] text-slate-700 font-mono">{safe + 1}/{count}</span>
       </div>
 
-      {/* Slider track */}
+      {/* Slider track — touch-action: pan-y lets vertical scroll pass through to the browser */}
       <div
         ref={trackRef}
         className={`overflow-hidden ${count > 1 ? 'cursor-grab active:cursor-grabbing' : ''}`}
+        style={count > 1 ? { touchAction: 'pan-y' } : undefined}
         onPointerDown={count > 1 ? onPointerDown : undefined}
         onPointerMove={count > 1 ? onPointerMove : undefined}
         onPointerUp={count > 1 ? onPointerUp : undefined}
