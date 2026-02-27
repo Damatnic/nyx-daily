@@ -72,17 +72,6 @@ export interface OnThisDayEvent {
   link: string;
 }
 
-export interface SportGame {
-  sport: string;
-  home_team: string;
-  away_team: string;
-  home_score: number;
-  away_score: number;
-  status: 'final' | 'live' | 'scheduled';
-  status_detail: string;
-  winner: 'home' | 'away' | null;
-}
-
 export interface GitHubRepo {
   repo: string;
   url: string;
@@ -189,7 +178,6 @@ export interface DailyBriefing {
   on_this_day?: OnThisDayEvent[];
   word_of_the_day?: WordOfDay;
   facts_of_the_day?: DailyFact[];
-  sports?: SportGame[];
   github_trending?: GitHubRepo[];
   reddit_hot?: RedditPost[];
   product_hunt?: ProductHuntPost[];

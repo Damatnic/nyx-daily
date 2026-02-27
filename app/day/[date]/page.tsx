@@ -7,7 +7,6 @@ import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import CalendarCard from '@/components/briefing/CalendarCard';
 import SchoolDeadlines from '@/components/briefing/SchoolDeadlines';
-import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
 import RedditHot from '@/components/briefing/RedditHot';
 import ProductHunt from '@/components/briefing/ProductHunt';
@@ -110,9 +109,6 @@ export default async function DayPage({ params }: PageProps) {
             )}
             {!!briefing.workout?.exercises?.length && (
               <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-            )}
-            {!!briefing.sports?.length && (
-              <SportsSection sports={briefing.sports} />
             )}
             {!!briefing.github_trending?.length && (
               <GithubTrending repos={briefing.github_trending} />

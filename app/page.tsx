@@ -9,7 +9,6 @@ import RedditHot from '@/components/briefing/RedditHot';
 import ProductHunt from '@/components/briefing/ProductHunt';
 import YouTubeSection from '@/components/briefing/YouTubeSection';
 import HiddenGemsSection from '@/components/briefing/HiddenGemsSection';
-import SportsSection from '@/components/briefing/SportsSection';
 import WorkoutTracker from '@/components/briefing/WorkoutTracker';
 import BreathworkCard from '@/components/briefing/BreathworkCard';
 import SidebarTabs from '@/components/briefing/SidebarTabs';
@@ -166,17 +165,12 @@ export default async function HomePage() {
               </>
             )}
 
-            {/* ── WATCH: YouTube + Sports ───────────────────────── */}
-            {(!!briefing.youtube_picks?.length || !!briefing.sports?.length) && (
+            {/* ── WATCH: YouTube ─────────────────────────────── */}
+            {!!briefing.youtube_picks?.length && (
               <>
                 <SectionLabel label="Watch" accent="violet" />
-                <div id="youtube" className={`grid gap-5 scroll-mt-16 items-start ${briefing.youtube_picks?.length && briefing.sports?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                  {!!briefing.youtube_picks?.length && (
-                    <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
-                  )}
-                  {!!briefing.sports?.length && (
-                    <div id="sports"><RevealCard delay={1}><SportsSection sports={briefing.sports} /></RevealCard></div>
-                  )}
+                <div id="youtube" className="grid gap-5 scroll-mt-16 items-start grid-cols-1">
+                  <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
                 </div>
               </>
             )}
