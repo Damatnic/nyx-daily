@@ -49,6 +49,25 @@ function countHeadlines(news: Record<string, Array<unknown>>): number {
   return Object.values(news).reduce((sum, arr) => sum + arr.length, 0);
 }
 
+// ─── Section divider label ───────────────────────────────────────────────────
+const ACCENT: Record<string, string> = {
+  cyan:    'text-cyan-600/80',
+  amber:   'text-amber-600/80',
+  violet:  'text-violet-500/80',
+  emerald: 'text-emerald-600/80',
+  slate:   'text-slate-600',
+};
+function SectionLabel({ label, accent = 'slate' }: { label: string; accent?: string }) {
+  return (
+    <div className="flex items-center gap-3 mt-2">
+      <span className={`text-[9px] font-black uppercase tracking-[0.22em] shrink-0 ${ACCENT[accent] ?? ACCENT.slate}`}>
+        {label}
+      </span>
+      <div className="flex-1 h-px bg-gradient-to-r from-white/[0.06] to-transparent" />
+    </div>
+  );
+}
+
 export default async function HomePage() {
   const briefing = await getTodaysBriefing();
 
@@ -110,65 +129,81 @@ export default async function HomePage() {
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
 
-            {/* News — full width, lead feature */}
+            {/* ── NEWS ─────────────────────────────────────────── */}
             <div id="news" className="scroll-mt-16">
               <RevealCard delay={0}>
                 <NewsSection news={briefing.news} />
               </RevealCard>
             </div>
 
-            {/* GitHub + Reddit — side by side */}
+            {/* ── DEV: GitHub + Reddit ──────────────────────────── */}
             {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length) && (
-              <div id="github" className={`grid gap-5 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                {!!briefing.github_trending?.length && (
-                  <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
-                )}
-                {!!briefing.reddit_hot?.length && (
-                  <div id="reddit"><RevealCard delay={1}><RedditHot posts={briefing.reddit_hot} /></RevealCard></div>
-                )}
-              </div>
+              <>
+                <SectionLabel label="Dev" accent="cyan" />
+                <div id="github" className={`grid gap-5 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  {!!briefing.github_trending?.length && (
+                    <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
+                  )}
+                  {!!briefing.reddit_hot?.length && (
+                    <div id="reddit"><RevealCard delay={1}><RedditHot posts={briefing.reddit_hot} /></RevealCard></div>
+                  )}
+                </div>
+              </>
             )}
 
-            {/* YouTube + ProductHunt — side by side */}
-            {(!!briefing.youtube_picks?.length || !!briefing.product_hunt?.length) && (
-              <div id="youtube" className={`grid gap-5 scroll-mt-16 items-start ${briefing.youtube_picks?.length && briefing.product_hunt?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                {!!briefing.youtube_picks?.length && (
-                  <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
-                )}
-                {!!briefing.product_hunt?.length && (
-                  <div id="producthunt"><RevealCard delay={1}><ProductHunt posts={briefing.product_hunt} /></RevealCard></div>
-                )}
-              </div>
+            {/* ── DISCOVERY: ProductHunt + Hidden Gems ─────────── */}
+            {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length) && (
+              <>
+                <SectionLabel label="Discovery" accent="amber" />
+                <div id="producthunt" className={`grid gap-5 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  {!!briefing.product_hunt?.length && (
+                    <RevealCard delay={0}><ProductHunt posts={briefing.product_hunt} /></RevealCard>
+                  )}
+                  {!!briefing.hidden_gems?.length && (
+                    <RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
+                  )}
+                </div>
+              </>
             )}
 
-            {/* Sports + Hidden Gems — side by side when both present */}
-            {(!!briefing.sports?.length || !!briefing.hidden_gems?.length) && (
-              <div id="gems" className={`grid gap-5 scroll-mt-16 items-start ${briefing.sports?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                {!!briefing.sports?.length && (
-                  <RevealCard delay={0}><SportsSection sports={briefing.sports} /></RevealCard>
-                )}
-                {!!briefing.hidden_gems?.length && (
-                  <RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
-                )}
-              </div>
+            {/* ── WATCH: YouTube + Sports ───────────────────────── */}
+            {(!!briefing.youtube_picks?.length || !!briefing.sports?.length) && (
+              <>
+                <SectionLabel label="Watch" accent="violet" />
+                <div id="youtube" className={`grid gap-5 scroll-mt-16 items-start ${briefing.youtube_picks?.length && briefing.sports?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  {!!briefing.youtube_picks?.length && (
+                    <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
+                  )}
+                  {!!briefing.sports?.length && (
+                    <div id="sports"><RevealCard delay={1}><SportsSection sports={briefing.sports} /></RevealCard></div>
+                  )}
+                </div>
+              </>
             )}
 
-            {/* Workout + Breathwork — side by side */}
-            {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
-              <div id="workout" className={`grid gap-5 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                {!!briefing.workout?.exercises?.length && (
-                  <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
-                )}
-                {briefing.breathwork_session && (
-                  <div id="breathwork"><RevealCard delay={1}><BreathworkCard session={briefing.breathwork_session} fallbackText={breathworkFallback} /></RevealCard></div>
-                )}
-              </div>
-            )}
-
+            {/* ── TOOL OF THE DAY ───────────────────────────────── */}
             {briefing.app_of_the_day && (
-              <RevealCard delay={0}>
-                <AppOfTheDay app={briefing.app_of_the_day} />
-              </RevealCard>
+              <>
+                <SectionLabel label="Tool of the Day" accent="slate" />
+                <RevealCard delay={0}>
+                  <AppOfTheDay app={briefing.app_of_the_day} />
+                </RevealCard>
+              </>
+            )}
+
+            {/* ── WELLNESS: Workout + Breathwork ───────────────── */}
+            {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
+              <>
+                <SectionLabel label="Wellness" accent="emerald" />
+                <div id="workout" className={`grid gap-5 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  {!!briefing.workout?.exercises?.length && (
+                    <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
+                  )}
+                  {briefing.breathwork_session && (
+                    <div id="breathwork"><RevealCard delay={1}><BreathworkCard session={briefing.breathwork_session} fallbackText={breathworkFallback} /></RevealCard></div>
+                  )}
+                </div>
+              </>
             )}
           </div>
 

@@ -15,12 +15,12 @@ const LINKS = [
 
 // 1-indexed key → section id
 const KEY_SECTIONS: Record<string, string> = {
-  '1': 'news',
-  '2': 'github',
-  '3': 'youtube',
-  '4': 'gems',
-  '5': 'workout',
-  '6': 'weather',  // sidebar
+  '1': 'news',       // News
+  '2': 'github',     // Dev (GitHub + Reddit)
+  '3': 'producthunt',// Discovery (ProductHunt + HiddenGems)
+  '4': 'youtube',    // Watch (YouTube + Sports)
+  '5': 'workout',    // Wellness
+  '6': 'weather',    // Sidebar
 };
 
 function scrollToSection(id: string) {

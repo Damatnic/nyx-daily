@@ -73,8 +73,12 @@ export default function SidebarTabs({
         </Collapsible>
       )}
 
-      {/* NASA APOD */}
-      {apod && <NasaApod apod={apod} />}
+      {/* NASA APOD — collapsed by default (image-heavy, nice to have) */}
+      {apod && (
+        <Collapsible label="NASA · Photo of the Day">
+          <NasaApod apod={apod} />
+        </Collapsible>
+      )}
     </div>
   );
 }
