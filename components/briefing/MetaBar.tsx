@@ -1,5 +1,12 @@
 import type { DailyBriefing } from '@/lib/types';
 
+function fmtTime(iso: string) {
+  try {
+    const d = new Date(iso);
+    return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+  } catch { return ''; }
+}
+
 interface Props {
   briefing: DailyBriefing;
   streak: number;
@@ -53,8 +60,16 @@ export default function MetaBar({ briefing, streak, headlineCount }: Props) {
           <Sep />
         </>
       )}
+      {briefing.generated_at && (
+        <>
+          <span className="text-slate-800 select-none ml-auto">·</span>
+          <span className="text-[11px] text-slate-700 shrink-0" title={briefing.generated_at}>
+            ↻ {fmtTime(briefing.generated_at)}
+          </span>
+        </>
+      )}
       {streak > 0 && (
-        <span className="flex items-center gap-1 shrink-0 ml-auto">
+        <span className="flex items-center gap-1 shrink-0">
           <span className="text-[13px]">🔥</span>
           <span className="text-[12px] font-bold text-orange-400 tabular-nums">{streak}</span>
           <span className="text-[11px] text-slate-700">day streak</span>

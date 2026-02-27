@@ -23,6 +23,7 @@ import PersonalGitHubCard from '@/components/briefing/PersonalGitHubCard';
 import RecentSaves from '@/components/briefing/RecentSaves';
 import MetaBar from '@/components/briefing/MetaBar';
 import ArchiveStrip from '@/components/briefing/ArchiveStrip';
+import DailyWisdomCard from '@/components/briefing/DailyWisdomCard';
 import CollapsibleSection from '@/components/ui/CollapsibleSection';
 import ScrollToTop from '@/components/ui/ScrollToTop';
 
@@ -171,8 +172,8 @@ export default async function HomePage() {
               </CollapsibleSection>
             )}
 
-            {/* ── DISCOVERY: ProductHunt + Hidden Gems + App of the Day ── */}
-            {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length || !!briefing.app_of_the_day) && (
+            {/* ── DISCOVERY: ProductHunt + Hidden Gems + App of the Day + Tips ── */}
+            {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length || !!briefing.app_of_the_day || !!briefing.health_tip) && (
               <CollapsibleSection id="discovery" label="Discovery" accent="amber">
                 <div id="producthunt" className={`grid gap-4 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.product_hunt?.length && (
@@ -182,10 +183,21 @@ export default async function HomePage() {
                     <RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
                   )}
                 </div>
-                {briefing.app_of_the_day && (
-                  <RevealCard delay={0}>
-                    <AppOfTheDay app={briefing.app_of_the_day} />
-                  </RevealCard>
+                {(briefing.app_of_the_day || briefing.health_tip) && (
+                  <div className={`grid gap-4 items-start ${briefing.app_of_the_day && briefing.health_tip ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                    {briefing.app_of_the_day && (
+                      <RevealCard delay={0}><AppOfTheDay app={briefing.app_of_the_day} /></RevealCard>
+                    )}
+                    {(briefing.health_tip || briefing.life_hack || briefing.money_tip) && (
+                      <RevealCard delay={1}>
+                        <DailyWisdomCard
+                          health_tip={briefing.health_tip}
+                          life_hack={briefing.life_hack}
+                          money_tip={briefing.money_tip}
+                        />
+                      </RevealCard>
+                    )}
+                  </div>
                 )}
               </CollapsibleSection>
             )}
