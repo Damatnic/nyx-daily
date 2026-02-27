@@ -56,6 +56,12 @@ export default function SchoolDeadlines({ deadlines }: { deadlines?: SchoolDeadl
       next.delete(key);
       setLocalDone(next);
       saveDoneSet(next);
+      // Persist server-side
+      fetch('/api/deadlines/complete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ due_date: item.due_date, desc: item.desc, done: false }),
+      }).catch(() => {});
     } else {
       // Mark done: animate out first, then remove
       next.add(key);
@@ -65,6 +71,12 @@ export default function SchoolDeadlines({ deadlines }: { deadlines?: SchoolDeadl
       setTimeout(() => {
         setFadingOut(prev => { const s = new Set(prev); s.delete(key); return s; });
       }, 400);
+      // Persist server-side
+      fetch('/api/deadlines/complete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ due_date: item.due_date, desc: item.desc, done: true }),
+      }).catch(() => {});
     }
   };
 

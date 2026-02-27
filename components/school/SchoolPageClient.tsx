@@ -144,8 +144,15 @@ export default function SchoolPageClient({ courses }: SchoolPageClientProps) {
   const toggleItem = useCallback((item: SchoolDeadline) => {
     const k = getKey(item);
     const next = { ...overrides };
-    next[k] ? delete next[k] : (next[k] = true);
+    const newDone = !next[k];
+    newDone ? (next[k] = true) : delete next[k];
     saveOverrides(next);
+    // Persist server-side (fire-and-forget)
+    fetch('/api/deadlines/complete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ due_date: item.due_date, desc: item.desc, done: newDone }),
+    }).catch(() => { /* localStorage is the fallback */ });
   }, [overrides, saveOverrides]);
 
   const isChecked = (item: SchoolDeadline) => overrides[getKey(item)] === true;

@@ -43,7 +43,21 @@ export async function getSchoolDeadlines(): Promise<SchoolDeadline[]> {
     const filePath = path.join(dataDir, 'school-deadlines.json');
     if (!fs.existsSync(filePath)) return [];
     const raw = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(raw) as SchoolDeadline[];
+    const deadlines = JSON.parse(raw) as SchoolDeadline[];
+
+    // Merge /tmp overrides — server-side persistence on Vercel warm instances
+    try {
+      const tmpFile = '/tmp/nyx-school-done.json';
+      if (fs.existsSync(tmpFile)) {
+        const overrides: Record<string, boolean> = JSON.parse(fs.readFileSync(tmpFile, 'utf-8'));
+        for (const d of deadlines) {
+          const key = `${d.due_date}:${d.desc}`;
+          if (key in overrides) d.done = overrides[key];
+        }
+      }
+    } catch { /* ignore */ }
+
+    return deadlines;
   } catch {
     return [];
   }
