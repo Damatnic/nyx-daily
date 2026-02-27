@@ -54,21 +54,23 @@ function countHeadlines(news: Record<string, Array<unknown>>): number {
 }
 
 // ─── Section divider label ───────────────────────────────────────────────────
-const ACCENT: Record<string, string> = {
-  cyan:    'text-cyan-600/80',
-  amber:   'text-amber-600/80',
-  violet:  'text-violet-500/80',
-  emerald: 'text-emerald-600/80',
-  rose:    'text-rose-500/80',
-  slate:   'text-slate-600',
+const ACCENT: Record<string, { text: string; dot: string }> = {
+  cyan:    { text: 'text-cyan-500/70',    dot: 'bg-cyan-500/60' },
+  amber:   { text: 'text-amber-500/70',   dot: 'bg-amber-500/60' },
+  violet:  { text: 'text-violet-400/80',  dot: 'bg-violet-400/70' },
+  emerald: { text: 'text-emerald-500/70', dot: 'bg-emerald-500/60' },
+  rose:    { text: 'text-rose-400/80',    dot: 'bg-rose-400/70' },
+  slate:   { text: 'text-slate-500',      dot: 'bg-slate-600' },
 };
 function SectionLabel({ label, accent = 'slate' }: { label: string; accent?: string }) {
+  const { text, dot } = ACCENT[accent] ?? ACCENT.slate;
   return (
-    <div className="flex items-center gap-3 mt-2">
-      <span className={`text-[9px] font-black uppercase tracking-[0.22em] shrink-0 ${ACCENT[accent] ?? ACCENT.slate}`}>
+    <div className="flex items-center gap-2.5">
+      <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dot}`} />
+      <span className={`text-[10px] font-black uppercase tracking-[0.2em] shrink-0 ${text}`}>
         {label}
       </span>
-      <div className="flex-1 h-px bg-gradient-to-r from-white/[0.06] to-transparent" />
+      <div className="flex-1 h-px bg-gradient-to-r from-white/[0.07] to-transparent" />
     </div>
   );
 }
@@ -129,11 +131,11 @@ export default async function HomePage() {
       />
 
       {/* Main content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 min-w-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-w-0">
 
           {/* ── LEFT COLUMN ── */}
-          <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
+          <div className="lg:col-span-2 flex flex-col gap-8 min-w-0">
 
             {/* ── BRIEFING CAROUSEL — AI Brief / Daily Extras / On This Day / NASA ── */}
             <BriefingCarousel
@@ -153,9 +155,9 @@ export default async function HomePage() {
 
             {/* ── DEV: GitHub + Reddit + HN + Personal GitHub ───── */}
             {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length || !!briefing.hacker_news?.length || !!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
-              <>
+              <div className="flex flex-col gap-4" id="github">
                 <SectionLabel label="Dev" accent="cyan" />
-                <div id="github" className={`grid gap-5 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.github_trending?.length && (
                     <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
                   )}
@@ -164,7 +166,7 @@ export default async function HomePage() {
                   )}
                 </div>
                 {(!!briefing.hacker_news?.length || !!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
-                  <div className={`grid gap-5 items-start ${briefing.hacker_news?.length && (briefing.personal_github?.repos?.length || briefing.personal_github?.prs?.length) ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  <div className={`grid gap-4 items-start ${briefing.hacker_news?.length && (briefing.personal_github?.repos?.length || briefing.personal_github?.prs?.length) ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                     {!!briefing.hacker_news?.length && (
                       <RevealCard delay={0}><HackerNewsCard items={briefing.hacker_news} /></RevealCard>
                     )}
@@ -173,14 +175,14 @@ export default async function HomePage() {
                     )}
                   </div>
                 )}
-              </>
+              </div>
             )}
 
             {/* ── DISCOVERY: ProductHunt + Hidden Gems ─────────── */}
             {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length) && (
-              <>
+              <div className="flex flex-col gap-4" id="producthunt">
                 <SectionLabel label="Discovery" accent="amber" />
-                <div id="producthunt" className={`grid gap-5 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.product_hunt?.length && (
                     <RevealCard delay={0}><ProductHunt posts={briefing.product_hunt} /></RevealCard>
                   )}
@@ -188,48 +190,44 @@ export default async function HomePage() {
                     <RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
                   )}
                 </div>
-              </>
+              </div>
             )}
 
             {/* ── WATCH: YouTube ─────────────────────────────── */}
             {!!briefing.youtube_picks?.length && (
-              <>
+              <div className="flex flex-col gap-4" id="youtube">
                 <SectionLabel label="Watch" accent="violet" />
-                <div id="youtube" className="grid gap-5 scroll-mt-16 items-start grid-cols-1">
-                  <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
-                </div>
-              </>
+                <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
+              </div>
             )}
 
             {/* ── RELEASE RADAR ────────────────────────────────── */}
             {briefing.releases_today && (
               Object.values(briefing.releases_today).some(arr => arr.length > 0)
             ) && (
-              <>
+              <div className="flex flex-col gap-4" id="releases">
                 <SectionLabel label="Release Radar" accent="rose" />
-                <div id="releases" className="scroll-mt-16">
-                  <RevealCard delay={0}>
-                    <ReleasesToday releases={briefing.releases_today} />
-                  </RevealCard>
-                </div>
-              </>
+                <RevealCard delay={0}>
+                  <ReleasesToday releases={briefing.releases_today} />
+                </RevealCard>
+              </div>
             )}
 
             {/* ── TOOL OF THE DAY ───────────────────────────────── */}
             {briefing.app_of_the_day && (
-              <>
+              <div className="flex flex-col gap-4">
                 <SectionLabel label="Tool of the Day" accent="slate" />
                 <RevealCard delay={0}>
                   <AppOfTheDay app={briefing.app_of_the_day} />
                 </RevealCard>
-              </>
+              </div>
             )}
 
             {/* ── WELLNESS: Workout + Breathwork ───────────────── */}
             {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
-              <>
+              <div className="flex flex-col gap-4" id="workout">
                 <SectionLabel label="Wellness" accent="emerald" />
-                <div id="workout" className={`grid gap-5 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.workout?.exercises?.length && (
                     <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
                   )}
@@ -237,14 +235,14 @@ export default async function HomePage() {
                     <div id="breathwork"><RevealCard delay={1}><BreathworkCard session={briefing.breathwork_session} fallbackText={breathworkFallback} /></RevealCard></div>
                   )}
                 </div>
-              </>
+              </div>
             )}
           </div>
 
           {/* ── RIGHT RAIL — sticky ── */}
           <div
             id="weather"
-            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-16 lg:self-start lg:max-h-[calc(100vh-4.5rem)] lg:overflow-y-auto lg:scrollbar-none"
+            className="flex flex-col gap-5 min-w-0 lg:sticky lg:top-16 lg:self-start lg:max-h-[calc(100vh-4.5rem)] lg:overflow-y-auto lg:scrollbar-none"
           >
             <div id="school" className="scroll-mt-28">
               <SidebarTabs
