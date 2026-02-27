@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search, Home, Archive, BookOpen, Wrench, Newspaper, Play, Gem, Dumbbell, Wind, Trophy, TrendingUp, MessageSquare, ShoppingBag, Zap, X } from 'lucide-react';
+import { Search, Home, Archive, BookOpen, Wrench, Newspaper, Play, Gem, Dumbbell, Wind, TrendingUp, MessageSquare, ShoppingBag, Zap, X } from 'lucide-react';
 
 interface CommandItem {
   id: string;
@@ -49,10 +49,9 @@ export default function CommandPalette({ open, onClose }: CommandPaletteProps) {
     // Sections
     { id: 'jump-news',     group: 'Jump to', label: 'News',          description: 'Top headlines',        icon: <Newspaper size={15} />,   action: () => scrollTo('news'),     badge: '↓', badgeColor: 'text-violet-400' },
     { id: 'jump-youtube',  group: 'Jump to', label: 'YouTube Picks', description: 'Curated videos',       icon: <Play size={15} />,        action: () => scrollTo('youtube'),  badge: '↓', badgeColor: 'text-red-400' },
-    { id: 'jump-gems',     group: 'Jump to', label: 'Hidden Gems',   description: 'Cool finds from HN',   icon: <Gem size={15} />,         action: () => scrollTo('gems'),     badge: '↓', badgeColor: 'text-amber-400' },
+    { id: 'jump-gems',     group: 'Jump to', label: 'Hidden Gems',   description: 'Cool finds from HN',   icon: <Gem size={15} />,         action: () => scrollTo('gems'),     badge: '4', badgeColor: 'text-amber-400' },
     { id: 'jump-workout',  group: 'Jump to', label: 'Workout',       description: 'Track your exercises', icon: <Dumbbell size={15} />,    action: () => scrollTo('workout'),  badge: '↓', badgeColor: 'text-cyan-400' },
     { id: 'jump-breathwork', group: 'Jump to', label: 'Breathwork',  description: 'Guided breathing',     icon: <Wind size={15} />,        action: () => scrollTo('breathwork'), badge: '↓', badgeColor: 'text-emerald-400' },
-    { id: 'jump-sports',   group: 'Jump to', label: 'Sports',        description: 'Scores & standings',   icon: <Trophy size={15} />,      action: () => scrollTo('sports'),   badge: '↓', badgeColor: 'text-green-400' },
     { id: 'jump-weather',  group: 'Jump to', label: 'Weather',       description: 'Forecast & conditions',icon: <Zap size={15} />,         action: () => scrollTo('weather'),  badge: '↓', badgeColor: 'text-sky-400' },
     { id: 'jump-school',   group: 'Jump to', label: 'School Sidebar',description: 'Upcoming deadlines',   icon: <BookOpen size={15} />,    action: () => scrollTo('school'),   badge: '↓', badgeColor: 'text-pink-400' },
     { id: 'jump-github',   group: 'Jump to', label: 'GitHub Trending',description: 'Trending repos',     icon: <TrendingUp size={15} />,  action: () => scrollTo('github'),   badge: '↓', badgeColor: 'text-slate-400' },

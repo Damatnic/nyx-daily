@@ -18,7 +18,7 @@ const KEY_SECTIONS: Record<string, string> = {
   '1': 'news',
   '2': 'github',
   '3': 'youtube',
-  '4': 'sports',
+  '4': 'gems',
   '5': 'workout',
   '6': 'weather',  // sidebar
 };

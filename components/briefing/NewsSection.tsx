@@ -24,10 +24,10 @@ type TabKey = 'all' | 'us' | 'politics' | 'tech' | 'entertainment' | 'weird' | '
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: 'all',           label: 'All' },
-  { key: 'us',            label: 'US' },
-  { key: 'politics',      label: 'Politics' },
   { key: 'tech',          label: 'Tech & AI' },
   { key: 'entertainment', label: 'Culture' },
+  { key: 'us',            label: 'US' },
+  { key: 'politics',      label: 'Politics' },
   { key: 'weird',         label: 'Weird' },
   { key: 'wisconsin',     label: 'Local' },
 ];
@@ -194,12 +194,12 @@ function buildSections(news: NewsData): Section[] {
   }
 
   return ([
-    { key: 'us'            as TabKey, items: (news.us_news      ?? []).slice(0, 3) },
-    { key: 'politics'      as TabKey, items: (news.politics     ?? []).slice(0, 3) },
     { key: 'tech'          as TabKey, items: techItems },
     { key: 'entertainment' as TabKey, items: (news.entertainment ?? []).slice(0, 3) },
+    { key: 'us'            as TabKey, items: (news.us_news      ?? []).slice(0, 2) },
     { key: 'weird'         as TabKey, items: weirdItems },
-    { key: 'wisconsin'     as TabKey, items: (news.wisconsin    ?? []).slice(0, 3) },
+    { key: 'wisconsin'     as TabKey, items: (news.wisconsin    ?? []).slice(0, 2) },
+    { key: 'politics'      as TabKey, items: (news.politics     ?? []).slice(0, 2) },
   ] as Section[]).filter(s => s.items.length > 0);
 }
 

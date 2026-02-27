@@ -4,7 +4,6 @@ import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
-import SportsSection from '@/components/briefing/SportsSection';
 import GithubTrending from '@/components/briefing/GithubTrending';
 import RedditHot from '@/components/briefing/RedditHot';
 import ProductHunt from '@/components/briefing/ProductHunt';
@@ -134,15 +133,10 @@ export default async function HomePage() {
               </div>
             )}
 
-            {/* Sports + Hidden Gems — side by side */}
-            {(!!briefing.sports?.length || !!briefing.hidden_gems?.length) && (
-              <div id="sports" className={`grid gap-5 scroll-mt-16 items-start ${briefing.sports?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-                {!!briefing.sports?.length && (
-                  <RevealCard delay={0}><SportsSection sports={briefing.sports} /></RevealCard>
-                )}
-                {!!briefing.hidden_gems?.length && (
-                  <div id="gems"><RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard></div>
-                )}
+            {/* Hidden Gems — full width */}
+            {!!briefing.hidden_gems?.length && (
+              <div id="gems" className="scroll-mt-16">
+                <RevealCard delay={0}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
               </div>
             )}
 
