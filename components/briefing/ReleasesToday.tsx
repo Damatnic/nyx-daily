@@ -87,7 +87,7 @@ function EmptyState({ tab }: { tab: TabKey }) {
   const msgs: Record<TabKey, string> = {
     movies: 'No new US theater releases this week.',
     tv:     'Nothing new airing today — or set TMDB_API_KEY to enable.',
-    games:  'No game releases this week — or set RAWG_API_KEY to enable.',
+    games:  'No new Steam releases found this week.',
     music:  'No recent album reviews found.',
   };
   return <p className="text-xs text-slate-700 px-3 py-4">{msgs[tab]}</p>;
@@ -160,14 +160,14 @@ export default function ReleasesToday({ releases }: Props) {
           href={
             active === 'movies' ? 'https://www.themoviedb.org/movie' :
             active === 'tv'     ? 'https://www.themoviedb.org/tv' :
-            active === 'games'  ? 'https://rawg.io' :
+            active === 'games'  ? 'https://store.steampowered.com/search/?sort_by=Released_DESC&os=win' :
                                   'https://pitchfork.com/reviews/albums/'
           }
           target="_blank"
           rel="noopener noreferrer"
           className="text-[10px] text-slate-700 hover:text-violet-400 transition-colors"
         >
-          See all on {active === 'movies' || active === 'tv' ? 'TMDB' : active === 'games' ? 'RAWG' : 'Pitchfork'} →
+          See all on {active === 'movies' || active === 'tv' ? 'TMDB' : active === 'games' ? 'Steam' : 'Pitchfork'} →
         </a>
       </div>
     </div>
