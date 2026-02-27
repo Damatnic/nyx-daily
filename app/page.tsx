@@ -1,4 +1,4 @@
-import { getTodaysBriefing, getBriefingStreak } from '@/lib/data';
+import { getTodaysBriefing, getBriefingStreak, getRecentPreviews } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
@@ -21,6 +21,10 @@ import BriefingCarousel from '@/components/briefing/BriefingCarousel';
 import HackerNewsCard from '@/components/briefing/HackerNewsCard';
 import PersonalGitHubCard from '@/components/briefing/PersonalGitHubCard';
 import RecentSaves from '@/components/briefing/RecentSaves';
+import MetaBar from '@/components/briefing/MetaBar';
+import ArchiveStrip from '@/components/briefing/ArchiveStrip';
+import CollapsibleSection from '@/components/ui/CollapsibleSection';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export const dynamic = 'force-dynamic';
 
@@ -54,29 +58,14 @@ function countHeadlines(news: Record<string, Array<unknown>>): number {
 }
 
 // ─── Section divider label ───────────────────────────────────────────────────
-const ACCENT: Record<string, { text: string; dot: string }> = {
-  cyan:    { text: 'text-cyan-500/70',    dot: 'bg-cyan-500/60' },
-  amber:   { text: 'text-amber-500/70',   dot: 'bg-amber-500/60' },
-  violet:  { text: 'text-violet-400/80',  dot: 'bg-violet-400/70' },
-  emerald: { text: 'text-emerald-500/70', dot: 'bg-emerald-500/60' },
-  rose:    { text: 'text-rose-400/80',    dot: 'bg-rose-400/70' },
-  slate:   { text: 'text-slate-500',      dot: 'bg-slate-600' },
-};
-function SectionLabel({ label, accent = 'slate' }: { label: string; accent?: string }) {
-  const { text, dot } = ACCENT[accent] ?? ACCENT.slate;
-  return (
-    <div className="flex items-center gap-2.5">
-      <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dot}`} />
-      <span className={`text-[10px] font-black uppercase tracking-[0.2em] shrink-0 ${text}`}>
-        {label}
-      </span>
-      <div className="flex-1 h-px bg-gradient-to-r from-white/[0.07] to-transparent" />
-    </div>
-  );
-}
+// SectionLabel replaced by CollapsibleSection (client component with localStorage toggle)
 
 export default async function HomePage() {
-  const [briefing, streak] = await Promise.all([getTodaysBriefing(), getBriefingStreak()]);
+  const [briefing, streak, recentPreviews] = await Promise.all([
+    getTodaysBriefing(),
+    getBriefingStreak(),
+    getRecentPreviews(6),
+  ]);
 
   if (!briefing) {
     return (
@@ -137,7 +126,7 @@ export default async function HomePage() {
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-2 flex flex-col gap-8 min-w-0">
 
-            {/* ── BRIEFING CAROUSEL — AI Brief / Daily Extras / On This Day / NASA ── */}
+            {/* ── BRIEFING CAROUSEL ─────────────────────────────── */}
             <BriefingCarousel
               tldr={briefing.tldr}
               word={briefing.word_of_the_day}
@@ -146,18 +135,22 @@ export default async function HomePage() {
               apod={briefing.apod}
             />
 
-            {/* ── NEWS ─────────────────────────────────────────── */}
-            <div id="news" className="scroll-mt-16">
-              <RevealCard delay={0}>
-                <NewsSection news={briefing.news} />
-              </RevealCard>
-            </div>
+            {/* ── META BAR ─────────────────────────────────────── */}
+            <MetaBar briefing={briefing} streak={streak} headlineCount={headlineCount} />
 
-            {/* ── DEV: GitHub + Reddit + HN + Personal GitHub ───── */}
+            {/* ── NEWS ─────────────────────────────────────────── */}
+            <CollapsibleSection id="news" label="News" accent="blue" defaultOpen={true}>
+              <div id="news" className="scroll-mt-16">
+                <RevealCard delay={0}>
+                  <NewsSection news={briefing.news} />
+                </RevealCard>
+              </div>
+            </CollapsibleSection>
+
+            {/* ── DEV ─────────────────────────────────────────── */}
             {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length || !!briefing.hacker_news?.length || !!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
-              <div className="flex flex-col gap-4" id="github">
-                <SectionLabel label="Dev" accent="cyan" />
-                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <CollapsibleSection id="dev" label="Dev" accent="cyan">
+                <div id="github" className={`grid gap-4 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.github_trending?.length && (
                     <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
                   )}
@@ -175,14 +168,13 @@ export default async function HomePage() {
                     )}
                   </div>
                 )}
-              </div>
+              </CollapsibleSection>
             )}
 
-            {/* ── DISCOVERY: ProductHunt + Hidden Gems ─────────── */}
-            {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length) && (
-              <div className="flex flex-col gap-4" id="producthunt">
-                <SectionLabel label="Discovery" accent="amber" />
-                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+            {/* ── DISCOVERY: ProductHunt + Hidden Gems + App of the Day ── */}
+            {(!!briefing.product_hunt?.length || !!briefing.hidden_gems?.length || !!briefing.app_of_the_day) && (
+              <CollapsibleSection id="discovery" label="Discovery" accent="amber">
+                <div id="producthunt" className={`grid gap-4 scroll-mt-16 items-start ${briefing.product_hunt?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.product_hunt?.length && (
                     <RevealCard delay={0}><ProductHunt posts={briefing.product_hunt} /></RevealCard>
                   )}
@@ -190,44 +182,40 @@ export default async function HomePage() {
                     <RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard>
                   )}
                 </div>
-              </div>
+                {briefing.app_of_the_day && (
+                  <RevealCard delay={0}>
+                    <AppOfTheDay app={briefing.app_of_the_day} />
+                  </RevealCard>
+                )}
+              </CollapsibleSection>
             )}
 
             {/* ── WATCH: YouTube ─────────────────────────────── */}
             {!!briefing.youtube_picks?.length && (
-              <div className="flex flex-col gap-4" id="youtube">
-                <SectionLabel label="Watch" accent="violet" />
-                <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
-              </div>
+              <CollapsibleSection id="watch" label="Watch" accent="violet">
+                <div id="youtube">
+                  <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
+                </div>
+              </CollapsibleSection>
             )}
 
             {/* ── RELEASE RADAR ────────────────────────────────── */}
             {briefing.releases_today && (
               Object.values(briefing.releases_today).some(arr => arr.length > 0)
             ) && (
-              <div className="flex flex-col gap-4" id="releases">
-                <SectionLabel label="Release Radar" accent="rose" />
-                <RevealCard delay={0}>
-                  <ReleasesToday releases={briefing.releases_today} />
-                </RevealCard>
-              </div>
-            )}
-
-            {/* ── TOOL OF THE DAY ───────────────────────────────── */}
-            {briefing.app_of_the_day && (
-              <div className="flex flex-col gap-4">
-                <SectionLabel label="Tool of the Day" accent="slate" />
-                <RevealCard delay={0}>
-                  <AppOfTheDay app={briefing.app_of_the_day} />
-                </RevealCard>
-              </div>
+              <CollapsibleSection id="releases" label="Release Radar" accent="rose">
+                <div id="releases">
+                  <RevealCard delay={0}>
+                    <ReleasesToday releases={briefing.releases_today} />
+                  </RevealCard>
+                </div>
+              </CollapsibleSection>
             )}
 
             {/* ── WELLNESS: Workout + Breathwork ───────────────── */}
             {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
-              <div className="flex flex-col gap-4" id="workout">
-                <SectionLabel label="Wellness" accent="emerald" />
-                <div className={`grid gap-4 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <CollapsibleSection id="wellness" label="Wellness" accent="emerald">
+                <div id="workout" className={`grid gap-4 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                   {!!briefing.workout?.exercises?.length && (
                     <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
                   )}
@@ -235,7 +223,12 @@ export default async function HomePage() {
                     <div id="breathwork"><RevealCard delay={1}><BreathworkCard session={briefing.breathwork_session} fallbackText={breathworkFallback} /></RevealCard></div>
                   )}
                 </div>
-              </div>
+              </CollapsibleSection>
+            )}
+
+            {/* ── PREVIOUS BRIEFINGS ───────────────────────────── */}
+            {recentPreviews.length > 0 && (
+              <ArchiveStrip previews={recentPreviews} />
             )}
           </div>
 

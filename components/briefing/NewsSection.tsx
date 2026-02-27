@@ -248,17 +248,28 @@ export default function NewsSection({ news }: NewsSectionProps) {
   }
   const visible = activeTab !== 'all' ? sections.filter(s => s.key === activeTab) : [];
 
+  // Featured story — top US headline shown prominently above tabs
+  const featuredStory = news.us_news?.[0] ?? news.politics?.[0] ?? null;
+
   return (
-    <div className="nyx-card p-5">
+    <div className="nyx-card overflow-hidden">
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between px-5 pt-5 pb-4">
         <div className="flex items-center gap-2">
           <span className="text-sm font-black uppercase tracking-[0.12em] text-slate-200">News</span>
           <span className="text-[10px] text-slate-600 font-mono">{total} stories</span>
         </div>
       </div>
 
+      {/* Featured story */}
+      {featuredStory && (
+        <div className="px-5 pb-4 border-b border-white/[0.06]">
+          <LeadStory item={featuredStory} accent="bg-blue-500" />
+        </div>
+      )}
+
       {/* Tabs */}
+      <div className="px-5 pt-4">
       <div className="flex gap-1 mb-1 overflow-x-auto pb-1 scrollbar-none -mx-1 px-1">
         {availableTabs.map(({ key, label }) => {
           const active = activeTab === key;
@@ -290,6 +301,7 @@ export default function NewsSection({ news }: NewsSectionProps) {
           ))}
         </div>
       )}
+      </div>{/* /px-5 pt-4 tabs wrapper */}
     </div>
   );
 }

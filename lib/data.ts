@@ -65,6 +65,41 @@ export async function getBriefingStreak(): Promise<number> {
   } catch { return 0; }
 }
 
+export interface BriefingPreview {
+  date: string;
+  day: string;
+  weather: string;
+  topHeadline: string;
+}
+
+export async function getRecentPreviews(limit = 7): Promise<BriefingPreview[]> {
+  try {
+    const dates = await getAllDates();
+    // Skip today (index 0), show previous days
+    const prev = dates.slice(1, limit + 1);
+    const previews: BriefingPreview[] = [];
+    for (const date of prev) {
+      try {
+        const filePath = path.join(dataDir, `${date}.json`);
+        if (!fs.existsSync(filePath)) continue;
+        const raw  = fs.readFileSync(filePath, 'utf-8');
+        const data = JSON.parse(raw) as DailyBriefing;
+        const news = data.news as Record<string, Array<{ title: string }>> | undefined;
+        const topHeadline = news
+          ? (Object.values(news).flat().find(n => n?.title)?.title ?? '')
+          : '';
+        previews.push({
+          date,
+          day:  data.day ?? '',
+          weather: data.weather ?? '',
+          topHeadline,
+        });
+      } catch { continue; }
+    }
+    return previews;
+  } catch { return []; }
+}
+
 export async function getSchoolDeadlines(): Promise<SchoolDeadline[]> {
   try {
     const filePath = path.join(dataDir, 'school-deadlines.json');

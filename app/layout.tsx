@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import ReadingProgress from '@/components/briefing/ReadingProgress';
 import MobileBottomNav from '@/components/nav/MobileBottomNav';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export const metadata: Metadata = {
   title: { default: 'Nyx Daily', template: '%s · Nyx Daily' },
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ReadingProgress />
         <main className="lg:pb-0 pb-20">{children}</main>
         <MobileBottomNav />
+        <ScrollToTop />
       </body>
     </html>
   );
