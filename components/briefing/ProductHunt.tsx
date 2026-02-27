@@ -40,6 +40,17 @@ export default function ProductHunt({ posts }: { posts?: ProductHuntPost[] | nul
           </div>
         ))}
       </div>
+
+      <div className="px-5 py-3 border-t border-white/[0.05]">
+        <a
+          href="https://www.producthunt.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[10px] text-slate-700 hover:text-orange-400 transition-colors"
+        >
+          All launches on Product Hunt →
+        </a>
+      </div>
     </div>
   );
 }

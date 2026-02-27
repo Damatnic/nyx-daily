@@ -3,7 +3,7 @@ import type { DailyBriefing } from '@/lib/types';
 function fmtTime(iso: string) {
   try {
     const d = new Date(iso);
-    return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+    return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Chicago' });
   } catch { return ''; }
 }
 

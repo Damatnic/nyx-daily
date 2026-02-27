@@ -1,26 +1,10 @@
 import Link from 'next/link';
 import type { SchoolDeadline } from '@/lib/types';
+import { parseWeather, tempColor } from '@/lib/weather';
 
 interface Props {
   weather?: string | null;
   deadlines?: SchoolDeadline[] | null;
-}
-
-function parseWeatherShort(w: string) {
-  const emoji = w.match(/^(\S+)\s/)?.[1] ?? '🌡️';
-  const temp  = w.match(/(\d+)°F/)?.[1]  ?? '--';
-  const cond  = w.split('·')[2]?.trim()  ?? '';
-  return { emoji, temp, cond };
-}
-
-function tempColor(t: string) {
-  const n = parseInt(t, 10);
-  if (isNaN(n)) return 'text-slate-300';
-  if (n < 32)   return 'text-blue-300';
-  if (n < 55)   return 'text-cyan-300';
-  if (n < 75)   return 'text-emerald-300';
-  if (n < 90)   return 'text-amber-300';
-  return 'text-red-400';
 }
 
 export default function MobileQuickBar({ weather, deadlines }: Props) {
@@ -30,7 +14,7 @@ export default function MobileQuickBar({ weather, deadlines }: Props) {
   // Always render — weather alone is worth showing
   if (!weather && upcoming.length === 0) return null;
 
-  const wx      = weather ? parseWeatherShort(weather) : null;
+  const wx      = weather ? parseWeather(weather) : null;
   const tempCls = wx ? tempColor(wx.temp) : '';
 
   return (
@@ -42,8 +26,8 @@ export default function MobileQuickBar({ weather, deadlines }: Props) {
           <div className="flex items-center gap-1.5 shrink-0">
             <span className="text-sm select-none leading-none">{wx.emoji}</span>
             <span className={`text-sm font-black tabular-nums leading-none ${tempCls}`}>{wx.temp}°</span>
-            {wx.cond && (
-              <span className="text-[9px] uppercase tracking-widest text-slate-700 hidden xs:block">{wx.cond}</span>
+            {wx.condition && (
+              <span className="text-[9px] uppercase tracking-widest text-slate-700 hidden xs:block">{wx.condition}</span>
             )}
           </div>
         )}

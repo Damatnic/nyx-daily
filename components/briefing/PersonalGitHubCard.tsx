@@ -22,7 +22,7 @@ export default function PersonalGitHubCard({ data }: { data?: PersonalGitHub | n
     <div className="nyx-card overflow-hidden">
       <div className="flex items-center justify-between px-5 py-4 border-b border-white/[0.05]">
         <div className="flex items-center gap-2">
-          <span className="text-sm font-black uppercase tracking-[0.12em] text-slate-200">Your GitHub</span>
+          <span className="text-sm font-black uppercase tracking-[0.12em] text-slate-200">My Activity</span>
         </div>
         {data?.summary && (
           <span className="text-[10px] text-slate-600 font-mono">{data.summary}</span>

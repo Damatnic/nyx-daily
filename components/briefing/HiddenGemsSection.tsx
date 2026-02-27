@@ -3,6 +3,7 @@
 import type { HiddenGem } from '@/lib/types';
 import { ExternalLink } from 'lucide-react';
 import SaveButton from '@/components/ui/SaveButton';
+import { getDomain } from '@/lib/deadlines';
 
 export default function HiddenGemsSection({ gems }: { gems?: HiddenGem[] | null }) {
   if (!gems?.length) return null;
@@ -13,7 +14,7 @@ export default function HiddenGemsSection({ gems }: { gems?: HiddenGem[] | null 
       <div className="flex items-center justify-between px-5 py-4 border-b border-white/[0.05]">
         <div className="flex items-center gap-2">
           <span className="text-sm font-black uppercase tracking-[0.12em] text-slate-200">Hidden Gems</span>
-          <span className="text-[10px] text-slate-700">— things you didn't know existed</span>
+          <span className="text-[9px] font-bold uppercase tracking-wider text-slate-700 bg-white/[0.04] border border-white/[0.06] rounded-full px-1.5 py-0.5">Show HN</span>
         </div>
         <span className="text-[10px] text-slate-700 font-mono">{top.length}</span>
       </div>
@@ -46,7 +47,7 @@ export default function HiddenGemsSection({ gems }: { gems?: HiddenGem[] | null 
                   {gem.points > 0 && (
                     <span className="text-[10px] text-slate-700 font-mono">{gem.points} pts</span>
                   )}
-                  <span className="text-[10px] text-slate-700 truncate">{(() => { try { return new URL(gem.url).hostname.replace('www.',''); } catch { return ''; } })()}</span>
+                  <span className="text-[10px] text-slate-700 truncate">{getDomain(gem.url)}</span>
                 </div>
               </div>
               <ExternalLink size={11} className="shrink-0 text-slate-800 group-hover:text-amber-500/70 transition-colors mt-1" />

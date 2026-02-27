@@ -1,5 +1,6 @@
 import { DailyBriefing } from '@/lib/types';
 import TimeGreeting from './TimeGreeting';
+import { parseWeather, tempColor } from '@/lib/weather';
 
 interface Props {
   briefing: DailyBriefing;
@@ -10,27 +11,6 @@ interface Props {
   upcomingCount: number;
   focus?: string | null;
   streak?: number;
-}
-
-function parseWeather(w: string) {
-  const emoji     = w.match(/^(\S+)\s/)?.[1]        ?? '🌡️';
-  const temp      = w.match(/(\d+)°F/)?.[1]         ?? '--';
-  const feels     = w.match(/feels\s+(\d+)°F/)?.[1] ?? null;
-  const seg       = w.split('·').map(s => s.trim());
-  const condition = seg[2] ?? '';
-  const high      = w.match(/H:(\d+)/)?.[1]         ?? null;
-  const low       = w.match(/L:(\d+)/)?.[1]         ?? null;
-  return { emoji, temp, feels, condition, high, low };
-}
-
-function tempColor(t: string) {
-  const n = parseInt(t, 10);
-  if (isNaN(n)) return 'text-slate-200';
-  if (n < 32)  return 'text-blue-300';
-  if (n < 55)  return 'text-cyan-300';
-  if (n < 75)  return 'text-emerald-300';
-  if (n < 90)  return 'text-amber-300';
-  return 'text-red-400';
 }
 
 export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus, streak }: Props) {
