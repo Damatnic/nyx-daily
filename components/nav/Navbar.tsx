@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/archive', label: 'Archive' },
   { href: '/school',  label: 'School' },
   { href: '/tools',   label: 'Tools' },
+  { href: '/saves',   label: '🔖 Saved' },
 ];
 
 // 1-indexed key → section id

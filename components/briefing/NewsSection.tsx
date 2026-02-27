@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import type { NewsItem } from '@/lib/types';
 import NewsImage from '@/components/ui/NewsImage';
+import SaveButton from '@/components/ui/SaveButton';
 
 interface NewsData {
   us_news:       NewsItem[];
@@ -105,18 +106,10 @@ function LeadStory({ item, accent }: { item: NewsItem; accent: string }) {
 // ─── STORY ROW ───────────────────────────────────────────────────────────────
 function StoryRow({ item, accent, rank }: { item: NewsItem; accent: string; rank: number }) {
   return (
-    <a
-      href={item.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3"
-    >
-      {/* Rank */}
+    <div className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3">
       <span className="text-[10px] font-mono text-slate-700 w-4 shrink-0 mt-0.5 tabular-nums">{rank}</span>
-      {/* Accent dot */}
       <span className={`w-1 h-1 rounded-full ${accent} shrink-0 mt-[5px]`} />
-      {/* Headline */}
-      <div className="flex-1 min-w-0">
+      <a href={item.link} target="_blank" rel="noopener noreferrer" className="flex-1 min-w-0">
         <p className="text-[13px] sm:text-sm text-slate-300 group-hover:text-white transition-colors leading-snug line-clamp-2">
           {item.title}
         </p>
@@ -124,9 +117,9 @@ function StoryRow({ item, accent, rank }: { item: NewsItem; accent: string; rank
           <span className="text-[10px] text-slate-600">{item.source}</span>
           {item.domain && <span className="text-[10px] text-slate-700 hidden sm:block">· {item.domain}</span>}
         </div>
-      </div>
-      <ExternalLink size={11} className="shrink-0 text-slate-800 group-hover:text-violet-500 transition-colors mt-0.5" />
-    </a>
+      </a>
+      <SaveButton item={{ type: 'news', title: item.title, url: item.link, source: item.source, snippet: item.snippet ?? undefined }} />
+    </div>
   );
 }
 
@@ -215,11 +208,10 @@ const ACCENT_TEXT: Record<string, string> = {
 function FlatRow({ item, accent, label, rank }: { item: NewsItem; accent: string; label: string; rank: number }) {
   const catColor = ACCENT_TEXT[accent] ?? 'text-slate-600';
   return (
-    <a href={item.link} target="_blank" rel="noopener noreferrer"
-      className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3">
+    <div className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3">
       <span className="text-[10px] font-mono text-slate-700 w-5 shrink-0 mt-0.5 tabular-nums">{rank}</span>
       <span className={`w-1 h-1 rounded-full ${accent} shrink-0 mt-[5px]`} />
-      <div className="flex-1 min-w-0">
+      <a href={item.link} target="_blank" rel="noopener noreferrer" className="flex-1 min-w-0">
         <p className="text-[13px] sm:text-sm text-slate-300 group-hover:text-white transition-colors leading-snug line-clamp-2">
           {item.title}
         </p>
@@ -228,9 +220,9 @@ function FlatRow({ item, accent, label, rank }: { item: NewsItem; accent: string
           <span className="text-[10px] text-slate-700">·</span>
           <span className={`text-[10px] font-bold uppercase tracking-wider ${catColor}`}>{label}</span>
         </div>
-      </div>
-      <ExternalLink size={11} className="shrink-0 text-slate-800 group-hover:text-violet-500 transition-colors mt-0.5" />
-    </a>
+      </a>
+      <SaveButton item={{ type: 'news', title: item.title, url: item.link, source: item.source, snippet: item.snippet ?? undefined }} />
+    </div>
   );
 }
 

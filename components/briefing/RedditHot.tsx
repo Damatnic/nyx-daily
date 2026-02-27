@@ -1,4 +1,6 @@
+'use client';
 import { ExternalLink, MessageCircle } from 'lucide-react';
+import SaveButton from '@/components/ui/SaveButton';
 
 export interface RedditPost {
   title: string;
@@ -67,6 +69,7 @@ export default function RedditHot({ posts }: { posts?: RedditPost[] | null }) {
                 </a>
               </div>
             </div>
+            <SaveButton item={{ type: 'reddit', title: post.title, url: post.url, source: `r/${post.subreddit}` }} />
           </div>
         ))}
       </div>

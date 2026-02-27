@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { ReleasesToday, ReleaseItem } from '@/lib/types';
+import SaveButton from '@/components/ui/SaveButton';
 
 interface Props {
   releases: ReleasesToday;
@@ -60,26 +61,24 @@ function ReleaseRow({ item }: { item: ReleaseItem }) {
     return null;
   })();
 
+  const saveSource = item.type === 'movie' || item.type === 'tv' ? 'TMDB' :
+                     item.type === 'game' ? 'Steam' : 'Pitchfork';
+
   return (
-    <a
-      href={item.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="story-row flex items-center gap-3 px-3 py-2.5 rounded-lg group transition-colors"
-    >
-      <div className="flex-1 min-w-0">
+    <div className="story-row flex items-center gap-3 px-3 py-2.5 rounded-lg group transition-colors">
+      <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex-1 min-w-0">
         <p className="text-[13px] text-slate-200 group-hover:text-white transition-colors leading-snug truncate">
           {item.title}
         </p>
         <div className="flex items-center gap-2 mt-0.5 flex-wrap">
           {meta}
         </div>
-      </div>
+      </a>
       {item.rating && item.rating > 0 ? (
         <StarRating rating={item.rating} />
       ) : null}
-      <span className="text-slate-700 group-hover:text-slate-400 transition-colors text-xs shrink-0">↗</span>
-    </a>
+      <SaveButton item={{ type: item.type, title: item.title, url: item.url, source: saveSource }} />
+    </div>
   );
 }
 
