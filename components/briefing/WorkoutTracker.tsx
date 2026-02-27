@@ -3,6 +3,65 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { WorkoutExercise } from '@/lib/types';
 import { Check, RotateCcw } from 'lucide-react';
+import InfoTooltip from '@/components/ui/InfoTooltip';
+
+interface ExerciseInfo { muscles: string; tip: string; }
+
+const EXERCISE_INFO: Record<string, ExerciseInfo> = {
+  'Pushups': {
+    muscles: 'Chest · Shoulders · Triceps · Core',
+    tip: 'Straight line from head to heels. Lower until chest nearly touches the floor, elbows at ~45°.',
+  },
+  'Rows': {
+    muscles: 'Back · Biceps · Rear Delts',
+    tip: 'Squeeze shoulder blades together at the top. Can use a table edge, barbell, or resistance band.',
+  },
+  'Shoulder Press': {
+    muscles: 'Shoulders · Triceps · Upper Traps',
+    tip: 'Press directly overhead — don\'t flare elbows forward. Control the descent.',
+  },
+  'Tricep Dips': {
+    muscles: 'Triceps · Chest · Anterior Delt',
+    tip: 'Hands behind you on a chair or bench. Keep torso upright to focus on triceps.',
+  },
+  'Squats': {
+    muscles: 'Quads · Glutes · Hamstrings · Core',
+    tip: 'Feet shoulder-width, toes slightly out. Chest up, knees track over toes. Hit parallel.',
+  },
+  'Lunges': {
+    muscles: 'Quads · Glutes · Hamstrings · Balance',
+    tip: 'Step far enough that your front knee stays over your ankle, not past your toes.',
+  },
+  'Calf Raises': {
+    muscles: 'Gastrocnemius · Soleus',
+    tip: 'Pause at the top for a full contraction. Go slow on the way down — most growth happens there.',
+  },
+  'Glute Bridges': {
+    muscles: 'Glutes · Hamstrings · Lower Back',
+    tip: 'Drive through your heels. Squeeze hard at the top for 1 second before lowering.',
+  },
+  'Plank': {
+    muscles: 'Core · Shoulders · Glutes',
+    tip: 'Hips level — not sagging or piked. Squeeze glutes and abs simultaneously. Breathe steadily.',
+  },
+  'Mountain Climbers': {
+    muscles: 'Core · Hip Flexors · Shoulders · Cardio',
+    tip: 'Keep hips low and level. Drive knees toward chest fast — the speed is the exercise.',
+  },
+  'Bicycle Crunches': {
+    muscles: 'Obliques · Rectus Abdominis',
+    tip: 'Rotate torso, not just elbows. Extend the opposite leg fully. Slow and controlled > fast and sloppy.',
+  },
+  'Jumping Jacks': {
+    muscles: 'Full Body · Cardio',
+    tip: 'Arms fully overhead at the top. Land softly on the balls of your feet.',
+  },
+};
+
+function exerciseInfo(name: string): ExerciseInfo | null {
+  const clean = name.replace(/\s*\(.*\)/, '').trim();
+  return EXERCISE_INFO[clean] ?? null;
+}
 
 interface Props {
   workout?: { name: string; exercises: WorkoutExercise[] } | null;
@@ -78,11 +137,15 @@ export default function WorkoutTracker({ workout, date }: Props) {
       <div className="divide-y divide-white/[0.04]">
         {workout.exercises.map((ex, i) => {
           const isDone = done.has(i);
+          const info   = exerciseInfo(ex.name);
           return (
-            <button
+            <div
               key={i}
+              role="button"
+              tabIndex={0}
               onClick={() => toggle(i)}
-              className={`w-full flex items-center gap-3 px-5 py-3 text-left transition-all duration-150 ${
+              onKeyDown={e => { if (e.key === ' ' || e.key === 'Enter') toggle(i); }}
+              className={`w-full flex items-center gap-3 px-5 py-3 text-left transition-all duration-150 cursor-pointer ${
                 isDone ? 'opacity-40' : 'hover:bg-white/[0.02]'
               }`}
             >
@@ -98,11 +161,26 @@ export default function WorkoutTracker({ workout, date }: Props) {
                 {ex.name}
               </span>
 
+              {/* Info tooltip */}
+              {info && !isDone && (
+                <InfoTooltip
+                  side="top"
+                  content={
+                    <>
+                      <p className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1">Muscles</p>
+                      <p className="text-slate-400">{info.muscles}</p>
+                      <p className="text-[10px] font-black uppercase tracking-wider text-slate-500 mt-2 mb-1">Form Tip</p>
+                      <p className="text-slate-300">{info.tip}</p>
+                    </>
+                  }
+                />
+              )}
+
               {/* Reps */}
               <span className={`shrink-0 text-[11px] font-mono transition-colors ${isDone ? 'text-slate-700' : 'text-emerald-500/80'}`}>
                 {ex.reps}
               </span>
-            </button>
+            </div>
           );
         })}
       </div>

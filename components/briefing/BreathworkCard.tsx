@@ -4,7 +4,34 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import type { BreathworkSession } from '@/lib/types';
 
 import Badge from '@/components/ui/Badge';
+import InfoTooltip from '@/components/ui/InfoTooltip';
 import { Wind, Play, Square } from 'lucide-react';
+
+const STEP_INFO: Record<string, string> = {
+  'inhale':     'Breathe in slowly through your nose. Expand your belly first, then your chest. This activates the diaphragm and draws the most oxygen.',
+  'hold':       'Hold without tension. Relax your shoulders and jaw. Holding after inhale increases CO₂ tolerance; holding after exhale activates the calming response.',
+  'exhale':     'Breathe out slowly through your mouth or nose. A longer exhale than inhale directly activates the parasympathetic nervous system — your "rest and digest" mode.',
+  'hold out':   'Empty lungs, held. This activates the vagus nerve and triggers a strong parasympathetic (calming) response. Don\'t strain.',
+};
+
+const SESSION_BENEFITS: Record<string, string> = {
+  'Box Breathing':          'Used by Navy SEALs to regulate stress. Equal ratios create nervous system balance — sharpens focus and calms anxiety simultaneously.',
+  '4-7-8 Breathing':       'Dr. Andrew Weil\'s technique. The extended exhale ratio is one of the fastest ways to lower heart rate and cortisol. Ideal before sleep or stressful situations.',
+  'Diaphragmatic':          'Belly breathing rewires shallow chest breathing patterns. Increases oxygen efficiency, reduces tension, and lowers blood pressure over time.',
+  'Physiological Sigh':    'The fastest known way to reduce acute stress — it\'s what your body does automatically when overwhelmed. Double inhale fully inflates lung sacs, the long exhale dumps CO₂.',
+  'Alternate Nostril':      'From yoga (Nadi Shodhana). Balances the left and right hemispheres of the brain. Shown to reduce blood pressure and improve focus.',
+  'Power Breathing':        'Based on Wim Hof Method. 30 rapid breaths create temporary alkalinity and a natural adrenaline boost — improves cold tolerance and mental resilience.',
+  'Body Scan':              'Combines slow breathing with progressive relaxation. Activates the parasympathetic system and reduces cortisol — best before sleep or after intense work.',
+};
+
+function getStepExplanation(action: string): string {
+  const key = action.toLowerCase();
+  if (key.includes('hold out') || key.includes('hold empty')) return STEP_INFO['hold out'];
+  if (key.includes('hold'))    return STEP_INFO['hold'];
+  if (key.includes('inhale') || key.includes('sniff')) return STEP_INFO['inhale'];
+  if (key.includes('exhale'))  return STEP_INFO['exhale'];
+  return '';
+}
 
 interface BreathworkCardProps {
   session?: BreathworkSession | null;
@@ -122,6 +149,17 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
           <Wind size={14} className="text-[#06b6d4]" />
         </div>
         <span className="text-sm font-semibold text-slate-200">{session.name}</span>
+        {SESSION_BENEFITS[session.name] && (
+          <InfoTooltip
+            side="bottom"
+            content={
+              <>
+                <p className="text-[10px] font-black uppercase tracking-wider text-cyan-400/60 mb-1.5">Why this works</p>
+                <p className="text-slate-300">{SESSION_BENEFITS[session.name]}</p>
+              </>
+            }
+          />
+        )}
         <Badge variant="cyan" className="ml-auto">{session.rounds} rounds</Badge>
       </div>
 
@@ -129,16 +167,25 @@ export default function BreathworkCard({ session, fallbackText }: BreathworkCard
       {state === 'idle' && (
         <>
           <div className="flex flex-col gap-2 mb-4">
-            {session.steps.map((step, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-3 p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.04]"
-              >
-                <span className="text-lg">{step.emoji}</span>
-                <span className="text-sm text-slate-300 flex-1">{step.action}</span>
-                <span className="text-xs font-mono text-cyan-400">{step.duration}s</span>
-              </div>
-            ))}
+            {session.steps.map((step, i) => {
+              const stepExpl = getStepExplanation(step.action);
+              return (
+                <div
+                  key={i}
+                  className="flex items-center gap-3 p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.04]"
+                >
+                  <span className="text-lg">{step.emoji}</span>
+                  <span className="text-sm text-slate-300 flex-1">{step.action}</span>
+                  {stepExpl && (
+                    <InfoTooltip
+                      side="top"
+                      content={<p className="text-slate-300">{stepExpl}</p>}
+                    />
+                  )}
+                  <span className="text-xs font-mono text-cyan-400">{step.duration}s</span>
+                </div>
+              );
+            })}
           </div>
 
           <button
