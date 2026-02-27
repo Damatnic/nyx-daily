@@ -31,6 +31,7 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   const [dragOffset, setDragOffset] = useState(0);
   const isDragging = useRef(false);
   const hasDragged = useRef(false);
+  const isPressed = useRef(false);          // true only while a pointer button is held
   const startXRef = useRef(0);
   const startYRef = useRef(0);
   const horizConfirmed = useRef(false);
@@ -83,6 +84,7 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   const onPointerDown = (e: React.PointerEvent) => {
     // Only primary button / single touch
     if (e.button !== undefined && e.button !== 0) return;
+    isPressed.current = true;
     startXRef.current = e.clientX;
     startYRef.current = e.clientY;
     isDragging.current = false;
@@ -91,6 +93,9 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   };
 
   const onPointerMove = (e: React.PointerEvent) => {
+    // Ignore hover — only process when a pointer button is actually held
+    if (!isPressed.current) return;
+
     const dx = e.clientX - startXRef.current;
     const dy = e.clientY - startYRef.current;
 
@@ -112,6 +117,8 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   };
 
   const onPointerUp = () => {
+    if (!isPressed.current) return;
+    isPressed.current = false;
     if (hasDragged.current) {
       if (dragOffset < -SWIPE_THRESHOLD) next();
       else if (dragOffset > SWIPE_THRESHOLD) prev();
