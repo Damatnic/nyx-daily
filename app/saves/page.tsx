@@ -7,8 +7,9 @@ import type { SavePayload } from '@/components/ui/SaveButton';
 const STORAGE_KEY = 'nyx-saves';
 const TYPE_LABELS: Record<string, string> = {
   news: '📰 News', reddit: '🟠 Reddit', product: '🚀 Product',
-  youtube: '▶️ YouTube', movie: '🎬 Movie', tv: '📺 TV',
-  game: '🎮 Game', album: '🎵 Music', gem: '💎 Gem', link: '🔗 Link',
+  youtube: '▶️ YouTube', video: '▶️ Video', movie: '🎬 Movie', tv: '📺 TV',
+  game: '🎮 Game', album: '🎵 Music', gem: '💎 Gem', tool: '🔧 Tool',
+  link: '🔗 Link',
 };
 
 function typeColor(type: string): string {
@@ -22,6 +23,8 @@ function typeColor(type: string): string {
     game: 'bg-green-500/10 text-green-400/80 border-green-500/15',
     album: 'bg-pink-500/10 text-pink-400/80 border-pink-500/15',
     gem: 'bg-cyan-500/10 text-cyan-400/80 border-cyan-500/15',
+    tool: 'bg-emerald-500/10 text-emerald-400/80 border-emerald-500/15',
+    video: 'bg-red-500/10 text-red-400/80 border-red-500/15',
     link: 'bg-slate-500/10 text-slate-400/80 border-slate-500/15',
   };
   return map[type] ?? map.link;

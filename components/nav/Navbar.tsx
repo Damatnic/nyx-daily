@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 import CommandPalette from '@/components/ui/CommandPalette';
+import SavesBadge from '@/components/ui/SavesBadge';
 
 const LINKS = [
   { href: '/',        label: 'Home' },
@@ -88,6 +89,7 @@ export default function Navbar({ urgentCount = 0 }: { urgentCount?: number }) {
                   }`}
                 >
                   {label}
+                  {href === '/saves' && <SavesBadge />}
                   {active && (
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/5 h-px bg-violet-500/70 rounded-t-full" />
                   )}

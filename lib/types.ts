@@ -186,6 +186,47 @@ export interface DailyBriefing {
   hidden_gems?: HiddenGem[];
   breathwork_session?: BreathworkSession;
   releases_today?: ReleasesToday;
+  hacker_news?: HackerNewsItem[];
+  personal_github?: PersonalGitHub;
+  tldr?: string;
+}
+
+export interface HackerNewsItem {
+  title: string;
+  link: string;
+  source: string;
+  domain?: string;
+  score: number;
+  num_comments: number;
+  hn_url: string;
+  snippet?: string | null;
+}
+
+export interface GitHubCommit {
+  repo: string;
+  message: string;
+  date: string;
+}
+
+export interface GitHubPR {
+  title: string;
+  repo: string;
+  url: string;
+  state: string;
+}
+
+export interface GitHubRepoActivity {
+  repo: string;
+  full: string;
+  pushes: number;
+  url: string;
+}
+
+export interface PersonalGitHub {
+  commits: GitHubCommit[];
+  prs: GitHubPR[];
+  repos?: GitHubRepoActivity[];
+  summary: string;
 }
 
 export interface ReleaseItem {

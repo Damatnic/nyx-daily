@@ -17,6 +17,9 @@ import Link from 'next/link';
 import RelativeTime from '@/components/ui/RelativeTime';
 import MobileQuickBar from '@/components/briefing/MobileQuickBar';
 import ReleasesToday from '@/components/briefing/ReleasesToday';
+import TLDRCard from '@/components/briefing/TLDRCard';
+import HackerNewsCard from '@/components/briefing/HackerNewsCard';
+import PersonalGitHubCard from '@/components/briefing/PersonalGitHubCard';
 
 export const dynamic = 'force-dynamic';
 
@@ -130,6 +133,9 @@ export default async function HomePage() {
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
 
+            {/* ── AI TL;DR ─────────────────────────────────────── */}
+            {briefing.tldr && <TLDRCard tldr={briefing.tldr} />}
+
             {/* ── NEWS ─────────────────────────────────────────── */}
             <div id="news" className="scroll-mt-16">
               <RevealCard delay={0}>
@@ -137,8 +143,8 @@ export default async function HomePage() {
               </RevealCard>
             </div>
 
-            {/* ── DEV: GitHub + Reddit ──────────────────────────── */}
-            {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length) && (
+            {/* ── DEV: GitHub + Reddit + HN + Personal GitHub ───── */}
+            {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length || !!briefing.hacker_news?.length || !!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
               <>
                 <SectionLabel label="Dev" accent="cyan" />
                 <div id="github" className={`grid gap-5 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
@@ -149,6 +155,16 @@ export default async function HomePage() {
                     <div id="reddit"><RevealCard delay={1}><RedditHot posts={briefing.reddit_hot} /></RevealCard></div>
                   )}
                 </div>
+                {(!!briefing.hacker_news?.length || !!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
+                  <div className={`grid gap-5 items-start ${briefing.hacker_news?.length && (briefing.personal_github?.repos?.length || briefing.personal_github?.prs?.length) ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                    {!!briefing.hacker_news?.length && (
+                      <RevealCard delay={0}><HackerNewsCard items={briefing.hacker_news} /></RevealCard>
+                    )}
+                    {(!!briefing.personal_github?.repos?.length || !!briefing.personal_github?.prs?.length) && (
+                      <RevealCard delay={1}><PersonalGitHubCard data={briefing.personal_github} /></RevealCard>
+                    )}
+                  </div>
+                )}
               </>
             )}
 

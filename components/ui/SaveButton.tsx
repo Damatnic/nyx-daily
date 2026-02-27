@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 export interface SavePayload {
-  type: 'news' | 'reddit' | 'product' | 'youtube' | 'movie' | 'tv' | 'game' | 'album' | 'gem' | 'link';
+  type: 'news' | 'reddit' | 'product' | 'youtube' | 'video' | 'movie' | 'tv' | 'game' | 'album' | 'gem' | 'tool' | 'link';
   title: string;
   url: string;
   source?: string;
