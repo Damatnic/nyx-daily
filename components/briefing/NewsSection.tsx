@@ -250,6 +250,8 @@ export default function NewsSection({ news }: NewsSectionProps) {
 
   // Featured story — top US headline shown prominently above tabs
   const featuredStory = news.us_news?.[0] ?? news.politics?.[0] ?? null;
+  // Exclude featured story from All tab to avoid showing it twice
+  const allItemsFiltered = allItems.filter(({ item }) => item !== featuredStory);
 
   return (
     <div className="nyx-card overflow-hidden">
@@ -286,10 +288,10 @@ export default function NewsSection({ news }: NewsSectionProps) {
 
       <div className="divider mb-1" />
 
-      {/* All tab: flat compact list */}
+      {/* All tab: flat compact list — featured story excluded (shown above) */}
       {activeTab === 'all' ? (
         <div>
-          {allItems.map(({ item, accent, label }, i) => (
+          {allItemsFiltered.map(({ item, accent, label }, i) => (
             <FlatRow key={i} item={item} accent={accent} label={label} rank={i + 1} />
           ))}
         </div>

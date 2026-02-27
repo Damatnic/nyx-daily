@@ -9,7 +9,7 @@ import {
   SortableContext, sortableKeyboardCoordinates,
   rectSortingStrategy, arrayMove,
 } from '@dnd-kit/sortable';
-import { RotateCcw } from 'lucide-react';
+import { RotateCcw, Eye } from 'lucide-react';
 
 import WidgetShell, { WidgetSize } from './WidgetShell';
 import type { DailyBriefing } from '@/lib/types';
@@ -33,9 +33,9 @@ import ArchiveStrip       from '@/components/briefing/ArchiveStrip';
 import MetaBar            from '@/components/briefing/MetaBar';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v5';
+const STORAGE_KEY = 'nyx-widget-layout-v6';
 
-interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean }
+interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean; visible: boolean }
 
 const SIZE_COL: Record<WidgetSize, string> = {
   full:  'col-span-12',
@@ -60,29 +60,29 @@ const SIZE_COL: Record<WidgetSize, string> = {
 //
 const DEFAULT_LAYOUT: WidgetConfig[] = [
   // Row 1 — orient
-  { id: 'carousel',        size: 'full', collapsed: false },
+  { id: 'carousel',        size: 'full', collapsed: false, visible: true },
   // Row 2 — act (only cards you DO, not just read)
-  { id: 'workout',         size: 'half', collapsed: false },
-  { id: 'breathwork',      size: 'half', collapsed: false },
+  { id: 'workout',         size: 'half', collapsed: false, visible: true },
+  { id: 'breathwork',      size: 'half', collapsed: false, visible: true },
   // Row 3 — read
-  { id: 'news',            size: 'full', collapsed: false },
+  { id: 'news',            size: 'full', collapsed: false, visible: true },
   // Row 4 — dev feeds
-  { id: 'github',          size: 'half', collapsed: false },
-  { id: 'reddit',          size: 'half', collapsed: false },
+  { id: 'github',          size: 'half', collapsed: false, visible: true },
+  { id: 'reddit',          size: 'half', collapsed: false, visible: true },
   // Row 5 — more dev
-  { id: 'hackernews',      size: 'half', collapsed: false },
-  { id: 'personal_github', size: 'half', collapsed: false },
+  { id: 'hackernews',      size: 'half', collapsed: false, visible: true },
+  { id: 'personal_github', size: 'half', collapsed: false, visible: true },
   // Row 6 — discovery
-  { id: 'producthunt',     size: 'half', collapsed: false },
-  { id: 'hidden_gems',     size: 'half', collapsed: false },
+  { id: 'producthunt',     size: 'half', collapsed: false, visible: true },
+  { id: 'hidden_gems',     size: 'half', collapsed: false, visible: true },
   // Row 7 — daily picks
-  { id: 'app_of_day',      size: 'half', collapsed: false },
-  { id: 'daily_wisdom',    size: 'half', collapsed: false },
+  { id: 'app_of_day',      size: 'half', collapsed: false, visible: true },
+  { id: 'daily_wisdom',    size: 'half', collapsed: false, visible: true },
   // Row 8 — media
-  { id: 'youtube',         size: 'half', collapsed: false },
-  { id: 'releases',        size: 'half', collapsed: false },
+  { id: 'youtube',         size: 'half', collapsed: false, visible: true },
+  { id: 'releases',        size: 'half', collapsed: false, visible: true },
   // Row 9 — archive
-  { id: 'archive',         size: 'full', collapsed: false },
+  { id: 'archive',         size: 'full', collapsed: false, visible: true },
 ];
 
 const WIDGET_META: Record<string, { label: string; accent: string }> = {
@@ -109,8 +109,10 @@ function loadLayout(): WidgetConfig[] {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) return DEFAULT_LAYOUT;
     const parsed: WidgetConfig[] = JSON.parse(saved);
-    const savedIds = new Set(parsed.map(w => w.id));
-    const merged = [...parsed];
+    // Migrate: fill in visible:true for any old entries that lack it
+    const migrated = parsed.map(w => ({ ...w, visible: w.visible ?? true }));
+    const savedIds = new Set(migrated.map(w => w.id));
+    const merged = [...migrated];
     for (const d of DEFAULT_LAYOUT) {
       if (!savedIds.has(d.id)) merged.push(d);
     }
@@ -155,8 +157,10 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
     });
   };
 
-  const setSize   = (id: string, size: WidgetSize) => setLayout(p => p.map(w => w.id === id ? { ...w, size }             : w));
-  const toggleCol = (id: string)                   => setLayout(p => p.map(w => w.id === id ? { ...w, collapsed: !w.collapsed } : w));
+  const setSize     = (id: string, size: WidgetSize) => setLayout(p => p.map(w => w.id === id ? { ...w, size }                  : w));
+  const toggleCol   = (id: string)                   => setLayout(p => p.map(w => w.id === id ? { ...w, collapsed: !w.collapsed } : w));
+  const hideWidget  = (id: string)                   => setLayout(p => p.map(w => w.id === id ? { ...w, visible: false }          : w));
+  const showWidget  = (id: string)                   => setLayout(p => p.map(w => w.id === id ? { ...w, visible: true }           : w));
   const resetLayout = () => { setLayout(DEFAULT_LAYOUT); try { localStorage.removeItem(STORAGE_KEY); } catch {} };
 
   // ── Has-data guards ──────────────────────────────────────────────────────
@@ -208,13 +212,19 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
     archive:         <ArchiveStrip       previews={recentPreviews} />,
   };
 
-  const active = layout.filter(w => hasData[w.id]);
-  const ids    = active.map(w => w.id);
+  const active  = layout.filter(w => hasData[w.id] && w.visible !== false);
+  const hidden  = layout.filter(w => hasData[w.id] && w.visible === false);
+  const ids     = active.map(w => w.id);
 
   return (
     <div className="flex flex-col gap-2">
       {mounted && (
-        <div className="flex justify-end">
+        <div className="flex items-center justify-end gap-3">
+          {hidden.length > 0 && (
+            <span className="text-[10px] text-slate-600">
+              {hidden.length} hidden
+            </span>
+          )}
           <button
             onClick={resetLayout}
             className="flex items-center gap-1.5 text-[10px] text-slate-700 hover:text-slate-400 transition-colors px-2 py-1"
@@ -243,6 +253,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
                     collapsed={w.collapsed}
                     onSizeChange={setSize}
                     onCollapseToggle={toggleCol}
+                    onHide={hideWidget}
                   >
                     {node}
                   </WidgetShell>
@@ -252,6 +263,29 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
           </div>
         </SortableContext>
       </DndContext>
+
+      {/* Hidden widgets restore strip */}
+      {mounted && hidden.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-2 items-center">
+          <span className="text-[9px] uppercase tracking-widest text-slate-700 mr-1">Hidden:</span>
+          {hidden.map(w => {
+            const meta = WIDGET_META[w.id] ?? { label: w.id, accent: 'slate' };
+            return (
+              <button
+                key={w.id}
+                onClick={() => showWidget(w.id)}
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-white/[0.07]
+                           bg-white/[0.02] text-[10px] text-slate-600 hover:text-slate-300
+                           hover:border-white/[0.15] transition-all duration-150"
+                title={`Restore ${meta.label}`}
+              >
+                <Eye size={9} />
+                {meta.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
