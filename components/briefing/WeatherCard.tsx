@@ -79,7 +79,8 @@ export default function WeatherCard({ weather, forecast }: Props) {
   const cls  = tempTextColor(temp);
 
   return (
-    <div className={`rounded-2xl border border-white/[0.07] bg-gradient-to-br ${grad} bg-[var(--card)] overflow-hidden`}>
+    <a href="https://wttr.in/Waukesha,WI" target="_blank" rel="noopener noreferrer"
+      className={`block rounded-2xl border border-white/[0.07] bg-gradient-to-br ${grad} bg-[var(--card)] overflow-hidden hover:border-white/[0.12] transition-colors group`}>
       <div className="p-5">
         {/* Top: emoji + temp */}
         <div className="flex items-start justify-between gap-3 mb-3">
@@ -105,7 +106,10 @@ export default function WeatherCard({ weather, forecast }: Props) {
           </div>
         )}
 
-        <p className="text-[9px] text-slate-700 uppercase tracking-widest mt-2">{location}</p>
+        <div className="flex items-center justify-between mt-2">
+          <p className="text-[9px] text-slate-700 uppercase tracking-widest">{location}</p>
+          <span className="text-[9px] text-slate-700 group-hover:text-slate-500 transition-colors">wttr.in ↗</span>
+        </div>
       </div>
 
       {/* Forecast */}
@@ -117,6 +121,6 @@ export default function WeatherCard({ weather, forecast }: Props) {
           </div>
         </div>
       )}
-    </div>
+    </a>
   );
 }

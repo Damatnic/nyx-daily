@@ -48,7 +48,8 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
 
           {/* Weather pill */}
           {wx && (
-            <div className="flex items-center gap-1.5 shrink-0">
+            <a href="https://wttr.in/Waukesha,WI" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-1.5 shrink-0 hover:opacity-75 transition-opacity">
               <span className="text-base leading-none select-none">{wx.emoji}</span>
               <span className={`text-base font-black tabular-nums ${tempCls}`}>{wx.temp}°</span>
               {wx.condition && (
@@ -59,7 +60,7 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
                   H:{wx.high} L:{wx.low}
                 </span>
               )}
-            </div>
+            </a>
           )}
 
           <span className="w-px h-3.5 bg-white/[0.08] shrink-0" />
