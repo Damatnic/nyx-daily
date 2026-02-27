@@ -1,4 +1,4 @@
-import { getTodaysBriefing } from '@/lib/data';
+import { getTodaysBriefing, getBriefingStreak } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
@@ -20,6 +20,7 @@ import ReleasesToday from '@/components/briefing/ReleasesToday';
 import TLDRCard from '@/components/briefing/TLDRCard';
 import HackerNewsCard from '@/components/briefing/HackerNewsCard';
 import PersonalGitHubCard from '@/components/briefing/PersonalGitHubCard';
+import RecentSaves from '@/components/briefing/RecentSaves';
 
 export const dynamic = 'force-dynamic';
 
@@ -73,7 +74,7 @@ function SectionLabel({ label, accent = 'slate' }: { label: string; accent?: str
 }
 
 export default async function HomePage() {
-  const briefing = await getTodaysBriefing();
+  const [briefing, streak] = await Promise.all([getTodaysBriefing(), getBriefingStreak()]);
 
   if (!briefing) {
     return (
@@ -116,6 +117,7 @@ export default async function HomePage() {
         headlineCount={headlineCount}
         upcomingCount={upcomingCount}
         focus={briefing.focus}
+        streak={streak}
       />
 
       <UrgencyBanner deadlines={briefing.school_deadlines} />
@@ -251,6 +253,7 @@ export default async function HomePage() {
                 apod={briefing.apod}
               />
             </div>
+            <RecentSaves />
           </div>
         </div>
 

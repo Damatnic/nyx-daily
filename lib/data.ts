@@ -38,6 +38,33 @@ export async function getAllDates(): Promise<string[]> {
   }
 }
 
+export async function getBriefingStreak(): Promise<number> {
+  try {
+    const filePath = path.join(dataDir, 'index.json');
+    if (!fs.existsSync(filePath)) return 0;
+    const dates: string[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    // Sort descending and count consecutive days from today (or yesterday)
+    const sorted = [...new Set(dates.map(d => (typeof d === 'string' ? d : (d as {date: string}).date)?.slice(0, 10)))]
+      .filter(Boolean).sort().reverse();
+    if (!sorted.length) return 0;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    let streak = 0;
+    let cursor = new Date(today);
+    for (const ds of sorted) {
+      const entryDate = new Date(ds + 'T12:00:00');
+      entryDate.setHours(0, 0, 0, 0);
+      const diff = Math.round((cursor.getTime() - entryDate.getTime()) / 86_400_000);
+      if (diff === 0 || (streak === 0 && diff === 1)) {
+        streak++;
+        cursor = entryDate;
+        cursor.setDate(cursor.getDate() - 1);
+      } else if (diff > 1) break;
+    }
+    return streak;
+  } catch { return 0; }
+}
+
 export async function getSchoolDeadlines(): Promise<SchoolDeadline[]> {
   try {
     const filePath = path.join(dataDir, 'school-deadlines.json');

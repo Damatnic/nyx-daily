@@ -9,6 +9,7 @@ interface Props {
   headlineCount: number;
   upcomingCount: number;
   focus?: string | null;
+  streak?: number;
 }
 
 function parseWeather(w: string) {
@@ -32,7 +33,7 @@ function tempColor(t: string) {
   return 'text-red-400';
 }
 
-export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus }: Props) {
+export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus, streak }: Props) {
   const year      = new Date(briefing.date + 'T12:00:00').getFullYear();
   const totalDays = year % 4 === 0 ? 366 : 365;
   const pct       = Math.round((dayOfYear / totalDays) * 100);
@@ -96,6 +97,12 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
               </div>
               <span className="text-[9px] text-slate-700 font-mono">{pct}%</span>
             </div>
+            {streak !== undefined && streak > 0 && (
+              <span className="text-[10px] font-mono hidden sm:flex items-center gap-1" title={`${streak}-day briefing streak`}>
+                <span className="text-orange-400 text-xs">🔥</span>
+                <span className="text-slate-400 tabular-nums">{streak}</span>
+              </span>
+            )}
             <div className="flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-soft-pulse" />
             </div>

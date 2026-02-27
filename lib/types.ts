@@ -188,7 +188,19 @@ export interface DailyBriefing {
   releases_today?: ReleasesToday;
   hacker_news?: HackerNewsItem[];
   personal_github?: PersonalGitHub;
-  tldr?: string;
+  tldr?: TLDRBrief;
+}
+
+export interface TLDRTopStory {
+  headline: string;
+  why: string;
+}
+
+export interface TLDRBrief {
+  summary: string;
+  top_story?: TLDRTopStory | null;
+  nyx_take?: string;
+  watch?: string[];
 }
 
 export interface HackerNewsItem {
