@@ -33,7 +33,7 @@ import ArchiveStrip       from '@/components/briefing/ArchiveStrip';
 import MetaBar            from '@/components/briefing/MetaBar';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v4';
+const STORAGE_KEY = 'nyx-widget-layout-v5';
 
 interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean }
 
@@ -59,20 +59,29 @@ const SIZE_COL: Record<WidgetSize, string> = {
 //   Row 9  archive         [full]
 //
 const DEFAULT_LAYOUT: WidgetConfig[] = [
+  // Row 1 — orient
   { id: 'carousel',        size: 'full', collapsed: false },
-  { id: 'news',            size: 'full', collapsed: false },
-  { id: 'github',          size: 'half', collapsed: false },
-  { id: 'reddit',          size: 'half', collapsed: false },
-  { id: 'hackernews',      size: 'half', collapsed: false },
-  { id: 'personal_github', size: 'half', collapsed: false },
-  { id: 'producthunt',     size: 'half', collapsed: false },
-  { id: 'hidden_gems',     size: 'half', collapsed: false },
-  { id: 'app_of_day',      size: 'half', collapsed: false },
-  { id: 'daily_wisdom',    size: 'half', collapsed: false },
-  { id: 'youtube',         size: 'half', collapsed: false },
-  { id: 'releases',        size: 'half', collapsed: false },
+  // Row 2 — act (only cards you DO, not just read)
   { id: 'workout',         size: 'half', collapsed: false },
   { id: 'breathwork',      size: 'half', collapsed: false },
+  // Row 3 — read
+  { id: 'news',            size: 'full', collapsed: false },
+  // Row 4 — dev feeds
+  { id: 'github',          size: 'half', collapsed: false },
+  { id: 'reddit',          size: 'half', collapsed: false },
+  // Row 5 — more dev
+  { id: 'hackernews',      size: 'half', collapsed: false },
+  { id: 'personal_github', size: 'half', collapsed: false },
+  // Row 6 — discovery
+  { id: 'producthunt',     size: 'half', collapsed: false },
+  { id: 'hidden_gems',     size: 'half', collapsed: false },
+  // Row 7 — daily picks
+  { id: 'app_of_day',      size: 'half', collapsed: false },
+  { id: 'daily_wisdom',    size: 'half', collapsed: false },
+  // Row 8 — media
+  { id: 'youtube',         size: 'half', collapsed: false },
+  { id: 'releases',        size: 'half', collapsed: false },
+  // Row 9 — archive
   { id: 'archive',         size: 'full', collapsed: false },
 ];
 
