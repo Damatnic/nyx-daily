@@ -8,7 +8,7 @@ export default function FocusCard({ focus }: FocusCardProps) {
   const clean = focus.replace(/\*\*/g, '').replace(/^[→🚨⚡]\s*/, '').trim();
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-violet-500/15 bg-gradient-to-br from-violet-950/60 via-[#0b0b18] to-[#0b0b18]">
+    <div className="relative overflow-hidden rounded-2xl border border-violet-500/15 bg-gradient-to-br from-violet-950/60 via-[var(--card)] to-[var(--card)]">
       {/* Ambient right glow */}
       <div
         className="absolute right-0 top-0 bottom-0 w-32 pointer-events-none"

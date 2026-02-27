@@ -20,27 +20,23 @@ export default function DailyExtras({ word, facts }: Props) {
 
   return (
     <div className="nyx-card p-4">
-      {/* Tab bar */}
-      <div className="flex items-center gap-1 mb-4">
-        {hasFacts && (
+      {/* Tab bar — only show when both options exist */}
+      {hasFacts && hasWord && (
+        <div className="flex items-center gap-1 mb-4">
           <button onClick={() => setTab('facts')}
             className={`text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md transition-all ${
               tab === 'facts' ? 'bg-violet-600/70 text-white' : 'text-slate-600 hover:text-slate-400 hover:bg-white/[0.03]'
-            }`}
-          >
+            }`}>
             Facts
           </button>
-        )}
-        {hasWord && (
           <button onClick={() => setTab('word')}
             className={`text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md transition-all ${
               tab === 'word' ? 'bg-violet-600/70 text-white' : 'text-slate-600 hover:text-slate-400 hover:bg-white/[0.03]'
-            }`}
-          >
+            }`}>
             Word
           </button>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Facts */}
       {tab === 'facts' && hasFacts && (

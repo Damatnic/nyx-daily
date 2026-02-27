@@ -79,7 +79,7 @@ export default function WeatherCard({ weather, forecast }: Props) {
   const cls  = tempTextColor(temp);
 
   return (
-    <div className={`rounded-2xl border border-white/[0.07] bg-gradient-to-br ${grad} bg-[#0b0b18] overflow-hidden`}>
+    <div className={`rounded-2xl border border-white/[0.07] bg-gradient-to-br ${grad} bg-[var(--card)] overflow-hidden`}>
       <div className="p-5">
         {/* Top: emoji + temp */}
         <div className="flex items-start justify-between gap-3 mb-3">

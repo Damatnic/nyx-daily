@@ -16,7 +16,7 @@ function fmt(n: number) {
 
 export default function RedditHot({ posts }: { posts?: RedditPost[] | null }) {
   if (!posts?.length) return null;
-  const top = posts.slice(0, 6);
+  const top = posts.slice(0, 5);
 
   return (
     <div className="nyx-card overflow-hidden">

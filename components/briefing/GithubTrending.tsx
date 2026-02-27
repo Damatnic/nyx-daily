@@ -20,7 +20,7 @@ const LANG_COLORS: Record<string, string> = {
 
 export default function GithubTrending({ repos }: { repos?: GitHubRepo[] | null }) {
   if (!repos?.length) return null;
-  const top = repos.slice(0, 8);
+  const top = repos.slice(0, 6);
 
   return (
     <div className="nyx-card overflow-hidden">

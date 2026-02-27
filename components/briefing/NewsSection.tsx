@@ -204,7 +204,16 @@ function buildSections(news: NewsData): Section[] {
 }
 
 // ─── FLAT ROW (used in All tab) ──────────────────────────────────────────────
+// Map bg-* accent class → a text color for the label
+const ACCENT_TEXT: Record<string, string> = {
+  'bg-blue-500': 'text-blue-500', 'bg-red-500': 'text-red-400',
+  'bg-violet-500': 'text-violet-400', 'bg-purple-500': 'text-purple-400',
+  'bg-amber-500': 'text-amber-400', 'bg-pink-500': 'text-pink-400',
+  'bg-lime-500': 'text-lime-400', 'bg-emerald-500': 'text-emerald-400',
+};
+
 function FlatRow({ item, accent, label, rank }: { item: NewsItem; accent: string; label: string; rank: number }) {
+  const catColor = ACCENT_TEXT[accent] ?? 'text-slate-600';
   return (
     <a href={item.link} target="_blank" rel="noopener noreferrer"
       className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3">
@@ -217,7 +226,7 @@ function FlatRow({ item, accent, label, rank }: { item: NewsItem; accent: string
         <div className="flex items-center gap-1.5 mt-0.5">
           <span className="text-[10px] text-slate-600">{item.source}</span>
           <span className="text-[10px] text-slate-700">·</span>
-          <span className="text-[10px] text-slate-700 uppercase tracking-wider">{label}</span>
+          <span className={`text-[10px] font-bold uppercase tracking-wider ${catColor}`}>{label}</span>
         </div>
       </div>
       <ExternalLink size={11} className="shrink-0 text-slate-800 group-hover:text-violet-500 transition-colors mt-0.5" />
