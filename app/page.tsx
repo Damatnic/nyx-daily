@@ -16,6 +16,7 @@ import RevealCard from '@/components/ui/RevealCard';
 import Link from 'next/link';
 import RelativeTime from '@/components/ui/RelativeTime';
 import MobileQuickBar from '@/components/briefing/MobileQuickBar';
+import ReleasesToday from '@/components/briefing/ReleasesToday';
 
 export const dynamic = 'force-dynamic';
 
@@ -54,6 +55,7 @@ const ACCENT: Record<string, string> = {
   amber:   'text-amber-600/80',
   violet:  'text-violet-500/80',
   emerald: 'text-emerald-600/80',
+  rose:    'text-rose-500/80',
   slate:   'text-slate-600',
 };
 function SectionLabel({ label, accent = 'slate' }: { label: string; accent?: string }) {
@@ -171,6 +173,20 @@ export default async function HomePage() {
                 <SectionLabel label="Watch" accent="violet" />
                 <div id="youtube" className="grid gap-5 scroll-mt-16 items-start grid-cols-1">
                   <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
+                </div>
+              </>
+            )}
+
+            {/* ── RELEASE RADAR ────────────────────────────────── */}
+            {briefing.releases_today && (
+              Object.values(briefing.releases_today).some(arr => arr.length > 0)
+            ) && (
+              <>
+                <SectionLabel label="Release Radar" accent="rose" />
+                <div id="releases" className="scroll-mt-16">
+                  <RevealCard delay={0}>
+                    <ReleasesToday releases={briefing.releases_today} />
+                  </RevealCard>
                 </div>
               </>
             )}

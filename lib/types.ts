@@ -185,4 +185,28 @@ export interface DailyBriefing {
   youtube_picks?: YouTubeVideo[];
   hidden_gems?: HiddenGem[];
   breathwork_session?: BreathworkSession;
+  releases_today?: ReleasesToday;
+}
+
+export interface ReleaseItem {
+  type: 'movie' | 'tv' | 'game' | 'album';
+  title: string;
+  url: string;
+  rating?: number | null;
+  // movie
+  year?: string;
+  // tv
+  network?: string;
+  // game
+  platforms?: string[];
+  released?: string;
+  // album
+  artist?: string;
+}
+
+export interface ReleasesToday {
+  movies: ReleaseItem[];
+  tv:     ReleaseItem[];
+  games:  ReleaseItem[];
+  music:  ReleaseItem[];
 }
