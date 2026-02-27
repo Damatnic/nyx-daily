@@ -1,23 +1,5 @@
 [
   {
-    "course": "Advanced SQL",
-    "desc": "Unit 1 Project",
-    "due_date": "2026-02-26",
-    "due_str": "Thu Feb 26",
-    "days": 0,
-    "weight": "high",
-    "done": false
-  },
-  {
-    "course": "Advanced SQL",
-    "desc": "Lesson 5 Practice Problems",
-    "due_date": "2026-02-26",
-    "due_str": "Thu Feb 26",
-    "days": 0,
-    "weight": "low",
-    "done": false
-  },
-  {
     "course": "Introductory Statistics",
     "desc": "Homework 9 - Hypothesis Testing Ch.9",
     "due_date": "2026-02-28",
@@ -330,6 +312,24 @@
     "due_str": "Wed Feb 25",
     "days": -1,
     "weight": "medium",
+    "done": true
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Unit 1 Project",
+    "due_date": "2026-02-26",
+    "due_str": "Thu Feb 26",
+    "days": 0,
+    "weight": "high",
+    "done": true
+  },
+  {
+    "course": "Advanced SQL",
+    "desc": "Lesson 5 Practice Problems",
+    "due_date": "2026-02-26",
+    "due_str": "Thu Feb 26",
+    "days": 0,
+    "weight": "low",
     "done": true
   }
 ]

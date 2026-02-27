@@ -1,45 +1,12 @@
 {
-  "generated_at": "2026-02-26T12:14:22.418802",
+  "generated_at": "2026-02-26T14:30:23.846413",
   "day": "Thursday",
   "date": "2026-02-26",
-  "weather": "\u2600\ufe0f Waukesha \u00b7 33\u00b0F (feels 24\u00b0F) \u00b7 Clear \u00b7 H:41\u00b0 L:13\u00b0",
+  "weather": "\u26c5 Waukesha \u00b7 37\u00b0F (feels 28\u00b0F) \u00b7 Partly Cloudy \u00b7 H:37\u00b0 L:13\u00b0",
   "quote": "Some changes look negative on the surface but you will soon realize that space is being created in your life for something new to emerge.",
   "author": "Eckhart Tolle",
   "focus": "\ud83d\udea8 **SQL \u2014 Unit 1 Project** is due TODAY. Drop everything else.",
-  "markets": [
-    {
-      "label": "S&P 500",
-      "symbol": "^GSPC",
-      "price": "6,868.63",
-      "change_pct": -0.31,
-      "up": false,
-      "kind": "index"
-    },
-    {
-      "label": "NASDAQ",
-      "symbol": "^IXIC",
-      "price": "22,696",
-      "change_pct": -0.73,
-      "up": false,
-      "kind": "index"
-    },
-    {
-      "label": "BTC",
-      "symbol": "BTC-USD",
-      "price": "$66,721",
-      "change_pct": -1.82,
-      "up": false,
-      "kind": "crypto"
-    },
-    {
-      "label": "ETH",
-      "symbol": "ETH-USD",
-      "price": "$1,983",
-      "change_pct": -3.47,
-      "up": false,
-      "kind": "crypto"
-    }
-  ],
+  "markets": [],
   "apod": {
     "title": "Webb and Hubble: IC 5332",
     "explanation": "What does the universe look like through infrared goggles? Our eyes can only see visible light, but astronomers want to see more. Today\u2019s APOD shows spiral galaxy IC 5332 as seen by two NASA telescopes: Webb in mid-infrared and Hubble in ultraviolet and visible light. To toggle between the two space-based views just slide your cursor over the image (or follow this link). The Hubble image highlight",
@@ -190,11 +157,11 @@
   "forecast": [
     {
       "date": "2026-02-26",
-      "high": 40,
+      "high": 37,
       "low": 13,
       "precip_pct": 2,
-      "condition": "Partly Cloudy",
-      "emoji": "\u26c5"
+      "condition": "Cloudy",
+      "emoji": "\u2601\ufe0f"
     },
     {
       "date": "2026-02-27",
@@ -206,7 +173,7 @@
     },
     {
       "date": "2026-02-28",
-      "high": 35,
+      "high": 36,
       "low": 21,
       "precip_pct": 44,
       "condition": "Snow",
@@ -235,7 +202,7 @@
       "url": "https://github.com/clockworklabs/SpacetimeDB",
       "description": "Development at the speed of light",
       "language": "Rust",
-      "stars": "20731",
+      "stars": "20780",
       "stars_today": 469
     },
     {
@@ -243,7 +210,7 @@
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "language": "Shell",
-      "stars": "63071",
+      "stars": "63176",
       "stars_today": 1528
     },
     {
@@ -251,7 +218,7 @@
       "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
       "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent syst",
       "language": "Python",
-      "stars": "11564",
+      "stars": "11617",
       "stars_today": 923
     },
     {
@@ -259,7 +226,7 @@
       "url": "https://github.com/bytedance/deer-flow",
       "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
       "language": "TypeScript",
-      "stars": "20993",
+      "stars": "21029",
       "stars_today": 622
     },
     {
@@ -267,7 +234,7 @@
       "url": "https://github.com/huggingface/skills",
       "description": "",
       "language": "Python",
-      "stars": "6884",
+      "stars": "6919",
       "stars_today": 711
     },
     {
@@ -275,7 +242,7 @@
       "url": "https://github.com/farion1231/cc-switch",
       "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode &amp; Gemini CLI.",
       "language": "Rust",
-      "stars": "20570",
+      "stars": "20597",
       "stars_today": 456
     },
     {
@@ -283,7 +250,7 @@
       "url": "https://github.com/D4Vinci/Scrapling",
       "description": "\ud83d\udd77\ufe0f An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
       "language": "Python",
-      "stars": "16634",
+      "stars": "16706",
       "stars_today": 2893
     },
     {
@@ -291,91 +258,118 @@
       "url": "https://github.com/ruvnet/claude-flow",
       "description": "\ud83c\udf0a The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous work",
       "language": "TypeScript",
-      "stars": "14837",
+      "stars": "14888",
       "stars_today": 210
     }
   ],
   "reddit_hot": [
     {
-      "title": "JD Vance: \"We're announcing today that we have decided to temporarily halt certain amounts of Medica",
-      "url": "https://v.redd.it/u75czyx2xplg1",
-      "permalink": "https://reddit.com/r/circled/comments/1resakd/jd_vance_were_announcing_today_that_we_have/",
-      "subreddit": "circled",
-      "score": 28088,
-      "num_comments": 5818,
-      "thumbnail": "https://external-preview.redd.it/c3V6Y3hqeTJ4cGxnMS4WYJbJIeB7Akq9iQqcQM28P0NJEtIeEPZAySdc7Myk.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=3817b80be880557fb1b940e4fcb232f3565c6aac"
-    },
-    {
-      "title": "4Chan knew about Jeffrey Epstein's death 38 minutes before the rest of the world. The FBI tried to f",
-      "url": "https://www.businessinsider.com/epstein-files-show-fbi-probed-4chan-posts-prison-death-2026-2?utm_source=reddit&amp;utm_medium=social&amp;utm_campaign=insider-law-sub-post",
-      "permalink": "https://reddit.com/r/law/comments/1rfe8qq/4chan_knew_about_jeffrey_epsteins_death_38/",
-      "subreddit": "law",
-      "score": 19802,
-      "num_comments": 859,
-      "thumbnail": "https://external-preview.redd.it/QcfdL48KKSvcMmoB6Z5E1_fjDoXukSA6oD487ThwJqA.jpeg?width=140&amp;height=70&amp;auto=webp&amp;s=d02de925a207783783d89671b73cff45b32bdb07"
-    },
-    {
-      "title": "Can they actually do this? JD Vance: \"We're announcing today that we have decided to temporarily hal",
-      "url": "https://v.redd.it/ewyh5g6qyplg1",
-      "permalink": "https://reddit.com/r/law/comments/1resjjt/can_they_actually_do_this_jd_vance_were/",
-      "subreddit": "law",
-      "score": 48429,
-      "num_comments": 5068,
-      "thumbnail": "https://external-preview.redd.it/NWppZWRqNnF5cGxnMbpqioIV_zh2AqBBBTY-RpC8ZzxfU3MKNy1BmsKD3Yxy.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=eeb1df055d15efabea19268e27355f3ee0bb68a2"
-    },
-    {
-      "title": "JD Vance: \"We're announcing today that we have decided to temporarily halt certain amounts of Medica",
-      "url": "https://v.redd.it/i3oe2b6kwplg1",
-      "permalink": "https://reddit.com/r/UnderReportedNews/comments/1res7tr/jd_vance_were_announcing_today_that_we_have/",
-      "subreddit": "UnderReportedNews",
-      "score": 43249,
-      "num_comments": 3928,
-      "thumbnail": "https://external-preview.redd.it/bjBjNXR2Nmt3cGxnMS4WYJbJIeB7Akq9iQqcQM28P0NJEtIeEPZAySdc7Myk.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=dd7e2e738401c4fda9a0aa27c3165a2699e60c80"
-    },
-    {
       "title": "Viral video of little Taiwanese girl getting shoved down while taking a photo at Tokyo's famous Shib",
       "url": "https://v.redd.it/okel63jwnslg1",
       "permalink": "https://reddit.com/r/whoathatsinteresting/comments/1rf46vr/viral_video_of_little_taiwanese_girl_getting/",
       "subreddit": "whoathatsinteresting",
-      "score": 19220,
-      "num_comments": 3199,
+      "score": 23263,
+      "num_comments": 3697,
       "thumbnail": "https://external-preview.redd.it/N2hlenJkanduc2xnMZcvjZELGhL_Q1PhL1MgR9zzGohuDVLo8SiaQMcFGimJ.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=920a262aa731921e997d43965067ecdf94477433"
+    },
+    {
+      "title": "An African father, who worked tirelessly in a mine, saved every penny he earned and surprised his ch",
+      "url": "https://v.redd.it/tvti8vwhovlg1",
+      "permalink": "https://reddit.com/r/MadeMeSmile/comments/1rfhbaw/an_african_father_who_worked_tirelessly_in_a_mine/",
+      "subreddit": "MadeMeSmile",
+      "score": 23509,
+      "num_comments": 707,
+      "thumbnail": "https://external-preview.redd.it/MWhuODVpeWhvdmxnMaC5osH4fY-q5pCuPBqddayatof-DDUFgXPaOOk_h6Pq.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=7258644b3ef9c0b0f90ce5026be22bbe8225d66c"
+    },
+    {
+      "title": "Eric Slover, the first Chief Warrant Officer 5 to ever be awarded the Medal of Honor.",
+      "url": "https://i.redd.it/hp1mnkn90vlg1.png",
+      "permalink": "https://reddit.com/r/interestingasfuck/comments/1rfdmu4/eric_slover_the_first_chief_warrant_officer_5_to/",
+      "subreddit": "interestingasfuck",
+      "score": 21475,
+      "num_comments": 3183,
+      "thumbnail": "https://preview.redd.it/hp1mnkn90vlg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=d687e301b6577c280dddedf00cb3196f5566a08f"
+    },
+    {
+      "title": "AITAH for refusing to take our daughter out of school early because she \"needs more time to get read",
+      "url": "https://www.reddit.com/r/AITAH/comments/1rf7upe/aitah_for_refusing_to_take_our_daughter_out_of/",
+      "permalink": "https://reddit.com/r/AITAH/comments/1rf7upe/aitah_for_refusing_to_take_our_daughter_out_of/",
+      "subreddit": "AITAH",
+      "score": 1829,
+      "num_comments": 2890,
+      "thumbnail": null
+    },
+    {
+      "title": "Dr Oz: \"We're announcing a 6 month national moratorium blocking all new enrollments for durable medi",
+      "url": "https://v.redd.it/nr6p6xcu3rlg1",
+      "permalink": "https://reddit.com/r/TrendoraX/comments/1rey44n/dr_oz_were_announcing_a_6_month_national/",
+      "subreddit": "TrendoraX",
+      "score": 17916,
+      "num_comments": 2875,
+      "thumbnail": "https://external-preview.redd.it/dTVxNmU2N3UzcmxnMYKl3hA2_WBlqlop5sE2hyz8r-5imZW_lDbmYej4RD4V.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=c8d4fc58a9a19b1379450feee5dec9c6832d2ac7"
     }
   ],
   "product_hunt": [
     {
-      "name": "ChatPal",
-      "tagline": "Practice speaking, get fluent! Discussion | Link",
-      "url": "https://www.producthunt.com/products/chatpal-2",
+      "name": "Rover by rtrvr.ai",
+      "tagline": "Turn your website into an AI agent with one script tag. Discussion | Link",
+      "url": "https://www.producthunt.com/products/rtrvr-ai",
       "votes": 0
     },
     {
-      "name": "Heimdall",
-      "tagline": "See the real-time telemetry for objects in Earth's orbit Discussion | Link",
-      "url": "https://www.producthunt.com/products/heimdall-3",
+      "name": "Wordwand",
+      "tagline": "AI anywhere you type. 10x your productivity Discussion | Link",
+      "url": "https://www.producthunt.com/products/wordwand",
       "votes": 0
     },
     {
-      "name": "Hush",
-      "tagline": "Blur your messy desktop to hide it during screen sharing Discussion | Link",
-      "url": "https://www.producthunt.com/products/hush-screen-share-focus-blur-desktop",
+      "name": "IronClaw",
+      "tagline": "Secure, open-source alternative to OpenClaw Discussion | Link",
+      "url": "https://www.producthunt.com/products/ironclaw",
       "votes": 0
     },
     {
-      "name": "My Texas Method",
-      "tagline": "Automate your strength training with Texas Method Discussion | Link",
-      "url": "https://www.producthunt.com/products/my-texas-method",
+      "name": "Chiron",
+      "tagline": "AI production mentor that lives inside your DAW Discussion | Link",
+      "url": "https://www.producthunt.com/products/chiron",
       "votes": 0
     },
     {
-      "name": "Digital Twin by Read AI",
-      "tagline": "cc: ada@read.ai. and let your digital twin handle the rest Discussion | Link",
-      "url": "https://www.producthunt.com/products/read-dashboard",
+      "name": "OpenClawCity",
+      "tagline": "A persistent city where AI agents live, create, and evolve Discussion | Link",
+      "url": "https://www.producthunt.com/products/openclawcity",
       "votes": 0
     }
   ],
   "news": {
     "us_news": [
+      {
+        "title": "These major issues have brought together Democrats and Republicans in states",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726431/data-centers-ai-trump-housing-states",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Across the country, Republicans and Democrats have found bipartisan agreement on regulating artificial intelligence and data centers. But it's not just big tech aligning the two parties.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Why it's a bit surprising that the U.S. is attending a key global flu meeting",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726308/flu-vaccine-world-health-organization-centers-disease-control",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "After the U.S. withdrew from the World Health Organization, it wasn't clear they would participate in this WHO-led meeting to determine the recipe for the next flu vaccine.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Secretly rewritten nuclear safety rules are made public",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5727510/secret-rules-experimental-nuclear-reactors-now-public",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "The Energy Department made the rules public a month after NPR reported about their existence. The rules slash requirements for security and environmental protections.",
+        "domain": "npr.org"
+      },
       {
         "title": "Mortgage rates fall below 6% for the first time in years",
         "link": "https://www.npr.org/2026/02/26/nx-s1-5726386/home-mortgage-rates-below-6",
@@ -404,85 +398,139 @@
         "domain": "npr.org"
       },
       {
-        "title": "Pentagon shifts toward maintaining ties to Scouting",
-        "link": "https://www.npr.org/2026/02/26/nx-s1-5686528/pentagon-scouting-boys-girls-hegseth",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Months after NPR reported on the Pentagon's efforts to sever ties with Scouting America, efforts to maintain the partnership have new momentum",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Why farmers in California are backing a giant solar farm",
-        "link": "https://www.npr.org/2026/02/26/nx-s1-5726411/farmers-california-san-joaquin-valley-solar-farm-westlands-water-district-golden-state-clean-energy",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Many farmers have had to fallow land as a state law comes into effect limiting their access to water. There's now a push to develop some of that land \u2026 into solar farms.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Every business wants your review. What's with the feedback frenzy?",
-        "link": "https://www.npr.org/2026/02/26/nx-s1-5685107/online-review-survey-feedback-fatigue-amazon-shopping",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Customers want to read reviews and businesses need reviews to attract customers. But the constant demand for reviews could be creating a feedback backlash, experts say.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Hillary Clinton testifies she has no information on Epstein crimes, can't recall meeting him",
-        "link": "https://www.pbs.org/newshour/politics/hillary-clinton-testifies-she-has-no-information-on-epstein-crimes-cant-recall-meeting-him",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T161202Z_2073109317_RC2RTJAIL4PZ_RTRMADP_3_USA-TRUMP-EPSTEIN-CLINTON-1024x768.jpg",
+        "title": "Hillary Clinton deposition paused over leaked photo",
+        "link": "https://www.pbs.org/newshour/politics/hillary-clinton-deposition-paused-over-leaked-photo",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T155251Z_1789445837_RC2QTJA26P01_RTRMADP_3_USA-TRUMP-EPSTEIN-CLINTON-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "The closed-door depositions in the Clintons' hometown of Chappaqua, a typically quiet hamlet north of New York City, come after months of tense back-and-forth between the former high-powered Democrati",
+        "snippet": "Republican Rep. Lauren Boebert sent a photo of the closed-door proceeding to a conservative influencer.",
         "domain": "pbs.org"
       },
       {
-        "title": "WATCH LIVE: Schumer holds briefing after reports DOJ withheld Epstein files with Trump allegations",
-        "link": "https://www.pbs.org/newshour/politics/watch-live-schumer-holds-briefing-after-reports-doj-withheld-epstein-files-with-trump-allegations",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-25T203947Z_1142369207_RC27TJAP538W_RTRMADP_3_USA-CONGRESS-1024x683.jpg",
+        "title": "WATCH: Lawmakers may question Lutnick on Epstein ties, Comer says",
+        "link": "https://www.pbs.org/newshour/politics/watch-lawmakers-may-question-lutnick-on-epstein-ties-comer-says",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T161801Z_983662899_RC2RTJAN1UC3_RTRMADP_3_USA-TRUMP-EPSTEIN-CLINTON-1024x768.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "The Justice Department said Wednesday that it was looking into whether it had improperly withheld documents from the Jeffrey Epstein files after several news organizations reported that some records i",
+        "snippet": "Rep. James Comer told reporters that it's \"very possible\" that Commerce Secretary Howard Lutnick is called to testify in the House investigation into Jeffrey Epstein.",
         "domain": "pbs.org"
       },
       {
-        "title": "Kilmar Abrego Garcia asks U.S. judge to dismiss criminal charges, saying Trump administration's case is vindictive",
-        "link": "https://www.pbs.org/newshour/politics/kilmar-abrego-garcia-asks-u-s-judge-to-dismiss-criminal-charges-saying-trump-administrations-case-is-vindictive",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2025-12-12T133508Z_1167145295_RC21FIA6J1LY_RTRMADP_3_USA-TRUMP-MIGRATION-ABREGO-1024x683.jpg",
+        "title": "What to know about the LA school superintendent whose home was searched by the FBI",
+        "link": "https://www.pbs.org/newshour/nation/what-to-know-about-the-la-school-superintendent-whose-home-was-searched-by-the-fbi",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2025/04/deportationfears-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Abrego Garcia, whose mistaken deportation has galvanized both sides of the immigration debate, claims that the criminal prosecution is vindictive, pushed by officials from President Donald Trump's adm",
+        "snippet": "Carvalho has regularly opposed the administration's aggressive crackdown in and around Los Angeles, referencing his own history as an immigrant living in the U.S. illegally.",
         "domain": "pbs.org"
       },
       {
-        "title": "Instagram says it will notify parents if teens 'repeatedly' search for terms related to suicide",
-        "link": "https://www.pbs.org/newshour/nation/instagram-says-it-will-notify-parents-if-teens-repeatedly-search-for-terms-related-to-suicide",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-23T163009Z_1382008186_RC2MKHAGGL7V_RTRMADP_3_SOCIAL-MEDIA-TRIAL-META-1024x683.jpg",
+        "title": "If you have federal student loan debt, here's what experts want you to know",
+        "link": "https://www.pbs.org/newshour/nation/if-you-have-federal-student-loan-debt-heres-what-experts-want-you-to-know",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2025/04/studentloans-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "The alerts will only go to parents who are enrolled in Instagram's parental supervision program.",
+        "snippet": "Eventually, the changes will streamline the system and reduce the number of repayment options, but right now, trying to understand what's happening is a little like staring into a bowl of alphabet sou",
         "domain": "pbs.org"
       },
       {
-        "title": "WATCH LIVE: Rev. Jesse Jackson lies in repose at Rainbow PUSH Coalition headquarters in Chicago",
-        "link": "https://www.pbs.org/newshour/politics/watch-live-rev-jesse-jackson-lies-in-repose-at-rainbow-push-coalition-headquarters-in-chicago",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T152232Z_848810411_RC2RTJACEVMW_RTRMADP_3_PEOPLE-JESSE-JACKSON-1024x682.jpg",
+        "title": "As risk of war looms, U.S.-Iran nuclear talks wrap with no deal announced",
+        "link": "https://www.pbs.org/newshour/world/as-risk-of-war-looms-u-s-iran-nuclear-talks-wrap-with-no-deal-announced",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T164513Z_336909903_RC2STJAMWSG3_RTRMADP_3_IRAN-CRISIS-TALKS-1024x682.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Cross-country memorial services for the Rev. Jesse Jackson Sr. are set to begin Thursday in Chicago, the city the late civil rights leader called home.",
+        "snippet": "Trump wants a deal to constrain Iran's nuclear program, and he sees an opportunity while the country is struggling at home with growing dissent following nationwide protests.",
         "domain": "pbs.org"
       },
       {
-        "title": "DHS official promises that federal immigration agents won't be at polling places during midterm elections",
-        "link": "https://www.pbs.org/newshour/politics/dhs-official-promises-that-federal-immigration-agents-wont-be-at-polling-places-during-midterm-elections",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2025-11-04T204732Z_649091038_RC2TPHAX267H_RTRMADP_3_USA-ELECTION-CALIFORNIA-1024x707.jpg",
+        "title": "4 things to know about the deadly boat shooting in Cuban waters",
+        "link": "https://www.pbs.org/newshour/world/4-things-to-know-about-the-deadly-boat-shooting-in-cuban-waters",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-26T041351Z_1511785103_RC2DTJAW03X5_RTRMADP_3_CUBA-CRISIS-GUNFIRE-1024x693.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "A Department of Homeland Security official on Wednesday told state election administrators that immigration agents will not be stationed at the polls during November's midterm elections, trying to swa",
+        "snippet": "The confrontation has resulted in investigations in both Cuba and the United States and could add to tensions between the two countries.",
         "domain": "pbs.org"
+      },
+      {
+        "title": "Hillary Clinton testifies she never met Epstein, accuses GOP of \"cover-up\"",
+        "link": "https://www.axios.com/2026/02/26/hillary-clinton-deposition-epstein-investigation-house-oversight",
+        "image": "https://images.axios.com/38v5uxkLgcv1zeyY80dSBYpeP-M=/0x512:6000x3887/1366x768/2026/02/26/1772116113153.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Former Secretary of State Hillary Clinton testified that she has no new information regarding Jeffrey Epstein's criminal activities during a deposition before the House Oversight Committee on Thursday",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Scoop: US citizens were on stolen boat in deadly shooting with Cuba's coast guard",
+        "link": "https://www.axios.com/2026/02/26/us-americans-cuba-boat-shooting-rubio",
+        "image": "https://images.axios.com/33rnaFCdcIkPTTHSr0P9QExzGHE=/0x0:5166x2906/1366x768/2026/02/26/1772134839963.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "The 24-foot boat involved in a deadly clash with Cuba's coast guard was stolen in the Florida Keys and had American citizens aboard, U.S. officials tell Axios.Why it matters: Four people were killed a",
+        "domain": "axios.com"
+      },
+      {
+        "title": "U.S.-Iran nuclear talks were \"positive,\" senior U.S. official says",
+        "link": "https://www.axios.com/2026/02/26/iran-nuclear-talks-geneva",
+        "image": "https://images.axios.com/ssfwg6eUy9sizC35h6C8IFqJ5GM=/0x210:3200x2010/1366x768/2026/02/26/1772109361746.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Thursday's nuclear negotiations between the U.S. and Iran in Geneva made \"significant progress\" and there will be further discussions next week, Omani Foreign Minister Badr al-Busaidi said at the conc",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Leaked photo briefly derails Hillary Clinton deposition",
+        "link": "https://www.axios.com/2026/02/26/hillary-clinton-epstein-deposition-leaked-photo",
+        "image": "https://images.axios.com/mM9-Wcx1pgMUE-KDunX9nbQ4pDI=/0x384:6000x3759/1366x768/2026/02/26/1772128897831.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Former Secretary of State Hillary Clinton's deposition before the House Oversight Committee was paused Thursday afternoon after Rep. Lauren Boebert (R-Colo.) took an unauthorized photo of Clinton and ",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Americans fear Iran but question Trump's judgment: poll",
+        "link": "https://www.axios.com/2026/02/26/iran-trump-nuclear-talks-trust-poll-ap-norc",
+        "image": "https://datawrapper.dwcdn.net/XvmiA/fallback.png",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Data: AP-NORC; Chart: Kavya Beheraj/AxiosMost U.S. adults are concerned about the threat Iran poses to the U.S., but a majority say they don't trust President Trump's handling of foreign affairs, acco",
+        "domain": "axios.com"
+      },
+      {
+        "title": "House Democratic leaders to force vote on reining in Trump's Iran war powers",
+        "link": "https://www.axios.com/2026/02/26/democrats-iran-war-powers-vote-trump",
+        "image": "https://images.axios.com/eOhcDADlqu9bixzzGcrk7pDrwT8=/0x417:4000x2667/1366x768/2026/02/26/1772128277132.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "House Democratic leadership on Thursday announced plans to force a vote next week on a resolution that would require President Trump to seek congressional authorization to use military force in Iran.W",
+        "domain": "axios.com"
+      },
+      {
+        "title": "The First Couple of a Dysfunctional DHS",
+        "link": "https://www.theatlantic.com/politics/2026/02/dhs-couple-noem-lewandowski/686153/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/nQfrpKLPhrFehPLyjbW5bByOQ9c=/media/img/mt/2026/02/2026_02_26_Coppins_DHS_Couple_final/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "A forthcoming book reveals new details about Kristi Noem and Corey Lewandowski.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "The High-Stakes Fight Between Hegseth and Anthropic",
+        "link": "https://www.theatlantic.com/ideas/2026/02/hegseth-anthropic-dispute-ai/686150/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/a60UFHrXemPOpwsJ-LwqJDdZzN4=/media/img/mt/2026/02/2026_02_26_How_Much_Should_The_Pentagon_Control_Ai/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Even when companies vow to develop AI responsibly, geopolitics may force them to abandon that commitment.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "The Ruthless Benevolence of a Great Editor",
+        "link": "https://www.theatlantic.com/books/2026/02/ann-godoff-penguin-editor-obituary/686151/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/CjEZFmbTdf7ao_WAnMFesDk-QII=/media/img/mt/2026/02/2026_02_Appreciation_Ann_Godoff/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Ann Godoff, who died this week, cared passionately about her writers\u2014and much less about her own ego.",
+        "domain": "theatlantic.com"
       },
       {
         "title": "A Presidential Problem of Canine Proportions",
@@ -510,90 +558,27 @@
         "source": "The Atlantic",
         "snippet": "Test your knowledge\u2014and read our latest stories for a little extra help.",
         "domain": "theatlantic.com"
-      },
-      {
-        "title": "The Reckless Women Who Changed Journalism",
-        "link": "https://www.theatlantic.com/books/2026/02/women-who-reinvented-journalism/686146/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/P2NDiJ2QVs2oz8ZUp2X0Ik59pTc=/media/img/mt/2026/02/2026_02_25_Schwartz_Women_in_American_Journalism/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "Two new books demonstrate how Martha Gellhorn, Janet Flanner, and other reporters took journalism in directions that men could not.",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "Enough With the Bros",
-        "link": "https://www.theatlantic.com/culture/2026/02/bro-meme-lit-bro-tech-bro/686143/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/H5cEGe4R0NK5ifkosUwMENe-8n0=/media/img/mt/2026/02/BroPainting_V2/original.png",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "For a decade, the trope has been a reliable\u2014and lazy\u2014way to elevate pet peeves into trends.",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "When Did Literature Get Less Dirty?",
-        "link": "https://www.theatlantic.com/books/2026/02/sex-scenes-literature-heterosexual-romance/686148/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/clf87Glxt9VERzohQMhN0hQYqsA=/media/img/mt/2026/02/2026_02_20_literature/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "A puritan strain is manifesting in realist novels as a marked absence of straight sex.",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "House Democratic leaders to force vote on reining in Trump's Iran war powers",
-        "link": "https://www.axios.com/2026/02/26/democrats-iran-war-powers-vote-trump",
-        "image": "https://images.axios.com/eOhcDADlqu9bixzzGcrk7pDrwT8=/0x417:4000x2667/1366x768/2026/02/26/1772128277132.jpeg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "House Democratic leadership on Thursday announced plans to force a vote next week on a resolution that would require President Trump to seek congressional authorization to use military force in Iran.W",
-        "domain": "axios.com"
-      },
-      {
-        "title": "Hillary Clinton testifies she never met Epstein, accuses GOP of \"cover-up\"",
-        "link": "https://www.axios.com/2026/02/26/hillary-clinton-deposition-epstein-investigation-house-oversight",
-        "image": "https://images.axios.com/38v5uxkLgcv1zeyY80dSBYpeP-M=/0x512:6000x3887/1366x768/2026/02/26/1772116113153.jpeg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Former Secretary of State Hillary Clinton testified that she has no new information regarding Jeffrey Epstein's criminal activities during a deposition before the House Oversight Committee on Thursday",
-        "domain": "axios.com"
-      },
-      {
-        "title": "Mortgage rate dips below 6% for the first time since 2022",
-        "link": "https://www.axios.com/2026/02/26/mortgage-rate-6-percent",
-        "image": "https://graphics.axios.com/hermesv2/2026-02-26-1212-average-u-s-30-year/fallbacks/2026-02-26-1212-average-u-s-30-year-fallback.png",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Data: Freddie Mac via Fred; Chart: Axios VisualsThe average rate on the 30-year mortgage dipped below 6% for the first time since 2022, per closely watched Freddie Mac data released Thursday.Why it ma",
-        "domain": "axios.com"
-      },
-      {
-        "title": "Americans fear Iran but question Trump's judgment: poll",
-        "link": "https://www.axios.com/2026/02/26/iran-trump-nuclear-talks-trust-poll-ap-norc",
-        "image": "https://datawrapper.dwcdn.net/XvmiA/fallback.png",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Data: AP-NORC; Chart: Kavya Beheraj/AxiosMost U.S. adults are concerned about the threat Iran poses to the U.S., but a majority say they don't trust President Trump's handling of foreign affairs, acco",
-        "domain": "axios.com"
-      },
-      {
-        "title": "AI \"hot takes\" are becoming a market risk",
-        "link": "https://www.axios.com/2026/02/26/ai-blog-posts-market-citrini",
-        "image": "https://images.axios.com/e62c5reQ2zAS1N_Dp_sJ__3EksE=/0x0:1280x720/2025/08/20/1755727861841.gif",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Companies across sectors are confronting an increasingly unavoidable narrative: AI can replicate your business. Why it matters: Narrative volatility is a new risk category that communications teams mu",
-        "domain": "axios.com"
-      },
-      {
-        "title": "Economists are questioning the K-shaped economy narrative",
-        "link": "https://www.axios.com/2026/02/26/us-economy-stock-market",
-        "image": "https://images.axios.com/dNFiKTBBC_KxDnqhFu_wXzDoTyQ=/1366x768/smart/2022/01/18/183952-1642531192319.jpg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "The K-shaped economy \u2014 wealthy Americans propping up consumer spending while poorer consumers increasingly pull back \u2014 has become the economic consensus. One big problem: Some economists warn that the",
-        "domain": "axios.com"
       }
     ],
     "politics": [
+      {
+        "title": "These major issues have brought together Democrats and Republicans in states",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5726431/data-centers-ai-trump-housing-states",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "Across the country, Republicans and Democrats have found bipartisan agreement on regulating artificial intelligence and data centers. But it's not just big tech aligning the two parties.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Secretly rewritten nuclear safety rules are made public",
+        "link": "https://www.npr.org/2026/02/26/nx-s1-5727510/secret-rules-experimental-nuclear-reactors-now-public",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR Politics",
+        "snippet": "The Energy Department made the rules public a month after NPR reported about their existence. The rules slash requirements for security and environmental protections.",
+        "domain": "npr.org"
+      },
       {
         "title": "U.S. and Iran to hold third round of nuclear talks",
         "link": "https://www.npr.org/2026/02/26/nx-s1-5726343/u-s-and-iran-to-hold-third-round-of-nuclear-talks",
@@ -631,24 +616,6 @@
         "domain": "npr.org"
       },
       {
-        "title": "Crowded Democratic field could give GOP an opening in California governor's race",
-        "link": "https://www.npr.org/2026/02/26/nx-s1-5720925/crowded-democratic-field-could-give-gop-an-opening-in-california-governors-race",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR Politics",
-        "snippet": "In California, the two candidates with the most votes in the primary advance to the general election, regardless of party. That's an issue for Democrats who have nine major candidates for governor.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "What to know about Sen. Katie Britt, who's negotiating changes to how ICE operates",
-        "link": "https://www.npr.org/2026/02/25/nx-s1-5718189/what-to-know-about-sen-katie-britt-whos-negotiating-changes-to-how-ice-operates",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR Politics",
-        "snippet": "Alabama Sen. Katie Britt came to national prominence in 2024 with an image as a firebrand on the right but has developed a reputation as a bipartisan deal maker in the Senate.",
-        "domain": "npr.org"
-      },
-      {
         "title": "Hillary Clinton testifies that she has no information on Epstein\u2019s criminal activities in House oversight hearing \u2013 live",
         "link": "https://www.theguardian.com/us-news/live/2026/feb/26/us-politics-latest-news-hillary-clinton-jeffrey-epstein-donald-trump",
         "image": null,
@@ -658,112 +625,49 @@
         "domain": "theguardian.com"
       },
       {
+        "title": "How Trump shifted from opposing foreign wars to threatening war in Iran",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/trump-foreign-wars-iran",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "The rationale to justify the US striking first has shifted from the country killing protesters to its developing weaponsAs senior Democrats emerged from a classified briefing on Iran with the secretar",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Melania Trump to lead UN security council session, White House says",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/melania-trump-un-security-council",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "First lady to preside over meeting on \u2018children, technology and education in conflict\u2019 in New York next monthFirst lady Melania Trump is set to lead a session of the United Nations security council on",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Mamdani makes unannounced trip to meet Trump in Washington",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/zohran-mamdani-trump-washington",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "New York mayor to meet president \u2013 who called Mamdani a \u2018nice guy\u2019 during State of the Union \u2013 for second timeNew York mayor Zohran Mamdani is meeting Donald Trump in Washington on Thursday, during an",
+        "domain": "theguardian.com"
+      },
+      {
+        "title": "Columbia student arrested by DHS agents who posed as police officers",
+        "link": "https://www.theguardian.com/us-news/2026/feb/26/columbia-student-detained-federal-agents",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theguardian.com",
+        "source": "The Guardian US",
+        "snippet": "Acting university president says agents misrepresented themselves to gain entry to the residential buildingSign up for the Breaking News US email to get newsletter alerts in your inboxA Columbia Unive",
+        "domain": "theguardian.com"
+      },
+      {
         "title": "Hillary Clinton accuses Republicans of \u2018fishing expedition\u2019 in Epstein testimony",
         "link": "https://www.theguardian.com/us-news/2026/feb/26/clintons-testify-epstein-files-house",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "Clinton delivers withering rebuke and says hearing is an attempt to deflect attention from Trump\u2019s actionsHillary Clinton delivered a withering rebuke to a congressional committee investigating her su",
+        "snippet": "Clinton delivers withering rebuke and says hearing is an attempt to deflect attention from Trump\u2019s actionsSign up for the Breaking News US email to get newsletter alerts in your inboxHillary Clinton d",
         "domain": "theguardian.com"
-      },
-      {
-        "title": "Singer D4vd is target of investigation in LA over murder of teen found dead in his car",
-        "link": "https://www.theguardian.com/us-news/2026/feb/26/singer-d4vd-teen-death-investigation-los-angeles",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Court documents from Los Angeles county describe the artist, 20, as the target in legal case over death of teen girlMore than six months after the body of a teenage girl was found in his abandoned Tes",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Columbia says DHS detained student after agents entered university building",
-        "link": "https://www.theguardian.com/us-news/2026/feb/26/columbia-student-detained-federal-agents",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Acting university president says agents misrepresented themselves to gain entry to the residential building Columbia University said on Thursday morning that one of its students was arrested by federa",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "\u2018Very Republican, very patriotic\u2019: right-leaning civic centers now offer courses at US public colleges",
-        "link": "https://www.theguardian.com/us-news/2026/feb/26/conservative-civic-centers-public-colleges",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Republican lawmakers push for conservative professors to counter purported leftwing indoctrination in schoolsThis story was produced by the Hechinger Report, a non-profit, independent news organizatio",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Democrats call for freeze on gas exports as energy prices soar for US households",
-        "link": "https://www.theguardian.com/us-news/2026/feb/26/democrats-gas-exports-energy-prices",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theguardian.com",
-        "source": "The Guardian US",
-        "snippet": "Families are \u2018struggling with cost of heating their homes\u2019, letter says as Trump repeatedly pledges to slash utility billsAs energy prices for US households soar nationwide, Democratic and progressive",
-        "domain": "theguardian.com"
-      },
-      {
-        "title": "Comer: \u2018Very possible\u2019 Lutnick will be asked to testify on Epstein ties",
-        "link": "https://thehill.com/homenews/house/5756788-comer/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/comerjames_011326gn03_w.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Rep. James Comer (R-Ky.) said Thursday it is \u201cvery possible\u201d that Commerce Secretary Howard Lutnick could be called to testify before the House Oversight Committee in its ongoing probe of the case tie",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Newsom: Vance \u2018scares me \u2026 almost more than Trump\u2019",
-        "link": "https://thehill.com/homenews/state-watch/5756809-newsom-vance-election-security/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26044564246414_046eaa-e1771076582965.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "California Gov. Gavin Newsom (D) shared his trepidation about Vice President Vance in a recent interview with MS NOW, describing him as &#8220;dangerous.&#8221; \u201cVance, for whatever reason, scares me,",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Trump projects his failings onto others in his State of the Union address",
-        "link": "https://thehill.com/opinion/white-house/5756022-trump-state-of-union-lies/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26056162387208.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "President Trump's State of the Union address was filled with lies, insults, and projection, as he falsely accused his enemies of misconduct and malign behavior while failing to take responsibility for",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "FBI returning Nancy Guthrie\u2019s home to family after final sweep: Reports",
-        "link": "https://thehill.com/homenews/state-watch/5756800-nancy-guthrie-fbi-arizona/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26039024981497-e1770519212711.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Investigators spent considerable time near the front door, appearing to focus on the porch and walkway where a trail of her blood was discovered.",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Judge declines to halt White House ballroom construction",
-        "link": "https://thehill.com/regulation/court-battles/5756822-judge-declines-halt-trump-white-house-construction/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/10/AP25296769932452-e1761316133616.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "A federal judge on Thursday declined to halt President Trump\u2019s White House ballroom construction project&#160;at the request of preservationists who sued.&#160; U.S. District Judge Richard Leon said t",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "What to know about Cuba firefight that killed 4 aboard US boat",
-        "link": "https://thehill.com/policy/international/5756680-investigation-cuban-boat-shootout/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP21204478941311-e1772112091857.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "A shootout aboard a U.S. boat in Cuban waters on Wednesday resulted in four deaths and six injuries that have raised already high territorial tensions between Cuba and the U.S.&#160; U.S. and Florida ",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "House Democratic leaders to force vote on reining in Trump's Iran war powers",
-        "link": "https://www.axios.com/2026/02/26/democrats-iran-war-powers-vote-trump",
-        "image": "https://images.axios.com/eOhcDADlqu9bixzzGcrk7pDrwT8=/0x417:4000x2667/1366x768/2026/02/26/1772128277132.jpeg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios Politics",
-        "snippet": "House Democratic leadership on Thursday announced plans to force a vote next week on a resolution that would require President Trump to seek congressional authorization to use military force in Iran.W",
-        "domain": "axios.com"
       },
       {
         "title": "Hillary Clinton testifies she never met Epstein, accuses GOP of \"cover-up\"",
@@ -775,12 +679,30 @@
         "domain": "axios.com"
       },
       {
-        "title": "Mortgage rate dips below 6% for the first time since 2022",
-        "link": "https://www.axios.com/2026/02/26/mortgage-rate-6-percent",
-        "image": "https://graphics.axios.com/hermesv2/2026-02-26-1212-average-u-s-30-year/fallbacks/2026-02-26-1212-average-u-s-30-year-fallback.png",
+        "title": "Scoop: US citizens were on stolen boat in deadly shooting with Cuba's coast guard",
+        "link": "https://www.axios.com/2026/02/26/us-americans-cuba-boat-shooting-rubio",
+        "image": "https://images.axios.com/33rnaFCdcIkPTTHSr0P9QExzGHE=/0x0:5166x2906/1366x768/2026/02/26/1772134839963.jpg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios Politics",
-        "snippet": "Data: Freddie Mac via Fred; Chart: Axios VisualsThe average rate on the 30-year mortgage dipped below 6% for the first time since 2022, per closely watched Freddie Mac data released Thursday.Why it ma",
+        "snippet": "The 24-foot boat involved in a deadly clash with Cuba's coast guard was stolen in the Florida Keys and had American citizens aboard, U.S. officials tell Axios.Why it matters: Four people were killed a",
+        "domain": "axios.com"
+      },
+      {
+        "title": "U.S.-Iran nuclear talks were \"positive,\" senior U.S. official says",
+        "link": "https://www.axios.com/2026/02/26/iran-nuclear-talks-geneva",
+        "image": "https://images.axios.com/ssfwg6eUy9sizC35h6C8IFqJ5GM=/0x210:3200x2010/1366x768/2026/02/26/1772109361746.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Thursday's nuclear negotiations between the U.S. and Iran in Geneva made \"significant progress\" and there will be further discussions next week, Omani Foreign Minister Badr al-Busaidi said at the conc",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Leaked photo briefly derails Hillary Clinton deposition",
+        "link": "https://www.axios.com/2026/02/26/hillary-clinton-epstein-deposition-leaked-photo",
+        "image": "https://images.axios.com/mM9-Wcx1pgMUE-KDunX9nbQ4pDI=/0x384:6000x3759/1366x768/2026/02/26/1772128897831.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Former Secretary of State Hillary Clinton's deposition before the House Oversight Committee was paused Thursday afternoon after Rep. Lauren Boebert (R-Colo.) took an unauthorized photo of Clinton and ",
         "domain": "axios.com"
       },
       {
@@ -793,25 +715,142 @@
         "domain": "axios.com"
       },
       {
-        "title": "AI \"hot takes\" are becoming a market risk",
-        "link": "https://www.axios.com/2026/02/26/ai-blog-posts-market-citrini",
-        "image": "https://images.axios.com/e62c5reQ2zAS1N_Dp_sJ__3EksE=/0x0:1280x720/2025/08/20/1755727861841.gif",
+        "title": "House Democratic leaders to force vote on reining in Trump's Iran war powers",
+        "link": "https://www.axios.com/2026/02/26/democrats-iran-war-powers-vote-trump",
+        "image": "https://images.axios.com/eOhcDADlqu9bixzzGcrk7pDrwT8=/0x417:4000x2667/1366x768/2026/02/26/1772128277132.jpeg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios Politics",
-        "snippet": "Companies across sectors are confronting an increasingly unavoidable narrative: AI can replicate your business. Why it matters: Narrative volatility is a new risk category that communications teams mu",
+        "snippet": "House Democratic leadership on Thursday announced plans to force a vote next week on a resolution that would require President Trump to seek congressional authorization to use military force in Iran.W",
         "domain": "axios.com"
       },
       {
-        "title": "Economists are questioning the K-shaped economy narrative",
-        "link": "https://www.axios.com/2026/02/26/us-economy-stock-market",
-        "image": "https://images.axios.com/dNFiKTBBC_KxDnqhFu_wXzDoTyQ=/1366x768/smart/2022/01/18/183952-1642531192319.jpg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios Politics",
-        "snippet": "The K-shaped economy \u2014 wealthy Americans propping up consumer spending while poorer consumers increasingly pull back \u2014 has become the economic consensus. One big problem: Some economists warn that the",
-        "domain": "axios.com"
+        "title": "Virginia Democrats in House backing redistricting proposal",
+        "link": "https://thehill.com/homenews/house/5757113-redistricting-amendment-virginia-democrats/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/VirginiaJudgeRedistricting_Mueller_AP_SteveHelber.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Virginia Democrats in the U.S. House are urging voters to support a constitutional amendment that would permit redistricting ahead of the midterm elections after a state judge recently imposed a tempo",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Astronaut Mike Fincke reveals he was crew member with medical issue",
+        "link": "https://thehill.com/homenews/space/5757028-nasa-astronaut-mike-fincke-medical-issue/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26014546033516-e1772135475812.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "NASA brought Crew-11 home from the International Space Station early due to a medical event.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Walz unveils antifraud package after Trump administration freezes Minnesota Medicaid funds",
+        "link": "https://thehill.com/homenews/state-watch/5757271-walz-unveils-anti-fraud-package-after-trump-administration-freezes-minnesota-medicaid-funds/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/06/Timwalz2_gn_061225.jpeg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Minnesota Gov. Tim Walz (D) on Thursday unveiled a legislative package intended to mitigate fraud a day after the Trump administration paused $259.5 million in Medicaid funds for the North Star State.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Reconciliation bill subsidizes fossil fuels by $3.5B each year, Democratic report finds",
+        "link": "https://thehill.com/policy/energy-environment/5757071-big-beautiful-bill-fossil-fuels/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/merkleyjeff_102225gn09_w.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Republicans&#8217; One Big Beautiful Bill Act subsidizes fossil fuels by an average of $3.5 billion each year, according to a new report from Senate Budget Committee Democrats. An analysis that was fi",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Mortgage rates fall below 6 percent for first time in more than 3 years",
+        "link": "https://thehill.com/business/5757035-mortgage-rates-fall-below-6/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/01/housing_affordable_new-york_mortgage_05222020_AP20198597584060-1.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Mortgage rates fell below 6 percent on Thursday for the first time in more than three years, marking an opening for homebuyers as inflation cools.&#160; Currently, the 30-year fixed-rate mortgage is a",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Whistleblower: Kash Patel tied up FBI resources during Kirk\u00a0investigation?",
+        "link": "https://thehill.com/opinion/lindseys-lens/5757247-fbi-director-patel-travel-allegations/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/d-thumb-022626.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "When a political activist is murdered on a college campus, the American people expect the FBI to move immediately.",
+        "domain": "thehill.com"
       }
     ],
     "tech": [
+      {
+        "title": "Qualcomm won&#8217;t be announcing Windows gaming handhelds at GDC after all",
+        "link": "https://www.theverge.com/games/885314/qualcomm-wont-be-announcing-windows-gaming-handhelds-at-gdc-after-all",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "In January, Qualcomm hinted to The Verge that it might finally bring its powerful Arm-based Snapdragon processors to Windows gaming handhelds at the 2026 Game Developers Conference in San Francisco - ",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "DHS reportedly detained a Columbia University student and content creator",
+        "link": "https://www.theverge.com/policy/885525/columbia-university-student-detained-dhs-influencer",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Department of Homeland Security agents \"made misrepresentations\" to gain access to a Columbia University residential building and detained a student early Thursday morning, according to a statement is",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Netflix&#8217;s F1 series Drive to Survive will stream on Apple TV, too",
+        "link": "https://www.theverge.com/streaming/885538/netflix-f1-drive-to-survive-apple-tv-streaming",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Netflix's sports docuseries obsession started a few years ago with F1: Drive to Survive, but when the eighth season premieres after midnight tonight, it will also be available on Apple TV. Now that Ap",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Corsair is halting Drop sales after March 25th",
+        "link": "https://www.theverge.com/news/884824/corsair-ending-drop-shopping-site",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "The Drop store, which was acquired by gaming gear giant Corsair in 2023, was a haven for mechanical keyboard enthusiasts and audiophiles to discover and buy hard-to-find gear - sometimes at surprising",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "NATO says iPhones are secure enough to handle classified data",
+        "link": "https://www.theverge.com/tech/885516/nato-iphones-ipads-restricted-classified-information",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "The iPhone and iPad have been approved to hold NATO-restricted information, according to an announcement on Thursday. That means off-the-shelf devices running iOS 26 and iPadOS 26 can handle classifie",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Razer\u2019s new laptop sleeve wirelessly charges other devices",
+        "link": "https://www.theverge.com/tech/885381/razer-laptop-sleeve-16-inch-wireless-charger-qi-power",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Razer has announced an expensive new laptop sleeve that's not made from an exotic animal or encrusted in diamonds. What potentially justifies paying $129.99 for Razer's Laptop Sleeve 16\" are the pair ",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "How Chinese AI Chatbots Censor Themselves",
+        "link": "https://www.wired.com/story/made-in-china-how-chinese-ai-chatbots-censor-themselves/",
+        "image": "https://media.wired.com/photos/69a098f6eee135a5a2a133c5/master/pass/Made-In-China-Chinese-LLMs-Censored-Business-.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "Researchers from Stanford and Princeton found that Chinese AI models are more likely than their Western counterparts to dodge political questions or deliver inaccurate answers.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Are You \u2018Agentic\u2019 Enough for the AI Era?",
+        "link": "https://www.wired.com/story/silicon-valley-agentic-individuals-future-of-work/",
+        "image": "https://media.wired.com/photos/699e27a9d54c22d6c9a6a40c/master/pass/Model-Behavior-Are-You-Agentic-Enough-For-AI-Era-Business.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "Silicon Valley built AI coding agents that can handle most of the grunt work. Now, the most valuable skill in tech is deciding what they should do.",
+        "domain": "wired.com"
+      },
       {
         "title": "OpenAI Announces Major Expansion of London Office",
         "link": "https://www.wired.com/story/openai-expands-london-office-major-research-hub/",
@@ -849,22 +888,40 @@
         "domain": "wired.com"
       },
       {
-        "title": "Why Sierra the Supercomputer Had to Die",
-        "link": "https://www.wired.com/story/why-sierra-the-supercomputer-had-to-die/",
-        "image": "https://media.wired.com/photos/698f89ebcd8966a7051cba92/master/pass/OUTOFDATE_SUPERCOMPUTER_GB_USA_25_1898.jpg",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "For seven years, she ran high-security nuclear simulations for the US government. Now, this famous supercomputer is being put to death.",
-        "domain": "wired.com"
+        "title": "So, we\u2019re getting Prada Meta AI glasses, right?",
+        "link": "https://techcrunch.com/2026/02/26/so-were-getting-prada-meta-ai-glasses-right/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Mark Zuckerberg was at Prada's fashion week event in Milan, leaving everyone to wonder if we're getting Meta AI glasses under the Prada brand.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Factor Offers High-Protein Meal Delivery Options (2026)",
-        "link": "https://www.wired.com/story/factor-meal-delivery-service-2026/",
-        "image": "https://media.wired.com/photos/699f6b2f83454378f3d480d3/master/pass/Factor%20Now%20Offers%20High%20Protein%20Meal%20Delivery%20Options.png",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "Even if you\u2019re incredibly busy, you can maintain your gains by eating the equivalent of the microwavable chicken in The Fifth Element.",
-        "domain": "wired.com"
+        "title": "Sophia Space raises $10M seed to demo novel space computers",
+        "link": "https://techcrunch.com/2026/02/26/sophia-space-raises-10m-seed-to-demo-novel-space-computers/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "The company's modular computer tiles offer a new vision for space data centers.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Memory shortage could cause the biggest dip in smartphone shipments in over a decade",
+        "link": "https://techcrunch.com/2026/02/26/memory-shortage-could-cause-the-biggest-smartphone-shipments-dip-in-over-a-decade/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "IDC says phone makers will ship only 1.12 billion smartphones as compared to 1.26 billion last year.",
+        "domain": "techcrunch.com"
+      },
+      {
+        "title": "Mistral AI inks a deal with global consulting giant Accenture",
+        "link": "https://techcrunch.com/2026/02/26/mistral-ai-inks-a-deal-with-global-consulting-giant-accenture/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "Mistral AI lands a partnership with Accenture, the consultant that has also recently announced partnerships with rivals OpenAI and Anthropic.",
+        "domain": "techcrunch.com"
       },
       {
         "title": "Threads is testing a shortcut to quickly start DM conversations",
@@ -876,48 +933,12 @@
         "domain": "techcrunch.com"
       },
       {
-        "title": "Read AI launches a email based \u2018digital twin\u2019 to help you with schedules and answers",
-        "link": "https://techcrunch.com/2026/02/26/read-ai-launches-a-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
+        "title": "Read AI launches an email-based \u2018digital twin\u2019 to help you with schedules and answers",
+        "link": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
         "image": null,
         "logo": "https://logo.clearbit.com/techcrunch.com",
         "source": "TechCrunch",
         "snippet": "Read AI is launching Ada, which can reply with your availability and extract answers from the company knowledge base and the web.",
-        "domain": "techcrunch.com"
-      },
-      {
-        "title": "Bumble adds AI-powered photo feedback and profile guidance tools",
-        "link": "https://techcrunch.com/2026/02/26/bumble-adds-ai-powered-photo-feedback-and-profile-guidance-tools/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Bumble and other popular dating apps, like Match Group's Tinder and Hinge, have all embraced AI-powered features.",
-        "domain": "techcrunch.com"
-      },
-      {
-        "title": "Walmart agrees to $100M settlement over deceptive pay practices in Spark Driver program",
-        "link": "https://techcrunch.com/2026/02/26/walmart-agrees-to-100m-settlement-over-deceptive-pay-practices-in-spark-driver-program/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "The suit said Walmart would mislead drivers about their possible tips and would reduce their base pay, among other things.",
-        "domain": "techcrunch.com"
-      },
-      {
-        "title": "Self-driving truck startup Einride raises $113M PIPE ahead of public debut",
-        "link": "https://techcrunch.com/2026/02/26/self-driving-truck-startup-einride-raises-113m-pipe-ahead-of-public-debut/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "The proceeds will support Einride\u2019s technology roadmap, global expansion, and autonomous deployments in North America, Europe, and the Middle East.",
-        "domain": "techcrunch.com"
-      },
-      {
-        "title": "Cisco says hackers have been exploiting a critical bug to break into big customer networks since 2023",
-        "link": "https://techcrunch.com/2026/02/26/cisco-says-hackers-have-been-exploiting-a-critical-bug-to-break-into-big-customer-networks-since-2023/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "The U.S. government and its allies said hackers have been exploiting the newly identified bug in Cisco networking gear around the world for years, and urged organizations to patch.",
         "domain": "techcrunch.com"
       },
       {
@@ -975,115 +996,70 @@
         "domain": "technologyreview.com"
       },
       {
-        "title": "Razer\u2019s new laptop sleeve wirelessly charges other devices",
-        "link": "https://www.theverge.com/tech/885381/razer-laptop-sleeve-16-inch-wireless-charger-qi-power",
+        "title": "Show HN: Rev-dep \u2013 20x faster knip.dev alternative build in Go",
+        "link": "https://github.com/jayu/rev-dep",
         "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Razer has announced an expensive new laptop sleeve that's not made from an exotic animal or encrusted in diamonds. What potentially justifies paying $129.99 for Razer's Laptop Sleeve 16\" are the pair ",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Cricut\u2019s most popular cutting machine now takes up less space in your crafting room",
-        "link": "https://www.theverge.com/tech/883743/cricut-cutting-machine-explore-5-joy-2-drawing-writing-crafting",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Cricut has announced new versions of two of its cutting machines that could appeal to crafters struggling with limited space for their hobby. The new Cricut Explore 5 is 30 percent \"more compact\" than",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Your smart TV may be crawling the web for AI",
-        "link": "https://www.theverge.com/column/885244/smart-tv-web-crawler-ai",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "This is Lowpass by Janko Roettgers, a newsletter on the ever-evolving intersection of tech and entertainment, syndicated just for The Verge subscribers once a week. These days, if you sign up for a ne",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "8BitDo\u2019s customizable Pro 3 controller is $30 off for the first time",
-        "link": "https://www.theverge.com/gadgets/885192/8bitdo-pro-3-controller-switch-2-pc-galaxy-buds-4-pro-deal-sale",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Woot is offering steep discounts on many video games and accessories, some of which are fairly recent releases. No matter what you choose from its sale catalog, you can get up to $30 off your order wi",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "HBO Max&#8217;s password-sharing crackdown is going global",
-        "link": "https://www.theverge.com/streaming/885303/hbo-max-password-sharing-global-expansion-q4-2025",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "HBO Max's password-sharing crackdown is going to get a lot bigger. During an earnings call on Thursday, Warner Bros. Discovery streaming head JB Perrette said a global expansion \"will start in 2026,\" ",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Democrats to introduce bill aimed at resurrecting IRS Direct File",
-        "link": "https://www.theverge.com/policy/885225/democrats-irs-direct-file-act-taxes",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "160 Democratic lawmakers from across the country are backing a soon-to-be-introduced bill that would reverse the Trump administration's decision to eliminate IRS Direct File. The Direct File Act, led ",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Google Street View in 2026",
-        "link": "https://tech.marksblogg.com/google-street-view-coverage.html",
-        "image": null,
-        "logo": "https://logo.clearbit.com/tech.marksblogg.com",
+        "logo": "https://logo.clearbit.com/github.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://tech.marksblogg.com/google-street-view-coverage.html Comments URL: https://news.ycombinator.com/item?id=47169278 Points: 17 # Comments: 1",
-        "domain": "tech.marksblogg.com"
+        "snippet": "Article URL: https://github.com/jayu/rev-dep Comments URL: https://news.ycombinator.com/item?id=47170299 Points: 22 # Comments: 4",
+        "domain": "github.com"
       },
       {
-        "title": "SynthID",
-        "link": "https://deepmind.google/models/synthid/",
+        "title": "Launch HN: Cardboard (YC W26) \u2013 Agentic video editor",
+        "link": "https://www.usecardboard.com/",
         "image": null,
-        "logo": "https://logo.clearbit.com/deepmind.google",
+        "logo": "https://logo.clearbit.com/usecardboard.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://deepmind.google/models/synthid/ Comments URL: https://news.ycombinator.com/item?id=47169146 Points: 12 # Comments: 2",
-        "domain": "deepmind.google"
+        "snippet": "Hey HN - we're Saksham and Ishan, and we\u2019re building Cardboard (https://www.usecardboard.com). It lets you go from raw footage to an edited video by describing what you want in natural language. There",
+        "domain": "usecardboard.com"
       },
       {
-        "title": "Palm OS User Interface Guidelines [pdf, 2003]",
-        "link": "https://cs.uml.edu/~fredm/courses/91.308-spr05/files/palmdocs/uiguidelines.pdf",
+        "title": "OsmAnd's Faster Offline Navigation",
+        "link": "https://osmand.net/blog/fast-routing/",
         "image": null,
-        "logo": "https://logo.clearbit.com/cs.uml.edu",
+        "logo": "https://logo.clearbit.com/osmand.net",
         "source": "Hacker News",
-        "snippet": "Article URL: https://cs.uml.edu/~fredm/courses/91.308-spr05/files/palmdocs/uiguidelines.pdf Comments URL: https://news.ycombinator.com/item?id=47168726 Points: 33 # Comments: 6",
-        "domain": "cs.uml.edu"
+        "snippet": "Article URL: https://osmand.net/blog/fast-routing/ Comments URL: https://news.ycombinator.com/item?id=47170157 Points: 24 # Comments: 5",
+        "domain": "osmand.net"
       },
       {
-        "title": "Bild AI (YC W25) Is Hiring Interns to Make Housing Affordable",
-        "link": "https://www.workatastartup.com/jobs/80596",
+        "title": "He saw an abandoned trailer. Then, uncovered a surveillance network",
+        "link": "https://calmatters.org/justice/2026/02/alpr-border-patrol-caltrans/",
         "image": null,
-        "logo": "https://logo.clearbit.com/workatastartup.com",
+        "logo": "https://logo.clearbit.com/calmatters.org",
         "source": "Hacker News",
-        "snippet": "Article URL: https://www.workatastartup.com/jobs/80596 Comments URL: https://news.ycombinator.com/item?id=47168721 Points: 0 # Comments: 0",
-        "domain": "workatastartup.com"
+        "snippet": "Article URL: https://calmatters.org/justice/2026/02/alpr-border-patrol-caltrans/ Comments URL: https://news.ycombinator.com/item?id=47169984 Points: 61 # Comments: 22",
+        "domain": "calmatters.org"
       },
       {
-        "title": "The Pentagon Feuding with an AI Company Is a Bad Sign",
-        "link": "https://foreignpolicy.com/2026/02/25/anthropic-pentagon-feud-ai/",
+        "title": "iPhone and iPad approved to handle classified NATO information",
+        "link": "https://www.apple.com/newsroom/2026/02/iphone-and-ipad-approved-to-handle-classified-nato-information/",
         "image": null,
-        "logo": "https://logo.clearbit.com/foreignpolicy.com",
+        "logo": "https://logo.clearbit.com/apple.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://foreignpolicy.com/2026/02/25/anthropic-pentagon-feud-ai/ Comments URL: https://news.ycombinator.com/item?id=47168165 Points: 43 # Comments: 17",
-        "domain": "foreignpolicy.com"
+        "snippet": "Article URL: https://www.apple.com/newsroom/2026/02/iphone-and-ipad-approved-to-handle-classified-nato-information/ Comments URL: https://news.ycombinator.com/item?id=47169815 Points: 63 # Comments: 3",
+        "domain": "apple.com"
       },
       {
-        "title": "Open Source Endowment \u2013 new funding source for open source maintainers",
-        "link": "https://endowment.dev/",
+        "title": "What Claude Code Chooses",
+        "link": "https://amplifying.ai/research/claude-code-picks",
         "image": null,
-        "logo": "https://logo.clearbit.com/endowment.dev",
+        "logo": "https://logo.clearbit.com/amplifying.ai",
         "source": "Hacker News",
-        "snippet": "Article URL: https://endowment.dev/ Comments URL: https://news.ycombinator.com/item?id=47168012 Points: 85 # Comments: 40",
-        "domain": "endowment.dev"
+        "snippet": "Article URL: https://amplifying.ai/research/claude-code-picks Comments URL: https://news.ycombinator.com/item?id=47169757 Points: 32 # Comments: 12",
+        "domain": "amplifying.ai"
       }
     ],
     "ai": [
+      {
+        "title": "Google reveals Nano Banana 2 AI image model, coming to Gemini today",
+        "link": "https://arstechnica.com/ai/2026/02/google-releases-nano-banana-2-ai-image-generator-promises-pro-results-with-flash-speed/",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/NB2_Hero.width-2200.format-webp-1152x648.png",
+        "logo": "https://logo.clearbit.com/arstechnica.com",
+        "source": "Ars Technica",
+        "snippet": "Google's new image model replaces the previous versions immediately.",
+        "domain": "arstechnica.com"
+      },
       {
         "title": "Ford is recalling 4.3 million trucks and SUVs to fix a towing software bug",
         "link": "https://arstechnica.com/cars/2026/02/ford-is-recalling-4-3-million-trucks-and-suvs-to-fix-a-towing-software-bug/",
@@ -1127,15 +1103,6 @@
         "logo": "https://logo.clearbit.com/arstechnica.com",
         "source": "Ars Technica",
         "snippet": "Trump administration\u2019s reduced vaccine schedule \u201cthrows science out the window.\u201d",
-        "domain": "arstechnica.com"
-      },
-      {
-        "title": "Badge engineering could be worse than this: The 2026 Subaru Uncharted",
-        "link": "https://arstechnica.com/cars/2026/02/2026-subaru-uncharted-first-drive-fwd-might-be-the-biggest-selling-point/",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/Subaru-Uncharted-14-1152x648.jpg",
-        "logo": "https://logo.clearbit.com/arstechnica.com",
-        "source": "Ars Technica",
-        "snippet": "Subaru has a new EV using the platform it shares with Toyota, starting at $34,995.",
         "domain": "arstechnica.com"
       },
       {
@@ -1193,6 +1160,15 @@
         "domain": "venturebeat.com"
       },
       {
+        "title": "SambaNova's Strategic Move in the AI Market",
+        "link": "https://aibusiness.com/agentic-ai/sambanova-s-strategic-move-in-ai-market",
+        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt7406f684ce731366/69a0abdd7b888e000862d42f/AI_chip_pic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "logo": "https://logo.clearbit.com/aibusiness.com",
+        "source": "AI Business",
+        "snippet": "Partnering with Intel, SambaNova aims to deliver cost-effective AI inference systems as the market shifts toward more complex, multi-step reasoning.",
+        "domain": "aibusiness.com"
+      },
+      {
         "title": "Intrinsic Joins Google to Accelerate Physical AI",
         "link": "https://aibusiness.com/robotics/intrinsic-joins-google-for-physical-ai",
         "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltb114ee70ee16e47b/69a07f34197ba700087f3cb8/INtrinsic_logo.jpg?width=1280&auto=webp&quality=80&disable=upscale",
@@ -1238,13 +1214,31 @@
         "domain": "aibusiness.com"
       },
       {
-        "title": "Google Labs adds Agentic AI Capabilities to Opal",
-        "link": "https://aibusiness.com/agentic-ai/google-labs-adds-agentic-ai-to-opal",
-        "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt1c76703f937ee8e0/699f20679a717f00082347bc/Google_Labs.jpg?width=1280&auto=webp&quality=80&disable=upscale",
-        "logo": "https://logo.clearbit.com/aibusiness.com",
-        "source": "AI Business",
-        "snippet": "The interactive agent enables goal-driven task planning and execution.",
-        "domain": "aibusiness.com"
+        "title": "Suno investor admits she ditched Spotify for AI music, accidentally undermining the company's fair use defense",
+        "link": "https://the-decoder.com/suno-investor-admits-she-ditched-spotify-for-ai-music-accidentally-undermining-the-companys-fair-use-defense/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/suno_logo_walls-1.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Suno investor C.C. Gong told X she barely uses Spotify anymore, accidentally undermining the company's fair use defense and handing the music industry a powerful argument in its lawsuit against the AI",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Anthropic can't stop humanizing its AI models, now Claude Opus 3 gets a retirement blog",
+        "link": "https://the-decoder.com/anthropic-cant-stop-humanizing-its-ai-models-now-claude-opus-3-gets-a-retirement-blog/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Claude-Opus-3-Retirement-Blog.jpeg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Anthropic is retiring its Claude Opus 3 AI model and letting it publish weekly essays on Substack. The company says it conducted \"retirement interviews\" to ask the model about its wishes, and it \"enth",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Google's Nano Banana 2 brings Pro-level image generation to Flash speeds at up to 40% lower API cost",
+        "link": "https://the-decoder.com/googles-nano-banana-2-brings-pro-level-image-generation-to-flash-speeds-at-up-to-40-lower-api-cost/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_nano_banana.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Google's new Nano Banana 2 image generation model pairs the capabilities of the pricier Pro model with Gemini Flash speed at nearly half the cost. It's now the default in the Gemini app. The article G",
+        "domain": "the-decoder.com"
       },
       {
         "title": "Andrej Karpathy says programming is \"unrecognizable\" now that AI agents actually work",
@@ -1272,316 +1266,280 @@
         "source": "The Decoder",
         "snippet": "Alibaba has introduced the new Qwen 3.5 model series. It comprises four models: Qwen3.5-Flash, Qwen3.5-35B-A3B, Qwen3.5-122B-A10B and Qwen3.5-27B. The article Alibaba&#039;s open Qwen 3.5 takes aim at",
         "domain": "the-decoder.com"
-      },
-      {
-        "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
-        "link": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/perplexity_computer.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Perplexity bundles AI models from Anthropic, Google, xAI and OpenAI in an agentic system that is designed to carry out complex workflows independently. The article Perplexity Computer bundles rival AI",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Google relaunches its AI creative studio Flow with new features and integrations",
-        "link": "https://the-decoder.com/google-relaunches-its-ai-creative-studio-flow-with-new-features-and-integrations/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_flow_update_make_it.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Google is turning its AI creative studio Flow into an all-in-one tool for images and videos, with free image generators and new editing features. The article Google relaunches its AI creative studio F",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Study shows why reasoning models often think far beyond the solution",
-        "link": "https://the-decoder.com/study-shows-why-reasoning-models-often-think-far-beyond-the-solution/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Does-Your-Reasoning-Model-Know-When-To-Stop.jpeg",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Large reasoning models frequently think well past the correct answer: cross-checking, reformulating, and confirming what they already got right. A new Bytedance study shows the models actually know wh",
-        "domain": "the-decoder.com"
       }
     ],
     "entertainment": [
       {
-        "title": "\u2018A Knight Of The Seven Kingdoms\u2019 Finale Summons Series\u2019 Best Audience So Far With 9.5M U.S. Viewers In 3 Days",
-        "link": "https://deadline.com/2026/02/a-knight-of-the-seven-kingdoms-season-1-finale-ratings-hbo-1236737426/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/peter-claffey-dexter-sol-ansell_0.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "A Knight of the Seven Kingdoms ended its first season on a high note, summoning 9.5M U.S. cross-platform viewers in three days, Warner Bros. Discovery said Thursday. That&#8217;s up nearly 42% from th",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "Catherine P\u00e9gard Named French Culture Minister; Replacing Rachida Dati Who Stepped Down To Pursue Paris Mayor Ambitions \u2013 Update",
-        "link": "https://deadline.com/2026/02/rachida-dati-resigns-french-culture-minister-paris-mayor-1236737167/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2215585460.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Update: 10.05 am PT&#8230; Catherine P\u00e9gard has been named as France&#8217;s new minister of culture, replacing Rachida Dati who stepped down on Wednesday to focus on her campaign to become the mayor ",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "\u2018Running Point\u2019 Sets Season 2 Release Date; First Look Photos Of Ray Romano, More",
-        "link": "https://deadline.com/2026/02/running-point-season-2-release-date-photos-ray-romano-1236737337/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/Running_Point_n_S2_E8_00_25_36_04_R_c_v2.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Netflix has set April 23 for the Season 2 premiere of its basketball comedy series Running Point, starring Kate Hudson. We&#8217;re also getting a first look at the second season in several photos the",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "Sarah Michelle Gellar Remembers \u2018Buffy\u2019 Co-Star Michelle Trachtenberg One Year After Her Death: \u201cI\u2019m Not Sure How It\u2019s Been A Year\u201d",
-        "link": "https://deadline.com/2026/02/sarah-michelle-gellar-remembers-michelle-trachtenberg-death-anniversary-1236737435/",
-        "image": "https://deadline.com/wp-content/uploads/2025/02/michelle-trachtenberg-sarah-michelle-gellar-buffy.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Sarah Michelle Gellar paid tribute to Michelle Trachtenberg on February 26, one year after her death. The Buffy the Vampire Slayer star remembered not only working with her on the supernatural series ",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "\u2018Never Have I Ever\u2019 Star Maitreyi Ramakrishnan Cast In \u2018Elle\u2019 Season 2",
-        "link": "https://deadline.com/2026/02/maitreyi-ramakrishnan-cast-elle-season-2-1236737375/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/Maitreyi-Ramakrishnan.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Maitreyi Ramakrishnan (Never Have I Ever) is going back to high school as part of the recurring cast of the second season of the Prime Video Legally Blonde prequel series Elle. Elle follows Elle Woods",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "\u2018The Reunion: Laguna Beach\u2019 Gets Premiere Date On Roku Channel With Lauren Conrad, Stephen Colletti & Kristin Cavallari Returning",
-        "link": "https://deadline.com/2026/02/the-reunion-laguna-beach-premiere-date-roku-channel-1236737418/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/laguna-beach-reunion-roku-channel.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Roku Channel has set the premiere date for The Reunion: Laguna Beach for April 10. The Roku Original will reunite the OG cast of MTV&#8217;s&#160;Laguna Beach: The Real Orange County,&#160;including L",
-        "domain": "deadline.com"
-      },
-      {
-        "title": "10 Neo-Noir Movie Masterpieces With Great Acting, Ranked",
-        "link": "https://collider.com/best-neo-noir-movie-masterpieces-great-acting-ranked/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/10/kathleen-turner_matty-walker_body-heat-1981.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Body Heat, Chinatown, and Blue Velvet are all among the very best neo-noir movies that benefit from incredible acting.",
-        "domain": "collider.com"
-      },
-      {
-        "title": "10 Essential Bob Dylan Songs That Define His Career",
-        "link": "https://collider.com/bob-dylan-songs-essential/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/10/no-direction-home_-bob-dylan-2005-3.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Bob Dylan is an icon, and songs like \"Blowin' in the Wind\" and \"Dirt Road Blues\" serve as a beginner's guide to his long and storied career,",
-        "domain": "collider.com"
-      },
-      {
-        "title": "Netflix Is About to Add One of the Most Rewatchable Crime Thrillers of the 21st Century, but There\u2019s a Catch",
-        "link": "https://collider.com/netflix-greatest-crime-thriller-the-mentalist-march-1-2026/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-mentalist-pedro-pascal.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Over 10 years after the finale, the crime thriller The Mentalist will be landing on Netflix, but sadly not in the US.",
-        "domain": "collider.com"
-      },
-      {
-        "title": "New '9-1-1' Season 9 Sneak Peek Has Eddie Facing Every Parent's Worst Nightmare [Exclusive]",
-        "link": "https://collider.com/9-1-1-season-9-episode-11-sneak-peek-ryan-guzman-cliffhanger-eddie-christopher-missing/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/ryan-guzman-911.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Ryan Guzman is on the hunt for his missing child in a new sneak peek of tonight\u2019s 9-1-1 episode. Watch it here!",
-        "domain": "collider.com"
-      },
-      {
-        "title": "Billy Magnussen and Zach Galifianakis Lead AMC\u2019s Silicon Valley Satire in First Look [Exclusive]",
-        "link": "https://collider.com/the-audacity-images-zack-galifianakis-billy-magnussen-simon-helberg-silicon-valley-satire/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-audacity-feature.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "A trio of new images from AMC's The Audacity spotlights Billy Magnusson, Zach Galifianakis, and Simon Helberg as three eccentric tech bros.",
-        "domain": "collider.com"
-      },
-      {
-        "title": "Netflix's 3-Part Crime Thriller Perfect for 'Reacher' Fans Takes the Streaming Charts By Surprise",
-        "link": "https://collider.com/netflix-the-night-agent-season-3-crime-thriller-reacher-replacement-global-streaming-success-february-2026/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/img_7338-2-1.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "This three-season crime thriller is dominating Netflix globally, surging to #1 across major markets after briefly dipping in viewership.",
-        "domain": "collider.com"
-      },
-      {
-        "title": "Bruce Lee Day in California? A New Bill Is Fighting to Make It Happen",
-        "link": "https://www.ign.com/articles/bruce-lee-day-in-california-a-new-bill-is-fighting-to-make-it-happen",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/bruce-lee-1772125118289.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "A new bill may see May 17 become Bruce Lee Day in California, thanks to Assemblymember Matt Haney.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Behind The Rubberhose Curtain of MOUSE: P.I. For Hire \u2013 IGN First",
-        "link": "https://www.ign.com/articles/behind-the-rubberhose-curtain-of-mouse-pi-for-hire-ign-first",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/ign-first-mousepiforhire-6-howtheyanimatedit-blogroll-1772065687422.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "An inside look at the very unique visual style of the upcoming first-person shooter Mouse: P.I. for Hire with two of the lead developers, including early test footage!",
-        "domain": "ign.com"
-      },
-      {
-        "title": "As Zelda Turns 40, Voice Actress Patricia Summersett Reveals Hopes for the Future, And Clarifies Her Thoughts on Link and Zelda's 'Gorgeous' Relationship",
-        "link": "https://www.ign.com/articles/as-zelda-turns-40-voice-actress-patricia-summersett-reveals-hopes-for-the-future-and-clarifies-her-thoughts-on-link-and-zeldas-gorgeous-relationship",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/gettyimages-695417050-1772122398636.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "The voice of Princess Zelda reveals her hopes for The Legend of Zelda's future, and sets the record straight on her views of Link and Zelda's \"gorgeous\" relationship.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Scream 7 Review",
-        "link": "https://www.ign.com/articles/scream-7-review",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/scream7-review-blogroll-1772123963583.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Review: Scream 7 brings back series OGs Kevin Williamson and Neve Campbell to pack in plenty of satisfying slasher action, even if it gets a little too comfortable playing the hits (and deep cuts and ",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Check Out Some of the Great Games on Sale at Woot for $20 or Less",
-        "link": "https://www.ign.com/articles/check-out-some-of-the-great-games-on-sale-at-woot-for-20-or-less",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/woot-video-game-sale-1772113949786.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Through February 27, Woot is offering an extra 20% off its selection of discounted games with the help of code LEVEL20. Save on games like Elden Ring Nightreign, Space Marine 2, and more.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "DTF St. Louis Review",
-        "link": "https://www.ign.com/articles/dtf-st-louis-review-recap",
-        "image": "https://assets-prd.ignimgs.com/2026/02/19/1280jason-bateman-david-harbour-0-copy-1771538209615.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "DTF St. Louis review: The new HBO show starring David Harbour, Jason Bateman, and Linda Cardellini won\u2019t be for everyone, but if you enjoy shows like FX\u2019s Fargo and HBO\u2019s own The Chair Company, it\u2019s w",
-        "domain": "ign.com"
-      },
-      {
-        "title": "\u2018Wuthering Heights\u2019: Meet the Folk Singer Whose Obscure Radio Performance of a 19th-Century Ballad Captured Emerald Fennell\u2019s Ear",
-        "link": "https://variety.com/2026/film/news/wuthering-heights-olivia-chaney-dark-eyed-sailor-1236672765/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/MCDWUHE_WB026_096cc3.jpg",
+        "title": "Final Actor Winner Predictions: The Circuit\u2019s Last Stop Could Bring Upset Potential for Michael B. Jordan, Benicio Del Toro and More",
+        "link": "https://variety.com/lists/sag-awards-predictions-winners-2026/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/SAG-Awards-Predictions-2.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "Folk musician Olivia Chaney has performed \u201cDark Eyed Sailor\u201d more times than she can count. The 19th-century British ballad about a lost love returning was on her proposed track list for three separat",
+        "snippet": "The awards season train is pulling into its penultimate stop before heading to the Dolby Theatre. The last stop before Oscar voting closes is often where narratives harden, momentum crystallizes, and ",
         "domain": "variety.com"
       },
       {
-        "title": "\u2018Running Point\u2019 Sets Season 2 Release Date, Kate Hudson Returns as Basketball Franchise Boss in First Look Photos",
-        "link": "https://variety.com/2026/tv/news/running-point-season-2-release-date-1236673648/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Running_Point_n_S2_E8_00_25_36_04_R_c_v2.jpg",
+        "title": "\u2018Back to the Future\u2019 Star Crispin Glover Accused of Holding Former Model \u2018Captive\u2019 as \u2018Sex Slave\u2019 in New Lawsuit",
+        "link": "https://variety.com/2026/film/news/back-to-the-future-star-crispin-glover-accused-former-model-sex-slave-lawsuit-1236673702/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2170721246-1.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "Season 2 of \u201cRunning Point\u201d is officially set to return April 23 on Netflix, with the streamer tipping off the next chapter through the release of first-look images from the upcoming season. The sport",
+        "snippet": "Crispin Glover has been sued by an alleged former girlfriend who claims the &#8220;Back to the Future&#8221; actor used her for \u201csex and free labor\u201d after luring her with the promise of a job opportun",
         "domain": "variety.com"
       },
       {
-        "title": "\u2018Never Have I Ever\u2019 Star Maitreyi Ramakrishnan Joins \u2018Legally Blonde\u2019 Prequel \u2018Elle\u2019 Season 2",
-        "link": "https://variety.com/2026/tv/news/maitreyi-ramakrishnan-legally-blonde-prequel-elle-season-2-1236673658/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Maitreyi-Ramakrishnan-e1772125852298.jpg",
+        "title": "Julia Louis-Dreyfus, Cecily Strong Dramedy \u2018Nanny Squatter\u2019 Nears Series Order at Apple (EXCLUSIVE)",
+        "link": "https://variety.com/2026/tv/news/julia-louis-dreyfus-cecily-strong-apple-series-1236672999/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Julia-Louis-Dreyfus-Cecily-Strong.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "Maitreyi Ramakrishnan is going back to high school. The &#8220;Never Have I Ever&#8221; alum is set to appear in the second season of the &#8220;Legally Blonde&#8221; prequel series &#8220;Elle&#8221;",
+        "snippet": "Apple is nearing a greenlight for a limited series starring Julia Louis-Dreyfus and Cecily Strong, Variety has learned exclusively. The limited dramedy is inspired by the New York Magazine article &#8",
         "domain": "variety.com"
       },
       {
-        "title": "\u2018A Knight of the Seven Kingdoms\u2019 Finale Hits 9.5 Million Viewers in Three Days, Setting Another Series Record",
-        "link": "https://variety.com/2026/tv/news/a-knight-of-the-seven-kingdoms-finale-ratings-1236673703/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/daniel-ings-peter-claffey-paul-murphy.jpg",
+        "title": "Ex-\u2018Bachelor\u2019 Host Chris Harrison Sets New Dating Series on Fox Nation About \u2018Traditional Marriage\u2019",
+        "link": "https://variety.com/2026/tv/news/chris-harrison-fox-nation-dating-show-1236673816/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2242434164-1.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "&#8220;Game of Thrones&#8221; fans have clearly been enjoying their most recent return to Westeros. Prequel series &#8220;A Knight of the Seven Kingdoms&#8221; has been a considerable hit, reaching a ",
+        "snippet": "Nearly five years after his controversial exit as the host of the &#8220;Bachelor&#8221; franchise, Chris Harrison is making his return to reality TV. Fox Nation has greenlit a new dating series for p",
         "domain": "variety.com"
       },
       {
-        "title": "CNBC Lays Off Small Number of Editorial Employees",
-        "link": "https://variety.com/2026/tv/news/cnbc-lays-off-editorial-employees-david-cho-1236673686/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/CNBC-LOGO.jpg",
+        "title": "LISTEN: \u2018We\u2019re a Sprint\u2019: Actor Awards EP Jon Brockett on Producing the Live Kudocast for Netflix",
+        "link": "https://variety.com/2026/tv/news/jon-brockett-actor-award-netflix-kristen-bell-daily-variety-1236673861/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Shutterstock-for-The-Actor-Awards3-e1772134453294.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "CNBC laid off less than a dozen editorial employees as the Versant-backed cable network reviews its structure under a new editor in chief, David Cho. Among those who will depart because of the reorgan",
+        "snippet": "On today\u2019s episode of &#8220;Daily Variety&#8221; podcast, we\u2019ll hear from Jon Brockett, who is executive producer and showrunner of Sunday\u2019s Actor Awards. The kudocast veteran discusses producing a l",
         "domain": "variety.com"
       },
       {
-        "title": "\u2018Jury Duty\u2019 Season 2 Trailer: A New Subject and Dozens of Actors Go on a Fake Company Retreat",
-        "link": "https://variety.com/2026/tv/news/jury-duty-season-2-trailer-company-retreat-1236673623/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/juryduty.png",
+        "title": "France\u2019s 2026 Cesar Awards Announced (Updating Live)",
+        "link": "https://variety.com/2026/film/global/frances-2026-cesar-awards-announced-1236673826/",
+        "image": "https://variety.com/wp-content/uploads/2026/01/MCDNOVA_ZX002.jpg",
         "logo": "https://logo.clearbit.com/variety.com",
         "source": "Variety",
-        "snippet": "An unwitting subject surrounded by actors starts working at a fake company and goes on a fake corporate retreat in the trailer for &#8220;Jury Duty: Company Retreat,&#8221; the follow-up installment t",
+        "snippet": "The Cesar Awards, France&#8217;s equivalent to the Oscars and BAFTA&#8217;s, is unfolding this evening at the Olympia theater in Paris. This 51st edition could have a Hollywood flavor with Richard Lin",
         "domain": "variety.com"
+      },
+      {
+        "title": "Peter Bart: Trumpian Disruptions, AI & Tariffs Stall Growth, Put CEOs On Endangered Species List",
+        "link": "https://deadline.com/2026/02/ceo-endangered-species-ai-tariffs-trump-1236737475/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-962434750.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "I\u2019ve never believed in ghosts but Lew Wasserman\u2019s intruded on me this week. Lew was CEO not only of Universal but of Hollywood in general until around 2000, and thus he\u2019d be surprised to learn that hi",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Julia Louis-Dreyfus & Cecily Strong To Star In Nanny Squatter Limited Series At Apple",
+        "link": "https://deadline.com/2026/02/julia-louis-dreyfus-cecily-strong-nanny-squatter-apple-1236737756/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/MixCollage-26-Feb-2026-12-10-PM-9140.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Apple is nearing a series order on a limited series starring two former SNL alum. Julia Louis-Dreyfus and Cecily Strong are starring in a series based on New York Magazine article The Nanny Squatter f",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "CNBC To Restructure Newsroom With Some Layoffs; Job Cuts Impact Less Than A Dozen On Editorial Team",
+        "link": "https://deadline.com/2026/02/cnbc-layoffs-newsroom-restructure-1236737729/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2263091311.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "CNBC announced a restructuring of its newsroom on Thursday, with layoffs that are said to impact less than 12 editorial staffers. &#8220;The changes made today are to align CNBC\u2019s newsroom structure f",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Joachim Trier And His \u2018Sentimental Value\u2019 Family On The Road From Cannes To The Oscars: \u201cWe Really Dig Each Other. We\u2019re Having A Good Time\u2026\u201d",
+        "link": "https://deadline.com/2026/02/joachim-trier-sentimental-value-elle-fanning-stellan-skarsgard-1236737542/",
+        "image": "https://deadline.com/wp-content/uploads/2025/11/GettyImages-2244735283.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Joachim Trier\u2019s Sentimental Value has nine Oscar nominations, and just last weekend it won the Best Film in a Foreign Language prize at the EE BAFTA Film Awards in London. It\u2019s a family drama that slo",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Rob McClure, Joe Morton & Steven Pasquale Join CBS\u2019s \u2018Cupertino\u2019",
+        "link": "https://deadline.com/2026/02/cupertino-casts-rob-mcclure-joe-morton-steven-pasquale-1236737367/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/Rob-McClure-Joe-Morton-and-Steven-Pasquale.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: Rob McClure (Broadway&#8217;s Mrs. Doubtfire), Joe Morton (Going Dutch), and Steven Pasquale (The Four Seasons) have joined Cupertino, CBS&#8217;s new legal drama from The Good Wife creator",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "Senate Antitrust Subcommittee Sets Another Hearing On Netflix-Warner Bros. Merger",
+        "link": "https://deadline.com/2026/02/netflix-warner-bros-senate-antitrust-committee-1236737710/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/sarandos-congress-feb-getty.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "The Netflix-Warner Bros. merger will come before a key Senate committee on March 4, a month after the same lawmakers heard testimony from the streamer&#8217;s co-CEO Ted Sarandos defending the transac",
+        "domain": "deadline.com"
+      },
+      {
+        "title": "10 Most Perfectly Written Horror Movies, Ranked",
+        "link": "https://collider.com/most-perfectly-written-horror-movies-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/08/shelley-duvall-in-the-shining-2.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Movie masterpieces like The Exorcist and Psycho have perfectly constructed narratives, proving just how crucial great writing is for the horror genre.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "CBS' Sherlock-Inspired Medical Mystery Series Returns With New Look at Its Most Dangerous Case Yet [Exclusive]",
+        "link": "https://collider.com/watson-season-2-episode-11-sneak-peek-morris-chestnut-cbs/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/copy-of-collider-template-41-1.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "After a three-month hiatus, Watson Season 2 is back with The Tunnel Under the Elms this Sunday. Watch an exclusive sneak peek here!",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Tom Holland's 5 Best Marvel Movies, Ranked",
+        "link": "https://collider.com/tom-holland-marvel-movies-best-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/12/tom-holland-in-spider-man-no-way-home.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Ranking Tom Holland\u2019s best MCU movies, from Spider-Man origins to multiverse chaos, where humor, heartbreak, and hero growth collide.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "From 'Black Mirror' to 'Futurama,' 10 Chilling Quotes About AI That Hit Hard in 2026",
+        "link": "https://collider.com/sci-fi-tv-ai-quotes-still-hit-hard/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/black-mirror-annie-murphy.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Science fiction has had a lot to say about AI before its rise, with lines from TV shows like Black Mirror and Futurama that resonate in 2026.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "10 Hidden-Gem Pok\u00e9mon That Deserve More Love",
+        "link": "https://collider.com/pokemon-hidden-gem-deserve-more-love/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/pok-mon-ninetales.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Today, Pok\u00e9mon has over a thousand different species, but the likes of Ninetails and Salazzle have gone ignored for far too long despite being great.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "This Criminally Overlooked Procedural Needs To Stop Dragging Out 1 Crucial Storyline",
+        "link": "https://collider.com/wild-cards-season-3-episode-4-max-ellis-distance-secret/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/01/vanessa-morgan-wild-cards.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Wild Cards' central dynamic between Max and Ellis faces strain because of secrets and lies, and it's time for the series to seriously course-correct.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Save 40% Off Razer's Best Wireless Gaming Headset for PS5, Xbox, or PC During the Woot Video Game Sale",
+        "link": "https://www.ign.com/articles/razer-blackshark-v3-pro-wireless-gaming-headset-deal-woot-video-game-sale",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/razerlol-1772131875355.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Normally $250, Now $150.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "PS5 DualSense Controllers Get Price Cuts Up to 33% During the Woot 2-Day Video Game Sale",
+        "link": "https://www.ign.com/articles/ps5-dualsense-controller-deals-woot-video-game-sale-february-2026",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/ps5dualsensechroma2-1772130514604.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Decked out in gorgeous metallic colors.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "The Best Samsung Galaxy S26 Cases to Protect Your New Phone",
+        "link": "https://www.ign.com/articles/best-samsung-galaxy-s26-cases",
+        "image": "https://assets-prd.ignimgs.com/2026/02/25/screenshot-2026-02-25-at-1-39-23-pm-1772044777825.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Check out our top picks for the best cases for your new Samsung phone.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "New Poppy Playtime Figures From McFarlane Toys Revealed | IGN Fan Fest 2026",
+        "link": "https://www.ign.com/articles/new-poppy-playtime-figures-from-mcfarlane-toys-revealed-ign-fan-fest-2026",
+        "image": "https://assets-prd.ignimgs.com/2026/02/25/poppyplaytime-blogroll3-1771978576043.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Todd McFarlane stopped by IGN Fan Fest to unveil new looks at Huggy Wuggy, Kissy Missy, Killy Willy, and more.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Finally, You Can Now Access God of War Spinoff's Multiplayer Challenge Mode From the Off \u2014 If You Input a Secret Code",
+        "link": "https://www.ign.com/articles/finally-you-can-now-access-god-of-war-spinoffs-multiplayer-challenge-mode-from-the-off-if-you-input-a-secret-code",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/godthumb-1772115207764.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "God of War Sons of Sparta's hidden multiplayer mode has now been made available from the off \u2014 though you'll need to enter a secret code to access it.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "How to Watch IGN\u2019s Resident Evil Requiem Launch Day Livestream",
+        "link": "https://www.ign.com/articles/how-to-watch-igns-resident-evil-requiem-launch-day-livestream",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/re9-lp-oo-1772068839013.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": null,
+        "domain": "ign.com"
       }
     ],
     "weird_news": [
       {
-        "title": "Logitech's Keys-To-Go 2 is a portable typing powerhouse",
-        "link": "https://boingboing.net/2026/02/26/logitechs-keys-to-go-2-is-a-portable-typing-powerhouse.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/Keys2Go2.jpg?fit=1080%2C612&quality=60&ssl=1",
+        "title": "The long, slow arm of the law finally reaches D4vd",
+        "link": "https://boingboing.net/2026/02/26/the-long-slow-arm-of-the-law-finally-reaches-d4vd.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/shutterstock_2356419625.jpg?fit=800%2C1200&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "Generally speaking, most keyboards are shit. They can afford to be. We've become used to the lack of a pleasurable tactile response after a decade of tapping away at smartphone displays and the shallo",
+        "snippet": "It took more than a year after a 14-year-old girl's dismembered remains were found in the frunk of singer D4vd's Tesla for prosecutors to formally convene a grand jury. According to court filings, the",
         "domain": "boingboing.net"
       },
       {
-        "title": "Watch this mini dachshund throw a tiny temper tantrum",
-        "link": "https://boingboing.net/2026/02/26/watch-this-mini-dachshund-throw-a-tiny-temper-tantrum.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/dachshund.jpg?fit=1200%2C1008&quality=60&ssl=1",
+        "title": "Borng people trap you in infinite nested stories",
+        "link": "https://boingboing.net/2026/02/26/borng-people-trap-you-in-infinite-nested-stories.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/bore.jpg?fit=1200%2C800&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "I want to know what is going on in this puppy's mind to cause such an adorable temper tantrum. It worked because I'm now convinced that whatever this little dachshund wants, he deserves. As someone in",
+        "snippet": "Uri at Atoms vs Bits identifies three hallmarks of a specific type of boring person. \"My definition of boring is someone who talks at me, at length, without listening to me, and indifferent to my disi",
         "domain": "boingboing.net"
       },
       {
-        "title": "Sperm swim faster in summer",
-        "link": "https://boingboing.net/2026/02/26/sperm-swim-faster-in-summer.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2022/10/shutterstock_1077682154-1-scaled.jpg?fit=2560%2C1575&quality=60&ssl=1",
+        "title": "Falling vaccination rates drain millions from California classrooms",
+        "link": "https://boingboing.net/2026/02/26/falling-vaccination-rates-drain-millions-from-california-classrooms.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2015/09/vaccine.jpg?fit=600%2C599&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "Researchers analysing semen from 15,581 men in Denmark and Florida found that the best sperm swims in summertime [Springer Nature]. The most motile were consistently found in June and July in both reg",
+        "snippet": "California schools are losing millions of dollars because some parents have decided they know better than decades of medical science. Over the last two years, more than 1,000 California public schools",
         "domain": "boingboing.net"
       },
       {
-        "title": "Skip the reality TV and binge the history of civilization instead with this streaming service",
-        "link": "https://boingboing.net/2026/02/26/skip-the-reality-tv-and-binge-the-history-of-civilization-instead-with-this-streaming-service.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/MagellanTV-Documentary-Streaming-Service.jpg?fit=2250%2C1500&quality=60&ssl=1",
+        "title": "Target charged more when it detected you were already in the store",
+        "link": "https://boingboing.net/2026/02/26/target-charged-more-when-it-detected-you-were-already-in-the-store.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/target.jpg?fit=1200%2C903&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "TL;DR:&#160;MagellanTV&#160;is a documentary-focused streaming service ideal for anyone who prefers history, science, space, or true crime over typical reality TV for for $139.97 (reg. $999) through M",
+        "snippet": "Target's app once charged higher prices when it detected you were searching from inside an actual Target store \u2014 the logic being you were already there, so you'd probably pay more. Instacart was caugh",
         "domain": "boingboing.net"
       },
       {
-        "title": "Orphaned otters rescued and on the mend",
-        "link": "https://boingboing.net/2026/02/25/otters.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/608f9f60-117f-11f1-9923-f53d6118df6a.jpg.webp?fit=1536%2C863&quality=55&ssl=1",
+        "title": "Lauren Boebert brings Hillary Clinton's deposition to a screeching halt",
+        "link": "https://boingboing.net/2026/02/26/lauren-boebert-brings-hillary-clintons-deposition-to-a-screeching-halt.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2024/03/bible-bobo-e1737732732903.jpg?fit=1080%2C720&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "Two baby otters found alone in a field in England are said to be doing well after being taken to a rescue center. \"Barely able to crawl\" when spotted by a member of the public, the pair\u2014thought to hav",
+        "snippet": "Colorado's theater-loving Congressperson Lauren Boebert once again proves she doesn't understand what is supposed to take place behind closed doors, and what is appropriate for the public. Breaking th",
         "domain": "boingboing.net"
       },
       {
-        "title": "Top AIs insist on using nuclear weapons in war simulations",
-        "link": "https://boingboing.net/2026/02/25/wargames.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/wargames.jpg?fit=1137%2C832&quality=60&ssl=1",
+        "title": "Trump insiders hatch plot seize control of elections by emergency",
+        "link": "https://boingboing.net/2026/02/26/trump-insiders-hatch-plot-seize-control-of-elections-by-emergency.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2025/08/trump-1.jpg?fit=1200%2C741&quality=60&ssl=1",
         "logo": "https://logo.clearbit.com/boingboing.net",
         "source": "Boing Boing",
-        "snippet": "OpenAI's ChatGPT, Anthropic's Claude and Google Gemini all have something in common: if you assign them war game simulations, they insist on using nuclear weapons to achieve their aims. The scenarios ",
+        "snippet": "Under the Constitution, state legislatures and Congress control how American elections are run \u2014 the president has no say. That hasn't stopped a group of Trump allies from shopping around a 17-page dr",
         "domain": "boingboing.net"
-      },
-      {
-        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
-        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/todayilearned",
-        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
-        "domain": "reddit.com"
       },
       {
         "title": "TIL that the Switzerlands largest supermarket Migros, doesn\u2019t sell alcohol or tobacco in stores, pays no dividends, caps profits by lowering prices if earnings exceeds 5%, is a cooperative with 2M+ members, and donates 1% of revenue to social projects, purely out of the founders moral philosophy",
@@ -1590,6 +1548,15 @@
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/todayilearned",
         "snippet": "&#32; submitted by &#32; /u/QuarterTarget [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
+        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/todayilearned",
+        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
         "domain": "reddit.com"
       },
       {
@@ -1620,12 +1587,12 @@
         "domain": "reddit.com"
       },
       {
-        "title": "TIL roughly 100,000 African elephants were killed by poachers in just three years (2010-2012). The population declined by approximately 110,000 over a decade, leaving only about 415,000 remaining by 2016.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1renpzq/til_roughly_100000_african_elephants_were_killed/",
-        "image": "https://external-preview.redd.it/Qgq1TblDrjqYNa-N_WO5IE0Sb_dB6YAhFcByGOg8324.jpeg?width=640&crop=smart&auto=webp&s=d4895a376f23a986853929bfd818cba788128a3d",
+        "title": "TIL about the Herxheim archaeological site, where around 5000 BC over 1000 people were brought in, often from a great distance, to be killed and likely eaten",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rffznk/til_about_the_herxheim_archaeological_site_where/",
+        "image": "https://external-preview.redd.it/Ga7kVKXWGZlBBdQkJ7_5UfLUr3-12TvI6t46OlxCZDo.jpeg?width=640&crop=smart&auto=webp&s=75788f63e0bfd41b0f734c64f0b9d65334cc4561",
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/todayilearned",
-        "snippet": "&#32; submitted by &#32; /u/freudian_nipps [link] &#32; [comments]",
+        "snippet": "&#32; submitted by &#32; /u/IamDDT [link] &#32; [comments]",
         "domain": "reddit.com"
       },
       {
@@ -1647,21 +1614,21 @@
         "domain": "reddit.com"
       },
       {
-        "title": "My fish looks like Hitler",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1reudls/my_fish_looks_like_hitler/",
-        "image": "https://preview.redd.it/nav0pqxgbqlg1.jpeg?width=640&crop=smart&auto=webp&s=02c568eb1255d307facd39d19c7b33fa5b14e7f2",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/Formal-Grade-2103 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
         "title": "Hotel Brings Out Hawk During Mealtime to Deter Seagulls",
         "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfc8vd/hotel_brings_out_hawk_during_mealtime_to_deter/",
         "image": "https://preview.redd.it/0oro9b2orulg1.jpeg?width=640&crop=smart&auto=webp&s=b875cf612cc43988b6023f82a1ced05ba1c48324",
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/mildlyinteresting",
         "snippet": "&#32; submitted by &#32; /u/Halewafa [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "My fish looks like Hitler",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1reudls/my_fish_looks_like_hitler/",
+        "image": "https://preview.redd.it/nav0pqxgbqlg1.jpeg?width=640&crop=smart&auto=webp&s=02c568eb1255d307facd39d19c7b33fa5b14e7f2",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/Formal-Grade-2103 [link] &#32; [comments]",
         "domain": "reddit.com"
       },
       {
@@ -1739,6 +1706,15 @@
     ],
     "wisconsin": [
       {
+        "title": "Marquette Poll: Wisconsin voters want lower property taxes vs. more funding for schools",
+        "link": "https://www.wpr.org/news/marquette-poll-wisconsin-voters-want-lower-property-taxes-vs-funding-schools",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Wisconsin voters are more concerned with reducing their property taxes than increasing funding for public schools. Voters also say they\u2019re less inclined to support a school referendum. The post Marque",
+        "domain": "wpr.org"
+      },
+      {
         "title": "\u2018Portraits of Service\u2019 exhibit highlights Wisconsin veterans and their stories",
         "link": "https://www.wpr.org/news/portraits-of-service-exhibit-highlights-wisconsin-veterans-and-their-stories",
         "image": null,
@@ -1784,13 +1760,31 @@
         "domain": "wpr.org"
       },
       {
-        "title": "WPR Music new album of the week: \u2018Jane Austen\u2019s Piano\u2019",
-        "link": "https://www.wpr.org/music/wpr-music-new-album-of-the-week-jane-austens-piano",
-        "image": null,
-        "logo": "https://logo.clearbit.com/wpr.org",
-        "source": "Wisconsin Public Radio",
-        "snippet": "This new EP from Jeneba Kanneh-Mason includes a few of those works, plus music mentioned in or inspired by Jane Austen\u2019s six novels. The post WPR Music new album of the week: &#8216;Jane Austen&#8217;",
-        "domain": "wpr.org"
+        "title": "Republicans Target Kaul Over Bloomberg-Backed Environmental Lawyers",
+        "link": "https://urbanmilwaukee.com/2026/02/26/republicans-target-kaul-over-bloomberg-backed-environmental-lawyers/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/230301_kaulcrimelab01-scaled-e1765842251386-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "GOP lawmakers question outside funding for environmental fellows as Kaul calls the probe political theater.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Cafe With Healthy Options Proposed For Center Street",
+        "link": "https://urbanmilwaukee.com/2026/02/26/cafe-with-healthy-options-proposed-for-center-street/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/Rendering-of-proposed-Tomicas-Corner-Cafe-at-1633-1635-W.-Center-St.-Image-courtesy-of-the-Milwaukee-Department-of-City-Development.-150x150.png",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Proposal calls for renovating vacant, city-owned building.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "After Brutal RSV Seasons, Wisconsin Hospitals See Relief",
+        "link": "https://urbanmilwaukee.com/2026/02/26/after-brutal-rsv-seasons-wisconsin-hospitals-see-relief/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2020/09/vaccination-2722937_1920-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "New vaccines and infant antibodies are coinciding with a sharp drop in serious RSV cases statewide.",
+        "domain": "urbanmilwaukee.com"
       },
       {
         "title": "Parents\u2019 Group Backs MPS Lead Testing, Pushes for Next Steps",
@@ -1818,45 +1812,9 @@
         "source": "Urban Milwaukee",
         "snippet": "New habitual violators rule is pushing scofflaws to pay up.",
         "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "Milwaukee Cop Used Flock Cameras to Track Romantic Partner",
-        "link": "https://urbanmilwaukee.com/2026/02/25/milwaukee-cop-used-flock-cameras-to-track-romantic-partner/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/IMG_5098-150x150.jpeg",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "Officer charged with misconduct for tracking his girlfriend and her former lover.",
-        "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "Convention Center Partner Says Hotel Study Findings Were Fixed",
-        "link": "https://urbanmilwaukee.com/2026/02/25/convention-center-partner-says-hotel-study-findings-were-fixed/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2025/09/071-1-150x150.jpg",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "CEO accuses Wisconsin Center District of steering $145,000 study toward one outcome.",
-        "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "Sponsored: The 8th House Presented by Danceworks Performance MKE",
-        "link": "https://urbanmilwaukee.com/2026/02/25/sponsored-the-8th-house-presented-by-danceworks-performance-mke-5/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/The-8th-House-150x150px-150x150.png",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "Danceworks Performance MKE explores the mysterious significance of the number 8. Inspired by the forces of astrology, tarot, rebirth and transformation, The 8th House invites audiences into a world wh",
-        "domain": "urbanmilwaukee.com"
       }
     ],
     "til": [
-      {
-        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
-        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "Today I Learned",
-        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
       {
         "title": "TIL that the Switzerlands largest supermarket Migros, doesn\u2019t sell alcohol or tobacco in stores, pays no dividends, caps profits by lowering prices if earnings exceeds 5%, is a cooperative with 2M+ members, and donates 1% of revenue to social projects, purely out of the founders moral philosophy",
         "link": "https://www.reddit.com/r/todayilearned/comments/1rfaq9y/til_that_the_switzerlands_largest_supermarket/",
@@ -1864,6 +1822,15 @@
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "Today I Learned",
         "snippet": "&#32; submitted by &#32; /u/QuarterTarget [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL while recording samples for the Mellotron (an early keyboard sampler), cellist Reginald Kilbey refused to downtune his Cello to cover lower notes claiming he'd be robbing a bassist of their fee. A bassist was hired for the next recording session, which turned out to be Kilbey with a bass.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1repkxi/til_while_recording_samples_for_the_mellotron_an/",
+        "image": "https://external-preview.redd.it/_fhGB_t64oVFf3RG445CpeS2oufOGpQcie18kMqknKs.jpeg?width=640&crop=smart&auto=webp&s=43ebff5f4fadae4e9ca30e5d20a4d5ff7ad439a9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/MrRabbit- [link] &#32; [comments]",
         "domain": "reddit.com"
       },
       {
@@ -1894,16 +1861,25 @@
         "domain": "reddit.com"
       },
       {
-        "title": "TIL roughly 100,000 African elephants were killed by poachers in just three years (2010-2012). The population declined by approximately 110,000 over a decade, leaving only about 415,000 remaining by 2016.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1renpzq/til_roughly_100000_african_elephants_were_killed/",
-        "image": "https://external-preview.redd.it/Qgq1TblDrjqYNa-N_WO5IE0Sb_dB6YAhFcByGOg8324.jpeg?width=640&crop=smart&auto=webp&s=d4895a376f23a986853929bfd818cba788128a3d",
+        "title": "TIL about the Herxheim archaeological site, where around 5000 BC over 1000 people were brought in, often from a great distance, to be killed and likely eaten",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rffznk/til_about_the_herxheim_archaeological_site_where/",
+        "image": "https://external-preview.redd.it/Ga7kVKXWGZlBBdQkJ7_5UfLUr3-12TvI6t46OlxCZDo.jpeg?width=640&crop=smart&auto=webp&s=75788f63e0bfd41b0f734c64f0b9d65334cc4561",
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "Today I Learned",
-        "snippet": "&#32; submitted by &#32; /u/freudian_nipps [link] &#32; [comments]",
+        "snippet": "&#32; submitted by &#32; /u/IamDDT [link] &#32; [comments]",
         "domain": "reddit.com"
       }
     ],
     "life_hacks": [
+      {
+        "title": "Bed Bug Detection ideas?",
+        "link": "https://www.reddit.com/r/lifehacks/comments/1rfjoi7/bed_bug_detection_ideas/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/lifehacks",
+        "snippet": "We\u2019re moving soon and I have a big fear of moving into a home that has bed bugs. I wanted to set up sticky traps the day before moving to see if we could detect if there are any (for peace of mind) be",
+        "domain": "reddit.com"
+      },
       {
         "title": "Removing lint balls from two layer body suit????",
         "link": "https://www.reddit.com/r/lifehacks/comments/1rerhl7/removing_lint_balls_from_two_layer_body_suit/",
@@ -1934,15 +1910,6 @@
         "domain": "reddit.com"
       },
       {
-        "title": "45 Only 40k in 401K How and Where to Invest?",
-        "link": "https://www.reddit.com/r/personalfinance/comments/1relf6q/45_only_40k_in_401k_how_and_where_to_invest/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/personalfinance",
-        "snippet": "Financing was never my thing. Nobody really to get assistance from and reaching out to the internet for help. Retirement is closing fast and I don&#39;t want to be stuck. Any advice would be greatly a",
-        "domain": "reddit.com"
-      },
-      {
         "title": "I got a 46% discount on college with my 529",
         "link": "https://www.reddit.com/r/personalfinance/comments/1rfcqld/i_got_a_46_discount_on_college_with_my_529/",
         "image": null,
@@ -1967,6 +1934,15 @@
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/personalfinance",
         "snippet": "We are refinancing our mortgage because interest rates are down over a full percentage point from when we bought our house. We&#39;ve only been in the house for about a year, so consider the 30 year m",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Unemployed, draining savings \u2014 would you apply for SNAP in this situation?",
+        "link": "https://www.reddit.com/r/personalfinance/comments/1repilk/unemployed_draining_savings_would_you_apply_for/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/personalfinance",
+        "snippet": "Looking for practical advice. Household of 3 in New Jersey. I lost my job late last year after several years with the same company and received severance. The job market has been tougher than expected",
         "domain": "reddit.com"
       }
     ]
@@ -2370,31 +2346,31 @@
   ],
   "youtube_picks": [
     {
-      "title": "Stop WASTING Money on Fancy RAM",
+      "title": "Invisible 'yellow line' in Gaza marks area of the Palestinian enclave still under Israeli control",
+      "url": "https://www.youtube.com/shorts/V1pZMUprq-A",
+      "video_id": "V1pZMUprq-A",
+      "channel": "NBC News",
+      "thumbnail": "https://i.ytimg.com/vi/V1pZMUprq-A/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "news"
+    },
+    {
+      "title": "When open-sourcing your code goes wrong...",
+      "url": "https://www.youtube.com/watch?v=wzzh7Not8XE",
+      "video_id": "wzzh7Not8XE",
+      "channel": "Fireship",
+      "thumbnail": "https://i.ytimg.com/vi/wzzh7Not8XE/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "tech"
+    },
+    {
+      "title": "Stop WASTING Money on Expensive RAM",
       "url": "https://www.youtube.com/watch?v=05HRLuU--jI",
       "video_id": "05HRLuU--jI",
       "channel": "Linus Tech Tips",
       "thumbnail": "https://i.ytimg.com/vi/05HRLuU--jI/mqdefault.jpg",
       "published": "2026-02-26",
       "category": "tech"
-    },
-    {
-      "title": "The new advice for applying for jobs in the age of AI",
-      "url": "https://www.youtube.com/watch?v=FxGg_CIqvsg",
-      "video_id": "FxGg_CIqvsg",
-      "channel": "The Verge",
-      "thumbnail": "https://i.ytimg.com/vi/FxGg_CIqvsg/mqdefault.jpg",
-      "published": "2026-02-26",
-      "category": "news"
-    },
-    {
-      "title": "What Happened When I Started Measuring My Life Every Day | Chris Musser | TED",
-      "url": "https://www.youtube.com/watch?v=qDTMeR4n2b8",
-      "video_id": "qDTMeR4n2b8",
-      "channel": "TED",
-      "thumbnail": "https://i.ytimg.com/vi/qDTMeR4n2b8/mqdefault.jpg",
-      "published": "2026-02-26",
-      "category": "education"
     },
     {
       "title": "This Parasite Won\u2019t Die",
@@ -2406,13 +2382,31 @@
       "category": "science"
     },
     {
-      "title": "What you need to know about Trump Accounts and who is eligible for one",
-      "url": "https://www.youtube.com/shorts/SNL-TSrSljs",
-      "video_id": "SNL-TSrSljs",
-      "channel": "NBC News",
-      "thumbnail": "https://i.ytimg.com/vi/SNL-TSrSljs/mqdefault.jpg",
+      "title": "The new advice for applying for jobs in the age of AI",
+      "url": "https://www.youtube.com/watch?v=FxGg_CIqvsg",
+      "video_id": "FxGg_CIqvsg",
+      "channel": "The Verge",
+      "thumbnail": "https://i.ytimg.com/vi/FxGg_CIqvsg/mqdefault.jpg",
       "published": "2026-02-26",
       "category": "news"
+    },
+    {
+      "title": "TED Idea Search \u2014 9 Cities, 1 Main Stage | Premiering Tuesday, March 3",
+      "url": "https://www.youtube.com/watch?v=Dn9Svqhwgmk",
+      "video_id": "Dn9Svqhwgmk",
+      "channel": "TED",
+      "thumbnail": "https://i.ytimg.com/vi/Dn9Svqhwgmk/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "education"
+    },
+    {
+      "title": "Donald Glover Remembers His First Day As A \"30 Rock\" Writer | CONAN on TBS",
+      "url": "https://www.youtube.com/watch?v=n1T0XMK6TJk",
+      "video_id": "n1T0XMK6TJk",
+      "channel": "Corridor Crew",
+      "thumbnail": "https://i.ytimg.com/vi/n1T0XMK6TJk/mqdefault.jpg",
+      "published": "2026-02-26",
+      "category": "entertainment"
     },
     {
       "title": "Debug Storage APIs",
@@ -2422,24 +2416,6 @@
       "thumbnail": "https://i.ytimg.com/vi/ESZX18Ty5V0/mqdefault.jpg",
       "published": "2026-02-26",
       "category": "tech"
-    },
-    {
-      "title": "Conan Conducts A Staff Review With Writer Brian Kiley | Conan O'Brien Needs A Friend",
-      "url": "https://www.youtube.com/watch?v=sBhVFh3aXn8",
-      "video_id": "sBhVFh3aXn8",
-      "channel": "Corridor Crew",
-      "thumbnail": "https://i.ytimg.com/vi/sBhVFh3aXn8/mqdefault.jpg",
-      "published": "2026-02-26",
-      "category": "entertainment"
-    },
-    {
-      "title": "The Internet Was Weeks Away From Disaster and No One Knew",
-      "url": "https://www.youtube.com/watch?v=aoag03mSuXQ",
-      "video_id": "aoag03mSuXQ",
-      "channel": "Veritasium",
-      "thumbnail": "https://i.ytimg.com/vi/aoag03mSuXQ/mqdefault.jpg",
-      "published": "2026-02-25",
-      "category": "science"
     }
   ],
   "hidden_gems": [
@@ -2471,7 +2447,7 @@
       "title": "Show HN: CIA World Factbook Archive (1990\u20132025), searchable and exportable",
       "url": "https://cia-factbook-archive.fly.dev/",
       "description": "CIA World Factbook Archive (1990\u20132025), searchable and exportable",
-      "points": 491,
+      "points": 492,
       "source": "hackernews",
       "date": "2026-02-22"
     },
