@@ -101,81 +101,70 @@ export default async function HomePage() {
 
             <FocusCard focus={briefing.focus} />
 
-            <div id="news" className="scroll-mt-28">
+            {/* News — full width, lead feature */}
+            <div id="news" className="scroll-mt-20">
               <RevealCard delay={0}>
                 <NewsSection news={briefing.news} />
               </RevealCard>
             </div>
 
-            {!!briefing.youtube_picks?.length && (
-              <div id="youtube" className="scroll-mt-28">
-                <RevealCard delay={1}>
-                  <YouTubeSection videos={briefing.youtube_picks} />
-                </RevealCard>
+            {/* GitHub + Reddit — side by side */}
+            {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length) && (
+              <div id="github" className={`grid gap-5 scroll-mt-20 ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                {!!briefing.github_trending?.length && (
+                  <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
+                )}
+                {!!briefing.reddit_hot?.length && (
+                  <div id="reddit"><RevealCard delay={1}><RedditHot posts={briefing.reddit_hot} /></RevealCard></div>
+                )}
               </div>
             )}
 
-            {!!briefing.hidden_gems?.length && (
-              <div id="gems" className="scroll-mt-28">
-                <RevealCard delay={2}>
-                  <HiddenGemsSection gems={briefing.hidden_gems} />
-                </RevealCard>
+            {/* YouTube + ProductHunt — side by side */}
+            {(!!briefing.youtube_picks?.length || !!briefing.product_hunt?.length) && (
+              <div id="youtube" className={`grid gap-5 scroll-mt-20 ${briefing.youtube_picks?.length && briefing.product_hunt?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                {!!briefing.youtube_picks?.length && (
+                  <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
+                )}
+                {!!briefing.product_hunt?.length && (
+                  <div id="producthunt"><RevealCard delay={1}><ProductHunt posts={briefing.product_hunt} /></RevealCard></div>
+                )}
               </div>
             )}
 
-            {!!briefing.workout?.exercises?.length && (
-              <div id="workout" className="scroll-mt-28">
-                <RevealCard delay={0}>
-                  <WorkoutTracker workout={briefing.workout} date={briefing.date} />
-                </RevealCard>
+            {/* Sports + Hidden Gems — side by side */}
+            {(!!briefing.sports?.length || !!briefing.hidden_gems?.length) && (
+              <div id="sports" className={`grid gap-5 scroll-mt-20 ${briefing.sports?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                {!!briefing.sports?.length && (
+                  <RevealCard delay={0}><SportsSection sports={briefing.sports} /></RevealCard>
+                )}
+                {!!briefing.hidden_gems?.length && (
+                  <div id="gems"><RevealCard delay={1}><HiddenGemsSection gems={briefing.hidden_gems} /></RevealCard></div>
+                )}
               </div>
             )}
 
-            {!!briefing.sports?.length && (
-              <div id="sports" className="scroll-mt-28">
-                <SportsSection sports={briefing.sports} />
-              </div>
-            )}
-
-            {!!briefing.github_trending?.length && (
-              <div id="github" className="scroll-mt-28">
-                <GithubTrending repos={briefing.github_trending} />
-              </div>
-            )}
-
-            {!!briefing.reddit_hot?.length && (
-              <div id="reddit" className="scroll-mt-28">
-                <RedditHot posts={briefing.reddit_hot} />
-              </div>
-            )}
-
-            {!!briefing.product_hunt?.length && (
-              <div id="producthunt" className="scroll-mt-28">
-                <ProductHunt posts={briefing.product_hunt} />
+            {/* Workout + Breathwork — side by side */}
+            {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
+              <div id="workout" className={`grid gap-5 scroll-mt-20 ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                {!!briefing.workout?.exercises?.length && (
+                  <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
+                )}
+                {briefing.breathwork_session && (
+                  <div id="breathwork"><RevealCard delay={1}><BreathworkCard session={briefing.breathwork_session} fallbackText={breathworkFallback} /></RevealCard></div>
+                )}
               </div>
             )}
 
             <RevealCard delay={0}>
               <AppOfTheDay app={briefing.app_of_the_day} />
             </RevealCard>
-
-            {/* Breathwork — last, only if session data exists */}
-            {briefing.breathwork_session && (
-              <div id="breathwork" className="scroll-mt-28">
-                <RevealCard delay={1}>
-                  <BreathworkCard
-                    session={briefing.breathwork_session}
-                    fallbackText={breathworkFallback}
-                  />
-                </RevealCard>
-              </div>
-            )}
           </div>
 
           {/* ── RIGHT RAIL — sticky ── */}
           <div
             id="weather"
-            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-[7.5rem] lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:scrollbar-none"
+            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-5.5rem)] lg:overflow-y-auto lg:scrollbar-none"
           >
             <div id="school" className="scroll-mt-28">
               <SidebarTabs

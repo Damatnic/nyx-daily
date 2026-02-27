@@ -203,6 +203,28 @@ function buildSections(news: NewsData): Section[] {
   ] as Section[]).filter(s => s.items.length > 0);
 }
 
+// ─── FLAT ROW (used in All tab) ──────────────────────────────────────────────
+function FlatRow({ item, accent, label, rank }: { item: NewsItem; accent: string; label: string; rank: number }) {
+  return (
+    <a href={item.link} target="_blank" rel="noopener noreferrer"
+      className="story-row group flex items-start gap-3 px-3 py-2.5 rounded-lg -mx-3">
+      <span className="text-[10px] font-mono text-slate-700 w-5 shrink-0 mt-0.5 tabular-nums">{rank}</span>
+      <span className={`w-1 h-1 rounded-full ${accent} shrink-0 mt-[5px]`} />
+      <div className="flex-1 min-w-0">
+        <p className="text-[13px] sm:text-sm text-slate-300 group-hover:text-white transition-colors leading-snug line-clamp-2">
+          {item.title}
+        </p>
+        <div className="flex items-center gap-1.5 mt-0.5">
+          <span className="text-[10px] text-slate-600">{item.source}</span>
+          <span className="text-[10px] text-slate-700">·</span>
+          <span className="text-[10px] text-slate-700 uppercase tracking-wider">{label}</span>
+        </div>
+      </div>
+      <ExternalLink size={11} className="shrink-0 text-slate-800 group-hover:text-violet-500 transition-colors mt-0.5" />
+    </a>
+  );
+}
+
 // ─── MAIN ────────────────────────────────────────────────────────────────────
 export default function NewsSection({ news }: NewsSectionProps) {
   const [tab, setTab] = useState<TabKey>('all');
@@ -211,13 +233,19 @@ export default function NewsSection({ news }: NewsSectionProps) {
   const sections  = buildSections(news);
   const total     = sections.reduce((n, s) => n + s.items.length, 0);
   const hasKeys   = new Set(sections.map(s => s.key));
-
-  // Only show tabs that have actual data
   const availableTabs = TABS.filter(t => t.key === 'all' || hasKeys.has(t.key));
-
-  // If current tab has no data, reset to 'all'
   const activeTab = (tab === 'all' || hasKeys.has(tab)) ? tab : 'all';
-  const visible   = activeTab === 'all' ? sections : sections.filter(s => s.key === activeTab);
+
+  // "All" tab → flat ranked list; category tab → full CategorySection
+  const allItems: { item: NewsItem; accent: string; label: string }[] = [];
+  if (activeTab === 'all') {
+    for (const s of sections) {
+      const accent = CATEGORY_ACCENT[s.key] ?? 'bg-violet-500';
+      const label  = CATEGORY_LABEL[s.key]?.label ?? s.key;
+      for (const item of s.items) allItems.push({ item, accent, label });
+    }
+  }
+  const visible = activeTab !== 'all' ? sections.filter(s => s.key === activeTab) : [];
 
   return (
     <div className="nyx-card p-5">
@@ -229,20 +257,15 @@ export default function NewsSection({ news }: NewsSectionProps) {
         </div>
       </div>
 
-      {/* Tab bar — only available categories */}
+      {/* Tabs */}
       <div className="flex gap-1 mb-1 overflow-x-auto pb-1 scrollbar-none -mx-1 px-1">
         {availableTabs.map(({ key, label }) => {
           const active = activeTab === key;
           return (
-            <button
-              key={key}
-              onClick={() => setTab(key)}
+            <button key={key} onClick={() => setTab(key)}
               className={`shrink-0 px-2.5 py-1 rounded-md text-[11px] font-semibold transition-all duration-100 ${
-                active
-                  ? 'bg-violet-600/80 text-white'
-                  : 'text-slate-600 hover:text-slate-300 hover:bg-white/[0.04]'
-              }`}
-            >
+                active ? 'bg-violet-600/80 text-white' : 'text-slate-600 hover:text-slate-300 hover:bg-white/[0.04]'
+              }`}>
               {label}
             </button>
           );
@@ -251,11 +274,21 @@ export default function NewsSection({ news }: NewsSectionProps) {
 
       <div className="divider mb-1" />
 
-      <div className="divide-y divide-white/[0.04]">
-        {visible.map((section) => (
-          <CategorySection key={section.key} section={section} />
-        ))}
-      </div>
+      {/* All tab: flat compact list */}
+      {activeTab === 'all' ? (
+        <div>
+          {allItems.map(({ item, accent, label }, i) => (
+            <FlatRow key={i} item={item} accent={accent} label={label} rank={i + 1} />
+          ))}
+        </div>
+      ) : (
+        /* Category tab: full lead story treatment */
+        <div className="divide-y divide-white/[0.04]">
+          {visible.map((section) => (
+            <CategorySection key={section.key} section={section} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
