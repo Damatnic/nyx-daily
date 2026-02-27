@@ -35,7 +35,8 @@ import ArchiveStrip from '@/components/briefing/ArchiveStrip';
 import MetaBar from '@/components/briefing/MetaBar';
 
 // ── Layout types ───────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v2';
+// Bump version to force-reset any saved layout when defaults change
+const STORAGE_KEY = 'nyx-widget-layout-v3';
 
 interface WidgetConfig {
   id: string;
@@ -43,14 +44,26 @@ interface WidgetConfig {
   collapsed: boolean;
 }
 
+//
+// ── NYX'S OPINIONATED DEFAULT LAYOUT ──────────────────────────────────────
+//
+// Row 1: AI Brief        [full]   — most important, summarizes the entire day
+// Row 2: News            [full]   — featured story + tabs need full width
+// Row 3: Dev    [half] | Discovery [half]  — interesting finds, same tier
+// Row 4: Watch  [third] | Releases [third] | Wellness [third]  — leisure/checklist row
+// Row 5: Past Briefings  [full]   — archive, always last
+//
+// Order MUST keep half+half consecutive and third+third+third consecutive so
+// CSS grid auto-placement fills rows correctly.
+//
 const DEFAULT_LAYOUT: WidgetConfig[] = [
   { id: 'carousel',   size: 'full',  collapsed: false },
   { id: 'news',       size: 'full',  collapsed: false },
-  { id: 'dev',        size: 'full',  collapsed: false },
+  { id: 'dev',        size: 'half',  collapsed: false },
   { id: 'discovery',  size: 'half',  collapsed: false },
-  { id: 'wellness',   size: 'half',  collapsed: false },
-  { id: 'watch',      size: 'half',  collapsed: false },
-  { id: 'releases',   size: 'half',  collapsed: false },
+  { id: 'watch',      size: 'third', collapsed: false },
+  { id: 'releases',   size: 'third', collapsed: false },
+  { id: 'wellness',   size: 'third', collapsed: false },
   { id: 'archive',    size: 'full',  collapsed: false },
 ];
 
@@ -250,7 +263,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
 
       <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={ids} strategy={rectSortingStrategy}>
-          <div className="grid grid-cols-12 gap-6 items-start">
+          <div className="grid grid-cols-12 gap-x-5 gap-y-6 items-start">
             {activeWidgets.map(w => {
               const meta = WIDGET_META[w.id] ?? { label: w.id, accent: 'slate' };
               const content = widgetContent[w.id];
