@@ -150,7 +150,9 @@ body {
 ────────────────────────────── */
 
 @media (max-width: 640px) {
-  button, a, [role="button"] { min-height: 44px; }
+  /* Touch targets: apply only to standalone buttons, not ALL anchors
+     (forcing min-height on every <a> breaks inline text and compact rows) */
+  button, [role="button"] { min-height: 44px; }
   .overflow-x-auto { -webkit-overflow-scrolling: touch; }
 }
 @media (hover: none) and (pointer: coarse) {

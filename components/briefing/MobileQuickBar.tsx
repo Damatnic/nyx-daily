@@ -35,7 +35,7 @@ export default function MobileQuickBar({ weather, deadlines }: Props) {
 
   return (
     <div className="lg:hidden border-b border-white/[0.04] bg-[#06060e]">
-      <div className="max-w-7xl mx-auto px-4 h-10 flex items-center gap-3">
+      <div className="max-w-7xl mx-auto px-4 min-h-[44px] flex items-center gap-3">
 
         {/* Weather pill */}
         {wx && (
