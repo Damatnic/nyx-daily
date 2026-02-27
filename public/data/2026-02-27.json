@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-27T12:00:03.709221",
+  "generated_at": "2026-02-27T12:21:43.834667",
   "day": "Friday",
   "date": "2026-02-27",
-  "weather": "\u2600\ufe0f Waukesha \u00b7 53\u00b0F (feels 45\u00b0F) \u00b7 Clear \u00b7 H:60\u00b0 L:30\u00b0",
+  "weather": "\u2600\ufe0f Waukesha \u00b7 52\u00b0F (feels 47\u00b0F) \u00b7 Sunny \u00b7 H:64\u00b0 L:29\u00b0",
   "quote": "A comfort zone is a beautiful place, but nothing ever grows there.",
   "author": "Unknown",
   "focus": "Two-day sprint: **Homework 9 - Hypothesis Testing Ch.9** today (due tomorrow), then **CLS Hypothesis Testing** after (due Sun Mar 1).",
@@ -80,7 +80,7 @@
       "url": "https://github.com/ruvnet/wifi-densepose",
       "description": "Production-ready implementation of InvisPose - a revolutionary WiFi-based dense human pose estimation system that enable",
       "language": "Python",
-      "stars": "8691",
+      "stars": "8721",
       "stars_today": 362
     },
     {
@@ -88,7 +88,7 @@
       "url": "https://github.com/bytedance/deer-flow",
       "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
       "language": "TypeScript",
-      "stars": "21716",
+      "stars": "21719",
       "stars_today": 692
     },
     {
@@ -96,7 +96,7 @@
       "url": "https://github.com/moonshine-ai/moonshine",
       "description": "Fast and accurate automatic speech recognition (ASR) for edge devices",
       "language": "C",
-      "stars": "5717",
+      "stars": "5723",
       "stars_today": 587
     },
     {
@@ -104,7 +104,7 @@
       "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
       "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent syst",
       "language": "Python",
-      "stars": "12268",
+      "stars": "12270",
       "stars_today": 836
     },
     {
@@ -112,7 +112,7 @@
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "language": "Shell",
-      "stars": "64512",
+      "stars": "64523",
       "stars_today": 1549
     },
     {
@@ -120,7 +120,7 @@
       "url": "https://github.com/ruvnet/claude-flow",
       "description": "\ud83c\udf0a The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous work",
       "language": "TypeScript",
-      "stars": "15359",
+      "stars": "15373",
       "stars_today": 545
     },
     {
@@ -128,7 +128,7 @@
       "url": "https://github.com/datawhalechina/hello-agents",
       "description": "\ud83d\udcda \u300a\u4ece\u96f6\u5f00\u59cb\u6784\u5efa\u667a\u80fd\u4f53\u300b\u2014\u2014\u4ece\u96f6\u5f00\u59cb\u7684\u667a\u80fd\u4f53\u539f\u7406\u4e0e\u5b9e\u8df5\u6559\u7a0b",
       "language": "Python",
-      "stars": "22956",
+      "stars": "22959",
       "stars_today": 312
     },
     {
@@ -136,7 +136,7 @@
       "url": "https://github.com/abhigyanpatwari/GitNexus",
       "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirel",
       "language": "TypeScript",
-      "stars": "6100",
+      "stars": "6108",
       "stars_today": 1327
     }
   ],
@@ -146,8 +146,8 @@
       "url": "https://www.reddit.com/r/AskReddit/comments/1rfzi36/what_is_your_most_ridiculous_we_wont_work_out/",
       "permalink": "https://reddit.com/r/AskReddit/comments/1rfzi36/what_is_your_most_ridiculous_we_wont_work_out/",
       "subreddit": "AskReddit",
-      "score": 2930,
-      "num_comments": 4861,
+      "score": 3080,
+      "num_comments": 5037,
       "thumbnail": null
     },
     {
@@ -155,55 +155,49 @@
       "url": "https://www.bbc.com/news/articles/c80j3rlp904o",
       "permalink": "https://reddit.com/r/news/comments/1rfou5n/american_citizen_among_those_killed_in_cuba_boat/",
       "subreddit": "news",
-      "score": 19762,
-      "num_comments": 4017,
+      "score": 19904,
+      "num_comments": 4054,
       "thumbnail": null
-    },
-    {
-      "title": "Introducing the Reddit funded anti-drone turret purchased for Ukraine",
-      "url": "https://www.reddit.com/gallery/1rg9hwk",
-      "permalink": "https://reddit.com/r/pics/comments/1rg9hwk/introducing_the_reddit_funded_antidrone_turret/",
-      "subreddit": "pics",
-      "score": 18558,
-      "num_comments": 532,
-      "thumbnail": "https://preview.redd.it/908u10y512mg1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=3ed3f1879d9890ad98022e0e3615c09886e90166"
     },
     {
       "title": "Winston Churchill statue defaced today",
       "url": "https://i.redd.it/52k0xiclr1mg1.jpeg",
       "permalink": "https://reddit.com/r/pics/comments/1rg840z/winston_churchill_statue_defaced_today/",
       "subreddit": "pics",
-      "score": 12910,
-      "num_comments": 4007,
+      "score": 14221,
+      "num_comments": 4245,
       "thumbnail": "https://preview.redd.it/52k0xiclr1mg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=1ae83c42f9518af4cabb41972a5ad8ecf3d1263a"
+    },
+    {
+      "title": "Introducing the Reddit funded anti-drone turret purchased for Ukraine",
+      "url": "https://www.reddit.com/gallery/1rg9hwk",
+      "permalink": "https://reddit.com/r/pics/comments/1rg9hwk/introducing_the_reddit_funded_antidrone_turret/",
+      "subreddit": "pics",
+      "score": 21139,
+      "num_comments": 589,
+      "thumbnail": "https://preview.redd.it/908u10y512mg1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=3ed3f1879d9890ad98022e0e3615c09886e90166"
     },
     {
       "title": "It Can Now be Plainly Said: Trump is Planning a November Coup d\u2019\u00c9tat",
       "url": "https://newrepublic.com/post/207138/trump-coup-detat-midterm-elections",
       "permalink": "https://reddit.com/r/politics/comments/1rgapzn/it_can_now_be_plainly_said_trump_is_planning_a/",
       "subreddit": "politics",
-      "score": 12469,
-      "num_comments": 1063,
+      "score": 15029,
+      "num_comments": 1294,
       "thumbnail": "https://external-preview.redd.it/zj1Cccr__f6DSR35SU5PFugnIze4xPggh_C1sbhFKyc.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=4c0f91e12560ebcb9579a50f4b2399b59eb31036"
     }
   ],
   "product_hunt": [
     {
-      "name": "Claude Code Remote Control",
-      "tagline": "Continue local sessions from any device with Remote Control Discussion | Link",
-      "url": "https://www.producthunt.com/products/claude-code-remote-access",
+      "name": "BedRock",
+      "tagline": "Get approved by US banks even after being rejeceted Discussion | Link",
+      "url": "https://www.producthunt.com/products/bedrock-5",
       "votes": 0
     },
     {
-      "name": "MaxClaw by MiniMax",
-      "tagline": "Always-on managed agent based on OpenClaw powered by MiniMax Discussion | Link",
-      "url": "https://www.producthunt.com/products/minimax-agent",
-      "votes": 0
-    },
-    {
-      "name": "Superset",
-      "tagline": "Run an army of Claude Code, Codex, etc. on your machine Discussion | Link",
-      "url": "https://www.producthunt.com/products/superset-5",
+      "name": "What's Up With That?",
+      "tagline": "Get instant insights about the topic you're reading about Discussion | Link",
+      "url": "https://www.producthunt.com/products/what-s-up-with-that",
       "votes": 0
     },
     {
@@ -213,68 +207,20 @@
       "votes": 0
     },
     {
-      "name": "Perplexity Computer",
-      "tagline": "Everything AI can do, Perplexity Computer does for you. Discussion | Link",
-      "url": "https://www.producthunt.com/products/perplexity-ai",
+      "name": "Superset",
+      "tagline": "Run an army of Claude Code, Codex, etc. on your machine Discussion | Link",
+      "url": "https://www.producthunt.com/products/superset-5",
+      "votes": 0
+    },
+    {
+      "name": "Alkemi",
+      "tagline": "Your AI data teammate in Slack Discussion | Link",
+      "url": "https://www.producthunt.com/products/alkemi",
       "votes": 0
     }
   ],
   "news": {
     "us_news": [
-      {
-        "title": "HUD proposes time limits and work requirements for rental aid",
-        "link": "https://www.npr.org/2026/02/27/nx-s1-5728988/hud-proposes-time-limits-work-requirements-for-rental-aid",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "The rule would allow housing agencies and landlords to impose such requirements \"to encourage self-sufficiency.\" Critics say most who can work already do, but their wages are low.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Paramount and Warner Bros' deal is about merging studios, and a whole lot more",
-        "link": "https://www.npr.org/2026/02/27/nx-s1-5728865/warner-bros-paramount-ellison-family",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "The nearly $111 billion marriage would unite Paramount and Warner film studios, streamers and television properties \u2014 including CNN \u2014 under the control of the wealthy Ellison family.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Takeaways from Hillary Clinton's deposition. And, Paramount outbids for Warner Bros.",
-        "link": "https://www.npr.org/2026/02/27/g-s1-111815/up-first-newsletter-hillary-clinton-jeffrey-epstein-paramount-warner-bros-iran-trump-white-house",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Hillary Clinton says the questioning in a closed-door deposition with the House Oversight Committee's Epstein investigation was repetitive. And, Paramount has outbid Netflix for Warner Bros.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "My doctor keeps focusing on my weight. What other health metrics matter more?",
-        "link": "https://www.npr.org/2026/02/27/nx-s1-5728199/bmi-doctors-weight-health-metrics",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Our Real Talk with a Doc columnist explains how to push back if your doctor's obsessed with weight loss. And what other health metrics matter more instead.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Forget the State of the Union. What's the state of your quiz score?",
-        "link": "https://www.npr.org/2026/02/27/g-s1-111606/olympics-flavor-flav-anthropic-survivor-punch",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "What's the state of your union, quiz-wise? Find out!",
-        "domain": "npr.org"
-      },
-      {
-        "title": "A team of midlife cheerleaders in Ukraine refuses to let war defeat them",
-        "link": "https://www.npr.org/2026/02/27/nx-s1-5712284/russia-ukraine-war-midlife-women-cheerleading",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "Ukrainian women in their 50s and 60s say they've embraced cheerleading as a way to cope with the extreme stress and anxiety of four years of Russia's full-scale invasion.",
-        "domain": "npr.org"
-      },
       {
         "title": "Transgender youths are targeted in Scouting America changes pushed by the Pentagon",
         "link": "https://www.pbs.org/newshour/nation/transgender-youths-are-targeted-in-scouting-america-changes-pushed-by-the-pentagon",
@@ -330,16 +276,79 @@
         "domain": "pbs.org"
       },
       {
-        "title": "How an Unlikely Duo Brought the Epstein Files to Light",
+        "title": "HUD proposes time limits and work requirements for rental aid",
+        "link": "https://www.npr.org/2026/02/27/nx-s1-5728988/hud-proposes-time-limits-work-requirements-for-rental-aid",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "The rule would allow housing agencies and landlords to impose such requirements \"to encourage self-sufficiency.\" Critics say most who can work already do, but their wages are low.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Paramount and Warner Bros' deal is about merging studios, and a whole lot more",
+        "link": "https://www.npr.org/2026/02/27/nx-s1-5728865/warner-bros-paramount-ellison-family",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "The nearly $111 billion marriage would unite Paramount and Warner film studios, streamers and television properties \u2014 including CNN \u2014 under the control of the wealthy Ellison family.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Takeaways from Hillary Clinton's deposition. And, Paramount outbids for Warner Bros.",
+        "link": "https://www.npr.org/2026/02/27/g-s1-111815/up-first-newsletter-hillary-clinton-jeffrey-epstein-paramount-warner-bros-iran-trump-white-house",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Hillary Clinton says the questioning in a closed-door deposition with the House Oversight Committee's Epstein investigation was repetitive. And, Paramount has outbid Netflix for Warner Bros.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "My doctor keeps focusing on my weight. What other health metrics matter more?",
+        "link": "https://www.npr.org/2026/02/27/nx-s1-5728199/bmi-doctors-weight-health-metrics",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Our Real Talk with a Doc columnist explains how to push back if your doctor's obsessed with weight loss. And what other health metrics matter more instead.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Forget the State of the Union. What's the state of your quiz score?",
+        "link": "https://www.npr.org/2026/02/27/g-s1-111606/olympics-flavor-flav-anthropic-survivor-punch",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "What's the state of your union, quiz-wise? Find out!",
+        "domain": "npr.org"
+      },
+      {
+        "title": "How do families of missing people cope with the uncertainty?",
+        "link": "https://www.npr.org/2026/02/27/nx-s1-5720960/nancy-guthrie-family-missing-people-search-cope-uncertainty-grief",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "When a loved one goes missing, relatives can feel guilty simply for eating, says Charlie Shunick, whose sister was kidnapped. Shunick now helps others navigate a nightmare \"nobody is prepared for.\"",
+        "domain": "npr.org"
+      },
+      {
+        "title": "What Do the People Building AI Believe?",
+        "link": "https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/kP34fnfeCy1PDbEe64vCgu9sZd8=/media/img/mt/2026/02/GB_Ollie_260227/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Inside San Francisco\u2019s AI subculture",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "Inside the Fight Over the Epstein Files",
         "link": "https://www.theatlantic.com/politics/2026/02/epstein-files-trump-clinton-bondi/686156/?utm_source=feed",
         "image": "https://cdn.theatlantic.com/thumbor/hgOBSe27JtKFr07Mf5z_kGFdX_Y=/media/img/mt/2026/02/2026_02_25_epstein_mpg/original.jpg",
         "logo": "https://logo.clearbit.com/theatlantic.com",
         "source": "The Atlantic",
-        "snippet": "Two congressmen partnered with Jeffrey Epstein\u2019s victims to try to hold the powerful accountable.",
+        "snippet": "How an unlikely duo of lawmakers partnered with victims to try to hold the powerful accountable",
         "domain": "theatlantic.com"
       },
       {
-        "title": "Meta Says It Cares About Kids. New Documents Tell a Different Story.",
+        "title": "How Meta Executives Talked About Child Safety Behind the Scenes",
         "link": "https://www.theatlantic.com/technology/2026/02/meta-child-safety-documents-instagram/686163/?utm_source=feed",
         "image": "https://cdn.theatlantic.com/thumbor/mgdQqgT9-th02ALYQmDOQ1mvmMM=/media/img/mt/2026/02/2026_02_20_facebook/original.jpg",
         "logo": "https://logo.clearbit.com/theatlantic.com",
@@ -375,13 +384,22 @@
         "domain": "theatlantic.com"
       },
       {
-        "title": "Boredom Is the Price We Pay for Meaning",
-        "link": "https://www.theatlantic.com/ideas/2026/02/boredom-parenthood-father/686158/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/aJihEZLMJHD1kSLD8VWy6D2Ns1w=/0x972:2160x2187/media/img/mt/2026/02/boredomfinal2resized/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "When I became a father, I was forced to reckon with the emotion that consumed my days.",
-        "domain": "theatlantic.com"
+        "title": "Scoop: Top Senate defense leaders intervene in Pentagon-Anthropic AI dispute",
+        "link": "https://www.axios.com/2026/02/27/senate-defense-anthropic-pentagon-ai",
+        "image": "https://images.axios.com/BDOCo4w9dqmrIm0MKY1FwzRt73E=/1366x768/smart/2025/01/21/191412-1737486852615.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Key Senate defense leaders on Friday are privately pressing Anthropic and the Pentagon to resolve their dispute, a source familiar with the matter told Axios.Why it matters: Pressure has been building",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Amazon strikes $50B OpenAI deal",
+        "link": "https://www.axios.com/2026/02/27/amazon-openai-stateful-ai-deal",
+        "image": "https://images.axios.com/tt166jUJPMMvQWf5PstUXOoTCzk=/1366x768/smart/2022/07/21/153446-1658417686472.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "A deal with OpenAI could put Amazon first to market with a new type of AI service for developers \u2014 but the two companies will have to tread carefully to avoid running afoul of OpenAI's deal with Micro",
+        "domain": "axios.com"
       },
       {
         "title": "Bill Clinton plunges into historic Epstein deposition",
@@ -417,24 +435,6 @@
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios",
         "snippet": "Following the Supreme Court's blow to President Trump's sweeping tariffs agenda, the prospect of compensation for Americans remains an open question. The big picture: A growing number of Democrats, ho",
-        "domain": "axios.com"
-      },
-      {
-        "title": "Trump-MAHA split complicates midterm agenda",
-        "link": "https://www.axios.com/2026/02/27/trump-maha-kennedy-vaccine-agenda",
-        "image": "https://images.axios.com/SgY2KgEOeZBmPcklG0gfH7-uGrI=/0x0:1920x1080/1366x768/2026/02/26/1772129109341.jpeg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "The Trump administration's 2026 health care agenda is shaping up to look pretty different from last year's \u2014 and that's not going over very well with some of the \"Make America Healthy Again\" faithful.",
-        "domain": "axios.com"
-      },
-      {
-        "title": "The AI influence network's power players",
-        "link": "https://www.axios.com/2026/02/27/ai-influence-power-players",
-        "image": "https://datawrapper.dwcdn.net/6NydW/fallback.png",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Data: Axios research; Table: Kavya Beheraj/AxiosMillions of dollars are pouring into state and federal races specifically around AI, targeting and supporting lawmakers in both parties.Why it matters: ",
         "domain": "axios.com"
       }
     ],
@@ -503,12 +503,12 @@
         "domain": "theguardian.com"
       },
       {
-        "title": "Bill Clinton testifies before House committee investigating Epstein links",
+        "title": "Bill Clinton says he had \u2018no idea\u2019 about Epstein\u2019s crimes in House testimony",
         "link": "https://www.theguardian.com/us-news/2026/feb/27/bill-clinton-testimony-jeffrey-epstein-investigation",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "Deposition comes one day after Hillary Clinton testified and called proceedings \u2018partisan political theater\u2019Sign up for the Breaking News US email to get newsletter alerts in your inboxBill Clinton is",
+        "snippet": "Deposition comes one day after Hillary Clinton testified and called proceedings \u2018partisan political theater\u2019Sign up for the Breaking News US email to get newsletter alerts in your inboxBill Clinton to",
         "domain": "theguardian.com"
       },
       {
@@ -548,6 +548,24 @@
         "domain": "theguardian.com"
       },
       {
+        "title": "Scoop: Top Senate defense leaders intervene in Pentagon-Anthropic AI dispute",
+        "link": "https://www.axios.com/2026/02/27/senate-defense-anthropic-pentagon-ai",
+        "image": "https://images.axios.com/BDOCo4w9dqmrIm0MKY1FwzRt73E=/1366x768/smart/2025/01/21/191412-1737486852615.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Key Senate defense leaders on Friday are privately pressing Anthropic and the Pentagon to resolve their dispute, a source familiar with the matter told Axios.Why it matters: Pressure has been building",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Amazon strikes $50B OpenAI deal",
+        "link": "https://www.axios.com/2026/02/27/amazon-openai-stateful-ai-deal",
+        "image": "https://images.axios.com/tt166jUJPMMvQWf5PstUXOoTCzk=/1366x768/smart/2022/07/21/153446-1658417686472.jpg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "A deal with OpenAI could put Amazon first to market with a new type of AI service for developers \u2014 but the two companies will have to tread carefully to avoid running afoul of OpenAI's deal with Micro",
+        "domain": "axios.com"
+      },
+      {
         "title": "Bill Clinton plunges into historic Epstein deposition",
         "link": "https://www.axios.com/2026/02/27/bill-clinton-deposition-jeffrey-epstein",
         "image": "https://images.axios.com/5TyJeOQ5WG32LjEhmYKvzp9WM1w=/0x138:4430x2630/1366x768/2026/02/27/1772200017065.jpeg",
@@ -584,22 +602,58 @@
         "domain": "axios.com"
       },
       {
-        "title": "Trump-MAHA split complicates midterm agenda",
-        "link": "https://www.axios.com/2026/02/27/trump-maha-kennedy-vaccine-agenda",
-        "image": "https://images.axios.com/SgY2KgEOeZBmPcklG0gfH7-uGrI=/0x0:1920x1080/1366x768/2026/02/26/1772129109341.jpeg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios Politics",
-        "snippet": "The Trump administration's 2026 health care agenda is shaping up to look pretty different from last year's \u2014 and that's not going over very well with some of the \"Make America Healthy Again\" faithful.",
-        "domain": "axios.com"
+        "title": "The Trump administration is disappearing climate change data",
+        "link": "https://thehill.com/opinion/energy-environment/5756951-federal-data-threatened-trump-era/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/greenhouse_gas_data_02142026_GettyImages-2261216187-1.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The Trump administration has turned out the lights on greenhouse gas emissions data.",
+        "domain": "thehill.com"
       },
       {
-        "title": "The AI influence network's power players",
-        "link": "https://www.axios.com/2026/02/27/ai-influence-power-players",
-        "image": "https://datawrapper.dwcdn.net/6NydW/fallback.png",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios Politics",
-        "snippet": "Data: Axios research; Table: Kavya Beheraj/AxiosMillions of dollars are pouring into state and federal races specifically around AI, targeting and supporting lawmakers in both parties.Why it matters: ",
-        "domain": "axios.com"
+        "title": "Texas to correct errors in Bible-infused curriculum",
+        "link": "https://thehill.com/homenews/education/5759048-texas-bible-curriculum-errors/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/08/AP25044139880669-e1754402053551.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The Texas State Board of Education voted to approve changes to the Bible-infused curriculum some schools are offering in the state, fixing errors caught by teachers in its first year in circulation. T",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "House Democrat: \u2018Good for Anthropic\u2019 in rejecting Pentagon demands",
+        "link": "https://thehill.com/policy/technology/5759007-ro-khanna-anthropic-pentagon-ai/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/khannaro_020926gn01_w.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Rep. Ro Khanna (D-Calif.) praised the artificial intelligence company Anthropic for rejecting the Pentagon\u2019s demands in how its AI technology is used by Friday evening.&#160; The company and the U.S. ",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Trump eyeing mail-in ballot, voting machine ban ahead of midterms?",
+        "link": "https://thehill.com/opinion/lindseys-lens/5759016-executive-overreach-election-rules/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "This is not election security. This is executive overreach.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "The 22nd Amendment at age 75: is it seriously under challenge?",
+        "link": "https://thehill.com/opinion/white-house/5758358-75th-anniversary-22nd-amendment/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26051686929481.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The 22nd Amendment to the Constitution, ratified 75 years ago, limits presidents to two terms in office, but its limitations have been questioned by President Trump's supporters, who have suggested va",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "\u2018I did nothing wrong\u2019: Bill Clinton denies knowledge of Epstein abuse in deposition",
+        "link": "https://thehill.com/homenews/house/5758942-bill-clinton-jeffrey-epstein-deposition/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Deposition_ClintonBill_022726ap.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Former President Clinton said he \u201cdid nothing wrong\u201d and had \u201cno idea of the crimes\u201d Jeffrey Epstein was committing as he kicked off a deposition with the House Oversight and Government Reform Committ",
+        "domain": "thehill.com"
       }
     ],
     "tech": [
@@ -656,60 +710,6 @@
         "source": "Wired",
         "snippet": "With its twirly cord and landline-like features, the Tin Can is giving kids a crash course in phone etiquette. For example: Talk!",
         "domain": "wired.com"
-      },
-      {
-        "title": "The Download: how AI is shaking up Go, and a cybersecurity mystery",
-        "link": "https://www.technologyreview.com/2026/02/27/1133754/the-download-how-ai-is-shaking-up-go-and-a-cybersecurity-mystery/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI is rewiring how the world\u2019s best Go players thi",
-        "domain": "technologyreview.com"
-      },
-      {
-        "title": "AI is rewiring how the world\u2019s best Go players think",
-        "link": "https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "Burrowed in the alleys of Hongik-dong, a hushed residential neighborhood in eastern Seoul, is a faded stone-tiled building stamped \u201cKorea Baduk Association,\u201d the governing body for professional Go. Th",
-        "domain": "technologyreview.com"
-      },
-      {
-        "title": "Finding value with AI and Industry 5.0 transformation",
-        "link": "https://www.technologyreview.com/2026/02/26/1133707/finding-value-with-ai-and-industry-5-0-transformation/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "For years, Industry 4.0 transformation has centered on the convergence of intelligent technologies like AI, cloud, the internet of things, robotics, and digital twins. Industry 5.0 marks a pivotal shi",
-        "domain": "technologyreview.com"
-      },
-      {
-        "title": "The Download: how America lost its lead in the hunt for alien life, and ambitious battery claims",
-        "link": "https://www.technologyreview.com/2026/02/26/1133734/the-download-how-america-lost-its-lead-in-the-hunt-for-alien-life-and-ambitious-battery-claims/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. America was winning the race to find Martian life.",
-        "domain": "technologyreview.com"
-      },
-      {
-        "title": "This company claims a battery breakthrough. Now they need to prove it.",
-        "link": "https://www.technologyreview.com/2026/02/26/1133722/solid-state-batteries-donut-lab/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "When a company claims to have created what\u2019s essentially the holy grail of batteries, there are bound to be some questions. Interest has been swirling since Donut Lab, a Finnish company, announced las",
-        "domain": "technologyreview.com"
-      },
-      {
-        "title": "America was winning the race to find Martian life. Then China jumped in.",
-        "link": "https://www.technologyreview.com/2026/02/26/1133584/america-china-mars-sample-return-space-race-nasa/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/technologyreview.com",
-        "source": "MIT Tech Review",
-        "snippet": "To most people, rocks are just rocks. To geologists, they are much, much more: crystal-filled time capsules with the power to reveal the state of the planet at the very moment they were forged.&#160; ",
-        "domain": "technologyreview.com"
       },
       {
         "title": "AI vs. the Pentagon: killer robots, mass surveillance, and red lines",
@@ -820,12 +820,66 @@
         "domain": "techcrunch.com"
       },
       {
+        "title": "The Download: how AI is shaking up Go, and a cybersecurity mystery",
+        "link": "https://www.technologyreview.com/2026/02/27/1133754/the-download-how-ai-is-shaking-up-go-and-a-cybersecurity-mystery/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI is rewiring how the world\u2019s best Go players thi",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "AI is rewiring how the world\u2019s best Go players think",
+        "link": "https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "Burrowed in the alleys of Hongik-dong, a hushed residential neighborhood in eastern Seoul, is a faded stone-tiled building stamped \u201cKorea Baduk Association,\u201d the governing body for professional Go. Th",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "Finding value with AI and Industry 5.0 transformation",
+        "link": "https://www.technologyreview.com/2026/02/26/1133707/finding-value-with-ai-and-industry-5-0-transformation/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "For years, Industry 4.0 transformation has centered on the convergence of intelligent technologies like AI, cloud, the internet of things, robotics, and digital twins. Industry 5.0 marks a pivotal shi",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "The Download: how America lost its lead in the hunt for alien life, and ambitious battery claims",
+        "link": "https://www.technologyreview.com/2026/02/26/1133734/the-download-how-america-lost-its-lead-in-the-hunt-for-alien-life-and-ambitious-battery-claims/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. America was winning the race to find Martian life.",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "This company claims a battery breakthrough. Now they need to prove it.",
+        "link": "https://www.technologyreview.com/2026/02/26/1133722/solid-state-batteries-donut-lab/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "When a company claims to have created what\u2019s essentially the holy grail of batteries, there are bound to be some questions. Interest has been swirling since Donut Lab, a Finnish company, announced las",
+        "domain": "technologyreview.com"
+      },
+      {
+        "title": "America was winning the race to find Martian life. Then China jumped in.",
+        "link": "https://www.technologyreview.com/2026/02/26/1133584/america-china-mars-sample-return-space-race-nasa/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/technologyreview.com",
+        "source": "MIT Tech Review",
+        "snippet": "To most people, rocks are just rocks. To geologists, they are much, much more: crystal-filled time capsules with the power to reveal the state of the planet at the very moment they were forged.&#160; ",
+        "domain": "technologyreview.com"
+      },
+      {
         "title": "Vibe coded Lovable-hosted app littered with basic flaws exposed 18K users",
         "link": "https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/",
         "image": null,
         "logo": "https://logo.clearbit.com/theregister.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/ Comments URL: https://news.ycombinator.com/item?id=47182659 Points: 42 # Comments: 9",
+        "snippet": "Article URL: https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/ Comments URL: https://news.ycombinator.com/item?id=47182659 Points: 52 # Comments: 14",
         "domain": "theregister.com"
       },
       {
@@ -834,7 +888,7 @@
         "image": null,
         "logo": "https://logo.clearbit.com/go.dev",
         "source": "Hacker News",
-        "snippet": "Article URL: https://go.dev/blog/allocation-optimizations Comments URL: https://news.ycombinator.com/item?id=47182487 Points: 4 # Comments: 0",
+        "snippet": "Article URL: https://go.dev/blog/allocation-optimizations Comments URL: https://news.ycombinator.com/item?id=47182487 Points: 10 # Comments: 0",
         "domain": "go.dev"
       },
       {
@@ -843,7 +897,7 @@
         "image": null,
         "logo": "https://logo.clearbit.com/cbsnews.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://www.cbsnews.com/news/nasa-artemis-moon-program-overhaul/ Comments URL: https://news.ycombinator.com/item?id=47182483 Points: 29 # Comments: 16",
+        "snippet": "Article URL: https://www.cbsnews.com/news/nasa-artemis-moon-program-overhaul/ Comments URL: https://news.ycombinator.com/item?id=47182483 Points: 46 # Comments: 41",
         "domain": "cbsnews.com"
       },
       {
@@ -852,7 +906,7 @@
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies Comments URL: https://news.ycombinator.com/item?id=47181841 Points: 92 # Comments: 68",
+        "snippet": "Article URL: https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies Comments URL: https://news.ycombinator.com/item?id=47181841 Points: 102 # Comments: 7",
         "domain": "theguardian.com"
       },
       {
@@ -861,7 +915,7 @@
         "image": null,
         "logo": "https://logo.clearbit.com/mendral.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://www.mendral.com/blog/llms-are-good-at-sql Comments URL: https://news.ycombinator.com/item?id=47181801 Points: 57 # Comments: 37",
+        "snippet": "Article URL: https://www.mendral.com/blog/llms-are-good-at-sql Comments URL: https://news.ycombinator.com/item?id=47181801 Points: 69 # Comments: 47",
         "domain": "mendral.com"
       },
       {
@@ -870,65 +924,11 @@
         "image": null,
         "logo": "https://logo.clearbit.com/github.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://github.com/c3d/db48x/commit/7819972b641ac808d46c54d3f5d1df70d706d286 Comments URL: https://news.ycombinator.com/item?id=47181753 Points: 5 # Comments: 0",
+        "snippet": "Article URL: https://github.com/c3d/db48x/commit/7819972b641ac808d46c54d3f5d1df70d706d286 Comments URL: https://news.ycombinator.com/item?id=47181753 Points: 12 # Comments: 1",
         "domain": "github.com"
       }
     ],
     "ai": [
-      {
-        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi",
-        "domain": "venturebeat.com"
-      },
-      {
-        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
-        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has cap",
-        "domain": "venturebeat.com"
-      },
-      {
-        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
-        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spen",
-        "domain": "venturebeat.com"
-      },
-      {
-        "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
-        "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4Xrcg14GLKFlwSEnuEzxyS/21c85d29d03c4c974076475c009e3b38/nuneybits_Vector_art_of_chat_bubbles_on_a_computer_screen_in_th_5018a7ea-3496-4103-8453-7ba1b129189a.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully",
-        "domain": "venturebeat.com"
-      },
-      {
-        "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files \u2014 no coding required",
-        "link": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/wHv1Wez7Ps9wYVYAo9fwT/14b41f606dbf1f5b17994be510407449/nuneybits_Hyper-realistic_image_of_a_retro_computer_with_a_glos_61ffb6e2-7c33-4d45-85f7-69c28693b3ec.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users \u2014 and according to company insiders, the team bui",
-        "domain": "venturebeat.com"
-      },
-      {
-        "title": "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment",
-        "link": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
-        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/66Tw6dMGGoSZZOK6XB6gm6/0fafc7520898e26c88edf1de9e74e863/nuneybits_Vector_art_of_radiant_skull_emitting_code_beams_deep__17d19acc-0af7-41ad-ac28-16f09ef5234b.webp?w=300&q=30",
-        "logo": "https://logo.clearbit.com/venturebeat.com",
-        "source": "VentureBeat AI",
-        "snippet": "Nous Research, the open-source artificial intelligence startup backed by crypto venture firm Paradigm, released a new competitive programming model on Monday that it says matches or exceeds several la",
-        "domain": "venturebeat.com"
-      },
       {
         "title": "And the award for the most improved EV goes to... the 2026 Toyota bZ",
         "link": "https://arstechnica.com/cars/2026/02/and-the-award-for-the-most-improved-ev-goes-to-the-2026-toyota-bz/",
@@ -984,58 +984,58 @@
         "domain": "arstechnica.com"
       },
       {
-        "title": "Meta signs multi-billion dollar deal to rent Google's TPUs in a direct challenge to Nvidia's AI chip dominance",
-        "link": "https://the-decoder.com/meta-signs-multi-billion-dollar-deal-to-rent-googles-tpus-in-a-direct-challenge-to-nvidias-ai-chip-dominance/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_tpu_chips.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Meta is renting Google's AI chips to train its models, a deal worth billions that puts Nvidia's dominance on notice. The article Meta signs multi-billion dollar deal to rent Google&#039;s TPUs in a di",
-        "domain": "the-decoder.com"
+        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi",
+        "domain": "venturebeat.com"
       },
       {
-        "title": "OpenAI's up to $110 billion raise lines up almost exactly with the $111 billion it just added to its cash burn forecast",
-        "link": "https://the-decoder.com/openais-up-to-110-billion-raise-lines-up-almost-exactly-with-the-111-billion-it-just-added-to-its-cash-burn-forecast/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_logos_wall_money.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "OpenAI closes the largest private financing round in history. Amazon invests up to 50 billion and becomes a strategic partner. Meanwhile, Microsoft emphasizes that its own partnership will not change.",
-        "domain": "the-decoder.com"
+        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has cap",
+        "domain": "venturebeat.com"
       },
       {
-        "title": "Figma and OpenAI connect design and code through new Codex integration",
-        "link": "https://the-decoder.com/figma-and-openai-connect-design-and-code-through-new-codex-integration/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/codex_app_cover-2-scaled.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "A new integration links Figma's design platform directly with OpenAI's Codex. The article Figma and OpenAI connect design and code through new Codex integration appeared first on The Decoder.",
-        "domain": "the-decoder.com"
+        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spen",
+        "domain": "venturebeat.com"
       },
       {
-        "title": "Claude Code now remembers your fixes, your preferences, and your project quirks on its own",
-        "link": "https://the-decoder.com/claude-code-now-remembers-your-fixes-your-preferences-and-your-project-quirks-on-its-own/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Claude-Code-Memory.jpg",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Claude Code now remembers what it learns across sessions - automatically tracking debugging patterns, project context, and preferred working methods without manual input. The article Claude Code now r",
-        "domain": "the-decoder.com"
+        "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+        "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4Xrcg14GLKFlwSEnuEzxyS/21c85d29d03c4c974076475c009e3b38/nuneybits_Vector_art_of_chat_bubbles_on_a_computer_screen_in_th_5018a7ea-3496-4103-8453-7ba1b129189a.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully",
+        "domain": "venturebeat.com"
       },
       {
-        "title": "Block cuts nearly half its workforce as Dorsey credits AI, but the real reasons predate the hype",
-        "link": "https://the-decoder.com/block-cuts-nearly-half-its-workforce-as-dorsey-credits-ai-but-the-real-reasons-predate-the-hype/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/block_logo_nbpro.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Jack Dorsey blames AI for cutting nearly half of Block's workforce. But a closer look at the company's history of overhiring and structural problems tells a different story. The article Block cuts nea",
-        "domain": "the-decoder.com"
+        "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files \u2014 no coding required",
+        "link": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/wHv1Wez7Ps9wYVYAo9fwT/14b41f606dbf1f5b17994be510407449/nuneybits_Hyper-realistic_image_of_a_retro_computer_with_a_glos_61ffb6e2-7c33-4d45-85f7-69c28693b3ec.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users \u2014 and according to company insiders, the team bui",
+        "domain": "venturebeat.com"
       },
       {
-        "title": "Anthropic holds firm against Pentagon on autonomous weapons and mass surveillance as deadline looms",
-        "link": "https://the-decoder.com/anthropic-holds-firm-against-pentagon-on-autonomous-weapons-and-mass-surveillance-as-deadline-looms/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/pentagon_vs_anthropic.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "The Pentagon threatens Anthropic with a law from the Korean War to force the AI company to cooperate. Anthropic refuses and stands alone among the major AI companies. The article Anthropic holds firm ",
-        "domain": "the-decoder.com"
+        "title": "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment",
+        "link": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
+        "image": "https://images.ctfassets.net/jdtwqhzvc2n1/66Tw6dMGGoSZZOK6XB6gm6/0fafc7520898e26c88edf1de9e74e863/nuneybits_Vector_art_of_radiant_skull_emitting_code_beams_deep__17d19acc-0af7-41ad-ac28-16f09ef5234b.webp?w=300&q=30",
+        "logo": "https://logo.clearbit.com/venturebeat.com",
+        "source": "VentureBeat AI",
+        "snippet": "Nous Research, the open-source artificial intelligence startup backed by crypto venture firm Paradigm, released a new competitive programming model on Monday that it says matches or exceeds several la",
+        "domain": "venturebeat.com"
       },
       {
         "title": "Google Releases Nano Banana 2 With Added AI Features",
@@ -1090,16 +1090,133 @@
         "source": "AI Business",
         "snippet": "The new funding comes as the vendor looks to launch commercial trials this year.",
         "domain": "aibusiness.com"
+      },
+      {
+        "title": "Meta signs multi-billion dollar deal to rent Google's TPUs in a direct challenge to Nvidia's AI chip dominance",
+        "link": "https://the-decoder.com/meta-signs-multi-billion-dollar-deal-to-rent-googles-tpus-in-a-direct-challenge-to-nvidias-ai-chip-dominance/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/google_tpu_chips.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Meta is renting Google's AI chips to train its models, a deal worth billions that puts Nvidia's dominance on notice. The article Meta signs multi-billion dollar deal to rent Google&#039;s TPUs in a di",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "OpenAI's up to $110 billion raise lines up almost exactly with the $111 billion it just added to its cash burn forecast",
+        "link": "https://the-decoder.com/openais-up-to-110-billion-raise-lines-up-almost-exactly-with-the-111-billion-it-just-added-to-its-cash-burn-forecast/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_logos_wall_money.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "OpenAI closes the largest private financing round in history. Amazon invests up to 50 billion and becomes a strategic partner. Meanwhile, Microsoft emphasizes that its own partnership will not change.",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Figma and OpenAI connect design and code through new Codex integration",
+        "link": "https://the-decoder.com/figma-and-openai-connect-design-and-code-through-new-codex-integration/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/codex_app_cover-2-scaled.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "A new integration links Figma's design platform directly with OpenAI's Codex. The article Figma and OpenAI connect design and code through new Codex integration appeared first on The Decoder.",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Claude Code now remembers your fixes, your preferences, and your project quirks on its own",
+        "link": "https://the-decoder.com/claude-code-now-remembers-your-fixes-your-preferences-and-your-project-quirks-on-its-own/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Claude-Code-Memory.jpg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Claude Code now remembers what it learns across sessions - automatically tracking debugging patterns, project context, and preferred working methods without manual input. The article Claude Code now r",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Block cuts nearly half its workforce as Dorsey credits AI, but the real reasons predate the hype",
+        "link": "https://the-decoder.com/block-cuts-nearly-half-its-workforce-as-dorsey-credits-ai-but-the-real-reasons-predate-the-hype/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/block_logo_nbpro.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Jack Dorsey blames AI for cutting nearly half of Block's workforce. But a closer look at the company's history of overhiring and structural problems tells a different story. The article Block cuts nea",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Anthropic holds firm against Pentagon on autonomous weapons and mass surveillance as deadline looms",
+        "link": "https://the-decoder.com/anthropic-holds-firm-against-pentagon-on-autonomous-weapons-and-mass-surveillance-as-deadline-looms/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/pentagon_vs_anthropic.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "The Pentagon threatens Anthropic with a law from the Korean War to force the AI company to cooperate. Anthropic refuses and stands alone among the major AI companies. The article Anthropic holds firm ",
+        "domain": "the-decoder.com"
       }
     ],
     "entertainment": [
+      {
+        "title": "10 Greatest Sci-Fi Movie Masterpieces of the '90s, Ranked",
+        "link": "https://collider.com/best-90s-sci-fi-movie-masterpieces-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-matrix-1999-5.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "Of all the great sci-fi movies released in the '90s, masterpieces like The Matrix, Jurassic Park, and Terminator 2 were among the very best.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "20 Years Later, One of the Best Sitcoms of the 21st Century Returns With Hilarious First Look [Exclusive]",
+        "link": "https://collider.com/malcolm-in-the-middle-revival-reboot-image-lifes-still-unfair-frankie-muniz-hulu/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/malcolm-in-the-middle-life-s-still-unfair-feature.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "After 20 years, Malcolm in the Middle makes a comeback with Life's Still Unfair, a four-episode reunion special on Hulu, starring the iconic cast.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "'9-1-1' Just Proved It's Doing Something Right With the Highest-Rated Episode in 6 Seasons",
+        "link": "https://collider.com/9-1-1-season-9-episode-11-highest-rated-episode-in-6-seasons/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/oliver-stark-9-1-1-season-9-episode-11.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "9-1-1 just proved it's doing something right with Season 9, Episode 11 becoming the highest-rated episode in 6 seasons.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "\u2018Love Story\u2019 Rewrites JFK Jr.\u2019s Most Painful Public Moment in 10 Devastating Minutes",
+        "link": "https://collider.com/love-story-jfk-jr-carolyn-bessette-battery-park-fight-episode-explained/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/love-story-jfk-carolyn-bessette-battery-park-episode.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "FX's Love Story follows the tragic romance between JFK Jr. and Carolyn Bessette, who were often tabloid fodder even in their most private moments.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Netflix Is Giving 'Mindhunter' Fans an Easy-to-Binge 7-Part Replacement on March 1",
+        "link": "https://collider.com/mindhunter-replacement-crime-thriller-the-mentalist-streaming-netflix-march-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-mentalist-tim-kang.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "CBS' 18-year-old crime classic, The Mentalist, is coming to Netflix, making it an absolute must-watch for Mindhunter fans.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Chris Hemsworth's 5 Best Marvel Movies, Ranked",
+        "link": "https://collider.com/chris-hemsworth-marvel-movies-best-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/03/thor-chris-hemsworth.jpg",
+        "logo": "https://logo.clearbit.com/collider.com",
+        "source": "Collider",
+        "snippet": "From \u2018Thor: Ragnarok\u2019 to \u2018Avengers: Infinity War\u2019 and \u2018Endgame,\u2019 ranking Chris Hemsworth\u2019s most powerful MCU performances.",
+        "domain": "collider.com"
+      },
+      {
+        "title": "Leland Orser Cast In Gideon Raff\u2019s \u2018Safe Houses\u2019 Apple Series",
+        "link": "https://deadline.com/2026/02/leland-orser-safe-houses-gideon-raff-apple-series-1236738394/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/leland-Orser-apple.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "EXCLUSIVE: Leland Orser is set as a series regular in Apple TV&#8217;s Safe Houses, an eight-episode spy thriller from Homeland executive producer Gideon Raff, inspired by Dan Fesperman&#8217;s novel.",
+        "domain": "deadline.com"
+      },
       {
         "title": "David Zaslav Tries To Sell Paramount Deal To Shocked & Disappointed Employees At Town Hall: \u201cWe\u2019re The Envy Of All Of The Industry\u201d",
         "link": "https://deadline.com/2026/02/david-zaslav-paramount-deal-warner-bros-discovery-town-hall-1236738649/",
         "image": "https://deadline.com/wp-content/uploads/2025/12/David-Zaslav.jpg",
         "logo": "https://logo.clearbit.com/deadline.com",
         "source": "Deadline",
-        "snippet": "Two and a half months after Warner Bros. Discovery CEO David Zaslav touted the deal to sell Warner Bros. to Netflix at a Dec. 5 town hall, he did the same this morning about the studio&#8217;s new buy",
+        "snippet": "Two and a half months after Warner Bros. Discovery CEO David Zaslav touted the deal to sell Warner Bros. to Netflix at a Dec. 5 town hall, he tried to do the same this morning about the studio&#8217;s",
         "domain": "deadline.com"
       },
       {
@@ -1139,67 +1256,94 @@
         "domain": "deadline.com"
       },
       {
-        "title": "Paradigm Signs Screenwriters Eyal Podell & Jonathon E. Stewart",
-        "link": "https://deadline.com/2026/02/eyal-podell-jonathon-e-stewart-sign-paradigm-1236738670/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/Eyal-Podell-Jonathon-Stewart.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "EXCLUSIVE: Screenwriting duo Eyal Podell and Jonathon E. Stewart have signed with Paradigm for representation. Alumni of Dartmouth College, Podell and Stewart first garnered industry attention with th",
-        "domain": "deadline.com"
+        "title": "Scream 7 Ending Explained",
+        "link": "https://www.ign.com/articles/scream-7-ending-explained",
+        "image": "https://assets-prd.ignimgs.com/2026/02/23/screamthumb-1771858104756.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Scream 7 ending explained: Who's behind the Ghostface mask (or masks) this time? And are there any mid- or post-credits scenes?",
+        "domain": "ign.com"
       },
       {
-        "title": "'9-1-1' Just Proved It's Doing Something Right With the Highest-Rated Episode in 6 Seasons",
-        "link": "https://collider.com/9-1-1-season-9-episode-11-highest-rated-episode-in-6-seasons/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/oliver-stark-9-1-1-season-9-episode-11.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "9-1-1 just proved it's doing something right with Season 9, Episode 11 becoming the highest-rated episode in 6 seasons.",
-        "domain": "collider.com"
+        "title": "Preorder Secretlab's Pok\u00e9mon Themed Titan Evo Gaming Chairs for Pok\u00e9mon Day",
+        "link": "https://www.ign.com/articles/preorder-secretlabs-pokemon-themed-titan-evo-gaming-chairs-for-pokemon-day",
+        "image": "https://assets-prd.ignimgs.com/2026/01/22/secretlabpokemon-1769122862935.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Gengar, Eevee, and Pikachu editions are selling out quickly.",
+        "domain": "ign.com"
       },
       {
-        "title": "\u2018Love Story\u2019 Rewrites JFK Jr.\u2019s Most Painful Public Moment in 10 Devastating Minutes",
-        "link": "https://collider.com/love-story-jfk-jr-carolyn-bessette-battery-park-fight-episode-explained/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/love-story-jfk-carolyn-bessette-battery-park-episode.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "FX's Love Story follows the tragic romance between JFK Jr. and Carolyn Bessette, who were often tabloid fodder even in their most private moments.",
-        "domain": "collider.com"
+        "title": "The 27\" Samsung QD-OLED Gaming Monitor Drops to $350, Now Includes Resident Evil: Requiem Game Code",
+        "link": "https://www.ign.com/articles/samsung-odyssey-g5-qd-oled-gaming-monitor-deal-includes-resident-evil-requiem",
+        "image": "https://assets-prd.ignimgs.com/2026/02/24/samsungs90fres-1771957939072.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Comes with a 3 year warranty that includes burn-in coverage.",
+        "domain": "ign.com"
       },
       {
-        "title": "Netflix Is Giving 'Mindhunter' Fans an Easy-to-Binge 7-Part Replacement on March 1",
-        "link": "https://collider.com/mindhunter-replacement-crime-thriller-the-mentalist-streaming-netflix-march-2026/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/the-mentalist-tim-kang.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "CBS' 18-year-old crime classic, The Mentalist, is coming to Netflix, making it an absolute must-watch for Mindhunter fans.",
-        "domain": "collider.com"
+        "title": "The Alienware Area-51 9800X3D RTX 5090 Gaming PC Drops to $4,499 (Lowest Price for 5090 Prebuilt)",
+        "link": "https://www.ign.com/articles/alienware-area-51-9800x3d-rtx-5090-gaming-pc-deal-for-february",
+        "image": "https://assets-prd.ignimgs.com/2026/02/10/alienwarearea51ryzen-1770751108036.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Also get 2X rewards (6% cash back) by setting up a free Dell Rewards account.",
+        "domain": "ign.com"
       },
       {
-        "title": "Chris Hemsworth's 5 Best Marvel Movies, Ranked",
-        "link": "https://collider.com/chris-hemsworth-marvel-movies-best-ranked/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/03/thor-chris-hemsworth.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "From \u2018Thor: Ragnarok\u2019 to \u2018Avengers: Infinity War\u2019 and \u2018Endgame,\u2019 ranking Chris Hemsworth\u2019s most powerful MCU performances.",
-        "domain": "collider.com"
+        "title": "The Best Dell & Alienware Deals and Coupons: Gaming Laptops, PCs, Monitors, and More",
+        "link": "https://www.ign.com/articles/the-best-dell-alienware-deals-and-coupons-gaming-laptops-pcs-monitors-and-more",
+        "image": "https://assets-prd.ignimgs.com/2025/03/03/alienware2025-1741020181096.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Including new Alienware Area-51 gaming PCs and laptops.",
+        "domain": "ign.com"
       },
       {
-        "title": "'The Napa Boys' Review: An Absurd Movie That Dares to Ask, \u201cWhat If 'Sideways' Had a Bunch of Terrible Sequels?\u201d",
-        "link": "https://collider.com/the-napa-boys-review/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/09/the-napa-boys.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "The Napa Boys is an absurd comedy that acts like a strange sequel to Sideways, while poking fun at franchises.",
-        "domain": "collider.com"
+        "title": "Nintendo Announces $70 Mini Game Boy That's Designed to Be a Jukebox, With Dozens of Cartridges That Play Pok\u00e9mon Music From 30 Years Ago",
+        "link": "https://www.ign.com/articles/nintendo-announces-70-mini-game-boy-thats-designed-to-be-a-jukebox-with-dozens-of-cartridges-that-play-pokemon-music-from-30-years-ago",
+        "image": "https://assets-prd.ignimgs.com/2026/02/27/game-music-collection-game-boy-jukebox-official-trailer-00-00-14-1772213331412.png",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Buried between fresh footage of Pok\u00e9mon Pokopia and today's truly momentous Gen 10 announcement for Pok\u00e9mon Winds and Waves, Nintendo announced a miniature version of its legendary Game Boy \u2014 that's a",
+        "domain": "ign.com"
       },
       {
-        "title": "10 Most Perfect Movies Released Since 2020, Ranked",
-        "link": "https://collider.com/most-perfect-movies-since-2020-ranked/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/01/the-brutalist-poster-2024.jpg",
-        "logo": "https://logo.clearbit.com/collider.com",
-        "source": "Collider",
-        "snippet": "Modern classics like The Brutalist, Marty Supreme, and Oppenheimer are all among the best, most perfect movies released since the year 2020.",
-        "domain": "collider.com"
+        "title": "Warner Bros. Sale to Paramount Over Netflix Won\u2019t Save Movie Theaters: \u2018Pick Your Poison\u2019",
+        "link": "https://variety.com/2026/film/news/warner-bros-sale-paramount-netflix-wont-save-movie-theaters-1236674293/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/david-ellison-warner-bros_720.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Is there a lesser of two evils? That was the looming question for movie theater owners before Netflix bowed out of the bidding war for Warner Bros. and paved the way for Paramount Skydance to take ove",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Radiohead Tells Trump\u2019s Homeland Security to \u2018Go F\u2014 Yourselves\u2019 After Song Used in ICE Video",
+        "link": "https://variety.com/2026/music/news/radiohead-song-ice-video-responds-dhs-1236674808/",
+        "image": "https://variety.com/wp-content/uploads/2025/09/unnamed-15-e1756842797461.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Radiohead has issued a joint band statement decrying the use of the group&#8217;s song &#8220;Let Down&#8221; in a pro-ICE video, telling the U.S.&#8217;s Department of Homeland Security to &#8220;go ",
+        "domain": "variety.com"
+      },
+      {
+        "title": "BAFTA Pressured BBC to Exclude John Davidson\u2019s N-Word Outburst From Streaming",
+        "link": "https://variety.com/2026/film/awards/bafta-pressured-bbc-exclude-john-davidson-n-word-outburst-streaming-1236674747/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2256155864.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "BAFTA is moving to correct the record on two fronts after John Davidson\u2019s Tourette&#8217;s-related outburst \u2014 including the technical question of whether a microphone near his seat may have made the m",
+        "domain": "variety.com"
+      },
+      {
+        "title": "The 10 Best Bruno Mars Songs of All Time",
+        "link": "https://variety.com/lists/best-bruno-mars-songs/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Talent_826A9334-FULL_CreditJohnV.Esparza-Updated.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Bruno Mars is perhaps pop music&#8217;s greatest creature of reinvention. Since his 2010 debut, the singer-songwriter has evolved on the genre&#8217;s main stage from a supple young crooner with stars",
+        "domain": "variety.com"
       },
       {
         "title": "\u2018Sinners\u2019 Continues to Dominate NAACP Image Awards With Wins for Ryan Coogler, Wunmi Mosaku and Delroy Lindo",
@@ -1218,152 +1362,35 @@
         "source": "Variety",
         "snippet": "The Annual Actor Awards Presented by SAG-AFTRA has announced the complete list of stunt performers and coordinators nominated for Outstanding Action Performance by a Stunt Ensemble in motion pictures ",
         "domain": "variety.com"
-      },
-      {
-        "title": "CNN Staffers Fear Warner Bros.-Paramount Deal Will Hurt Their Journalism and Network\u2019s Financial Health",
-        "link": "https://variety.com/2026/tv/news/cnn-staffers-fear-warner-bros-paramount-hurt-journalism-1236674738/",
-        "image": "https://variety.com/wp-content/uploads/2025/12/CNN-Headquarters-Atlanta.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Anderson, cooped. Jake, tapped. Erin, burnt. Kasie, hunted. Wolf, blitzed. Fears are running high among staffers at CNN, according to three people familiar with the network, after parent Warner Bros. ",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Music Industry Moves: Tiwa Savage Launches Foundation, Partners with Berklee College of Music to Empower Young African Talent; Residente Signs With UTA in All Areas",
-        "link": "https://variety.com/2026/music/news/suno-names-former-merlin-ceo-jeremy-sirota-chief-commercial-officer-1236670249/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Tiwa-Savage-Founder-of-the-Tiwa-Savage-Music-Foundation-e1772212970744.png",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Afrobeats star Tiwa Savage has launched the Tiwa Savage Music Foundation, a new philanthropic initiative dedicated to discovering, developing, and empowering the next generation of African music creat",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Bruno Mars Makes a Leisure Suit of a Record With \u2018The Romantic,\u2019 Doubling Down on Silk Sonic\u2019s Hermetically Sealed \u201970s Revivalism: Album Review",
-        "link": "https://variety.com/2026/music/album-reviews/bruno-mars-the-romantic-album-review-1236674615/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/Album-Cover-Treatment-2.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "When it rains reigning male pop superstars, it pours. The boys are back in town, and two of the three or four biggest guys in the recording business, Bruno Mars and Harry Styles, are coincidentally re",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Chris Hemsworth Says Moving Out of L.A. Was the \u2018Greatest Decision\u2019 Because \u2018Nothing Was Shooting There\u2019 and \u2018You\u2019d Come Home\u2019 to Paparazzi",
-        "link": "https://variety.com/2026/film/news/chris-hemsworth-moved-out-hollywood-1236672914/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2260444283.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Chris Hemsworth appeared on a recent episode of the &#8220;SmartLess&#8221; podcast while continuing to promote his latest movie, Amazon MGM&#8217;s &#8220;Crime 101,&#8221; and spoke honestly about h",
-        "domain": "variety.com"
-      },
-      {
-        "title": "The Top 10 Most Iconic Charizard Cards in Pok\u00e9mon TCG History",
-        "link": "https://www.ign.com/articles/most-iconic-charizard-cards-in-pokemon-tcg-history",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/most-iconic-charizard-cards-of-all-time-1772193138459.png",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "These are the most iconic Charizard cards in Pok\u00e9mon TCG history. From Charizard VMAX to 1999's Base Set.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Pok\u00e9mon Gen 10 Winds and Waves: Every Pok\u00e9mon Confirmed So Far",
-        "link": "https://www.ign.com/articles/pokemon-gen-10-winds-and-waves-every-pokemon-confirmed-so-far",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/pokmon-presents-2-27-2026-00-23-50-1772207785221.png",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "The reveal of Pok\u00e9mon Winds and Pok\u00e9mon Waves for Nintendo Switch 2 has given us our first look at the franchise's long-awaited 10th generation of creatures \u2014 as well as many returning favorites.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Pok\u00e9mon TCG 30th Anniversary Collection Set Teased During Pok\u00e9mon Presents, Releasing Later This Year",
-        "link": "https://www.ign.com/articles/pokemon-tcg-30th-anniversary-collection-set-teased-during-pokemon-presents",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/pokemon-release-schedule-2026-1772205383977.png",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "A special 30th anniversary collection was teased for Pok\u00e9mon TCG during the recent Pok\u00e9mon Presents livestream.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Pok\u00e9mon Fans Are Begging New Fire Starter Pombon to Stay on All 4 Legs When It Evolves",
-        "link": "https://www.ign.com/articles/pokemon-fans-are-begging-new-fire-starter-pombon-to-stay-on-all-four-legs-when-it-evolves",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/pokemon-blog-1772205334660.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "The Pok\u00e9mon Company has just unveiled the three new starter Pok\u00e9mon who we'll choose from in Pok\u00e9mon Winds and Waves. Among them is a cute little fire-type pomeranian-inspired dog named Pombon, and wi",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Trix and Lucky Charms Have Dropped New Super Mario Galaxy Movie Cereals",
-        "link": "https://www.ign.com/articles/trix-and-lucky-charms-have-dropped-new-super-mario-galaxy-movie-cereals",
-        "image": "https://assets-prd.ignimgs.com/2026/02/26/super-mario-galaxy-movie-cereals-1772121225993.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Trix and Lucky Charms have dropped new tie-in cereals for The Super Mario Galaxy Movie. The Trix cereal is blue raspberry flavored while the Lucky Charms cereal is strawberry flavored.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "First Look at Kratos and Atreus in Amazon's God of War TV Show",
-        "link": "https://www.ign.com/articles/first-look-at-kratos-and-atreus-in-amazons-god-of-war-tv-show",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/gow-1772205228253.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Amazon has revealed the first photo of its God of War series, showing off Kratos and Atreus.",
-        "domain": "ign.com"
       }
     ],
     "weird_news": [
       {
-        "title": "Someone\u2019s architectural phone charging wire configuration without touching the ground",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfpmk6/someones_architectural_phone_charging_wire/",
-        "image": "https://preview.redd.it/krtql1sn7xlg1.jpeg?width=640&crop=smart&auto=webp&s=328ca57688c83b3abd2a3cf39248e81dfbecd3ef",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/themanfromosaka [link] &#32; [comments]",
-        "domain": "reddit.com"
+        "title": "Bottle of salt from before the dinosaurs has an expiration date of 2019",
+        "link": "https://boingboing.net/2026/02/27/bottle-of-salt-from-before-the-dinosaurs-has-an-expiration-date-of-2019.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2025/10/salt.jpg?fit=1200%2C800&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Someone spotted something strange on a container of Himalayan pink salt. The label says the salt was \"formed by the primal sea more than 250 million years ago.\" It also says it expired in 2019. Salt t",
+        "domain": "boingboing.net"
       },
       {
-        "title": "This pack of miniature cucumbers has an extremely tiny cucumber inside.",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rflnui/this_pack_of_miniature_cucumbers_has_an_extremely/",
-        "image": "https://preview.redd.it/40hkjku0hwlg1.jpeg?width=640&crop=smart&auto=webp&s=b2aeee0387d4365f045f4c1fea564ca497aea1bf",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/UltimateArgentinian [link] &#32; [comments]",
-        "domain": "reddit.com"
+        "title": "Watch an adorable pup surprise people as they walk by his window",
+        "link": "https://boingboing.net/2026/02/27/watch-an-adorable-pup-surprise-people-as-they-walk-by-his-window.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2022/08/dog-1.jpeg?fit=1500%2C1049&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "A handwritten sign sits in front of an empty window: call out \"Max\" and an angel will appear. In this video, a woman passing by notices the sign and decides to give it a try. Spoiler: it worked. A flu",
+        "domain": "boingboing.net"
       },
       {
-        "title": "The ShamWow guy is running in my district and the door flyer came with a free sample",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfyscy/the_shamwow_guy_is_running_in_my_district_and_the/",
-        "image": "https://preview.redd.it/r5ypk0yiazlg1.jpeg?width=640&crop=smart&auto=webp&s=60aae7a98f94ebfc03a5b74a7a98032eeca134ed",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/ech0_matrix [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
-        "title": "Came to McDonald\u2019s 5 min before breakfast was over and they put double patties on all 4 of my sandwiches",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgbr0p/came_to_mcdonalds_5_min_before_breakfast_was_over/",
-        "image": "https://preview.redd.it/47dx1l6zf2mg1.jpeg?width=640&crop=smart&auto=webp&s=9cf1a87aa36c43c33df285a6c62171caf4fa6474",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/zayouthere [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
-        "title": "My Luger turns 110 years old this year.",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfvlfk/my_luger_turns_110_years_old_this_year/",
-        "image": "https://preview.redd.it/3de3t0sthylg1.jpeg?width=640&crop=smart&auto=webp&s=df52ab215f27832e4c1ff34b8a008e28aa8c2ed8",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/njkauto [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
-        "title": "Chicken Finger shaped like a Chicken",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfo2o1/chicken_finger_shaped_like_a_chicken/",
-        "image": "https://preview.redd.it/e1qgrpmywwlg1.jpeg?width=640&crop=smart&auto=webp&s=a8e4e1a601a0eb65a7becf558aade090f0991005",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/ArticFox1029 [link] &#32; [comments]",
-        "domain": "reddit.com"
+        "title": "Driving Through a Locust Swarm Looks Like a Living Sandstorm",
+        "link": "https://boingboing.net/2026/02/27/driving-through-a-locust-swarm-looks-like-a-living-sandstorm.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2022/06/202008_Desert_locust_gregarious_phase_adult.png?fit=1280%2C641&quality=55&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Driving through a locust swarm is like passing through a living sandstorm.&#160;This video from the Sahara Desert&#160;shows just how chaotic it gets \u2014 an absurd number of locusts cover everything in ",
+        "domain": "boingboing.net"
       },
       {
         "title": "Kash Patel's girlfriend defends his taxpayer-funded hockey party by yelling about transgender mice",
@@ -1393,31 +1420,58 @@
         "domain": "boingboing.net"
       },
       {
-        "title": "Gold medalist forced to clarify he didn't record White House's AI tantrum",
-        "link": "https://boingboing.net/2026/02/27/gold-medalist-forced-to-clarify-he-didnt-record-white-houses-ai-tantrum.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2017/02/US-WhiteHouse-Logo.svg_.jpg?fit=720%2C490&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "There is no way the captain of the US Olympic Hockey Team could have anticipated he'd be publicly denying crude insults put in his mouth by a deep-faking White House. This is not part of the training ",
-        "domain": "boingboing.net"
+        "title": "Someone\u2019s architectural phone charging wire configuration without touching the ground",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfpmk6/someones_architectural_phone_charging_wire/",
+        "image": "https://preview.redd.it/krtql1sn7xlg1.jpeg?width=640&crop=smart&auto=webp&s=328ca57688c83b3abd2a3cf39248e81dfbecd3ef",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/themanfromosaka [link] &#32; [comments]",
+        "domain": "reddit.com"
       },
       {
-        "title": "JD Vance and the art of unintentional irony",
-        "link": "https://boingboing.net/2026/02/27/jd-vance-and-the-art-of-unintentional-irony.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2025/04/jd-vance.jpg?fit=1200%2C970&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "Openly racist, willing to lie for headlines, Vice President JD Vance has a real feel for unintentionally calling himself out. One assumes that Vance meant someone else, but he and Trump are the Federa",
-        "domain": "boingboing.net"
+        "title": "This pack of miniature cucumbers has an extremely tiny cucumber inside.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rflnui/this_pack_of_miniature_cucumbers_has_an_extremely/",
+        "image": "https://preview.redd.it/40hkjku0hwlg1.jpeg?width=640&crop=smart&auto=webp&s=b2aeee0387d4365f045f4c1fea564ca497aea1bf",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/UltimateArgentinian [link] &#32; [comments]",
+        "domain": "reddit.com"
       },
       {
-        "title": "Jack Dorsey nukes 40% of Blocks staff because AI",
-        "link": "https://boingboing.net/2026/02/27/jack-dorsey-nukes-40-of-blocks-staff-because-ai.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2019/04/dorsey.jpg?fit=610%2C372&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "A tweet from Jack Dorsey informs his staff and the world that while the company is profitable and growing, he feels the need to let 40% of the 10,000 workers go because AI will replace them sooner or ",
-        "domain": "boingboing.net"
+        "title": "The ShamWow guy is running in my district and the door flyer came with a free sample",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfyscy/the_shamwow_guy_is_running_in_my_district_and_the/",
+        "image": "https://preview.redd.it/r5ypk0yiazlg1.jpeg?width=640&crop=smart&auto=webp&s=60aae7a98f94ebfc03a5b74a7a98032eeca134ed",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/ech0_matrix [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "My Luger turns 110 years old this year.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfvlfk/my_luger_turns_110_years_old_this_year/",
+        "image": "https://preview.redd.it/3de3t0sthylg1.jpeg?width=640&crop=smart&auto=webp&s=df52ab215f27832e4c1ff34b8a008e28aa8c2ed8",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/njkauto [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "Chicken Finger shaped like a Chicken",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfo2o1/chicken_finger_shaped_like_a_chicken/",
+        "image": "https://preview.redd.it/e1qgrpmywwlg1.jpeg?width=640&crop=smart&auto=webp&s=a8e4e1a601a0eb65a7becf558aade090f0991005",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/ArticFox1029 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "I got all of these crayons (some say name coming soon) for $0.99.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rfsfkn/i_got_all_of_these_crayons_some_say_name_coming/",
+        "image": "https://preview.redd.it/ndwbkabdsxlg1.jpeg?width=640&crop=smart&auto=webp&s=86bf86e471f918d1f7f3247693e8eb7e105d9a05",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/blassomi [link] &#32; [comments]",
+        "domain": "reddit.com"
       },
       {
         "title": "10-Year-Old Boy Sues Father for Spending His Savings without His Consent",
@@ -1476,21 +1530,21 @@
     ],
     "wisconsin": [
       {
+        "title": "Generac settles $200M lawsuit over 2023 generator explosion",
+        "link": "https://www.wpr.org/news/generac-settles-lawsuit-2023-generator-explosion",
+        "image": null,
+        "logo": "https://logo.clearbit.com/wpr.org",
+        "source": "Wisconsin Public Radio",
+        "snippet": "Waukesha-based Generac Power Systems is settling a lawsuit related to a 2023 explosion of one of its portable generators at a Pennsylvania construction site. The post Generac settles $200M lawsuit ove",
+        "domain": "wpr.org"
+      },
+      {
         "title": "The Final Forte: A conversation with Lori Skelton and Deb Piper",
         "link": "https://www.wpr.org/music/the-final-forte-a-conversation-with-lori-skelton-and-deb-piper",
         "image": null,
         "logo": "https://logo.clearbit.com/wpr.org",
         "source": "Wisconsin Public Radio",
         "snippet": "This week, WPR\u2019s Lori Skelton and PBS\u2019s Deb Piper sat down to talk about their experiences working on the Final Forte, an event in which young performers from around the state compete in Madison\u2019s Ove",
-        "domain": "wpr.org"
-      },
-      {
-        "title": "Assembly Speaker Robin Vos says \u2018the money is there\u2019 for tax rebates, special education funding",
-        "link": "https://www.wpr.org/news/assembly-speaker-robin-vos-says-tax-rebates-special-education-funding-surplus",
-        "image": null,
-        "logo": "https://logo.clearbit.com/wpr.org",
-        "source": "Wisconsin Public Radio",
-        "snippet": "On the heels of the Assembly Speaker\u2019s retirement announcement, Vos told WPR about negotiations to spend down Wisconsin\u2019s $2.5 billion budget surplus. The post Assembly Speaker Robin Vos says &#8216;t",
         "domain": "wpr.org"
       },
       {
@@ -1521,12 +1575,12 @@
         "domain": "wuwm.com"
       },
       {
-        "title": "JD Vance stumps for Derrick Van Orden, Tom Tiffany in Wisconsin campaign event",
-        "link": "https://www.wpr.org/news/jd-vance-derrick-van-orden-tom-tiffany-plover",
+        "title": "Assembly Speaker Robin Vos says \u2018the money is there\u2019 for tax rebates, special education funding",
+        "link": "https://www.wpr.org/news/assembly-speaker-robin-vos-says-tax-rebates-special-education-funding-surplus",
         "image": null,
         "logo": "https://logo.clearbit.com/wpr.org",
         "source": "Wisconsin Public Radio",
-        "snippet": "Vice President JD Vance was in Plover Thursday, campaigning for Republican Congressman Derrick Van Orden in an effort to hang on to the GOP's slim majority in the U.S. House. The post JD Vance stumps ",
+        "snippet": "On the heels of the Assembly Speaker\u2019s retirement announcement, Vos told WPR about negotiations to spend down Wisconsin\u2019s $2.5 billion budget surplus. The post Assembly Speaker Robin Vos says &#8216;t",
         "domain": "wpr.org"
       },
       {
@@ -2022,13 +2076,22 @@
   ],
   "youtube_picks": [
     {
-      "title": "7 Weird Things You Can Do with Python Dataclasses",
-      "url": "https://www.youtube.com/watch?v=Y9_h7ehjhO4",
-      "video_id": "Y9_h7ehjhO4",
-      "channel": "Theo \u2014 t3.gg",
-      "thumbnail": "https://i.ytimg.com/vi/Y9_h7ehjhO4/mqdefault.jpg",
+      "title": "Bill Clinton tells House Oversight Committee he had no knowledge of Epstein's crimes",
+      "url": "https://www.youtube.com/shorts/jFAMEp3ehoU",
+      "video_id": "jFAMEp3ehoU",
+      "channel": "NBC News",
+      "thumbnail": "https://i.ytimg.com/vi/jFAMEp3ehoU/mqdefault.jpg",
       "published": "2026-02-27",
-      "category": "tech"
+      "category": "news"
+    },
+    {
+      "title": "TED isn't just about the talks. Join us at TED2026 | April 13-17 in Vancouver, BC #TEDTalks",
+      "url": "https://www.youtube.com/shorts/YU5r4bHrWH0",
+      "video_id": "YU5r4bHrWH0",
+      "channel": "TED",
+      "thumbnail": "https://i.ytimg.com/vi/YU5r4bHrWH0/mqdefault.jpg",
+      "published": "2026-02-27",
+      "category": "education"
     },
     {
       "title": "The Galaxy S26 Ultra\u2019s new Privacy Display is pretty cool. #Vergecast",
@@ -2040,22 +2103,13 @@
       "category": "news"
     },
     {
-      "title": "How Competition Is Stifling AI Breakthroughs | Llion Jones | TED",
-      "url": "https://www.youtube.com/watch?v=aMB8JWgejIw",
-      "video_id": "aMB8JWgejIw",
-      "channel": "TED",
-      "thumbnail": "https://i.ytimg.com/vi/aMB8JWgejIw/mqdefault.jpg",
+      "title": "7 Weird Things You Can Do with Python Dataclasses",
+      "url": "https://www.youtube.com/watch?v=Y9_h7ehjhO4",
+      "video_id": "Y9_h7ehjhO4",
+      "channel": "Theo \u2014 t3.gg",
+      "thumbnail": "https://i.ytimg.com/vi/Y9_h7ehjhO4/mqdefault.jpg",
       "published": "2026-02-27",
-      "category": "education"
-    },
-    {
-      "title": "Pakistan declares 'open war' with Afghanistan as they trade deadly strikes",
-      "url": "https://www.youtube.com/shorts/zGxPJ-rP4_0",
-      "video_id": "zGxPJ-rP4_0",
-      "channel": "NBC News",
-      "thumbnail": "https://i.ytimg.com/vi/zGxPJ-rP4_0/mqdefault.jpg",
-      "published": "2026-02-27",
-      "category": "news"
+      "category": "tech"
     },
     {
       "title": "Conan Roasts Will Arnett For Reading A Long Quote | Conan O'Brien Needs A Friend",
@@ -2076,13 +2130,13 @@
       "category": "tech"
     },
     {
-      "title": "Debug Storage APIs",
-      "url": "https://www.youtube.com/watch?v=ESZX18Ty5V0",
-      "video_id": "ESZX18Ty5V0",
-      "channel": "Google DeepMind",
-      "thumbnail": "https://i.ytimg.com/vi/ESZX18Ty5V0/mqdefault.jpg",
+      "title": "This Parasite Won\u2019t Die",
+      "url": "https://www.youtube.com/shorts/MP4RUzRnobg",
+      "video_id": "MP4RUzRnobg",
+      "channel": "Kurzgesagt",
+      "thumbnail": "https://i.ytimg.com/vi/MP4RUzRnobg/mqdefault.jpg",
       "published": "2026-02-26",
-      "category": "tech"
+      "category": "science"
     },
     {
       "title": "When open-sourcing your code goes wrong...",
@@ -2227,8 +2281,8 @@
     ],
     "games": [
       {
-        "title": "JOHN FURY'S FIRST FURY",
-        "url": "https://store.steampowered.com/app/4387780/",
+        "title": "Dan The Dango Likes Factory Games",
+        "url": "https://store.steampowered.com/app/4365500/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2237,8 +2291,8 @@
         "released": "2026-02-27"
       },
       {
-        "title": "THE NEWZEALAND STORY: Untold Adventure",
-        "url": "https://store.steampowered.com/app/4193730/",
+        "title": "Pack my Lunchbox: Love Notes",
+        "url": "https://store.steampowered.com/app/4421730/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2247,8 +2301,8 @@
         "released": "2026-02-27"
       },
       {
-        "title": "Just Dismantle",
-        "url": "https://store.steampowered.com/app/4043010/",
+        "title": "Hamachi the Psychotic Killer",
+        "url": "https://store.steampowered.com/app/3355690/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2257,8 +2311,8 @@
         "released": "2026-02-27"
       },
       {
-        "title": "Baki Hanma - Musashi",
-        "url": "https://store.steampowered.com/app/4278440/",
+        "title": "Laysara: Summit Kingdom",
+        "url": "https://store.steampowered.com/app/1823950/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2267,8 +2321,8 @@
         "released": "2026-02-27"
       },
       {
-        "title": "LumenKnight",
-        "url": "https://store.steampowered.com/app/4135160/",
+        "title": "Ghetto Zombies: Graffiti Squad - Artbook Digital",
+        "url": "https://store.steampowered.com/app/4443990/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2277,8 +2331,8 @@
         "released": "2026-02-27"
       },
       {
-        "title": "Twisted Chance Online",
-        "url": "https://store.steampowered.com/app/3963240/",
+        "title": "Duball Dash",
+        "url": "https://store.steampowered.com/app/4380100/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2326,6 +2380,141 @@
       }
     ]
   },
+  "hacker_news": [
+    {
+      "title": "Statement from Dario Amodei on our discussions with the Department of War",
+      "link": "https://www.anthropic.com/news/statement-department-of-war",
+      "source": "Hacker News",
+      "domain": "anthropic.com",
+      "score": 2676,
+      "num_comments": 1421,
+      "hn_url": "https://news.ycombinator.com/item?id=47173121",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "What Claude Code chooses",
+      "link": "https://amplifying.ai/research/claude-code-picks",
+      "source": "Hacker News",
+      "domain": "amplifying.ai",
+      "score": 563,
+      "num_comments": 210,
+      "hn_url": "https://news.ycombinator.com/item?id=47169757",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "The Hunt for Dark\u00a0Breakfast",
+      "link": "https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast/",
+      "source": "Hacker News",
+      "domain": "moultano.wordpress.com",
+      "score": 450,
+      "num_comments": 164,
+      "hn_url": "https://news.ycombinator.com/item?id=47176257",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "AirSnitch: Demystifying and breaking client isolation in Wi-Fi networks [pdf]",
+      "link": "https://www.ndss-symposium.org/wp-content/uploads/2026-f1282-paper.pdf",
+      "source": "Hacker News",
+      "domain": "ndss-symposium.org",
+      "score": 398,
+      "num_comments": 173,
+      "hn_url": "https://news.ycombinator.com/item?id=47167763",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "What does \" 2>&1 \" mean?",
+      "link": "https://stackoverflow.com/questions/818255/what-does-21-mean",
+      "source": "Hacker News",
+      "domain": "stackoverflow.com",
+      "score": 393,
+      "num_comments": 227,
+      "hn_url": "https://news.ycombinator.com/item?id=47171233",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "Tenth Circuit: 4th Amendment Doesn't Support Broad Search of Protesters' Devices",
+      "link": "https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0",
+      "source": "Hacker News",
+      "domain": "eff.org",
+      "score": 226,
+      "num_comments": 25,
+      "hn_url": "https://news.ycombinator.com/item?id=47181391",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "The normalization of corruption in organizations (2003) [pdf]",
+      "link": "https://gwern.net/doc/sociology/2003-ashforth.pdf",
+      "source": "Hacker News",
+      "domain": "gwern.net",
+      "score": 223,
+      "num_comments": 122,
+      "hn_url": "https://news.ycombinator.com/item?id=47177186",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "Can you reverse engineer our neural network?",
+      "link": "https://blog.janestreet.com/can-you-reverse-engineer-our-neural-network/",
+      "source": "Hacker News",
+      "domain": "blog.janestreet.com",
+      "score": 211,
+      "num_comments": 134,
+      "hn_url": "https://news.ycombinator.com/item?id=47146487",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    }
+  ],
+  "personal_github": {
+    "commits": [
+      {
+        "repo": "nyx-daily",
+        "message": "push 5411d9e",
+        "date": "2026-02-27"
+      },
+      {
+        "repo": "nyx-daily",
+        "message": "push 5a96c90",
+        "date": "2026-02-27"
+      },
+      {
+        "repo": "nyx-daily",
+        "message": "push de66da9",
+        "date": "2026-02-27"
+      },
+      {
+        "repo": "nyx-daily",
+        "message": "push da69524",
+        "date": "2026-02-27"
+      },
+      {
+        "repo": "nyx-daily",
+        "message": "push b68a5a0",
+        "date": "2026-02-27"
+      },
+      {
+        "repo": "nyx-backup",
+        "message": "push 0e004fb",
+        "date": "2026-02-27"
+      }
+    ],
+    "prs": [],
+    "summary": "6 commits across 3 repos this week"
+  },
+  "tldr": "Transgender youths face backlash as new Pentagon-backed Scouting America changes roll out, while Bill Clinton's deposition on Jeffrey Epstein resurfaces, prompting scrutiny on longstanding power dynamics. In the world of entertainment, Netflix shifts strategies by letting go of Warner Bros. Discovery, and the nostalgia train is rolling as a beloved sitcom teases its return after two decades.",
   "breathwork_session": {
     "name": "Alternate Nostril",
     "description": "Balances brain hemispheres and reduces anxiety. Yogic pranayama technique.",
