@@ -2,7 +2,6 @@ import { getTodaysBriefing } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
-import FocusCard from '@/components/briefing/FocusCard';
 import NewsSection from '@/components/briefing/NewsSection';
 import AppOfTheDay from '@/components/briefing/AppOfTheDay';
 import SportsSection from '@/components/briefing/SportsSection';
@@ -75,13 +74,15 @@ export default async function HomePage() {
     (d) => !d.done && d.days >= 0 && d.days <= 7
   ).length;
 
+  const urgentDeadlines = (briefing.school_deadlines ?? []).filter(d => !d.done && d.days <= 1).length;
+
   const breathworkFallback = briefing.breathwork
     ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
     : undefined;
 
   return (
     <>
-      <Navbar />
+      <Navbar urgentCount={urgentDeadlines} />
 
       <HeroSection
         briefing={briefing}
@@ -90,6 +91,7 @@ export default async function HomePage() {
         dayOfYear={dayOfYear}
         headlineCount={headlineCount}
         upcomingCount={upcomingCount}
+        focus={briefing.focus}
       />
 
       <UrgencyBanner deadlines={briefing.school_deadlines} />
@@ -100,8 +102,6 @@ export default async function HomePage() {
 
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
-
-            <FocusCard focus={briefing.focus} />
 
             {/* News — full width, lead feature */}
             <div id="news" className="scroll-mt-16">

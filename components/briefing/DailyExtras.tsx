@@ -19,7 +19,7 @@ export default function DailyExtras({ word, facts }: Props) {
   if (!hasFacts && !hasWord) return null;
 
   return (
-    <div className="nyx-card p-4">
+    <div>
       {/* Tab bar — only show when both options exist */}
       {hasFacts && hasWord && (
         <div className="flex items-center gap-1 mb-4">

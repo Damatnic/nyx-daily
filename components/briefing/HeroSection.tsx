@@ -8,6 +8,7 @@ interface Props {
   dayOfYear: number;
   headlineCount: number;
   upcomingCount: number;
+  focus?: string | null;
 }
 
 function parseWeather(w: string) {
@@ -31,7 +32,7 @@ function tempColor(t: string) {
   return 'text-red-400';
 }
 
-export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount }: Props) {
+export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus }: Props) {
   const year      = new Date(briefing.date + 'T12:00:00').getFullYear();
   const totalDays = year % 4 === 0 ? 366 : 365;
   const pct       = Math.round((dayOfYear / totalDays) * 100);
@@ -100,16 +101,28 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
           </div>
         </div>
 
-        {/* ── Row 2: quote strip ── */}
-        {briefing.quote && (
-          <div className="pb-3 flex items-start gap-3 min-w-0">
-            <div className="w-px self-stretch bg-violet-500/30 shrink-0 rounded-full" />
-            <p className="text-sm italic text-slate-500 leading-relaxed line-clamp-2 min-w-0">
-              &ldquo;{briefing.quote}&rdquo;
-              {briefing.author && (
-                <span className="not-italic text-slate-700 ml-1.5">— {briefing.author}</span>
-              )}
-            </p>
+        {/* ── Row 2: quote + focus ── */}
+        {(briefing.quote || focus) && (
+          <div className="pb-3 flex flex-col sm:flex-row gap-2 sm:gap-5 min-w-0">
+            {briefing.quote && (
+              <div className="flex items-start gap-3 flex-1 min-w-0">
+                <div className="w-px self-stretch bg-violet-500/25 shrink-0 rounded-full" />
+                <p className="text-sm italic text-slate-500 leading-relaxed line-clamp-1 min-w-0">
+                  &ldquo;{briefing.quote}&rdquo;
+                  {briefing.author && (
+                    <span className="not-italic text-slate-700 ml-1.5">— {briefing.author}</span>
+                  )}
+                </p>
+              </div>
+            )}
+            {focus && (
+              <div className="flex items-center gap-2 shrink-0 sm:border-l sm:border-white/[0.06] sm:pl-5">
+                <span className="text-violet-400 text-xs select-none">⚡</span>
+                <p className="text-[12px] text-slate-400 line-clamp-1 max-w-[280px]">
+                  {focus.replace(/\*\*/g, '').replace(/^[→🚨⚡]\s*/, '').trim()}
+                </p>
+              </div>
+            )}
           </div>
         )}
       </div>
