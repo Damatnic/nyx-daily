@@ -1,6 +1,5 @@
 import { getTodaysBriefing } from '@/lib/data';
 import Navbar from '@/components/nav/Navbar';
-import NewsTicker from '@/components/briefing/NewsTicker';
 import HeroSection from '@/components/briefing/HeroSection';
 import UrgencyBanner from '@/components/briefing/UrgencyBanner';
 import FocusCard from '@/components/briefing/FocusCard';
@@ -95,8 +94,6 @@ export default async function HomePage() {
 
       <UrgencyBanner deadlines={briefing.school_deadlines} />
 
-      <NewsTicker news={briefing.news} />
-
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 min-w-0">
@@ -107,7 +104,7 @@ export default async function HomePage() {
             <FocusCard focus={briefing.focus} />
 
             {/* News — full width, lead feature */}
-            <div id="news" className="scroll-mt-20">
+            <div id="news" className="scroll-mt-16">
               <RevealCard delay={0}>
                 <NewsSection news={briefing.news} />
               </RevealCard>
@@ -115,7 +112,7 @@ export default async function HomePage() {
 
             {/* GitHub + Reddit — side by side */}
             {(!!briefing.github_trending?.length || !!briefing.reddit_hot?.length) && (
-              <div id="github" className={`grid gap-5 scroll-mt-20 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <div id="github" className={`grid gap-5 scroll-mt-16 items-start ${briefing.github_trending?.length && briefing.reddit_hot?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                 {!!briefing.github_trending?.length && (
                   <RevealCard delay={0}><GithubTrending repos={briefing.github_trending} /></RevealCard>
                 )}
@@ -127,7 +124,7 @@ export default async function HomePage() {
 
             {/* YouTube + ProductHunt — side by side */}
             {(!!briefing.youtube_picks?.length || !!briefing.product_hunt?.length) && (
-              <div id="youtube" className={`grid gap-5 scroll-mt-20 items-start ${briefing.youtube_picks?.length && briefing.product_hunt?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <div id="youtube" className={`grid gap-5 scroll-mt-16 items-start ${briefing.youtube_picks?.length && briefing.product_hunt?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                 {!!briefing.youtube_picks?.length && (
                   <RevealCard delay={0}><YouTubeSection videos={briefing.youtube_picks} /></RevealCard>
                 )}
@@ -139,7 +136,7 @@ export default async function HomePage() {
 
             {/* Sports + Hidden Gems — side by side */}
             {(!!briefing.sports?.length || !!briefing.hidden_gems?.length) && (
-              <div id="sports" className={`grid gap-5 scroll-mt-20 items-start ${briefing.sports?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <div id="sports" className={`grid gap-5 scroll-mt-16 items-start ${briefing.sports?.length && briefing.hidden_gems?.length ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                 {!!briefing.sports?.length && (
                   <RevealCard delay={0}><SportsSection sports={briefing.sports} /></RevealCard>
                 )}
@@ -151,7 +148,7 @@ export default async function HomePage() {
 
             {/* Workout + Breathwork — side by side */}
             {(!!briefing.workout?.exercises?.length || briefing.breathwork_session) && (
-              <div id="workout" className={`grid gap-5 scroll-mt-20 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+              <div id="workout" className={`grid gap-5 scroll-mt-16 items-start ${briefing.workout?.exercises?.length && briefing.breathwork_session ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
                 {!!briefing.workout?.exercises?.length && (
                   <RevealCard delay={0}><WorkoutTracker workout={briefing.workout} date={briefing.date} /></RevealCard>
                 )}
@@ -171,7 +168,7 @@ export default async function HomePage() {
           {/* ── RIGHT RAIL — sticky ── */}
           <div
             id="weather"
-            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-5.5rem)] lg:overflow-y-auto lg:scrollbar-none"
+            className="flex flex-col gap-4 min-w-0 lg:sticky lg:top-16 lg:self-start lg:max-h-[calc(100vh-4.5rem)] lg:overflow-y-auto lg:scrollbar-none"
           >
             <div id="school" className="scroll-mt-28">
               <SidebarTabs
