@@ -17,7 +17,7 @@ import Link from 'next/link';
 import RelativeTime from '@/components/ui/RelativeTime';
 import MobileQuickBar from '@/components/briefing/MobileQuickBar';
 import ReleasesToday from '@/components/briefing/ReleasesToday';
-import TLDRCard from '@/components/briefing/TLDRCard';
+import BriefingCarousel from '@/components/briefing/BriefingCarousel';
 import HackerNewsCard from '@/components/briefing/HackerNewsCard';
 import PersonalGitHubCard from '@/components/briefing/PersonalGitHubCard';
 import RecentSaves from '@/components/briefing/RecentSaves';
@@ -135,8 +135,14 @@ export default async function HomePage() {
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-2 flex flex-col gap-5 min-w-0">
 
-            {/* ── AI TL;DR ─────────────────────────────────────── */}
-            {briefing.tldr && <TLDRCard tldr={briefing.tldr} />}
+            {/* ── BRIEFING CAROUSEL — AI Brief / Daily Extras / On This Day / NASA ── */}
+            <BriefingCarousel
+              tldr={briefing.tldr}
+              word={briefing.word_of_the_day}
+              facts={briefing.facts_of_the_day}
+              onThisDay={briefing.on_this_day}
+              apod={briefing.apod}
+            />
 
             {/* ── NEWS ─────────────────────────────────────────── */}
             <div id="news" className="scroll-mt-16">
