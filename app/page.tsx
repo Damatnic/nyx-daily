@@ -15,6 +15,7 @@ import SidebarTabs from '@/components/briefing/SidebarTabs';
 import RevealCard from '@/components/ui/RevealCard';
 import Link from 'next/link';
 import RelativeTime from '@/components/ui/RelativeTime';
+import MobileQuickBar from '@/components/briefing/MobileQuickBar';
 
 export const dynamic = 'force-dynamic';
 
@@ -94,6 +95,12 @@ export default async function HomePage() {
       />
 
       <UrgencyBanner deadlines={briefing.school_deadlines} />
+
+      {/* Mobile quick-access bar — weather + school on mobile before scrolling */}
+      <MobileQuickBar
+        weather={briefing.weather}
+        deadlines={briefing.school_deadlines}
+      />
 
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
