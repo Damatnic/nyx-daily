@@ -164,6 +164,12 @@ export interface DailyBriefing {
   workout: {
     name: string;
     exercises: WorkoutExercise[];
+    cycle_type?: 'push' | 'pull' | 'legs' | 'rest' | 'active_rest';
+    cycle_label?: string;   // e.g. "Week 2 · Push Day"
+    cycle_position?: number;
+    missed_days?: number;   // lift days missed since last completion
+    next_label?: string;    // e.g. "Rest Day → Pull Day"
+    is_rest_day?: boolean;
   };
   breathwork: {
     name: string;

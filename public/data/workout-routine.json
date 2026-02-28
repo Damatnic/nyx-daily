@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "cycle": [
+    {
+      "type": "push",
+      "label": "Push Day",
+      "focus": "Chest · Shoulders · Triceps",
+      "exercises": [
+        { "name": "Barbell Bench Press",             "reps": "x10", "note": "3 sets" },
+        { "name": "Dumbbell Overhead Press",         "reps": "x10", "note": "3 sets" },
+        { "name": "Dumbbell Lateral Raises",         "reps": "x15", "note": "3 sets" },
+        { "name": "Dumbbell Tricep Overhead Ext.",   "reps": "x12", "note": "3 sets" },
+        { "name": "Push-Ups",                        "reps": "xMax", "note": "2 sets" }
+      ]
+    },
+    {
+      "type": "rest",
+      "label": "Rest Day",
+      "focus": "Recovery + Walk",
+      "exercises": []
+    },
+    {
+      "type": "pull",
+      "label": "Pull Day",
+      "focus": "Back · Biceps",
+      "exercises": [
+        { "name": "Barbell Bent-Over Row",           "reps": "x8",  "note": "3 sets" },
+        { "name": "Single-Arm Dumbbell Row",         "reps": "x10", "note": "3 sets each side" },
+        { "name": "Dumbbell Bicep Curl",             "reps": "x12", "note": "3 sets" },
+        { "name": "Dumbbell Hammer Curl",            "reps": "x10", "note": "3 sets" },
+        { "name": "Kettlebell Romanian Deadlift",    "reps": "x10", "note": "3 sets" }
+      ]
+    },
+    {
+      "type": "rest",
+      "label": "Rest Day",
+      "focus": "Recovery + Walk",
+      "exercises": []
+    },
+    {
+      "type": "legs",
+      "label": "Legs + Core",
+      "focus": "Quads · Glutes · Hamstrings · Core",
+      "exercises": [
+        { "name": "Barbell Squat",                   "reps": "x10", "note": "3 sets" },
+        { "name": "Kettlebell Romanian Deadlift",    "reps": "x12", "note": "3 sets" },
+        { "name": "Dumbbell Reverse Lunge",          "reps": "x10", "note": "3 sets each side" },
+        { "name": "Kettlebell Sumo Squat",           "reps": "x12", "note": "3 sets" },
+        { "name": "Calf Raises",                     "reps": "x20", "note": "3 sets" },
+        { "name": "Plank",                           "reps": "45s", "note": "3 sets" },
+        { "name": "Kettlebell Swing",                "reps": "x15", "note": "2 sets" }
+      ]
+    },
+    {
+      "type": "rest",
+      "label": "Rest Day",
+      "focus": "Recovery + Walk",
+      "exercises": []
+    },
+    {
+      "type": "active_rest",
+      "label": "Active Recovery",
+      "focus": "Stretch + Walk",
+      "exercises": [
+        { "name": "Full Body Stretch (yoga mat)", "reps": "10 min", "note": "" },
+        { "name": "Walk",                         "reps": "20 min", "note": "" }
+      ]
+    }
+  ],
+  "breathwork_progression": [
+    { "week_range": [1, 2],  "name": "Box Breathing",    "rounds": 4, "description": "4-4-4-4 pattern. Foundation." },
+    { "week_range": [3, 4],  "name": "Box Breathing",    "rounds": 6, "description": "4-4-4-4 pattern. Extended." },
+    { "week_range": [5, 6],  "name": "4-7-8 Breathing",  "rounds": 4, "description": "Calming ratio. Builds CO2 tolerance." },
+    { "week_range": [7, 8],  "name": "4-7-8 Breathing",  "rounds": 6, "description": "Calming ratio. Extended." },
+    { "week_range": [9, 10], "name": "Diaphragmatic",    "rounds": 1, "description": "Belly breathing. Resets breathing mechanics." },
+    { "week_range": [11, 99],"name": "Power Breathing",  "rounds": 3, "description": "Wim Hof style. Full protocol." }
+  ]
+}
