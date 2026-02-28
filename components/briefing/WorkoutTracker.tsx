@@ -174,7 +174,12 @@ export default function WorkoutTracker({ workout, date }: Props) {
             <span className="text-[10px] font-mono text-slate-600">{doneCount}/{total}</span>
           )}
           {doneCount > 0 && (
-            <button onClick={reset} className="text-slate-700 hover:text-slate-400 transition-colors" title="Reset">
+            <button
+              onClick={reset}
+              className="text-slate-700 hover:text-slate-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+              title="Reset"
+              aria-label="Reset workout progress"
+            >
               <RotateCcw size={12} />
             </button>
           )}
@@ -191,7 +196,8 @@ export default function WorkoutTracker({ workout, date }: Props) {
           </p>
           <button
             onClick={handleSkip}
-            className="text-[10px] text-amber-500/60 hover:text-amber-400 transition-colors shrink-0 font-medium"
+            className="text-[10px] text-amber-500/60 hover:text-amber-400 transition-colors shrink-0 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+            aria-label="Skip today's workout"
           >
             {skipping ? 'Skipped ✓' : 'Skip'}
           </button>
@@ -233,7 +239,8 @@ export default function WorkoutTracker({ workout, date }: Props) {
                   role="button" tabIndex={0}
                   onClick={() => toggle(i)}
                   onKeyDown={e => { if (e.key === ' ' || e.key === 'Enter') toggle(i); }}
-                  className={`w-full flex items-center gap-3 px-5 py-3 text-left transition-all duration-150 cursor-pointer ${
+                  aria-label={isDone ? `Mark ${ex.name} incomplete` : `Mark ${ex.name} complete`}
+                  className={`w-full flex items-center gap-3 px-5 py-3 text-left transition-all duration-150 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 ${
                     isDone ? 'opacity-40' : 'hover:bg-white/[0.02]'
                   }`}
                 >
@@ -287,7 +294,9 @@ export default function WorkoutTracker({ workout, date }: Props) {
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-[12px] font-semibold
                            bg-white/[0.03] border border-white/[0.06] text-slate-500
                            hover:bg-emerald-500/10 hover:border-emerald-500/20 hover:text-emerald-400
-                           disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
+                           disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200
+                           focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50"
+                aria-label="Mark workout complete and advance routine"
               >
                 <Check size={13} />
                 Mark complete + advance routine
@@ -302,9 +311,10 @@ export default function WorkoutTracker({ workout, date }: Props) {
         <div className={`flex items-center gap-3 px-5 py-3 border-t ${walkDone ? 'border-cyan-500/15 bg-cyan-500/[0.04]' : 'border-white/[0.04]'}`}>
           <button
             onClick={handleWalkToggle}
-            className={`flex items-center gap-2 text-[11px] font-medium transition-all duration-200 ${
+            className={`flex items-center gap-2 text-[11px] font-medium transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded ${
               walkDone ? 'text-cyan-400' : 'text-slate-600 hover:text-slate-400'
             }`}
+            aria-label={walkDone ? 'Unmark walk as done' : 'Mark walk as done'}
           >
             <div className={`w-4 h-4 rounded border flex items-center justify-center transition-all ${
               walkDone ? 'bg-cyan-500 border-cyan-500' : 'border-slate-700'

@@ -187,6 +187,16 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
     clearBwTimer(); setBwState('idle'); setBwRound(1); setBwStepIdx(0); setBwCountdown(0);
   }, [clearBwTimer]);
 
+  const restartBw = useCallback(() => {
+    clearBwTimer();
+    setBwDoneToday(false);
+    localStorage.removeItem(`breathwork-${date}`);
+    setBwState('idle');
+    setBwRound(1);
+    setBwStepIdx(0);
+    setBwCountdown(0);
+  }, [clearBwTimer, date]);
+
   const completeBw = useCallback(async () => {
     setBwState('done'); setBwDoneToday(true);
     localStorage.setItem(`breathwork-${date}`, '1');
@@ -255,7 +265,8 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
             {breathwork && !bwDoneToday && bwState === 'idle' && (
               <button
                 onClick={() => { setBwExpanded(e => !e); }}
-                className={`text-[10px] font-medium transition-colors ${bwExpanded ? 'text-slate-500' : `${bwColor} hover:opacity-80`}`}
+                className={`text-[10px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded ${bwExpanded ? 'text-slate-500' : `${bwColor} hover:opacity-80`}`}
+                aria-label={bwExpanded ? 'Collapse breathwork details' : 'Expand breathwork details'}
               >
                 {bwExpanded ? 'collapse' : 'expand →'}
               </button>
@@ -277,7 +288,8 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
                 onClick={startBw}
                 className={`ml-auto flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1 rounded-full
                             border transition-all duration-200 ${bwColor}
-                            border-current/20 hover:opacity-80`}
+                            border-current/20 hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50`}
+                aria-label="Begin breathwork session"
               >
                 <Play size={10} fill="currentColor" /> Begin
               </button>
@@ -299,7 +311,8 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
               onClick={startBw}
               className={`w-full mt-2 flex items-center justify-center gap-2 py-2 rounded-lg
                          border text-[12px] font-semibold transition-all duration-200 ${bwColor}
-                         bg-current/5 border-current/20 hover:bg-current/10`}
+                         bg-current/5 border-current/20 hover:bg-current/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50`}
+              aria-label="Start breathwork session"
             >
               <Play size={12} fill="currentColor" /> Start Session
             </button>
@@ -317,7 +330,12 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
               </div>
             </div>
             <span className={`text-3xl font-mono font-bold tabular-nums ${bwColor}`}>{bwCountdown}</span>
-            <button onClick={stopBw} className="text-slate-700 hover:text-slate-400">
+            <button
+              onClick={stopBw}
+              className="text-slate-700 hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+              aria-label="Stop breathwork timer"
+              title="Stop"
+            >
               <Square size={14} />
             </button>
           </div>
@@ -328,9 +346,13 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
           <div className="flex items-center gap-2 mt-1">
             <span className="text-base">🧘</span>
             <p className="text-[12px] text-emerald-400 font-semibold">Breathwork complete</p>
-            {bwState === 'done' && (
-              <button onClick={stopBw} className="ml-auto text-[10px] text-slate-700 hover:text-slate-500">again</button>
-            )}
+            <button
+              onClick={restartBw}
+              className="ml-auto text-[10px] text-slate-700 hover:text-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+              aria-label="Restart breathwork session"
+            >
+              again
+            </button>
           </div>
         )}
       </div>
@@ -360,7 +382,12 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
             <span className="text-[10px] font-mono text-slate-600">{doneCount}/{total}</span>
           )}
           {doneCount > 0 && (
-            <button onClick={reset} className="text-slate-700 hover:text-slate-400 transition-colors">
+            <button
+              onClick={reset}
+              className="text-slate-700 hover:text-slate-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+              aria-label="Reset workout progress"
+              title="Reset progress"
+            >
               <RotateCcw size={11} />
             </button>
           )}
@@ -374,7 +401,11 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
           <p className="text-[11px] text-amber-300/70 flex-1">
             {workout!.missed_days} day{workout!.missed_days! > 1 ? 's' : ''} missed — complete today or skip.
           </p>
-          <button onClick={handleSkip} className="text-[10px] text-amber-500/60 hover:text-amber-400 font-medium shrink-0">
+          <button
+            onClick={handleSkip}
+            className="text-[10px] text-amber-500/60 hover:text-amber-400 font-medium shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+            aria-label="Skip today's workout"
+          >
             {skipping ? '✓ Skipped' : 'Skip'}
           </button>
         </div>
@@ -410,7 +441,8 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
                 <div key={i} role="button" tabIndex={0}
                   onClick={() => toggle(i)}
                   onKeyDown={e => { if (e.key === ' ' || e.key === 'Enter') toggle(i); }}
-                  className={`flex items-center gap-3 px-5 py-2.5 cursor-pointer transition-all duration-150 ${
+                  aria-label={isDone ? `Mark ${ex.name} incomplete` : `Mark ${ex.name} complete`}
+                  className={`flex items-center gap-3 px-5 py-2.5 cursor-pointer transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 ${
                     isDone ? 'opacity-40' : 'hover:bg-white/[0.02]'
                   }`}
                 >
@@ -461,7 +493,9 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
                 className="w-full flex items-center justify-center gap-2 py-2 rounded-lg text-[12px] font-medium
                            border border-white/[0.06] text-slate-600
                            hover:bg-emerald-500/10 hover:border-emerald-500/20 hover:text-emerald-400
-                           disabled:opacity-25 disabled:cursor-not-allowed transition-all duration-200"
+                           disabled:opacity-25 disabled:cursor-not-allowed transition-all duration-200
+                           focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50"
+                aria-label="Mark workout complete and advance routine"
               >
                 <Timer size={12} /> Mark complete + advance routine
               </button>
@@ -475,7 +509,11 @@ export default function WellnessCard({ workout, breathwork, date }: Props) {
       ═══════════════════════════════════════════════════════════════════ */}
       {mounted && (
         <div className={`flex items-center gap-3 px-5 py-2.5 border-t ${walkDone ? 'border-cyan-500/15 bg-cyan-500/[0.03]' : 'border-white/[0.04]'}`}>
-          <button onClick={handleWalkToggle} className={`flex items-center gap-2 text-[11px] font-medium transition-all ${walkDone ? 'text-cyan-400' : 'text-slate-600 hover:text-slate-400'}`}>
+          <button
+            onClick={handleWalkToggle}
+            className={`flex items-center gap-2 text-[11px] font-medium transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded ${walkDone ? 'text-cyan-400' : 'text-slate-600 hover:text-slate-400'}`}
+            aria-label={walkDone ? 'Unmark walk as done' : 'Mark walk as done'}
+          >
             <div className={`w-4 h-4 rounded border flex items-center justify-center transition-all ${walkDone ? 'bg-cyan-500 border-cyan-500' : 'border-slate-700'}`}>
               {walkDone && <Check size={10} className="text-white" />}
             </div>

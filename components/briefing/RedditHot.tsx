@@ -60,7 +60,7 @@ export default function RedditHot({ posts }: { posts?: RedditPost[] | null }) {
                   {fmt(post.num_comments)}
                 </span>
                 <a
-                  href={post.permalink}
+                  href={post.permalink.startsWith('http') ? post.permalink : `https://reddit.com${post.permalink}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-auto text-[10px] text-slate-700 hover:text-slate-500 transition-colors flex items-center gap-0.5"

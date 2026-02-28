@@ -26,14 +26,19 @@ function buildRows(briefing: DailyBriefing): TrendingRow[] {
 
   // Reddit
   const reddit = briefing.reddit_hot?.[0];
-  if (reddit?.title) rows.push({
-    source: 'Reddit',
-    emoji: '🔴',
-    accentClass: 'border-red-500/20 bg-red-500/[0.03]',
-    title: reddit.title,
-    sub: reddit.subreddit ? `r/${reddit.subreddit}` : undefined,
-    url: reddit.permalink || `https://reddit.com`,
-  });
+  if (reddit?.title) {
+    const redditUrl = reddit.permalink
+      ? (reddit.permalink.startsWith('http') ? reddit.permalink : `https://reddit.com${reddit.permalink}`)
+      : `https://reddit.com`;
+    rows.push({
+      source: 'Reddit',
+      emoji: '🔴',
+      accentClass: 'border-red-500/20 bg-red-500/[0.03]',
+      title: reddit.title,
+      sub: reddit.subreddit ? `r/${reddit.subreddit}` : undefined,
+      url: redditUrl,
+    });
+  }
 
   // GitHub Trending
   const gh = briefing.github_trending?.[0];

@@ -269,8 +269,9 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
           )}
           <button
             onClick={resetLayout}
-            className="flex items-center gap-1.5 text-[10px] text-slate-700 hover:text-slate-400 transition-colors px-2 py-1"
+            className="flex items-center gap-1.5 text-[10px] text-slate-700 hover:text-slate-400 transition-colors px-2 py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
             title="Reset widget layout to defaults"
+            aria-label="Reset widget layout to defaults"
           >
             <RotateCcw size={10} />
             reset layout
@@ -330,8 +331,10 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
                 onClick={() => showWidget(w.id)}
                 className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-white/[0.07]
                            bg-white/[0.02] text-[10px] text-slate-600 hover:text-slate-300
-                           hover:border-white/[0.15] transition-all duration-150"
+                           hover:border-white/[0.15] transition-all duration-150
+                           focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50"
                 title={`Restore ${meta.label}`}
+                aria-label={`Restore ${meta.label} widget`}
               >
                 <Eye size={9} />
                 {meta.label}

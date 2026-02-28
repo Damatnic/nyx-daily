@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-type BadgeVariant = 'purple' | 'cyan' | 'gold' | 'red' | 'green' | 'slate' | 'amber' | 'blue';
+type BadgeVariant = 'purple' | 'cyan' | 'gold' | 'red' | 'green' | 'slate' | 'amber' | 'blue' | 'yellow';
 
 interface BadgeProps {
   children: ReactNode;
@@ -17,6 +17,7 @@ const variantClasses: Record<BadgeVariant, string> = {
   slate: 'text-slate-400 bg-slate-500/10 border-slate-500/20',
   amber: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
   blue: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
+  yellow: 'text-yellow-500 bg-yellow-500/10 border-yellow-500/20',
 };
 
 export default function Badge({ children, variant = 'slate', className = '' }: BadgeProps) {

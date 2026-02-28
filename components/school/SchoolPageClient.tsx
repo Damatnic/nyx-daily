@@ -29,7 +29,7 @@ function urgencyBadge(days: number, done: boolean) {
   if (days < 0) return { variant: 'red' as const, label: 'Overdue' };
   if (days === 0) return { variant: 'red' as const, label: 'Today' };
   if (days === 1) return { variant: 'amber' as const, label: '1d' };
-  if (days <= 3) return { variant: 'amber' as const, label: `${days}d` };
+  if (days <= 3) return { variant: 'yellow' as const, label: `${days}d` };
   if (days <= 7) return { variant: 'blue' as const, label: `${days}d` };
   return { variant: 'slate' as const, label: `${days}d` };
 }
@@ -56,7 +56,8 @@ function CourseHeader({ course, done, total, pct, collapsed, onToggle }: {
   return (
     <button
       onClick={onToggle}
-      className="w-full flex items-center gap-4 text-left group"
+      className="w-full flex items-center gap-4 text-left group focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
+      aria-label={collapsed ? `Expand ${course}` : `Collapse ${course}`}
     >
       <div className="flex-1 min-w-0">
         <h3 className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors truncate">
@@ -99,7 +100,7 @@ function DeadlineRow({ item, isDone, onToggle }: {
     >
       <button
         onClick={onToggle}
-        className="mt-0.5 shrink-0 text-slate-700 hover:text-slate-400 transition-colors"
+        className="mt-0.5 shrink-0 text-slate-700 hover:text-slate-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50 focus-visible:rounded"
         aria-label={isDone ? 'Mark incomplete' : 'Mark complete'}
       >
         {isDone

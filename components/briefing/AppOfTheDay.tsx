@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { AppOfTheDay as AppType } from '@/lib/types';
 import { ExternalLink } from 'lucide-react';
 import SaveButton from '@/components/ui/SaveButton';
@@ -55,8 +55,14 @@ export default function AppOfTheDay({ app }: Props) {
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <SaveButton item={{ type: 'tool', title: app.name, url: app.link, source: 'App of the Day', snippet: app.what }} />
-            <a href={app.link} target="_blank" rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-white/[0.04] hover:bg-violet-500/15 text-slate-600 hover:text-violet-400 border border-white/[0.06] transition-all duration-150">
+            <a
+              href={app.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-white/[0.04] hover:bg-violet-500/15 text-slate-600 hover:text-violet-400 border border-white/[0.06] transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500/50"
+              aria-label={`Open ${app.name}`}
+              title={`Open ${app.name}`}
+            >
               <ExternalLink size={13} />
             </a>
           </div>
