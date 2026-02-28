@@ -70,17 +70,18 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
               </span>
             )}
             {/* Year progress */}
-            <div className="hidden md:flex items-center gap-1.5">
+            <div className="hidden md:flex items-center gap-1.5" title={`${pct}% of ${year} complete (day ${dayOfYear})`}>
               <div className="relative w-16 h-[2px] bg-white/[0.06] rounded-full overflow-hidden">
                 <div className="absolute inset-y-0 left-0 rounded-full"
                   style={{ width: `${pct}%`, background: 'linear-gradient(90deg, #7c3aed, #06b6d4)' }} />
               </div>
-              <span className="text-[9px] text-slate-700 font-mono">{pct}%</span>
+              <span className="text-[9px] text-slate-700 font-mono">{pct}%&thinsp;yr</span>
             </div>
             {streak !== undefined && streak > 0 && (
               <span className="text-[10px] font-mono hidden sm:flex items-center gap-1" title={`${streak}-day briefing streak`}>
                 <span className="text-orange-400 text-xs">🔥</span>
                 <span className="text-slate-400 tabular-nums">{streak}</span>
+                <span className="text-slate-700 hidden lg:inline">streak</span>
               </span>
             )}
             <div className="flex items-center gap-1">

@@ -176,8 +176,11 @@ export default function WorkoutTracker({ workout, date }: Props) {
                 />
               )}
 
-              {/* Reps */}
-              <span className={`shrink-0 text-[11px] font-mono transition-colors ${isDone ? 'text-slate-700' : 'text-emerald-500/80'}`}>
+              {/* Reps + Sets */}
+              <span className={`shrink-0 text-[11px] font-mono transition-colors flex items-center gap-1.5 ${isDone ? 'text-slate-700' : 'text-emerald-500/80'}`}>
+                {ex.note && (
+                  <span className={`text-[10px] ${isDone ? 'text-slate-800' : 'text-slate-600'}`}>{ex.note} ·</span>
+                )}
                 {ex.reps}
               </span>
             </div>

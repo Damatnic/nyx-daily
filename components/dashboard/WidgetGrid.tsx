@@ -216,6 +216,25 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
   const hidden  = layout.filter(w => hasData[w.id] && w.visible === false);
   const ids     = active.map(w => w.id);
 
+  // ── Zone separator logic ────────────────────────────────────────────────
+  // Widgets classified as "act" (things you do, not read)
+  const ACT_WIDGETS = new Set(['carousel', 'workout', 'breathwork']);
+
+  type RenderItem =
+    | { type: 'widget'; widget: WidgetConfig }
+    | { type: 'separator'; key: string; label: string };
+
+  const renderItems: RenderItem[] = [];
+  let prevZone: 'act' | 'browse' | '' = '';
+  for (const w of active) {
+    const zone: 'act' | 'browse' = ACT_WIDGETS.has(w.id) ? 'act' : 'browse';
+    if (prevZone === 'act' && zone === 'browse') {
+      renderItems.push({ type: 'separator', key: 'sep-browse', label: 'Discovery' });
+    }
+    renderItems.push({ type: 'widget', widget: w });
+    prevZone = zone;
+  }
+
   return (
     <div className="flex flex-col gap-2">
       {mounted && (
@@ -239,7 +258,19 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
       <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={ids} strategy={rectSortingStrategy}>
           <div className="grid grid-cols-12 gap-x-5 gap-y-7 items-start">
-            {active.map(w => {
+            {renderItems.map(item => {
+              if (item.type === 'separator') {
+                return (
+                  <div key={item.key} className="col-span-12 flex items-center gap-4 pt-2 pb-1 pointer-events-none select-none">
+                    <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.04)' }} />
+                    <span className="text-[9px] uppercase tracking-[0.25em] text-slate-700 font-semibold px-1">
+                      {item.label}
+                    </span>
+                    <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.04)' }} />
+                  </div>
+                );
+              }
+              const w = item.widget;
               const node = content[w.id];
               if (!node) return null;
               const meta = WIDGET_META[w.id] ?? { label: w.id, accent: 'slate' };

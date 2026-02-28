@@ -1,10 +1,29 @@
 import type { DailyBriefing } from '@/lib/types';
+import { AlertTriangle } from 'lucide-react';
 
 function fmtTime(iso: string) {
   try {
     const d = new Date(iso);
     return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Chicago' });
   } catch { return ''; }
+}
+
+function hoursAgo(iso: string): number {
+  try {
+    return (Date.now() - new Date(iso).getTime()) / 3_600_000;
+  } catch { return 0; }
+}
+
+function stalenessClass(hours: number): string {
+  if (hours >= 8)  return 'text-red-400';
+  if (hours >= 3)  return 'text-amber-400';
+  return 'text-slate-700';
+}
+
+function stalenessLabel(hours: number): string {
+  if (hours >= 8)  return `${Math.floor(hours)}h old`;
+  if (hours >= 3)  return `${Math.floor(hours)}h ago`;
+  return '';
 }
 
 interface Props {
@@ -60,14 +79,28 @@ export default function MetaBar({ briefing, streak, headlineCount }: Props) {
           <Sep />
         </>
       )}
-      {briefing.generated_at && (
-        <>
-          <span className="text-slate-800 select-none ml-auto">·</span>
-          <span className="text-[11px] text-slate-700 shrink-0" title={briefing.generated_at}>
-            ↻ {fmtTime(briefing.generated_at)}
-          </span>
-        </>
-      )}
+      {briefing.generated_at && (() => {
+        const hours  = hoursAgo(briefing.generated_at);
+        const cls    = stalenessClass(hours);
+        const label  = stalenessLabel(hours);
+        const isOld  = hours >= 8;
+        const isMid  = hours >= 3 && hours < 8;
+        return (
+          <>
+            <span className="text-slate-800 select-none ml-auto">·</span>
+            <span
+              className={`text-[11px] shrink-0 flex items-center gap-1 ${cls}`}
+              title={`Briefing generated at ${fmtTime(briefing.generated_at)}${label ? ` (${label})` : ''}`}
+            >
+              {isOld && <AlertTriangle size={10} className="shrink-0" />}
+              ↻ {fmtTime(briefing.generated_at)}
+              {(isOld || isMid) && label && (
+                <span className={`text-[10px] ${cls} opacity-80`}>· {label}</span>
+              )}
+            </span>
+          </>
+        );
+      })()}
       {streak > 0 && (
         <span className="flex items-center gap-1 shrink-0">
           <span className="text-[13px]">🔥</span>
