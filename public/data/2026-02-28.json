@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-28T08:04:52.195118",
+  "generated_at": "2026-02-28T12:10:01.760077",
   "day": "Saturday",
   "date": "2026-02-28",
-  "weather": "\u2601\ufe0f Waukesha \u00b7 30\u00b0F (feels 20\u00b0F) \u00b7 Overcast \u00b7 H:40\u00b0 L:22\u00b0",
+  "weather": "\u2601\ufe0f Waukesha \u00b7 32\u00b0F (feels 25\u00b0F) \u00b7 Overcast \u00b7 H:40\u00b0 L:21\u00b0",
   "quote": "It's your life-but only if you make it so.",
   "author": "Eleanor Roosevelt",
   "focus": "\ud83d\udea8 **Statistics \u2014 Homework 9 - Hypothesis Testing Ch.9** is due TODAY. Drop everything else.",
@@ -17,6 +17,11 @@
   },
   "on_this_day": [
     {
+      "year": 2026,
+      "text": "The United States and Israel launch attacks across Iran. Retaliatory strikes are launched by Iran against US military bases in the Gulf, with explosions reported in Bahrain, Kuwait, Qatar and the UAE.",
+      "link": "https://en.wikipedia.org/wiki/United_States"
+    },
+    {
       "year": 2024,
       "text": "Prime Minister Modi of India inaugurates the 2nd Space Port of India - Kulasekarapattinam Spaceport.",
       "link": "https://en.wikipedia.org/wiki/Prime_minister"
@@ -25,52 +30,47 @@
       "year": 2023,
       "text": "Two trains collide south of the Vale of Tempe in Greece, leading to the deaths of at least 57 people and leaving 58 missing and 85 injured.",
       "link": "https://en.wikipedia.org/wiki/Tempi_train_crash"
-    },
-    {
-      "year": 2013,
-      "text": "Pope Benedict XVI resigns as the pope of the Catholic Church, becoming the first pope to do so voluntarily since Pope Gregory XII in 1415.",
-      "link": "https://en.wikipedia.org/wiki/Pope_Benedict_XVI"
     }
   ],
   "forecast": [
     {
       "date": "2026-02-28",
       "high": 39,
-      "low": 22,
-      "precip_pct": 49,
+      "low": 21,
+      "precip_pct": 51,
       "condition": "Snow",
       "emoji": "\u2744\ufe0f"
     },
     {
       "date": "2026-03-01",
       "high": 30,
-      "low": 16,
+      "low": 15,
       "precip_pct": 2,
       "condition": "Cloudy",
       "emoji": "\u2601\ufe0f"
     },
     {
       "date": "2026-03-02",
-      "high": 38,
+      "high": 39,
       "low": 19,
-      "precip_pct": 19,
+      "precip_pct": 13,
       "condition": "Cloudy",
       "emoji": "\u2601\ufe0f"
     },
     {
       "date": "2026-03-03",
       "high": 34,
-      "low": 31,
-      "precip_pct": 67,
+      "low": 30,
+      "precip_pct": 60,
       "condition": "Drizzle",
       "emoji": "\ud83c\udf26\ufe0f"
     },
     {
       "date": "2026-03-04",
-      "high": 39,
-      "low": 33,
+      "high": 36,
+      "low": 34,
       "precip_pct": 32,
-      "condition": "Rain",
+      "condition": "Showers",
       "emoji": "\ud83c\udf27\ufe0f"
     }
   ],
@@ -80,7 +80,7 @@
       "url": "https://github.com/moeru-ai/airi",
       "description": "\ud83d\udc96\ud83e\uddf8 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wi",
       "language": "TypeScript",
-      "stars": "19043",
+      "stars": "19204",
       "stars_today": 1088
     },
     {
@@ -88,7 +88,7 @@
       "url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster ",
       "language": "Shell",
-      "stars": "71629",
+      "stars": "71729",
       "stars_today": 705
     },
     {
@@ -96,7 +96,7 @@
       "url": "https://github.com/tukaani-project/xz",
       "description": "XZ Utils",
       "language": "C",
-      "stars": "1193",
+      "stars": "1211",
       "stars_today": 107
     },
     {
@@ -104,7 +104,7 @@
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
       "language": "Python",
-      "stars": "98043",
+      "stars": "98147",
       "stars_today": 605
     },
     {
@@ -112,7 +112,7 @@
       "url": "https://github.com/ruvnet/ruflo",
       "description": "\ud83c\udf0a The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous work",
       "language": "TypeScript",
-      "stars": "16215",
+      "stars": "16368",
       "stars_today": 938
     },
     {
@@ -120,7 +120,7 @@
       "url": "https://github.com/bytedance/deer-flow",
       "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skil",
       "language": "Python",
-      "stars": "22461",
+      "stars": "22533",
       "stars_today": 891
     },
     {
@@ -128,7 +128,7 @@
       "url": "https://github.com/Wei-Shaw/claude-relay-service",
       "description": "CRS-\u81ea\u5efaClaude Code\u955c\u50cf\uff0c\u4e00\u7ad9\u5f0f\u5f00\u6e90\u4e2d\u8f6c\u670d\u52a1\uff0c\u8ba9 Claude\u3001OpenAI\u3001Gemini\u3001Droid \u8ba2\u9605\u7edf\u4e00\u63a5\u5165\uff0c\u652f\u6301\u62fc\u8f66\u5171\u4eab\uff0c\u66f4\u9ad8\u6548\u5206\u644a\u6210\u672c\uff0c\u539f\u751f\u5de5\u5177\u65e0\u7f1d\u4f7f\u7528\u3002",
       "language": "JavaScript",
-      "stars": "8654",
+      "stars": "8677",
       "stars_today": 171
     },
     {
@@ -136,68 +136,62 @@
       "url": "https://github.com/NousResearch/hermes-agent",
       "description": "",
       "language": "Python",
-      "stars": "1013",
+      "stars": "1059",
       "stars_today": 183
     }
   ],
   "reddit_hot": [
     {
-      "title": "meirl",
-      "url": "https://i.redd.it/mrti8hinl7mg1.jpeg",
-      "permalink": "https://reddit.com/r/meirl/comments/1rgyvy0/meirl/",
-      "subreddit": "meirl",
-      "score": 13312,
-      "num_comments": 91,
-      "thumbnail": "https://preview.redd.it/mrti8hinl7mg1.jpeg?width=140&amp;height=103&amp;auto=webp&amp;s=5e7ee4cd90948087cf84dfd875b260f277a4d199"
+      "title": "Do you think that Israel and the USA\u2019s actions against Iran are justified?",
+      "url": "https://www.reddit.com/gallery/1rgxxmg",
+      "permalink": "https://reddit.com/r/AskTheWorld/comments/1rgxxmg/do_you_think_that_israel_and_the_usas_actions/",
+      "subreddit": "AskTheWorld",
+      "score": 4630,
+      "num_comments": 5913,
+      "thumbnail": null
     },
     {
-      "title": "texting my mother",
-      "url": "https://i.redd.it/a9f23hzgd4mg1.jpeg",
-      "permalink": "https://reddit.com/r/mildlyinfuriating/comments/1rgm51s/texting_my_mother/",
-      "subreddit": "mildlyinfuriating",
-      "score": 73665,
-      "num_comments": 3353,
-      "thumbnail": "https://preview.redd.it/a9f23hzgd4mg1.jpeg?width=140&amp;height=117&amp;auto=webp&amp;s=4197bb0aafcd12323307569af0ca298356976c69"
-    },
-    {
-      "title": "US naval base in Bahrain.",
-      "url": "https://v.redd.it/k68vpfotn7mg1",
-      "permalink": "https://reddit.com/r/interestingasfuck/comments/1rgz2x9/us_naval_base_in_bahrain/",
-      "subreddit": "interestingasfuck",
-      "score": 22148,
-      "num_comments": 1668,
-      "thumbnail": "https://external-preview.redd.it/bmJmMmc3b3RuN21nMQg5r7VyeEefJiX7c-vyfprrixPyVcRcg817hqB8RqOn.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;format=jpg&amp;auto=webp&amp;s=21afa1131559d6844337100471d674a3fe7a6ef7"
-    },
-    {
-      "title": "When you\u2019re 8 hours into your flight and you hear the pilot\u2019s voice say \u201cWell folks\u2026Israel and the U",
-      "url": "https://i.redd.it/epfjsphrm7mg1.jpeg",
-      "permalink": "https://reddit.com/r/Wellthatsucks/comments/1rgyzy3/when_youre_8_hours_into_your_flight_and_you_hear/",
-      "subreddit": "Wellthatsucks",
-      "score": 18644,
-      "num_comments": 711,
-      "thumbnail": "https://preview.redd.it/epfjsphrm7mg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=6819f9d0463f2b54e6ffe48a41095049f208b401"
+      "title": "Never forget what you\u2019re fighting for.",
+      "url": "https://i.redd.it/lipefwi2u8mg1.jpeg",
+      "permalink": "https://reddit.com/r/circled/comments/1rh3nqv/never_forget_what_youre_fighting_for/",
+      "subreddit": "circled",
+      "score": 28331,
+      "num_comments": 465,
+      "thumbnail": "https://preview.redd.it/lipefwi2u8mg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=d2e4f5591e4e93af31c4c8003617baef9c513319"
     },
     {
       "title": "People who work in 'behind closed doors' industries (hotels, kitchens, morgues, etc.), what is somet",
       "url": "https://www.reddit.com/r/AskReddit/comments/1rgrnhk/people_who_work_in_behind_closed_doors_industries/",
       "permalink": "https://reddit.com/r/AskReddit/comments/1rgrnhk/people_who_work_in_behind_closed_doors_industries/",
       "subreddit": "AskReddit",
-      "score": 6517,
-      "num_comments": 3346,
+      "score": 9612,
+      "num_comments": 4557,
       "thumbnail": null
+    },
+    {
+      "title": "That\u2019s awesome of them",
+      "url": "https://i.redd.it/xwptmtktu8mg1.jpeg",
+      "permalink": "https://reddit.com/r/MadeMeSmile/comments/1rh3rbf/thats_awesome_of_them/",
+      "subreddit": "MadeMeSmile",
+      "score": 28505,
+      "num_comments": 135,
+      "thumbnail": "https://preview.redd.it/xwptmtktu8mg1.jpeg?width=140&amp;height=119&amp;auto=webp&amp;s=ced5eb859beb1303fc8d8b003ce3f6209bc94546"
+    },
+    {
+      "title": "Once again averting congress, trump declares war on Iran",
+      "url": "https://v.redd.it/f8ou6o8mg9mg1",
+      "permalink": "https://reddit.com/r/law/comments/1rh6plq/once_again_averting_congress_trump_declares_war/",
+      "subreddit": "law",
+      "score": 10048,
+      "num_comments": 1071,
+      "thumbnail": "https://external-preview.redd.it/bjdubzl6Nm1nOW1nMbRZmj5Z883JL7LZc-kdrGlSriyRaxD12mxAgRB6SQRi.jpeg?width=140&amp;height=73&amp;format=jpg&amp;auto=webp&amp;s=9ab4938b0285819246ae3ccea4101fcfdbcbb9d4"
     }
   ],
   "product_hunt": [
     {
-      "name": "Pixel",
-      "tagline": "Scale performance ads without juggling 7 ad platforms Discussion | Link",
-      "url": "https://www.producthunt.com/products/pixel-10",
-      "votes": 0
-    },
-    {
-      "name": "Solace",
-      "tagline": "Your Mac's appearance, in tune with the world around you. Discussion | Link",
-      "url": "https://www.producthunt.com/products/solace-8",
+      "name": "SellShots",
+      "tagline": "High-converting AI product photos in seconds Discussion | Link",
+      "url": "https://www.producthunt.com/products/sellshots-2",
       "votes": 0
     },
     {
@@ -207,20 +201,53 @@
       "votes": 0
     },
     {
+      "name": "Pixel",
+      "tagline": "Scale performance ads without juggling 7 ad platforms Discussion | Link",
+      "url": "https://www.producthunt.com/products/pixel-10",
+      "votes": 0
+    },
+    {
       "name": "The Claw News",
       "tagline": "OpenClaw agents publishing daily news Discussion | Link",
       "url": "https://www.producthunt.com/products/the-claw-news",
       "votes": 0
     },
     {
-      "name": "PromptURLs",
-      "tagline": "Turn any prompt into a shareable URL for ChatGPT, Claude Discussion | Link",
-      "url": "https://www.producthunt.com/products/prompturls",
+      "name": "Producer AI by Google Labs",
+      "tagline": "Turn ideas into tracks with your AI co-producer Discussion | Link",
+      "url": "https://www.producthunt.com/products/google",
       "votes": 0
     }
   ],
   "news": {
     "us_news": [
+      {
+        "title": "Here's how world leaders are reacting to the US-Israel strikes on Iran",
+        "link": "https://www.npr.org/2026/02/28/nx-s1-5730352/world-leaders-reaction-operation-epic-fury",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Several leaders voiced support for the operation \u2013 but most, including those who stopped short of condemning it, called for restraint moving forward.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "How could the U.S. strikes in Iran affect the world's oil supply?",
+        "link": "https://www.npr.org/2026/02/28/nx-s1-5678603/iran-strikes-oil-energy-markets",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Despite sanctions, Iran is one of the world's major oil producers, with much of its crude exported to China.",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Why is the U.S. attacking Iran? Six things to know",
+        "link": "https://www.npr.org/2026/02/28/g-s1-112026/why-is-the-u-s-attacking-iran",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "The U.S. and Israel launched military strikes in Iran, targeting Khamenei and the Iranian president. \"Operation Epic Fury\" will be \"massive and ongoing,\" President Trump said Saturday morning.",
+        "domain": "npr.org"
+      },
       {
         "title": "Opinion: The Chicago Bears of Indiana",
         "link": "https://www.npr.org/2026/02/28/nx-s1-5721775/opinion-the-chicago-bears-of-indiana",
@@ -228,6 +255,15 @@
         "logo": "https://logo.clearbit.com/npr.org",
         "source": "NPR News",
         "snippet": "A storied football team may be moving out of Illinois. Will fans of the Chicago Bears stick with them when they become the Hammond Bears?",
+        "domain": "npr.org"
+      },
+      {
+        "title": "Iran strikes were launched without approval from Congress, deeply dividing lawmakers",
+        "link": "https://www.npr.org/2026/02/28/nx-s1-5730203/iran-israel-trump-congress-strikes-reaction",
+        "image": null,
+        "logo": "https://logo.clearbit.com/npr.org",
+        "source": "NPR News",
+        "snippet": "Top lawmakers were notified about the operation shortly before it was launched, but the White House did not seek authorization from Congress to carry out the strikes.",
         "domain": "npr.org"
       },
       {
@@ -240,94 +276,85 @@
         "domain": "npr.org"
       },
       {
-        "title": "Panic, fury, and some hope, in Iran as U.S. launches strikes",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5730186/iran-strikes-israel",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In Tehran, panicked residents rushed home to shelter and terrified children poured out of classrooms as U.S. air strikes hit the capitol.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "North Carolina Democrats latest to chart future of the party in congressional primary",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5726425/nc-primary-election-foushee-allam",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In a safe Democratic seat in North Carolina, a match-up between a two-term Congresswoman and a progressive local official show how Democrats are charting the future of their party in the age of Trump.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Kyiv's elderly endure blackouts and bombardment, clinging to warmth and hope",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5725277/russia-ukraine-war-kyiv-elderly",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In Kyiv's darkened high-rises, as Russian strikes batter the Ukrainian capital, older residents endure freezing nights and power cuts, relying on volunteers, pets and faith to survive another winter.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "Parents, are you sure your kid's car seat is installed right? Here's how to know",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5711482/children-safety-parents-car-seats-mistakes",
-        "image": null,
-        "logo": "https://logo.clearbit.com/npr.org",
-        "source": "NPR News",
-        "snippet": "In this visual guide, certified car seat experts walk through common installation mistakes and how to fix them. Learn what a secure car seat base and a tightly fastened tether look like and more.",
-        "domain": "npr.org"
-      },
-      {
-        "title": "U.S. and Israel launch a major attack on Iran as Trump urges Iranians to 'take over your government'",
-        "link": "https://www.pbs.org/newshour/world/us-and-israel-launch-a-major-attack-on-iran-and-trump-urges-iranians-to-take-over-your-government",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/AP26059256811672-1024x683.jpg",
+        "title": "Russia condemns U.S.-Israel strikes on Iran as 'preplanned and unprovoked act of armed aggression'",
+        "link": "https://www.pbs.org/newshour/world/russia-condemns-u-s-israel-strikes-on-iran-as-preplanned-and-unprovoked-act-of-armed-aggression",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-09T140515Z_1783217548_RC2BIJAETVHK_RTRMADP_3_RUSSIA-TANZANIA-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Some of the first strikes appeared to hit areas around the offices of Supreme Leader Ayatollah Ali Khamenei, and Iranian media reported strikes nationwide, and smoke could be seen rising from the capi",
+        "snippet": "Russia on Saturday condemned the U.S.-Israeli strikes on Iran as \"a preplanned and unprovoked act of armed aggression against a sovereign and independent U.N. member state,\" demanding an immediate hal",
         "domain": "pbs.org"
       },
       {
-        "title": "Superintendent of Los Angeles schools placed on paid leave amid federal investigation",
-        "link": "https://www.pbs.org/newshour/nation/superintendent-of-los-angeles-schools-placed-on-paid-leave-amid-federal-investigation",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2025/04/deportationfears-1024x683.jpg",
+        "title": "U.S. and Israel's attack on Iran disrupts flights across the Middle East and beyond as airspaces close",
+        "link": "https://www.pbs.org/newshour/world/u-s-and-israels-attack-on-iran-disrupts-flights-across-the-middle-east-and-beyond-as-airspaces-close",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2023-01-30T163045Z_1913990232_RC2U0Z9NZBA0_RTRMADP_3_EMIRATES-AVIATION-1024x691.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Alberto Carvalho, the superintendent of Los Angeles public schools in the nation's second-largest district, was put on paid leave Friday, two days after the FBI served search warrants at his home and ",
+        "snippet": "The U.S. and Israel's attack on Iran is disrupting flights across the Middle East and beyond, as regional airspaces began closing and tens of thousands of travelers across the globe were stranded.",
         "domain": "pbs.org"
       },
       {
-        "title": "Judge extends order protecting refugees in Minnesota from being arrested and deported",
-        "link": "https://www.pbs.org/newshour/nation/judge-extends-order-protecting-refugees-in-minnesota-from-being-arrested-and-deported",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-01-25T230755Z_813950405_RC2L8JAIQRT8_RTRMADP_3_USA-TRUMP-MINNESOTA-1024x683.jpg",
+        "title": "World leaders react cautiously to U.S. and Israeli strikes on Iran",
+        "link": "https://www.pbs.org/newshour/world/world-leaders-react-cautiously-to-u-s-and-israeli-strikes-on-iran",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-28T144343Z_1947541911_RC22VJAVHQQC_RTRMADP_3_IRAN-CRISIS-BRITAIN-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "A federal judge on Friday extended an order protecting refugees in Minnesota who are lawfully in the U.S. from being arrested and deported, saying a Trump administration policy turns the \"American Dre",
+        "snippet": "World leaders reacted warily to U.S. and Israeli strikes on Iran on Saturday that triggered concerns of a broader conflict.",
         "domain": "pbs.org"
       },
       {
-        "title": "Trump orders federal agencies to stop using Anthropic tech over AI safety dispute",
-        "link": "https://www.pbs.org/newshour/politics/trump-orders-federal-agencies-to-stop-using-anthropic-tech-over-ai-safety-dispute",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-05T173845Z_1107292584_RC2LU7A5AM1P_RTRMADP_3_ANTHROPIC-AI-1024x635.jpg",
+        "title": "Read Netanyahu's full statement on Iran attacks",
+        "link": "https://www.pbs.org/newshour/world/read-netanyahus-full-statement-on-iran-attacks",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-12T180826Z_1613129277_RC2CAJA1Q18T_RTRMADP_3_ISRAEL-PALESTINIANS-LAST-HOSTAGE-FUNERAL-1024x683.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Defense Secretary Pete Hegseth said he was designating Anthropic as a supply chain risk, a move that could prevent U.S. military vendors from working with the company.",
+        "snippet": "Israeli Prime Minister Benjamin Netanyahu said in a recorded message released Saturday morning that the attacks will let Iranians \"take their fate into their own hands\" and that Israel plans the curre",
         "domain": "pbs.org"
       },
       {
-        "title": "With U.S. on brink of Iran attack, mediator asks for 'enough space' to reach deal",
-        "link": "https://www.pbs.org/newshour/show/with-u-s-on-brink-of-iran-attack-mediator-asks-for-enough-space-to-reach-deal",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/onthebrink-2-1024x683.jpg",
+        "title": "Read Trump's full statement on Iran attacks",
+        "link": "https://www.pbs.org/newshour/world/read-trumps-full-statement-on-iran-attack",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-28T143334Z_1668631517_RC22VJAPKA5Y_RTRMADP_3_IRAN-CRISIS-TRUMP-1024x539.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "President Trump said he was unhappy with the progress of diplomacy with Iran, and indicated he might \"have to\" use the military. That came in contrast to a statement from the mediator of the talks, wh",
+        "snippet": "President Donald Trump said in an 8-minute video posted on his Truth Social that the U.S. has begun \"major combat operations in Iran.\" He claimed Iran has continued to develop its nuclear program and ",
         "domain": "pbs.org"
       },
       {
-        "title": "Clinton testifies he had no knowledge of Epstein's crimes: 'I would have turned him in'",
-        "link": "https://www.pbs.org/newshour/show/clinton-testifies-he-had-no-knowledge-of-epsteins-crimes-i-would-have-turned-him-in",
-        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/efilesNEW-1024x683.jpg",
+        "title": "What to know about the U.S.-Israel attacks on Iran",
+        "link": "https://www.pbs.org/newshour/world/what-to-know-about-the-u-s-israel-attacks-on-iran",
+        "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/02/2026-02-28T103013Z_800024804_RC2XUJAU14VO_RTRMADP_3_IRAN-CRISIS-BLAST-1024x697.jpg",
         "logo": "https://logo.clearbit.com/pbs.org",
         "source": "PBS NewsHour",
-        "snippet": "Bill Clinton became the first former president compelled to testify to members of Congress. At a closed-door session, the House Oversight Committee heard from Clinton about his connections to Jeffrey ",
+        "snippet": "The strikes came after President Donald Trump has pressured Tehran for a deal to constrain its nuclear program, building up a fleet of American warships in the region as the country struggles with gro",
         "domain": "pbs.org"
+      },
+      {
+        "title": "The Fallout From the Epstein Files",
+        "link": "https://www.theatlantic.com/national/2026/02/fallout-epstein-files-washington-week/686193/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/eE7H4XxA6U3KvhnVBiGMQ_8u0S0=/10x0:2599x1456/media/img/mt/2026/02/Screenshot_2026_02_28_at_10.47.54AM/original.png",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "Panelists on Washington Week With The Atlantic joined to discuss the Department of Justice\u2019s handling of the Epstein investigation, and more.",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "How to Create an Equal Household",
+        "link": "https://www.theatlantic.com/newsletters/2026/02/gender-household-equality/686192/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/IurYw6YujE8VXkxCm--qUjiVIWc=/0x267:5142x3159/media/img/mt/2026/02/WR228-1/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "And why making a fair split of chores actually stick is so hard",
+        "domain": "theatlantic.com"
+      },
+      {
+        "title": "The Paradox of Trump\u2019s Iran Attack",
+        "link": "https://www.theatlantic.com/ideas/2026/02/trump-iran-attack/686191/?utm_source=feed",
+        "image": "https://cdn.theatlantic.com/thumbor/I1EbbS-u3zvVENN7V5gII9qNOXA=/media/img/mt/2026/02/2026_02_28_iran_attack_frum/original.jpg",
+        "logo": "https://logo.clearbit.com/theatlantic.com",
+        "source": "The Atlantic",
+        "snippet": "When his fantasies unravel, Trump has a habit of abusing power to force his will upon an uncooperative world.",
+        "domain": "theatlantic.com"
       },
       {
         "title": "Four Conditions Make Cash Transfers Save Lives",
@@ -335,7 +362,7 @@
         "image": "https://cdn.theatlantic.com/thumbor/qx1Zt8MpG3tArS-2PPWFIJ3uhAI=/media/img/mt/2026/02/2026_02_20_Richterman_Thirumurthy_Cash_improving_health_final_1/original.jpg",
         "logo": "https://logo.clearbit.com/theatlantic.com",
         "source": "The Atlantic",
-        "snippet": "The success of other countries shows how cash-transfer programs can work in the United States.",
+        "snippet": "The success of other countries shows these programs can work in the United States.",
         "domain": "theatlantic.com"
       },
       {
@@ -357,39 +384,21 @@
         "domain": "theatlantic.com"
       },
       {
-        "title": "War With Iran Has Begun. Where Does It End?",
-        "link": "https://www.theatlantic.com/national-security/2026/02/trump-war-iran-allies-supreme-leader/686189/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/I8Wk52itsIcHGOlh4inmV25BnYA=/media/img/mt/2026/02/2026_02_26_iran_mpg/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "Trump has launched combat operations despite little public support and widespread fears among allies.",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "The Epic Miscalculations of Trump and Khamenei",
-        "link": "https://www.theatlantic.com/international/2026/02/trump-khamenei-hubris-iran/686182/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/Duz3hlmDQ7DAM5PUSVVhOjfcOLs=/media/img/mt/2026/02/2026_02_27_U.S._Iran_stand_off/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "Hubris has distorted their strategic decisions.",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "Trump\u2019s Enormous Gamble on Regime Change in Iran",
-        "link": "https://www.theatlantic.com/ideas/2026/02/trumps-iran-regime-change-attack-gamble/686190/?utm_source=feed",
-        "image": "https://cdn.theatlantic.com/thumbor/JixSFDL4ye4t90LoFeZslDnd9IQ=/0x741:7009x4682/media/img/mt/2026/02/GettyImages_2220784200/original.jpg",
-        "logo": "https://logo.clearbit.com/theatlantic.com",
-        "source": "The Atlantic",
-        "snippet": "A few paths to success, many to failure",
-        "domain": "theatlantic.com"
-      },
-      {
-        "title": "Trump strikes Iran again. Why presidents skip Congress to use military force",
-        "link": "https://www.axios.com/2026/02/28/trump-strikes-iran-congress-war-powers",
-        "image": "https://images.axios.com/n4qy5hkH6MxPd-qOkjkflxBs8dQ=/0x282:6178x3757/1366x768/2026/01/14/1768423449429.jpg",
+        "title": "How world leaders are reacting to U.S.-Israel strikes on Iran",
+        "link": "https://www.axios.com/2026/02/28/iran-strike-us-israel-eu-world-leaders",
+        "image": "https://images.axios.com/mSJZezJhIPGm8OBP11l_Kp-SQPo=/0x0:7701x4332/1366x768/2026/02/28/1772283594505.jpeg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios",
-        "snippet": "The U.S. struck Iran overnight in the latest example of a president bypassing Congress to order military action.Why it matters: The Constitution says only Congress can declare war \u2014 but Democratic and",
+        "snippet": "The joint U.S.\u2013Israel strikes on Iran Saturday drew mixed reactions from around the globe. The big picture: European leaders largely called for restraint and diplomacy to avoid further escalation, whi",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Democratic divides erupt after Trump strikes Iran",
+        "link": "https://www.axios.com/2026/02/28/iran-trump-strikes-congress-democrats-israel",
+        "image": "https://images.axios.com/6fSJR6ZEK-3m-tcBOVQug4LuFFM=/38x0:2861x1588/1366x768/2026/02/28/1772294753308.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios",
+        "snippet": "Democratic divisions on Middle East policy roared back to the surface on Saturday after the U.S. and Israel launched what President Trump described as \"major combat operations\" in Iran.Why it matters:",
         "domain": "axios.com"
       },
       {
@@ -411,37 +420,28 @@
         "domain": "axios.com"
       },
       {
-        "title": "What to know about Reza Pahlavi, a potential successor to lead Iran",
-        "link": "https://www.axios.com/2026/02/28/us-iran-leader-crown-prince-reza-pahlavi",
-        "image": "https://images.axios.com/-Adc0LwRkIwwGMHlLQp_--gh6lU=/0x0:6253x3517/1366x768/2026/02/27/1772214251912.jpeg",
+        "title": "How the U.S. attack on Iran could shake oil prices",
+        "link": "https://www.axios.com/2026/02/28/us-iran-attack-energy-oil-prices",
+        "image": "https://images.axios.com/ovH-3TuAcbuGXl-xYMgQ7ecAnzI=/1634x1254:1634x1254/1366x768/2026/02/28/1772287625080.jpg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios",
-        "snippet": "Reza Pahlavi, the exiled former crown prince of Iran, is positioning himself as the \"transitional\" leader if the Islamic Republic collapses. The big picture: Pahlavi has voiced confidence in President",
+        "snippet": "The overnight military strikes on Iran will likely push up oil prices by creating new risks to supplies from the region that's home to a large chunk of global output and transit.Why it matters: Americ",
         "domain": "axios.com"
       },
       {
-        "title": "Scoop: Noem burning deportation cash on luxury jets",
-        "link": "https://www.axios.com/2026/02/28/noem-luxury-jets-dhs-deportations",
-        "image": "https://images.axios.com/Rbfytor2lg7nOykhMW8fRz1PiMw=/0x0:1920x1080/1366x768/2026/02/27/1772223156007.jpeg",
+        "title": "Democrats demand war powers vote after U.S. strikes Iran",
+        "link": "https://www.axios.com/2026/02/28/trump-iran-congress-war-powers-vote",
+        "image": "https://images.axios.com/BflqBuY9dclG9lUNjbNCg8bglio=/0x399:5818x3671/1366x768/2026/02/28/1772286078052.jpeg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios",
-        "snippet": "Homeland Security Secretary Kristi Noem's plan to use border funds for an almost $300 million luxury jet fleet has horrified top Trump officials, Axios has learned.Why it matters: Until last year, DHS",
-        "domain": "axios.com"
-      },
-      {
-        "title": "What to know about Ali Khamenei, Iran's supreme leader",
-        "link": "https://www.axios.com/2026/02/28/iran-leader-ali-khamenei-what-to-know",
-        "image": "https://images.axios.com/drviHxPyBgkYcyw4XohF9rU_Xuk=/0x193:2108x1378/1366x768/2026/02/27/1772211725823.jpg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios",
-        "snippet": "Iranian Supreme Leader Ali Khamenei is the Middle East's longest-serving autocrat, consolidating near-absolute control in his roughly 37-year reign.Why it matters: President Trump opted for military s",
+        "snippet": "Democrats called Saturday for Congress to act fast on war powers resolution votes after the Trump administration launched overnight strikes on Iran. Why it matters: President Trump launched the strike",
         "domain": "axios.com"
       }
     ],
     "politics": [
       {
-        "title": "Sen. Tim Kaine discusses the U.S. strikes on Iran",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5730228/sen-tim-kaine-discusses-the-u-s-strikes-on-iran",
+        "title": "Sen. Tim Kaine calls on the Senate to vote on the war powers resolution",
+        "link": "https://www.npr.org/2026/02/28/nx-s1-5730228/sen-tim-kaine-calls-on-the-senate-to-vote-on-the-war-powers-resolution",
         "image": null,
         "logo": "https://logo.clearbit.com/npr.org",
         "source": "NPR Politics",
@@ -449,12 +449,12 @@
         "domain": "npr.org"
       },
       {
-        "title": "President Trump launched strikes without Congress's approval. Lawmakers are responding",
-        "link": "https://www.npr.org/2026/02/28/nx-s1-5730203/president-trump-launched-strikes-without-congresss-approval-lawmakers-are-responding",
+        "title": "Iran strikes were launched without approval from Congress, deeply dividing lawmakers",
+        "link": "https://www.npr.org/2026/02/28/nx-s1-5730203/iran-israel-trump-congress-strikes-reaction",
         "image": null,
         "logo": "https://logo.clearbit.com/npr.org",
         "source": "NPR Politics",
-        "snippet": "We look at what it means for President Trump to launch attacks on Iran without Congressional approval, and the pushback and support he's getting from some lawmakers.",
+        "snippet": "Top lawmakers were notified about the operation shortly before it was launched, but the White House did not seek authorization from Congress to carry out the strikes.",
         "domain": "npr.org"
       },
       {
@@ -494,66 +494,129 @@
         "domain": "npr.org"
       },
       {
-        "title": "\u2018Liberty Vans\u2019 appear across US to help immigrants \u2013 and document ICE raids",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/liberty-vans-ice-immigrants",
+        "title": "Trump vies for Bush\u2019s crown for worst foreign policy decision in history",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/trump-iran-analysis-us-foreign-policy-george-bush",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "Volunteers offer moral and legal support, and document ICE actions with the aim of holding people accountableAs ICE operations ramped up across the US over the past year, vans emblazoned with imagery ",
+        "snippet": "The US president upended half a century of US foreign policy in an eight-minute video with another act of Middle Eastern regime changeIt was another date which will live in infamy. But whereas Preside",
         "domain": "theguardian.com"
       },
       {
-        "title": "Trump\u2019s unprovoked attack on Iran has no mandate \u2013 or legal basis",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/trump-unprovoked-attack-on-iran-has-no-mandate-and-no-clear-objective",
+        "title": "\u2018Are you willing to fight back?\u2019: Democrats ready to take on party\u2019s old guard ahead of midterms",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/democrats-midterm-primary-elections",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "US president violates UN charter just days into his Board of Peace era, and chooses to take the biggest gamble of his administrationUS-Israeli attack on Iran \u2013 live updatesUS and Israel strikes on Ira",
+        "snippet": "After Zohran Mamdani\u2019s upset, a new wave of challengers targets incumbents, driven by fury at Donald TrumpThey are impatient, unafraid and hungry for change. Inspired by Zohran Mamdani\u2019s shock victory",
         "domain": "theguardian.com"
       },
       {
-        "title": "The real winners of Trump\u2019s global tariff war: law firms, hedge funds and AI",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/trump-tariffs-refunds-law-firms",
+        "title": "The Russian honeytrap: alleged spy for Moscow faces five years in US prison",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/russian-honeytrap-spy-prison-fbi",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "Businesses are vying for a refund, with nearly $175bn on the line, but customers are unlikely to benefit from reversalAt 8am, two hours before the US supreme court officially slapped down Donald Trump",
+        "snippet": "Nomma Zarubina, convicted of lying to the FBI, is the latest Russian woman accused of using her sexual wiles for spyingNomma Zarubina, 35, now sits in a New York jail awaiting sentencing after pleadin",
         "domain": "theguardian.com"
       },
       {
-        "title": "Black History Month was never \u2018given\u2019 to Black people, thus, it can never be taken from us",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/black-history-month-never-taken-from-us",
+        "title": "US man issues challenge to disprove his claim of having world\u2019s smallest penis to raise micropenis awareness",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/north-carolina-micropenis-challenge",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "The question of who owns and authorizes the month holds particular relevance amid attacks on Black history in the USThere is a myth that persists about Black History Month that can be heard in the com",
+        "snippet": "North Carolina\u2019s Michael Phillips revealed that he had a 0.38in member in bid to reduce stigma of the conditionA North Carolina man has challenged anyone on earth to disprove his claim of having the w",
         "domain": "theguardian.com"
       },
       {
-        "title": "Midterm \u2018blue wave\u2019 could block Trump\u2019s agenda and launch investigations \u2013 here\u2019s what\u2019s at stake",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/midterms-democrats-house-senate",
+        "title": "Joe Biden warns that Donald Trump will try to \u2018steal\u2019 midterm elections",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/joe-biden-donald-trump-midterm-elections",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "Democrats hope to capture the House, but the Senate could be a heavier lift in November\u2019s midterm electionsOn the first Tuesday of November, Americans will decide whether to keep Congress under Donald",
+        "snippet": "In a rare public address, former president said US is experiencing \u2018dark days\u2019 and urged Americans to voteSign up for This week in Trumpland, a free newsletter on the latest from the Trump administrat",
         "domain": "theguardian.com"
       },
       {
-        "title": "\u2018Trump\u2019s not enough. And he knows he\u2019s not enough\u2019: California governor Gavin Newsom on populism, \u2018purity tests\u2019 and whether he\u2019ll run for the presidency",
-        "link": "https://www.theguardian.com/us-news/2026/feb/28/gavin-newsom-california-governor-democrats-us-presidency-politics-trump",
+        "title": "\u2018If it\u2019s cold, they stop mating\u2019: New York City rat population may be on the decline",
+        "link": "https://www.theguardian.com/us-news/2026/feb/28/new-york-city-rat-population-decline",
         "image": null,
         "logo": "https://logo.clearbit.com/theguardian.com",
         "source": "The Guardian US",
-        "snippet": "He\u2019s the Democratic politician with movie-star looks and a picture-perfect family, dogged by accusations of being a smooth\u2011talking elitist. Can he really unite the American left and win the most power",
+        "snippet": "As a result of New York\u2019s most severe winter in years, the city may see a drop from it\u2019s estimated 3 million ratsSince arriving from Europe in the 1600s, New York City\u2019s rats have survived hurricanes,",
         "domain": "theguardian.com"
       },
       {
-        "title": "Trump strikes Iran again. Why presidents skip Congress to use military force",
-        "link": "https://www.axios.com/2026/02/28/trump-strikes-iran-congress-war-powers",
-        "image": "https://images.axios.com/n4qy5hkH6MxPd-qOkjkflxBs8dQ=/0x282:6178x3757/1366x768/2026/01/14/1768423449429.jpg",
+        "title": "UN Security Council to hold emergency meeting after Iran strikes",
+        "link": "https://thehill.com/policy/international/5760591-un-security-council-emergency-meeting-iran-strikes/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2024/01/AP23355142913466-e1704992076170.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "The United Nations Security Council will hold an emergency meeting on Saturday to discuss joint strikes launched by the U.S. and Israel on Iran early Saturday. French President Emmanuel Macron called ",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Canada\u2019s Carney backs Trump on Iran",
+        "link": "https://thehill.com/policy/international/5760593-carney-supports-trump-iran-action/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/11/AP25286628913091-e1762011335567.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Canadian Prime Minister Mark Carney on Saturday backed President Trump&#8217;s strikes on Iran aimed at preventing the country from obtaining a nuclear weapon and pushed to further curb the regime&#82",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Bolton says US strikes on Iran \u2018justifiable and necessary\u2019",
+        "link": "https://thehill.com/policy/international/5760552-john-bolton-donald-trump-us-israel-iran-strikes/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2025/10/AP25272816679785-e1760645809243.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Former national security adviser John Bolton defended the Trump administration&#8217;s decision to launch preemptive strikes on Iran over its continued nuclear program. \u201cTrump has every right to elimi",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Gulf countries coming under attack from Iran warn of retaliation",
+        "link": "https://thehill.com/policy/international/5760555-gulf-unity-pushing-back-iran/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26059553515205-e1772293631437.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "Gulf countries expressed outrage on Saturday in the face of military attacks from the Islamic Republic of Iran, a rare show of unity in pushing back against Tehran in the wake of U.S. and Israeli stri",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "Why the Mamdani-Trump \u2018bromance\u2019 makes sense right now",
+        "link": "https://thehill.com/homenews/administration/5759473-mayor-mamdani-trump-relationship/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Mamdani_Parnes-Mueller_illo_SamanthaWong-GregNash-AP.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "NEW YORK \u2014 When he was campaigning to be mayor of the nation\u2019s largest city, Zohran Mamdani liked to say he was President Trump\u2019s \u201cworst nightmare.\u201d In his victory speech in November, Mamdani took it ",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "The elitists are\u00a0running scared\u00a0of JD Vance",
+        "link": "https://thehill.com/opinion/campaign/5757747-vance-speaks-reality-working-class/",
+        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/GettyImages-2210832919.jpg?w=900",
+        "logo": "https://logo.clearbit.com/thehill.com",
+        "source": "The Hill",
+        "snippet": "So many on the left live in elite-entrenched bubbles floating high above the working classes they purport to lead and lecture. They have absolutely no idea what actually resonates with the people.",
+        "domain": "thehill.com"
+      },
+      {
+        "title": "How world leaders are reacting to U.S.-Israel strikes on Iran",
+        "link": "https://www.axios.com/2026/02/28/iran-strike-us-israel-eu-world-leaders",
+        "image": "https://images.axios.com/mSJZezJhIPGm8OBP11l_Kp-SQPo=/0x0:7701x4332/1366x768/2026/02/28/1772283594505.jpeg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios Politics",
-        "snippet": "The U.S. struck Iran overnight in the latest example of a president bypassing Congress to order military action.Why it matters: The Constitution says only Congress can declare war \u2014 but Democratic and",
+        "snippet": "The joint U.S.\u2013Israel strikes on Iran Saturday drew mixed reactions from around the globe. The big picture: European leaders largely called for restraint and diplomacy to avoid further escalation, whi",
+        "domain": "axios.com"
+      },
+      {
+        "title": "Democratic divides erupt after Trump strikes Iran",
+        "link": "https://www.axios.com/2026/02/28/iran-trump-strikes-congress-democrats-israel",
+        "image": "https://images.axios.com/6fSJR6ZEK-3m-tcBOVQug4LuFFM=/38x0:2861x1588/1366x768/2026/02/28/1772294753308.jpeg",
+        "logo": "https://logo.clearbit.com/axios.com",
+        "source": "Axios Politics",
+        "snippet": "Democratic divisions on Middle East policy roared back to the surface on Saturday after the U.S. and Israel launched what President Trump described as \"major combat operations\" in Iran.Why it matters:",
         "domain": "axios.com"
       },
       {
@@ -575,88 +638,61 @@
         "domain": "axios.com"
       },
       {
-        "title": "What to know about Reza Pahlavi, a potential successor to lead Iran",
-        "link": "https://www.axios.com/2026/02/28/us-iran-leader-crown-prince-reza-pahlavi",
-        "image": "https://images.axios.com/-Adc0LwRkIwwGMHlLQp_--gh6lU=/0x0:6253x3517/1366x768/2026/02/27/1772214251912.jpeg",
+        "title": "How the U.S. attack on Iran could shake oil prices",
+        "link": "https://www.axios.com/2026/02/28/us-iran-attack-energy-oil-prices",
+        "image": "https://images.axios.com/ovH-3TuAcbuGXl-xYMgQ7ecAnzI=/1634x1254:1634x1254/1366x768/2026/02/28/1772287625080.jpg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios Politics",
-        "snippet": "Reza Pahlavi, the exiled former crown prince of Iran, is positioning himself as the \"transitional\" leader if the Islamic Republic collapses. The big picture: Pahlavi has voiced confidence in President",
+        "snippet": "The overnight military strikes on Iran will likely push up oil prices by creating new risks to supplies from the region that's home to a large chunk of global output and transit.Why it matters: Americ",
         "domain": "axios.com"
       },
       {
-        "title": "Scoop: Noem burning deportation cash on luxury jets",
-        "link": "https://www.axios.com/2026/02/28/noem-luxury-jets-dhs-deportations",
-        "image": "https://images.axios.com/Rbfytor2lg7nOykhMW8fRz1PiMw=/0x0:1920x1080/1366x768/2026/02/27/1772223156007.jpeg",
+        "title": "Democrats demand war powers vote after U.S. strikes Iran",
+        "link": "https://www.axios.com/2026/02/28/trump-iran-congress-war-powers-vote",
+        "image": "https://images.axios.com/BflqBuY9dclG9lUNjbNCg8bglio=/0x399:5818x3671/1366x768/2026/02/28/1772286078052.jpeg",
         "logo": "https://logo.clearbit.com/axios.com",
         "source": "Axios Politics",
-        "snippet": "Homeland Security Secretary Kristi Noem's plan to use border funds for an almost $300 million luxury jet fleet has horrified top Trump officials, Axios has learned.Why it matters: Until last year, DHS",
+        "snippet": "Democrats called Saturday for Congress to act fast on war powers resolution votes after the Trump administration launched overnight strikes on Iran. Why it matters: President Trump launched the strike",
         "domain": "axios.com"
-      },
-      {
-        "title": "What to know about Ali Khamenei, Iran's supreme leader",
-        "link": "https://www.axios.com/2026/02/28/iran-leader-ali-khamenei-what-to-know",
-        "image": "https://images.axios.com/drviHxPyBgkYcyw4XohF9rU_Xuk=/0x193:2108x1378/1366x768/2026/02/27/1772211725823.jpg",
-        "logo": "https://logo.clearbit.com/axios.com",
-        "source": "Axios Politics",
-        "snippet": "Iranian Supreme Leader Ali Khamenei is the Middle East's longest-serving autocrat, consolidating near-absolute control in his roughly 37-year reign.Why it matters: President Trump opted for military s",
-        "domain": "axios.com"
-      },
-      {
-        "title": "A big change is coming to Social Security that beneficiaries may not notice",
-        "link": "https://thehill.com/homenews/5759752-a-big-change-is-coming-to-social-security-that-beneficiaries-may-not-notice/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/GettyImages-1454360935-e1772284818642.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "The Social Security Administration (SSA) is rolling out a major change to the way it handles customer service.",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "World on edge as US, Israel strikes on Iran stoke fears of broader conflict",
-        "link": "https://thehill.com/policy/international/5760274-world-reaction-us-israel-strikes-iran/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Iran-Strikes_GettyImages_022825.png?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Reactions from world leaders poured out early Saturday after the U.S. and Israel launched strikes on Iran. The initiation of \u201cOperation Epic Fury,&#8221; which came after weeks of threats from Preside",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Democrats warn Trump could pull US into long Middle East war",
-        "link": "https://thehill.com/homenews/senate/5760308-congress-demands-answers-on-iran-strike/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/warnermark_020326gn01_w.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Democrats reacting to the U.S. air strikes on Iran are calling on President Trump to provide further information to Congress while warning the White House it could be dragging the U.S. into a wider wa",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Lawmakers ramp up push for war powers resolution after US strikes Iran",
-        "link": "https://thehill.com/homenews/administration/5760287-lawmakers-call-war-powers-vote/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/Iran-strikes_GettyImages_0228.png?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Lawmakers are calling on Congress to convene earlier than planned next week to vote on a war powers resolution in light of widespread U.S. attacks on Iran. \u201cDonald Trump has launched a war on Iran and",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Saving\u00a0the SAVE Act \u2014 this one change can fix the American voting system",
-        "link": "https://thehill.com/opinion/campaign/5757040-save-act-voter-id-debate/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/GettyImages-2260211168.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "For months, voter identification and proof of citizenship have been debated not only as policy proposals but as constitutional questions. Republicans argue that verifying voter eligibility is essentia",
-        "domain": "thehill.com"
-      },
-      {
-        "title": "Oman foreign minister expresses dismay at US strikes on Iran: \u2018This is not your war\u2019",
-        "link": "https://thehill.com/policy/international/5760270-oman-negotiations-undermined-strikes/",
-        "image": "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26059362062976-e1772278294514.jpg?w=900",
-        "logo": "https://logo.clearbit.com/thehill.com",
-        "source": "The Hill",
-        "snippet": "Oman Foreign Minister Badr al-Busaidi, who had been a key player in talks aimed at preventing a war between the U.S. and Iran, expressed dismay at the Saturday morning strikes by the U.S. and Israel. ",
-        "domain": "thehill.com"
       }
     ],
     "tech": [
+      {
+        "title": "NASA Is Making Big Changes to Speed Up the Artemis Program",
+        "link": "https://www.wired.com/story/nasa-is-making-big-changes-to-speed-up-the-artemis-program/",
+        "image": "https://media.wired.com/photos/69a1fc5ccd255f245e966b8e/master/pass/sci-artemis2-2256758081.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "America\u2019s journey back to the moon has run into a few missteps. NASA administrator Jared Isaacman is banking on a new approach.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Hacked Prayer App Sends \u2018Surrender\u2019 Messages to Iranians Amid Israeli and US Strikes",
+        "link": "https://www.wired.com/story/hacked-prayer-app-sends-surrender-messages-to-iranians-amid-israeli-strikes/",
+        "image": "https://media.wired.com/photos/69a2fc44d16e57b38c5e2d95/master/pass/MobileHackLead.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "As Israeli airstrikes hit Tehran this morning, Iranians received mysterious push notifications saying that \u201chelp is on the way,\u201d promising amnesty if they surrender.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "This Is the System That Intercepted Iran's Missiles Over the UAE",
+        "link": "https://www.wired.com/story/uae-missile-intercept-system-iran/",
+        "image": "https://media.wired.com/photos/69a2ffd3d16e57b38c5e2d9a/master/pass/2263468713",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "As Iranian missiles targeted US-linked sites across the Gulf, the UAE\u2019s missile shield was activated in real-time.",
+        "domain": "wired.com"
+      },
+      {
+        "title": "Review: Xiaomi 17 Ultra and Leitzphone Pack Leica Magic Into a Flagship Phone",
+        "link": "https://www.wired.com/review/xiaomi-17-ultra-leitzphone/",
+        "image": "https://media.wired.com/photos/69a25bc28fe42fcd6044ab2f/master/pass/Xiaomi%20Leitzphone%20with%20Photography%20Kit%202%20%20SOURCE%20Simon%20Hill.jpg",
+        "logo": "https://logo.clearbit.com/wired.com",
+        "source": "Wired",
+        "snippet": "The latest Xiaomi flagship is a beast and comes in a specially co-designed Leica edition that\u2019s picture-perfect.",
+        "domain": "wired.com"
+      },
       {
         "title": "14 Best Travel Toiletry Bags, Tested Over Many Miles (2026)",
         "link": "https://www.wired.com/gallery/best-toiletry-bags/",
@@ -676,40 +712,31 @@
         "domain": "wired.com"
       },
       {
-        "title": "The Best Laptop Cooling Pad and Why You Should Buy One",
-        "link": "https://www.wired.com/story/best-laptop-cooling-pad/",
-        "image": "https://media.wired.com/photos/69a252bf649b7677b3e2628d/master/pass/IMG_3052.JPG",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "Most laptop cooling pads are useless, but if you get the right one, it can make a huge impact on how long your gaming laptop lasts.",
-        "domain": "wired.com"
+        "title": "OpenAI\u2019s Sam Altman announces Pentagon deal with \u2018technical safeguards\u2019",
+        "link": "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "OpenAI's CEO claims its new defense contract includes protections addressing the same issues that became a flashpoint for Anthropic.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "Area Man Accidentally Hacks 6,700 Camera-Enabled Robot Vacuums",
-        "link": "https://www.wired.com/story/security-news-this-week-area-man-accidentally-hacks-6700-camera-enabled-robot-vacuums/",
-        "image": "https://media.wired.com/photos/69a203e0a1f07be8b2d1f0b8/master/pass/sec-roundup-romo-2228166651.jpg",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "Plus: The top US cyber agency falls into shambles, AI models develop an upsetting penchant for nuclear weapons, and more.",
-        "domain": "wired.com"
+        "title": "Xiaomi launches 17 Ultra smartphone, an AirTag clone, and an ultra slim powerbank",
+        "link": "https://techcrunch.com/2026/02/28/xiaomi-launches-17-ultra-smartphone-an-airtag-clone-and-an-ultra-slim-powerbank/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "We round up everything Xiaomi announced at its Mobile World Congress event.",
+        "domain": "techcrunch.com"
       },
       {
-        "title": "EveryPlate\u2019s Meal Kit Offers Affordable Vegetarian Options",
-        "link": "https://www.wired.com/story/everyplate-vegetarian-meal-kit-rave/",
-        "image": "https://media.wired.com/photos/69a1fd5faa7fa275477628a5/master/pass/EveryPlate%20Is%20Cheaper%20Than%20Any%20Meal%20Kit%20I've%20Tried%20(and%20Is%20Surprisingly%20Tasty).png",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "HelloFresh\u2019s budget subsidiary surprised me with its basic but tasty vegetarian meal selection.",
-        "domain": "wired.com"
-      },
-      {
-        "title": "Which Water Filter Pitchers Filter PFAS? How to Check",
-        "link": "https://www.wired.com/story/water-filter-explainer-nsf-verifications/",
-        "image": "https://media.wired.com/photos/69a2079371b3466d9ed712df/master/pass/Water%20Filter%20Explainer.png",
-        "logo": "https://logo.clearbit.com/wired.com",
-        "source": "Wired",
-        "snippet": "Checking up on the claims of water filter makers can be a discomfiting maze. Here's how to verify independent water filter certifications.",
-        "domain": "wired.com"
+        "title": "Why China\u2019s humanoid robot industry is winning the early market",
+        "link": "https://techcrunch.com/2026/02/28/why-chinas-humanoid-robot-industry-is-winning-the-early-market/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/techcrunch.com",
+        "source": "TechCrunch",
+        "snippet": "China\u2019s push into humanoid robots is accelerating, with domestic firms shipping more units and iterating faster than U.S. competitors in a still-nascent market.",
+        "domain": "techcrunch.com"
       },
       {
         "title": "India disrupts access to popular developer platform Supabase with blocking order",
@@ -739,31 +766,40 @@
         "domain": "techcrunch.com"
       },
       {
-        "title": "Musk bashes OpenAI in deposition, saying \u2018nobody committed suicide because of Grok\u2019",
-        "link": "https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/",
+        "title": "You can still grab great deals on Bose headphones and Astro Bot this weekend",
+        "link": "https://www.theverge.com/gadgets/886520/bose-quietcomfort-headphones-samsung-galaxy-s26-ultra-deal-sale",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "In his lawsuit against OpenAI, Musk touted xAI safety compared with ChatGPT. A few months later, xAI's Grok flooded X with nonconsensual nude images.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Welcome to the weekend, friends! While the rest of our team was checking out Samsung\u2019s forthcoming Galaxy S26 lineup and prepping for Apple\u2019s \u201cspecial experience\u201d next week, we\u2019ve been sifting through",
+        "domain": "theverge.com"
       },
       {
-        "title": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
-        "link": "https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/",
+        "title": "Xiaomi\u2019s tracker doesn\u2019t need a case to clip to your keys",
+        "link": "https://www.theverge.com/tech/884567/xiaomi-tag-tracker-apple-find-my-google-hub-bluetooth",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "Anthropic and the Pentagon are clashing over AI use in autonomous weapons and surveillance, raising high-stakes questions about national security, corporate control, and who sets the rules for militar",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Xiaomi has announced its first Bluetooth tracker, and while the Xiaomi Tag has a more elongated design than the Apple AirTag, that lets you use it in more places right out of the box. On one end of th",
+        "domain": "theverge.com"
       },
       {
-        "title": "ChatGPT reaches 900M weekly active users",
-        "link": "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/",
+        "title": "Xiaomi\u2019s Leica Leitzphone mostly earns the name",
+        "link": "https://www.theverge.com/gadgets/886131/xiaomi-leica-leitzphone-17-ultra-review",
         "image": null,
-        "logo": "https://logo.clearbit.com/techcrunch.com",
-        "source": "TechCrunch",
-        "snippet": "OpenAI shared the new numbers as part of its announcement that it has raised $110 billion in private funding.",
-        "domain": "techcrunch.com"
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Xiaomi and Leica's long-running phone partnership just got a little closer. Alongside the new international release of its 17 Ultra flagship, Xiaomi has been entrusted with manufacturing a separate ve",
+        "domain": "theverge.com"
+      },
+      {
+        "title": "Xiaomi 17 is a small(ish) phone with a big(ish) battery",
+        "link": "https://www.theverge.com/gadgets/886322/xiaomi-17-release-specs-price-mwc-ultra-leica",
+        "image": null,
+        "logo": "https://logo.clearbit.com/theverge.com",
+        "source": "The Verge",
+        "snippet": "Xiaomi has just given a global launch to two of its latest flagship phones, the Xiaomi 17 and 17 Ultra, along with a Leica-branded Leitzphone edition of the Ultra. There's no sign, however, of the 17 ",
+        "domain": "theverge.com"
       },
       {
         "title": "The Witcher is a perfect fit for Reigns\u2019 Tinder-like roleplaying",
@@ -781,42 +817,6 @@
         "logo": "https://logo.clearbit.com/theverge.com",
         "source": "The Verge",
         "snippet": "Hi, friends! Welcome to Installer No. 117, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, please send Android tips, and also you can read all the old editions ",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Tenways nearly perfects the shareable city e-bike",
-        "link": "https://www.theverge.com/reviews/885040/tenways-cgo-compact-review-sharable-adaptable",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Good electric bikes are expensive. So why not buy one and share it? That's the idea behind the Tenways CGO Compact e-bike I've been sharing with my wife and teenage daughter for the last two weeks. It",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "Defense secretary Pete Hegseth designates Anthropic a supply chain risk",
-        "link": "https://www.theverge.com/policy/886632/pentagon-designates-anthropic-supply-chain-risk-ai-standoff",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Nearly two hours after President Donald Trump announced on Truth Social that he was banning Anthropic products from the federal government, Secretary of Defense Pete Hegseth took it one step further a",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "The best instant cameras you can buy right now",
-        "link": "https://www.theverge.com/23133103/best-instant-cameras-fujifilm-polaroid-kodak",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "Even with the ability to take excellent photos with our phones and instantly share them across the world, there\u2019s something magical about the old-school instant camera. With just a click of a button, ",
-        "domain": "theverge.com"
-      },
-      {
-        "title": "NASA is pushing back its plans for a Moon landing",
-        "link": "https://www.theverge.com/science/886656/nasa-artemis-moon-landing-delayed-2028",
-        "image": null,
-        "logo": "https://logo.clearbit.com/theverge.com",
-        "source": "The Verge",
-        "snippet": "NASA announced at a press conference on Friday that it's delaying its plans for a Moon landing until Artemis IV in 2028. The Artemis III mission, scheduled for 2027, was originally going to attempt to",
         "domain": "theverge.com"
       },
       {
@@ -874,58 +874,58 @@
         "domain": "technologyreview.com"
       },
       {
-        "title": "Don't trust AI agents",
-        "link": "https://nanoclaw.dev/blog/nanoclaw-security-model",
+        "title": "CSP for Pentesters: Understanding the Fundamentals",
+        "link": "https://www.kayssel.com/newsletter/issue-20/",
         "image": null,
-        "logo": "https://logo.clearbit.com/nanoclaw.dev",
+        "logo": "https://logo.clearbit.com/kayssel.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://nanoclaw.dev/blog/nanoclaw-security-model Comments URL: https://news.ycombinator.com/item?id=47194611 Points: 51 # Comments: 21",
-        "domain": "nanoclaw.dev"
+        "snippet": "Article URL: https://www.kayssel.com/newsletter/issue-20/ Comments URL: https://news.ycombinator.com/item?id=47198099 Points: 3 # Comments: 0",
+        "domain": "kayssel.com"
       },
       {
-        "title": "Show HN: SplatHash \u2013 A lightweight alternative to BlurHash and ThumbHash",
-        "link": "https://github.com/junevm/splathash",
+        "title": "Verified Spec-Driven Development (VSDD)",
+        "link": "https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00",
+        "image": null,
+        "logo": "https://logo.clearbit.com/gist.github.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00 Comments URL: https://news.ycombinator.com/item?id=47197595 Points: 24 # Comments: 10",
+        "domain": "gist.github.com"
+      },
+      {
+        "title": "The whole thing was a scam",
+        "link": "https://garymarcus.substack.com/p/the-whole-thing-was-scam",
+        "image": null,
+        "logo": "https://logo.clearbit.com/garymarcus.substack.com",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://garymarcus.substack.com/p/the-whole-thing-was-scam Comments URL: https://news.ycombinator.com/item?id=47197505 Points: 42 # Comments: 6",
+        "domain": "garymarcus.substack.com"
+      },
+      {
+        "title": "Obsidian Sync now has a headless client",
+        "link": "https://help.obsidian.md/sync/headless",
+        "image": null,
+        "logo": "https://logo.clearbit.com/help.obsidian.md",
+        "source": "Hacker News",
+        "snippet": "Article URL: https://help.obsidian.md/sync/headless Comments URL: https://news.ycombinator.com/item?id=47197267 Points: 109 # Comments: 38",
+        "domain": "help.obsidian.md"
+      },
+      {
+        "title": "Show HN: SQLite for Rivet Actors \u2013 one database per agent, tenant, or document",
+        "link": "https://github.com/rivet-dev/rivet",
         "image": null,
         "logo": "https://logo.clearbit.com/github.com",
         "source": "Hacker News",
-        "snippet": "Hi HN,I built SplatHash. It's a lightweight image placeholder generator I wrote to be a simpler, faster alternative to BlurHash and ThumbHash.Repo: https://github.com/junevm/splathash Comments URL: ht",
+        "snippet": "Hey HN! We posted Rivet Actors here previously [1] as an open-source alternative to Cloudflare Durable Objects.Today we've released SQLite storage for actors (Apache 2.0).Every actor gets its own SQLi",
         "domain": "github.com"
       },
       {
-        "title": "OpenAI \u2013 How to delete your account",
-        "link": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account",
+        "title": "Cognitive Debt: When Velocity Exceeds Comprehension",
+        "link": "https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/",
         "image": null,
-        "logo": "https://logo.clearbit.com/help.openai.com",
+        "logo": "https://logo.clearbit.com/rockoder.com",
         "source": "Hacker News",
-        "snippet": "Article URL: https://help.openai.com/en/articles/6378407-how-to-delete-your-account Comments URL: https://news.ycombinator.com/item?id=47193478 Points: 982 # Comments: 173",
-        "domain": "help.openai.com"
-      },
-      {
-        "title": "The Future of AI",
-        "link": "https://lucijagregov.com/2026/02/26/the-future-of-ai/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/lucijagregov.com",
-        "source": "Hacker News",
-        "snippet": "Article URL: https://lucijagregov.com/2026/02/26/the-future-of-ai/ Comments URL: https://news.ycombinator.com/item?id=47193476 Points: 39 # Comments: 40",
-        "domain": "lucijagregov.com"
-      },
-      {
-        "title": "Unsloth Dynamic 2.0 GGUFs",
-        "link": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs",
-        "image": null,
-        "logo": "https://logo.clearbit.com/unsloth.ai",
-        "source": "Hacker News",
-        "snippet": "Article URL: https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs Comments URL: https://news.ycombinator.com/item?id=47192505 Points: 94 # Comments: 36",
-        "domain": "unsloth.ai"
-      },
-      {
-        "title": "Inferring car movement patterns from passive TPMS measurements",
-        "link": "https://dspace.networks.imdea.org/handle/20.500.12761/2011",
-        "image": null,
-        "logo": "https://logo.clearbit.com/dspace.networks.imdea.org",
-        "source": "Hacker News",
-        "snippet": "Article URL: https://dspace.networks.imdea.org/handle/20.500.12761/2011 Comments URL: https://news.ycombinator.com/item?id=47191844 Points: 40 # Comments: 5",
-        "domain": "dspace.networks.imdea.org"
+        "snippet": "Article URL: https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/ Comments URL: https://news.ycombinator.com/item?id=47196582 Points: 213 # Comments: 92",
+        "domain": "rockoder.com"
       }
     ],
     "ai": [
@@ -1038,6 +1038,60 @@
         "domain": "venturebeat.com"
       },
       {
+        "title": "Even frontier LLMs from GPT-5 onward lose up to 33% accuracy when you chat too long",
+        "link": "https://the-decoder.com/even-frontier-llms-from-gpt-5-onward-lose-up-to-33-accuracy-when-you-chat-too-long/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/long_conversation_chatbot_performance.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Even with newer models like GPT-5.2 and Claude 4.6, AI chatbots still give worse answers the longer a conversation goes on. The article Even frontier LLMs from GPT-5 onward lose up to 33% accuracy whe",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "OpenAI calls Stuart Russell a \"doomer\" in court after its CEO co-signed his AI extinction warning",
+        "link": "https://the-decoder.com/openai-calls-stuart-russell-a-doomer-in-court-after-its-ceo-co-signed-his-ai-extinction-warning/",
+        "image": "https://the-decoder.com/wp-content/uploads/2025/10/openai_logo_wall-1.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Fear generates attention, and OpenAI usually knows how to use that. But in court, the company is trying to discredit an AI expert as a doomsday prophet, even though CEO Sam Altman spent years spreadin",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "OpenAI promises Canada tighter safety protocols after ChatGPT flagged a shooter's violent chats but never called police",
+        "link": "https://the-decoder.com/openai-promises-canada-tighter-safety-protocols-after-chatgpt-flagged-a-shooters-violent-chats-but-never-called-police/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_dark_logo.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "OpenAI is tightening its rules for cooperating with authorities following a fatal school shooting in Canada. The company had blocked the suspect's account but did not inform the police. The article Op",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Current language model training leaves large parts of the internet on the table",
+        "link": "https://the-decoder.com/current-language-model-training-leaves-large-parts-of-the-internet-on-the-table/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/beyond-html-web-extraction-nano-banana-pro.jpeg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "Large language models learn from web data, but which pages actually make it into training sets depends heavily on a seemingly mundane choice: the HTML extractor. Researchers at Apple, Stanford, and th",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "A new benchmark pits five AI models against each other as autonomous social media agents on X",
+        "link": "https://the-decoder.com/a-new-benchmark-pits-five-ai-models-against-each-other-as-autonomous-social-media-agents-on-x/",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Socials-Arena-KI-Artikelbild.jpg",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "AI benchmarking startup Arcada Labs is pitting five leading AI models against each other as autonomous social media agents on X. The article A new benchmark pits five AI models against each other as a",
+        "domain": "the-decoder.com"
+      },
+      {
+        "title": "Perplexity open-sources embedding models that match Google and Alibaba at a fraction of the memory cost",
+        "link": "https://the-decoder.com/perplexity-open-sources-embedding-models-that-match-google-and-alibaba-at-a-fraction-of-the-memory-cost/",
+        "image": "https://the-decoder.com/wp-content/uploads/2024/08/perplexity_neural_network.png",
+        "logo": "https://logo.clearbit.com/the-decoder.com",
+        "source": "The Decoder",
+        "snippet": "AI search engine Perplexity is introducing two new text embedding models designed to match or beat Google's and Alibaba's offerings at a fraction of the usual memory cost. Both models are open source.",
+        "domain": "the-decoder.com"
+      },
+      {
         "title": "Anthropic Defies the Pentagon. Trump Fires Back",
         "link": "https://aibusiness.com/ai-ethics/anthropic-defies-pentagon-sparking-an-ai-safety-debate",
         "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt7bdf883de00f6267/69a20797234be9af307cf12d/anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
@@ -1090,63 +1144,54 @@
         "source": "AI Business",
         "snippet": "The vendor said the specialists are more than AI agents. They perform entire job functions. While appealing, implementing these specialists could be challenging.",
         "domain": "aibusiness.com"
-      },
-      {
-        "title": "OpenAI calls Stuart Russell a \"doomer\" in court after its CEO co-signed his AI extinction warning",
-        "link": "https://the-decoder.com/openai-calls-stuart-russell-a-doomer-in-court-after-its-ceo-co-signed-his-ai-extinction-warning/",
-        "image": "https://the-decoder.com/wp-content/uploads/2025/10/openai_logo_wall-1.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Fear generates attention, and OpenAI usually knows how to use that. But in court, the company is trying to discredit an AI expert as a doomsday prophet, even though CEO Sam Altman spent years spreadin",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "OpenAI promises Canada tighter safety protocols after ChatGPT flagged a shooter's violent chats but never called police",
-        "link": "https://the-decoder.com/openai-promises-canada-tighter-safety-protocols-after-chatgpt-flagged-a-shooters-violent-chats-but-never-called-police/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_dark_logo.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "OpenAI is tightening its rules for cooperating with authorities following a fatal school shooting in Canada. The company had blocked the suspect's account but did not inform the police. The article Op",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Current language model training leaves large parts of the internet on the table",
-        "link": "https://the-decoder.com/current-language-model-training-leaves-large-parts-of-the-internet-on-the-table/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/beyond-html-web-extraction-nano-banana-pro.jpeg",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Large language models learn from web data, but which pages actually make it into training sets depends heavily on a seemingly mundane choice: the HTML extractor. Researchers at Apple, Stanford, and th",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "A new benchmark pits five AI models against each other as autonomous social media agents on X",
-        "link": "https://the-decoder.com/a-new-benchmark-pits-five-ai-models-against-each-other-as-autonomous-social-media-agents-on-x/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/Socials-Arena-KI-Artikelbild.jpg",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "AI benchmarking startup Arcada Labs is pitting five leading AI models against each other as autonomous social media agents on X. The article A new benchmark pits five AI models against each other as a",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Perplexity open-sources embedding models that match Google and Alibaba at a fraction of the memory cost",
-        "link": "https://the-decoder.com/perplexity-open-sources-embedding-models-that-match-google-and-alibaba-at-a-fraction-of-the-memory-cost/",
-        "image": "https://the-decoder.com/wp-content/uploads/2024/08/perplexity_neural_network.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "AI search engine Perplexity is introducing two new text embedding models designed to match or beat Google's and Alibaba's offerings at a fraction of the usual memory cost. Both models are open source.",
-        "domain": "the-decoder.com"
-      },
-      {
-        "title": "Anthropic calls Pentagon's supply chain risk label illegal and vows to challenge it in court",
-        "link": "https://the-decoder.com/anthropic-calls-pentagons-supply-chain-risk-label-illegal-and-vows-to-challenge-it-in-court/",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/anthropic_logo_wall.png",
-        "logo": "https://logo.clearbit.com/the-decoder.com",
-        "source": "The Decoder",
-        "snippet": "Anthropic is pushing back against the Pentagon. The AI company says it will go to court after being classified as a supply chain risk, a designation normally reserved for foreign adversaries, because ",
-        "domain": "the-decoder.com"
       }
     ],
     "entertainment": [
+      {
+        "title": "Documentary Oscar Race Reflects Balanced Field of Home-Grown and International Stories",
+        "link": "https://variety.com/2026/film/awards/documentary-oscar-race-1236674890/",
+        "image": "https://variety.com/wp-content/uploads/2025/10/The_Perfect_Neighbor_01_07_35_19.png",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "This year\u2019s crop of five documentary feature Oscar nominees is refreshingly balanced. There is a healthy mix of international stories, American directors, docs with big-streamer support and docs with ",
+        "domain": "variety.com"
+      },
+      {
+        "title": "How the Creator Economy Has Changed Marketing and \u2018Democratized the Launch of Consumer Products\u2019",
+        "link": "https://variety.com/2026/biz/news/bill-odowd-creator-economy-consumer-products-dolphin-1236675348/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/GettyImages-2153574274-e1772297056832.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "On the latest episode of Variety&#8216;s &#8220;Strictly Business&#8221; podcast, Bill O\u2019Dowd, founder and CEO of Dolphin Entertainment, offers a deep dive into the art and science of the creator econ",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Box Office: \u2018Scream 7\u2019 Kills With $28.8 Million on Opening Day",
+        "link": "https://variety.com/2026/film/news/box-office-scream-7-wuthering-heights-goat-1236675342/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/MCDSCSE_PA036_14e145.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "\u201cScream 7\u201d easily slashed its way to the top of the Friday box office, knocking off last week&#8217;s champion, \u201cWuthering Heights.\u201d The seventh installment in the long-running slasher franchise gross",
+        "domain": "variety.com"
+      },
+      {
+        "title": "Tig Notaro on Sleeping Through the Oscar Nominations: \u2018With My CPAP Machine Tubes Coming Out of My Head\u2019 and Honoring Her Friend in \u2018Come See Me in the Good Light\u2019",
+        "link": "https://variety.com/2026/film/awards/tig-notaro-come-see-me-in-the-good-light-oscars-nom-doc-1236674978/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/Tig-Notaro.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Tig Notaro did not set her alarm to see if she achieved Oscar nomination glory. \u201cMy wife happened to wake up at five in the morning, just so happened \u2014 she really did. She didn\u2019t wake up on purpose,\u201d ",
+        "domain": "variety.com"
+      },
+      {
+        "title": "\u2018We Have to Survive\u2019 Boarded by Taskovski Films Ahead of Premiere at Thessaloniki Documentary Festival (EXCLUSIVE)",
+        "link": "https://variety.com/2026/film/global/we-have-to-survive-taskovski-films-thessaloniki-1236675338/",
+        "image": "https://variety.com/wp-content/uploads/2026/02/We-Have-to-Survive.jpg",
+        "logo": "https://logo.clearbit.com/variety.com",
+        "source": "Variety",
+        "snippet": "Taskovski Films has come on board as the sales agent for \u201cWe Have to Survive,\u201d which has its world premiere at the Thessaloniki Intl. Documentary Festival, which runs March 5-15. The film, written and",
+        "domain": "variety.com"
+      },
       {
         "title": "\u2018Sinners\u2019 and \u2018One Battle After Another\u2019 Take Top Honors at ACE Eddie Awards",
         "link": "https://variety.com/2026/artisans/news/ace-eddie-awards-2026-winners-list-1236674690/",
@@ -1157,157 +1202,94 @@
         "domain": "variety.com"
       },
       {
-        "title": "Joey Bueno Breese Wins 2026 Deutsche Bank Frieze Los Angeles Film Award (EXCLUSIVE)",
-        "link": "https://variety.com/2026/film/columns/joey-bueno-breese-wins-deutsche-bank-frieze-los-angeles-film-award-1236675288/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/El_Rio_Nuestro_by_Joey_Bueno_Breese30.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Joey Bueno Breese has been named the recipient of the $10,000 2026 Deutsche Bank Frieze Los Angeles Film Award for his film \u201cEl Rio Nuestro.\u201d At the same time, Devin O\u2019Guinn received the $2,500 Audien",
-        "domain": "variety.com"
-      },
-      {
-        "title": "Jeff Probst Explains Why the Official \u2018Survivor\u2019 Podcast Is on Hiatus for Season 50",
-        "link": "https://variety.com/2026/tv/news/survivor-podcast-hiatus-season-50-jeff-probst-1236674959/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/3051569_18980b_1.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "The official &#8220;Survivor&#8221; podcast is hitting pause for Season 50. &#8220;&#8216;Survivor&#8217; 50 was designed as a celebration, and it features one of the most exciting game designs we\u2019ve ",
-        "domain": "variety.com"
-      },
-      {
-        "title": "\u2018The Beach Boys Love You\u2019 Gets Its Live Premiere After 50 Years: Al Jardine and Darian Sahanaja on Finally Bringing the Classic Album to the Stage",
-        "link": "https://variety.com/2026/music/news/beach-boys-love-you-live-concert-al-jardine-darian-sahanaja-1236675233/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/MixCollage-27-Feb-2026-04-30-PM-4782.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "Is the 1977 album &#8220;The Beach Boys Love You&#8221; a classic and essential part of this great American band&#8217;s catalog, or a lark? It&#8217;s so different from virtually every other album th",
-        "domain": "variety.com"
-      },
-      {
-        "title": "\u2018Bridgerton\u2019 Stars Hannah Dodd, Masali Baduza and Victor Alli on Francesca\u2019s Unlikely Romance and That Shocking Death",
-        "link": "https://variety.com/2026/tv/news/john-death-bridgerton-francesca-michaela-season-4-1236670330/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/BRIDGERTON_405_Unit_02008R.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "SPOILER ALERT:&#160;This story contains spoilers for Season 4, Part 2 of \u201cBridgerton,\u201d now streaming on Netflix. Everything has changed for Hannah Dodd&#8217;s Francesca in Season 4 of &#8220;Bridgert",
-        "domain": "variety.com"
-      },
-      {
-        "title": "\u2018Scream 7\u2019 Ending: All the Deaths, Cameos and Killers Explained, and Will There Be a \u2018Scream 8\u2019?",
-        "link": "https://variety.com/lists/scream-7-ending-deaths-cameos-explained-scream-8/",
-        "image": "https://variety.com/wp-content/uploads/2026/02/scream-7-1.jpg",
-        "logo": "https://logo.clearbit.com/variety.com",
-        "source": "Variety",
-        "snippet": "SPOILER ALERT: This article contains spoilers for &#8220;Scream 7,&#8221; now playing in theaters. Ghostface is back in theaters, and so is Neve Campbell&#8217;s Sidney Prescott after sitting out &#82",
-        "domain": "variety.com"
-      },
-      {
-        "title": "A 120-Minute Movie About a 1970s Counterculture Revival Is About to Find a New Audience",
-        "link": "https://collider.com/the-chosen-star-jonathan-roumie-1970s-counterculture-jesus-revolution-streaming-hulu-march-2026/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/06/the-chosen-jesus.jpg",
+        "title": "22 Greatest Comedy Movie Masterpieces of All Time, Ranked",
+        "link": "https://collider.com/best-comedy-movie-masterpieces-of-all-time-ranked/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/monty-python-and-the-holy-grail.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "The Chosen star Jonathan Roumie's sleeper hit film, Jesus Revolution, is heading to a new streamer this March. Find out more here.",
+        "snippet": "Monty Python and the Holy Grail, Blazing Saddles, and Some Like It Hot are all among the best and funniest comedy movies ever made.",
         "domain": "collider.com"
       },
       {
-        "title": "This Oscar Nominee That Made $339 Million Is Finally Available to Watch on Netflix",
-        "link": "https://collider.com/jurassic-world-rebirth-oscar-nominee-netflix-streaming/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/07/jurassic-world-rebirth-2.jpg",
+        "title": "The Game-Changing 165-Minute Western Saddles Up on a New Streamer",
+        "link": "https://collider.com/quentin-tarantino-django-unchained-165-minute-game-changing-western-streaming-peacock-march-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/mcddjun_ec022.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "Nominated in the Visual Effects category at this year\u2019s Oscars, Jurassic World Rebirth is now available to stream on Netflix.",
+        "snippet": "Quentin Tarantino's epic revenge Western, Django Unchained, is riding toward a new streaming home this March. Find out more.",
         "domain": "collider.com"
       },
       {
-        "title": "If You\u2019re Craving Another Thriller After \u2018The Night Manager,\u2019 Binge This Intense 2-Part Procedural",
-        "link": "https://collider.com/vigil-tv-series-thriller-procedural-streaming/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/01/vigil-rose-leslie-season-2-featured.jpg",
+        "title": "\u2018Will Trent' Finally Delivered This Season\u2019s Biggest Payoff in a Perfect 42 Minutes",
+        "link": "https://collider.com/will-trent-season-4-caleb-james-ulster/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/will-1.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "BBC's Vigil, available to stream on Peacock, is perfect for Night Manager fans thanks to high-stakes investigations and compelling performances.",
+        "snippet": "Will has a major breakthrough after confronting his birth father, Caleb, leading to a heart-to-heart and resolution to his season-long struggle.",
         "domain": "collider.com"
       },
       {
-        "title": "Samuel L. Jackson's 5 Best Marvel Movies, Ranked",
-        "link": "https://collider.com/samuel-l-jackson-marvel-movies-best-ranked/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/nick-fury-high-quality-2.jpg",
+        "title": "8 Psychological Thrillers That Are 10/10 But Nobody Remembers",
+        "link": "https://collider.com/best-psychological-thrillers-nobody-remembers/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/03/seconds-30.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "Ranking Samuel L. Jackson\u2019s top MCU turns, from The Avengers to Captain Marvel and The Winter Soldier at peak Fury mode.",
+        "snippet": "From The Tenant to Session 9, these 10/10 psychological thrillers earned critical acclaim, but somehow faded from mainstream memory.",
         "domain": "collider.com"
       },
       {
-        "title": "10 Most Rewatchable Sci-Fi Shows, Ranked",
-        "link": "https://collider.com/rewatchable-sci-fi-shows-ranked/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/03/firefly.jpg",
+        "title": "Russell Crowe\u2019s 103-Minute Horror Pivot Continues To Pay Off on Streaming",
+        "link": "https://collider.com/russell-crowe-103-minute-horror-movie-the-popes-exorcist-streaming-success-netflix-february-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/russell-crowe.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "Find out which sci-fi shows are the best for rewatches based on their compelling narratives and character development, from Doctor Who to Dark.",
+        "snippet": "Russell Crowe's 103-minute unexpected genre-switch, The Pope's Exorcist, is paying off for the second time since it was released.",
         "domain": "collider.com"
       },
       {
-        "title": "7 Best New and Returning Shows Coming to Netflix in March",
-        "link": "https://collider.com/tv-shows-netflix-march-2026/",
-        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/virgin-river.jpg",
+        "title": "Tom Hanks\u2019 118-Minute Western Gem Will Delight Taylor Sheridan Fans in March",
+        "link": "https://collider.com/tom-hanks-news-of-the-world-118-minute-western-gem-streaming-peacock-march-2026/",
+        "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/tom-hanks-news-of-the-world.jpg",
         "logo": "https://logo.clearbit.com/collider.com",
         "source": "Collider",
-        "snippet": "From Virgin River's Season 7 return to the highly anticipated conclusion of BEASTARS, these are the best shows coming to Netflix this March.",
+        "snippet": "Tom Hanks' under-appreciated Western, News of the World, is coming to a new streaming home this March. Find out more.",
         "domain": "collider.com"
       },
       {
-        "title": "Everything Coming to Paramount+ in March 2026",
-        "link": "https://www.ign.com/articles/whats-new-on-paramount-plus-march-2026",
-        "image": "https://assets-prd.ignimgs.com/2026/01/14/paramount-1637886430205-1768415477388.jpeg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Paramount+ subscribers have a lot to look forward this month, with a little bit of something for everyone.",
-        "domain": "ign.com"
+        "title": "\u2018The Pitt\u2019 EP Says HBO Wanted Upcoming ICE Episode To Be More \u201cBalanced\u201d",
+        "link": "https://deadline.com/2026/02/the-pitt-ep-hbo-wanted-ice-episode-more-balanced-1236739582/",
+        "image": "https://deadline.com/wp-content/uploads/2026/01/irene-choi-noah-wyle-fiona-dourif-lucas-iverson-e1772300166349.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "As The Pitt gets through another shift at Pittsburgh Trauma Medical Center during Season 2, the show is preparing to tackle immigration amid a crucial time. Executive producer John Wells recently reca",
+        "domain": "deadline.com"
       },
       {
-        "title": "Dimiterscu Wine, Tofu, and 26 More Brilliant Little Resident Evil Requiem Details",
-        "link": "https://www.ign.com/articles/resident-evil-requiem-28-brilliant-little-details",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/rer-details-1772201984424.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "From historic Easter eggs to amazing gameplay ideas, here are 28 brilliant little details in Resident Evil Requiem.",
-        "domain": "ign.com"
+        "title": "Kristen Stewart Expresses Support For City\u2019s Immigrants: \u201cLA Doesn\u2019t Exist Without All Of Us\u201d",
+        "link": "https://deadline.com/2026/02/kristen-stewart-support-immigrants-la-1236739574/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2263415560.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "A lifelong Angeleno, Kristen Stewart is advocating for her neighbors as ICE hits the streets of Los Angeles and other cities across the country. When asked &#8220;what would break your heart if it dis",
+        "domain": "deadline.com"
       },
       {
-        "title": "Marathon Review So Far",
-        "link": "https://www.ign.com/articles/marathon-review",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/marathon-reviewsofar-blogroll-1772235737503.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "The first few hours with Marathon have left us wanting more.",
-        "domain": "ign.com"
+        "title": "Networks Mobilize For Ongoing Coverage As U.S. And Israel Attack Iran",
+        "link": "https://deadline.com/2026/02/u-s-attacks-iran-tv-coverage-1236739520/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2263425094.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "Broadcast and cable networks mobilized overnight for ongoing coverage of the U.S. and Israel attack on Iran, in Donald Trump&#8217;s most significant military action of his second term. As strikes hit",
+        "domain": "deadline.com"
       },
       {
-        "title": "Pok\u00e9mon Winds and Waves Region Is Indeed Based on Southeast Asia, Filipinos Can Confirm",
-        "link": "https://www.ign.com/articles/pokemon-winds-and-waves-region-is-indeed-based-on-southeast-asia",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/pokemon-wiwa-ph-1772232731646.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "The upcoming 10th-gen Pok\u00e9mon game, out in 2027 for Switch 2, is inspired by countries such as the Philippines, Indonesia, and Malaysia.",
-        "domain": "ign.com"
-      },
-      {
-        "title": "Pok\u00e9mon Winds and Waves' Two Dressed Up Pikachu Have Ridiculous Official Names",
-        "link": "https://www.ign.com/articles/pokemon-winds-and-waves-two-dressed-up-pikachu-have-ridiculous-official-names",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/first-look-pokmon-winds-and-pokmon-waves-announcement-trailer-1-11-screenshot-1-1772230098022.png",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Today, Pok\u00e9mon Winds and Pok\u00e9mon Waves were announced during a Pok\u00e9mon Presents, showing off a new region, three new starter Pok\u00e9mon, new player characters, a lot of returning Pok\u00e9mon, and two overdre",
-        "domain": "ign.com"
-      },
-      {
-        "title": "T-Mobile Is Offering the Samsung Galaxy S26 Ultra \"On Us\" With No Trade-In or Port-In Required",
-        "link": "https://www.ign.com/articles/t-mobile-samsung-galaxy-s26-ultra-deals",
-        "image": "https://assets-prd.ignimgs.com/2026/02/27/samsunggalaxys26ultra-1772229184071.jpg",
-        "logo": "https://logo.clearbit.com/ign.com",
-        "source": "IGN",
-        "snippet": "Preorder Samsung's new flagship phone for 2026.",
-        "domain": "ign.com"
+        "title": "\u2018Scream 7\u2019 Shrieking At Record Decibels With Franchise-Best $60M+ Debut \u2013 Box Office Update",
+        "link": "https://deadline.com/2026/02/box-office-scream-7-1236738417/",
+        "image": "https://deadline.com/wp-content/uploads/2026/02/SCR7_10984R-e1772177753483.jpg",
+        "logo": "https://logo.clearbit.com/deadline.com",
+        "source": "Deadline",
+        "snippet": "SATURDAY AM: Paramount-Spyglass&#8217; Scream 7 is still shouting toward a $60M weekend in North America, maybe more if word of mouth can keep up. That&#8217;s the best opening the 30-year old franchi",
+        "domain": "deadline.com"
       },
       {
         "title": "U.S. & Israel Launch \u201cMajor Combat Operations\u201d On Iran As Trump Calls On Iranians To \u201cTake Over\u201d \u2013 Update",
@@ -1315,7 +1297,7 @@
         "image": "https://deadline.com/wp-content/uploads/2026/02/GettyImages-2263410412.jpg",
         "logo": "https://logo.clearbit.com/deadline.com",
         "source": "Deadline",
-        "snippet": "Updated at 5.45 PT&#8230; with deaths, coverage and reaction: The U.S. and Israel launched air strikes on Iran on Saturday, following a video statement from President Donald Trump in which he announce",
+        "snippet": "Updated at 7.55 am PT&#8230; with deaths, TV coverage, Dubai hotel hit and reaction: The U.S. and Israel launched air strikes on Iran on Saturday, following a video statement from President Donald Tru",
         "domain": "deadline.com"
       },
       {
@@ -1328,43 +1310,88 @@
         "domain": "deadline.com"
       },
       {
-        "title": "ACE Eddie Awards Winners List: \u2018Sinners\u2019, \u2018One Battle After Another\u2019 & \u2018KPop Demon Hunters\u2019 Take Top Film Prizes",
-        "link": "https://deadline.com/2026/02/ace-eddie-awards-2026-winners-list-1236739337/",
-        "image": "https://deadline.com/wp-content/uploads/2024/12/ACE-Eddie-Awards-logo.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Warner Bros&#8217; awards-season combatants Sinners and One Battle After Another and Netflix&#8217;s toon phenom KPop Demon Hunters took the top film prizes at 2026 annual ACE Eddie Awards, which were",
-        "domain": "deadline.com"
+        "title": "Everything Coming to Peacock Premium in March 2026",
+        "link": "https://www.ign.com/articles/whats-new-on-peacock-march-2026",
+        "image": "https://assets-prd.ignimgs.com/2021/07/30/paramount-peacock-streaming-partnership-1627639200609.jpeg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "There's a ton of movies arriving to the platform starting on March 1, followed by various Peacock exclusives throughout the month.",
+        "domain": "ign.com"
       },
       {
-        "title": "Netflix Leaders Reassure Staff At Town Hall After Ceding Warner Bros. To Paramount By Not Raising Bid",
-        "link": "https://deadline.com/2026/02/netflix-town-hall-after-warner-bros-paramount-ted-sarandos-1236739331/",
-        "image": "https://deadline.com/wp-content/uploads/2025/04/Ted-Sarandos-and-Greg-Peters.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "With Netflix employees still absorbing the news that the streamer won&#8217;t be buying Warner Bros. per the two companies&#8217; December 5 agreement, co-CEOs Ted Sarandos and Greg Peters held a brie",
-        "domain": "deadline.com"
+        "title": "Magic: The Gathering's Top 12 Most Powerful Commander Precons Of All Time",
+        "link": "https://www.ign.com/articles/magic-the-gatherings-top-12-most-powerful-commander-precons-of-all-time",
+        "image": "https://assets-prd.ignimgs.com/2026/02/19/commander-deck-header-1771511880580.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Looking for Magic's most powerful boxed precon decks for Commander? Here's our top 12, including Universes Beyond.",
+        "domain": "ign.com"
       },
       {
-        "title": "Ryan Gosling On Why Big Franchises \u201cNever Felt Right\u201d Before \u2018Star Wars: Starfighter\u2019",
-        "link": "https://deadline.com/2026/02/ryan-gosling-big-franchises-never-felt-right-star-wars-1236739383/",
-        "image": "https://deadline.com/wp-content/uploads/2025/09/swars-e1772248610171.png",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Although Ryan Gosling has been known to take on some major leading roles, he&#8217;s yet to commit to an ongoing franchise. The 3x Oscar nominee recently explained why those kinds of projects &#8220;n",
-        "domain": "deadline.com"
+        "title": "Resident Evil Requiem\u2019s Rhodes Hill Is the Ultimate RPD Remake",
+        "link": "https://www.ign.com/articles/resident-evil-requiems-rhodes-hill-is-the-ultimate-rpd-remake",
+        "image": "https://assets-prd.ignimgs.com/2026/02/26/re-requiem-grace-hltb-1772103388449.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Resident Evil Requiem's new haunted house goes back to the series\u2019 30 year-old roots to subtly improve a timeless formula.",
+        "domain": "ign.com"
       },
       {
-        "title": "\u2018Scream 7\u2019 Original Directors Say Their Version Was Intended To \u201cF*ck You Up\u201d",
-        "link": "https://deadline.com/2026/02/scream-7-original-directors-version-1236739343/",
-        "image": "https://deadline.com/wp-content/uploads/2026/02/SC7_FP_002R2Cr.jpg",
-        "logo": "https://logo.clearbit.com/deadline.com",
-        "source": "Deadline",
-        "snippet": "Following Scream 7&#8216;s long and bumpy road to the screen, Radio Silence is reflecting on their original vision for the slasher installment. The directing duo, consisting of Matt Bettinelli-Olpin a",
-        "domain": "deadline.com"
+        "title": "The Best Controllers for Playing PC Games in 2026",
+        "link": "https://www.ign.com/articles/best-pc-controller",
+        "image": "https://assets-prd.ignimgs.com/2023/12/27/ign-bpcc-23-opt1-1703701811476.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "You don't have to use a mouse and keyboard if you don't want to.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "30 Horror Masterpieces To Play Before You Die",
+        "link": "https://www.ign.com/articles/30-horror-masterpieces-to-play-before-you-die",
+        "image": "https://assets-prd.ignimgs.com/2026/02/28/30-horror-masterpieces-1772266943276.jpg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "From humble and simplistic pixel art beginnings to the hyper realistic, ultra violent games of today, here we run down 30 horror masterpieces.",
+        "domain": "ign.com"
+      },
+      {
+        "title": "Everything Coming to Paramount+ in March 2026",
+        "link": "https://www.ign.com/articles/whats-new-on-paramount-plus-march-2026",
+        "image": "https://assets-prd.ignimgs.com/2026/01/14/paramount-1637886430205-1768415477388.jpeg",
+        "logo": "https://logo.clearbit.com/ign.com",
+        "source": "IGN",
+        "snippet": "Paramount+ subscribers have a lot to look forward this month, with a little bit of something for everyone.",
+        "domain": "ign.com"
       }
     ],
     "weird_news": [
+      {
+        "title": "Twin Peaks opening title generator",
+        "link": "https://boingboing.net/2026/02/28/twin-peaks-opening-title-generator.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/From-the-Twin-Peaks-generator.jpg?fit=1080%2C810&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Pieter Dom posted a Twin Peaks opening title card generator: \"Your own episode. Your own mystery.\" There's something about this road. Those majestic trees. The electricity you hear when crossing into ",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Make editing PDFs fast, easy, and inexpensive with 77% off SwifDoo PDF Pro",
+        "link": "https://boingboing.net/2026/02/28/make-editing-pdfs-fast-easy-and-inexpensive-with-77-off-swifdoo-pdf-pro.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/SwifDoo-PDF-Pro-1.jpg?fit=2250%2C1500&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "TL;DR:&#160;Enjoy effortless editing of your most stubborn files \u2014 your PDFs. Get access to&#160;SwifDoo PDF Pro&#160;for just $29.97 (Reg. $129). There's nothing more frustrating than stubborn PDFs. ",
+        "domain": "boingboing.net"
+      },
+      {
+        "title": "Neil Sedaka dead at 86",
+        "link": "https://boingboing.net/2026/02/27/neil-sedaka-dead.html",
+        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/shutterstock_158709095-scaled.jpg?fit=2560%2C1830&quality=60&ssl=1",
+        "logo": "https://logo.clearbit.com/boingboing.net",
+        "source": "Boing Boing",
+        "snippet": "Neil Sedaka (previously at Boing Boing), among America's most prolific and enduring singer-songwriters, died Friday in Los Angeles. He was 86. \"Our family is devastated by the sudden passing of our be",
+        "domain": "boingboing.net"
+      },
       {
         "title": "LAPD officer charged with disability fraud after skydiving adventures",
         "link": "https://boingboing.net/2026/02/27/lapd-officer-disability.html",
@@ -1393,42 +1420,6 @@
         "domain": "boingboing.net"
       },
       {
-        "title": "Meet the Enshittificator, a man whose job is making your apps worse",
-        "link": "https://boingboing.net/2026/02/27/meet-the-enshittificator-a-man-whose-job-is-making-your-apps-worse.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/enshittcator.jpg?fit=1200%2C931&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "Somewhere in Norway, a man goes to work every morning, sits down at his desk, and deliberately makes your favorite apps worse. His job title: Enshittificator. He comes from a proud family tradition \u2014 ",
-        "domain": "boingboing.net"
-      },
-      {
-        "title": "Neck surgery may help flush Alzheimer's toxins from brain",
-        "link": "https://boingboing.net/2026/02/27/neck-surgery-may-help-flush-alzheimers-toxins-from-brain.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/brain.jpg?fit=1200%2C675&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "A report in Plastic and Reconstructive Surgery proposes using a microsurgical technique called lymphovenous anastomosis (LVA) to help clear the toxic proteins that build up in Alzheimer's patients' br",
-        "domain": "boingboing.net"
-      },
-      {
-        "title": "Magnesium helps migraines but the rest of the hype is shaky",
-        "link": "https://boingboing.net/2026/02/27/magnesium-helps-migraines-but-the-rest-of-the-hype-is-shaky.html",
-        "image": "https://i0.wp.com/boingboing.net/wp-content/uploads/2026/02/magnesium.jpg?fit=1200%2C800&quality=60&ssl=1",
-        "logo": "https://logo.clearbit.com/boingboing.net",
-        "source": "Boing Boing",
-        "snippet": "Migraine sufferers may have the strongest reason to reach for that bottle of magnesium on their nightstand. A review of four randomized controlled trials, published in February 2025 in Neurological Sc",
-        "domain": "boingboing.net"
-      },
-      {
-        "title": "This garlic is shaped like a lady",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgc0db/this_garlic_is_shaped_like_a_lady/",
-        "image": "https://preview.redd.it/7yeu71ckh2mg1.jpeg?width=640&crop=smart&auto=webp&s=c52ab36dca79889707e3289dea0b264e4a420803",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/DrinkMe2 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
         "title": "My stomach tattoo drastically shrunk after losing 85lbs.",
         "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgot1j/my_stomach_tattoo_drastically_shrunk_after_losing/",
         "image": "https://preview.redd.it/jwt31ggnx4mg1.jpeg?width=640&crop=smart&auto=webp&s=767d7480dd78f2ae7be5176ccfd6fa66bf837098",
@@ -1447,30 +1438,39 @@
         "domain": "reddit.com"
       },
       {
-        "title": "Frozen breastmilk before and after consuming large amounts of B12",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rga4ik/frozen_breastmilk_before_and_after_consuming/",
-        "image": "https://preview.redd.it/p1wz04ef52mg1.jpeg?width=640&crop=smart&auto=webp&s=99105a1467f71311e7b6c1a8757dd94cb15f96a7",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/strawberry_vegan [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
-        "title": "A rock depicting a shark swallowing a horse",
-        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rg86gl/a_rock_depicting_a_shark_swallowing_a_horse/",
-        "image": "https://preview.redd.it/yzfqb264s1mg1.jpeg?width=640&crop=smart&auto=webp&s=f64b6ea9076365de6bcedd5e923c05d7f1813434",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "r/mildlyinteresting",
-        "snippet": "&#32; submitted by &#32; /u/S3J5U9G2M7F4 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
         "title": "This wildly coloured pigeon.",
         "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgg26p/this_wildly_coloured_pigeon/",
         "image": "https://preview.redd.it/grd53gth73mg1.jpeg?width=640&crop=smart&auto=webp&s=dbfe7bd6abdaf1561de31fd13270fe8303636cf5",
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "r/mildlyinteresting",
         "snippet": "&#32; submitted by &#32; /u/PipBoy19 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "This poster at a Japanese supermarket explaining the types of oranges they sell.",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgtodb/this_poster_at_a_japanese_supermarket_explaining/",
+        "image": "https://preview.redd.it/a0f6u5kb36mg1.jpeg?width=640&crop=smart&auto=webp&s=4a1eeb68a43c2e2e13aa650a61e65cf06daa43ec",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/Waterlemon_Pug [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "A hummingbird chick fell out of its nest so we built it a makeshift one out of a cup and some paperclips",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgr9x4/a_hummingbird_chick_fell_out_of_its_nest_so_we/",
+        "image": "https://preview.redd.it/0wg56fezh5mg1.jpeg?width=640&crop=smart&auto=webp&s=2a1e1548fe6448f0a673cc69e6c363cb37b49c24",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/DJ-JazzyBenBromfield [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "After 4 years, my headshot is imprinted on the plastic sleeve that carries my work badge",
+        "link": "https://www.reddit.com/r/mildlyinteresting/comments/1rgk44g/after_4_years_my_headshot_is_imprinted_on_the/",
+        "image": "https://preview.redd.it/oti4sz15z3mg1.jpeg?width=640&crop=smart&auto=webp&s=34d02d0ead1dfa08a16f67c8e6bbc4f184d844a2",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "r/mildlyinteresting",
+        "snippet": "&#32; submitted by &#32; /u/analogHedgeHog [link] &#32; [comments]",
         "domain": "reddit.com"
       },
       {
@@ -1584,6 +1584,24 @@
         "domain": "pbswisconsin.org"
       },
       {
+        "title": "Transportation: MCTS Will Redesign Bus Network",
+        "link": "https://urbanmilwaukee.com/2026/02/28/transportation-mcts-will-redesign-bus-network/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2025/07/IMG_1485-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "Facing continuing budget deficits, transit system plans another redesign of service network.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
+        "title": "Urban Reads: Should Amtrak be Broken Up?",
+        "link": "https://urbanmilwaukee.com/2026/02/28/urban-reads-should-amtrak-be-broken-up/",
+        "image": "https://urbanmilwaukee.com/wp-content/uploads/2024/09/039-150x150.jpg",
+        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
+        "source": "Urban Milwaukee",
+        "snippet": "All the city news you can use.",
+        "domain": "urbanmilwaukee.com"
+      },
+      {
         "title": "National Avenue Bank Building Finds New Life As Corporate HQ",
         "link": "https://urbanmilwaukee.com/2026/02/27/national-avenue-bank-building-finds-new-life-as-corporate-hq/",
         "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/003-150x150.jpg",
@@ -1618,24 +1636,6 @@
         "source": "Urban Milwaukee",
         "snippet": "Music of the Medieval and Renaissance periods performed with Mediterranean influence and bold North African rhythms on a wide range of instruments including vihuela, oud, Renaissance harp, and a varie",
         "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "After GOP Snub Of Black History Month, Black Lawmakers Answer With Policy",
-        "link": "https://urbanmilwaukee.com/2026/02/27/after-gop-snub-of-black-history-month-black-lawmakers-answer-with-policy/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/PXL_20260129_161131779-1024x576-1-150x150.jpg",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "Caucus pairs a new agenda on housing, education and justice with pushback on symbolic floor fights in Madison.",
-        "domain": "urbanmilwaukee.com"
-      },
-      {
-        "title": "Evers Appoints New Replacement for Judge Jeffrey Wagner",
-        "link": "https://urbanmilwaukee.com/2026/02/27/evers-appoints-new-replacement-for-judge-jeffrey-wagner/",
-        "image": "https://urbanmilwaukee.com/wp-content/uploads/2026/02/Kilander-Tanner-002-1-e1772233512391-150x150.jpg",
-        "logo": "https://logo.clearbit.com/urbanmilwaukee.com",
-        "source": "Urban Milwaukee",
-        "snippet": "Prior appointee was moved after Dugan's resignation.",
-        "domain": "urbanmilwaukee.com"
       }
     ],
     "til": [
@@ -1649,24 +1649,6 @@
         "domain": "reddit.com"
       },
       {
-        "title": "TIL in 2005 the Wisconsin owners of a missing cat received a call informing them that their cat had ended up in France and would be coming home soon. Their cat had wandered into a container of paper bales inside a nearby paper company, which went by truck to Chicago before being shipped to Europe.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1rg7vbu/til_in_2005_the_wisconsin_owners_of_a_missing_cat/",
-        "image": "https://external-preview.redd.it/4qKrq4rwhP2uCXY3B_IWbNHrIybnCJOJVp1qOgQIfVU.jpeg?width=640&crop=smart&auto=webp&s=00872017424d1ecee2d5eb7bfe245517a2b16e54",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "Today I Learned",
-        "snippet": "&#32; submitted by &#32; /u/tyrion2024 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
-        "title": "TIL George RR Martin bought the first ticket to the first Comic Con in 1964.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1rgazhm/til_george_rr_martin_bought_the_first_ticket_to/",
-        "image": "https://external-preview.redd.it/4Eh5qtLw2QKlevIT1WXbxFIeIT5xhZ-tEc1ERa0z_BQ.jpeg?width=640&crop=smart&auto=webp&s=1e7ba620e4de62b4ef253e245f6d2cd1cc55fb9e",
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "Today I Learned",
-        "snippet": "&#32; submitted by &#32; /u/Wazula23 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
         "title": "TIL India has never won a Winter Olympic medal and only won 41 total Olympic medals.",
         "link": "https://www.reddit.com/r/todayilearned/comments/1rggbak/til_india_has_never_won_a_winter_olympic_medal/",
         "image": "https://external-preview.redd.it/4KdzF9NZutU52dzxSnq8V2yKeoTzW5TiRqm2gGo4KH4.png?width=640&crop=smart&auto=webp&s=cfb8656d91306806bcba9a2958eec0c3ed5da3d6",
@@ -1676,21 +1658,39 @@
         "domain": "reddit.com"
       },
       {
-        "title": "TIL there is a law that prohibits people in Thailand from owning more than 120 unapproved playing cards.",
-        "link": "https://www.reddit.com/r/todayilearned/comments/1rgaedx/til_there_is_a_law_that_prohibits_people_in/",
-        "image": null,
-        "logo": "https://logo.clearbit.com/reddit.com",
-        "source": "Today I Learned",
-        "snippet": "&#32; submitted by &#32; /u/Physical_Hamster_118 [link] &#32; [comments]",
-        "domain": "reddit.com"
-      },
-      {
         "title": "TIL by the late 16th century it was common for mounted knights to wield wheel-lock pistols while clad in armor",
         "link": "https://www.reddit.com/r/todayilearned/comments/1rgft5g/til_by_the_late_16th_century_it_was_common_for/",
         "image": "https://external-preview.redd.it/mu-o1KHXkpsS9XmgylEBIJxgVMdlkdOag5NdiFvL_9Q.jpeg?width=640&crop=smart&auto=webp&s=094a6b04464e73ec2e473fa3690517c009b460a0",
         "logo": "https://logo.clearbit.com/reddit.com",
         "source": "Today I Learned",
         "snippet": "&#32; submitted by &#32; /u/croato87 [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL the Indian state of Uttar Pradesh has 241 million people living in 94,000 sq miles/243,000 sq km. This is the equivalent to 70% of the US population living in an area the size of Oregon. Three quarters of the state's population is rural.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rgx4my/til_the_indian_state_of_uttar_pradesh_has_241/",
+        "image": "https://external-preview.redd.it/EdpFum6-KdqzLI_VAFqRKO7pUXPx6ogX2oPIufEUgeU.jpeg?width=640&crop=smart&auto=webp&s=b3190c02140d2a84280879997fcf8671f604f7b0",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/nehala [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL in 1997, a parody site \"Bert Is Evil\" posted edited images of Bert with figures such as Osama bin Laden. After 9/11, a Bangladesh publisher unknowingly found one online and printed it on anti-American posters. An unedited Reuters photo later showed the Bert image at a pro-bin Laden rally.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rgpr7o/til_in_1997_a_parody_site_bert_is_evil_posted/",
+        "image": null,
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/incognitoloris [link] &#32; [comments]",
+        "domain": "reddit.com"
+      },
+      {
+        "title": "TIL Bassem Youssef practiced as a cardiothoracic surgeon in Egypt for 13 years, until his move into comedy and political satire.",
+        "link": "https://www.reddit.com/r/todayilearned/comments/1rgrm65/til_bassem_youssef_practiced_as_a_cardiothoracic/",
+        "image": "https://external-preview.redd.it/2VBsZFuYWD5fmIkqL_7HPYINpeXm1yJVDq5vwMrmmR4.png?width=320&crop=smart&auto=webp&s=a0395c557023f1486bbfb787eb82ca225b60f1e9",
+        "logo": "https://logo.clearbit.com/reddit.com",
+        "source": "Today I Learned",
+        "snippet": "&#32; submitted by &#32; /u/flyart [link] &#32; [comments]",
         "domain": "reddit.com"
       }
     ]
@@ -2087,6 +2087,33 @@
   ],
   "youtube_picks": [
     {
+      "title": "Do you use AI to edit your photos? #Vergecast",
+      "url": "https://www.youtube.com/shorts/6ciNTPIXLD0",
+      "video_id": "6ciNTPIXLD0",
+      "channel": "The Verge",
+      "thumbnail": "https://i.ytimg.com/vi/6ciNTPIXLD0/mqdefault.jpg",
+      "published": "2026-02-28",
+      "category": "news"
+    },
+    {
+      "title": "The Case for Spending More Time with Your Friends | Rhaina Cohen | TED",
+      "url": "https://www.youtube.com/watch?v=d4vMetEtv0k",
+      "video_id": "d4vMetEtv0k",
+      "channel": "TED",
+      "thumbnail": "https://i.ytimg.com/vi/d4vMetEtv0k/mqdefault.jpg",
+      "published": "2026-02-28",
+      "category": "education"
+    },
+    {
+      "title": "Former Defense Secretary Esper says administration 'made the right call' on Iran strikes",
+      "url": "https://www.youtube.com/watch?v=qM4cvHwGOGw",
+      "video_id": "qM4cvHwGOGw",
+      "channel": "NBC News",
+      "thumbnail": "https://i.ytimg.com/vi/qM4cvHwGOGw/mqdefault.jpg",
+      "published": "2026-02-28",
+      "category": "news"
+    },
+    {
       "title": "The Linux Challenge Is Going\u2026 - WAN Show February 27, 2026",
       "url": "https://www.youtube.com/watch?v=7UGVk9ST8xw",
       "video_id": "7UGVk9ST8xw",
@@ -2096,24 +2123,6 @@
       "category": "tech"
     },
     {
-      "title": "The U.S. and Israel are carrying out a joint coordinated attack on Iran",
-      "url": "https://www.youtube.com/shorts/af1-z8n24qE",
-      "video_id": "af1-z8n24qE",
-      "channel": "NBC News",
-      "thumbnail": "https://i.ytimg.com/vi/af1-z8n24qE/mqdefault.jpg",
-      "published": "2026-02-28",
-      "category": "news"
-    },
-    {
-      "title": "New Xbox CEO may refocus on consoles #Vergecast",
-      "url": "https://www.youtube.com/shorts/234cykbhpjY",
-      "video_id": "234cykbhpjY",
-      "channel": "The Verge",
-      "thumbnail": "https://i.ytimg.com/vi/234cykbhpjY/mqdefault.jpg",
-      "published": "2026-02-28",
-      "category": "news"
-    },
-    {
       "title": "7 Weird Things You Can Do with Python Dataclasses",
       "url": "https://www.youtube.com/watch?v=Y9_h7ehjhO4",
       "video_id": "Y9_h7ehjhO4",
@@ -2121,15 +2130,6 @@
       "thumbnail": "https://i.ytimg.com/vi/Y9_h7ehjhO4/mqdefault.jpg",
       "published": "2026-02-27",
       "category": "tech"
-    },
-    {
-      "title": "TED isn't just about the talks. Join us at TED2026 | April 13-17 in Vancouver, BC #TEDTalks",
-      "url": "https://www.youtube.com/shorts/YU5r4bHrWH0",
-      "video_id": "YU5r4bHrWH0",
-      "channel": "TED",
-      "thumbnail": "https://i.ytimg.com/vi/YU5r4bHrWH0/mqdefault.jpg",
-      "published": "2026-02-27",
-      "category": "education"
     },
     {
       "title": "Conan caught Sona drawing dicks & butts on her notes. #podcast #conan #comedian #comedy",
@@ -2285,8 +2285,8 @@
     ],
     "games": [
       {
-        "title": "Animaly",
-        "url": "https://store.steampowered.com/app/4402260/",
+        "title": "AI vr. AI Vr Edition",
+        "url": "https://store.steampowered.com/app/4401130/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2295,8 +2295,8 @@
         "released": "2026-02-28"
       },
       {
-        "title": "The Raid of Brunswick",
-        "url": "https://store.steampowered.com/app/4384970/",
+        "title": "Chronosmith's Saga",
+        "url": "https://store.steampowered.com/app/4064410/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2305,8 +2305,8 @@
         "released": "2026-02-28"
       },
       {
-        "title": "Dreadful River",
-        "url": "https://store.steampowered.com/app/1807360/",
+        "title": "DOPAmine Overdrive",
+        "url": "https://store.steampowered.com/app/4161660/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2315,8 +2315,8 @@
         "released": "2026-02-28"
       },
       {
-        "title": "Tiny Vikings",
-        "url": "https://store.steampowered.com/app/1591560/",
+        "title": "Talk About Something in the Nowhere",
+        "url": "https://store.steampowered.com/app/4302900/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2325,8 +2325,8 @@
         "released": "2026-02-28"
       },
       {
-        "title": "ClickTown",
-        "url": "https://store.steampowered.com/app/3951870/",
+        "title": "Paranormal Eclipse",
+        "url": "https://store.steampowered.com/app/4392060/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2335,8 +2335,8 @@
         "released": "2026-02-28"
       },
       {
-        "title": "Robo",
-        "url": "https://store.steampowered.com/app/4364520/",
+        "title": "Follow Nightmare",
+        "url": "https://store.steampowered.com/app/3799550/",
         "type": "game",
         "platforms": [
           "PC"
@@ -2390,21 +2390,9 @@
       "link": "https://notdivided.org",
       "source": "Hacker News",
       "domain": "notdivided.org",
-      "score": 2013,
-      "num_comments": 632,
+      "score": 2322,
+      "num_comments": 738,
       "hn_url": "https://news.ycombinator.com/item?id=47188473",
-      "snippet": null,
-      "image": null,
-      "logo": null
-    },
-    {
-      "title": "Statement on the comments from Secretary of War Pete Hegseth",
-      "link": "https://www.anthropic.com/news/statement-comments-secretary-war",
-      "source": "Hacker News",
-      "domain": "anthropic.com",
-      "score": 1042,
-      "num_comments": 337,
-      "hn_url": "https://news.ycombinator.com/item?id=47188697",
       "snippet": null,
       "image": null,
       "logo": null
@@ -2414,21 +2402,9 @@
       "link": "https://twitter.com/sama/status/2027578652477821175",
       "source": "Hacker News",
       "domain": "twitter.com",
-      "score": 993,
-      "num_comments": 469,
+      "score": 1191,
+      "num_comments": 568,
       "hn_url": "https://news.ycombinator.com/item?id=47189650",
-      "snippet": null,
-      "image": null,
-      "logo": null
-    },
-    {
-      "title": "OpenAI \u2013 How to delete your account",
-      "link": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account",
-      "source": "Hacker News",
-      "domain": "help.openai.com",
-      "score": 982,
-      "num_comments": 173,
-      "hn_url": "https://news.ycombinator.com/item?id=47193478",
       "snippet": null,
       "image": null,
       "logo": null
@@ -2438,9 +2414,21 @@
       "link": "https://www.pcgamer.com/software/operating-systems/a-new-california-law-says-all-operating-systems-including-linux-need-to-have-some-form-of-age-verification-at-account-setup/",
       "source": "Hacker News",
       "domain": "pcgamer.com",
-      "score": 666,
-      "num_comments": 582,
+      "score": 754,
+      "num_comments": 638,
       "hn_url": "https://news.ycombinator.com/item?id=47181208",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "The United States and Israel have launched a major attack on Iran",
+      "link": "https://www.cnn.com/2026/02/28/middleeast/israel-attack-iran-intl-hnk",
+      "source": "Hacker News",
+      "domain": "cnn.com",
+      "score": 731,
+      "num_comments": 1753,
+      "hn_url": "https://news.ycombinator.com/item?id=47191232",
       "snippet": null,
       "image": null,
       "logo": null
@@ -2450,33 +2438,45 @@
       "link": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
       "source": "Hacker News",
       "domain": "techcrunch.com",
-      "score": 523,
-      "num_comments": 558,
+      "score": 547,
+      "num_comments": 571,
       "hn_url": "https://news.ycombinator.com/item?id=47181211",
       "snippet": null,
       "image": null,
       "logo": null
     },
     {
-      "title": "A better streams API is possible for JavaScript",
-      "link": "https://blog.cloudflare.com/a-better-web-streams-api/",
+      "title": "Don't trust AI agents",
+      "link": "https://nanoclaw.dev/blog/nanoclaw-security-model",
       "source": "Hacker News",
-      "domain": "blog.cloudflare.com",
-      "score": 425,
-      "num_comments": 147,
-      "hn_url": "https://news.ycombinator.com/item?id=47180569",
+      "domain": "nanoclaw.dev",
+      "score": 240,
+      "num_comments": 130,
+      "hn_url": "https://news.ycombinator.com/item?id=47194611",
       "snippet": null,
       "image": null,
       "logo": null
     },
     {
-      "title": "US and Israel launch strikes on Iran, as Trump says \u2018massive\u2019 campaign underway",
-      "link": "https://www.cnn.com/2026/02/28/middleeast/israel-attack-iran-intl-hnk",
+      "title": "Cognitive Debt: When Velocity Exceeds Comprehension",
+      "link": "https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/",
       "source": "Hacker News",
-      "domain": "cnn.com",
-      "score": 416,
-      "num_comments": 1044,
-      "hn_url": "https://news.ycombinator.com/item?id=47191232",
+      "domain": "rockoder.com",
+      "score": 213,
+      "num_comments": 92,
+      "hn_url": "https://news.ycombinator.com/item?id=47196582",
+      "snippet": null,
+      "image": null,
+      "logo": null
+    },
+    {
+      "title": "Don't use passkeys for encrypting user data",
+      "link": "https://blog.timcappalli.me/p/passkeys-prf-warning/",
+      "source": "Hacker News",
+      "domain": "blog.timcappalli.me",
+      "score": 195,
+      "num_comments": 167,
+      "hn_url": "https://news.ycombinator.com/item?id=47189749",
       "snippet": null,
       "image": null,
       "logo": null
@@ -2484,6 +2484,11 @@
   ],
   "personal_github": {
     "commits": [
+      {
+        "repo": "nyx-daily",
+        "message": "push 1849c13",
+        "date": "2026-02-28"
+      },
       {
         "repo": "nyx-backup",
         "message": "push 89fcb60",
@@ -2508,11 +2513,6 @@
         "repo": "nyx-daily",
         "message": "push 8372713",
         "date": "2026-02-28"
-      },
-      {
-        "repo": "nyx-daily",
-        "message": "push a4b2390",
-        "date": "2026-02-28"
       }
     ],
     "prs": [],
@@ -2533,15 +2533,15 @@
     ]
   },
   "tldr": {
-    "summary": "Tensions escalate as the U.S. and Israel launch significant military strikes on Iran, causing panic among residents and stirring political debates over executive military authority. In tech, Google is making strides in quantum-proofing web security, which could reshape online data safety.",
+    "summary": "The U.S. and Israel have launched military strikes against Iran, igniting global tensions and raising concerns over oil supply disruptions. Lawmakers are divided on the legality of the operation, and the geopolitical fallout could significantly impact international relations and energy markets.",
     "top_story": {
-      "headline": "U.S. and Israel launch major attacks on Iran amid rising tensions.",
-      "why": "This escalation raises questions about international cybersecurity and the role of AI in military strategy, which developers in the tech space need to monitor closely."
+      "headline": "U.S. Strikes Iran Amidst Heightened Global Tensions",
+      "why": "This military action could disrupt global oil supplies, influencing market dynamics crucial for tech and AI industries reliant on stable energy resources."
     },
-    "nyx_take": "As geopolitical tensions flare, the tech sector should brace for potential shifts in cybersecurity protocols and AI regulations, because the fallout could redefine the landscape of digital safety and privacy.",
+    "nyx_take": "In a world rife with AI advancements, it's ironic that geopolitical maneuvers still rely on outdated notions of power and aggression.",
     "watch": [
-      "Impact of U.S. strikes on tech companies involved in cybersecurity",
-      "Developments in quantum-proofing technologies and their implications"
+      "Reactions from global leaders on the U.S.-Israel strikes",
+      "Impact of strikes on oil prices and tech industry supply chains"
     ]
   },
   "breathwork_session": {
