@@ -22,8 +22,13 @@ export default function RecentSaves() {
     };
     load();
     window.addEventListener('storage', load);
+    document.addEventListener('visibilitychange', load);
     const t = setInterval(load, 5000);
-    return () => { window.removeEventListener('storage', load); clearInterval(t); };
+    return () => {
+      window.removeEventListener('storage', load);
+      document.removeEventListener('visibilitychange', load);
+      clearInterval(t);
+    };
   }, []);
 
   if (!saves.length) return null;

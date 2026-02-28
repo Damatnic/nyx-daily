@@ -6,7 +6,6 @@ import { Calendar, Check } from 'lucide-react';
 import type { SchoolDeadline } from '@/lib/types';
 
 import {
-  DONE_STORAGE_KEY as STORAGE_KEY,
   makeDeadlineKey as makeKey,
   loadDoneSet, saveDoneSet,
   courseShort, dayLabel, urgentCls, checkboxCls,
