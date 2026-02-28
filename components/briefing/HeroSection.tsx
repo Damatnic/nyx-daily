@@ -1,4 +1,4 @@
-import { DailyBriefing } from '@/lib/types';
+import { DailyBriefing, SchoolDeadline } from '@/lib/types';
 import TimeGreeting from './TimeGreeting';
 import { parseWeather, tempColor } from '@/lib/weather';
 
@@ -11,9 +11,10 @@ interface Props {
   upcomingCount: number;
   focus?: string | null;
   streak?: number;
+  urgentDeadline?: SchoolDeadline | null;
 }
 
-export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus, streak }: Props) {
+export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear, headlineCount, upcomingCount, focus, streak, urgentDeadline }: Props) {
   const year      = new Date(briefing.date + 'T12:00:00').getFullYear();
   const totalDays = year % 4 === 0 ? 366 : 365;
   const pct       = Math.round((dayOfYear / totalDays) * 100);
@@ -82,6 +83,21 @@ export default function HeroSection({ briefing, weekNum, heroDateStr, dayOfYear,
                 <span className="text-orange-400 text-xs">🔥</span>
                 <span className="text-slate-400 tabular-nums">{streak}</span>
                 <span className="text-slate-700 hidden lg:inline">streak</span>
+              </span>
+            )}
+            {/* Urgent deadline pill */}
+            {urgentDeadline && (
+              <span
+                className="text-[10px] font-mono flex items-center gap-1 px-2 py-0.5 rounded-full border border-red-500/25 bg-red-500/[0.07] animate-soft-pulse"
+                title={`${urgentDeadline.course}: ${urgentDeadline.desc}`}
+              >
+                <span className="text-red-400 text-[9px]">⚠</span>
+                <span className="text-red-300/80 max-w-[100px] truncate hidden sm:block">
+                  {urgentDeadline.desc.split(' ').slice(0, 3).join(' ')}
+                </span>
+                <span className="text-red-500/60 font-bold">
+                  {urgentDeadline.days === 0 ? 'TODAY' : 'TMRW'}
+                </span>
               </span>
             )}
             <div className="flex items-center gap-1">

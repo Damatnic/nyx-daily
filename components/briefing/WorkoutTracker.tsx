@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import type { WorkoutExercise } from '@/lib/types';
-import { Check, RotateCcw } from 'lucide-react';
+import { Check, RotateCcw, Flame } from 'lucide-react';
 import InfoTooltip from '@/components/ui/InfoTooltip';
+import { useWorkoutStreak } from '@/lib/useWorkoutStreak';
 
 interface ExerciseInfo { muscles: string; tip: string; }
 
@@ -72,6 +73,7 @@ export default function WorkoutTracker({ workout, date }: Props) {
   const [done, setDone] = useState<Set<number>>(new Set());
   const [mounted, setMounted] = useState(false);
   const key = `workout-${date}`;
+  const workoutStreak = useWorkoutStreak();
 
   useEffect(() => {
     setMounted(true);
@@ -116,6 +118,13 @@ export default function WorkoutTracker({ workout, date }: Props) {
           <span className="text-[10px] text-slate-600 ml-2">{workout.name}</span>
         </div>
         <div className="flex items-center gap-3">
+          {workoutStreak > 0 && (
+            <span className="flex items-center gap-1 text-[10px] font-mono" title={`${workoutStreak}-day workout streak`}>
+              <Flame size={11} className="text-orange-400" />
+              <span className="text-orange-400 tabular-nums">{workoutStreak}</span>
+              <span className="text-slate-700 hidden sm:inline">streak</span>
+            </span>
+          )}
           <span className="text-[10px] font-mono text-slate-600">{doneCount}/{total}</span>
           {doneCount > 0 && (
             <button onClick={reset} className="text-slate-700 hover:text-slate-400 transition-colors">

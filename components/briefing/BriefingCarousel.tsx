@@ -14,6 +14,7 @@ interface CarouselProps {
   facts?: DailyFact[] | null;
   onThisDay?: OnThisDayEvent[] | null;
   apod?: NasaApodType | null;
+  sourceCount?: number;
 }
 
 interface Panel {
@@ -26,7 +27,7 @@ interface Panel {
 const SWIPE_THRESHOLD = 50;
 const DRAG_START_THRESHOLD = 8; // px before we consider it a drag
 
-export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }: CarouselProps) {
+export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod, sourceCount }: CarouselProps) {
   const [current, setCurrent] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
   const isDragging = useRef(false);
@@ -41,7 +42,7 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   const panels: Panel[] = [];
 
   if (tldr?.summary) {
-    panels.push({ id: 'tldr', label: 'AI Brief', icon: '🤖', content: <TLDRCard tldr={tldr} /> });
+    panels.push({ id: 'tldr', label: 'AI Brief', icon: '🤖', content: <TLDRCard tldr={tldr} sourceCount={sourceCount} /> });
   }
   if (word || facts?.length) {
     panels.push({
@@ -140,19 +141,36 @@ export default function BriefingCarousel({ tldr, word, facts, onThisDay, apod }:
   const tx   = -(safe * 100) + pct;
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-violet-500/10 bg-gradient-to-br from-violet-950/20 via-[#06060e] to-[#06060e]">
+    <div className="relative overflow-hidden rounded-xl border border-violet-500/15 bg-gradient-to-br from-violet-950/25 via-[#06060e] to-[#06060e]"
+         style={{ boxShadow: '0 0 0 1px rgba(139,92,246,0.06), 0 8px 32px rgba(124,58,237,0.08)' }}>
       {/* Ambient glow */}
-      <div className="absolute -top-12 -left-12 w-40 h-40 rounded-full bg-violet-600/5 blur-3xl pointer-events-none" />
+      <div className="absolute -top-16 -left-8 w-56 h-56 rounded-full bg-violet-600/8 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-8 right-0 w-32 h-32 rounded-full bg-cyan-600/4 blur-3xl pointer-events-none" />
 
       {/* Label bar */}
       <div className="flex items-center justify-between px-5 pt-4 pb-0">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse shrink-0" />
-          <span className="text-[9px] font-black uppercase tracking-[0.22em] text-violet-400/70">
+          <span className="text-[11px] font-black uppercase tracking-[0.18em] text-violet-300/80">
             {panels[safe]?.icon}&nbsp;&nbsp;{panels[safe]?.label}
           </span>
         </div>
-        <span className="text-[9px] text-slate-700 font-mono">{safe + 1}/{count}</span>
+        <div className="flex items-center gap-2">
+          {count > 1 && panels.map((p, i) => (
+            <button
+              key={p.id}
+              onClick={() => setCurrent(i)}
+              title={p.label}
+              className={`text-[9px] font-mono transition-all duration-200 ${
+                i === safe
+                  ? 'text-violet-400/80 font-bold'
+                  : 'text-slate-700 hover:text-slate-500'
+              }`}
+            >
+              {p.icon}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Slider track — touch-action: pan-y lets vertical scroll pass through to the browser */}

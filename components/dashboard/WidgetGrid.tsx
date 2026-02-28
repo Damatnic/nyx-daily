@@ -33,7 +33,7 @@ import ArchiveStrip       from '@/components/briefing/ArchiveStrip';
 import MetaBar            from '@/components/briefing/MetaBar';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v6';
+const STORAGE_KEY = 'nyx-widget-layout-v7';
 
 interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean; visible: boolean }
 
@@ -59,29 +59,30 @@ const SIZE_COL: Record<WidgetSize, string> = {
 //   Row 9  archive         [full]
 //
 const DEFAULT_LAYOUT: WidgetConfig[] = [
-  // Row 1 — orient
+  // ── ACT ZONE ─────────────────────────────────────────────────────────────
+  // Expanded by default — orient + act on your day immediately
   { id: 'carousel',        size: 'full', collapsed: false, visible: true },
-  // Row 2 — act (only cards you DO, not just read)
   { id: 'workout',         size: 'half', collapsed: false, visible: true },
   { id: 'breathwork',      size: 'half', collapsed: false, visible: true },
-  // Row 3 — read
+
+  // ── READ ZONE ────────────────────────────────────────────────────────────
+  // Core news + dev feeds — scan, don't drown
   { id: 'news',            size: 'full', collapsed: false, visible: true },
-  // Row 4 — dev feeds
   { id: 'github',          size: 'half', collapsed: false, visible: true },
-  { id: 'reddit',          size: 'half', collapsed: false, visible: true },
-  // Row 5 — more dev
   { id: 'hackernews',      size: 'half', collapsed: false, visible: true },
-  { id: 'personal_github', size: 'half', collapsed: false, visible: true },
-  // Row 6 — discovery
-  { id: 'producthunt',     size: 'half', collapsed: false, visible: true },
-  { id: 'hidden_gems',     size: 'half', collapsed: false, visible: true },
-  // Row 7 — daily picks
-  { id: 'app_of_day',      size: 'half', collapsed: false, visible: true },
   { id: 'daily_wisdom',    size: 'half', collapsed: false, visible: true },
-  // Row 8 — media
-  { id: 'youtube',         size: 'half', collapsed: false, visible: true },
-  { id: 'releases',        size: 'half', collapsed: false, visible: true },
-  // Row 9 — archive
+  { id: 'personal_github', size: 'half', collapsed: false, visible: true },
+
+  // ── DISCOVERY ZONE ───────────────────────────────────────────────────────
+  // Collapsed by default — expand when you have time to browse
+  { id: 'reddit',          size: 'half', collapsed: true,  visible: true },
+  { id: 'producthunt',     size: 'half', collapsed: true,  visible: true },
+  { id: 'hidden_gems',     size: 'half', collapsed: true,  visible: true },
+  { id: 'app_of_day',      size: 'half', collapsed: true,  visible: true },
+  { id: 'youtube',         size: 'half', collapsed: true,  visible: true },
+  { id: 'releases',        size: 'half', collapsed: true,  visible: true },
+
+  // ── ARCHIVE ──────────────────────────────────────────────────────────────
   { id: 'archive',         size: 'full', collapsed: false, visible: true },
 ];
 
@@ -192,6 +193,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
           facts={briefing.facts_of_the_day}
           onThisDay={briefing.on_this_day}
           apod={briefing.apod}
+          sourceCount={headlineCount}
         />
         <MetaBar briefing={briefing} streak={streak} headlineCount={headlineCount} />
       </div>

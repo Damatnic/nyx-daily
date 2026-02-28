@@ -68,6 +68,9 @@ export default async function HomePage() {
   const headlineCount = countHeadlines(briefing.news as Record<string, Array<unknown>>);
   const upcomingCount = (briefing.school_deadlines ?? []).filter(d => !d.done && d.days >= 0 && d.days <= 7).length;
   const urgentDeadlines = (briefing.school_deadlines ?? []).filter(d => !d.done && d.days <= 1).length;
+  const urgentDeadline = (briefing.school_deadlines ?? [])
+    .filter(d => !d.done && d.days >= 0 && d.days <= 1)
+    .sort((a, b) => a.days - b.days)[0] ?? null;
   const breathworkFallback = briefing.breathwork
     ? `${briefing.breathwork.name}: ${briefing.breathwork.steps} (${briefing.breathwork.rounds} rounds)`
     : undefined;
@@ -85,6 +88,7 @@ export default async function HomePage() {
         upcomingCount={upcomingCount}
         focus={briefing.focus}
         streak={streak}
+        urgentDeadline={urgentDeadline}
       />
 
       <UrgencyBanner deadlines={briefing.school_deadlines} />

@@ -1,5 +1,7 @@
+'use client';
 import type { DailyBriefing } from '@/lib/types';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, Flame } from 'lucide-react';
+import { useWorkoutStreak } from '@/lib/useWorkoutStreak';
 
 function fmtTime(iso: string) {
   try {
@@ -46,6 +48,7 @@ function Sep() {
 }
 
 export default function MetaBar({ briefing, streak, headlineCount }: Props) {
+  const workoutStreak = useWorkoutStreak();
   const hnCount   = briefing.hacker_news?.length ?? 0;
   const releases  = briefing.releases_today;
   const relCount  = releases
@@ -102,11 +105,21 @@ export default function MetaBar({ briefing, streak, headlineCount }: Props) {
         );
       })()}
       {streak > 0 && (
-        <span className="flex items-center gap-1 shrink-0">
+        <span className="flex items-center gap-1 shrink-0" title={`${streak}-day briefing streak`}>
           <span className="text-[13px]">🔥</span>
           <span className="text-[12px] font-bold text-orange-400 tabular-nums">{streak}</span>
-          <span className="text-[11px] text-slate-700">day streak</span>
+          <span className="text-[11px] text-slate-700">briefing streak</span>
         </span>
+      )}
+      {workoutStreak > 0 && (
+        <>
+          <Sep />
+          <span className="flex items-center gap-1 shrink-0" title={`${workoutStreak}-day workout streak`}>
+            <Flame size={12} className="text-orange-500" />
+            <span className="text-[12px] font-bold text-orange-500 tabular-nums">{workoutStreak}</span>
+            <span className="text-[11px] text-slate-700">workout streak</span>
+          </span>
+        </>
       )}
     </div>
   );
