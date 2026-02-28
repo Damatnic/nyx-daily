@@ -4,7 +4,7 @@
     "desc": "Homework 9 - Hypothesis Testing Ch.9",
     "due_date": "2026-02-28",
     "due_str": "Sat Feb 28",
-    "days": 1,
+    "days": 0,
     "weight": "low",
     "done": false
   },
@@ -13,7 +13,7 @@
     "desc": "CLS Hypothesis Testing",
     "due_date": "2026-03-01",
     "due_str": "Sun Mar 1",
-    "days": 2,
+    "days": 1,
     "weight": "medium",
     "done": false
   },
@@ -22,7 +22,7 @@
     "desc": "Extra Quiz 5 - Hypothesis Testing Ch.9",
     "due_date": "2026-03-01",
     "due_str": "Sun Mar 1",
-    "days": 2,
+    "days": 1,
     "weight": "medium",
     "done": false
   },
@@ -31,7 +31,7 @@
     "desc": "Week 6.5 Lab",
     "due_date": "2026-03-04",
     "due_str": "Wed Mar 4",
-    "days": 5,
+    "days": 4,
     "weight": "low",
     "done": false
   },
@@ -40,7 +40,7 @@
     "desc": "Week 6 Lab/Demo",
     "due_date": "2026-03-04",
     "due_str": "Wed Mar 4",
-    "days": 5,
+    "days": 4,
     "weight": "low",
     "done": false
   },
@@ -49,7 +49,7 @@
     "desc": "Data Management Meeting Simulation",
     "due_date": "2026-03-05",
     "due_str": "Thu Mar 5",
-    "days": 6,
+    "days": 5,
     "weight": "medium",
     "done": false
   },
@@ -58,7 +58,7 @@
     "desc": "Lesson 6 Practice Problems",
     "due_date": "2026-03-05",
     "due_str": "Thu Mar 5",
-    "days": 6,
+    "days": 5,
     "weight": "low",
     "done": false
   },
@@ -67,7 +67,7 @@
     "desc": "Lesson 6 Quiz",
     "due_date": "2026-03-05",
     "due_str": "Thu Mar 5",
-    "days": 6,
+    "days": 5,
     "weight": "medium",
     "done": false
   },
@@ -76,7 +76,7 @@
     "desc": "Week 7 In-Class Lab",
     "due_date": "2026-03-05",
     "due_str": "Thu Mar 5",
-    "days": 6,
+    "days": 5,
     "weight": "low",
     "done": false
   },
@@ -85,7 +85,7 @@
     "desc": "Homework 10 - Two Sample Hypothesis Testing Ch.11&12",
     "due_date": "2026-03-07",
     "due_str": "Sat Mar 7",
-    "days": 8,
+    "days": 7,
     "weight": "low",
     "done": false
   },
@@ -94,7 +94,7 @@
     "desc": "Extra Bonus Quiz",
     "due_date": "2026-03-08",
     "due_str": "Sun Mar 8",
-    "days": 9,
+    "days": 8,
     "weight": "medium",
     "done": false
   },
@@ -103,7 +103,7 @@
     "desc": "Data Management Case Study",
     "due_date": "2026-03-11",
     "due_str": "Wed Mar 11",
-    "days": 12,
+    "days": 11,
     "weight": "medium",
     "done": false
   },
@@ -112,7 +112,7 @@
     "desc": "Power BI Project",
     "due_date": "2026-03-12",
     "due_str": "Thu Mar 12",
-    "days": 13,
+    "days": 12,
     "weight": "high",
     "done": false
   },
@@ -121,7 +121,7 @@
     "desc": "Roll Call Attendance",
     "due_date": "2026-03-12",
     "due_str": "Thu Mar 12",
-    "days": 13,
+    "days": 12,
     "weight": "low",
     "done": false
   },
@@ -130,7 +130,7 @@
     "desc": "Lesson 7 Practice Problems",
     "due_date": "2026-03-12",
     "due_str": "Thu Mar 12",
-    "days": 13,
+    "days": 12,
     "weight": "low",
     "done": false
   },
@@ -139,7 +139,7 @@
     "desc": "Lesson 7 Quiz",
     "due_date": "2026-03-12",
     "due_str": "Thu Mar 12",
-    "days": 13,
+    "days": 12,
     "weight": "medium",
     "done": false
   },
@@ -148,7 +148,7 @@
     "desc": "Homework 11 - Chapter 14 ANOVA",
     "due_date": "2026-03-12",
     "due_str": "Thu Mar 12",
-    "days": 13,
+    "days": 12,
     "weight": "low",
     "done": false
   },
@@ -157,7 +157,7 @@
     "desc": "FINAL EXAM",
     "due_date": "2026-03-13",
     "due_str": "Fri Mar 13",
-    "days": 14,
+    "days": 13,
     "weight": "critical",
     "done": false
   },
@@ -166,7 +166,7 @@
     "desc": "Lesson 8 Practice Problems",
     "due_date": "2026-03-26",
     "due_str": "Thu Mar 26",
-    "days": 27,
+    "days": 26,
     "weight": "low",
     "done": false
   },
@@ -175,7 +175,7 @@
     "desc": "Lesson 8 Quiz",
     "due_date": "2026-03-26",
     "due_str": "Thu Mar 26",
-    "days": 27,
+    "days": 26,
     "weight": "medium",
     "done": false
   },
@@ -184,7 +184,7 @@
     "desc": "Lesson 9 Practice Problems",
     "due_date": "2026-04-02",
     "due_str": "Thu Apr 2",
-    "days": 34,
+    "days": 33,
     "weight": "low",
     "done": false
   },
@@ -193,7 +193,7 @@
     "desc": "Lesson 9 Quiz",
     "due_date": "2026-04-02",
     "due_str": "Thu Apr 2",
-    "days": 34,
+    "days": 33,
     "weight": "medium",
     "done": false
   },
@@ -202,7 +202,7 @@
     "desc": "Lesson 10 In-Class Lab",
     "due_date": "2026-04-02",
     "due_str": "Thu Apr 2",
-    "days": 34,
+    "days": 33,
     "weight": "low",
     "done": false
   },
@@ -211,7 +211,7 @@
     "desc": "Lesson 10 Practice Problems",
     "due_date": "2026-04-09",
     "due_str": "Thu Apr 9",
-    "days": 41,
+    "days": 40,
     "weight": "low",
     "done": false
   },
@@ -220,7 +220,7 @@
     "desc": "Lesson 10 Quiz",
     "due_date": "2026-04-09",
     "due_str": "Thu Apr 9",
-    "days": 41,
+    "days": 40,
     "weight": "medium",
     "done": false
   },
@@ -229,7 +229,7 @@
     "desc": "Lesson 11 In-Class Lab",
     "due_date": "2026-04-09",
     "due_str": "Thu Apr 9",
-    "days": 41,
+    "days": 40,
     "weight": "low",
     "done": false
   },
@@ -238,7 +238,7 @@
     "desc": "Lesson 11 Practice Problems",
     "due_date": "2026-04-16",
     "due_str": "Thu Apr 16",
-    "days": 48,
+    "days": 47,
     "weight": "low",
     "done": false
   },
@@ -247,7 +247,7 @@
     "desc": "Lesson 12 Practice Problems",
     "due_date": "2026-04-23",
     "due_str": "Thu Apr 23",
-    "days": 55,
+    "days": 54,
     "weight": "low",
     "done": false
   },
@@ -256,7 +256,7 @@
     "desc": "Unit 2 Project",
     "due_date": "2026-04-24",
     "due_str": "Fri Apr 24",
-    "days": 56,
+    "days": 55,
     "weight": "high",
     "done": false
   },
@@ -265,7 +265,7 @@
     "desc": "Lesson 13 Practice Problems",
     "due_date": "2026-04-30",
     "due_str": "Thu Apr 30",
-    "days": 62,
+    "days": 61,
     "weight": "low",
     "done": false
   },
@@ -274,7 +274,7 @@
     "desc": "Lesson 14 Practice Problems",
     "due_date": "2026-05-07",
     "due_str": "Thu May 7",
-    "days": 69,
+    "days": 68,
     "weight": "low",
     "done": false
   },
@@ -283,7 +283,7 @@
     "desc": "Lesson 14 Quiz",
     "due_date": "2026-05-07",
     "due_str": "Thu May 7",
-    "days": 69,
+    "days": 68,
     "weight": "medium",
     "done": false
   },
@@ -292,7 +292,7 @@
     "desc": "Unit 3 Project",
     "due_date": "2026-05-14",
     "due_str": "Thu May 14",
-    "days": 76,
+    "days": 75,
     "weight": "high",
     "done": false
   },
@@ -301,7 +301,7 @@
     "desc": "Test 3 - Chapter 7 and 8",
     "due_date": "2026-02-22",
     "due_str": "Sun Feb 22",
-    "days": -5,
+    "days": -6,
     "weight": "high",
     "done": true
   },
@@ -310,7 +310,7 @@
     "desc": "NFL Arrests Data Visualization Assignment",
     "due_date": "2026-02-25",
     "due_str": "Wed Feb 25",
-    "days": -2,
+    "days": -3,
     "weight": "medium",
     "done": true
   },
@@ -319,7 +319,7 @@
     "desc": "Unit 1 Project",
     "due_date": "2026-02-26",
     "due_str": "Thu Feb 26",
-    "days": -1,
+    "days": -2,
     "weight": "high",
     "done": true
   },
@@ -328,7 +328,7 @@
     "desc": "Lesson 5 Practice Problems",
     "due_date": "2026-02-26",
     "due_str": "Thu Feb 26",
-    "days": -1,
+    "days": -2,
     "weight": "low",
     "done": true
   }
