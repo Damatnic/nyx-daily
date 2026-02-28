@@ -29,11 +29,13 @@ import YouTubeSection     from '@/components/briefing/YouTubeSection';
 import ReleasesToday      from '@/components/briefing/ReleasesToday';
 import WorkoutTracker     from '@/components/briefing/WorkoutTracker';
 import BreathworkCard     from '@/components/briefing/BreathworkCard';
+import WellnessCard       from '@/components/briefing/WellnessCard';
+import HighlightsPanel    from '@/components/briefing/HighlightsPanel';
 import ArchiveStrip       from '@/components/briefing/ArchiveStrip';
 import MetaBar            from '@/components/briefing/MetaBar';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v7';
+const STORAGE_KEY = 'nyx-widget-layout-v8';
 
 interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean; visible: boolean }
 
@@ -62,16 +64,18 @@ const DEFAULT_LAYOUT: WidgetConfig[] = [
   // ── ACT ZONE ─────────────────────────────────────────────────────────────
   // Expanded by default — orient + act on your day immediately
   { id: 'carousel',        size: 'full', collapsed: false, visible: true },
-  { id: 'workout',         size: 'half', collapsed: false, visible: true },
-  { id: 'breathwork',      size: 'half', collapsed: false, visible: true },
+  { id: 'wellness',        size: 'half', collapsed: false, visible: true },
+  { id: 'highlights',      size: 'half', collapsed: false, visible: true },
+  // Legacy single widgets kept for backward compat (hidden by default)
+  { id: 'workout',         size: 'half', collapsed: false, visible: false },
+  { id: 'breathwork',      size: 'half', collapsed: false, visible: false },
 
   // ── READ ZONE ────────────────────────────────────────────────────────────
   // Core news + dev feeds — scan, don't drown
   { id: 'news',            size: 'full', collapsed: false, visible: true },
   { id: 'github',          size: 'half', collapsed: false, visible: true },
   { id: 'hackernews',      size: 'half', collapsed: false, visible: true },
-  { id: 'daily_wisdom',    size: 'half', collapsed: false, visible: true },
-  { id: 'personal_github', size: 'half', collapsed: false, visible: true },
+  { id: 'personal_github', size: 'full', collapsed: false, visible: true },
 
   // ── DISCOVERY ZONE ───────────────────────────────────────────────────────
   // Collapsed by default — expand when you have time to browse
@@ -79,6 +83,7 @@ const DEFAULT_LAYOUT: WidgetConfig[] = [
   { id: 'producthunt',     size: 'half', collapsed: true,  visible: true },
   { id: 'hidden_gems',     size: 'half', collapsed: true,  visible: true },
   { id: 'app_of_day',      size: 'half', collapsed: true,  visible: true },
+  { id: 'daily_wisdom',    size: 'half', collapsed: true,  visible: true },
   { id: 'youtube',         size: 'half', collapsed: true,  visible: true },
   { id: 'releases',        size: 'half', collapsed: true,  visible: true },
 
@@ -99,6 +104,8 @@ const WIDGET_META: Record<string, { label: string; accent: string }> = {
   daily_wisdom:    { label: 'Daily Wisdom',    accent: 'rose'    },
   youtube:         { label: 'Watch',           accent: 'rose'    },
   releases:        { label: 'Release Radar',   accent: 'rose'    },
+  wellness:        { label: 'Wellness',        accent: 'cyan'    },
+  highlights:      { label: 'Today',           accent: 'violet'  },
   workout:         { label: 'Workout',         accent: 'emerald' },
   breathwork:      { label: 'Breathwork',      accent: 'emerald' },
   archive:         { label: 'Past Briefings',  accent: 'slate'   },
@@ -178,6 +185,8 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
     daily_wisdom:    !!(briefing.health_tip || briefing.life_hack || briefing.money_tip),
     youtube:         !!briefing.youtube_picks?.length,
     releases:        !!(briefing.releases_today && Object.values(briefing.releases_today).some(a => a.length > 0)),
+    wellness:        !!(briefing.workout?.exercises?.length || briefing.workout?.is_rest_day || briefing.breathwork),
+    highlights:      true,
     workout:         !!briefing.workout?.exercises?.length,
     breathwork:      !!briefing.breathwork_session,
     archive:         recentPreviews.length > 0,
@@ -209,6 +218,14 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
     daily_wisdom:    <DailyWisdomCard    health_tip={briefing.health_tip} life_hack={briefing.life_hack} money_tip={briefing.money_tip} />,
     youtube:         <YouTubeSection     videos={briefing.youtube_picks ?? []} />,
     releases:        briefing.releases_today ? <ReleasesToday releases={briefing.releases_today} /> : null,
+    wellness: (
+      <WellnessCard
+        workout={briefing.workout}
+        breathwork={briefing.breathwork ?? undefined}
+        date={briefing.date}
+      />
+    ),
+    highlights: <HighlightsPanel briefing={briefing} streak={streak} />,
     workout:         <WorkoutTracker     workout={briefing.workout!} date={briefing.date} />,
     breathwork:      <BreathworkCard     session={briefing.breathwork_session!} fallbackText={breathworkFallback} />,
     archive:         <ArchiveStrip       previews={recentPreviews} />,
@@ -220,7 +237,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
 
   // ── Zone separator logic ────────────────────────────────────────────────
   // Widgets classified as "act" (things you do, not read)
-  const ACT_WIDGETS = new Set(['carousel', 'workout', 'breathwork']);
+  const ACT_WIDGETS = new Set(['carousel', 'wellness', 'highlights', 'workout', 'breathwork']);
 
   type RenderItem =
     | { type: 'widget'; widget: WidgetConfig }
