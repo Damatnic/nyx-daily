@@ -31,11 +31,12 @@ import WorkoutTracker     from '@/components/briefing/WorkoutTracker';
 import BreathworkCard     from '@/components/briefing/BreathworkCard';
 import WellnessCard       from '@/components/briefing/WellnessCard';
 import HighlightsPanel    from '@/components/briefing/HighlightsPanel';
+import TrendingStack      from '@/components/briefing/TrendingStack';
 import ArchiveStrip       from '@/components/briefing/ArchiveStrip';
 import MetaBar            from '@/components/briefing/MetaBar';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-const STORAGE_KEY = 'nyx-widget-layout-v8';
+const STORAGE_KEY = 'nyx-widget-layout-v9';
 
 interface WidgetConfig { id: string; size: WidgetSize; collapsed: boolean; visible: boolean }
 
@@ -65,7 +66,7 @@ const DEFAULT_LAYOUT: WidgetConfig[] = [
   // Expanded by default — orient + act on your day immediately
   { id: 'carousel',        size: 'full', collapsed: false, visible: true },
   { id: 'wellness',        size: 'half', collapsed: false, visible: true },
-  { id: 'highlights',      size: 'half', collapsed: false, visible: true },
+  { id: 'trending_stack',  size: 'half', collapsed: false, visible: true },
   // Legacy single widgets kept for backward compat (hidden by default)
   { id: 'workout',         size: 'half', collapsed: false, visible: false },
   { id: 'breathwork',      size: 'half', collapsed: false, visible: false },
@@ -105,6 +106,7 @@ const WIDGET_META: Record<string, { label: string; accent: string }> = {
   youtube:         { label: 'Watch',           accent: 'rose'    },
   releases:        { label: 'Release Radar',   accent: 'rose'    },
   wellness:        { label: 'Wellness',        accent: 'cyan'    },
+  trending_stack:  { label: 'Trending',        accent: 'orange'  },
   highlights:      { label: 'Today',           accent: 'violet'  },
   workout:         { label: 'Workout',         accent: 'emerald' },
   breathwork:      { label: 'Breathwork',      accent: 'emerald' },
@@ -186,6 +188,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
     youtube:         !!briefing.youtube_picks?.length,
     releases:        !!(briefing.releases_today && Object.values(briefing.releases_today).some(a => a.length > 0)),
     wellness:        !!(briefing.workout?.exercises?.length || briefing.workout?.is_rest_day || briefing.breathwork),
+    trending_stack:  true,
     highlights:      true,
     workout:         !!briefing.workout?.exercises?.length,
     breathwork:      !!briefing.breathwork_session,
@@ -225,6 +228,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
         date={briefing.date}
       />
     ),
+    trending_stack: <TrendingStack briefing={briefing} />,
     highlights: <HighlightsPanel briefing={briefing} streak={streak} />,
     workout:         <WorkoutTracker     workout={briefing.workout!} date={briefing.date} />,
     breathwork:      <BreathworkCard     session={briefing.breathwork_session!} fallbackText={breathworkFallback} />,
@@ -237,7 +241,7 @@ export default function WidgetGrid({ briefing, streak, headlineCount, recentPrev
 
   // ── Zone separator logic ────────────────────────────────────────────────
   // Widgets classified as "act" (things you do, not read)
-  const ACT_WIDGETS = new Set(['carousel', 'wellness', 'highlights', 'workout', 'breathwork']);
+  const ACT_WIDGETS = new Set(['carousel', 'wellness', 'trending_stack', 'highlights', 'workout', 'breathwork']);
 
   type RenderItem =
     | { type: 'widget'; widget: WidgetConfig }
